@@ -1,7 +1,7 @@
 
-set var_file_to_open "/tp/xph2app/xph2app007/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project/rtl/MUX/MUX_1bit.sv"
+set var_file_to_open "/tp/xph2app/xph2app007/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project_2/rtl/MUX/MUX_1bit.sv"
 analyze -library WORK -format sverilog $var_file_to_open
-set var_file_to_open "/tp/xph2app/xph2app007/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project/rtl/MUX/MUX_Nbits.sv"
+set var_file_to_open "/tp/xph2app/xph2app007/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project_2/rtl/MUX/MUX_Nbits.sv"
 analyze -library WORK -format sverilog $var_file_to_open
 
 
@@ -16,8 +16,8 @@ compile -exact_map -ungroup_all -auto_ungroup area
 set name_netlist "MUXN_netlist.v"
 set name_sdc "MUXN_1.sdc"
 
-write -hierarchy -format verilog -output /tp/xph2app/xph2app007/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project/simu/post_synth/MUX/$name_netlist
-write_sdc /tp/xph2app/xph2app007/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project/simu/post_synth/MUX/$name_sdc
+write -hierarchy -format verilog -output /tp/xph2app/xph2app007/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project_2/simu/post_synth/MUX/$name_netlist
+write_sdc /tp/xph2app/xph2app007/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project_2/simu/post_synth/MUX/$name_sdc
 
 
 uplevel #0 { report_area }
