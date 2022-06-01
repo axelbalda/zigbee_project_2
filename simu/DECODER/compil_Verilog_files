@@ -1,10 +1,10 @@
-#vdel -lib $HOME/zigbee_project/libs/LibSin -all
+#vdel -lib $HOME/zigbee_project_2/libs/LibSin -all
 #vlib ../../libs/LibSin
-#vmap Lib_Sin $HOME/zigbee_project/libs/LibSin
+#vmap Lib_Sin $HOME/zigbee_project_2/libs/LibSin
 
 
 
-vdel -lib $HOME/zigbee_project/libs/LibDemod -all
+vdel -lib $HOME/zigbee_project_2/libs/LibDemod -all
 vlib ../../libs/LibDemod
 vmap Lib_Demod $HOME/zigbee_project/libs/LibDemod
 
