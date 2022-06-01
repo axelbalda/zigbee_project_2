@@ -1,6 +1,6 @@
-vdel -lib $HOME/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project/libs/LibEI_PS -all
+vdel -lib $HOME/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project_2/libs/LibEI_PS -all
 vlib ../../../libs/LibEI_PS
-vmap Lib_EI_PS $HOME/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project/libs/LibEI_PS
+vmap Lib_EI_PS $HOME/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project_2/libs/LibEI_PS
 
 
 
