@@ -1,0 +1,703 @@
+[05/20 09:19:54      0s] 
+[05/20 09:19:54      0s] Cadence Innovus(TM) Implementation System.
+[05/20 09:19:54      0s] Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/20 09:19:54      0s] 
+[05/20 09:19:54      0s] Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+[05/20 09:19:54      0s] Options:	
+[05/20 09:19:54      0s] Date:		Fri May 20 09:19:54 2022
+[05/20 09:19:54      0s] Host:		cimeld10 (x86_64 w/Linux 3.10.0-1160.62.1.el7.x86_64) (8cores*16cpus*Intel(R) Core(TM) i7-10700 CPU @ 2.90GHz 16384KB)
+[05/20 09:19:54      0s] OS:		Red Hat Enterprise Linux Server release 7.9 (Maipo)
+[05/20 09:19:54      0s] 
+[05/20 09:19:54      0s] License:
+[05/20 09:19:54      0s] 		invs	Innovus Implementation System	17.1	checkout succeeded
+[05/20 09:19:54      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[05/20 09:20:01      5s] @(#)CDS: Innovus v17.11-s080_1 (64bit) 08/04/2017 11:13 (Linux 2.6.18-194.el5)
+[05/20 09:20:01      5s] @(#)CDS: NanoRoute 17.11-s080_1 NR170721-2155/17_11-UB (database version 2.30, 390.7.1) {superthreading v1.44}
+[05/20 09:20:01      5s] @(#)CDS: AAE 17.11-s034 (64bit) 08/04/2017 (Linux 2.6.18-194.el5)
+[05/20 09:20:01      5s] @(#)CDS: CTE 17.11-s053_1 () Aug  1 2017 23:31:41 ( )
+[05/20 09:20:01      5s] @(#)CDS: SYNTECH 17.11-s012_1 () Jul 21 2017 02:29:12 ( )
+[05/20 09:20:01      5s] @(#)CDS: CPE v17.11-s095
+[05/20 09:20:01      5s] @(#)CDS: IQRC/TQRC 16.1.1-s215 (64bit) Thu Jul  6 20:18:10 PDT 2017 (Linux 2.6.18-194.el5)
+[05/20 09:20:01      5s] @(#)CDS: OA 22.50-p063 Fri Feb  3 19:45:13 2017
+[05/20 09:20:01      5s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[05/20 09:20:01      5s] @(#)CDS: RCDB 11.10
+[05/20 09:20:01      5s] --- Running on cimeld10 (x86_64 w/Linux 3.10.0-1160.62.1.el7.x86_64) (8cores*16cpus*Intel(R) Core(TM) i7-10700 CPU @ 2.90GHz 16384KB) ---
+[05/20 09:20:01      5s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_15708_cimeld10_xph2app102_QDKqrx.
+
+[05/20 09:20:01      5s] Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+[05/20 09:20:01      6s] 
+[05/20 09:20:01      6s] **INFO:  MMMC transition support version v31-84 
+[05/20 09:20:01      6s] 
+[05/20 09:20:01      6s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[05/20 09:20:01      6s] <CMD> suppressMessage ENCEXT-2799
+[05/20 09:20:01      6s] <CMD> getDrawView
+[05/20 09:20:01      6s] <CMD> loadWorkspace -name Physical
+[05/20 09:20:01      6s] <CMD> win
+[05/20 09:20:44     10s] <CMD_INTERNAL> print {---# TCL Script amsSetup.tcl loaded}
+[05/20 09:20:44     10s] ---# TCL Script amsSetup.tcl loaded
+[05/20 09:20:44     10s] <CMD> set init_layout_view {}
+[05/20 09:20:44     10s] <CMD> set init_verilog {../INPUT_DATA/msk_modulator_io.v ../INPUT_DATA/msk_modulator_netlist_fe2.v}
+[05/20 09:20:44     10s] <CMD> set init_mmmc_file ../SCRIPTS/view_definition.tcl
+[05/20 09:20:44     10s] <CMD> set init_lef_file {/softslin/AMS_410_ISR15/cds/HK_C35/LEF/c35b4/c35b4.lef /softslin/AMS_410_ISR15/cds/HK_C35/LEF/c35b4/CORELIB.lef /softslin/AMS_410_ISR15/cds/HK_C35/LEF/c35b4/IOLIB_4M.lef}
+[05/20 09:20:44     10s] <CMD> set init_top_cell msk_modulator_io
+[05/20 09:20:44     10s] <CMD> set init_gnd_net {gnd! gnd3r! gnd3o!}
+[05/20 09:20:44     10s] <CMD> set init_pwr_net {vdd! vdd3r1! vdd3r2! vdd3o!}
+[05/20 09:20:44     10s] <CMD> set cts_cell_list {CLKIN0 CLKIN1 CLKIN2 CLKIN3 CLKIN4 CLKIN6 CLKIN8 CLKIN10 CLKIN12 CLKIN15 CLKBU2 CLKBU4 CLKBU6 CLKBU8 CLKBU12 CLKBU15}
+[05/20 09:20:55     11s] <CMD> init_design
+[05/20 09:20:55     11s] #% Begin Load MMMC data ... (date=05/20 09:20:55, mem=459.4M)
+[05/20 09:20:55     11s] #% End Load MMMC data ... (date=05/20 09:20:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=459.5M, current mem=459.5M)
+[05/20 09:20:55     11s] 
+[05/20 09:20:55     11s] Loading LEF file /softslin/AMS_410_ISR15/cds/HK_C35/LEF/c35b4/c35b4.lef ...
+[05/20 09:20:55     11s] **WARN: (IMPLF-228):	 ANTENNAOUTPUTDIFFAREA is specified and will be
+[05/20 09:20:55     11s] applied to any OUTPUT PIN or INOUT PIN without ANTENNADIFFAREA. This often
+[05/20 09:20:55     11s] causes a mismatch between process antenna violations found in Innovus
+[05/20 09:20:55     11s] (during routing or verification) and violations found by external physical
+[05/20 09:20:55     11s] verification tools. This global defaulting mechanism is obsolete in LEF
+[05/20 09:20:55     11s] 5.5. The recommended solution is to remove ANTENNAOUTPUTDIFFAREA and add
+[05/20 09:20:55     11s] ANTENNADIFFAREA to all OUTPUT or INOUT PINS in the MACROS in order to
+[05/20 09:20:55     11s] avoid a mismatch in violations.
+[05/20 09:20:55     11s] **WARN: (IMPLF-230):	 ANTENNAINOUTDIFFAREA is specified and will be
+[05/20 09:20:55     11s] applied to any INOUT PIN without ANTENNADIFFAREA. This often causes a
+[05/20 09:20:55     11s] mismatch between process antenna violations found in Innovus (during
+[05/20 09:20:55     11s] routing or verification) and violations found by external physical
+[05/20 09:20:55     11s] verification tools. This global defaulting mechanism is obsolete in
+[05/20 09:20:55     11s] LEF 5.5. The recommended solution is to remove ANTENNAINOUTDIFFAREA
+[05/20 09:20:55     11s] and add ANTENNADIFFAREA to all INOUT PINS in the MACROS in order to
+[05/20 09:20:55     11s] avoid a mismatch in violations.
+[05/20 09:20:55     11s] 
+[05/20 09:20:55     11s] Loading LEF file /softslin/AMS_410_ISR15/cds/HK_C35/LEF/c35b4/CORELIB.lef ...
+[05/20 09:20:55     11s] Set DBUPerIGU to M2 pitch 1400.
+[05/20 09:20:55     11s] 
+[05/20 09:20:55     11s] Loading LEF file /softslin/AMS_410_ISR15/cds/HK_C35/LEF/c35b4/IOLIB_4M.lef ...
+[05/20 09:20:56     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC16P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-201' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC16P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-200' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC16P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-201' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC16SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-201' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC16SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-200' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC16SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-201' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC16SP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-201' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC16SP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-200' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC16SP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-201' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC1P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-201' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC1P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-200' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC1P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-201' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC24P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-201' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC24P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-200' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC24P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-201' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC24SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-201' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC24SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-200' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC24SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-201' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC24SP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-201' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC24SP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-200' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC24SP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-201' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC4P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-201' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC4P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-200' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC4P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-201' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC4SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-201' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC4SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-200' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC4SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-201' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC8P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-201' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC8P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-200' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC8P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-201' for more detail.
+[05/20 09:20:56     11s] **WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+[05/20 09:20:56     11s] To increase the message display limit, refer to the product command reference manual.
+[05/20 09:20:56     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC8SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-200' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC8SP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-200' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD16P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-200' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD16SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-200' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD16SP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-200' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD1P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-200' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD24P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-200' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD24SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-200' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD24SP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-200' for more detail.
+[05/20 09:20:56     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD4P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/20 09:20:56     11s] Type 'man IMPLF-200' for more detail.
+[05/20 09:20:56     11s] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[05/20 09:20:56     11s] To increase the message display limit, refer to the product command reference manual.
+[05/20 09:20:56     11s] 
+[05/20 09:20:56     11s] viaInitial starts at Fri May 20 09:20:56 2022
+viaInitial ends at Fri May 20 09:20:56 2022
+Loading view definition file from ../SCRIPTS/view_definition.tcl
+[05/20 09:20:56     11s] Reading slow_libs timing library '/softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib' ...
+[05/20 09:20:56     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADD21' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[05/20 09:20:56     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADD21' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[05/20 09:20:56     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADD22' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[05/20 09:20:56     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADD22' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[05/20 09:20:56     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADD31' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[05/20 09:20:56     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADD31' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[05/20 09:20:56     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADD32' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[05/20 09:20:56     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADD32' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[05/20 09:20:56     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI210' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[05/20 09:20:56     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI211' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[05/20 09:20:56     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI2110' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[05/20 09:20:56     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI2111' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[05/20 09:20:56     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI2112' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[05/20 09:20:56     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI212' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[05/20 09:20:56     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI220' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[05/20 09:20:56     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI221' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[05/20 09:20:56     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI222' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[05/20 09:20:56     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI310' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[05/20 09:20:56     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI311' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[05/20 09:20:56     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI312' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[05/20 09:20:56     11s] Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[05/20 09:20:56     11s] **ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 7673)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 7685)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 7816)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 7828)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 7959)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 7971)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8102)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8114)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8245)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8257)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8388)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8400)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8531)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8543)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8668)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8680)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8805)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8817)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8942)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8954)
+Message <TECHLIB-1318> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[05/20 09:20:56     12s] Read 248 cells in library 'c35_CORELIB_WC' 
+[05/20 09:20:56     12s] Reading slow_libs timing library '/softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_IOLIB_WC.lib' ...
+[05/20 09:20:56     12s] Read 181 cells in library 'c35_IOLIB_WC' 
+[05/20 09:20:56     12s] Reading fast_libs timing library '/softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_BC.lib' ...
+[05/20 09:20:56     12s] Read 248 cells in library 'c35_CORELIB_BC' 
+[05/20 09:20:56     12s] Reading fast_libs timing library '/softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_IOLIB_BC.lib' ...
+[05/20 09:20:56     12s] Read 181 cells in library 'c35_IOLIB_BC' 
+[05/20 09:20:56     12s] *** End library_loading (cpu=0.01min, real=0.00min, mem=26.8M, fe_cpu=0.21min, fe_real=1.03min, fe_mem=522.8M) ***
+[05/20 09:20:56     12s] #% Begin Load netlist data ... (date=05/20 09:20:56, mem=549.0M)
+[05/20 09:20:56     12s] *** Begin netlist parsing (mem=522.8M) ***
+[05/20 09:20:56     12s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'FILLANT25' is defined in LEF but not in the timing library.
+[05/20 09:20:56     12s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'FILLANT25' is defined in LEF but not in the timing library.
+[05/20 09:20:56     12s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'FILLANT10' is defined in LEF but not in the timing library.
+[05/20 09:20:56     12s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'FILLANT10' is defined in LEF but not in the timing library.
+[05/20 09:20:56     12s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'FILLANT5' is defined in LEF but not in the timing library.
+[05/20 09:20:56     12s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'FILLANT5' is defined in LEF but not in the timing library.
+[05/20 09:20:56     12s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'FILLANT2' is defined in LEF but not in the timing library.
+[05/20 09:20:56     12s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'FILLANT2' is defined in LEF but not in the timing library.
+[05/20 09:20:56     12s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'FILLANT1' is defined in LEF but not in the timing library.
+[05/20 09:20:56     12s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'FILLANT1' is defined in LEF but not in the timing library.
+[05/20 09:20:56     12s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'LOGIC1' is defined in LEF but not in the timing library.
+[05/20 09:20:56     12s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'LOGIC1' is defined in LEF but not in the timing library.
+[05/20 09:20:56     12s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'LOGIC0' is defined in LEF but not in the timing library.
+[05/20 09:20:56     12s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'LOGIC0' is defined in LEF but not in the timing library.
+[05/20 09:20:56     12s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'TIEHIGH' is defined in LEF but not in the timing library.
+[05/20 09:20:56     12s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'TIEHIGH' is defined in LEF but not in the timing library.
+[05/20 09:20:56     12s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'TIELOW' is defined in LEF but not in the timing library.
+[05/20 09:20:56     12s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'TIELOW' is defined in LEF but not in the timing library.
+[05/20 09:20:56     12s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'TIE1' is defined in LEF but not in the timing library.
+[05/20 09:20:56     12s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'TIE1' is defined in LEF but not in the timing library.
+[05/20 09:20:56     12s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[05/20 09:20:56     12s] To increase the message display limit, refer to the product command reference manual.
+[05/20 09:20:56     12s] Pin 'A' of cell 'VDD3RP' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[05/20 09:20:56     12s] Pin 'A' of cell 'VDD3OP' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[05/20 09:20:56     12s] Pin 'A' of cell 'VDD3IP' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[05/20 09:20:56     12s] Pin 'A' of cell 'VDD3ALLP' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[05/20 09:20:56     12s] Pin 'A' of cell 'GND3RP' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[05/20 09:20:56     12s] Pin 'A' of cell 'GND3OP' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[05/20 09:20:56     12s] Pin 'A' of cell 'GND3IP' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[05/20 09:20:56     12s] Pin 'A' of cell 'GND3ALLP' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[05/20 09:20:56     12s] Created 429 new cells from 4 timing libraries.
+[05/20 09:20:56     12s] Reading netlist ...
+[05/20 09:20:56     12s] Backslashed names will retain backslash and a trailing blank character.
+[05/20 09:20:56     12s] **WARN: (IMPVL-324):	Module msk_modulator in ../INPUT_DATA/msk_modulator_netlist_fe2.v will overwrite the previous definition in another file.
+[05/20 09:20:56     12s] Reading verilog netlist '../INPUT_DATA/msk_modulator_io.v'
+[05/20 09:20:56     12s] **WARN: (IMPVL-209):	In Verilog file '../INPUT_DATA/msk_modulator_io.v', check line 9 near the text MSK_MODULATOR for the issue: 'case mismatch in cell name between cell definition and instance'.  Update the text accordingly.
+[05/20 09:20:56     12s] Type 'man IMPVL-209' for more detail.
+[05/20 09:20:56     12s] **WARN: (IMPVL-346):	Module 'MSK_MODULATOR' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[05/20 09:20:56     12s] Type 'man IMPVL-346' for more detail.
+[05/20 09:20:56     12s] Undeclared bus o_sinI in module MSK_MODULATOR ... created as [3:0].
+[05/20 09:20:56     12s] Undeclared bus o_sinI in module MSK_MODULATOR ... created as [3:0].
+[05/20 09:20:56     12s] Reading verilog netlist '../INPUT_DATA/msk_modulator_netlist_fe2.v'
+[05/20 09:20:56     12s] 
+[05/20 09:20:56     12s] *** Memory Usage v#1 (Current mem = 522.809M, initial mem = 179.660M) ***
+[05/20 09:20:56     12s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=522.8M) ***
+[05/20 09:20:56     12s] #% End Load netlist data ... (date=05/20 09:20:56, total cpu=0:00:00.0, real=0:00:00.0, peak res=549.0M, current mem=490.9M)
+[05/20 09:20:56     12s] Set top cell to msk_modulator_io.
+[05/20 09:20:56     12s] Hooked 858 DB cells to tlib cells.
+[05/20 09:20:56     12s] **WARN: (IMPDB-2504):	Cell 'MSK_MODULATOR' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[05/20 09:20:56     12s] Cell 'MSK_MODULATOR' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'o_ready' of cell 'MSK_MODULATOR' as output for net 'o_ready_P' in module 'msk_modulator_io'.
+[05/20 09:20:56     12s] Cell 'MSK_MODULATOR' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'o_sinI[3]' of cell 'MSK_MODULATOR' as output for net 'o_sinQ_P[3]' in module 'msk_modulator_io'.
+[05/20 09:20:56     12s] Cell 'MSK_MODULATOR' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'o_sinI[2]' of cell 'MSK_MODULATOR' as output for net 'o_sinQ_P[2]' in module 'msk_modulator_io'.
+[05/20 09:20:56     12s] Cell 'MSK_MODULATOR' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'o_sinI[1]' of cell 'MSK_MODULATOR' as output for net 'o_sinQ_P[1]' in module 'msk_modulator_io'.
+[05/20 09:20:56     12s] Cell 'MSK_MODULATOR' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'o_sinI[0]' of cell 'MSK_MODULATOR' as output for net 'o_sinQ_P[0]' in module 'msk_modulator_io'.
+[05/20 09:20:56     12s] 1 empty module found.
+[05/20 09:20:56     12s] Starting recursive module instantiation check.
+[05/20 09:20:56     12s] No recursion found.
+[05/20 09:20:56     12s] Term dir updated for 0 vinsts of 1 cells.
+[05/20 09:20:56     12s] Building hierarchical netlist for Cell msk_modulator_io ...
+[05/20 09:20:56     12s] *** Netlist is unique.
+[05/20 09:20:56     12s] ** info: there are 889 modules.
+[05/20 09:20:56     12s] ** info: there are 0 stdCell insts.
+[05/20 09:20:56     12s] ** info: there are 13 Pad insts.
+[05/20 09:20:56     12s] 
+[05/20 09:20:56     12s] *** Memory Usage v#1 (Current mem = 564.484M, initial mem = 179.660M) ***
+[05/20 09:20:56     12s] Initializing I/O assignment ...
+[05/20 09:20:56     12s] Adjusting Core to Left to: 1.2000. Core to Bottom to: 0.2000.
+[05/20 09:20:56     12s] **WARN: (IMPFP-3961):	The techSite 'corner_P' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/20 09:20:56     12s] Type 'man IMPFP-3961' for more detail.
+[05/20 09:20:56     12s] **WARN: (IMPFP-3961):	The techSite 'ioSite_P' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/20 09:20:56     12s] Type 'man IMPFP-3961' for more detail.
+[05/20 09:20:56     12s] **WARN: (IMPFP-3961):	The techSite 'blockSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/20 09:20:56     12s] Type 'man IMPFP-3961' for more detail.
+[05/20 09:20:56     12s] **WARN: (IMPFP-3961):	The techSite 'portCellSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/20 09:20:56     12s] Type 'man IMPFP-3961' for more detail.
+[05/20 09:20:56     12s] Set Default Net Delay as 1000 ps.
+[05/20 09:20:56     12s] Set Default Net Load as 0.5 pF. 
+[05/20 09:20:56     12s] Set Default Input Pin Transition as 0.1 ps.
+[05/20 09:20:56     12s] **WARN: (IMPCK-7003):	Command "addCTSCellList" is obsolete. Use "specifyClockTree -update {AutoCTSRootPin clkname Buffer bufferlist ...}" as an alternative. The obsolete command still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove "addCTSCellList" from your script.
+[05/20 09:20:56     12s] Set CTS cells: CLKIN0 CLKIN1 CLKIN2 CLKIN3 CLKIN4 CLKIN6 CLKIN8 CLKIN10 CLKIN12 CLKIN15 CLKBU2 CLKBU4 CLKBU6 CLKBU8 CLKBU12 CLKBU15
+[05/20 09:20:56     12s] Extraction setup Delayed 
+[05/20 09:20:56     12s] *Info: initialize multi-corner CTS.
+[05/20 09:20:57     12s] Reading timing constraints file '../INPUT_DATA/clock_def.sdc' ...
+[05/20 09:20:57     12s] Current (total cpu=0:00:12.9, real=0:01:03, peak res=630.8M, current mem=630.8M)
+[05/20 09:20:57     12s] INFO (CTE): Constraints read successfully.
+[05/20 09:20:57     12s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=639.0M, current mem=639.0M)
+[05/20 09:20:57     12s] Current (total cpu=0:00:12.9, real=0:01:03, peak res=639.0M, current mem=639.0M)
+[05/20 09:20:57     12s] Reading timing constraints file '../INPUT_DATA/clock_uncertainty_prects.sdc' ...
+[05/20 09:20:57     12s] Current (total cpu=0:00:12.9, real=0:01:03, peak res=639.0M, current mem=639.0M)
+[05/20 09:20:57     12s] INFO (CTE): Constraints read successfully.
+[05/20 09:20:57     12s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=646.6M, current mem=646.6M)
+[05/20 09:20:57     12s] Current (total cpu=0:00:12.9, real=0:01:03, peak res=646.6M, current mem=646.6M)
+[05/20 09:20:57     12s] Reading timing constraints file '../INPUT_DATA/constraints_def_worst.sdc' ...
+[05/20 09:20:57     12s] Current (total cpu=0:00:12.9, real=0:01:03, peak res=646.6M, current mem=646.6M)
+[05/20 09:20:57     12s] INFO (CTE): Constraints read successfully.
+[05/20 09:20:57     12s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=647.1M, current mem=647.1M)
+[05/20 09:20:57     12s] Current (total cpu=0:00:13.0, real=0:01:03, peak res=647.1M, current mem=647.1M)
+[05/20 09:20:57     12s] Reading timing constraints file '../INPUT_DATA/clock_def.sdc' ...
+[05/20 09:20:57     12s] Current (total cpu=0:00:13.0, real=0:01:03, peak res=647.1M, current mem=647.1M)
+[05/20 09:20:57     12s] INFO (CTE): Constraints read successfully.
+[05/20 09:20:57     12s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=647.3M, current mem=647.3M)
+[05/20 09:20:57     12s] Current (total cpu=0:00:13.0, real=0:01:03, peak res=647.3M, current mem=647.3M)
+[05/20 09:20:57     12s] Reading timing constraints file '../INPUT_DATA/clock_uncertainty_prects.sdc' ...
+[05/20 09:20:57     12s] Current (total cpu=0:00:13.0, real=0:01:03, peak res=647.3M, current mem=647.3M)
+[05/20 09:20:57     12s] INFO (CTE): Constraints read successfully.
+[05/20 09:20:57     12s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=647.8M, current mem=647.8M)
+[05/20 09:20:57     12s] Current (total cpu=0:00:13.0, real=0:01:03, peak res=647.8M, current mem=647.8M)
+[05/20 09:20:57     12s] Reading timing constraints file '../INPUT_DATA/constraints_def_best.sdc' ...
+[05/20 09:20:57     12s] Current (total cpu=0:00:13.0, real=0:01:03, peak res=647.8M, current mem=647.8M)
+[05/20 09:20:57     13s] INFO (CTE): Constraints read successfully.
+[05/20 09:20:57     13s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=648.2M, current mem=648.2M)
+[05/20 09:20:57     13s] Current (total cpu=0:00:13.0, real=0:01:03, peak res=648.2M, current mem=648.2M)
+[05/20 09:20:57     13s] Creating Cell Server ...(0, 1, 1, 1)
+[05/20 09:20:57     13s] Summary for sequential cells identification: 
+[05/20 09:20:57     13s]   Identified SBFF number: 32
+[05/20 09:20:57     13s]   Identified MBFF number: 0
+[05/20 09:20:57     13s]   Identified SB Latch number: 0
+[05/20 09:20:57     13s]   Identified MB Latch number: 0
+[05/20 09:20:57     13s]   Not identified SBFF number: 34
+[05/20 09:20:57     13s]   Not identified MBFF number: 0
+[05/20 09:20:57     13s]   Not identified SB Latch number: 0
+[05/20 09:20:57     13s]   Not identified MB Latch number: 0
+[05/20 09:20:57     13s]   Number of sequential cells which are not FFs: 23
+[05/20 09:20:57     13s] Total number of combinational cells: 145
+[05/20 09:20:57     13s] Total number of sequential cells: 89
+[05/20 09:20:57     13s] Total number of tristate cells: 14
+[05/20 09:20:57     13s] Total number of level shifter cells: 0
+[05/20 09:20:57     13s] Total number of power gating cells: 0
+[05/20 09:20:57     13s] Total number of isolation cells: 0
+[05/20 09:20:57     13s] Total number of power switch cells: 0
+[05/20 09:20:57     13s] Total number of pulse generator cells: 0
+[05/20 09:20:57     13s] Total number of always on buffers: 0
+[05/20 09:20:57     13s] Total number of retention cells: 0
+[05/20 09:20:57     13s] List of usable buffers: BUF12 BUF15 BUF2 BUF6 BUF4 BUF8 CLKBU12 CLKBU15 CLKBU2 CLKBU6 CLKBU4 CLKBU8
+[05/20 09:20:57     13s] Total number of usable buffers: 12
+[05/20 09:20:57     13s] List of unusable buffers:
+[05/20 09:20:57     13s] Total number of unusable buffers: 0
+[05/20 09:20:57     13s] List of usable inverters: CLKIN1 CLKIN0 CLKIN12 CLKIN10 CLKIN15 CLKIN3 CLKIN2 CLKIN6 CLKIN4 CLKIN8 INV1 INV0 INV12 INV10 INV15 INV3 INV2 INV6 INV4 INV8
+[05/20 09:20:57     13s] Total number of usable inverters: 20
+[05/20 09:20:57     13s] List of unusable inverters:
+[05/20 09:20:57     13s] Total number of unusable inverters: 0
+[05/20 09:20:57     13s] List of identified usable delay cells: DLY12 DLY22 DLY32 DLY42
+[05/20 09:20:57     13s] Total number of identified usable delay cells: 4
+[05/20 09:20:57     13s] List of identified unusable delay cells:
+[05/20 09:20:57     13s] Total number of identified unusable delay cells: 0
+[05/20 09:20:57     13s] Creating Cell Server, finished. 
+[05/20 09:20:57     13s] 
+[05/20 09:20:57     13s] Deleting Cell Server ...
+[05/20 09:20:57     13s] Patterns Extraction called explicitly through PreRoutePatternsIfNeeded call 
+[05/20 09:20:57     13s] Extraction setup Started 
+[05/20 09:20:57     13s] Initializing multi-corner RC extraction with 2 active RC Corners ...
+[05/20 09:20:57     13s] **WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+[05/20 09:20:57     13s] Type 'man IMPEXT-6202' for more detail.
+[05/20 09:20:57     13s] Reading Capacitance Table File /softslin/AMS_410_ISR15/cds/HK_C35/LEF/encounter/c35b4_thick-worst.capTable ...
+[05/20 09:20:57     13s] Cap table was created using Encounter 10.11-s096_1.
+[05/20 09:20:57     13s] Process name: c35b4_thick-worst.
+[05/20 09:20:57     13s] Allocated an empty WireEdgeEnlargement table in rc_worst [1].
+[05/20 09:20:57     13s] Allocated an empty WireEdgeEnlargement table in rc_worst [1].
+[05/20 09:20:57     13s] Allocated an empty WireEdgeEnlargement table in rc_worst [2].
+[05/20 09:20:57     13s] Allocated an empty WireEdgeEnlargement table in rc_worst [3].
+[05/20 09:20:57     13s] Allocated an empty WireEdgeEnlargement table in rc_worst [4].
+[05/20 09:20:57     13s] Allocated an empty WireEdgeEnlargement table in rc_worst [4].
+[05/20 09:20:57     13s] Reading Capacitance Table File /softslin/AMS_410_ISR15/cds/HK_C35/LEF/encounter/c35b4_thick-best.capTable ...
+[05/20 09:20:57     13s] Cap table was created using Encounter 10.11-s096_1.
+[05/20 09:20:57     13s] Process name: c35b4_thick-best.
+[05/20 09:20:57     13s] Allocated an empty WireEdgeEnlargement table in rc_best [1].
+[05/20 09:20:57     13s] Allocated an empty WireEdgeEnlargement table in rc_best [1].
+[05/20 09:20:57     13s] Allocated an empty WireEdgeEnlargement table in rc_best [2].
+[05/20 09:20:57     13s] Allocated an empty WireEdgeEnlargement table in rc_best [3].
+[05/20 09:20:57     13s] Allocated an empty WireEdgeEnlargement table in rc_best [4].
+[05/20 09:20:57     13s] Allocated an empty WireEdgeEnlargement table in rc_best [4].
+[05/20 09:20:57     13s] Importing multi-corner RC tables ... 
+[05/20 09:20:57     13s] Summary of Active RC-Corners : 
+[05/20 09:20:57     13s]  
+[05/20 09:20:57     13s]  Analysis View: setup_func_max
+[05/20 09:20:57     13s]     RC-Corner Name        : rc_worst
+[05/20 09:20:57     13s]     RC-Corner Index       : 0
+[05/20 09:20:57     13s]     RC-Corner Temperature : 125 Celsius
+[05/20 09:20:57     13s]     RC-Corner Cap Table   : '/softslin/AMS_410_ISR15/cds/HK_C35/LEF/encounter/c35b4_thick-worst.capTable'
+[05/20 09:20:57     13s]     RC-Corner PreRoute Res Factor         : 1
+[05/20 09:20:57     13s]     RC-Corner PreRoute Cap Factor         : 1
+[05/20 09:20:57     13s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[05/20 09:20:57     13s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[05/20 09:20:57     13s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[05/20 09:20:57     13s]     RC-Corner PreRoute Clock Res Factor   : 1
+[05/20 09:20:57     13s]     RC-Corner PreRoute Clock Cap Factor   : 1
+[05/20 09:20:57     13s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+[05/20 09:20:57     13s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+[05/20 09:20:57     13s]     RC-Corner Technology file: '/softslin/AMS_410_ISR15/assura/c35b4/c35b4thickall/RCX-worst/qrcTechFile'
+[05/20 09:20:57     13s]  
+[05/20 09:20:57     13s]  Analysis View: hold_func_min
+[05/20 09:20:57     13s]     RC-Corner Name        : rc_best
+[05/20 09:20:57     13s]     RC-Corner Index       : 1
+[05/20 09:20:57     13s]     RC-Corner Temperature : -25 Celsius
+[05/20 09:20:57     13s]     RC-Corner Cap Table   : '/softslin/AMS_410_ISR15/cds/HK_C35/LEF/encounter/c35b4_thick-best.capTable'
+[05/20 09:20:57     13s]     RC-Corner PreRoute Res Factor         : 1
+[05/20 09:20:57     13s]     RC-Corner PreRoute Cap Factor         : 1
+[05/20 09:20:57     13s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[05/20 09:20:57     13s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[05/20 09:20:57     13s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[05/20 09:20:57     13s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[05/20 09:20:57     13s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[05/20 09:20:57     13s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[05/20 09:20:57     13s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[05/20 09:20:57     13s]     RC-Corner Technology file: '/softslin/AMS_410_ISR15/assura/c35b4/c35b4thickall/RCX-best/qrcTechFile'
+[05/20 09:20:57     13s] Technology file '/softslin/AMS_410_ISR15/assura/c35b4/c35b4thickall/RCX-worst/qrcTechFile' associated with first view 'setup_func_max' will be used as the primary corner for the multi-corner extraction.
+[05/20 09:20:57     13s] 
+[05/20 09:20:57     13s] *** Summary of all messages that are not suppressed in this session:
+[05/20 09:20:57     13s] Severity  ID               Count  Summary                                  
+[05/20 09:20:57     13s] WARNING   IMPLF-200          131  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[05/20 09:20:57     13s] WARNING   IMPLF-201          608  Pin '%s' in macro '%s' has no ANTENNADIF...
+[05/20 09:20:57     13s] WARNING   IMPLF-228            1   ANTENNAOUTPUTDIFFAREA is specified and ...
+[05/20 09:20:57     13s] WARNING   IMPLF-230            1   ANTENNAINOUTDIFFAREA is specified and w...
+[05/20 09:20:57     13s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[05/20 09:20:57     13s] WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+[05/20 09:20:57     13s] WARNING   IMPCK-7003           1  Command "%s" is obsolete. Use "%s" as an...
+[05/20 09:20:57     13s] WARNING   IMPVL-324            1  Module %s in %s will overwrite the previ...
+[05/20 09:20:57     13s] WARNING   IMPVL-209            1  In Verilog file '%s', check line %d near...
+[05/20 09:20:57     13s] WARNING   IMPVL-346            1  Module '%s' is instantiated in the netli...
+[05/20 09:20:57     13s] WARNING   IMPVL-159         1401  Pin '%s' of cell '%s' is defined in LEF ...
+[05/20 09:20:57     13s] WARNING   IMPDB-2504           1  Cell '%s' is instantiated in the Verilog...
+[05/20 09:20:57     13s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[05/20 09:20:57     13s] ERROR     TECHLIB-1318        20  All the table values in the '%s' group a...
+[05/20 09:20:57     13s] *** Message Summary: 2172 warning(s), 20 error(s)
+[05/20 09:20:57     13s] 
+[05/20 09:21:11     14s] <CMD> loadIoFile ../CONSTRAINTS/msk_modulator_pads.io
+[05/20 09:21:11     14s] Reading IO assignment file "../CONSTRAINTS/msk_modulator_pads.io" ...
+[05/20 09:21:11     14s] **WARN: (IMPFP-710):	File version 0 is too old.
+[05/20 09:21:11     14s] IO file version '0' is too old, will try to place io cell any way.
+[05/20 09:21:11     14s] <CMD> floorPlan -site standard -r 1 80 80 80 80 80
+[05/20 09:21:11     14s] Adjusting Core to Left to: 82.4000. Core to Bottom to: 80.8000.
+[05/20 09:21:11     14s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[05/20 09:21:11     14s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer MET4 -stacked_via_bottom_layer MET1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[05/20 09:21:11     14s] The ring targets are set to core/block ring wires.
+[05/20 09:21:11     14s] addRing command will consider rows while creating rings.
+[05/20 09:21:11     14s] addRing command will disallow rings to go over rows.
+[05/20 09:21:11     14s] addRing command will ignore shorts while creating rings.
+[05/20 09:21:11     14s] <CMD> addRing -nets {gnd! vdd!} -type core_rings -follow core -layer {top MET1 bottom MET1 left MET2 right MET2} -width {top 20 bottom 20 left 20 right 20} -spacing {top 10 bottom 10 left 10 right 10} -offset {top 0.7 bottom 0.7 left 0.7 right 0.7} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[05/20 09:21:11     14s] #% Begin addRing (date=05/20 09:21:11, mem=765.5M)
+[05/20 09:21:11     14s] 
+[05/20 09:21:11     14s] Ring generation is complete.
+[05/20 09:21:11     14s] vias are now being generated.
+[05/20 09:21:11     14s] addRing created 8 wires.
+[05/20 09:21:11     14s] ViaGen created 8 vias, deleted 0 via to avoid violation.
+[05/20 09:21:11     14s] +--------+----------------+----------------+
+[05/20 09:21:11     14s] |  Layer |     Created    |     Deleted    |
+[05/20 09:21:11     14s] +--------+----------------+----------------+
+[05/20 09:21:11     14s] |  MET1  |        4       |       NA       |
+[05/20 09:21:11     14s] |  VIA1  |        8       |        0       |
+[05/20 09:21:11     14s] |  MET2  |        4       |       NA       |
+[05/20 09:21:11     14s] +--------+----------------+----------------+
+[05/20 09:21:11     14s] #% End addRing (date=05/20 09:21:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=767.5M, current mem=767.5M)
+[05/20 09:21:11     14s] <CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length 0 -stacked_via_top_layer MET4 -stacked_via_bottom_layer MET1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring }
+[05/20 09:21:11     14s] addStripe will allow jog to connect padcore ring and block ring.
+[05/20 09:21:11     14s] Stripes will stop at the boundary of the specified area.
+[05/20 09:21:11     14s] When breaking rings, the power planner will consider the existence of blocks.
+[05/20 09:21:11     14s] Stripes will not extend to closest target.
+[05/20 09:21:11     14s] The power planner will set stripe antenna targets to none (no trimming allowed).
+[05/20 09:21:11     14s] Stripes will not be created over regions without power planning wires.
+[05/20 09:21:11     14s] The entire stripe set will break at the domain if one of the nets is not in the domain.
+[05/20 09:21:11     14s] addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+[05/20 09:21:11     14s] AddStripe segment minimum length set to 1
+[05/20 09:21:11     14s] Offset for stripe breaking is set to 0.
+[05/20 09:21:11     14s] <CMD> addStripe -nets {gnd! vdd!} -layer MET2 -direction vertical -width 5 -spacing 0.5 -number_of_sets 1 -start_from left -start_offset 100 -stop_offset 100 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit MET4 -padcore_ring_bottom_layer_limit MET1 -block_ring_top_layer_limit MET4 -block_ring_bottom_layer_limit MET1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[05/20 09:21:11     14s] #% Begin addStripe (date=05/20 09:21:11, mem=767.5M)
+[05/20 09:21:11     14s] 
+[05/20 09:21:11     14s] Starting stripe generation ...
+[05/20 09:21:11     14s] Non-Default Mode Option Settings :
+[05/20 09:21:11     14s]   NONE
+[05/20 09:21:11     14s] Stripe generation is complete.
+[05/20 09:21:11     14s] vias are now being generated.
+[05/20 09:21:11     14s] addStripe created 2 wires.
+[05/20 09:21:11     14s] ViaGen created 4 vias, deleted 0 via to avoid violation.
+[05/20 09:21:11     14s] +--------+----------------+----------------+
+[05/20 09:21:11     14s] |  Layer |     Created    |     Deleted    |
+[05/20 09:21:11     14s] +--------+----------------+----------------+
+[05/20 09:21:11     14s] |  VIA1  |        4       |        0       |
+[05/20 09:21:11     14s] |  MET2  |        2       |       NA       |
+[05/20 09:21:11     14s] +--------+----------------+----------------+
+[05/20 09:21:11     14s] #% End addStripe (date=05/20 09:21:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=768.2M, current mem=768.2M)
+[05/20 09:21:11     14s] <CMD> clearGlobalNets
+[05/20 09:21:11     14s] <CMD> globalNetConnect vdd! -type pgpin -pin vdd! -inst * -module {}
+[05/20 09:21:11     14s] <CMD> globalNetConnect gnd! -type pgpin -pin gnd! -inst * -module {}
+[05/20 09:21:11     14s] <CMD> globalNetConnect vdd! -type pgpin -pin A -inst PWR1 -module {}
+[05/20 09:21:11     14s] <CMD> globalNetConnect gnd! -type pgpin -pin A -inst GND1 -module {}
+[05/20 09:21:11     14s] <CMD> globalNetConnect gnd! -type pgpin -pin A -inst GND2 -module {}
+[05/20 09:21:11     14s] <CMD> setSrouteMode -viaConnectToShape { noshape }
+[05/20 09:21:11     14s] <CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { MET1(1) MET4(4) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { MET1(1) MET4(4) } -nets { gnd! vdd! } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { MET1(1) MET4(4) }
+[05/20 09:21:11     14s] #% Begin sroute (date=05/20 09:21:11, mem=768.5M)
+[05/20 09:21:11     14s] *** Begin SPECIAL ROUTE on Fri May 20 09:21:11 2022 ***
+[05/20 09:21:11     14s] SPECIAL ROUTE ran on directory: /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project/implem/pnr/my_INNOVUS/WORK
+[05/20 09:21:11     14s] SPECIAL ROUTE ran on machine: cimeld10 (Linux 3.10.0-1160.62.1.el7.x86_64 x86_64 1.28Ghz)
+[05/20 09:21:11     14s] 
+[05/20 09:21:11     14s] Begin option processing ...
+[05/20 09:21:11     14s] srouteConnectPowerBump set to false
+[05/20 09:21:11     14s] routeSelectNet set to "gnd! vdd!"
+[05/20 09:21:11     14s] routeSpecial set to true
+[05/20 09:21:11     14s] srouteBlockPin set to "useLef"
+[05/20 09:21:11     14s] srouteBottomLayerLimit set to 1
+[05/20 09:21:11     14s] srouteBottomTargetLayerLimit set to 1
+[05/20 09:21:11     14s] srouteConnectConverterPin set to false
+[05/20 09:21:11     14s] srouteCrossoverViaBottomLayer set to 1
+[05/20 09:21:11     14s] srouteCrossoverViaTopLayer set to 4
+[05/20 09:21:11     14s] srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+[05/20 09:21:11     14s] srouteFollowCorePinEnd set to 3
+[05/20 09:21:11     14s] srouteJogControl set to "preferWithChanges differentLayer"
+[05/20 09:21:11     14s] srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+[05/20 09:21:11     14s] sroutePadPinAllPorts set to true
+[05/20 09:21:11     14s] sroutePreserveExistingRoutes set to true
+[05/20 09:21:11     14s] srouteRoutePowerBarPortOnBothDir set to true
+[05/20 09:21:11     14s] srouteStopBlockPin set to "nearestTarget"
+[05/20 09:21:11     14s] srouteTopLayerLimit set to 4
+[05/20 09:21:11     14s] srouteTopTargetLayerLimit set to 4
+[05/20 09:21:11     14s] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1656.00 megs.
+[05/20 09:21:11     14s] 
+[05/20 09:21:11     14s] Reading DB technology information...
+[05/20 09:21:11     14s] Finished reading DB technology information.
+[05/20 09:21:11     14s] Reading floorplan and netlist information...
+[05/20 09:21:11     14s] Finished reading floorplan and netlist information.
+[05/20 09:21:11     14s] Read in 8 layers, 4 routing layers, 1 overlap layer
+[05/20 09:21:11     14s] Read in 518 macros, 15 used
+[05/20 09:21:11     14s] Read in 20 components
+[05/20 09:21:11     14s]   16 pad components: 0 unplaced, 0 placed, 16 fixed
+[05/20 09:21:11     14s]   4 other components: 0 unplaced, 0 placed, 4 fixed
+[05/20 09:21:11     14s] Read in 13 logical pins
+[05/20 09:21:11     14s] Read in 13 nets
+[05/20 09:21:11     14s] Read in 7 special nets, 2 routed
+[05/20 09:21:11     14s] Read in 3 terminals
+[05/20 09:21:11     14s] 2 nets selected.
+[05/20 09:21:11     14s] 
+[05/20 09:21:11     14s] Begin power routing ...
+[05/20 09:21:11     14s] **WARN: (IMPSR-1253):	Cannot find any standard cell pin connected to net vdd!.
+[05/20 09:21:11     14s] Run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND'.
+[05/20 09:21:11     14s] **WARN: (IMPSR-1254):	Cannot find any block pin of net vdd!. Check netlist, or change option to include the pin.
+[05/20 09:21:11     14s] **WARN: (IMPSR-1253):	Cannot find any standard cell pin connected to net gnd!.
+[05/20 09:21:11     14s] Run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND'.
+[05/20 09:21:11     14s] **WARN: (IMPSR-1254):	Cannot find any block pin of net gnd!. Check netlist, or change option to include the pin.
+[05/20 09:21:11     14s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net vdd!.
+[05/20 09:21:11     14s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[05/20 09:21:11     14s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net vdd!.
+[05/20 09:21:11     14s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[05/20 09:21:11     14s] CPU time for FollowPin 0 seconds
+[05/20 09:21:11     14s] **WARN: (IMPSR-1255):	Cannot find any non 'CLASS CORE' pad pin of net gnd!. Use 'CLASS CORE' pad pins of net gnd! to create pad ring.
+[05/20 09:21:11     14s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net gnd!.
+[05/20 09:21:11     14s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[05/20 09:21:11     14s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net gnd!.
+[05/20 09:21:11     14s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[05/20 09:21:11     14s] CPU time for FollowPin 0 seconds
+[05/20 09:21:11     14s]   Number of IO ports routed: 3
+[05/20 09:21:11     14s]   Number of Block ports routed: 0
+[05/20 09:21:11     14s]   Number of Stripe ports routed: 0
+[05/20 09:21:11     14s]   Number of Core ports routed: 38
+[05/20 09:21:11     14s]   Number of Pad ports routed: 0
+[05/20 09:21:11     14s]   Number of Power Bump ports routed: 0
+[05/20 09:21:11     14s]   Number of Pad Ring connections: 1
+[05/20 09:21:11     14s]   Number of Followpin connections: 19
+[05/20 09:21:11     14s] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1669.00 megs.
+[05/20 09:21:11     14s] 
+[05/20 09:21:11     14s] 
+[05/20 09:21:11     14s] 
+[05/20 09:21:11     14s]  Begin updating DB with routing results ...
+[05/20 09:21:11     14s]  Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+[05/20 09:21:11     14s] Pin and blockage extraction finished
+[05/20 09:21:11     14s] 
+[05/20 09:21:11     14s] sroute created 61 wires.
+[05/20 09:21:11     14s] ViaGen created 41 vias, deleted 1 via to avoid violation.
+[05/20 09:21:11     14s] +--------+----------------+----------------+
+[05/20 09:21:11     14s] |  Layer |     Created    |     Deleted    |
+[05/20 09:21:11     14s] +--------+----------------+----------------+
+[05/20 09:21:11     14s] |  MET1  |       57       |       NA       |
+[05/20 09:21:11     14s] |  VIA1  |       41       |        1       |
+[05/20 09:21:11     14s] |  MET2  |        3       |       NA       |
+[05/20 09:21:11     14s] |  MET4  |        1       |       NA       |
+[05/20 09:21:11     14s] +--------+----------------+----------------+
+[05/20 09:21:11     14s] #% End sroute (date=05/20 09:21:11, total cpu=0:00:00.2, real=0:00:00.0, peak res=782.9M, current mem=782.9M)
+[05/20 09:21:11     14s] <CMD> setDesignMode -process 130
+[05/20 09:21:11     14s] Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+[05/20 09:21:11     14s] 	These values will be used by all post-route extraction engines, including tQuantus, IQRC and Quantus QRC extraction.
+[05/20 09:21:11     14s] 	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+[05/20 09:21:11     14s] 	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+[05/20 09:21:11     14s] 	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+[05/20 09:21:11     14s] Updating process node dependent CCOpt properties for the 130nm process node.
+[05/20 09:21:11     14s] <CMD> addEndCap -preCap ENDCAPL -postCap ENDCAPR -prefix ENDCAP
+[05/20 09:21:11     14s] **WARN: (IMPSP-5224):	Option '-preCap' for command addEndCap is obsolete and has been replaced by 'setEndCapMode -rightEdge cell_name'. 
+[05/20 09:21:11     14s] The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, 
+[05/20 09:21:11     14s] update your script to use 'setEndCapMode -rightEdge cell_name' and 'addEndCap'.
+[05/20 09:21:11     14s] **WARN: (IMPSP-5224):	Option '-postcap' for command addEndCap is obsolete and has been replaced by 'setEndCapMode -leftEdge cell_name'. 
+[05/20 09:21:11     14s] The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, 
+[05/20 09:21:11     14s] update your script to use 'setEndCapMode -rightEdge cell_name' and 'addEndCap'.
+[05/20 09:21:11     14s] #spOpts: N=130 VtWidth 
+[05/20 09:21:11     14s] Core basic site is standard
+[05/20 09:21:11     14s] Estimated cell power/ground rail width = 1.625 um
+[05/20 09:21:11     14s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[05/20 09:21:11     14s] Minimum row-size in sites for endcap insertion = 5.
+[05/20 09:21:11     14s] Minimum number of sites for row blockage       = 1.
+[05/20 09:21:11     14s] Inserted 18 pre-endcap <ENDCAPL> cells (prefix ENDCAP).
+[05/20 09:21:11     14s] Inserted 18 post-endcap <ENDCAPR> cells (prefix ENDCAP).
+[05/20 09:21:11     14s] For 36 new insts, *** Applied 5 GNC rules (cpu = 0:00:00.0)
+[05/20 09:21:11     14s] <CMD> setPlaceMode -fp false
+[05/20 09:21:11     14s] <CMD> placeDesign
+[05/20 09:21:11     14s] *** Starting placeDesign default flow ***
+[05/20 09:21:11     14s] *** Start deleteBufferTree ***
+[05/20 09:21:11     14s] Info: Detect buffers to remove automatically.
+[05/20 09:21:11     14s] Analyzing netlist ...
+[05/20 09:21:11     14s] Updating netlist
+[05/20 09:21:11     14s] 
+[05/20 09:21:11     14s] *summary: 0 instances (buffers/inverters) removed
+[05/20 09:21:11     14s] *** Finish deleteBufferTree (0:00:00.0) ***
+[05/20 09:21:11     14s] **INFO: Enable pre-place timing setting for timing analysis
+[05/20 09:21:11     14s] Set Using Default Delay Limit as 101.
+[05/20 09:21:11     14s] **WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+[05/20 09:21:11     14s] Set Default Net Delay as 0 ps.
+[05/20 09:21:11     14s] Set Default Net Load as 0 pF. 
+[05/20 09:21:11     14s] **INFO: Analyzing IO path groups for slack adjustment
+[05/20 09:21:11     14s] #################################################################################
+[05/20 09:21:11     14s] # Design Stage: PreRoute
+[05/20 09:21:11     14s] # Design Name: msk_modulator_io
+[05/20 09:21:11     14s] # Design Mode: 130nm
+[05/20 09:21:11     14s] # Analysis Mode: MMMC Non-OCV 
+[05/20 09:21:11     14s] # Parasitics Mode: No SPEF/RCDB
+[05/20 09:21:11     14s] # Signoff Settings: SI Off 
+[05/20 09:21:11     14s] #################################################################################
+[05/20 09:21:11     14s] Calculate delays in BcWc mode...
+[05/20 09:21:11     14s] Topological Sorting (REAL = 0:00:00.0, MEM = 938.0M, InitMEM = 938.0M)
+[05/20 09:21:11     14s] Start delay calculation (fullDC) (1 T). (MEM=937.992)
+[05/20 09:21:11     14s] AAE DB initialization (MEM=966.609 CPU=0:00:00.1 REAL=0:00:00.0) 
+[05/20 09:21:12     14s] Start AAE Lib Loading. (MEM=966.609)
+[05/20 09:21:12     14s] End AAE Lib Loading. (MEM=1166.89 CPU=0:00:00.0 Real=0:00:01.0)
+[05/20 09:21:12     14s] End AAE Lib Interpolated Model. (MEM=1166.89 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[05/20 09:21:12     15s] First Iteration Infinite Tw... 
+[05/20 09:21:12     15s] Total number of fetched objects 17
+[05/20 09:21:12     15s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[05/20 09:21:12     15s] End delay calculation. (MEM=1231.53 CPU=0:00:00.0 REAL=0:00:00.0)
+[05/20 09:21:12     15s] End delay calculation (fullDC). (MEM=1134.16 CPU=0:00:00.2 REAL=0:00:01.0)
+[05/20 09:21:12     15s] *** CDM Built up (cpu=0:00:00.2  real=0:00:01.0  mem= 1134.2M) ***
+[05/20 09:21:12     15s] **INFO: Disable pre-place timing setting for timing analysis
+[05/20 09:21:12     15s] Set Using Default Delay Limit as 1000.
+[05/20 09:21:12     15s] Set Default Net Delay as 1000 ps.
+[05/20 09:21:12     15s] Set Default Net Load as 0.5 pF. 
+[05/20 09:21:12     15s] **INFO: Pre-place timing setting for timing analysis already disabled
+[05/20 09:21:12     15s] *** ThreeLayerMode is automatically turned on for small designs with less than 4 layers.
+[05/20 09:21:12     15s] ThreeLayerMode is on. Timing-driven placement option disabled.
+[05/20 09:21:12     15s] Warning: No placeable instances.
+[05/20 09:21:12     15s] Warning: No placeable instances. Skip congRepair.
+[05/20 09:21:12     15s] *** Finishing placeDesign default flow ***
+[05/20 09:21:12     15s] **placeDesign ... cpu = 0: 0: 0, real = 0: 0: 1, mem = 1056.0M **
+[05/20 09:21:12     15s] 
+[05/20 09:21:12     15s] *** Summary of all messages that are not suppressed in this session:
+[05/20 09:21:12     15s] Severity  ID               Count  Summary                                  
+[05/20 09:21:12     15s] WARNING   IMPDC-1629           1  The default delay limit was set to %d. T...
+[05/20 09:21:12     15s] *** Message Summary: 1 warning(s), 0 error(s)
+[05/20 09:21:12     15s] 
+[05/20 09:21:27     16s] <CMD> setDrawView fplan
+[05/20 09:22:25     22s] <CMD> pan -56.876 -35.093
+[05/20 09:22:26     23s] <CMD> setDrawView ameba
+[05/20 09:22:27     23s] <CMD> setDrawView place
+[05/20 09:22:29     23s] <CMD> pan -320.861 336.904
+[05/20 09:22:31     23s] <CMD> fit
+[05/20 09:24:37     36s] <CMD> fit
+[05/20 09:35:22    100s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[05/20 09:35:22    100s] Innovus terminated by user interrupt.
+[05/20 09:35:22    100s] 
+[05/20 09:35:22    100s] *** Memory Usage v#1 (Current mem = 1065.059M, initial mem = 179.660M) ***
+[05/20 09:35:22    100s] 
+[05/20 09:35:22    100s] *** Summary of all messages that are not suppressed in this session:
+[05/20 09:35:22    100s] Severity  ID               Count  Summary                                  
+[05/20 09:35:22    100s] WARNING   IMPLF-200          131  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[05/20 09:35:22    100s] WARNING   IMPLF-201          608  Pin '%s' in macro '%s' has no ANTENNADIF...
+[05/20 09:35:22    100s] WARNING   IMPLF-228            1   ANTENNAOUTPUTDIFFAREA is specified and ...
+[05/20 09:35:22    100s] WARNING   IMPLF-230            1   ANTENNAINOUTDIFFAREA is specified and w...
+[05/20 09:35:22    100s] WARNING   IMPFP-710            1  File version %s is too old.              
+[05/20 09:35:22    100s] WARNING   IMPFP-325            1  Floorplan of the design is resized. All ...
+[05/20 09:35:22    100s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[05/20 09:35:22    100s] WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+[05/20 09:35:22    100s] WARNING   IMPCK-7003           1  Command "%s" is obsolete. Use "%s" as an...
+[05/20 09:35:22    100s] WARNING   IMPVL-324            1  Module %s in %s will overwrite the previ...
+[05/20 09:35:22    100s] WARNING   IMPVL-209            1  In Verilog file '%s', check line %d near...
+[05/20 09:35:22    100s] WARNING   IMPVL-346            1  Module '%s' is instantiated in the netli...
+[05/20 09:35:22    100s] WARNING   IMPVL-159         1401  Pin '%s' of cell '%s' is defined in LEF ...
+[05/20 09:35:22    100s] WARNING   IMPDB-2504           1  Cell '%s' is instantiated in the Verilog...
+[05/20 09:35:22    100s] WARNING   IMPDC-1629           1  The default delay limit was set to %d. T...
+[05/20 09:35:22    100s] WARNING   IMPSR-468            4  Cannot find any standard cell pin connec...
+[05/20 09:35:22    100s] WARNING   IMPSR-1253           2  Cannot find any standard cell pin connec...
+[05/20 09:35:22    100s] WARNING   IMPSR-1255           1  Cannot find any non 'CLASS CORE' pad pin...
+[05/20 09:35:22    100s] WARNING   IMPSR-1254           2  Cannot find any block pin of net %s. Che...
+[05/20 09:35:22    100s] WARNING   IMPSP-5224           2  Option '%s' for command addEndCap is obs...
+[05/20 09:35:22    100s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[05/20 09:35:22    100s] ERROR     TECHLIB-1318        20  All the table values in the '%s' group a...
+[05/20 09:35:22    100s] *** Message Summary: 2186 warning(s), 20 error(s)
+[05/20 09:35:22    100s] 
+[05/20 09:35:22    100s] --- Ending "Innovus" (totcpu=0:01:40, real=0:15:28, mem=1065.1M) ---
