@@ -1,0 +1,110 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/tp/xph2app/xph2app007/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project/simu/EI
+vDFF
+Z1 DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
+Z2 !s110 1653316664
+!i10b 1
+!s100 Df[Rj]Q<<U4o_iOIWXgQQ1
+IjNa>=aX]aPJTCd[m1C[0=1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 DFF_sv_unit
+S1
+R0
+w1653315858
+8../../rtl/EI/DFF.sv
+F../../rtl/EI/DFF.sv
+L0 18
+Z4 OL;L;10.7c;67
+r1
+!s85 0
+31
+Z5 !s108 1653316664.000000
+!s107 ../../rtl/EI/DFF.sv|
+!s90 +acc|-work|Lib_EI_inFIFO|../../rtl/EI/DFF.sv|
+!i113 0
+Z6 o+acc -work Lib_EI_inFIFO -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+n@d@f@f
+vinFIFO
+R1
+R2
+!i10b 1
+!s100 jX;^<R5]?:GCkYzFRBn>T1
+I30O=:4GL3GNZjdRLYTo=B3
+R3
+!s105 inFIFO_debug_sv_unit
+S1
+R0
+w1653316643
+8../../rtl/EI/inFIFO.debug.sv
+F../../rtl/EI/inFIFO.debug.sv
+Z8 L0 19
+R4
+r1
+!s85 0
+31
+R5
+!s107 ../../rtl/EI/inFIFO.debug.sv|
+!s90 +acc|-work|Lib_EI_inFIFO|../../rtl/EI/inFIFO.debug.sv|
+!i113 0
+R6
+R7
+nin@f@i@f@o
+vOS
+R1
+R2
+!i10b 1
+!s100 a[z::AkLWPLmA8@Hel@3S2
+IOmAeakF@@oI1>kRMoR<lf2
+R3
+!s105 OS_sv_unit
+S1
+R0
+w1653315871
+8../../rtl/EI/OS.sv
+F../../rtl/EI/OS.sv
+R8
+R4
+r1
+!s85 0
+31
+R5
+!s107 ../../rtl/EI/OS.sv|
+!s90 +acc|-work|Lib_EI_inFIFO|../../rtl/EI/OS.sv|
+!i113 0
+R6
+R7
+n@o@s
+vtb_FIFO
+R1
+R2
+!i10b 1
+!s100 Enz4Hm4H=jBYe`k4UddgW0
+I;dP@LT1U[8SBO_g=Wl:GY1
+R3
+!s105 tb_FIFO_sv_unit
+S1
+R0
+w1653315233
+8./tb_FIFO.sv
+F./tb_FIFO.sv
+L0 24
+R4
+r1
+!s85 0
+31
+R5
+!s107 ./tb_FIFO.sv|
+!s90 +acc|-work|Lib_EI_inFIFO|./tb_FIFO.sv|
+!i113 0
+R6
+R7
+ntb_@f@i@f@o
