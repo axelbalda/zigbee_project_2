@@ -1,0 +1,6 @@
+source config/config_RTL
+source config/config_ASIC
+source config/config_VERIF
+
+
+
