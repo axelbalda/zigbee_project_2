@@ -15,13 +15,10 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-module DEMUX144 (
-    input               inClock ,
-    input               inReset ,    
+module DEMUX144 (   
     input  [3 : 0]      inData  ,
     input  [1 : 0]	inSel   ,      
-    output [15 : 0]	outData   
-       
+    output [15 : 0]	outData       
 ) ;
  
 reg [3 : 0] s_data0;
@@ -43,8 +40,6 @@ reg [3 : 0] s_signal3 ;
 //  DEMUX 0
 /////////////////////////////////////////////////////
 DEMUX141 demux0(
-            .inClock (inClock)   ,
-            .inReset (inReset)   ,
             .inData  (inData[3]) ,
             .inSel   (inSel)     ,
             .outData (s_data0) 
@@ -55,8 +50,6 @@ DEMUX141 demux0(
 //  DEMUX 1
 /////////////////////////////////////////////////////
 DEMUX141 demux1(
-            .inClock (inClock)   ,
-            .inReset (inReset)   ,
             .inData  (inData[2]) ,
             .inSel   (inSel)     ,
             .outData (s_data1) 
@@ -67,8 +60,6 @@ DEMUX141 demux1(
 //  DEMUX 2
 /////////////////////////////////////////////////////
 DEMUX141 demux2(
-            .inClock (inClock)   ,
-            .inReset (inReset)   ,
             .inData  (inData[1]) ,
             .inSel   (inSel)     ,
             .outData (s_data2) 
@@ -79,8 +70,6 @@ DEMUX141 demux2(
 //  DEMUX 3
 /////////////////////////////////////////////////////
 DEMUX141 demux3(
-            .inClock (inClock)   ,
-            .inReset (inReset)   ,
             .inData  (inData[0]) ,
             .inSel   (inSel)     ,
             .outData (s_data3) 
