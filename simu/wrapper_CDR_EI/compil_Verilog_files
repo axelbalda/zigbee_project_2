@@ -1,6 +1,6 @@
-vdel -lib $HOME/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project/libs/LibWrp_CDR_EI -all
+vdel -lib $HOME/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project_2/libs/LibWrp_CDR_EI -all
 vlib ../../libs/LibWrp_CDR_EI 
-vmap Lib_Wrp_CDR_EI  $HOME/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project/libs/LibWrp_CDR_EI 
+vmap Lib_Wrp_CDR_EI  $HOME/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project_2/libs/LibWrp_CDR_EI 
 
 vlog +acc -work Lib_Wrp_CDR_EI ../../rtl/EI/DFF.sv
 vlog +acc -work Lib_Wrp_CDR_EI ../../rtl/EI/OS.sv
