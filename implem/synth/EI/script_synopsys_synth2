@@ -1,10 +1,10 @@
 set var_path "/tp/xph2app/xph2app101"
 
-set var_file_to_open "$var_path/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project/rtl/EI/outFIFO.debug.sv"
+set var_file_to_open "$var_path/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project_2/rtl/EI/outFIFO.debug.sv"
 analyze -library WORK -format sverilog $var_file_to_open
-set var_file_to_open "$var_path/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project/rtl/EI/OS.sv"
+set var_file_to_open "$var_path/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project_2/rtl/EI/OS.sv"
 analyze -library WORK -format sverilog $var_file_to_open
-set var_file_to_open "$var_path/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project/rtl/EI/DFF.sv"
+set var_file_to_open "$var_path/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project_2/rtl/EI/DFF.sv"
 analyze -library WORK -format sverilog $var_file_to_open
 
 
@@ -24,7 +24,7 @@ compile -exact_map -ungroup_all -auto_ungroup area
 set name_netlist "outFIFO_netlist.v"
 set name_sdc "outFIFO_1.sdc"
 
-write -hierarchy -format verilog -output $var_path/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project/simu/post_synth/EI/$name_netlist
+write -hierarchy -format verilog -output $var_path/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project_2/simu/post_synth/EI/$name_netlist
 write_sdc $var_path/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project/simu/post_synth/EI/$name_sdc
 
 

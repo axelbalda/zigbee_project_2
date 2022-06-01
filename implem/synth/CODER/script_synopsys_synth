@@ -1,5 +1,5 @@
 
-set var_file_to_open "/tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project/rtl/CODER/msk_modulator2.sv"
+set var_file_to_open "/tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/rtl/CODER/msk_modulator2.sv"
 
 analyze -library WORK -format sverilog $var_file_to_open
 elaborate msk_modulator -architecture verilog -library WORK
@@ -18,7 +18,7 @@ compile -exact_map -ungroup_all -auto_ungroup area
 set name_netlist "msk_modulator_netlist_fe2.v"
 set name_sdc "msk_modulator_fe2.sdc"
 
-write -hierarchy -format verilog -output /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project/implem/synth/$name_netlist
+write -hierarchy -format verilog -output /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/synth/$name_netlist
 write_sdc $name_sdc
 
 
