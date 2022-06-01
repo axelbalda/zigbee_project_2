@@ -1,0 +1,7 @@
+vdel -lib $HOME/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project/libs/LibDEMUX_DEMUX181 -all
+vlib ../../libs/LibDEMUX_DEMUX181
+vmap Lib_DEMUX_DEMUX181 $HOME/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project/libs/LibDEMUX_DEMUX181
+
+vlog +acc -work Lib_DEMUX_DEMUX181 ../../rtl/DEMUX/DEMUX_181.sv
+
+vlog +acc -work Lib_DEMUX_DEMUX181 ./tb_DEMUX181.sv
