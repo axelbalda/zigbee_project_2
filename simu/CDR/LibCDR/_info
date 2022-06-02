@@ -1,0 +1,212 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/tp/xph2app/xph2app105/Zigbee/zigbee_project_2/simu/CDR
+T_opt
+!s110 1654173644
+VnA@z68oh;JU8Aea3J:G<k1
+04 8 4 work cdr_test fast 0
+=5-b49691b40629-6298afcc-2b131-4d76
+o-quiet -auto_acc_if_foreign -work LibCDR
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.7c;67
+R0
+vcdr
+Z2 DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
+Z3 !s110 1654174120
+!i10b 1
+!s100 n]XeW]X:i=YWH9ZlVHjn71
+I<nz:i^Vj7[JSl?6jezo0a0
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+!s105 cdr_sv_unit
+S1
+R0
+w1654173458
+8../../rtl/CDR/cdr.sv
+F../../rtl/CDR/cdr.sv
+L0 1
+Z5 OL;L;10.7c;67
+r1
+!s85 0
+31
+Z6 !s108 1654174120.000000
+!s107 ../../rtl/CDR/cdr.sv|
+!s90 +acc|-work|LibCDR|../../rtl/CDR/cdr.sv|
+!i113 0
+Z7 o+acc -work LibCDR -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vcdr_test
+R2
+R3
+!i10b 1
+!s100 6X0DW]JA>B_ZNHUK4z:jo1
+I_PoNmKK4Sa]d3eQZZbWb40
+R4
+!s105 CDR_test_sv_unit
+S1
+R0
+w1654172676
+8CDR_test.sv
+FCDR_test.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 CDR_test.sv|
+!s90 +acc|-work|LibCDR|CDR_test.sv|
+!i113 0
+R7
+R1
+vcounter
+R2
+Z8 !s110 1654174119
+!i10b 1
+!s100 5EPcFDo[W=CYPVa9g4E6K1
+IT@o<8e=^59fnkOgolJ>YU1
+R4
+!s105 counter_sv_unit
+S1
+R0
+w1654172742
+8../../rtl/CDR/counter.sv
+F../../rtl/CDR/counter.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z9 !s108 1654174119.000000
+!s107 ../../rtl/CDR/counter.sv|
+!s90 +acc|-work|LibCDR|../../rtl/CDR/counter.sv|
+!i113 0
+R7
+R1
+vcounter_decision
+R2
+R8
+!i10b 1
+!s100 JlPAS51<T>879oVf7IIo@1
+IdTDoSmzjQ5_jaD;SkP;HG0
+R4
+!s105 counter_decision_sv_unit
+S1
+R0
+w1654172709
+8../../rtl/CDR/counter_decision.sv
+F../../rtl/CDR/counter_decision.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R9
+!s107 ../../rtl/CDR/counter_decision.sv|
+!s90 +acc|-work|LibCDR|../../rtl/CDR/counter_decision.sv|
+!i113 0
+R7
+R1
+vdecision
+R2
+R8
+!i10b 1
+!s100 >M[g2GZL>e[V=ca:9Ke;c1
+IXCbO2@NJa0I?5?@ohBQIl3
+R4
+!s105 decision_sv_unit
+S1
+R0
+w1654173630
+8../../rtl/CDR/decision.sv
+F../../rtl/CDR/decision.sv
+L0 2
+R5
+r1
+!s85 0
+31
+R9
+!s107 ../../rtl/CDR/decision.sv|
+!s90 +acc|-work|LibCDR|../../rtl/CDR/decision.sv|
+!i113 0
+R7
+R1
+vdiv
+R2
+R3
+!i10b 1
+!s100 i0bgSF_]0:9IIRI=813GK3
+I2zRf8YhhVSPGn_JAD`8S10
+R4
+!s105 divN_sv_unit
+S1
+R0
+w1654172761
+8../../rtl/CDR/divN.sv
+F../../rtl/CDR/divN.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 ../../rtl/CDR/divN.sv|
+!s90 +acc|-work|LibCDR|../../rtl/CDR/divN.sv|
+!i113 0
+R7
+R1
+vffd
+R2
+R8
+!i10b 1
+!s100 S@gDJToAB]>2Dncmf]a;`3
+I[JAZ[M[WoY[0khm@<28ll0
+R4
+!s105 ffd_sv_unit
+S1
+R0
+w1654172771
+8../../rtl/CDR/ffd.sv
+F../../rtl/CDR/ffd.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R9
+!s107 ../../rtl/CDR/ffd.sv|
+!s90 +acc|-work|LibCDR|../../rtl/CDR/ffd.sv|
+!i113 0
+R7
+R1
+vphase_detector
+R2
+R3
+!i10b 1
+!s100 OX0]3UmSkcE:o1cB]zEeH2
+IRUMCclAG>JF_Y84IL65j11
+R4
+!s105 phase_detector_sv_unit
+S1
+R0
+w1654172728
+8../../rtl/CDR/phase_detector.sv
+F../../rtl/CDR/phase_detector.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 ../../rtl/CDR/phase_detector.sv|
+!s90 +acc|-work|LibCDR|../../rtl/CDR/phase_detector.sv|
+!i113 0
+R7
+R1
