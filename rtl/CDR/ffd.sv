@@ -5,10 +5,6 @@ module ffd (
 	output	reg 	o_Q		//output data
 	);
 
-//SystemVerilog: time unit and time precision specifications
-timeunit 1ns;
-timeprecision 100ps;
-
 always @(posedge i_clk)
 begin
 	if (i_rst == 0) begin

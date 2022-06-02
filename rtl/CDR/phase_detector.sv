@@ -6,11 +6,6 @@ module phase_detector (
 	output 	reg 	o_T, 		   //for Transition: specifies phase transition
 	output	reg 	o_E 		   //for Early: specifies delay/advance
 	);
- 
-       
-//SystemVerilog: time unit and time precision specifications
-timeunit 1ns;
-timeprecision 10ps;
 
 logic T, E;
 

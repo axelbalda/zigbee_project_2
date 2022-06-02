@@ -5,11 +5,6 @@ module div (
 	input 	i_E,
 	output 	reg [5:0] o_nb_P //number of periods of 50 MHz clk (initialised at 25), to add/remove for adequate sampling
 	);
-/*
-//SystemVerilog: time unit and time precision specifications
-timeunit 1ns;
-timeprecision 100ps;
-*/
 
 initial begin
 	o_nb_P = 6'b011001;
