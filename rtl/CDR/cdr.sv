@@ -8,10 +8,6 @@ module cdr (
 	output reg	o_flag
 	);
 
-//SystemVerilog: time unit and time precision specifications
-timeunit 1ns;
-timeprecision 100ps;
-
 logic [3:0] cnt_in;
 logic [1:0] cnt_p;
 logic en_in, w_flag, w_phase;
