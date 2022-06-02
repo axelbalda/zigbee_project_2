@@ -11,10 +11,6 @@ module decision(
 	output reg 	 	o_flag
         );
 
-// SystemVerilog: time unit and time precision declaration
-timeunit 1ns;
-timeprecision 100ps;
-
 logic	phase_ech, signal_synchro;
 logic [5:0] cnt_r;
 
