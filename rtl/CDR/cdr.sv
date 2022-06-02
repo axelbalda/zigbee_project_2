@@ -68,7 +68,7 @@ end
 
 phase_detector phd1 (w_phase, w_nb_P, i_clk, i_rst, w_sT, w_sE);
 div div1 (i_clk, i_rst, w_sT, w_sE, w_nb_P);
-decision dec (w_phase, i_rst, i_clk, w_nb_P, cnt_p, cnt_in, o_data, w_flag, o_flag);
+decision dec (w_phase, i_rst, i_clk, w_nb_P, cnt_p, o_data, w_flag, o_flag);
 
 endmodule
 

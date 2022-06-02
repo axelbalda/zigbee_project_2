@@ -5,7 +5,6 @@ module decision(
 	input			i_clk,
 	input logic [5:0]	i_nb_P,
 	input logic [1:0]	i_cnt_p,
-	input logic [3:0] 	cnt_in,
 	output reg		o_data,
 
 	input reg 		i_flag,
@@ -69,10 +68,10 @@ ffd f_clk (w_m_signal_synchro, i_clk, i_rst, signal_synchro);
 always @(posedge i_clk) // sur les fronts montants de i_clk
 begin
 	if (i_rst == 1) begin // si le reset est desactivé
-		if ((w_en_dec == 1) && (cnt_in == 0)) begin // sur chaque front montant de la fréquence d'échantillonnage modifiée
+		if (i_cnt_p == 0) begin // sur chaque front montant de la fréquence d'échantillonnage modifiée
 			o_data = 1'b0;
 		end
-		else begin
+		else if (w_en_dec == 1) begin
 			o_data = ~i_phase;
 		end
 	end
