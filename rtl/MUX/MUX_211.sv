@@ -15,8 +15,8 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-module MUX411 (    
-    input  [3 : 0]      inData  ,
+module MUX211 (    
+    input  [1 : 0]      inData  ,
     input  		inSel   ,      
     output 	        outData  
 ) ;

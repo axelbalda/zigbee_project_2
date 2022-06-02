@@ -15,9 +15,9 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-module MUX411 (    
+module MUX811 (    
     input  [7 : 0]      inData  ,
-    input  [1 : 0]	inSel   ,      
+    input  [2 : 0]	inSel   ,      
     output 	        outData  
 ) ;
  
@@ -25,7 +25,7 @@ reg s_qout;
 
 assign outData   =  s_qout ;
 
-always @(posedge inClock) begin : MUX
+always_comb begin : MUX
 
     	case(inSel) 
     	

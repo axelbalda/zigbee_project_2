@@ -76,14 +76,14 @@ DEMUX141 demux3(
             ) ;
 /////////////////////////////////////////////////////
 
-always_ff @(posedge inClock) begin
+always_comb begin
 	s_signal0 <= {s_data0[0],s_data1[0],s_data2[0],s_data3[0]} ;
 	s_signal1 <= {s_data0[1],s_data1[1],s_data2[1],s_data3[1]} ;
 	s_signal2 <= {s_data0[2],s_data1[2],s_data2[2],s_data3[2]} ;
 	s_signal3 <= {s_data0[3],s_data1[3],s_data2[3],s_data3[3]} ;
 end
 
-assign outData = {s_signal0,s_signal1,s_signal2,s_signal3} ;
+assign outData = {s_signal0, s_signal1, s_signal2, s_signal3} ;
 
 endmodule
 
