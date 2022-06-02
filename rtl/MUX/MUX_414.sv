@@ -16,9 +16,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module MUX414 (   
-    input  [15 : 0]      inData  ,
+    input  [15 : 0]     inData  ,
     input  [1 : 0]	inSel   ,      
-    output 	        outData  
+    output [3:0]        outData  
 ) ;
  
 reg s_qout;

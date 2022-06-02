@@ -23,8 +23,10 @@ add wave -noupdate -expand -group OUT /tb_TOP/u_top/out_MUX_outMUX15
 add wave -noupdate -expand -group OUT /tb_TOP/u_top/out_MUX_outMUX16
 add wave -noupdate -expand -group DEBUG /tb_TOP/u_top/u_inFIFO/outEmpty
 add wave -noupdate -expand -group DEBUG /tb_TOP/u_top/u_inFIFO/outData
+add wave -noupdate -expand -group DEBUG /tb_TOP/u_top/sig_MUX_inMUX9
+add wave -noupdate -expand -group DEBUG /tb_TOP/u_top/sig_MUX_inMUX3
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {676222 ps} 0}
+WaveRestoreCursors {{Cursor 1} {7408595253 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 202
 configure wave -valuecolwidth 100
@@ -40,4 +42,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {105 ms}
+WaveRestoreZoom {0 ps} {27748556767 ps}

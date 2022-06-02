@@ -75,18 +75,18 @@ wire	[7:0]	sig_DEMUX_outDEMUX2	;
 wire 	[1:0]	sig_DEMUX_outDEMUX17	;
 wire	[1:0]	sig_DEMUX_outDEMUX18	;
 
-wire		sig_MUX_inMUX3		;  	
-wire 		sig_MUX_inMUX4		;  
-wire 		sig_MUX_inMUX5		;  	
-wire 	[1:0]	sig_MUX_inMUX6		;  
-wire 	[1:0]	sig_MUX_inMUX7		;  	
-wire 		sig_MUX_inMUX8		;  	
+wire	[1:0]	sig_MUX_inMUX3		;  	
+wire 	[1:0]	sig_MUX_inMUX4		;  
+wire 	[1:0]	sig_MUX_inMUX5		;  	
+wire 	[4:0]	sig_MUX_inMUX6		;  
+wire 	[4:0]	sig_MUX_inMUX7		;  	
+wire 	[1:0]	sig_MUX_inMUX8		;  	
 wire 	[15:0]	sig_MUX_inMUX9		;  	
 wire 	[15:0]	sig_MUX_inMUX10		; 	
-wire 		sig_MUX_inMUX11		; 	
-wire 		sig_MUX_inMUX12		;  
-wire 		sig_MUX_inMUX13		; 
-wire 		sig_MUX_inMUX14		; 	
+wire 	[1:0]	sig_MUX_inMUX11		; 	
+wire 	[1:0]	sig_MUX_inMUX12		;  
+wire 	[1:0]	sig_MUX_inMUX13		; 
+wire 	[1:0]	sig_MUX_inMUX14		; 	
 wire 	[3:0]	sig_MUX_inMUX15		;  	
 wire 	[3:0]	sig_MUX_inMUX16		; 	
 
@@ -217,8 +217,8 @@ outFIFO u_outFIFO (
 //  TEST instances
 //////////////////////////////////////////////////////////////////////////////////
 DEMUX181 u_demux1 (
-	.inData			(in_DEMUX_DEMUX1		), 
-	.inSel			(in_DEMUX_SEL1			),
+	.inData			(in_DEMUX_inDEMUX1		), 
+	.inSel			(in_DEMUX_inSEL1			),
 	.outData		(sig_DEMUX_outDEMUX1		)
 );
 
@@ -345,11 +345,11 @@ MUX811 u_mux16 (
 assign sig_MUX_inMUX3  = { sig_coder_outReady		, sig_DEMUX_outDEMUX1[1]								} ;
 assign sig_MUX_inMUX4  = { sig_inFIFO_outData		, sig_DEMUX_outDEMUX1[2]								} ;
 assign sig_MUX_inMUX5  = { sig_inFIFO_outEmpty		, sig_DEMUX_outDEMUX2[1]								} ;
-assign sig_MUX_inMUX6  = { sig_decod_outI		, sig_coder_outSinIMasked	, sig_DEMUX_outDEMUX17[1]	, 1'bz			} ;
-assign sig_MUX_inMUX7  = { sig_decod_outQ		, sig_coder_outSinQMasked	, sig_DEMUX_outDEMUX18[1]	, 1'bz			} ;
+assign sig_MUX_inMUX6  = { sig_decod_outI		, sig_coder_outSinIMasked	, sig_DEMUX_outDEMUX17[1]	, 4'bz			} ;
+assign sig_MUX_inMUX7  = { sig_decod_outQ		, sig_coder_outSinQMasked	, sig_DEMUX_outDEMUX18[1]	, 4'bz			} ;
 assign sig_MUX_inMUX8  = { sig_decod_outEOC		, sig_DEMUX_outDEMUX2[2]								} ;
 assign sig_MUX_inMUX9  = { sig_coder_outSinI		, sig_coder_outSinIMasked	, sig_MUX_outMUX6		, sig_outFIFO_outData	} ;
-assign sig_MUX_inMUX10 = { sig_coder_outSinQ		, sig_coder_outSinQMasked	, sig_MUX_outMUX7		, 1'bz			} ;
+assign sig_MUX_inMUX10 = { sig_coder_outSinQ		, sig_coder_outSinQMasked	, sig_MUX_outMUX7		, 4'bz			} ;
 assign sig_MUX_inMUX11 = { sig_cordic_outEnable		, sig_DEMUX_outDEMUX1[3]								} ;
 assign sig_MUX_inMUX12 = { sig_cdr_outFlag		, sig_DEMUX_outDEMUX1[4]								} ; 
 assign sig_MUX_inMUX13 = { sig_cdr_outData		, sig_DEMUX_outDEMUX2[4]								} ; 
