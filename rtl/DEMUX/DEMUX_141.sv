@@ -17,8 +17,8 @@
 
 module DEMUX141 (
     input               inData  ,
-    input  [1 : 0]	inSel   ,      
-    output [3 : 0]	outData  
+    input	[1 : 0]		inSel   ,      
+    output	[3 : 0]		outData  
 ) ;
  
 reg [3 : 0] s_qout;

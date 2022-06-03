@@ -16,9 +16,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module DEMUX144 (   
-    input  [3 : 0]      inData  ,
-    input  [1 : 0]	inSel   ,      
-    output [15 : 0]	outData       
+    input   [3 : 0]     inData  ,
+    input   [1 : 0]     inSel   ,      
+    output  [15 : 0]    outData       
 ) ;
  
 reg [3 : 0] s_data0;

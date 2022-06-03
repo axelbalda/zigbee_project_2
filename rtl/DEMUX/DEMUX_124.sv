@@ -16,15 +16,15 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module DEMUX124 (   
-    input  [15 : 0]     inData  ,
-    input  [1 : 0]	inSel   ,      
-    output [7 : 0]	outData       
+    input  [3 : 0]      inData  ,
+    input  [1 : 0]	    inSel   ,      
+    output [7 : 0]	    outData       
 ) ;
  
-reg [3 : 0] s_data0;
-reg [3 : 0] s_data1;
-reg [3 : 0] s_data2;
-reg [3 : 0] s_data3;
+reg [1 : 0] s_data0;
+reg [1 : 0] s_data1;
+reg [1 : 0] s_data2;
+reg [1 : 0] s_data3;
 
 reg [3 : 0] s_signal0 ;
 reg [3 : 0] s_signal1 ;
@@ -71,8 +71,8 @@ DEMUX121 demux3(
 /////////////////////////////////////////////////////
 
 always_comb begin
-	s_signal0 <= {s_data0[0],s_data1[0],s_data2[0],s_data3[0]} ;
-	s_signal1 <= {s_data0[1],s_data1[1],s_data2[1],s_data3[1]} ;
+	s_signal0 <= {s_data0[0], s_data1[0], s_data2[0], s_data3[0]} ;
+	s_signal1 <= {s_data0[1], s_data1[1], s_data2[1], s_data3[1]} ;
 end
 
 assign outData = {s_signal0, s_signal1} ;

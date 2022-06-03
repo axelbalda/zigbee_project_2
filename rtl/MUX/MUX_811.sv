@@ -16,9 +16,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module MUX811 (    
-    input  [7 : 0]      inData  ,
-    input  [2 : 0]	inSel   ,      
-    output 	        outData  
+    input	[7 : 0]		inData  ,
+    input	[2 : 0]		inSel   ,      
+    output				outData  
 ) ;
  
 reg s_qout;
