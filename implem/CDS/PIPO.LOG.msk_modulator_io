@@ -2,24 +2,24 @@
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.6-64b 12/07/2015 20:15 (sjfnl008) $
           : sub-version  IC6.1.6-64b.500.14 
-Started at: 01-Jun-2022  15:22:04
+Started at: 03-Jun-2022  17:48:10
 User Name : xph2app102
 Host Name : cimeld105
-Directory : /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project/implem/CDS
+Directory : /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/CDS
 CADENCE Design Systems, Inc.
 ********************************************************************************
 Info: Cellview Rev Num:99,  Tech Rev Num:59
 
-WARNING (XSTRM-20): Output Stream file '/tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project/implem/CDS/msk_modulator_io.calibre.db' already exists. It will be overwritten.
+WARNING (XSTRM-20): Output Stream file '/tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/CDS/msk_modulator_io.calibre.db' already exists. It will be overwritten.
 INFO (XSTRM-217): Reading the layer map file, /softl1/AMS_410_ISR15/cds/HK_C35/TECH_C35B4/TECH_C35B4.layermap
 INFO (XSTRM-162): You have not used the viaMap option. If the OpenAccess design has native oaVia instances, use the -viaMap option for preserving oaVia instances in a Stream Out - Stream In round trip. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design.  For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
 
 Summary of Options :
 library                                 test_drc
-strmFile                                /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project/implem/CDS/msk_modulator_io.calibre.db
+strmFile                                /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/CDS/msk_modulator_io.calibre.db
 topCell                                 msk_modulator_io
 view                                    layout
-runDir                                  /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project/implem/CDS/
+runDir                                  /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/CDS/
 logFile                                 PIPO.LOG.msk_modulator_io
 techLib                                 TECH_C35B4
 maxVertices                             1024
@@ -28,62 +28,63 @@ userSkillFile                           /softslin/AMS_410_ISR15/cds/HK_C35/skill
 case                                    Preserve
 convertDot                              node
 
-INFO (XSTRM-223): 1. Translating cellView CORELIB/OAI222/layout as STRUCTURE OAI222
+INFO (XSTRM-223): 1. Translating cellView CORELIB/CLKBU8/layout as STRUCTURE CLKBU8
 WARNING (XSTRM-35): The objects in the layer-purpose pair 'MET1:pin' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
-INFO (XSTRM-223): 2. Translating cellView CORELIB/OAI212/layout as STRUCTURE OAI212
-INFO (XSTRM-223): 3. Translating cellView CORELIB/ADD22/layout as STRUCTURE ADD22
-INFO (XSTRM-223): 4. Translating cellView CORELIB/DF3/layout as STRUCTURE DF3
-INFO (XSTRM-223): 5. Translating cellView CORELIB/DFE1/layout as STRUCTURE DFE1
-INFO (XSTRM-223): 6. Translating cellView CORELIB/NOR21/layout as STRUCTURE NOR21
-INFO (XSTRM-223): 7. Translating cellView CORELIB/NAND22/layout as STRUCTURE NAND22
-INFO (XSTRM-223): 8. Translating cellView CORELIB/INV3/layout as STRUCTURE INV3
-INFO (XSTRM-223): 9. Translating cellView CORELIB/AOI221/layout as STRUCTURE AOI221
-INFO (XSTRM-223): 10. Translating cellView CORELIB/NAND41/layout as STRUCTURE NAND41
-INFO (XSTRM-223): 11. Translating cellView CORELIB/AOI211/layout as STRUCTURE AOI211
-INFO (XSTRM-223): 12. Translating cellView CORELIB/AOI2111/layout as STRUCTURE AOI2111
-INFO (XSTRM-223): 13. Translating cellView CORELIB/OAI311/layout as STRUCTURE OAI311
-INFO (XSTRM-223): 14. Translating cellView CORELIB/OAI2111/layout as STRUCTURE OAI2111
-INFO (XSTRM-223): 15. Translating cellView CORELIB/NAND31/layout as STRUCTURE NAND31
-INFO (XSTRM-223): 16. Translating cellView CORELIB/AOI311/layout as STRUCTURE AOI311
-INFO (XSTRM-223): 17. Translating cellView CORELIB/NOR31/layout as STRUCTURE NOR31
-INFO (XSTRM-223): 18. Translating cellView CORELIB/XNR21/layout as STRUCTURE XNR21
-INFO (XSTRM-223): 19. Translating cellView CORELIB/NOR40/layout as STRUCTURE NOR40
-INFO (XSTRM-223): 20. Translating cellView CORELIB/XOR21/layout as STRUCTURE XOR21
-INFO (XSTRM-223): 21. Translating cellView IOLIB_4M/g_padonly_VIA2_C/layout as STRUCTURE g_padonly_VIA2_C
-INFO (XSTRM-223): 22. Translating cellView IOLIB_4M/g_padonly_VIA2/layout as STRUCTURE g_padonly_VIA2
-INFO (XSTRM-223): 23. Translating cellView IOLIB_4M/g_padonly_VIA3_C/layout as STRUCTURE g_padonly_VIA3_C
-INFO (XSTRM-223): 24. Translating cellView IOLIB_4M/g_padonly_VIA3/layout as STRUCTURE g_padonly_VIA3
-INFO (XSTRM-223): 25. Translating cellView IOLIB_4M/g_padonly_VIA1_C/layout as STRUCTURE g_padonly_VIA1_C
-INFO (XSTRM-223): 26. Translating cellView IOLIB_4M/g_padonly_VIA1/layout as STRUCTURE g_padonly_VIA1
-INFO (XSTRM-223): 27. Translating cellView IOLIB_4M/g_padonly/layout as STRUCTURE g_padonly
-INFO (XSTRM-223): 28. Translating cellView IOLIB_4M/ITP/layout as STRUCTURE ITP
+INFO (XSTRM-223): 2. Translating cellView CORELIB/OAI222/layout as STRUCTURE OAI222
+INFO (XSTRM-223): 3. Translating cellView CORELIB/OAI212/layout as STRUCTURE OAI212
+INFO (XSTRM-223): 4. Translating cellView CORELIB/ADD22/layout as STRUCTURE ADD22
+INFO (XSTRM-223): 5. Translating cellView CORELIB/DF3/layout as STRUCTURE DF3
+INFO (XSTRM-223): 6. Translating cellView CORELIB/DFE1/layout as STRUCTURE DFE1
+INFO (XSTRM-223): 7. Translating cellView CORELIB/NOR21/layout as STRUCTURE NOR21
+INFO (XSTRM-223): 8. Translating cellView CORELIB/NAND22/layout as STRUCTURE NAND22
+INFO (XSTRM-223): 9. Translating cellView CORELIB/INV3/layout as STRUCTURE INV3
+INFO (XSTRM-223): 10. Translating cellView CORELIB/AOI221/layout as STRUCTURE AOI221
+INFO (XSTRM-223): 11. Translating cellView CORELIB/NAND41/layout as STRUCTURE NAND41
+INFO (XSTRM-223): 12. Translating cellView CORELIB/AOI211/layout as STRUCTURE AOI211
+INFO (XSTRM-223): 13. Translating cellView CORELIB/AOI2111/layout as STRUCTURE AOI2111
+INFO (XSTRM-223): 14. Translating cellView CORELIB/OAI311/layout as STRUCTURE OAI311
+INFO (XSTRM-223): 15. Translating cellView CORELIB/OAI2111/layout as STRUCTURE OAI2111
+INFO (XSTRM-223): 16. Translating cellView CORELIB/NAND31/layout as STRUCTURE NAND31
+INFO (XSTRM-223): 17. Translating cellView CORELIB/AOI311/layout as STRUCTURE AOI311
+INFO (XSTRM-223): 18. Translating cellView CORELIB/NOR31/layout as STRUCTURE NOR31
+INFO (XSTRM-223): 19. Translating cellView CORELIB/XNR21/layout as STRUCTURE XNR21
+INFO (XSTRM-223): 20. Translating cellView CORELIB/NOR40/layout as STRUCTURE NOR40
+INFO (XSTRM-223): 21. Translating cellView CORELIB/XOR21/layout as STRUCTURE XOR21
+INFO (XSTRM-223): 22. Translating cellView IOLIB_4M/g_padonly_VIA2_C/layout as STRUCTURE g_padonly_VIA2_C
+INFO (XSTRM-223): 23. Translating cellView IOLIB_4M/g_padonly_VIA2/layout as STRUCTURE g_padonly_VIA2
+INFO (XSTRM-223): 24. Translating cellView IOLIB_4M/g_padonly_VIA3_C/layout as STRUCTURE g_padonly_VIA3_C
+INFO (XSTRM-223): 25. Translating cellView IOLIB_4M/g_padonly_VIA3/layout as STRUCTURE g_padonly_VIA3
+INFO (XSTRM-223): 26. Translating cellView IOLIB_4M/g_padonly_VIA1_C/layout as STRUCTURE g_padonly_VIA1_C
+INFO (XSTRM-223): 27. Translating cellView IOLIB_4M/g_padonly_VIA1/layout as STRUCTURE g_padonly_VIA1
+INFO (XSTRM-223): 28. Translating cellView IOLIB_4M/g_padonly/layout as STRUCTURE g_padonly
+INFO (XSTRM-223): 29. Translating cellView IOLIB_4M/ITP/layout as STRUCTURE ITP
 WARNING (XSTRM-35): The objects in the layer-purpose pair 'MET4:pin' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
 WARNING (XSTRM-35): The objects in the layer-purpose pair 'MET2:pin' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
 WARNING (XSTRM-35): The objects in the layer-purpose pair 'MET3:pin' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
 WARNING (XSTRM-35): The objects in the layer-purpose pair 'background:drawing' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
-INFO (XSTRM-223): 29. Translating cellView IOLIB_4M/BU12SP/layout as STRUCTURE BU12SP
-INFO (XSTRM-223): 30. Translating cellView IOLIB_4M/VDD3ALLP/layout as STRUCTURE VDD3ALLP
-INFO (XSTRM-223): 31. Translating cellView IOLIB_4M/GND3ALLP/layout as STRUCTURE GND3ALLP
+INFO (XSTRM-223): 30. Translating cellView IOLIB_4M/BU12SP/layout as STRUCTURE BU12SP
+INFO (XSTRM-223): 31. Translating cellView IOLIB_4M/VDD3ALLP/layout as STRUCTURE VDD3ALLP
+INFO (XSTRM-223): 32. Translating cellView IOLIB_4M/GND3ALLP/layout as STRUCTURE GND3ALLP
 WARNING (XSTRM-35): The objects in the layer-purpose pair 'changedLayer:tool0' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
-INFO (XSTRM-223): 32. Translating cellView IOLIB_4M/CORNERP/layout as STRUCTURE CORNERP
-INFO (XSTRM-223): 33. Translating cellView CORELIB/ENDCAPL/layout as STRUCTURE ENDCAPL
-INFO (XSTRM-223): 34. Translating cellView CORELIB/ENDCAPR/layout as STRUCTURE ENDCAPR
-INFO (XSTRM-223): 35. Translating cellView test_drc/VIA1_C/layout as STRUCTURE VIA1_C
-INFO (XSTRM-223): 36. Translating cellView test_drc/VIA2_C/layout as STRUCTURE VIA2_C
-INFO (XSTRM-223): 37. Translating cellView test_drc/VIA3_C/layout as STRUCTURE VIA3_C
-INFO (XSTRM-223): 38. Translating cellView test_drc/msk_modulator_io_VIA0/layout as STRUCTURE msk_modulator_io_VIA0
-INFO (XSTRM-223): 39. Translating cellView test_drc/msk_modulator_io_VIA1/layout as STRUCTURE msk_modulator_io_VIA1
-INFO (XSTRM-223): 40. Translating cellView test_drc/msk_modulator_io_VIA2/layout as STRUCTURE msk_modulator_io_VIA2
-INFO (XSTRM-223): 41. Translating cellView test_drc/msk_modulator_io_VIA3/layout as STRUCTURE msk_modulator_io_VIA3
-INFO (XSTRM-223): 42. Translating cellView test_drc/msk_modulator_io_VIA4/layout as STRUCTURE msk_modulator_io_VIA4
-INFO (XSTRM-223): 43. Translating cellView test_drc/msk_modulator_io/layout as STRUCTURE msk_modulator_io
+INFO (XSTRM-223): 33. Translating cellView IOLIB_4M/CORNERP/layout as STRUCTURE CORNERP
+INFO (XSTRM-223): 34. Translating cellView CORELIB/ENDCAPL/layout as STRUCTURE ENDCAPL
+INFO (XSTRM-223): 35. Translating cellView CORELIB/ENDCAPR/layout as STRUCTURE ENDCAPR
+INFO (XSTRM-223): 36. Translating cellView test_drc/VIA3_C/layout as STRUCTURE VIA3_C
+INFO (XSTRM-223): 37. Translating cellView test_drc/VIA2_C/layout as STRUCTURE VIA2_C
+INFO (XSTRM-223): 38. Translating cellView test_drc/VIA1_C/layout as STRUCTURE VIA1_C
+INFO (XSTRM-223): 39. Translating cellView test_drc/msk_modulator_io_VIA0/layout as STRUCTURE msk_modulator_io_VIA0
+INFO (XSTRM-223): 40. Translating cellView test_drc/msk_modulator_io_VIA1/layout as STRUCTURE msk_modulator_io_VIA1
+INFO (XSTRM-223): 41. Translating cellView test_drc/msk_modulator_io_VIA2/layout as STRUCTURE msk_modulator_io_VIA2
+INFO (XSTRM-223): 42. Translating cellView test_drc/msk_modulator_io_VIA3/layout as STRUCTURE msk_modulator_io_VIA3
+INFO (XSTRM-223): 43. Translating cellView test_drc/msk_modulator_io_VIA4/layout as STRUCTURE msk_modulator_io_VIA4
+INFO (XSTRM-223): 44. Translating cellView test_drc/msk_modulator_io/layout as STRUCTURE msk_modulator_io
 
 Summary of Objects Translated:
-	Scalar Instances:                       4761
+	Scalar Instances:                       4822
 	Array Instances:                        113
-	Polygons:                               1334
-	Paths:                                  2809
-	Rectangles:                             75411
+	Polygons:                               1347
+	Paths:                                  2807
+	Rectangles:                             77796
 	Lines:                                  0
 	Arcs:                                   0
 	Donuts:                                 0
@@ -99,9 +100,9 @@ Summary of Objects Translated:
 	Custom Vias:                            0
 	CdsGen Vias:                            0
 	Pathsegs:                               0
-	Text:                                   915
+	Text:                                   382
 	TextDisplay:                            0
-	Cells:                                  43
+	Cells:                                  44
 
-Elapsed Time: 1.1s   User Time: 0.2s   CPU Time: 0.1s   Peak VM: 12400KB
+Elapsed Time: 1.0s   User Time: 0.2s   CPU Time: 0.1s   Peak VM: 12336KB
 INFO (XSTRM-234): Translation completed. '0' error(s) and '7' warning(s) found.

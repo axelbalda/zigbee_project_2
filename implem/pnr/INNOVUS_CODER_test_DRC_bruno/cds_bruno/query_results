@@ -1,0 +1,3 @@
+mgc_rve_context_lcv "test_drc_bruno" "msk_modulator_io" "layout" 1000
+mp 4 536.371 658.175 536.375 658.175 536.375 659.975 536.371 659.975
+mgc_rve_zoom 536.371 657.79 536.375 660.36 1
