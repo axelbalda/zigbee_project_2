@@ -15,13 +15,10 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-module DEMUX144 (
-    input               inClock ,
-    input               inReset ,    
-    input  [3 : 0]      inData  ,
-    input  [1 : 0]	inSel   ,      
-    output [15 : 0]	outData   
-       
+module DEMUX144 (   
+    input   [3 : 0]     inData  ,
+    input   [1 : 0]     inSel   ,      
+    output  [15 : 0]    outData       
 ) ;
  
 reg [3 : 0] s_data0;
@@ -43,8 +40,6 @@ reg [3 : 0] s_signal3 ;
 //  DEMUX 0
 /////////////////////////////////////////////////////
 DEMUX141 demux0(
-            .inClock (inClock)   ,
-            .inReset (inReset)   ,
             .inData  (inData[3]) ,
             .inSel   (inSel)     ,
             .outData (s_data0) 
@@ -55,8 +50,6 @@ DEMUX141 demux0(
 //  DEMUX 1
 /////////////////////////////////////////////////////
 DEMUX141 demux1(
-            .inClock (inClock)   ,
-            .inReset (inReset)   ,
             .inData  (inData[2]) ,
             .inSel   (inSel)     ,
             .outData (s_data1) 
@@ -67,8 +60,6 @@ DEMUX141 demux1(
 //  DEMUX 2
 /////////////////////////////////////////////////////
 DEMUX141 demux2(
-            .inClock (inClock)   ,
-            .inReset (inReset)   ,
             .inData  (inData[1]) ,
             .inSel   (inSel)     ,
             .outData (s_data2) 
@@ -79,22 +70,20 @@ DEMUX141 demux2(
 //  DEMUX 3
 /////////////////////////////////////////////////////
 DEMUX141 demux3(
-            .inClock (inClock)   ,
-            .inReset (inReset)   ,
             .inData  (inData[0]) ,
             .inSel   (inSel)     ,
             .outData (s_data3) 
             ) ;
 /////////////////////////////////////////////////////
 
-always_ff @(posedge inClock) begin
+always_comb begin
 	s_signal0 <= {s_data0[0],s_data1[0],s_data2[0],s_data3[0]} ;
 	s_signal1 <= {s_data0[1],s_data1[1],s_data2[1],s_data3[1]} ;
 	s_signal2 <= {s_data0[2],s_data1[2],s_data2[2],s_data3[2]} ;
 	s_signal3 <= {s_data0[3],s_data1[3],s_data2[3],s_data3[3]} ;
 end
 
-assign outData = {s_signal0,s_signal1,s_signal2,s_signal3} ;
+assign outData = {s_signal0, s_signal1, s_signal2, s_signal3} ;
 
 endmodule
 

@@ -7,7 +7,6 @@ timeprecision 10ps;
 
 // Enumeration
 logic   i_phase;
-logic	expected;
 logic   i_rst;
 logic 	i_flag;
 
@@ -32,7 +31,6 @@ cdr cdr1 (.i_clk(i_clk), .i_rst(i_rst), .i_phase(i_phase), .i_flag(i_flag));
 			i_flag = 1'b0;
 			i_rst = 1'b0;
 			i_phase = 1'b0;
-			expected = 1'b0;
 			#20  i_rst = 1'b1;
 
 			#500 i_phase = 1'b0;
@@ -43,7 +41,7 @@ cdr cdr1 (.i_clk(i_clk), .i_rst(i_rst), .i_phase(i_phase), .i_flag(i_flag));
 			#500 i_phase = 1'b0;
 */
 			#500 i_phase = 1'b1;
-			#560 i_phase = 1'b0;
+			#500 i_phase = 1'b0;
 
 			#500 i_phase = 1'b1;
 			i_flag = 1'b1;	
@@ -118,7 +116,9 @@ cdr cdr1 (.i_clk(i_clk), .i_rst(i_rst), .i_phase(i_phase), .i_flag(i_flag));
 			#(`DELAY) i_phase = 1'b1;
 			#(`DELAY) i_phase = 1'b0;
 			#(`DELAY) i_phase = 1'b1;
+			i_rst = 1'b0;
 			#(`DELAY) i_phase = 1'b0;
+			i_rst = 1'b1;
 			#(`DELAY) i_phase = 1'b1;
 			#(`DELAY) i_phase = 1'b0;
 			#(`DELAY) i_phase = 1'b1;

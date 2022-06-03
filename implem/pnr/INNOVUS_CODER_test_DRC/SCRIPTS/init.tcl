@@ -1,5 +1,6 @@
 source ../SCRIPTS/vars.tcl
 source ../SCRIPTS/amsSetup.tcl
+source ../SCRIPTS/tool_box.tcl
 
 set init_layout_view ""
 set init_abstract_name ""

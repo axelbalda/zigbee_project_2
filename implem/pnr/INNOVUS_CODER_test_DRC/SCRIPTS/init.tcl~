@@ -1,11 +1,13 @@
 source ../SCRIPTS/vars.tcl
 source ../SCRIPTS/amsSetup.tcl
+source ../SCRIPTS/tool_box.tcl
+
 set init_layout_view ""
 set init_abstract_name ""
 
 #A corriger pour avoir les IOs
 #set init_verilog "./INPUT_DATA/filter_io.v"
-set init_verilog "../INPUT_DATA/msk_modulator_io.v"
+set init_verilog "../INPUT_DATA/msk_modulator_netlist_fe2.v ../INPUT_DATA/msk_modulator_io.v"
 
 set init_mmmc_file "../SCRIPTS/view_definition.tcl"
 set init_lef_file "/softslin/AMS_410_ISR15/cds/HK_C35/LEF/c35b4/c35b4.lef /softslin/AMS_410_ISR15/cds/HK_C35/LEF/c35b4/CORELIB.lef /softslin/AMS_410_ISR15/cds/HK_C35/LEF/c35b4/IOLIB_4M.lef"

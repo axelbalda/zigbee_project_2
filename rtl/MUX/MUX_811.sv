@@ -15,23 +15,18 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-module MUX411 (
-    input               inClock ,
-    input               inReset ,    
-    input  [7 : 0]      inData  ,
-    input  [1 : 0]	inSel   ,      
-    output 	        outData  
+module MUX811 (    
+    input	[7 : 0]		inData  ,
+    input	[2 : 0]		inSel   ,      
+    output				outData  
 ) ;
  
 reg s_qout;
 
 assign outData   =  s_qout ;
 
-always @(posedge inClock) begin : MUX
-    if(inReset == 1'b0) begin
-        s_qout <= inData[0];
-    end
-    else begin
+always_comb begin : MUX
+
     	case(inSel) 
     	
     		3'b000   : begin
@@ -60,7 +55,7 @@ always @(posedge inClock) begin : MUX
     		end
 
     	endcase
-    end
+    
 end
 
 endmodule
