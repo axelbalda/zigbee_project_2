@@ -7,7 +7,7 @@
 // Module Name: MUX_1bit
 // Project Name: zigbee_project
 // Tool Versions: VIVADO 2018.3
-// Description: MUX 4:1 (1 bit)
+// Description: DEMUX 1:4 (1 bit)
 //
 //
 // Revision:
@@ -15,13 +15,13 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-module MUX411 (    
-    input	[3 : 0]		inData  ,
-    input	[1 : 0]		inSel   ,      
-    output				outData  
+module DEMUX121 (
+    input               inData  ,
+    input 				inSel   ,      
+    output	[1 : 0]		outData  
 ) ;
  
-reg s_qout;
+reg [1 : 0] s_qout;
 
 assign outData   =  s_qout ;
 
@@ -29,21 +29,14 @@ always_comb begin : MUX
 
 	case(inSel) 
 
-		2'b00   : begin
-			s_qout <= inData[0];
+		1'b0   : begin
+			s_qout <= {1'bz, inData};
 		end		
-		2'b01   : begin
-			s_qout <= inData[1];
+		1'b1   : begin
+			s_qout <= {inData, 1'bz};
 		end
-		2'b10   : begin
-			s_qout <= inData[2];
-		end
-		2'b11   : begin
-			s_qout <= inData[3];
-		end
-
+		
 	endcase
-    
 end
 
 endmodule

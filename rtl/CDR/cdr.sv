@@ -8,9 +8,11 @@ module cdr (
 	output reg	o_flag
 	);
 
-logic [3:0] cnt_in;
+logic [3:0] cnt_in; //permet de compter les i_flag
 logic [1:0] cnt_p;
-logic en_in, w_flag, w_phase;
+logic en_in;
+logic w_flag; //flag en entree du bloc de decision 
+logic w_phase, w_mux_phase;
 wire w_sT, w_sE;
 wire [5:0] w_nb_P;
 
@@ -22,8 +24,8 @@ initial begin
 	w_flag = 1'b0;
 end
 
-assign w_phase = (en_in) ? i_phase : w_phase;
-
+assign w_mux_phase = (en_in) ? i_phase : w_phase;
+ffd ff_phase(w_mux_phase, i_clk, i_rst, w_phase);
 //assign w_flag = (en_in) ? i_flag : w_flag;
 
 always @(posedge i_clk) begin

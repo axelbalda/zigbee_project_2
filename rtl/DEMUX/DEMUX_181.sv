@@ -16,9 +16,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module DEMUX181 (  
-    input               inData  ,
-    input  [2 : 0]	inSel   ,      
-    output [7 : 0]	outData  
+    input				inData  ,
+    input	[2 : 0]		inSel   ,      
+    output	[7 : 0]		outData  
 ) ;
  
 reg [7 : 0] s_qout;
