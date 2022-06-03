@@ -30,14 +30,14 @@ module TOP(
 //////////////////////////////////////////////////////////////////////////////////
 //  WIRES FOR MODULES
 //////////////////////////////////////////////////////////////////////////////////
-wire 		sig_inFIFO_inWriteEnable		;
-wire 		sig_inFIFO_outData	 			;
-wire 		sig_inFIFO_inReadEnable	 		;
-wire 		sig_inFIFO_outEmpty	 			;
+wire 			sig_inFIFO_inWriteEnable	;
+wire 			sig_inFIFO_outData	 		;
+wire 			sig_inFIFO_inReadEnable		;
+wire 			sig_inFIFO_outEmpty	 		;
 
-wire 		sig_coder_inData	 			;
-wire 		sig_coder_outReady				;
-wire 		sig_coder_inEmpty	 			;
+wire 			sig_coder_inData	 		;
+wire 			sig_coder_outReady			;
+wire 			sig_coder_inEmpty	 		;
 wire	[3:0]	sig_coder_outSinI 	 		;
 wire	[3:0]	sig_coder_outSinQ	 		;
 wire	[3:0]	sig_coder_outSinIMasked		;

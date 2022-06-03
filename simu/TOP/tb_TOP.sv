@@ -4,7 +4,7 @@
 // Company:
 // Engineer:
 //
-// Create Date: 17.03.2022 16:05:32
+// Create Date: 02.06.2022 16:05:32
 // Design Name:
 // Module Name: tb_TOP
 // Project Name:
@@ -68,10 +68,15 @@ initial begin : init
 	inSEL17			=	1'b0	;
 end
  
-
+//////////////////////////////////////////////////////////////////////////////////
+//  CLOCK
+//////////////////////////////////////////////////////////////////////////////////
 always #10 	inClock = ~inClock ;
+//////////////////////////////////////////////////////////////////////////////////
 
-
+//////////////////////////////////////////////////////////////////////////////////
+//  RESET
+//////////////////////////////////////////////////////////////////////////////////
 initial begin : RESET
 	for(int i = 0; i < 5; i++) begin
 		inReset = 1'b0 ;
@@ -79,36 +84,74 @@ initial begin : RESET
 	end
 	inReset = 1'b1 ;
 end
+//////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////////
+//  SEL
+//////////////////////////////////////////////////////////////////////////////////
+initial begin : SELECT
+	for(int i = 0; i < 5; i++) begin  // RESET TIME
+		#CLK_PERIOD ;	
+	end
+	
+	// STAND ALONE
+	inSEL1			=	3'b0	;	inSEL2			=	3'b0	;	inSEL3			=	1'b0	;
+	inSEL6			=	2'b0	;	inSEL9			=	2'b0	;	inSEL11			=	1'b0	;
+	inSEL12			=	1'b0	;	inSEL15			=	2'b0	;	inSEL17			=	1'b0	;
 
 
 
+	
+end
+//////////////////////////////////////////////////////////////////////////////////
 
+//////////////////////////////////////////////////////////////////////////////////
+//  DATA
+//////////////////////////////////////////////////////////////////////////////////
+initial begin : DATA
+	for(int i = 0; i < 6; i++) begin // RESET TIME + 1
+		#CLK_PERIOD ;	
+	end
+	
+	inData			=	4'b1101	;	inReadEnable	=	1'b1	;
+	inDEMUX1		=	1'b1	;	inDEMUX2		=	1'b1	;
+	inDEMUX17		=	4'b0	;	inDEMUX18		=	4'b0	; 
+
+	
+end
+//////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////////
+//  TOP
+//////////////////////////////////////////////////////////////////////////////////
 TOP u_top (
-	.inClock			(inClock)	,
-	.inReset			(inReset)	,
-	.in_inFIFO_inData		(inData)	, 
-	.in_outFIFO_inReadEnable	(inReadEnable)	, 
+	.inClock					(inClock		) ,
+	.inReset					(inReset		) ,
+	.in_inFIFO_inData			(inData			) , 
+	.in_outFIFO_inReadEnable	(inReadEnable	) , 
 
-	.in_DEMUX_inDEMUX1		(inDEMUX1)	,
-	.in_DEMUX_inDEMUX2		(inDEMUX2)	,
-	.in_DEMUX_inDEMUX17		(inDEMUX17)	,   
-	.in_DEMUX_inDEMUX18		(inDEMUX18)	,   
+	.in_DEMUX_inDEMUX1			(inDEMUX1		) ,
+	.in_DEMUX_inDEMUX2			(inDEMUX2		),
+	.in_DEMUX_inDEMUX17			(inDEMUX17		) ,   
+	.in_DEMUX_inDEMUX18			(inDEMUX18		) ,   
 
-	.in_DEMUX_inSEL1		(inSEL1)	, 
-	.in_DEMUX_inSEL2		(inSEL2)	, 
-	.in_MUX_inSEL3			(inSEL3)	, 
-	.in_MUX_inSEL6			(inSEL6)	, 
-	.in_MUX_inSEL9			(inSEL9)	, 
-	.in_MUX_inSEL11			(inSEL11)	, 
-	.in_MUX_inSEL12			(inSEL12)	, 
-	.in_MUX_inSEL15			(inSEL15)	, 
-	.in_DEMUX_inSEL17		(inSEL17)	,  
+	.in_DEMUX_inSEL1			(inSEL1			) , 
+	.in_DEMUX_inSEL2			(inSEL2			) , 
+	.in_MUX_inSEL3				(inSEL3			) , 
+	.in_MUX_inSEL6				(inSEL6			) , 
+	.in_MUX_inSEL9				(inSEL9			) , 
+	.in_MUX_inSEL11				(inSEL11		) , 
+	.in_MUX_inSEL12				(inSEL12		) , 
+	.in_MUX_inSEL15				(inSEL15		) , 
+	.in_DEMUX_inSEL17			(inSEL17		) ,  
 
-	.out_MUX_outMUX9		(outMUX9)	,	
-	.out_MUX_outMUX10		(outMUX10)	,	
-	.out_MUX_outMUX15		(outMUX15)	,	
-	.out_MUX_outMUX16		(outMUX16)
+	.out_MUX_outMUX9			(outMUX9		) ,	
+	.out_MUX_outMUX10			(outMUX10		) ,	
+	.out_MUX_outMUX15			(outMUX15		) ,	
+	.out_MUX_outMUX16			(outMUX16		)
 );
+//////////////////////////////////////////////////////////////////////////////////
+
 
 endmodule
 
