@@ -17,13 +17,6 @@ wire w_sT, w_sE;
 wire [5:0] w_nb_P;
 
 
-initial begin
-	cnt_in = 1'b0;
-	cnt_p = 1'b0;
-	en_in = 1'b1;
-	w_flag = 1'b0;
-end
-
 assign w_mux_phase = (en_in) ? i_phase : w_phase;
 ffd ff_phase(w_mux_phase, i_clk, i_rst, w_phase);
 //assign w_flag = (en_in) ? i_flag : w_flag;

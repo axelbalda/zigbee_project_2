@@ -11,15 +11,6 @@ module counter(
 
 logic [5:0] cnt;
 
-initial begin
-	cnt = 1'b0;
-	o_en_d = 1'b0;
-	o_en_m = 1'b0;
-	o_en_f = 1'b0;
-	o_en = 1'b0;
-	o_en_freq_synch = 1'b0;
-end
-
 always @(posedge i_clk) begin
 	
 	if (i_rst) begin

@@ -7,9 +7,6 @@ module counter_decision (
 	);
 
 logic [5:0] cnt_clk;
-initial begin
-	cnt_clk  = 1'b0;
-end
 
 always @(posedge i_clk) begin
 	

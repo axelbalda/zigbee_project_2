@@ -6,10 +6,6 @@ module div (
 	output 	reg [5:0] o_nb_P //number of periods of 50 MHz clk (initialised at 25), to add/remove for adequate sampling
 	);
 
-initial begin
-	o_nb_P = 6'b011001;
-end
-
 wire w_en_d, w_en_m, w_en_f, w_en, w_en_freq_synch; 
 
 counter cnt_div (i_clk, i_rst, o_nb_P, w_en_d, w_en_m, w_en_f, w_en, w_en_freq_synch); //the only value used from counter in this block is w_en_freq_synch
