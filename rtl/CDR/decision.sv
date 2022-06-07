@@ -34,8 +34,10 @@ always @(posedge i_clk) begin
 		if(cnt_r == i_nb_P-1) begin
 			cnt_r = 1'b0;
 		end
-		else begin 
-			cnt_r = cnt_r + 1;
+		else begin
+			if(i_cnt_p != 0) begin 
+				cnt_r = cnt_r + 1;
+			end
 		end
 	end
 	else begin
@@ -45,7 +47,7 @@ always @(posedge i_clk) begin
 end
 
 //counter instanciation
-counter_decision cnt_dec (i_clk, i_rst, i_nb_P, w_en_clk, w_en_dec);
+counter_decision cnt_dec (i_clk, i_rst, i_nb_P, i_cnt_p, w_en_clk, w_en_dec);
 
 //mux instanciation
 assign w_m_signal_synchro = (w_en_clk) ? ~signal_synchro : signal_synchro;

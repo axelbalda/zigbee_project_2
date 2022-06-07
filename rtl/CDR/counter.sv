@@ -1,12 +1,13 @@
 module counter(
-	input i_clk,
-	input i_rst,
-	input [5:0] i_nb_P,
-	output reg o_en_d,		//1st sampling
-	output reg o_en_m,		//2nd sampling
-	output reg o_en_f,		//3rd sampling
-	output reg o_en,       		//en : to enable sampling of T and E signals in phase detector
-	output reg o_en_freq_synch	//to enable modification of i_nb_P in divN
+	input 			i_clk,
+	input 			i_rst,
+	input [5:0] 		i_nb_P,
+	input logic [1:0]	i_cnt_p,
+	output reg 		o_en_d,		//1st sampling
+	output reg 		o_en_m,		//2nd sampling
+	output reg 		o_en_f,		//3rd sampling
+	output reg 		o_en,       		//en : to enable sampling of T and E signals in phase detector
+	output reg 		o_en_freq_synch	//to enable modification of i_nb_P in divN
 	);
 
 logic [5:0] cnt;
@@ -46,7 +47,9 @@ always @(posedge i_clk) begin
 		end
 
 		else begin
-			cnt = cnt + 1;
+			if(i_cnt_p != 0) begin
+				cnt = cnt + 1;
+			end
 		end
 	end
 	else begin
