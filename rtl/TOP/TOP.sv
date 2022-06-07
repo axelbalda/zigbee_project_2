@@ -90,16 +90,16 @@ wire 	[1:0]	sig_MUX_inMUX14				;
 wire 	[7:0]	sig_MUX_inMUX15				;  	
 wire 	[7:0]	sig_MUX_inMUX16				;	 	
 
-wire 		sig_MUX_outMUX3					;	
-wire 		sig_MUX_outMUX4					;	
-wire 		sig_MUX_outMUX5					;	
+wire 			sig_MUX_outMUX3				;	
+wire 			sig_MUX_outMUX4				;	
+wire 			sig_MUX_outMUX5				;	
 wire 	[3:0]	sig_MUX_outMUX6				;	
 wire 	[3:0]	sig_MUX_outMUX7				;	
-wire 		sig_MUX_outMUX8					;	
-wire 		sig_MUX_outMUX11				;	
-wire 		sig_MUX_outMUX12				;	
-wire 		sig_MUX_outMUX13				;	
-wire 		sig_MUX_outMUX14				;	
+wire 			sig_MUX_outMUX8				;	
+wire 			sig_MUX_outMUX11			;	
+wire 			sig_MUX_outMUX12			;	
+wire 			sig_MUX_outMUX13			;	
+wire 			sig_MUX_outMUX14			;	
 //////////////////////////////////////////////////////////////////////////////////
 
 
