@@ -1,16 +1,17 @@
 module div (
-	input 	i_clk,
-	input	i_rst,
-	input 	i_T,
-	input 	i_E,
-	output 	reg [5:0] o_nb_P //number of periods of 50 MHz clk (initialised at 25), to add/remove for adequate sampling
+	input 			i_clk,
+	input			i_rst,
+	input 			i_T,
+	input 			i_E,
+	output 	reg [5:0] 	o_nb_P, //number of periods of 50 MHz clk (initialised at 25), to add/remove for adequate sampling
+	input logic [1:0]	i_cnt_p
 	);
 
 wire w_en_d, w_en_m, w_en_f, w_en, w_en_freq_synch; 
 
-counter cnt_div (i_clk, i_rst, o_nb_P, w_en_d, w_en_m, w_en_f, w_en, w_en_freq_synch); //the only value used from counter in this block is w_en_freq_synch
+counter cnt_div (i_clk, i_rst, o_nb_P, i_cnt_p, w_en_d, w_en_m, w_en_f, w_en, w_en_freq_synch); //the only value used from counter in this block is w_en_freq_synch
 
-always @(posedge i_clk)
+always @(negedge i_clk)
 begin
 	if (i_rst) begin
 		if (w_en_freq_synch) begin //div par N tous les nombres de demi-periodes

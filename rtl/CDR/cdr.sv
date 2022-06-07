@@ -35,7 +35,7 @@ always @(posedge i_clk) begin
 				en_in = 1'b0;
 			end
 			if(cnt_in == 5) begin
-				w_phase <= i_phase;
+				w_phase = i_phase;
 				cnt_in = 1'b1;
 				if(cnt_p != 2) begin
 					cnt_p = cnt_p + 1;
@@ -53,13 +53,13 @@ always @(posedge i_clk) begin
 		cnt_p = 1'b0;
 		en_in = 1'b1;
 		w_flag = 1'b0;
-		w_phase <= 1'b0; 
+		w_phase = 1'b0; 
 	end
 end
 
 
-phase_detector phd1 (w_phase, w_nb_P, i_clk, i_rst, w_sT, w_sE);
-div div1 (i_clk, i_rst, w_sT, w_sE, w_nb_P);
+phase_detector phd1 (w_phase, w_nb_P, cnt_p, i_clk, i_rst, w_sT, w_sE);
+div div1 (i_clk, i_rst, w_sT, w_sE, w_nb_P, cnt_p);
 decision dec (w_phase, i_rst, i_clk, w_nb_P, cnt_p, o_data, w_flag, o_flag);
 
 endmodule
