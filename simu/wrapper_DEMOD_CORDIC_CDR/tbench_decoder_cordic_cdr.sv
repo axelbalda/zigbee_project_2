@@ -30,7 +30,6 @@ module tbench ();
    logic [2:0] counter;
    logic       eoc;
 
-   logic       signal_synchro;
    logic       data_out;
    logic       cdr_flag;
 
@@ -41,7 +40,6 @@ module tbench ();
 					 I_IF,
 					 Q_IF,
 					 data_out,
-					 signal_synchro, 
 					 cdr_flag);
 
 

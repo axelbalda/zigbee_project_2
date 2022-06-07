@@ -4,7 +4,6 @@
 			      input logic [3:0] 	   i_I_if,
 			      input logic [3:0] 	   i_Q_if,
 			      output logic 		   o_data,
-		       	      output logic 		   o_signal_synchro,
 			      output logic 		   o_cdr_flag  );
 
 
@@ -46,7 +45,6 @@
 	   i_rst_n,
 	   dir,
 	   o_data,
-	   o_signal_synchro,
 	   cordic_ready,
 	   o_cdr_flag);
    

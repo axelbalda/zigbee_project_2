@@ -27,221 +27,231 @@ R2
 R3
 n@_opt1
 R4
+R0
+T_opt2
+!s110 1654175846
+V1]WkQ9cbaKJiLRzhEWG7<3
+R1
+=1-b49691b40620-6298b866-27de3-2202
+R2
+R3
+n@_opt2
+R4
 vcdr
 Z5 DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
-Z6 !s110 1654085008
+Z6 !s110 1654175821
 !i10b 1
-!s100 PDjC;:PGN:GEFS8FE1d`d3
-IR0[;m>0@EELBCWJ=?Q[Pa1
+!s100 n]XeW]X:i=YWH9ZlVHjn71
+I6>J62bN7oE;m=?2ab=lCb3
 Z7 VDg1SIo80bB@j0V0VzS_@n1
 !s105 cdr_sv_unit
 S1
-R0
-Z8 w1653904809
+Z8 d/tp/xph2app/xph2app103/zigbee_project_2/simu/wrapper_DEMOD_CORDIC_CDR
+Z9 w1654175636
 8../../rtl/CDR/cdr.sv
 F../../rtl/CDR/cdr.sv
 L0 1
-Z9 OL;L;10.7c;67
+Z10 OL;L;10.7c;67
 r1
 !s85 0
 31
-Z10 !s108 1654085008.000000
+Z11 !s108 1654175821.000000
 !s107 ../../rtl/CDR/cdr.sv|
 !s90 +acc|-work|LibDemod|../../rtl/CDR/cdr.sv|
 !i113 0
-Z11 o+acc -work LibDemod -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z12 o+acc -work LibDemod -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R3
 vcordic_block
 R5
-R6
+Z13 !s110 1654175820
 !i10b 1
-!s100 7PFk0NP4o>0EB?3D3;OT=3
-IL_@S;J3j>d3N8F;cKBa152
+!s100 <kORAA9K[7fedm_fiGle22
+I<3`KTg?J^QRMWF@0bSRGN3
 R7
 !s105 cordic_block_sv_unit
 S1
-R0
-Z12 w1653396685
+R8
+Z14 w1654170431
 8../../rtl/CORDIC/cordic_block.sv
 F../../rtl/CORDIC/cordic_block.sv
 L0 1
-R9
+R10
 r1
 !s85 0
 31
-R10
+Z15 !s108 1654175820.000000
 !s107 ../../rtl/CORDIC/cordic_block.sv|
 !s90 +acc|-work|LibDemod|../../rtl/CORDIC/cordic_block.sv|
 !i113 0
-R11
+R12
 R3
 vcossin_gen
 R5
-R6
+R13
 !i10b 1
 !s100 ll=gja?MnndZUDHUgK>3]0
 IKeY54Hd?LAgYdP6NXma4F1
 R7
 !s105 cossin_gen_sv_unit
 S1
-R0
-w1653050327
+R8
+R14
 8../../rtl/DECODER/cossin_gen.sv
 F../../rtl/DECODER/cossin_gen.sv
 L0 1
-R9
+R10
 r1
 !s85 0
 31
-R10
+R15
 !s107 ../../rtl/DECODER/cossin_gen.sv|
 !s90 +acc|-work|LibDemod|../../rtl/DECODER/cossin_gen.sv|
 !i113 0
-R11
+R12
 R3
 vcounter
 R5
 R6
 !i10b 1
-!s100 MlGP[mnBzo^hVD34R3[K]3
-IdMTDW2DAiCSBhN]IYTTP[0
+!s100 5EPcFDo[W=CYPVa9g4E6K1
+I;OLAHD7d;S95dSzYH=9h<1
 R7
 !s105 counter_sv_unit
 S1
-R0
 R8
+R14
 8../../rtl/CDR/counter.sv
 F../../rtl/CDR/counter.sv
 L0 1
-R9
+R10
 r1
 !s85 0
 31
-R10
+R11
 !s107 ../../rtl/CDR/counter.sv|
 !s90 +acc|-work|LibDemod|../../rtl/CDR/counter.sv|
 !i113 0
-R11
+R12
 R3
 vcounter_decision
 R5
 R6
 !i10b 1
-!s100 @VZk722>2>F7cSRKQe?Jk3
-IEk=8AejML`GG8eS:]UMHm3
+!s100 JlPAS51<T>879oVf7IIo@1
+IoKmJ<XJCYJX4aIfTMAknl2
 R7
 !s105 counter_decision_sv_unit
 S1
-R0
 R8
+R14
 8../../rtl/CDR/counter_decision.sv
 F../../rtl/CDR/counter_decision.sv
 L0 1
-R9
+R10
 r1
 !s85 0
 31
-R10
+R11
 !s107 ../../rtl/CDR/counter_decision.sv|
 !s90 +acc|-work|LibDemod|../../rtl/CDR/counter_decision.sv|
 !i113 0
-R11
+R12
 R3
 vdecision
 R5
 R6
 !i10b 1
-!s100 _DFfUIAem6fT^z[RN@U<G3
-I1O@mP^L??5P3iY9z@?K;_1
+!s100 >M[g2GZL>e[V=ca:9Ke;c1
+IFLHn<XYAP5>1Wn3^;L^9=0
 R7
 !s105 decision_sv_unit
 S1
-R0
 R8
+R9
 8../../rtl/CDR/decision.sv
 F../../rtl/CDR/decision.sv
 L0 2
-R9
+R10
 r1
 !s85 0
 31
-R10
+R11
 !s107 ../../rtl/CDR/decision.sv|
 !s90 +acc|-work|LibDemod|../../rtl/CDR/decision.sv|
 !i113 0
-R11
+R12
 R3
 vdecoder_cordic_cdr
 R5
-Z13 !s110 1654085009
+R6
 !i10b 1
-!s100 ZI@nV:M9o;E5CGK?S==CH0
-Ib99;Q5G<CbQoC4X14`lK61
+!s100 L1QMB7b9ok[Dom4eZT];G3
+IQ?kh_dbRBafGE>TX8Uoc[1
 R7
 !s105 decoder_cordic_cdr_sv_unit
 S1
-R0
-w1653903142
+R8
+w1654171279
 8../../rtl/wrapper/decoder_cordic_cdr.sv
 F../../rtl/wrapper/decoder_cordic_cdr.sv
 L0 1
-R9
+R10
 r1
 !s85 0
 31
-Z14 !s108 1654085009.000000
+R11
 !s107 ../../rtl/wrapper/decoder_cordic_cdr.sv|
 !s90 +acc|-work|LibDemod|../../rtl/wrapper/decoder_cordic_cdr.sv|
 !i113 0
-R11
+R12
 R3
 vdecoder_top
 R5
-R6
+R13
 !i10b 1
 !s100 5a7fJ66a2^=<oJoTnng412
 IHUMNN8g6B0aVf50gg:4M_1
 R7
 !s105 decoder_top_sv_unit
 S1
-R0
-w1653374283
+R8
+R14
 8../../rtl/DECODER/decoder_top.sv
 F../../rtl/DECODER/decoder_top.sv
 L0 1
-R9
+R10
 r1
 !s85 0
 31
-R10
+R15
 !s107 ../../rtl/DECODER/decoder_top.sv|
 !s90 +acc|-work|LibDemod|../../rtl/DECODER/decoder_top.sv|
 !i113 0
-R11
+R12
 R3
 vdiv
 R5
 R6
 !i10b 1
-!s100 6Re[:ebO1j;c;a[B0The00
-IVQcNK^YMb3^iPe25<>e4c1
+!s100 i0bgSF_]0:9IIRI=813GK3
+IMTFizR8c2k:1fZTlMIkR=3
 R7
 !s105 divN_sv_unit
 S1
-R0
 R8
+R14
 8../../rtl/CDR/divN.sv
 F../../rtl/CDR/divN.sv
 L0 1
-R9
+R10
 r1
 !s85 0
 31
-R10
+R11
 !s107 ../../rtl/CDR/divN.sv|
 !s90 +acc|-work|LibDemod|../../rtl/CDR/divN.sv|
 !i113 0
-R11
+R12
 R3
 vffd
 R5
@@ -252,162 +262,162 @@ IUbF87Z1FVGZU6;m7TJWH03
 R7
 !s105 ffd_sv_unit
 S1
-R0
 R8
+R14
 8../../rtl/CDR/ffd.sv
 F../../rtl/CDR/ffd.sv
 L0 1
-R9
+R10
 r1
 !s85 0
 31
-R10
+R15
 !s107 ../../rtl/CDR/ffd.sv|
 !s90 +acc|-work|LibDemod|../../rtl/CDR/ffd.sv|
 !i113 0
-R11
+R12
 R3
 vfir_filter
 R5
-R6
+R13
 !i10b 1
 !s100 EHVM0Lb_DSb@n_;g@F4>E2
 ITIkb_8W>zHia_AR;>jcd43
 R7
 !s105 fir_filter_sv_unit
 S1
-R0
-w1653050356
+R8
+R14
 8../../rtl/DECODER/fir_filter.sv
 F../../rtl/DECODER/fir_filter.sv
 L0 1
-R9
+R10
 r1
 !s85 0
 31
-R10
+R15
 !s107 ../../rtl/DECODER/fir_filter.sv|
 !s90 +acc|-work|LibDemod|../../rtl/DECODER/fir_filter.sv|
 !i113 0
-R11
+R12
 R3
 viq_demod
 R5
-R6
+R13
 !i10b 1
 !s100 _>nH3Gi1nJfg0mRN:dDVO3
 II;D?khgH=Pi79LNW>HchW3
 R7
 !s105 iq_demod_sv_unit
 S1
-R0
-w1653374318
+R8
+R14
 8../../rtl/DECODER/iq_demod.sv
 F../../rtl/DECODER/iq_demod.sv
 L0 1
-R9
+R10
 r1
 !s85 0
 31
-R10
+R15
 !s107 ../../rtl/DECODER/iq_demod.sv|
 !s90 +acc|-work|LibDemod|../../rtl/DECODER/iq_demod.sv|
 !i113 0
-R11
+R12
 R3
 vphase_detector
 R5
 R6
 !i10b 1
-!s100 18C4D>eRkG`n[0W6azaiH2
-ICiMY]^ABSMFhSHz5eIj<E0
+!s100 OX0]3UmSkcE:o1cB]zEeH2
+IfkQ7AGLQe2mO<ALf<nNIA3
 R7
 !s105 phase_detector_sv_unit
 S1
-R0
 R8
+R14
 8../../rtl/CDR/phase_detector.sv
 F../../rtl/CDR/phase_detector.sv
 L0 1
-R9
+R10
 r1
 !s85 0
 31
-R10
+R11
 !s107 ../../rtl/CDR/phase_detector.sv|
 !s90 +acc|-work|LibDemod|../../rtl/CDR/phase_detector.sv|
 !i113 0
-R11
+R12
 R3
 vrotation
 R5
-R6
+R13
 !i10b 1
 !s100 5lHzhTcF<O3JT5U55lHV:3
 ImU<WJ[ckYRjK_gRLcRfW00
 R7
 !s105 rotation_sv_unit
 S1
-R0
-w1653485405
+R8
+R14
 8../../rtl/CORDIC/rotation.sv
 F../../rtl/CORDIC/rotation.sv
 L0 1
-R9
+R10
 r1
 !s85 0
 31
-R10
+R15
 !s107 ../../rtl/CORDIC/rotation.sv|
 !s90 +acc|-work|LibDemod|../../rtl/CORDIC/rotation.sv|
 !i113 0
-R11
+R12
 R3
 vsystem
 R5
-R6
+R13
 !i10b 1
-!s100 NEZ5@9N^:8N=O4oKC2F^U0
-IonH7o@a_h;AO0zld]m;WC0
+!s100 Fd`Y]4G=:]DXjRHJ`0]AF3
+Ii3CDFkcQ8;Cg9g@<:Jj3R2
 R7
 !s105 system_sv_unit
 S1
-R0
-R12
+R8
+R14
 8../../rtl/CORDIC/system.sv
 F../../rtl/CORDIC/system.sv
 L0 1
-R9
+R10
 r1
 !s85 0
 31
-R10
+R15
 !s107 ../../rtl/CORDIC/system.sv|
 !s90 +acc|-work|LibDemod|../../rtl/CORDIC/system.sv|
 !i113 0
-R11
+R12
 R3
 vtbench
 R5
-R13
+R6
 !i10b 1
-!s100 @gG=`?8nNihXj2NlPkNNR2
-I[46YWRKILi7f^_D=NfjdB0
+!s100 ICDHF<_SmhCQgd5WaXnU23
+IeB3iKakB7:f>o;NjW^>@21
 R7
 !s105 tbench_decoder_cordic_cdr_sv_unit
 S1
-R0
-w1654084976
+R8
+w1654171304
 8./tbench_decoder_cordic_cdr.sv
 F./tbench_decoder_cordic_cdr.sv
 L0 1
-R9
+R10
 r1
 !s85 0
 31
-R14
+R11
 !s107 ./tbench_decoder_cordic_cdr.sv|
 !s90 +acc|-work|LibDemod|./tbench_decoder_cordic_cdr.sv|
 !i113 0
-R11
+R12
 R3
