@@ -1,34 +1,26 @@
 `timescale 1ns / 1ps
-
-//////////////////////////////////////////////////////////////////////////////////
-// Company:
-// Engineer:
-//
-// Create Date: 17.03.2022 16:05:32
-// Design Name:
-// Module Name: tb_MUX1
-// Project Name:
-// Target Devices:
-// Tool Versions:
-// Description:
-//
-// Dependencies:
-//
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-//
-//////////////////////////////////////////////////////////////////////////////////
-
  
 module tb_MUX1();
 
-    parameter	CLK_PERIOD = 20 ; 
-    reg         inClock         ;
-    reg		inReset  	;
-    reg	[1:0]	inSel   	;
-    reg		inData  	;
-    reg	[3:0]   outData   	;
+parameter	CLK_PERIOD = 20 ; 
+reg         inClock		;
+reg			inReset  	;
+reg	[1:0]	inSel   	;
+reg			inData  	;
+reg	[3:0]   outData   	;
+
+DEMUX181 u_demux1 (
+	.inData			(in_DEMUX_inDEMUX1			), 
+	.inSel			(in_DEMUX_inSEL1			),
+	.outData		(sig_DEMUX_outDEMUX1		)
+);
+
+DEMUX124 u_demux17 (
+	.inData			(in_DEMUX_inDEMUX17		), 
+	.inSel			(in_DEMUX_inSEL17		),
+	.outData		(sig_DEMUX_outDEMUX17	)
+);
+
 
 
 initial begin : init
@@ -49,6 +41,19 @@ initial begin : RESET
 	end
 	inReset = 1'b1 ;
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 initial begin : DATA
 		for(int i = 0; i < 5; i++) begin
@@ -83,13 +88,15 @@ initial begin : SEL
 		end
 end	
 
-MUX1 u_mux1 (
-	.inClock (inClock) ,
-	.inReset (inReset) ,
-	.inData  (inData)  ,
-	.inSel   (inSel)   ,
-	.outData (outData) 
-) ;
+
 
 endmodule
+
+
+
+
+
+
+
+
 

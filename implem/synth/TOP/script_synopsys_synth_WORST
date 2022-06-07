@@ -92,8 +92,8 @@ compile -exact_map -ungroup_all -auto_ungroup area
 set name_netlist "TOP_netlist.v"
 set name_sdc "TOP_1.sdc"
 
-write -hierarchy -format verilog -output $var_path/../simu/post_synth/EI/$name_netlist
-write_sdc $var_path/../simu/post_synth/EI/$name_sdc
+write -hierarchy -format verilog -output $var_path/../simu/post_synth/TOP/$name_netlist
+write_sdc $var_path/../simu/post_synth/TOP/$name_sdc
 
 
 uplevel #0 { report_area }
