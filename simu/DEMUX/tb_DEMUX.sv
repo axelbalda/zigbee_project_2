@@ -2,12 +2,25 @@
  
 module tb_MUX1();
 
-    parameter	CLK_PERIOD = 20 ; 
-    reg         inClock		;
-    reg			inReset  	;
-    reg	[1:0]	inSel   	;
-    reg			inData  	;
-    reg	[3:0]   outData   	;
+parameter	CLK_PERIOD = 20 ; 
+reg         inClock		;
+reg			inReset  	;
+reg	[1:0]	inSel   	;
+reg			inData  	;
+reg	[3:0]   outData   	;
+
+DEMUX181 u_demux1 (
+	.inData			(in_DEMUX_inDEMUX1			), 
+	.inSel			(in_DEMUX_inSEL1			),
+	.outData		(sig_DEMUX_outDEMUX1		)
+);
+
+DEMUX124 u_demux17 (
+	.inData			(in_DEMUX_inDEMUX17		), 
+	.inSel			(in_DEMUX_inSEL17		),
+	.outData		(sig_DEMUX_outDEMUX17	)
+);
+
 
 
 initial begin : init
@@ -28,6 +41,7 @@ initial begin : RESET
 	end
 	inReset = 1'b1 ;
 end
+
 
 
 
@@ -74,13 +88,7 @@ initial begin : SEL
 		end
 end	
 
-MUX1 u_mux1 (
-	.inClock (inClock) ,
-	.inReset (inReset) ,
-	.inData  (inData)  ,
-	.inSel   (inSel)   ,
-	.outData (outData) 
-) ;
+
 
 endmodule
 
