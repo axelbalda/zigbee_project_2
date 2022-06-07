@@ -1,0 +1,13 @@
+vdel -lib $HOME/zigbee_project_2/libs/LibDemod -all
+vlib ../../libs/LibDemod
+vmap Lib_Demod $HOME/zigbee_project_2/libs/LibDemod
+
+
+vlog +acc -work LibDemod ./Demod_Cordic_CDR_top_netlist.v
+
+
+vlog +acc -work LibDemod ../../wrapper_DEMOD_CORDIC_CDR_EI/tbench_decoder_cordic_cdr_ei.sv
+
+
+
+

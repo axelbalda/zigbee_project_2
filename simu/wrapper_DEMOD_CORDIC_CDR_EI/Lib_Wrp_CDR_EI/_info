@@ -1,0 +1,85 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/tp/xph2app/xph2app103/zigbee_project/simu/wrapper_DEMOD_CORDIC_CDR_EI
+vDFF
+Z0 DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
+Z1 !s110 1654173293
+!i10b 1
+!s100 Df[Rj]Q<<U4o_iOIWXgQQ1
+IVnMHHa]D5[=h>CJ0O;fPn1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 DFF_sv_unit
+S1
+Z3 d/tp/xph2app/xph2app103/zigbee_project_2/simu/wrapper_DEMOD_CORDIC_CDR_EI
+Z4 w1654170432
+8../../rtl/EI/DFF.sv
+F../../rtl/EI/DFF.sv
+L0 18
+Z5 OL;L;10.7c;67
+r1
+!s85 0
+31
+Z6 !s108 1654173293.000000
+!s107 ../../rtl/EI/DFF.sv|
+!s90 +acc|-work|Lib_Wrp_CDR_EI|../../rtl/EI/DFF.sv|
+!i113 0
+Z7 o+acc -work Lib_Wrp_CDR_EI -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0
+n@d@f@f
+vOS
+R0
+R1
+!i10b 1
+!s100 a[z::AkLWPLmA8@Hel@3S2
+I>0_TTd==g2c[g?Bm=B=T83
+R2
+!s105 OS_sv_unit
+S1
+R3
+R4
+8../../rtl/EI/OS.sv
+F../../rtl/EI/OS.sv
+L0 19
+R5
+r1
+!s85 0
+31
+R6
+!s107 ../../rtl/EI/OS.sv|
+!s90 +acc|-work|Lib_Wrp_CDR_EI|../../rtl/EI/OS.sv|
+!i113 0
+R7
+R8
+n@o@s
+voutFIFO
+R0
+R1
+!i10b 1
+!s100 O[YO>QdSC<Z7Sfmlz<]=42
+Ib[gnR?7E]_TMU@5@o@82F1
+R2
+!s105 outFIFO_debug_sv_unit
+S1
+R3
+R4
+8../../rtl/EI/outFIFO.debug.sv
+F../../rtl/EI/outFIFO.debug.sv
+L0 21
+R5
+r1
+!s85 0
+31
+R6
+!s107 ../../rtl/EI/outFIFO.debug.sv|
+!s90 +acc|-work|Lib_Wrp_CDR_EI|../../rtl/EI/outFIFO.debug.sv|
+!i113 0
+R7
+R8
+nout@f@i@f@o
