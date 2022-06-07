@@ -95,53 +95,13 @@ initial begin : SELECT
 	end
 
 	for(int i = 0; i < 8; i++) begin  // SEL1
-		
-		for(int r = 0; r < 5; r++) begin
-			#CLK_PERIOD ;	
-		end
-
 		for(int j = 0; j < 8; j++) begin // SEL2
-
-			for(int r = 0; r < 5; r++) begin
-				#CLK_PERIOD ;	
-			end
-
 			for(int k = 0; k < 2; k++) begin // SEL3
-
-				for(int r = 0; r < 5; r++) begin
-					#CLK_PERIOD ;	
-				end
-
 				for(int l = 0; l < 4; l++) begin // SEL6
-
-					for(int r = 0; r < 5; r++) begin
-						#CLK_PERIOD ;	
-					end
-
 					for(int m = 0; m < 4; m++) begin // SEL9
-
-						for(int r = 0; r < 5; r++) begin
-							#CLK_PERIOD ;	
-						end
-
 						for(int n = 0; n < 2; n++) begin // SEL11
-
-							for(int r = 0; r < 5; r++) begin
-								#CLK_PERIOD ;	
-							end
-
 							for(int o = 0; o < 2; o++) begin // SEL12
-
-								for(int r = 0; r < 5; r++) begin
-									#CLK_PERIOD ;	
-								end
-
 								for(int p = 0; p < 4; p++) begin // SEL15
-
-									for(int r = 0; r < 5; r++) begin
-										#CLK_PERIOD ;	
-									end
-
 									for(int q = 0; q < 2; q++) begin // SEL17
 										
 										inSEL1			=	i	;
@@ -154,9 +114,9 @@ initial begin : SELECT
 										inSEL15			=	p	;
 										inSEL17			=	q	;
 
-											for(int r = 0; r < 5; r++) begin
-												#CLK_PERIOD ;	
-											end
+										for(int r = 0; r < 500; r++) begin
+											#CLK_PERIOD ;	
+										end
 
 									end
 								end
