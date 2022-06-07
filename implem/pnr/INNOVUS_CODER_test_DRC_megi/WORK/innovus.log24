@@ -1,0 +1,58 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+Options:	
+Date:		Tue Jun  7 16:38:43 2022
+Host:		cimeld36.cime.inpg.fr (x86_64 w/Linux 2.6.32-754.35.1.el6.x86_64) (8cores*16cpus*Intel(R) Core(TM) i7-10700 CPU @ 2.90GHz 16384KB)
+OS:		Red Hat Enterprise Linux Server release 6.10 (Santiago)
+
+License:
+		invs	Innovus Implementation System	17.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getDrawView
+<CMD> loadWorkspace -name Physical
+<CMD> win
+<CMD_INTERNAL> print {---# TCL Script amsSetup.tcl loaded}
+---# TCL Script amsSetup.tcl loaded
+<CMD> set init_layout_view {}
+<CMD> set init_verilog {../INPUT_DATA/msk_modulator_netlist_fe2.v ../INPUT_DATA/msk_modulator_io.v}
+<CMD> set init_mmmc_file ../SCRIPTS/view_definition.tcl
+<CMD> set init_lef_file {/softslin/AMS_410_ISR15/cds/HK_C35/LEF/c35b4/c35b4.lef /softslin/AMS_410_ISR15/cds/HK_C35/LEF/c35b4/CORELIB.lef /softslin/AMS_410_ISR15/cds/HK_C35/LEF/c35b4/IOLIB_4M.lef}
+<CMD> set init_top_cell msk_modulator_io
+<CMD> set init_gnd_net {gnd! gnd3r! gnd3o!}
+<CMD> set init_pwr_net {vdd! vdd3r1! vdd3r2! vdd3o!}
+<CMD> set cts_cell_list {CLKIN0 CLKIN1 CLKIN2 CLKIN3 CLKIN4 CLKIN6 CLKIN8 CLKIN10 CLKIN12 CLKIN15 CLKBU2 CLKBU4 CLKBU6 CLKBU8 CLKBU12 CLKBU15}
+<CMD> init_design
+#% Begin Load MMMC data ... (date=06/07 16:40:44, mem=458.2M)
+#% End Load MMMC data ... (date=06/07 16:40:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=458.3M, current mem=458.3M)
+rc_typ rc_best rc_worst
+**ERROR: (IMPIMEX-3):	There is no verilog netlist found in init_verilog. The variable is either not specified or specified incorrectly. Check the location of Verilog file in the global file.
+
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: invalid command name "À€À€À€À€Ã¦À€À€À€"
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: invalid command name "À€À€À€À€Ã¦À€À€À€"
+**ERROR: (IMPQTF-4044):	Error happens when execute '::Rda_Design::restoreDesign:apply restoreDesign' with error message: 'can't read "rda_restoreOaDesign(g2Cell)": no such element in array'.This is probably an inner GUI action error.Use direct TCL command instead of GUI interactive.
+<CMD> get_visible_nets
+<CMD> get_visible_nets
+<CMD> zoomBox 0.066 0.078 0.066 0.079
+<CMD> get_visible_nets
+
+*** Memory Usage v#1 (Current mem = 542.945M, initial mem = 184.402M) ***
+*** Message Summary: 0 warning(s), 7 error(s)
+
+--- Ending "Innovus" (totcpu=0:01:23, real=0:12:03, mem=542.9M) ---

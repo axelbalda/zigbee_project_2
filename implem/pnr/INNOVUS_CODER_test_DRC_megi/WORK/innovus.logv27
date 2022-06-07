@@ -1,0 +1,348 @@
+[06/07 17:02:12      0s] 
+[06/07 17:02:12      0s] Cadence Innovus(TM) Implementation System.
+[06/07 17:02:12      0s] Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+[06/07 17:02:12      0s] 
+[06/07 17:02:12      0s] Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+[06/07 17:02:12      0s] Options:	
+[06/07 17:02:12      0s] Date:		Tue Jun  7 17:02:12 2022
+[06/07 17:02:12      0s] Host:		cimeld36.cime.inpg.fr (x86_64 w/Linux 2.6.32-754.35.1.el6.x86_64) (8cores*16cpus*Intel(R) Core(TM) i7-10700 CPU @ 2.90GHz 16384KB)
+[06/07 17:02:12      0s] OS:		Red Hat Enterprise Linux Server release 6.10 (Santiago)
+[06/07 17:02:12      0s] 
+[06/07 17:02:12      0s] License:
+[06/07 17:02:12      0s] 		invs	Innovus Implementation System	17.1	checkout succeeded
+[06/07 17:02:12      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[06/07 17:02:22      9s] @(#)CDS: Innovus v17.11-s080_1 (64bit) 08/04/2017 11:13 (Linux 2.6.18-194.el5)
+[06/07 17:02:22      9s] @(#)CDS: NanoRoute 17.11-s080_1 NR170721-2155/17_11-UB (database version 2.30, 390.7.1) {superthreading v1.44}
+[06/07 17:02:22      9s] @(#)CDS: AAE 17.11-s034 (64bit) 08/04/2017 (Linux 2.6.18-194.el5)
+[06/07 17:02:22      9s] @(#)CDS: CTE 17.11-s053_1 () Aug  1 2017 23:31:41 ( )
+[06/07 17:02:22      9s] @(#)CDS: SYNTECH 17.11-s012_1 () Jul 21 2017 02:29:12 ( )
+[06/07 17:02:22      9s] @(#)CDS: CPE v17.11-s095
+[06/07 17:02:22      9s] @(#)CDS: IQRC/TQRC 16.1.1-s215 (64bit) Thu Jul  6 20:18:10 PDT 2017 (Linux 2.6.18-194.el5)
+[06/07 17:02:22      9s] @(#)CDS: OA 22.50-p063 Fri Feb  3 19:45:13 2017
+[06/07 17:02:22      9s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[06/07 17:02:22      9s] @(#)CDS: RCDB 11.10
+[06/07 17:02:22      9s] --- Running on cimeld36.cime.inpg.fr (x86_64 w/Linux 2.6.32-754.35.1.el6.x86_64) (8cores*16cpus*Intel(R) Core(TM) i7-10700 CPU @ 2.90GHz 16384KB) ---
+[06/07 17:02:22      9s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_19763_cimeld36.cime.inpg.fr_xph2app104_TzgGq1.
+
+[06/07 17:02:22      9s] Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+[06/07 17:02:23     10s] 
+[06/07 17:02:23     10s] **INFO:  MMMC transition support version v31-84 
+[06/07 17:02:23     10s] 
+[06/07 17:02:23     10s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[06/07 17:02:23     10s] <CMD> suppressMessage ENCEXT-2799
+[06/07 17:02:23     10s] <CMD> getDrawView
+[06/07 17:02:23     10s] <CMD> loadWorkspace -name Physical
+[06/07 17:02:23     10s] <CMD> win
+[06/07 17:02:57     14s] <CMD> encMessage warning 0
+[06/07 17:02:57     14s] Suppress "**WARN ..." messages.
+[06/07 17:02:57     14s] <CMD> encMessage debug 0
+[06/07 17:02:57     14s] <CMD> encMessage info 0
+[06/07 17:02:57     14s] **WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+[06/07 17:02:57     14s] **WARN: (IMPLF-228):	 ANTENNAOUTPUTDIFFAREA is specified and will be
+[06/07 17:02:57     14s] applied to any OUTPUT PIN or INOUT PIN without ANTENNADIFFAREA. This often
+[06/07 17:02:57     14s] causes a mismatch between process antenna violations found in Innovus
+[06/07 17:02:57     14s] (during routing or verification) and violations found by external physical
+[06/07 17:02:57     14s] verification tools. This global defaulting mechanism is obsolete in LEF
+[06/07 17:02:57     14s] 5.5. The recommended solution is to remove ANTENNAOUTPUTDIFFAREA and add
+[06/07 17:02:57     14s] ANTENNADIFFAREA to all OUTPUT or INOUT PINS in the MACROS in order to
+[06/07 17:02:57     14s] avoid a mismatch in violations.
+[06/07 17:02:57     14s] **WARN: (IMPLF-230):	 ANTENNAINOUTDIFFAREA is specified and will be
+[06/07 17:02:57     14s] applied to any INOUT PIN without ANTENNADIFFAREA. This often causes a
+[06/07 17:02:57     14s] mismatch between process antenna violations found in Innovus (during
+[06/07 17:02:57     14s] routing or verification) and violations found by external physical
+[06/07 17:02:57     14s] verification tools. This global defaulting mechanism is obsolete in
+[06/07 17:02:57     14s] LEF 5.5. The recommended solution is to remove ANTENNAINOUTDIFFAREA
+[06/07 17:02:57     14s] and add ANTENNADIFFAREA to all INOUT PINS in the MACROS in order to
+[06/07 17:02:57     14s] avoid a mismatch in violations.
+[06/07 17:02:57     14s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC16P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC16P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC16P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC16SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC16SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC16SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC16SP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC16SP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC16SP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC1P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC1P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC1P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC24P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC24P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC24P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC24SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC24SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC24SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC24SP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC24SP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC24SP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC4P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC4P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC4P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC4SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC4SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC4SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC8P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC8P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC8P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+[06/07 17:02:57     14s] To increase the message display limit, refer to the product command reference manual.
+[06/07 17:02:57     14s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC8SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC8SP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD16P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD16SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD16SP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD1P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD24P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD24SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD24SP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD4P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 17:02:57     14s] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[06/07 17:02:57     14s] To increase the message display limit, refer to the product command reference manual.
+[06/07 17:02:57     14s] Loading view definition file from /tp/xph2app/xph2app104/projet_Numerique/zigbee_project_2/implem/pnr/INNOVUS_CODER_test_DRC_megi/WORK/dbs/msk_modulator_m.dat/viewDefinition.tcl
+[06/07 17:02:57     14s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADD21' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 17:02:57     14s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADD21' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 17:02:57     14s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADD22' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 17:02:57     14s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADD22' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 17:02:57     14s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADD31' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 17:02:57     14s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADD31' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 17:02:57     14s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADD32' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 17:02:57     14s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADD32' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 17:02:57     14s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI210' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 17:02:57     14s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI211' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 17:02:57     14s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI2110' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 17:02:57     14s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI2111' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 17:02:57     14s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI2112' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 17:02:57     14s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI212' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 17:02:57     14s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI220' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 17:02:57     14s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI221' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 17:02:57     14s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI222' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 17:02:57     14s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI310' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 17:02:57     14s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI311' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 17:02:57     14s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI312' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 17:02:57     14s] **ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 7673)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 7685)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 7816)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 7828)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 7959)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 7971)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8102)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8114)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8245)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8257)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8388)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8400)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8531)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8543)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8668)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8680)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8805)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8817)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8942)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8954)
+*** End library_loading (cpu=0.02min, real=0.02min, mem=18.9M, fe_cpu=0.26min, fe_real=0.77min, fe_mem=558.7M) ***
+[06/07 17:02:58     15s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'FILLANT25' is defined in LEF but not in the timing library.
+[06/07 17:02:58     15s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'FILLANT25' is defined in LEF but not in the timing library.
+[06/07 17:02:58     15s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'FILLANT10' is defined in LEF but not in the timing library.
+[06/07 17:02:58     15s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'FILLANT10' is defined in LEF but not in the timing library.
+[06/07 17:02:58     15s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'FILLANT5' is defined in LEF but not in the timing library.
+[06/07 17:02:58     15s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'FILLANT5' is defined in LEF but not in the timing library.
+[06/07 17:02:58     15s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'FILLANT2' is defined in LEF but not in the timing library.
+[06/07 17:02:58     15s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'FILLANT2' is defined in LEF but not in the timing library.
+[06/07 17:02:58     15s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'FILLANT1' is defined in LEF but not in the timing library.
+[06/07 17:02:58     15s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'FILLANT1' is defined in LEF but not in the timing library.
+[06/07 17:02:58     15s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'LOGIC1' is defined in LEF but not in the timing library.
+[06/07 17:02:58     15s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'LOGIC1' is defined in LEF but not in the timing library.
+[06/07 17:02:58     15s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'LOGIC0' is defined in LEF but not in the timing library.
+[06/07 17:02:58     15s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'LOGIC0' is defined in LEF but not in the timing library.
+[06/07 17:02:58     15s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'TIEHIGH' is defined in LEF but not in the timing library.
+[06/07 17:02:58     15s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'TIEHIGH' is defined in LEF but not in the timing library.
+[06/07 17:02:58     15s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'TIELOW' is defined in LEF but not in the timing library.
+[06/07 17:02:58     15s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'TIELOW' is defined in LEF but not in the timing library.
+[06/07 17:02:58     15s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'TIE1' is defined in LEF but not in the timing library.
+[06/07 17:02:58     15s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'TIE1' is defined in LEF but not in the timing library.
+[06/07 17:02:58     15s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[06/07 17:02:58     15s] To increase the message display limit, refer to the product command reference manual.
+[06/07 17:02:58     15s] *** Netlist is unique.
+[06/07 17:02:58     15s] **WARN: (IMPFP-3961):	The techSite 'corner_P' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/07 17:02:58     15s] **WARN: (IMPFP-3961):	The techSite 'ioSite_P' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/07 17:02:58     15s] **WARN: (IMPFP-3961):	The techSite 'blockSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/07 17:02:58     15s] **WARN: (IMPFP-3961):	The techSite 'portCellSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/07 17:02:58     15s] **WARN: (IMPCK-7003):	Command "addCTSCellList" is obsolete. Use "specifyClockTree -update {AutoCTSRootPin clkname Buffer bufferlist ...}" as an alternative. The obsolete command still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove "addCTSCellList" from your script.
+[06/07 17:02:58     15s] Set CTS cells: CLKIN0 CLKIN1 CLKIN2 CLKIN3 CLKIN4 CLKIN6 CLKIN8 CLKIN10 CLKIN12 CLKIN15 CLKBU2 CLKBU4 CLKBU6 CLKBU8 CLKBU12 CLKBU15
+[06/07 17:02:58     15s] Loading preference file /tp/xph2app/xph2app104/projet_Numerique/zigbee_project_2/implem/pnr/INNOVUS_CODER_test_DRC_megi/WORK/dbs/msk_modulator_m.dat/gui.pref.tcl ...
+[06/07 17:02:58     15s] **WARN: (IMPCK-8086):	The command setCTSMode is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+[06/07 17:02:59     15s] **WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+[06/07 17:02:59     16s] **WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+[06/07 17:02:59     16s] **WARN: (IMPCCOPT-4322):	No default Or cell family identified.
+[06/07 17:03:05     17s] <CMD> pan 198.354 -2.794
+[06/07 17:03:06     17s] <CMD> selectObject Module t_op
+[06/07 17:03:07     17s] <CMD> setDrawView ameba
+[06/07 17:03:08     17s] <CMD> setDrawView place
+[06/07 17:03:14     18s] <CMD> setDrawView ameba
+[06/07 17:03:14     18s] <CMD> setDrawView fplan
+[06/07 17:03:16     18s] <CMD> setDrawView place
+[06/07 17:03:19     18s] <CMD> deselectAll
+[06/07 17:03:19     18s] <CMD> selectInst {t_op/j_reg[19]}
+[06/07 17:03:19     18s] Set RLRP Inst: t_op/j_reg[19]
+[06/07 17:03:19     18s] Set RLRP Inst: t_op/j_reg[19]
+[06/07 17:03:20     18s] Set RLRP Inst: t_op/j_reg[19]
+[06/07 17:03:21     18s] <CMD> deselectAll
+[06/07 17:03:25     19s] <CMD> pan -7.261 -34.435
+[06/07 17:03:27     19s] <CMD> getMultiCpuUsage -localCpu
+[06/07 17:03:27     19s] <CMD> get_verify_drc_mode -disable_rules -quiet
+[06/07 17:03:27     19s] <CMD> get_verify_drc_mode -quiet -area
+[06/07 17:03:27     19s] <CMD> get_verify_drc_mode -quiet -layer_range
+[06/07 17:03:27     19s] <CMD> get_verify_drc_mode -check_implant -quiet
+[06/07 17:03:27     19s] <CMD> get_verify_drc_mode -check_implant_across_rows -quiet
+[06/07 17:03:27     19s] <CMD> get_verify_drc_mode -check_ndr_spacing -quiet
+[06/07 17:03:27     19s] <CMD> get_verify_drc_mode -check_only -quiet
+[06/07 17:03:27     19s] <CMD> get_verify_drc_mode -check_same_via_cell -quiet
+[06/07 17:03:27     19s] <CMD> get_verify_drc_mode -exclude_pg_net -quiet
+[06/07 17:03:27     19s] <CMD> get_verify_drc_mode -ignore_trial_route -quiet
+[06/07 17:03:27     19s] <CMD> get_verify_drc_mode -max_wrong_way_halo -quiet
+[06/07 17:03:27     19s] <CMD> get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+[06/07 17:03:27     19s] <CMD> get_verify_drc_mode -limit -quiet
+[06/07 17:03:28     19s] <CMD> set_verify_drc_mode -disable_rules {} -check_implant true -check_implant_across_rows false -check_ndr_spacing false -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -report msk_modulator_io.drc.rpt -limit 1000
+[06/07 17:03:28     19s] <CMD> verify_drc
+[06/07 17:03:28     19s] #-report msk_modulator_io.drc.rpt        # string, default="", user setting
+[06/07 17:03:28     19s]  *** Starting Verify DRC (MEM: 1002.9) ***
+[06/07 17:03:28     19s] 
+[06/07 17:03:29     19s] #WARNING (NRFL-384) Found degenerate rectangle on layer MET1 at location 16.175000 4.175000, ignoring this object.
+[06/07 17:03:29     19s] #WARNING (NRFL-384) Found degenerate rectangle on layer MET1 at location 16.175000 4.175000, ignoring this object.
+[06/07 17:03:29     20s]   VERIFY DRC ...... Starting Verification
+[06/07 17:03:29     20s]   VERIFY DRC ...... Initializing
+[06/07 17:03:29     20s]   VERIFY DRC ...... Deleting Existing Violations
+[06/07 17:03:29     20s]   VERIFY DRC ...... Creating Sub-Areas
+[06/07 17:03:29     20s]   VERIFY DRC ...... Using new threading
+[06/07 17:03:29     20s]   VERIFY DRC ...... Sub-Area: {0.000 0.000 565.600 560.000} 1 of 4
+[06/07 17:03:29     20s]   VERIFY DRC ...... Sub-Area : 1 complete 333 Viols.
+[06/07 17:03:29     20s]   VERIFY DRC ...... Sub-Area: {565.600 0.000 1130.000 560.000} 2 of 4
+[06/07 17:03:29     20s]   VERIFY DRC ...... Sub-Area : 2 complete 347 Viols.
+[06/07 17:03:29     20s]   VERIFY DRC ...... Sub-Area: {0.000 560.000 565.600 1115.200} 3 of 4
+[06/07 17:03:29     20s]   VERIFY DRC ...... Sub-Area : 3 complete 238 Viols.
+[06/07 17:03:29     20s]   VERIFY DRC ...... Sub-Area: {565.600 560.000 1130.000 1115.200} 4 of 4
+[06/07 17:03:29     20s]   VERIFY DRC ...... Sub-Area : 4 complete 81 Viols.
+[06/07 17:03:29     20s] 
+[06/07 17:03:29     20s]   Verification Complete : 999 Viols.
+[06/07 17:03:29     20s] 
+[06/07 17:03:29     20s]  *** End Verify DRC (CPU: 0:00:00.4  ELAPSED TIME: 0.00  MEM: 13.0M) ***
+[06/07 17:03:29     20s] 
+[06/07 17:03:29     20s] <CMD> set_verify_drc_mode -area {0 0 0 0}
+[06/07 17:03:32     20s] <CMD> pan -12.436 -39.104
+[06/07 17:03:35     21s] <CMD> pan 3.990 23.785
+[06/07 17:03:37     21s] <CMD> pan -21.281 121.270
+[06/07 17:03:39     21s] <CMD> pan 8.215 27.385
+[06/07 17:08:28     46s] <CMD> selectMarker 521.1000 624.4000 521.9000 624.8500 2 1 2
+[06/07 17:08:53     49s] <CMD> deselectAll
+[06/07 17:08:53     49s] <CMD> selectMarker 521.1000 624.4000 521.9000 624.8500 2 1 2
+[06/07 17:08:54     49s] <CMD> deselectAll
+[06/07 17:08:54     49s] <CMD> selectMarker 521.1000 624.4000 521.9000 624.8500 2 1 2
+[06/07 17:08:55     49s] <CMD> deselectAll
+[06/07 17:08:55     49s] <CMD> selectMarker 521.1000 624.4000 521.9000 624.8500 2 1 2
+[06/07 17:08:57     49s] <CMD> deselectAll
+[06/07 17:08:57     49s] <CMD> selectMarker 521.1000 624.4000 521.9000 624.8500 2 1 2
+[06/07 17:08:59     49s] <CMD> deselectAll
+[06/07 17:08:59     49s] <CMD> selectMarker 521.1000 624.4000 521.9000 624.8500 2 1 2
+[06/07 17:08:59     49s] <CMD> get_visible_nets
+[06/07 17:09:04     50s] <CMD> deselectAll
+[06/07 17:09:04     50s] <CMD> selectMarker 521.1000 624.4000 521.9000 624.8500 2 1 2
+[06/07 17:09:07     50s] <CMD> deselectAll
+[06/07 17:09:07     50s] <CMD> selectMarker 521.1000 624.4000 521.9000 624.8500 2 1 2
+[06/07 17:09:20     51s] <CMD> gui_select -rect {521.161 624.846 521.161 624.397}
+[06/07 17:09:23     52s] <CMD> uiSetTool ruler
+[06/07 17:10:01     55s] <CMD> setLayerPreference allM1 -isVisible 0
+[06/07 17:10:02     55s] <CMD> setLayerPreference allM1 -isVisible 1
+[06/07 17:10:03     55s] <CMD> setLayerPreference allM1 -isVisible 0
+[06/07 17:10:03     55s] <CMD> setLayerPreference allM1 -isVisible 1
+[06/07 17:10:05     56s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[06/07 17:10:06     56s] <CMD> setLayerPreference allM2Cont -isVisible 1
+[06/07 17:10:06     56s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[06/07 17:10:07     56s] <CMD> setLayerPreference allM2Cont -isVisible 1
+[06/07 17:10:07     56s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[06/07 17:10:08     56s] <CMD> setLayerPreference allM2Cont -isVisible 1
+[06/07 17:10:08     56s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[06/07 17:10:09     56s] <CMD> setLayerPreference allM2Cont -isVisible 1
+[06/07 17:10:09     56s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[06/07 17:10:10     56s] <CMD> setLayerPreference allM2Cont -isVisible 1
+[06/07 17:10:11     56s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[06/07 17:10:11     56s] <CMD> setLayerPreference allM2Cont -isVisible 1
+[06/07 17:10:13     56s] <CMD> setLayerPreference allM2 -isVisible 0
+[06/07 17:10:14     56s] <CMD> setLayerPreference allM2 -isVisible 1
+[06/07 17:10:14     56s] <CMD> setLayerPreference allM2 -isVisible 0
+[06/07 17:10:15     56s] <CMD> setLayerPreference allM2 -isVisible 1
+[06/07 17:10:16     56s] <CMD> setLayerPreference allM2 -isVisible 0
+[06/07 17:10:16     56s] <CMD> setLayerPreference allM2 -isVisible 1
+[06/07 17:10:18     57s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[06/07 17:10:19     57s] <CMD> setLayerPreference allM3Cont -isVisible 1
+[06/07 17:10:19     57s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[06/07 17:10:20     57s] <CMD> setLayerPreference allM3Cont -isVisible 1
+[06/07 17:10:20     57s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[06/07 17:10:20     57s] <CMD> setLayerPreference allM3Cont -isVisible 1
+[06/07 17:10:21     57s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[06/07 17:10:22     57s] <CMD> setLayerPreference allM3Cont -isVisible 1
+[06/07 17:10:24     57s] <CMD> setLayerPreference allM3 -isVisible 0
+[06/07 17:10:24     57s] <CMD> setLayerPreference allM3 -isVisible 1
+[06/07 17:10:25     57s] <CMD> setLayerPreference allM3 -isVisible 0
+[06/07 17:10:25     57s] <CMD> setLayerPreference allM3 -isVisible 1
+[06/07 17:10:28     57s] <CMD> setLayerPreference allM4 -isVisible 0
+[06/07 17:10:28     57s] <CMD> setLayerPreference allM4 -isVisible 1
+[06/07 17:10:33     58s] <CMD> setLayerPreference allM2 -isSelectable 0
+[06/07 17:17:24     95s] <CMD> setLayerPreference block -isVisible 0
+[06/07 17:17:25     95s] <CMD> setLayerPreference block -isVisible 1
+[06/07 17:17:26     95s] <CMD> setLayerPreference stdCell -isVisible 0
+[06/07 17:17:33     96s] <CMD> setLayerPreference stdCell -isVisible 1
+[06/07 17:17:34     96s] <CMD> setLayerPreference stdCell -isVisible 0
+[06/07 17:17:35     96s] <CMD> setLayerPreference stdCell -isVisible 1
+[06/07 17:17:36     96s] <CMD> setLayerPreference stdCell -isVisible 0
+[06/07 17:17:36     96s] <CMD> setLayerPreference stdCell -isVisible 1
+[06/07 17:17:38     96s] <CMD> setLayerPreference stdCell -isVisible 0
+[06/07 17:17:39     96s] <CMD> setLayerPreference stdCell -isVisible 1
+[06/07 17:17:43     97s] <CMD> setLayerPreference coverCell -isVisible 0
+[06/07 17:17:44     97s] <CMD> setLayerPreference coverCell -isVisible 1
+[06/07 17:17:44     97s] <CMD> setLayerPreference coverCell -isVisible 0
+[06/07 17:17:45     97s] <CMD> setLayerPreference coverCell -isVisible 1
+[06/07 17:17:46     97s] <CMD> setLayerPreference phyCell -isVisible 0
+[06/07 17:17:46     97s] <CMD> setLayerPreference phyCell -isVisible 1
+[06/07 17:17:48     97s] <CMD> setLayerPreference io -isVisible 0
+[06/07 17:17:48     97s] <CMD> setLayerPreference io -isVisible 1
+[06/07 17:17:50     97s] <CMD> setLayerPreference blackBox -isVisible 0
+[06/07 17:17:51     97s] <CMD> setLayerPreference blackBox -isVisible 1
+[06/07 17:18:00     98s] <CMD> setLayerPreference allM0 -isVisible 0
+[06/07 17:18:01     98s] <CMD> setLayerPreference allM0 -isVisible 1
+[06/07 17:19:33    107s] <CMD> setLayerPreference violation -isVisible 1
+[06/07 17:19:33    107s] <CMD> violationBrowser -all -no_display_false
+[06/07 17:19:39    107s] <CMD> zoomBox 479.95 669.5 481.85 670.85
+[06/07 17:20:15    111s] <CMD> redraw
+[06/07 17:20:21    111s] <CMD> zoomBox 636.75 535.55 638.65 536.9
+[06/07 17:20:25    112s] <CMD> zoomBox 479.95 669.5 481.85 670.85
+[06/07 17:20:54    114s] <CMD> setLayerPreference allM1 -isVisible 0
+[06/07 17:20:54    114s] <CMD> setLayerPreference allM1 -isVisible 1
+[06/07 17:20:56    115s] <CMD> setLayerPreference allM2 -isVisible 0
+[06/07 17:20:57    115s] <CMD> setLayerPreference allM2 -isVisible 1
+[06/07 17:21:00    115s] <CMD> setLayerPreference allM1 -isVisible 0
+[06/07 17:21:00    115s] <CMD> setLayerPreference allM1 -isVisible 1
+[06/07 17:21:18    117s] <CMD> set sprCreateIeRingOffset 1.0
+[06/07 17:21:18    117s] <CMD> set sprCreateIeRingThreshold 1.0
+[06/07 17:21:18    117s] <CMD> set sprCreateIeRingJogDistance 1.0
+[06/07 17:21:18    117s] <CMD> set sprCreateIeRingLayers {}
+[06/07 17:21:18    117s] <CMD> set sprCreateIeRingOffset 1.0
+[06/07 17:21:18    117s] <CMD> set sprCreateIeRingThreshold 1.0
+[06/07 17:21:18    117s] <CMD> set sprCreateIeRingJogDistance 1.0
+[06/07 17:21:18    117s] <CMD> set sprCreateIeRingLayers {}
+[06/07 17:21:18    117s] <CMD> set sprCreateIeStripeWidth 10.0
+[06/07 17:21:18    117s] <CMD> set sprCreateIeStripeThreshold 1.0
+[06/07 17:21:18    117s] <CMD> set sprCreateIeStripeWidth 10.0
+[06/07 17:21:18    117s] <CMD> set sprCreateIeStripeThreshold 1.0
+[06/07 17:21:18    117s] <CMD> set sprCreateIeRingOffset 1.0
+[06/07 17:21:18    117s] <CMD> set sprCreateIeRingThreshold 1.0
+[06/07 17:21:18    117s] <CMD> set sprCreateIeRingJogDistance 1.0
+[06/07 17:21:18    117s] <CMD> set sprCreateIeRingLayers {}
+[06/07 17:21:18    117s] <CMD> set sprCreateIeStripeWidth 10.0
+[06/07 17:21:18    117s] <CMD> set sprCreateIeStripeThreshold 1.0
+[06/07 17:24:58    136s] <CMD> zoomBox 503.75 591.5 505.65 592.85
+[06/07 17:25:36    139s] <CMD> redraw
+[06/07 17:25:52    141s] <CMD> zoomBox 450.55 617.5 452.45 618.85
+[06/07 17:27:20    148s] **WARN: (IMPTCM-125):	Option "-checkPinLayerForAccess" for command getPlaceMode is obsolete and will be ignored. It no longer has any effect and should be removed from your script.
+[06/07 17:28:08    152s] <CMD> redraw
+[06/07 17:28:15    153s] <CMD> zoomBox 635.5 632.15 637.1 634.0
+[06/07 17:28:55    157s] <CMD_INTERNAL> violationBrowserClose
