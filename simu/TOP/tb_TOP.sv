@@ -90,33 +90,35 @@ end
 //  SEL
 //////////////////////////////////////////////////////////////////////////////////
 initial begin : SELECT
-	for(int i = 0; i < 5; i++) begin  // RESET TIME
-		#CLK_PERIOD ;	
+	for(int i = 0; i < 8; i++) begin  // SEL1
+		for(int j = 0; j < 8; j++) begin // SEL2
+			for(int k = 0; k < 2; k++) begin // SEL3
+				for(int l = 0; l < 4; l++) begin // SEL6
+					for(int m = 0; m < 4; m++) begin // SEL9
+						for(int n = 0; n < 2; n++) begin // SEL11
+							for(int o = 0; o < 2; o++) begin // SEL12
+								for(int p = 0; p < 4; p++) begin // SEL15
+									for(int q = 0; q < 2; q++) begin // SEL17
+										
+										inSEL1			=	i	;
+										inSEL2			=	j	;
+										inSEL3			=	k	;
+										inSEL6			=	l	;
+										inSEL9			=	m	;
+										inSEL11			=	n	;
+										inSEL12			=	o	;
+										inSEL15			=	p	;
+										inSEL17			=	q	;
+
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+		end
 	end
-	
-	// STAND ALONE
-	inSEL1			=	3'b0	;	inSEL2			=	3'b0	;	inSEL3			=	1'b0	;
-	inSEL6			=	2'b0	;	inSEL9			=	2'b0	;	inSEL11			=	1'b0	;
-	inSEL12			=	1'b0	;	inSEL15			=	2'b0	;	inSEL17			=	1'b0	;
-
-
-
-	
-end
-//////////////////////////////////////////////////////////////////////////////////
-
-//////////////////////////////////////////////////////////////////////////////////
-//  DATA
-//////////////////////////////////////////////////////////////////////////////////
-initial begin : DATA
-	for(int i = 0; i < 6; i++) begin // RESET TIME + 1
-		#CLK_PERIOD ;	
-	end
-	
-	inData			=	4'b1101	;	inReadEnable	=	1'b1	;
-	inDEMUX1		=	1'b1	;	inDEMUX2		=	1'b1	;
-	inDEMUX17		=	4'b0	;	inDEMUX18		=	4'b0	; 
-
 	
 end
 //////////////////////////////////////////////////////////////////////////////////
