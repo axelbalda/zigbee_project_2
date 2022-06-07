@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      xph2app102
+HostName                       cimeld105
+ProcessIdentifier              18470
+ProcessCreationTime_UTC        1654269892
+ProcessCreationTime_Readable   Fri Jun  3 17:24:52 2022 CEST
+AppIdentifier                  /softslin/cdsic616_500_140/tools/dfII/bin/64bit/libManager
+OSType                         lnx86
+ReasonForPlacingEditLock       log file
+FilePathUsedToEditLock         /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/CDS/libManager.log
+TimeEditLocked                 Fri Jun  3 17:24:52 2022 CEST

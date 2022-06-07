@@ -40,7 +40,7 @@ reg 	[1:0]	inSEL6			;
 reg 	[1:0]	inSEL9			;
 reg 			inSEL11			;
 reg 			inSEL12			;
-reg 	[1:0]	inSEL15			;
+reg 	[2:0]	inSEL15			;
 reg 			inSEL17			;
 reg 	[3:0]	outMUX9			;
 reg 	[3:0]	outMUX10		;

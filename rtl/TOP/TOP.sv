@@ -17,7 +17,7 @@ module TOP(
 	input 	[1:0]	in_MUX_inSEL9			,
 	input 			in_MUX_inSEL11			,
 	input 			in_MUX_inSEL12			,
-	input 	[1:0]	in_MUX_inSEL15			, 
+	input 	[2:0]	in_MUX_inSEL15			, 
 	input 			in_DEMUX_inSEL17		, 
 
 	output 	[3:0]	out_MUX_outMUX9			,	
@@ -72,14 +72,14 @@ wire 	[3:0]	sig_outFIFO_outData			;
 //////////////////////////////////////////////////////////////////////////////////
 wire	[7:0]	sig_DEMUX_outDEMUX1			;
 wire	[7:0]	sig_DEMUX_outDEMUX2			;
-wire 	[1:0]	sig_DEMUX_outDEMUX17		;
-wire	[1:0]	sig_DEMUX_outDEMUX18		;
+wire 	[7:0]	sig_DEMUX_outDEMUX17		;
+wire	[7:0]	sig_DEMUX_outDEMUX18		;
 
 wire	[1:0]	sig_MUX_inMUX3				;  	
 wire 	[1:0]	sig_MUX_inMUX4				;  
 wire 	[1:0]	sig_MUX_inMUX5				;  	
-wire 	[4:0]	sig_MUX_inMUX6				;  
-wire 	[4:0]	sig_MUX_inMUX7				;  	
+wire 	[15:0]	sig_MUX_inMUX6				;  
+wire 	[15:0]	sig_MUX_inMUX7				;  	
 wire 	[1:0]	sig_MUX_inMUX8				;  	
 wire 	[15:0]	sig_MUX_inMUX9				;  	
 wire 	[15:0]	sig_MUX_inMUX10				; 	
@@ -87,8 +87,8 @@ wire 	[1:0]	sig_MUX_inMUX11				;
 wire 	[1:0]	sig_MUX_inMUX12				;  
 wire 	[1:0]	sig_MUX_inMUX13				; 
 wire 	[1:0]	sig_MUX_inMUX14				; 	
-wire 	[3:0]	sig_MUX_inMUX15				;  	
-wire 	[3:0]	sig_MUX_inMUX16				;	 	
+wire 	[7:0]	sig_MUX_inMUX15				;  	
+wire 	[7:0]	sig_MUX_inMUX16				;	 	
 
 wire 		sig_MUX_outMUX3					;	
 wire 		sig_MUX_outMUX4					;	

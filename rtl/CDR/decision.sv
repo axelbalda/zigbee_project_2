@@ -16,17 +16,9 @@ logic [5:0] cnt_r;
 
 
 //wire declaration
-wire 	w_en_clk, w_en, w_en_dec, w_s_r, w_en_d, w_en_m, w_en_f, w_en_freq_synch;		//counter out wire
+wire 	w_en_clk, w_en_dec, w_s_r;		//counter out wire
 wire 	w_m_signal_synchro, w_m_r; 	//mux out wire
 
-// SystemVerilog:
-initial begin
-	signal_synchro = 1'b0;
-	o_data = 1'b0;
-	o_flag = 1'b0;
-	phase_ech = 1'b0;
-	cnt_r = 1'b0;
-end
 
 //retard sur flag
 assign w_m_r = (i_flag || o_flag) ? i_flag : w_s_r;
@@ -72,7 +64,6 @@ begin
 		end
 	end
 	else begin // si le reset est actif
-		signal_synchro = 1'b0;
 		o_data = 1'b0;
 		phase_ech = 1'b0;
 	end

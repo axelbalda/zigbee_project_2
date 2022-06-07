@@ -1,0 +1,3 @@
+#!/bin/sh -f
+/softslin/cdsassura4_13_102_615/tools/assura/bin/assura /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/CDS/ASSURA_DRC/msk_modulator_io/msk_modulator_io.rsf -cdslib /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/CDS/cds.lib -restart -gui
+exit $?

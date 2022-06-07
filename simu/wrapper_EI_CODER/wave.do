@@ -3,7 +3,6 @@ quietly WaveActivateNextPane {} 0
 add wave -noupdate -divider WRAPPER
 add wave -noupdate /tb_wrapper_EI_CODER/DATA_WIDTH
 add wave -noupdate /tb_wrapper_EI_CODER/ADDR_WIDTH
-add wave -noupdate /tb_wrapper_EI_CODER/inCLK_PERIOD
 add wave -noupdate /tb_wrapper_EI_CODER/clk
 add wave -noupdate /tb_wrapper_EI_CODER/reset
 add wave -noupdate /tb_wrapper_EI_CODER/writeEN
@@ -38,8 +37,10 @@ add wave -noupdate /tb_wrapper_EI_CODER/u_EI_CODER/u_coder/next_stateQ
 add wave -noupdate /tb_wrapper_EI_CODER/u_EI_CODER/u_coder/i_empty
 add wave -noupdate -format Analog-Step -height 84 -max 7.0 -min -7.0 -radix decimal /tb_wrapper_EI_CODER/u_EI_CODER/u_coder/o_sinI
 add wave -noupdate -format Analog-Step -height 84 -max 7.0 -min -7.0 -radix decimal /tb_wrapper_EI_CODER/u_EI_CODER/u_coder/o_sinQ
+add wave -noupdate -format Analog-Step -height 84 -max 7.0 -min -7.0 -radix decimal -childformat {{{/tb_wrapper_EI_CODER/u_EI_CODER/u_coder/o_sinI_four[3]} -radix decimal} {{/tb_wrapper_EI_CODER/u_EI_CODER/u_coder/o_sinI_four[2]} -radix decimal} {{/tb_wrapper_EI_CODER/u_EI_CODER/u_coder/o_sinI_four[1]} -radix decimal} {{/tb_wrapper_EI_CODER/u_EI_CODER/u_coder/o_sinI_four[0]} -radix decimal}} -subitemconfig {{/tb_wrapper_EI_CODER/u_EI_CODER/u_coder/o_sinI_four[3]} {-height 16 -radix decimal} {/tb_wrapper_EI_CODER/u_EI_CODER/u_coder/o_sinI_four[2]} {-height 16 -radix decimal} {/tb_wrapper_EI_CODER/u_EI_CODER/u_coder/o_sinI_four[1]} {-height 16 -radix decimal} {/tb_wrapper_EI_CODER/u_EI_CODER/u_coder/o_sinI_four[0]} {-height 16 -radix decimal}} /tb_wrapper_EI_CODER/u_EI_CODER/u_coder/o_sinI_four
+add wave -noupdate -format Analog-Step -height 84 -max 7.0 -min -7.0 -radix decimal /tb_wrapper_EI_CODER/u_EI_CODER/u_coder/o_sinQ_four
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {406827 ps} 0}
+WaveRestoreCursors {{Cursor 1} {6720000 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100

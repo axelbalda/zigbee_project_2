@@ -17,7 +17,7 @@
 
 module DEMUX124 (   
     input  [3 : 0]      inData  ,
-    input  [1 : 0]	    inSel   ,      
+    input               inSel   ,      
     output [7 : 0]	    outData       
 ) ;
  
