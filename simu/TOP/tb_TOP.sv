@@ -110,7 +110,7 @@ initial begin : SELECT
 										inSEL15			=	p	;
 										inSEL17			=	q	;
 
-											for(int i = 0; i < 5; i++) begin
+											for(int i = 0; i < 1000; i++) begin
 												#CLK_PERIOD ;	
 											end
 
