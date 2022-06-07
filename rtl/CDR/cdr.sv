@@ -53,7 +53,7 @@ always @(posedge i_clk) begin
 		cnt_p = 1'b0;
 		en_in = 1'b1;
 		w_flag = 1'b0;
-		w_phase = 1'b0; 
+		w_phase <= 1'b0; 
 	end
 end
 
