@@ -90,6 +90,10 @@ end
 //  SEL
 //////////////////////////////////////////////////////////////////////////////////
 initial begin : SELECT
+	for(int i = 0; i < 5; i++) begin
+		#CLK_PERIOD ;	
+	end
+
 	for(int i = 0; i < 8; i++) begin  // SEL1
 		for(int j = 0; j < 8; j++) begin // SEL2
 			for(int k = 0; k < 2; k++) begin // SEL3
