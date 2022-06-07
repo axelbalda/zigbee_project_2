@@ -1,0 +1,74 @@
+set var_path "/tp/xph2app/xph2app007/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project_2/rtl"
+
+set var_file_to_open "$var_path/TOP/TOP.sv"
+analyze -library WORK -format sverilog $var_file_to_open
+
+
+set var_file_to_open1 "$var_path/CDR/cdr.sv"
+analyze -library WORK -format sverilog $var_file_to_open1
+set var_file_to_open2 "$var_path/CDR/counter.sv"
+analyze -library WORK -format sverilog $var_file_to_open2
+set var_file_to_open3 "$var_path/CDR/counter_decision.sv"
+analyze -library WORK -format sverilog $var_file_to_open3
+set var_file_to_open4 "$var_path/CDR/decision.sv"
+analyze -library WORK -format sverilog $var_file_to_open4
+set var_file_to_open5 "$var_path/CDR/phase_detector.sv"
+analyze -library WORK -format sverilog $var_file_to_open5
+set var_file_to_open6 "$var_path/CDR/divN.sv"
+analyze -library WORK -format sverilog $var_file_to_open6
+set var_file_to_open7 "$var_path/CDR/ffd.sv"
+analyze -library WORK -format sverilog $var_file_to_open7
+
+set var_file_to_open "$var_path/CODER/msk_modulator2.sv"
+analyze -library WORK -format sverilog $var_file_to_open
+
+set var_file_to_open "$var_path/CORDIC/cordic_block.sv"
+analyze -library WORK -format sverilog $var_file_to_open
+set var_file_to_open "$var_path/CORDIC/rotation.sv"
+analyze -library WORK -format sverilog $var_file_to_open
+set var_file_to_open "$var_path/CORDIC/system.sv"
+analyze -library WORK -format sverilog $var_file_to_open
+
+set var_file_to_open4 "$var_path/DECODER/cossin_gen.sv"
+set var_file_to_open3 "$var_path/DECODER/iq_demod.sv"
+set var_file_to_open2 "$var_path/DECODER/fir_filter.sv"
+set var_file_to_open1 "$var_path/DECODER/decoder_top.sv"
+
+analyze -library WORK -format sverilog $var_file_to_open4
+analyze -library WORK -format sverilog $var_file_to_open3
+analyze -library WORK -format sverilog $var_file_to_open2
+analyze -library WORK -format sverilog $var_file_to_open1
+
+set var_file_to_open "$var_path/EI/inFIFO.debug.sv"
+analyze -library WORK -format sverilog $var_file_to_open
+set var_file_to_open "$var_path/EI/OS.sv"
+analyze -library WORK -format sverilog $var_file_to_open
+set var_file_to_open "$var_path/EI/DFF.sv"
+analyze -library WORK -format sverilog $var_file_to_open
+
+set var_file_to_open "$var_path/EI/outFIFO.debug.sv"
+analyze -library WORK -format sverilog $var_file_to_open
+
+
+
+elaborate TOP -architecture verilog -library WORK
+
+create_clock -name "inClock" -period 20 -waveform { 0 10 }  { inClock }
+set_operating_conditions -library c35_CORELIB_TYP TYPICAL
+
+compile -exact_map -ungroup_all -auto_ungroup area
+
+
+
+
+
+set name_netlist "TOP_netlist.v"
+set name_sdc "TOP_1.sdc"
+
+write -hierarchy -format verilog -output "$var_path/../simu/post_synth/EI/$name_netlist
+write_sdc "$var_path/../simu/post_synth/EI/$name_sdc
+
+
+uplevel #0 { report_area }
+uplevel #0 { report_clock -attribute }
+
