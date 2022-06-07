@@ -1,33 +1,12 @@
 `timescale 1ns / 1ps
-
-//////////////////////////////////////////////////////////////////////////////////
-// Company:
-// Engineer:
-//
-// Create Date: 17.03.2022 16:05:32
-// Design Name:
-// Module Name: tb_MUX1
-// Project Name:
-// Target Devices:
-// Tool Versions:
-// Description:
-//
-// Dependencies:
-//
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-//
-//////////////////////////////////////////////////////////////////////////////////
-
  
 module tb_MUX1();
 
     parameter	CLK_PERIOD = 20 ; 
-    reg         inClock         ;
-    reg		inReset  	;
+    reg         inClock		;
+    reg			inReset  	;
     reg	[1:0]	inSel   	;
-    reg		inData  	;
+    reg			inData  	;
     reg	[3:0]   outData   	;
 
 
@@ -49,6 +28,18 @@ initial begin : RESET
 	end
 	inReset = 1'b1 ;
 end
+
+
+
+
+
+
+
+
+
+
+
+
 
 initial begin : DATA
 		for(int i = 0; i < 5; i++) begin
@@ -92,4 +83,12 @@ MUX1 u_mux1 (
 ) ;
 
 endmodule
+
+
+
+
+
+
+
+
 
