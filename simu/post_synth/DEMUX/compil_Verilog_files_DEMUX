@@ -7,6 +7,6 @@ vmap Lib_DEMUX_PS $HOME/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project_2/libs
 vlog +acc -work Lib_DEMUX_PS ../../../rtl/DEMUX/DEMUX_181.sv
 #vlog +acc -work Lib_DEMUX_PS ../../../rtl/DEMUX/DEMUX_144.sv
 vlog +acc -work Lib_DEMUX_PS ../../../rtl/DEMUX/DEMUX_121.sv
-vlog +acc -work Lib_DEMUX_PS DEMUX124_ntelist.sv
+vlog +acc -work Lib_DEMUX_PS DEMUX124_netlist.v
 
 vlog +acc -work Lib_DEMUX_PS ./tb_DEMUX.sv
