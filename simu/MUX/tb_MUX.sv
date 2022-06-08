@@ -182,6 +182,8 @@ always begin : DATA414
     #CLK_PERIOD;
     inData414 = 16'h0F;
     #CLK_PERIOD;
+    inData414 = 16'h00;
+    #CLK_PERIOD;
     inData414 = 16'h10;
     #CLK_PERIOD;
     inData414 = 16'h20;
@@ -216,6 +218,7 @@ always begin : DATA414
 end
 
 always begin : DATA811
+    
     inData811 = 8'h00;
     #CLK_PERIOD;
 
@@ -262,6 +265,9 @@ always begin : DATA811
     #CLK_PERIOD;
 
     inData811 = 8'h0F;
+    #CLK_PERIOD;
+
+    inData811 = 8'h00;
     #CLK_PERIOD;
 
     inData811 = 8'h10;
