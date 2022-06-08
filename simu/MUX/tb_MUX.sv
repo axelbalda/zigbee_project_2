@@ -5,16 +5,16 @@ module tb_MUX();
 
 parameter	CLK_PERIOD = 20 ; 
 
-reg	[1 : 0]	    inData211	;
+reg	[1  : 0]	inData211	;
 reg	    	    inSel211	;
 reg	    	    outData211	;
 
 reg [15 : 0]    inData414	;
-reg	[1 : 0]		inSel414	;
-reg	[3 : 0] 	outData414	;
+reg	[1  : 0]	inSel414	;
+reg	[3  : 0] 	outData414	;
 
-reg	[7 : 0]	    inData811	;
-reg	[2 : 0]		inSel811	;
+reg	[7  : 0]	inData811	;
+reg	[2  : 0]	inSel811	;
 reg	        	outData811	;
 
 
