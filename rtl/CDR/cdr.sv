@@ -20,6 +20,7 @@ always_ff@(posedge i_clk) begin
 	if(i_rst == 1'b0) begin
 		cnt_in <= 1'b0;
 		cnt_p <= 1'b0;
+		cnt <= 1'b0;
 		w_flag <= 1'b0;
 		w_phase <= 1'b0;
 		w_phase_d <= 1'b0;
@@ -63,7 +64,7 @@ always_ff@(posedge i_clk) begin
 			w_flag <= 1'b0;
 		end
 		if (w_flag == 0) begin
-			cnt = 0;
+			cnt <= 0;
 		end
 		else begin
 			if((cnt_p == 3) && (w_flag)) begin

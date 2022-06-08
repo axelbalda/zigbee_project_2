@@ -1,6 +1,6 @@
 module phase_detector (
 	input 			i_phase, 	   //data of phase entring (0 or 1)
-	input [5:0] 		i_nb_P,      //freq of phase sent
+	input reg [5:0] 	i_nb_P,      //freq of phase sent
 	input logic [1:0]	i_cnt_p,
 	input 			i_clk, 		   //work clk 50 MHz
 	input 			i_rst,		   //reset signal
