@@ -75,7 +75,7 @@ always_comb begin
 	s_signal1 <= {s_data0[1], s_data1[1], s_data2[1], s_data3[1]} ;
 end
 
-assign outData = {s_signal0, s_signal1} ;
+assign outData = {s_signal1, s_signal0} ;
 
 endmodule
 
