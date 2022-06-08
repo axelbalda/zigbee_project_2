@@ -1,0 +1,22 @@
+*drcRulesFile: $AMS_DIR/calibre/c35b4/c35b4c0.rules
+*drcRunDir: /tp/xph2app/xph2app101/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project_2/implem/pnr/CDS_axel
+*drcLayoutPaths: top_io.calibre.db
+*drcLayoutPrimary: top_io
+*drcLayoutLibrary: test_drc
+*drcLayoutView: layout
+*drcLayoutGetFromViewer: 1
+*drcResultsFile: top_io.drc.results
+*drcIncludeCmdsType: SVRF
+*drcSVRFCmds: {#DEFINE NO_METRES}
+*drcSummaryFile: top_io.drc.summary
+*drcIncrDRCSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*drcIncrDRCLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*drcIncrDRCGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnVConnectReport: 1
+*cmnVConnectNamesState: ALL
+*cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnFDILayoutLibrary: test_drc
+*cmnFDILayoutView: layout
+*cmnFDIDEFLayoutPath: top_io.def
