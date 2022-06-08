@@ -46,7 +46,7 @@ always_ff@(posedge i_clk) begin
 			o_en <= 1'b1; // to enable sampling of T and E signals (=outputs of phase detector)
 		end
 
-		if (cnt == i_nb_P-2) begin //23
+		if (cnt == i_nb_P-1) begin //23
 			o_en_freq_synch <= 1'b1;
 		end
 		
@@ -54,10 +54,7 @@ always_ff@(posedge i_clk) begin
 			cnt <= 1'b0;
 		end
 		else begin
-			if(i_cnt_p == 0) begin
-				cnt <= 1'b0;
-			end 
-			else begin
+			if(i_cnt_p == 3) begin
 				cnt <= cnt + 1;
 			end
 		end

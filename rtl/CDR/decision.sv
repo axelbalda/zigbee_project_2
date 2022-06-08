@@ -4,12 +4,6 @@ module decision(
 	input    		i_phase,
 	input 			i_rst,
 	input			i_clk,
-	//input logic [5:0]	i_nb_P,
-	//input logic [1:0]	i_cnt_p,
-	//output reg		o_data,
-
-	//input reg 		i_flag,
-	//output reg 	 	o_flag
 
 	input reg [5:0]	i_nb_P,
 	input reg [1:0]	i_cnt_p,
@@ -39,17 +33,14 @@ always_ff@(posedge i_clk) begin
 	end
 	else begin
 		o_flag <= 1'b0;
-		if((cnt_r == (((i_nb_P-1)/2)+2)) && (w_s_r == 1) && (i_cnt_p == 2)) begin
+		if((cnt_r == (((i_nb_P-1)/2)+2)) && (w_s_r == 1) && (i_cnt_p == 3)) begin
 			o_flag <= 1'b1;
 		end
 		if(cnt_r == i_nb_P-1) begin
 			cnt_r <= 1'b0;
 		end
 		else begin
-			if(i_cnt_p == 0) begin
-				cnt_r <= 1'b0;
-			end 
-			else begin
+			if(i_cnt_p == 3) begin
 				cnt_r <= cnt_r + 1;
 			end
 		end

@@ -10,6 +10,7 @@ module cdr (
 
 logic [3:0] cnt_in; //permet de compter les i_flag
 logic [1:0] cnt_p;
+logic [2:0] cnt;
 logic w_flag; //flag en entree du bloc de decision 
 logic w_phase, w_phase_d, w_phase_m, w_phase_f; //w_mux_phase;
 wire w_sT, w_sE;
@@ -46,15 +47,27 @@ always_ff@(posedge i_clk) begin
 			if(cnt_in == 4) begin
 				w_phase <= ((w_phase_d & w_phase_m) | (w_phase_m & w_phase_f) | (w_phase_d & w_phase_f));
 				w_flag <= 1'b1;
-			end
-			if(cnt_in == 5) begin
-				cnt_in <= 1'b1;
 				if(cnt_p != 3) begin
 					cnt_p <= cnt_p + 1;
 				end
 			end
+			if(cnt_in == 5) begin
+				cnt_in <= 1'b1;
+			end
 			else begin
 				cnt_in <= cnt_in + 1;
+			end
+		end
+
+		if (cnt == 4) begin
+			w_flag <= 1'b0;
+		end
+		if (w_flag == 0) begin
+			cnt = 0;
+		end
+		else begin
+			if((cnt_p == 3) && (w_flag)) begin
+				cnt <= cnt + 1;
 			end
 		end
 	end
