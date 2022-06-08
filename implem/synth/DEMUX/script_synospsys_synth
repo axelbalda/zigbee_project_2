@@ -1,8 +1,8 @@
 
 set var_path "/tp/xph2app/xph2app007/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project_2/rtl"
 
-analyze -library WORK -format sverilog $var_path/DEMUX/DEMUX_141.sv
-analyze -library WORK -format sverilog $var_path/DEMUX/DEMUX_144.sv
+analyze -library WORK -format sverilog $var_path/DEMUX/DEMUX_121.sv
+analyze -library WORK -format sverilog $var_path/DEMUX/DEMUX_124.sv
 
 
 elaborate DEMUX124 -architecture verilog -library WORK
