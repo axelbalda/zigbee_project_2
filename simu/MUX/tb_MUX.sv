@@ -183,7 +183,7 @@ always begin : DATA414
 
 end
 
-always begin : DATA414
+always begin : DATA811
     inData811 = 8'h00;
     #CLK_PERIOD;
 
