@@ -81,162 +81,162 @@ always begin : DATA
 	inData211 = 2'b00;
     inData414 = 16'h00;
     inData811 = 8'h0;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
     inData211 = 2'b01;
     inData414 = 16'h01;
     inData811 = 8'h1;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
     inData211 = 2'b10;
     inData414 = 16'h02;
     inData811 = 8'h2;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
     inData211 = 2'b11;
     inData414 = 16'h03;
     inData811 = 8'h3;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
 	inData211 = 2'b00;
     inData414 = 16'h04;
     inData811 = 8'h4;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
     inData211 = 2'b01;
     inData414 = 16'h05;
     inData811 = 8'h5;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
     inData211 = 2'b10;
     inData414 = 16'h06;
     inData811 = 8'h6;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
     inData211 = 2'b11;
     inData414 = 16'h07;
     inData811 = 8'h7;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
 	inData211 = 2'b00;
     inData414 = 16'h08;
     inData811 = 8'h8;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
     inData211 = 2'b01;
     inData414 = 16'h09;
     inData811 = 8'h9;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
     inData211 = 2'b10;
     inData414 = 16'h0A;
     inData811 = 8'hA;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
     inData211 = 2'b11;
     inData414 = 16'h0B;
     inData811 = 8'hB;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
 	inData211 = 2'b00;
     inData414 = 16'h0C;
     inData811 = 8'hC;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
     inData211 = 2'b01;
     inData414 = 16'h0D;
     inData811 = 8'hD;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
     inData211 = 2'b10;
     inData414 = 16'h0E;
     inData811 = 8'hE;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
     inData211 = 2'b11;
     inData414 = 16'h0F;
     inData811 = 8'hF;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
 	inData211 = 2'b00;
     inData414 = 16'h00;
     inData811 = 8'h0;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
     inData211 = 2'b01;
     inData414 = 16'h10;
     inData811 = 8'h1;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
     inData211 = 2'b10;
     inData414 = 16'h20;
     inData811 = 8'h2;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
     inData211 = 2'b11;
     inData414 = 16'h30;
     inData811 = 8'h3;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
 	inData211 = 2'b00;
     inData414 = 16'h40;
     inData811 = 8'h4;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
     inData211 = 2'b01;
     inData414 = 16'h50;
     inData811 = 8'h5;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
     inData211 = 2'b10;
     inData414 = 16'h60;
     inData811 = 8'h6;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
     inData211 = 2'b11;
     inData414 = 16'h70;
     inData811 = 8'h7;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
 	inData211 = 2'b00;
     inData414 = 16'h80;
     inData811 = 8'h8;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
     inData211 = 2'b01;
     inData414 = 16'h90;
     inData811 = 8'h9;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
     inData211 = 2'b10;
     inData414 = 16'hA0;
     inData811 = 8'hA;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
     inData211 = 2'b11;
     inData414 = 16'hB0;
     inData811 = 8'hB;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
 	inData211 = 2'b00;
     inData414 = 16'hC0;
     inData811 = 8'hC;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
     inData211 = 2'b01;
     inData414 = 16'hD0;
     inData811 = 8'hD;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
     inData211 = 2'b10;
     inData414 = 16'hE0;
     inData811 = 8'hE;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
     inData211 = 2'b11;
     inData414 = 16'hF0;
     inData811 = 8'hF;
-    #CLK_PERIOD
+    #CLK_PERIOD;
 
 end
 
