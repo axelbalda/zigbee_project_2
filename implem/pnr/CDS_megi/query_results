@@ -1,0 +1,3 @@
+mgc_rve_context_lcv "test_drc" "msk_modulator_io" "layout" 1000
+me 2 430.1 451.5 430.2 451.5 430.05 451.95 430.2 451.95
+mgc_rve_zoom 430.018 451.404 430.232 452.046 1
