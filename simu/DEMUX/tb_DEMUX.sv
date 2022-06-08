@@ -48,28 +48,28 @@ end
 
 
 always begin : SEL
-	inSel181 = 3'b000; inData121 = 1'b0; inData124 = 1'b0;
+	inSel181 = 3'b000; inSel121 = 1'b0; inSel124 = 1'b0;
 	#CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ;
 
-	inSel181 = 3'b001; inData121 = 1'b1; inData124 = 1'b1;
+	inSel181 = 3'b001; inSel121 = 1'b1; inSel124 = 1'b1;
 	#CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ;
 
-	inSel181 = 3'b010; inData121 = 1'b0; inData124 = 1'b0;
+	inSel181 = 3'b010; inSel121 = 1'b0; inSel124 = 1'b0;
 	#CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ;
 
-	inSel181 = 3'b011; inData121 = 1'b1; inData124 = 1'b1;
+	inSel181 = 3'b011; inSel121 = 1'b1; inSel124 = 1'b1;
 	#CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ;
 
-	inSel181 = 3'b100; inData121 = 1'b0; inData124 = 1'b0;
+	inSel181 = 3'b100; inSel121 = 1'b0; inSel124 = 1'b0;
 	#CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ;
 
-	inSel181 = 3'b101; inData121 = 1'b1; inData124 = 1'b1;
+	inSel181 = 3'b101; inSel121 = 1'b1; inSel124 = 1'b1;
 	#CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ;
 
-	inSel181 = 3'b110; inData121 = 1'b0; inData124 = 1'b0;
+	inSel181 = 3'b110; inSel121 = 1'b0; inSel124 = 1'b0;
 	#CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ;
 
-	inSel181 = 3'b111; inData121 = 1'b1; inData124 = 1'b1;
+	inSel181 = 3'b111; inSel121 = 1'b1; inSel124 = 1'b1;
 	#CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ;
 
 end
