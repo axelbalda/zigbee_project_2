@@ -99,3 +99,4 @@ write_sdc "$var_path/../simu/post_synth/EI/$name_sdc
 uplevel #0 { report_area }
 uplevel #0 { report_clock -attribute }
 
+
