@@ -26,21 +26,12 @@ reg s_data1;
 reg s_data2;
 reg s_data3;
 
-reg [3 : 0] s_signal0 ;
-reg [3 : 0] s_signal1 ;
-reg [3 : 0] s_signal2 ;
-reg [3 : 0] s_signal3 ;
-
-
-
-
-
 
 /////////////////////////////////////////////////////
 //  MUX 0
 /////////////////////////////////////////////////////
 MUX411 mux0(
-            .inData  ( {inData[0], inData[4], inData[8], inData[12]}   ) ,
+            .inData  ( {inData[12], inData[8], inData[4], inData[0]}   ) ,
             .inSel   ( inSel                                            ) ,
             .outData ( s_data0                                          ) 
             ) ;
@@ -50,7 +41,7 @@ MUX411 mux0(
 //  MUX 1
 /////////////////////////////////////////////////////
 MUX411 mux1(
-            .inData  ( {inData[1], inData[5], inData[9], inData[13]}   ) ,
+            .inData  ( {inData[13], inData[9], inData[5], inData[1]}   ) ,
             .inSel   ( inSel                                            ) ,
             .outData ( s_data1                                          ) 
             ) ;
@@ -60,7 +51,7 @@ MUX411 mux1(
 //  MUX 2
 /////////////////////////////////////////////////////
 MUX411 mux2(
-            .inData  ( {inData[2], inData[6], inData[10], inData[14]}    ) ,
+            .inData  ( {inData[14], inData[10], inData[6], inData[2]}    ) ,
             .inSel   ( inSel                                            ) ,
             .outData ( s_data2                                          ) 
             ) ;
@@ -70,13 +61,13 @@ MUX411 mux2(
 //  MUX 3
 /////////////////////////////////////////////////////
 MUX411 mux3(
-            .inData  ( {inData[3], inData[7], inData[11], inData[15]}    ) ,
+            .inData  ( {inData[15], inData[11], inData[7], inData[3]}    ) ,
             .inSel   ( inSel                                            ) ,
             .outData ( s_data3                                          ) 
             ) ;
 /////////////////////////////////////////////////////
 
-assign outData = {s_data0, s_data1, s_data2, s_data3} ;
+assign outData = {s_data3, s_data2, s_data1, s_data0} ;
 
 endmodule
 
