@@ -7,7 +7,7 @@
 // Module Name: MUX_1bit
 // Project Name: zigbee_project
 // Tool Versions: VIVADO 2018.3
-// Description: MUX 4:1 (1 bit)
+// Description: MUX 4:1 (4 bits)
 //
 //
 // Revision:
