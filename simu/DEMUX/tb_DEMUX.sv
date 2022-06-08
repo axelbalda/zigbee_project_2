@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
  
-module tb_MUX1();
+module tb_DEMUX();
 
 parameter	CLK_PERIOD = 20 ; 
 
@@ -35,11 +35,99 @@ DEMUX121 u_demux121 (
 	.outData		(outData121	)
 );
 
+initial begin 
+	inData181 = 1'b0;
+	inSel181  = 3'b000;
 
-initial begin
+	inData121 = 1'b0;
+	inSel121  = 1'b0;
+
+	inData124= 4'b0000;
+	inSel124  = 1'b0;
+end
 
 
+always begin : SEL
+	inSel181 = 3'b000; inData121 = 1'b0; inData124 = 1'b0;
+	#CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ;
 
+	inSel181 = 3'b001; inData121 = 1'b1; inData124 = 1'b1;
+	#CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ;
+
+	inSel181 = 3'b010; inData121 = 1'b0; inData124 = 1'b0;
+	#CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ;
+
+	inSel181 = 3'b011; inData121 = 1'b1; inData124 = 1'b1;
+	#CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ;
+
+	inSel181 = 3'b100; inData121 = 1'b0; inData124 = 1'b0;
+	#CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ;
+
+	inSel181 = 3'b101; inData121 = 1'b1; inData124 = 1'b1;
+	#CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ;
+
+	inSel181 = 3'b110; inData121 = 1'b0; inData124 = 1'b0;
+	#CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ;
+
+	inSel181 = 3'b111; inData121 = 1'b1; inData124 = 1'b1;
+	#CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ; #CLK_PERIOD ;
+
+end
+
+always begin : DATA
+	inData181 = 1'b0;
+	inData121 = 1'b0;
+	inData124 = 4'b0000;
+	#CLK_PERIOD ;
+
+	inData181 = 1'b1;
+	inData121 = 1'b1;
+	inData124 = 4'b0001;
+	#CLK_PERIOD ;
+
+	inData124 = 4'b0010;
+	#CLK_PERIOD ;
+
+	inData124 = 4'b0011;
+	#CLK_PERIOD ;
+
+	inData124 = 4'b0100;
+	#CLK_PERIOD ;
+
+	inData124 = 4'b0101;
+	#CLK_PERIOD ;
+
+	inData124 = 4'b0110;
+	#CLK_PERIOD ;
+
+	inData124 = 4'b0111;
+	#CLK_PERIOD ;
+
+	inData124 = 4'b1000;
+	#CLK_PERIOD ;
+
+	inData124 = 4'b1001;
+	#CLK_PERIOD ;
+
+	inData124 = 4'b1010;
+	#CLK_PERIOD ;
+
+	inData124 = 4'b1011;
+	#CLK_PERIOD ;
+
+	inData124 = 4'b1100;
+	#CLK_PERIOD ;
+
+	inData124 = 4'b1101;
+	#CLK_PERIOD ;
+
+	inData124 = 4'b1110;
+	#CLK_PERIOD ;
+
+	inData124 = 4'b1111;
+	#CLK_PERIOD ;
+
+end
 
 endmodule
 
