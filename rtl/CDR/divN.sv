@@ -11,28 +11,28 @@ wire w_en_d, w_en_m, w_en_f, w_en, w_en_freq_synch;
 
 counter cnt_div (i_clk, i_rst, o_nb_P, i_cnt_p, w_en_d, w_en_m, w_en_f, w_en, w_en_freq_synch); //the only value used from counter in this block is w_en_freq_synch
 
-always @(negedge i_clk)
+always_ff@(negedge i_clk)
 begin
-	if (i_rst) begin
+	if (i_rst == 1'b0) begin
+		o_nb_P <= 6'b011001;
+	end
+	else begin
 		if (w_en_freq_synch) begin //div par N tous les nombres de demi-periodes
 		
 			if (i_T) begin
 
 				unique case (i_E)
 					1'b0: 	if (o_nb_P != 6'b010111) begin
-							o_nb_P = o_nb_P - 2'b10; // Pour un retard on ajoute une periode
+							o_nb_P <= o_nb_P - 2'b10; // Pour un retard on ajoute une periode
 						end
 					1'b1: 	if (o_nb_P != 6'b011011) begin
-							o_nb_P = o_nb_P + 2'b10; // Pour une avance on retranche une periode
+							o_nb_P <= o_nb_P + 2'b10; // Pour une avance on retranche une periode
 						end
-					default: o_nb_P = o_nb_P; // Par defaut ne fait rien
+					default: o_nb_P <= o_nb_P; // Par defaut ne fait rien
 						 
 				endcase
 			end
 		end
-	end
-	else begin
-		o_nb_P = 6'b011001;
 	end
 end
 

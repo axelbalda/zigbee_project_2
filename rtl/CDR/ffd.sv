@@ -5,13 +5,13 @@ module ffd (
 	output	reg 	o_Q		//output data
 	);
 
-always @(posedge i_clk)
+always_ff@(posedge i_clk)
 begin
-	if (i_rst == 0) begin
-		o_Q = 0;
+	if (i_rst == 1'b0) begin
+		o_Q <= 1'b0;
 	end
-	else if (i_rst == 1) begin
-		o_Q = i_D ;
+	else begin
+		o_Q <= i_D ;
 	end
 end
 

@@ -12,53 +12,55 @@ module counter(
 
 logic [5:0] cnt;
 
-always @(posedge i_clk) begin
+always_ff@(posedge i_clk) begin
 	
-	if (i_rst) begin
-		o_en = 1'b0;
-		o_en_m = 1'b0;
-		o_en_d = 1'b0;
-		o_en_f =1'b0;
-		o_en_freq_synch = 1'b0;
+	if (i_rst == 1'b0) begin
+		o_en_d <= 1'b0;
+		o_en_m <= 1'b0;
+		o_en_f <= 1'b0;
+		o_en <= 1'b0;
+		o_en_freq_synch <= 1'b0;
+		cnt <= 1'b0;
+	end
+	else begin
+		o_en <= 1'b0;
+		o_en_m <= 1'b0;
+		o_en_d <= 1'b0;
+		o_en_f <=1'b0;
+		o_en_freq_synch <= 1'b0;
 
 		if (cnt == 1'b1) begin //1
-			o_en_d = 1'b1; //debut
+			o_en_d <= 1'b1; //debut
 		end
 		
 
 		if (cnt == (((i_nb_P-1)/2)-1)) begin //11
-			o_en_m = 1'b1; //milieu
+			o_en_m <= 1'b1; //milieu
 		end
 
 		if (cnt == i_nb_P-4) begin //21
-			o_en_f = 1'b1; //fin
+			o_en_f <= 1'b1; //fin
 		end
 
 		if (cnt == i_nb_P-3) begin //22
-			o_en = 1'b1; // to enable sampling of T and E signals (=outputs of phase detector)
+			o_en <= 1'b1; // to enable sampling of T and E signals (=outputs of phase detector)
 		end
 
 		if (cnt == i_nb_P-2) begin //23
-			o_en_freq_synch = 1'b1;
+			o_en_freq_synch <= 1'b1;
 		end
 		
 		if (cnt == i_nb_P-1) begin //24
-			cnt = 1'b0;
+			cnt <= 1'b0;
 		end
-
 		else begin
-			if(i_cnt_p != 0) begin
-				cnt = cnt + 1;
+			if(i_cnt_p == 0) begin
+				cnt <= 1'b0;
+			end 
+			else begin
+				cnt <= cnt + 1;
 			end
 		end
-	end
-	else begin
-		o_en_d = 1'b0;
-		o_en_m = 1'b0;
-		o_en_f = 1'b0;
-		o_en = 1'b0;
-		o_en_freq_synch = 1'b0;
-		cnt = 1'b0;
 	end
 end
 endmodule

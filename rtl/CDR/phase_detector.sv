@@ -41,18 +41,17 @@ begin
     E = w_s2^w_s4;
 end
 
-always @(negedge i_clk)
+always_ff@(negedge i_clk)
 begin
-	if (i_rst) begin
-
+	if (i_rst == 1'b0) begin
+		o_T <= 1'b0;
+		o_E <= 1'b0;
+	end
+	else begin
 		if (w_en) begin
 			o_T <= T;
 			o_E <= E;
 		end
-	end
-	else begin
-		o_T <= 1'b0;
-		o_E <= 1'b0;
 	end
 end
 
