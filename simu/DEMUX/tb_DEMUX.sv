@@ -14,7 +14,7 @@ reg	[1:0]	outData121	;
 
 reg	[3:0]	inData124	;
 reg			inSel124	;
-reg	[15:0]	outData124	;
+reg	[7:0]	outData124	;
 
 
 DEMUX181 u_demux181 (
