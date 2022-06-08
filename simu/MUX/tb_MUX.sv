@@ -24,7 +24,7 @@ MUX211 u_mux211 (
 	.outData		(outData211	)
 );
 
-DEMUX414 u_mux414 (
+MUX414 u_mux414 (
 	.inData			(inData414	), 
 	.inSel			(inSel414	),
 	.outData		(outData414	)
