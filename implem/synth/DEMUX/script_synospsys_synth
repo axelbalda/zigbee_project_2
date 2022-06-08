@@ -13,8 +13,8 @@ set_operating_conditions -library c35_CORELIB_TYP TYPICAL
 compile -exact_map -ungroup_all -auto_ungroup area
 
 
-set name_netlist "DEMUX144_netlist.v"
-set name_sdc "DEMUX144_1.sdc"
+set name_netlist "DEMUX124_netlist.v"
+set name_sdc "DEMUX124_1.sdc"
 
 write -hierarchy -format verilog -output $var_path/../simu/post_synth/DEMUX/$name_netlist
 write_sdc $var_path/../simu/post_synth/DEMUX/$name_sdc
