@@ -76,7 +76,7 @@ MUX411 mux3(
             ) ;
 /////////////////////////////////////////////////////
 
-assign outData = {s_data3, s_data2, s_data1, s_data0} ;
+assign outData = {s_data0, s_data1, s_data2, s_data3} ;
 
 endmodule
 
