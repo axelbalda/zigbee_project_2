@@ -5,7 +5,7 @@ analyze -library WORK -format sverilog $var_path/DEMUX/DEMUX_141.sv
 analyze -library WORK -format sverilog $var_path/DEMUX/DEMUX_144.sv
 
 
-elaborate DEMUX144 -architecture verilog -library WORK
+elaborate DEMUX124 -architecture verilog -library WORK
 
 create_clock -name "inClock" -period 20 -waveform { 0 10  }  { inClock  }
 set_operating_conditions -library c35_CORELIB_TYP TYPICAL
