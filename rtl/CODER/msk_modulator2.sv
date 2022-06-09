@@ -108,6 +108,11 @@ module msk_modulator (input clk, input reset, input reg i_empty, input reg i_dat
 			is9 <= 1'b0;
 			old_i_data <= 1'b0;
 			o_ready <= 1'b0;
+
+			o_sinI <= 4'd0;
+			o_sinI_four <= 4'd0;
+			o_sinQ <= 4'd0;
+			o_sinQ_four <= 4'd0;
 			
 				//Rajouter le commentaire (2) si besoin est
 		end
@@ -142,8 +147,11 @@ module msk_modulator (input clk, input reset, input reg i_empty, input reg i_dat
 						
 						i <= 0;
 			end
-			else
-				is9 <= 1'b0;				
+			else begin
+				is9 <= 1'b0;
+				o_sinI <= 4'd0;
+				o_sinI_four <= 4'd0;				
+			end
 		end
 
 		if(stateI == state_bit_recI) begin
@@ -215,8 +223,11 @@ module msk_modulator (input clk, input reset, input reg i_empty, input reg i_dat
 
 						j <= 0; 
 			end
-			else
-				is9 <= 1'b0;				
+			else begin
+				is9 <= 1'b0;	
+				o_sinQ <= 4'd0;
+				o_sinQ_four <= 4'd0;	
+			end		
 		end
 
 		if(stateQ == state_bit_recQ) begin
