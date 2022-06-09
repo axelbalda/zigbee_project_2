@@ -1,9 +1,8 @@
 module counter_decision (
 	input 		i_clk,
 	input 		i_rst,
-
 	input reg [5:0]	i_nb_P,
-	input reg [1:0]	i_cnt_p,
+	input reg [1:0]	i_cnt_d,
 	output logic	o_en_dec
 	);
 
@@ -17,7 +16,7 @@ always_ff@(posedge i_clk) begin
 	end
 	else begin
 		o_en_dec <= 1'b0;
-		if(i_cnt_p == 3) begin
+		if(i_cnt_d == 3) begin
 			cnt_dec <= cnt_dec + 1;
 		end
 

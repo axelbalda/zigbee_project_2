@@ -1,55 +1,55 @@
 module cdr (
 	input 		i_clk,
 	input 		i_rst,
-	input 		i_phase,
+	input 		i_dir,
 	output reg	o_data,
 
 	input  		i_flag,
 	output reg	o_flag
 	);
 
-logic [3:0] cnt_in; //permet de compter les i_flag
-logic [1:0] cnt_p;
-logic [2:0] cnt;
-logic w_flag; //flag en entree du bloc de decision 
-logic w_phase, w_phase_d, w_phase_m, w_phase_f; //w_mux_phase;
+reg [3:0] cnt_in; //permet de compter les i_flag
+reg [1:0] cnt_d;
+reg [2:0] cnt;
+logic flag; //flag en entree du bloc de decision 
+logic dir, dir_d, dir_m, dir_f; //w_mux_phase;
 wire w_sT, w_sE;
 wire [5:0] w_nb_P;
 
 always_ff@(posedge i_clk) begin
 	if(i_rst == 1'b0) begin
 		cnt_in <= 1'b0;
-		cnt_p <= 1'b0;
+		cnt_d <= 1'b0;
 		cnt <= 1'b0;
-		w_flag <= 1'b0;
-		w_phase <= 1'b0;
-		w_phase_d <= 1'b0;
-		w_phase_m <= 1'b0;
-		w_phase_f <= 1'b0;
+		flag <= 1'b0;
+		dir <= 1'b0;
+		dir_d <= 1'b0;
+		dir_m <= 1'b0;
+		dir_f <= 1'b0;
 	end
 	else begin
 		if(i_flag) begin
-			w_flag <= 1'b0;
+			flag <= 1'b0;
 			if(cnt_in == 0) begin
-				w_flag <= i_flag;
-				if(cnt_p != 3) begin
-					cnt_p <= cnt_p + 1;
+				flag <= i_flag;
+				if(cnt_d != 3) begin
+					cnt_d <= cnt_d + 1;
 				end
 			end	
 			if(cnt_in == 1) begin
-				w_phase_d <= i_phase;
+				dir_d <= i_dir;
 			end
 			if(cnt_in == 2) begin
-				w_phase_m <= i_phase;
+				dir_m <= i_dir;
 			end
 			if(cnt_in == 3) begin
-				w_phase_f <= i_phase;
+				dir_f <= i_dir;
 			end
 			if(cnt_in == 4) begin
-				w_phase <= ((w_phase_d & w_phase_m) | (w_phase_m & w_phase_f) | (w_phase_d & w_phase_f));
-				w_flag <= 1'b1;
-				if(cnt_p != 3) begin
-					cnt_p <= cnt_p + 1;
+				dir <= ((dir_d & dir_m) | (dir_m & dir_f) | (dir_d & dir_f));
+				flag <= 1'b1;
+				if(cnt_d != 3) begin
+					cnt_d <= cnt_d + 1;
 				end
 			end
 			if(cnt_in == 5) begin
@@ -61,22 +61,22 @@ always_ff@(posedge i_clk) begin
 		end
 
 		if (cnt == 4) begin
-			w_flag <= 1'b0;
+			flag <= 1'b0;
 		end
-		if (w_flag == 0) begin
+		if (flag == 0) begin
 			cnt <= 0;
 		end
 		else begin
-			if((cnt_p == 3) && (w_flag)) begin
+			if((cnt_d == 3) && (flag)) begin
 				cnt <= cnt + 1;
 			end
 		end
 	end
 end
 
-div div1 (i_clk, i_rst, w_sT, w_sE, w_nb_P, cnt_p);
-phase_detector phd1 (w_phase, w_nb_P, cnt_p, i_clk, i_rst, w_sT, w_sE);
-decision dec (w_phase, i_rst, i_clk, w_nb_P, cnt_p, o_data, w_flag, o_flag);
+div div1 (i_clk, i_rst, w_sT, w_sE, w_nb_P, cnt_d);
+phase_detector phd1 (dir, w_nb_P, cnt_d, i_clk, i_rst, w_sT, w_sE);
+decision dec1 (dir, i_rst, i_clk, w_nb_P, cnt_d, o_data, flag, o_flag);
 
 endmodule
 
