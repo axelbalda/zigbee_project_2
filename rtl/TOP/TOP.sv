@@ -284,7 +284,7 @@ MUX811 u_mux3 (
 );
 
 
-MUX11 u_mux4 (
+MUX811 u_mux4 (
 	.inData			(sig_MUX_inMUX4			), 
 	.inSel			(in_MUX_inSEL1			),
 	.outData		(sig_MUX_outMUX4		)
