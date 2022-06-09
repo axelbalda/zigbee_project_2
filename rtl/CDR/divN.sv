@@ -29,7 +29,7 @@ begin
 					1'b0: 	if (o_nb_P != 6'b010111) begin
 							o_nb_P <= o_nb_P - 2; // Pour un retard on ajoute une periode
 						end
-					1'b1: 	if (o_nb_P != 6'b011100) begin
+					1'b1: 	if (o_nb_P != 6'b011011) begin
 							o_nb_P <= o_nb_P + 2; // Pour une avance on retranche une periode
 						end
 					default: o_nb_P <= o_nb_P; // Par defaut ne fait rien
