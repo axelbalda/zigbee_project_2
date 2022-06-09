@@ -92,7 +92,7 @@ wire 	[7:0]	sig_MUX_inMUX15				;
 wire 	[7:0]	sig_MUX_inMUX16				;	 	
 */
 
-wire	[1:0]	sig_MUX_inMUX3				;  	
+wire	[0:1]	sig_MUX_inMUX3				;  	
 wire 	[0:1]	sig_MUX_inMUX4				;  
 wire 	[0:1]	sig_MUX_inMUX5				;  	
 wire 	[0:15]	sig_MUX_inMUX6				;  
