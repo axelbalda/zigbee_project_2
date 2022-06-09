@@ -22,8 +22,8 @@ module TOP(
 	input 	[2:0]	in_MUX_inSEL15			, 
 	input 			in_DEMUX_inSEL17		, 
 
-	output 	[3:0]	out_MUX_outMUX9			,	
-	output	[3:0]	out_MUX_outMUX10		,	
+	output 	[0:3]	out_MUX_outMUX9			,	
+	output	[0:3]	out_MUX_outMUX10		,	
 	output			out_MUX_outMUX15		,	
 	output			out_MUX_outMUX16	
 );
