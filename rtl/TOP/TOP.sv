@@ -11,8 +11,10 @@ module TOP(
 	input 	[3:0]	in_DEMUX_inDEMUX18		,
 	
 	input	[2:0]	in_DEMUX_inSEL1			,
+	/*
 	input	[2:0]	in_DEMUX_inSEL2			,
 	input 			in_MUX_inSEL3			,
+	*/
 	input 	[1:0]	in_MUX_inSEL6			,
 	input 	[1:0]	in_MUX_inSEL9			,
 	input 			in_MUX_inSEL11			,
@@ -92,9 +94,9 @@ wire 	[7:0]	sig_MUX_inMUX15				;
 wire 	[7:0]	sig_MUX_inMUX16				;	 	
 */
 
-wire	[0:1]	sig_MUX_inMUX3				;  	
-wire 	[0:1]	sig_MUX_inMUX4				;  
-wire 	[0:1]	sig_MUX_inMUX5				;  	
+wire	[0:7]	sig_MUX_inMUX3				;  	
+wire 	[0:7]	sig_MUX_inMUX4				;  
+wire 	[0:7]	sig_MUX_inMUX5				;  	
 wire 	[0:15]	sig_MUX_inMUX6				;  
 wire 	[0:15]	sig_MUX_inMUX7				;  	
 wire 	[0:3]	sig_MUX_inMUX8				;  	
@@ -387,8 +389,8 @@ MUX811 u_mux16 (
 );
 //////////////////////////////////////////////////////////////////////////////////
 
-assign sig_MUX_inMUX3  = { sig_coder_outReady		, sig_DEMUX_outDEMUX1[2]														} ;
-assign sig_MUX_inMUX4  = { sig_inFIFO_outData		, sig_DEMUX_outDEMUX1[1]														} ;
+assign sig_MUX_inMUX3  = { sig_coder_outReady		, sig_DEMUX_outDEMUX1[2]	, 5'bz												} ;
+assign sig_MUX_inMUX4  = { sig_inFIFO_outData		, sig_DEMUX_outDEMUX1[1]	, 5'bz												} ;
 assign sig_MUX_inMUX5  = { sig_inFIFO_outEmpty		, sig_DEMUX_outDEMUX2[1]	, 5'bz												} ;
 assign sig_MUX_inMUX6  = { sig_decod_outI			, sig_coder_outSinIMasked	, sig_DEMUX_outDEMUX17[1]	, 5'bz					} ;
 assign sig_MUX_inMUX7  = { sig_decod_outQ			, sig_coder_outSinQMasked	, sig_DEMUX_outDEMUX18[1]	, 5'bz					} ;
