@@ -75,6 +75,7 @@ wire	[7:0]	sig_DEMUX_outDEMUX2			;
 wire 	[7:0]	sig_DEMUX_outDEMUX17		;
 wire	[7:0]	sig_DEMUX_outDEMUX18		;
 
+/*
 wire	[1:0]	sig_MUX_inMUX3				;  	
 wire 	[1:0]	sig_MUX_inMUX4				;  
 wire 	[1:0]	sig_MUX_inMUX5				;  	
@@ -89,6 +90,21 @@ wire 	[1:0]	sig_MUX_inMUX13				;
 wire 	[1:0]	sig_MUX_inMUX14				; 	
 wire 	[7:0]	sig_MUX_inMUX15				;  	
 wire 	[7:0]	sig_MUX_inMUX16				;	 	
+*/
+
+wire 	[0:1]	sig_MUX_inMUX4				;  
+wire 	[0:1]	sig_MUX_inMUX5				;  	
+wire 	[0:15]	sig_MUX_inMUX6				;  
+wire 	[0:15]	sig_MUX_inMUX7				;  	
+wire 	[0:1]	sig_MUX_inMUX8				;  	
+wire 	[0:15]	sig_MUX_inMUX9				;  	
+wire 	[0:15]	sig_MUX_inMUX10				; 	
+wire 	[0:1]	sig_MUX_inMUX11				; 	
+wire 	[0:1]	sig_MUX_inMUX12				;  
+wire 	[0:1]	sig_MUX_inMUX13				; 
+wire 	[0:1]	sig_MUX_inMUX14				; 	
+wire 	[0:7]	sig_MUX_inMUX15				;  	
+wire 	[0:7]	sig_MUX_inMUX16				;
 
 wire 			sig_MUX_outMUX3				;	
 wire 			sig_MUX_outMUX4				;	
