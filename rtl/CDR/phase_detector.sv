@@ -1,11 +1,11 @@
 module phase_detector (
-	input 			i_phase, 	   //data of phase entring (0 or 1)
-	input reg [5:0] 	i_nb_P,      //freq of phase sent
-	input logic [1:0]	i_cnt_p,
-	input 			i_clk, 		   //work clk 50 MHz
-	input 			i_rst,		   //reset signal
-	output 	reg 		o_T, 		   //for Transition: specifies phase transition
-	output	reg 		o_E 		   //for Early: specifies delay/advance
+	input 			i_dir, 	   	//data of direction entring (0 or 1)
+	input reg [5:0] 	i_nb_P,      	//freq of phase sent
+	input reg [1:0]		i_cnt_d,
+	input 			i_clk,		//work clk 50 MHz
+	input 			i_rst,		//reset signal
+	output 	reg 		o_T, 		//for Transition: specifies phase transition
+	output	reg 		o_E 		//for Early: specifies delay/advance
 	);
 
 logic T, E;
@@ -20,12 +20,12 @@ wire w_s1, w_s2, w_s3, w_s4; //flip-flop out wire
 wire w_m1, w_m2, w_m3, w_m4; //mux out wire
 
 //counter instanciation
-counter cnt_phd (i_clk, i_rst, i_nb_P, i_cnt_p, w_en_d, w_en_m, w_en_f, w_en, w_en_freq_synch);
+counter cnt_phd (i_clk, i_rst, i_nb_P, i_cnt_d, w_en_d, w_en_m, w_en_f, w_en, w_en_freq_synch);
 
 //muxs instanciation
-assign w_m1 = (w_en_d || w_en_f) ? i_phase : w_s1;
+assign w_m1 = (w_en_d || w_en_f) ? i_dir : w_s1;
 assign w_m2 = (w_en_f) ? w_s1 : w_s2;
-assign w_m3 = (w_en_m) ? i_phase : w_s3;
+assign w_m3 = (w_en_m) ? i_dir : w_s3;
 assign w_m4 = (w_en_f) ? w_s3 : w_s4;
 
 
@@ -37,8 +37,8 @@ ffd f4 (w_m4, i_clk, i_rst, w_s4);
 
 always_comb
 begin
-    T = w_s1^w_s2;
-    E = w_s2^w_s4;
+	T = w_s1^w_s2;
+	E = w_s2^w_s4;
 end
 
 always_ff@(negedge i_clk)
