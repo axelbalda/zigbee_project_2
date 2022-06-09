@@ -12,8 +12,6 @@ add wave -noupdate /tb_TOP2/u_top/in_DEMUX_inDEMUX17
 add wave -noupdate /tb_TOP2/u_top/in_DEMUX_inDEMUX18
 add wave -noupdate -divider SEL
 add wave -noupdate /tb_TOP2/u_top/in_DEMUX_inSEL1
-add wave -noupdate /tb_TOP2/u_top/in_DEMUX_inSEL2
-add wave -noupdate /tb_TOP2/u_top/in_MUX_inSEL3
 add wave -noupdate /tb_TOP2/u_top/in_MUX_inSEL6
 add wave -noupdate /tb_TOP2/u_top/in_MUX_inSEL9
 add wave -noupdate /tb_TOP2/u_top/in_MUX_inSEL11
@@ -35,6 +33,7 @@ add wave -noupdate /tb_TOP2/u_top/u_inFIFO/outEmpty
 add wave -noupdate -divider CODER
 add wave -noupdate /tb_TOP2/u_top/u_coder/i_empty
 add wave -noupdate /tb_TOP2/u_top/u_coder/i_data
+add wave -noupdate /tb_TOP2/u_top/u_coder/o_ready
 add wave -noupdate /tb_TOP2/u_top/u_coder/o_sinI
 add wave -noupdate /tb_TOP2/u_top/u_coder/o_sinQ
 add wave -noupdate /tb_TOP2/u_top/u_coder/o_sinI_four
@@ -53,8 +52,8 @@ add wave -noupdate /tb_TOP2/u_top/u_cordic/i_Q
 add wave -noupdate /tb_TOP2/u_top/u_cordic/o_dir
 add wave -noupdate /tb_TOP2/u_top/u_cordic/o_enable_out
 add wave -noupdate -divider CDR
+add wave -noupdate /tb_TOP2/u_top/u_cdr/i_dir
 add wave -noupdate /tb_TOP2/u_top/u_cdr/i_flag
-add wave -noupdate /tb_TOP2/u_top/u_cdr/i_phase
 add wave -noupdate /tb_TOP2/u_top/u_cdr/o_data
 add wave -noupdate /tb_TOP2/u_top/u_cdr/o_flag
 add wave -noupdate -divider outFIFO
@@ -80,4 +79,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {10500 us}
+WaveRestoreZoom {0 ps} {105 ms}
