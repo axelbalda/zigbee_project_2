@@ -78,6 +78,7 @@ always #10 	inClock = ~inClock ;
 //  RESET
 //////////////////////////////////////////////////////////////////////////////////
 initial begin : RESET
+	#CLK_PERIOD ;	
 	for(int i = 0; i < 5; i++) begin
 		inReset = 1'b0 ;
 		#CLK_PERIOD ;	
