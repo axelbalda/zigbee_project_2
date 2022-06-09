@@ -35,8 +35,10 @@ reg 			inDEMUX2		;
 reg 	[3:0]	inDEMUX17		;
 reg 	[3:0]	inDEMUX18		;
 reg		[2:0]	inSEL1			;
+/*
 reg		[2:0]	inSEL2			;
 reg 			inSEL3			;
+*/
 reg 	[1:0]	inSEL6			;
 reg 	[1:0]	inSEL9			;
 reg 			inSEL11			;
@@ -59,8 +61,10 @@ initial begin : init
 	inDEMUX17		=	4'b0	;
 	inDEMUX18		=	4'b0	;
 	inSEL1			=	3'b0	;
+	/*
 	inSEL2			=	3'b0	;
 	inSEL3			=	1'b0	;
+	*/
 	inSEL6			=	2'b0	;
 	inSEL9			=	2'b0	;
 	inSEL11			=	1'b0	;
@@ -114,8 +118,10 @@ TOP u_top (
 	.in_DEMUX_inDEMUX18			(inDEMUX18		) ,   
 
 	.in_DEMUX_inSEL1			(inSEL1			) , 
+	/*
 	.in_DEMUX_inSEL2			(inSEL2			) , 
 	.in_MUX_inSEL3				(inSEL3			) , 
+	*/
 	.in_MUX_inSEL6				(inSEL6			) , 
 	.in_MUX_inSEL9				(inSEL9			) , 
 	.in_MUX_inSEL11				(inSEL11		) , 
