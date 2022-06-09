@@ -198,7 +198,7 @@ system u_cordic(
 cdr u_cdr(
 	.i_clk			(inClock				),
 	.i_rst			(inReset				),
-	.i_phase		(sig_cdr_inPhase		),
+	.i_dir			(sig_cdr_inPhase		),
 	.i_flag			(sig_cdr_inFlag			),
 	.o_data			(sig_cdr_outData		),
 	.o_flag			(sig_cdr_outFlag		)
