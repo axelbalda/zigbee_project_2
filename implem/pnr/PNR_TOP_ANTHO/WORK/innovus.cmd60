@@ -70,3 +70,27 @@ pan 25.808 -266.681
 pan -312.098 624.197
 get_ccopt_property -clock_tree inClock
 get_ccopt_property -clock_tree inClock -name target_max_trans
+pan -62.665 178.680
+get_ccopt_property -clock_tree inClock
+get_ccopt_property target_max_trans
+get_ccopt_property -clock_tree clk target_max_trans
+get_ccopt_property -clock_tree inClock target_max_trans
+get_ccopt_property -clock_tree inClock target_max_trans
+verify_drc -limit 10000000
+selectInst {t_op/u_cordic/mycordic/present_C_table_reg[4][1]}
+pan -551.586 516.163
+pan -5.361 -2.271
+pan 0.211 2.116
+pan -0.377 7.674
+pan -1.656 5.533
+pan 14.741 3.275
+pan 14.615 -6.614
+pan 2.148 -1.364
+pan -10.181 -0.911
+pan -80.620 -14.692
+pan -7.106 -1.048
+pan -71.392 3.511
+deselectAll
+pan 22.869 -28.314
+pan -3.678 -2.595
+pan -115.333 -1.131

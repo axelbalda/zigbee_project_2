@@ -16,5 +16,6 @@ placeDesign
 #report_constraint -all_violator
 
 
-
+globalNetConnect vdd! -type pgpin -pin vdd* -inst * -module {}
+globalNetConnect gnd! -type pgpin -pin gnd* -inst * -module {}
 
