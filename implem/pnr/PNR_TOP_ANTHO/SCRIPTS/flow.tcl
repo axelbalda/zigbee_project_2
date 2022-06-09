@@ -15,3 +15,5 @@ source ../SCRIPTS/placement.tcl
 #Création du clock_tree
 source ../SCRIPTS/clock_tree_synthesis.tcl
 
+#Ajout des fillers in core and pads
+source ../SCRIPTS/add_fillers.tcl

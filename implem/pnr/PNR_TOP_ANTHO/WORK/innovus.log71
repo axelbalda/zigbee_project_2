@@ -3534,3 +3534,8 @@ Usage: setSrouteMode [-help] [-reset] [-allowWrongWayRoute {true|false}] [-avoid
 -viaConnectToShape {padring|ring|stripe|blockring|blockpin|coverpin|noshape|blockwire|corewire|followpin|iowire}
                                           # Make via connection to specified shapes (enums={padring ring stripe blockring blockpin coverpin noshape blockwire corewire followpin iowire}_list, default=padring ring stripe blockring blockpin coverpin noshape blockwire corewire followpin iowire)
 -viaThruToClosestRing {true|false}        # A via should connect only to closest ring layer when multiple rings overlap (bool, default=false)
+
+*** Memory Usage v#1 (Current mem = 1234.941M, initial mem = 192.402M) ***
+*** Message Summary: 2197 warning(s), 24 error(s)
+
+--- Ending "Innovus" (totcpu=0:15:23, real=3:03:34, mem=1234.9M) ---
