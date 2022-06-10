@@ -154,9 +154,13 @@ initial begin : DATA
 	inData			=	4'b0001	;
 	inReadEnable	=	1'b0	;
 	inDEMUX1		=	1'b0	; // ReadEnable
-	inDEMUX2		=	1'b1	; // WriteEnable
+	inDEMUX2		=	1'b0	; // WriteEnable
 	inDEMUX17		=	4'b0	; 
 	inDEMUX18		=	4'b0	;
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+	inDEMUX2		=	1'b1	; // WriteEnable
 	for(int i = 0; i < 20; i++) begin
 		#CLK_PERIOD ;	
 	end
