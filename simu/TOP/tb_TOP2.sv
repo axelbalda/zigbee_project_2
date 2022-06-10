@@ -56,6 +56,7 @@ reg 			outMUX16		;
 initial begin : init
 	inClock			=	1'b1	;
 	inReset			=	1'b1	;
+
 	inData			=	4'b1101	;
 	inReadEnable	=	1'b0	;
 	inDEMUX1		=	1'b0	;
@@ -93,6 +94,28 @@ initial begin : RESET
 
 	inReset = 1'b1 ;
 	
+end
+//////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////////
+//  DATA
+//////////////////////////////////////////////////////////////////////////////////
+initial begin : DATA
+
+	for(int i = 0; i < 5; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	for(int i = 0; i < 100; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inData			=	4'b0110	;
+	inReadEnable	=	1'b0	;
+	inDEMUX1		=	1'b1	;
+	inDEMUX2		=	1'b1	;
+	inDEMUX17		=	4'b1101	;
+	inDEMUX18		=	4'b1101	;	
 end
 //////////////////////////////////////////////////////////////////////////////////
 
