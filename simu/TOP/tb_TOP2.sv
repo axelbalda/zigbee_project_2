@@ -106,7 +106,14 @@ initial begin : DATA
 		#CLK_PERIOD ;	
 	end
 
-	for(int i = 0; i < 100; i++) begin
+	for(int i = 0; i < 80; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX2		=	1'b0	;
+
+
+	for(int i = 0; i < 20; i++) begin
 		#CLK_PERIOD ;	
 	end
 
