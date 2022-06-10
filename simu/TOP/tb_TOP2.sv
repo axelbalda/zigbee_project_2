@@ -400,12 +400,12 @@ initial begin : DATA
 	// DECODER Stand Alone
 	/////////////////////////////
 	inSEL1			=	3'b0	;
-	inSEL2			=	3'b0	;
-	inSEL3			=	1'b0	;
-	inSEL6			=	2'b0	;
+	inSEL2			=	3'b111	;
+	inSEL3			=	1'b111	;
+	inSEL6			=	2'b11	;
 	inSEL9			=	2'b10	;
-	inSEL11			=	1'b0	;
-	inSEL12			=	1'b0	;
+	inSEL11			=	1'b1	;
+	inSEL12			=	1'b1	;
 	inSEL15			=	2'b1	;
 	inSEL17			=	1'b0	;	
 
