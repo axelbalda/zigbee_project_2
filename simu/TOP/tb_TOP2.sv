@@ -401,16 +401,17 @@ initial begin : DATA
 	/////////////////////////////
 	inSEL1			=	3'b0	;
 	inSEL2			=	3'b111	;
-	inSEL3			=	1'b111	;
+	inSEL3			=	1'b1	;
 	inSEL6			=	2'b10	;
 	inSEL9			=	2'b10	;
 	inSEL11			=	1'b1	;
 	inSEL12			=	1'b1	;
-	inSEL15			=	2'b1	;
+	inSEL15			=	2'b01	;
 	inSEL17			=	1'b0	;	
 
 	for(int i = 0; i < 5; i++) begin
 		inDEMUX1		=	1'b0	; // inEOC
+		inDEMUX2		=	1'b0	; // xxx
 		inDEMUX17		=	4'b0	; // I
 		inDEMUX18		=	4'b0	; // Q
 		inReset  =  1'b0 ;
