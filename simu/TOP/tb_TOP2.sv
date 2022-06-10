@@ -130,6 +130,9 @@ initial begin : DATA
 		#CLK_PERIOD ;	
 	end
 
+
+
+
 	/////////////////////////////
 	// inFIFO Stand Alone
 	/////////////////////////////
@@ -140,7 +143,7 @@ initial begin : DATA
 	inSEL9			=	2'b0	;
 	inSEL11			=	1'b0	;
 	inSEL12			=	1'b0	;
-	inSEL15			=	2'b1	;
+	inSEL15			=	2'b0	;
 	inSEL17			=	1'b0	;	
 
 	for(int i = 0; i < 5; i++) begin
@@ -330,6 +333,65 @@ initial begin : DATA
 		#CLK_PERIOD ;	
 	end
 	
+
+
+	/////////////////////////////
+	// CODER Stand Alone
+	/////////////////////////////
+	inSEL1			=	3'b001	;
+	inSEL2			=	3'b001	;
+	inSEL3			=	1'b1	;
+	inSEL6			=	2'b0	;
+	inSEL9			=	2'b0	;
+	inSEL11			=	1'b0	;
+	inSEL12			=	1'b0	;
+	inSEL15			=	2'b1	;
+	inSEL17			=	1'b0	;	
+
+	for(int i = 0; i < 5; i++) begin
+		inDEMUX1		=	1'b0	; // inData
+		inDEMUX2		=	1'b1	; // inEmpty
+		inReset  =  1'b0 ;
+		#CLK_PERIOD ;	
+	end
+	inReset = 1'b1 ;
+
+	inDEMUX1		=	1'b0	; // inData
+	inDEMUX2		=	1'b1	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b0	; // inData
+	inDEMUX2		=	1'b0	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b1	; // inData
+	inDEMUX2		=	1'b0	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b1	; // inData
+	inDEMUX2		=	1'b0	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b0	; // inData
+	inDEMUX2		=	1'b0	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b0	; // inData
+	inDEMUX2		=	1'b1	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
 end
 //////////////////////////////////////////////////////////////////////////////////
 
