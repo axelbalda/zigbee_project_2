@@ -13,7 +13,25 @@ source ../SCRIPTS/design_config.tcl
 source ../SCRIPTS/placement.tcl
 
 #Création du clock_tree
-source ../SCRIPTS/clock_tree_synthesis.tcl
+#source ../SCRIPTS/clock_tree_synthesis.tcl
 
 #Ajout des fillers in core and pads
 source ../SCRIPTS/add_fillers.tcl
+
+
+
+routeDesign
+
+saveDesign dbs/route_enc
+
+
+
+optDesign -postRoute
+route_opt_design
+
+
+
+pinAnalysis
+pinAlignment
+fixVia -short
+

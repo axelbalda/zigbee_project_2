@@ -5679,3 +5679,1790 @@ INFO (CTE): Reading of timing constraints file ../INPUT_DATA/clock_uncertainty_p
 [06/09 18:34:55     96s] Added 13 of filler cell 'PERI_SPACER_01_P' on left side.
 [06/09 18:34:55     96s] Added 91 of filler cell 'PERI_SPACER_01_P' on bottom side.
 [06/09 18:34:55     96s] Added 13 of filler cell 'PERI_SPACER_01_P' on right side.
+[06/09 18:52:32    174s] <CMD> route_opt_design
+[06/09 18:52:32    174s] GigaOpt running with 1 threads.
+[06/09 18:52:32    174s] Info: 1 threads available for lower-level modules during optimization.
+[06/09 18:52:32    174s] *** route_opt_design [begin] : cpu/real = 0:00:00.0/0:00:00.0 (0.0), totSession cpu/real = 0:02:54.5/0:19:37.0 (0.1), mem = 1176.7M
+[06/09 18:52:32    174s] **INFO: setDesignMode -flowEffort standard -> setting 'setOptMode -allEndPoints true' for the duration of this command.
+[06/09 18:52:32    174s] Disable merging buffers from different footprints for postRoute code for non-MSV designs
+[06/09 18:52:32    174s] **INFO: Enabling RouteOpt flow.
+[06/09 18:52:32    174s] #spOpts: N=250 mergeVia=F 
+[06/09 18:52:32    174s] Core basic site is standard
+[06/09 18:52:32    174s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[06/09 18:52:32    174s] #spOpts: N=250 mergeVia=F 
+[06/09 18:52:32    174s] Switching SI Aware to true by default in postroute mode   
+[06/09 18:52:32    174s] #spOpts: N=250 mergeVia=F 
+[06/09 18:52:32    174s] 
+[06/09 18:52:32    174s] Creating Lib Analyzer ...
+[06/09 18:52:32    174s] **WARN: (IMPOPT-7077):	Some of the LEF equivalent cells have different ANTENNAGATEAREA/ANTENNADIFFAREA/PINS etc... attributes. They will not be swapped for fixed instances and for lefsafe operations like optLeakagePower in postroute mode. To find out what cells are LEF equivalent use the findLefEquivalentCells command.
+[06/09 18:52:32    174s] Type 'man IMPOPT-7077' for more detail.
+[06/09 18:52:32    174s] Total number of usable buffers from Lib Analyzer: 12 ( CLKBU2 BUF2 CLKBU6 CLKBU4 BUF6 BUF4 CLKBU8 BUF8 CLKBU12 BUF12 CLKBU15 BUF15)
+[06/09 18:52:32    174s] Total number of usable inverters from Lib Analyzer: 20 ( INV3 INV2 INV1 INV0 CLKIN3 CLKIN2 CLKIN1 CLKIN0 INV6 INV4 CLKIN6 CLKIN4 INV8 CLKIN8 INV12 INV10 CLKIN12 CLKIN10 INV15 CLKIN15)
+[06/09 18:52:32    174s] Total number of usable delay cells from Lib Analyzer: 0 ()
+[06/09 18:52:32    174s] 
+[06/09 18:52:35    177s] Creating Lib Analyzer, finished. 
+[06/09 18:52:35    177s] Setting timing_disable_library_data_to_data_checks to 'true'.
+[06/09 18:52:35    177s] Setting timing_disable_user_data_to_data_checks to 'true'.
+[06/09 18:52:35    177s] Effort level <high> specified for reg2reg path_group
+[06/09 18:52:35    177s] **WARN: (IMPOPT-6118):	The following cells have a dont_touch property but without being dont_use.
+[06/09 18:52:35    177s] To avoid such a configuration impacting timing closure, since otherwise such cells could be inserted but never optimized or removed, optDesign is treating the following cells as dont_use.
+[06/09 18:52:35    177s] 			Cell BBC16P is dont_touch but not dont_use
+[06/09 18:52:35    177s] 			Cell BBC16P is dont_touch but not dont_use
+[06/09 18:52:35    177s] 			Cell BBC16SMP is dont_touch but not dont_use
+[06/09 18:52:35    177s] 			Cell BBC16SMP is dont_touch but not dont_use
+[06/09 18:52:35    177s] 			Cell BBC16SP is dont_touch but not dont_use
+[06/09 18:52:35    177s] 			Cell BBC16SP is dont_touch but not dont_use
+[06/09 18:52:35    177s] 			Cell BBC1P is dont_touch but not dont_use
+[06/09 18:52:35    177s] 			Cell BBC1P is dont_touch but not dont_use
+[06/09 18:52:35    177s] 			Cell BBC24P is dont_touch but not dont_use
+[06/09 18:52:35    177s] 			Cell BBC24P is dont_touch but not dont_use
+[06/09 18:52:35    177s] 			Cell BBC24SMP is dont_touch but not dont_use
+[06/09 18:52:35    177s] 			Cell BBC24SMP is dont_touch but not dont_use
+[06/09 18:52:35    177s] 			Cell BBC24SP is dont_touch but not dont_use
+[06/09 18:52:35    177s] 			Cell BBC24SP is dont_touch but not dont_use
+[06/09 18:52:35    177s] 			Cell BBC4P is dont_touch but not dont_use
+[06/09 18:52:35    177s] 			Cell BBC4P is dont_touch but not dont_use
+[06/09 18:52:35    177s] 			Cell BBC4SMP is dont_touch but not dont_use
+[06/09 18:52:35    177s] 			Cell BBC4SMP is dont_touch but not dont_use
+[06/09 18:52:35    177s] 			Cell BBC8P is dont_touch but not dont_use
+[06/09 18:52:35    177s] 			Cell BBC8P is dont_touch but not dont_use
+[06/09 18:52:35    177s] 	...
+[06/09 18:52:35    177s] 	Reporting only the 20 first cells found...
+[06/09 18:52:35    177s] 
+[06/09 18:52:35    177s] **optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 971.8M, totSessionCpu=0:02:58 **
+[06/09 18:52:35    177s] #Created 458 library cell signatures
+[06/09 18:52:35    177s] #Created 10475 NETS and 0 SPECIALNETS signatures
+[06/09 18:52:35    177s] #Created 20612 instance signatures
+[06/09 18:52:35    177s] #Build design signature : cpu time = 00:00:00, elapsed time = 00:00:00, memory = 972.48 (MB), peak = 979.46 (MB)
+[06/09 18:52:35    177s] #Save design signature : cpu time = 00:00:00, elapsed time = 00:00:00, memory = 972.49 (MB), peak = 979.46 (MB)
+[06/09 18:52:35    177s] 
+[06/09 18:52:35    177s] **ERROR: (IMPOPT-6080):	AAE-SI Optimization can only be turned on when the timing analysis mode is set to OCV.
+[06/09 18:52:35    177s] 
+[06/09 18:52:35    177s] 
+[06/09 18:52:35    177s] 	OPT_RUNTIME:          optDesign (count =  2): (cpu=0:00:02.9 real=0:00:02.9)
+[06/09 18:52:35    177s] Info: pop threads available for lower-level modules during optimization.
+[06/09 18:52:35    177s] Deleting Lib Analyzer.
+[06/09 18:52:35    177s] Info: Destroy the CCOpt slew target map.
+[06/09 18:52:35    177s] *** route_opt_design [finish] : cpu/real = 0:00:03.2/0:00:03.0 (1.1), totSession cpu/real = 0:02:57.7/0:19:40.0 (0.2), mem = 1174.9M
+[06/09 18:52:35    177s] 0
+[06/09 18:52:44    178s] <CMD> globalRoute
+[06/09 18:52:44    178s] #% Begin globalRoute (date=06/09 18:52:44, mem=979.5M)
+[06/09 18:52:44    178s] 
+[06/09 18:52:44    178s] globalRoute
+[06/09 18:52:44    178s] 
+[06/09 18:52:44    178s] #Start globalRoute on Thu Jun  9 18:52:44 2022
+[06/09 18:52:44    178s] #
+[06/09 18:52:44    178s] #WARNING (NRIG-34) Power/Ground pin vdd3r2! of instance io_inFIFO_inData_3 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:52:44    178s] #WARNING (NRIG-34) Power/Ground pin vdd3r1! of instance io_inFIFO_inData_3 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:52:44    178s] #WARNING (NRIG-34) Power/Ground pin vdd3o! of instance io_inFIFO_inData_3 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:52:44    178s] #WARNING (NRIG-34) Power/Ground pin gnd3r! of instance io_inFIFO_inData_3 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:52:44    178s] #WARNING (NRIG-34) Power/Ground pin gnd3o! of instance io_inFIFO_inData_3 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:52:44    178s] #WARNING (NRIG-34) Power/Ground pin vdd3r2! of instance io_inFIFO_inData_2 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:52:44    178s] #WARNING (NRIG-34) Power/Ground pin vdd3r1! of instance io_inFIFO_inData_2 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:52:44    178s] #WARNING (NRIG-34) Power/Ground pin vdd3o! of instance io_inFIFO_inData_2 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:52:44    178s] #WARNING (NRIG-34) Power/Ground pin gnd3r! of instance io_inFIFO_inData_2 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:52:44    178s] #WARNING (NRIG-34) Power/Ground pin gnd3o! of instance io_inFIFO_inData_2 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:52:44    178s] #WARNING (NRIG-34) Power/Ground pin vdd3r2! of instance io_inFIFO_inData_1 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:52:44    178s] #WARNING (NRIG-34) Power/Ground pin vdd3r1! of instance io_inFIFO_inData_1 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:52:44    178s] #WARNING (NRIG-34) Power/Ground pin vdd3o! of instance io_inFIFO_inData_1 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:52:44    178s] #WARNING (NRIG-34) Power/Ground pin gnd3r! of instance io_inFIFO_inData_1 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:52:44    178s] #WARNING (NRIG-34) Power/Ground pin gnd3o! of instance io_inFIFO_inData_1 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:52:44    178s] #WARNING (NRIG-34) Power/Ground pin vdd3r2! of instance io_inFIFO_inData_0 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:52:44    178s] #WARNING (NRIG-34) Power/Ground pin vdd3r1! of instance io_inFIFO_inData_0 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:52:44    178s] #WARNING (NRIG-34) Power/Ground pin vdd3o! of instance io_inFIFO_inData_0 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:52:44    178s] #WARNING (NRIG-34) Power/Ground pin gnd3r! of instance io_inFIFO_inData_0 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:52:44    178s] #WARNING (NRIG-34) Power/Ground pin gnd3o! of instance io_inFIFO_inData_0 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:52:44    178s] #WARNING (EMS-27) Message (NRIG-34) has exceeded the current message display limit of 20.
+[06/09 18:52:44    178s] #To increase the message display limit, refer to the product command reference manual.
+[06/09 18:52:44    178s] #WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_MUX_inSEL15[2] of net in_MUX_inSEL15[2] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+[06/09 18:52:44    178s] #WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_MUX_inSEL15[1] of net in_MUX_inSEL15[1] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+[06/09 18:52:44    178s] #WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_MUX_inSEL15[0] of net in_MUX_inSEL15[0] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+[06/09 18:52:44    178s] #WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_outFIFO_inReadEnable of net in_outFIFO_inReadEnable because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+[06/09 18:52:44    178s] ### Net info: total nets: 10475
+[06/09 18:52:44    178s] ### Net info: dirty nets: 16
+[06/09 18:52:44    178s] ### Net info: marked as disconnected nets: 0
+[06/09 18:52:44    178s] ### Net info: fully routed nets: 51
+[06/09 18:52:44    178s] ### Net info: trivial (single pin) nets: 0
+[06/09 18:52:44    178s] ### Net info: unrouted nets: 10408
+[06/09 18:52:44    178s] ### Net info: re-extraction nets: 16
+[06/09 18:52:44    178s] ### Net info: ignored nets: 0
+[06/09 18:52:44    178s] ### Net info: skip routing nets: 0
+[06/09 18:52:44    178s] ### import route signature (15) = 1639251026
+[06/09 18:52:44    178s] #WARNING (NRDB-733) PIN inClock in CELL_VIEW top_io does not have physical port.
+[06/09 18:52:44    178s] #WARNING (NRDB-733) PIN inReset in CELL_VIEW top_io does not have physical port.
+[06/09 18:52:44    178s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX1 in CELL_VIEW top_io does not have physical port.
+[06/09 18:52:44    178s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX17[0] in CELL_VIEW top_io does not have physical port.
+[06/09 18:52:44    178s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX17[1] in CELL_VIEW top_io does not have physical port.
+[06/09 18:52:44    178s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX17[2] in CELL_VIEW top_io does not have physical port.
+[06/09 18:52:44    178s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX17[3] in CELL_VIEW top_io does not have physical port.
+[06/09 18:52:44    178s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX18[0] in CELL_VIEW top_io does not have physical port.
+[06/09 18:52:44    178s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX18[1] in CELL_VIEW top_io does not have physical port.
+[06/09 18:52:44    178s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX18[2] in CELL_VIEW top_io does not have physical port.
+[06/09 18:52:44    178s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX18[3] in CELL_VIEW top_io does not have physical port.
+[06/09 18:52:44    178s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX2 in CELL_VIEW top_io does not have physical port.
+[06/09 18:52:44    178s] #WARNING (NRDB-733) PIN in_DEMUX_inSEL17 in CELL_VIEW top_io does not have physical port.
+[06/09 18:52:44    178s] #WARNING (NRDB-733) PIN in_DEMUX_inSEL1[0] in CELL_VIEW top_io does not have physical port.
+[06/09 18:52:44    178s] #WARNING (NRDB-733) PIN in_DEMUX_inSEL1[1] in CELL_VIEW top_io does not have physical port.
+[06/09 18:52:44    178s] #WARNING (NRDB-733) PIN in_DEMUX_inSEL1[2] in CELL_VIEW top_io does not have physical port.
+[06/09 18:52:44    178s] #WARNING (NRDB-733) PIN in_DEMUX_inSEL2[0] in CELL_VIEW top_io does not have physical port.
+[06/09 18:52:44    178s] #WARNING (NRDB-733) PIN in_DEMUX_inSEL2[1] in CELL_VIEW top_io does not have physical port.
+[06/09 18:52:44    178s] #WARNING (NRDB-733) PIN in_DEMUX_inSEL2[2] in CELL_VIEW top_io does not have physical port.
+[06/09 18:52:44    178s] #WARNING (NRDB-733) PIN in_MUX_inSEL11 in CELL_VIEW top_io does not have physical port.
+[06/09 18:52:44    178s] #WARNING (EMS-27) Message (NRDB-733) has exceeded the current message display limit of 20.
+[06/09 18:52:44    178s] #To increase the message display limit, refer to the product command reference manual.
+[06/09 18:52:44    178s] #NanoRoute Version 17.11-s080_1 NR170721-2155/17_11-UB
+[06/09 18:52:44    178s] #RTESIG:78da535609730d52503234d73334d42d36b030883754f00b323437303732d435323435d5
+[06/09 18:52:44    178s] #       37348f074a853a297129abf80784181a181a29a425e614a72a6824e5e7e7e8289416a716
+[06/09 18:52:44    178s] #       2914a7969464e6a56b4215191b9a12a1c8c24241c9cdd3c7c7d12fc45001ca3082314c61
+[06/09 18:52:44    178s] #       0c4303b89ca9928246714911d00c5c265ae2b3960100a33642ac
+[06/09 18:52:44    178s] #
+[06/09 18:52:44    178s] #Start routing data preparation on Thu Jun  9 18:52:44 2022
+[06/09 18:52:44    178s] #
+[06/09 18:52:45    178s] #Minimum voltage of a net in the design = 0.000.
+[06/09 18:52:45    178s] #Maximum voltage of a net in the design = 3.630.
+[06/09 18:52:45    178s] #Voltage range [0.000 - 0.000] has 3 nets.
+[06/09 18:52:45    178s] #Voltage range [0.000 - 3.630] has 10472 nets.
+[06/09 18:52:45    178s] # MET1         H   Track-Pitch = 1.300    Line-2-Via Pitch = 1.150
+[06/09 18:52:45    178s] # MET2         V   Track-Pitch = 1.400    Line-2-Via Pitch = 1.200
+[06/09 18:52:45    178s] # MET3         H   Track-Pitch = 1.300    Line-2-Via Pitch = 1.200
+[06/09 18:52:45    178s] # MET4         V   Track-Pitch = 1.400    Line-2-Via Pitch = 1.300
+[06/09 18:52:45    178s] #Regenerating Ggrids automatically.
+[06/09 18:52:45    178s] #Auto generating G-grids with size=15 tracks, using layer MET2's pitch = 1.400.
+[06/09 18:52:45    178s] #Using automatically generated G-grids.
+[06/09 18:52:45    178s] #Done routing data preparation.
+[06/09 18:52:45    178s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 984.29 (MB), peak = 984.36 (MB)
+[06/09 18:52:45    178s] #Merging special wires...
+[06/09 18:52:45    178s] #
+[06/09 18:52:45    178s] #Connectivity extraction summary:
+[06/09 18:52:45    178s] #16 routed nets are extracted.
+[06/09 18:52:45    178s] #51 routed net(s) are imported.
+[06/09 18:52:45    178s] #9914 (94.64%) nets are without wires.
+[06/09 18:52:45    178s] #494 nets are fixed|skipped|trivial (not extracted).
+[06/09 18:52:45    178s] #Total number of nets = 10475.
+[06/09 18:52:45    178s] #
+[06/09 18:52:45    178s] #
+[06/09 18:52:45    178s] #Finished routing data preparation on Thu Jun  9 18:52:45 2022
+[06/09 18:52:45    178s] #
+[06/09 18:52:45    178s] #Cpu time = 00:00:00
+[06/09 18:52:45    178s] #Elapsed time = 00:00:00
+[06/09 18:52:45    178s] #Increased memory = 5.38 (MB)
+[06/09 18:52:45    178s] #Total memory = 984.68 (MB)
+[06/09 18:52:45    178s] #Peak memory = 984.68 (MB)
+[06/09 18:52:45    178s] #
+[06/09 18:52:45    178s] #
+[06/09 18:52:45    178s] #Start global routing on Thu Jun  9 18:52:45 2022
+[06/09 18:52:45    178s] #
+[06/09 18:52:45    178s] #Number of eco nets is 0
+[06/09 18:52:45    178s] #
+[06/09 18:52:45    178s] #Start global routing data preparation on Thu Jun  9 18:52:45 2022
+[06/09 18:52:45    178s] #
+[06/09 18:52:45    178s] #Start routing resource analysis on Thu Jun  9 18:52:45 2022
+[06/09 18:52:45    178s] #
+[06/09 18:52:45    179s] #Routing resource analysis is done on Thu Jun  9 18:52:45 2022
+[06/09 18:52:45    179s] #
+[06/09 18:52:45    179s] #  Resource Analysis:
+[06/09 18:52:45    179s] #
+[06/09 18:52:45    179s] #               Routing  #Avail      #Track     #Total     %Gcell
+[06/09 18:52:45    179s] #  Layer      Direction   Track     Blocked      Gcell    Blocked
+[06/09 18:52:45    179s] #  --------------------------------------------------------------
+[06/09 18:52:45    179s] #  MET1           H         759         918       10816    91.22%
+[06/09 18:52:45    179s] #  MET2           V         695         869       10816    54.30%
+[06/09 18:52:45    179s] #  MET3           H         902         775       10816    52.68%
+[06/09 18:52:45    179s] #  MET4           V         749         815       10816    53.12%
+[06/09 18:52:45    179s] #  --------------------------------------------------------------
+[06/09 18:52:45    179s] #  Total                   3105      52.15%       43264    62.83%
+[06/09 18:52:45    179s] #
+[06/09 18:52:45    179s] #  67 nets (0.64%) with 1 preferred extra spacing.
+[06/09 18:52:45    179s] #
+[06/09 18:52:45    179s] #
+[06/09 18:52:45    179s] #
+[06/09 18:52:45    179s] #Global routing data preparation is done on Thu Jun  9 18:52:45 2022
+[06/09 18:52:45    179s] #
+[06/09 18:52:45    179s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 985.63 (MB), peak = 985.71 (MB)
+[06/09 18:52:45    179s] #
+[06/09 18:52:45    179s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 985.87 (MB), peak = 985.88 (MB)
+[06/09 18:52:45    179s] #
+[06/09 18:52:45    179s] #start global routing iteration 1...
+[06/09 18:52:45    179s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 993.17 (MB), peak = 993.17 (MB)
+[06/09 18:52:45    179s] #
+[06/09 18:52:45    179s] #start global routing iteration 2...
+[06/09 18:52:45    179s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1014.34 (MB), peak = 1014.35 (MB)
+[06/09 18:52:45    179s] #
+[06/09 18:52:45    179s] #start global routing iteration 3...
+[06/09 18:52:46    180s] #cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1017.95 (MB), peak = 1017.96 (MB)
+[06/09 18:52:46    180s] #
+[06/09 18:52:46    180s] #start global routing iteration 4...
+[06/09 18:52:47    180s] #cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1018.90 (MB), peak = 1018.90 (MB)
+[06/09 18:52:47    180s] #
+[06/09 18:52:47    180s] #start global routing iteration 5...
+[06/09 18:52:47    181s] #cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1018.90 (MB), peak = 1018.90 (MB)
+[06/09 18:52:47    181s] #
+[06/09 18:52:47    181s] #
+[06/09 18:52:47    181s] #Total number of trivial nets (e.g. < 2 pins) = 494 (skipped).
+[06/09 18:52:47    181s] #Total number of routable nets = 9981.
+[06/09 18:52:47    181s] #Total number of nets in the design = 10475.
+[06/09 18:52:47    181s] #
+[06/09 18:52:47    181s] #9914 routable nets have only global wires.
+[06/09 18:52:47    181s] #67 routable nets have only detail routed wires.
+[06/09 18:52:47    181s] #67 detail routed (routable) nets have been constrained (e.g. have preferred extra spacing, require shielding etc.)
+[06/09 18:52:47    181s] #
+[06/09 18:52:47    181s] #Routed nets constraints summary:
+[06/09 18:52:47    181s] #-----------------------------
+[06/09 18:52:47    181s] #        Rules   Unconstrained  
+[06/09 18:52:47    181s] #-----------------------------
+[06/09 18:52:47    181s] #      Default            9914  
+[06/09 18:52:47    181s] #-----------------------------
+[06/09 18:52:47    181s] #        Total            9914  
+[06/09 18:52:47    181s] #-----------------------------
+[06/09 18:52:47    181s] #
+[06/09 18:52:47    181s] #Routing constraints summary of the whole design:
+[06/09 18:52:47    181s] #------------------------------------------------
+[06/09 18:52:47    181s] #        Rules   Pref Extra Space   Unconstrained  
+[06/09 18:52:47    181s] #------------------------------------------------
+[06/09 18:52:47    181s] #      Default                 67            9914  
+[06/09 18:52:47    181s] #------------------------------------------------
+[06/09 18:52:47    181s] #        Total                 67            9914  
+[06/09 18:52:47    181s] #------------------------------------------------
+[06/09 18:52:47    181s] #
+[06/09 18:52:47    181s] #
+[06/09 18:52:47    181s] #  Congestion Analysis: (blocked Gcells are excluded)
+[06/09 18:52:47    181s] #
+[06/09 18:52:47    181s] #                 OverCon       OverCon       OverCon       OverCon          
+[06/09 18:52:47    181s] #                  #Gcell        #Gcell        #Gcell        #Gcell    %Gcell
+[06/09 18:52:47    181s] #     Layer         (1-2)         (3-4)         (5-6)           (7)   OverCon
+[06/09 18:52:47    181s] #  --------------------------------------------------------------------------
+[06/09 18:52:47    181s] #  MET1          0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+[06/09 18:52:47    181s] #  MET2        136(2.74%)     46(0.93%)      5(0.10%)      1(0.02%)   (3.78%)
+[06/09 18:52:47    181s] #  MET3         12(0.23%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.23%)
+[06/09 18:52:47    181s] #  MET4          0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+[06/09 18:52:47    181s] #  --------------------------------------------------------------------------
+[06/09 18:52:47    181s] #     Total    148(0.89%)     46(0.28%)      5(0.03%)      1(0.01%)   (1.21%)
+[06/09 18:52:47    181s] #
+[06/09 18:52:47    181s] #  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 7
+[06/09 18:52:47    181s] #  Overflow after GR: 0.19% H + 1.86% V
+[06/09 18:52:47    181s] #
+[06/09 18:52:47    181s] #Complete Global Routing.
+[06/09 18:52:47    181s] #Total number of nets with non-default rule or having extra spacing = 67
+[06/09 18:52:47    181s] #Total wire length = 719084 um.
+[06/09 18:52:47    181s] #Total half perimeter of net bounding box = 599112 um.
+[06/09 18:52:47    181s] #Total wire length on LAYER MET1 = 218 um.
+[06/09 18:52:47    181s] #Total wire length on LAYER MET2 = 262688 um.
+[06/09 18:52:47    181s] #Total wire length on LAYER MET3 = 333410 um.
+[06/09 18:52:47    181s] #Total wire length on LAYER MET4 = 122767 um.
+[06/09 18:52:47    181s] #Total number of vias = 53278
+[06/09 18:52:47    181s] #Up-Via Summary (total 53278):
+[06/09 18:52:47    181s] #           
+[06/09 18:52:47    181s] #-----------------------
+[06/09 18:52:47    181s] # MET1            30476
+[06/09 18:52:47    181s] # MET2            18421
+[06/09 18:52:47    181s] # MET3             4381
+[06/09 18:52:47    181s] #-----------------------
+[06/09 18:52:47    181s] #                 53278 
+[06/09 18:52:47    181s] #
+[06/09 18:52:47    181s] #Max overcon = 7 tracks.
+[06/09 18:52:47    181s] #Total overcon = 1.21%.
+[06/09 18:52:47    181s] #Worst layer Gcell overcon rate = 0.23%.
+[06/09 18:52:47    181s] #
+[06/09 18:52:47    181s] #Global routing statistics:
+[06/09 18:52:47    181s] #Cpu time = 00:00:02
+[06/09 18:52:47    181s] #Elapsed time = 00:00:02
+[06/09 18:52:47    181s] #Increased memory = 34.22 (MB)
+[06/09 18:52:47    181s] #Total memory = 1018.90 (MB)
+[06/09 18:52:47    181s] #Peak memory = 1018.91 (MB)
+[06/09 18:52:47    181s] #
+[06/09 18:52:47    181s] #Finished global routing on Thu Jun  9 18:52:47 2022
+[06/09 18:52:47    181s] #
+[06/09 18:52:47    181s] #
+[06/09 18:52:47    181s] ### route signature (19) = 1835077846
+[06/09 18:52:47    181s] ### violation signature (14) = 1905142130
+[06/09 18:52:47    181s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1000.87 (MB), peak = 1018.91 (MB)
+[06/09 18:52:47    181s] #Start Track Assignment.
+[06/09 18:52:48    182s] #Done with 11087 horizontal wires in 1 hboxes and 12579 vertical wires in 1 hboxes.
+[06/09 18:52:49    182s] #Done with 2914 horizontal wires in 1 hboxes and 2867 vertical wires in 1 hboxes.
+[06/09 18:52:49    183s] #Done with 1 horizontal wires in 1 hboxes and 1 vertical wires in 1 hboxes.
+[06/09 18:52:49    183s] #
+[06/09 18:52:49    183s] #Track assignment summary:
+[06/09 18:52:49    183s] # layer   (wire length)   (overlap)     (long ovlp)	(with obs/pg/clk)  
+[06/09 18:52:49    183s] #------------------------------------------------------------------------
+[06/09 18:52:49    183s] # MET1         186.30 	  0.00%  	  0.00% 	  0.00%
+[06/09 18:52:49    183s] # MET2      255031.81 	  0.12%  	  0.00% 	  0.00%
+[06/09 18:52:49    183s] # MET3      288737.01 	  0.16%  	  0.00% 	  0.01%
+[06/09 18:52:49    183s] # MET4       95257.00 	  0.01%  	  0.00% 	  0.00%
+[06/09 18:52:49    183s] #------------------------------------------------------------------------
+[06/09 18:52:49    183s] # All      639212.13  	  0.12% 	  0.00% 	  0.00%
+[06/09 18:52:49    183s] #Complete Track Assignment.
+[06/09 18:52:49    183s] #Total number of nets with non-default rule or having extra spacing = 67
+[06/09 18:52:49    183s] #Total wire length = 764577 um.
+[06/09 18:52:49    183s] #Total half perimeter of net bounding box = 599112 um.
+[06/09 18:52:49    183s] #Total wire length on LAYER MET1 = 39773 um.
+[06/09 18:52:49    183s] #Total wire length on LAYER MET2 = 256984 um.
+[06/09 18:52:49    183s] #Total wire length on LAYER MET3 = 344939 um.
+[06/09 18:52:49    183s] #Total wire length on LAYER MET4 = 122881 um.
+[06/09 18:52:49    183s] #Total number of vias = 53278
+[06/09 18:52:49    183s] #Up-Via Summary (total 53278):
+[06/09 18:52:49    183s] #           
+[06/09 18:52:49    183s] #-----------------------
+[06/09 18:52:49    183s] # MET1            30476
+[06/09 18:52:49    183s] # MET2            18421
+[06/09 18:52:49    183s] # MET3             4381
+[06/09 18:52:49    183s] #-----------------------
+[06/09 18:52:49    183s] #                 53278 
+[06/09 18:52:49    183s] #
+[06/09 18:52:49    183s] ### route signature (23) =  994257714
+[06/09 18:52:49    183s] ### violation signature (18) = 1905142130
+[06/09 18:52:49    183s] #cpu time = 00:00:02, elapsed time = 00:00:02, memory = 1010.61 (MB), peak = 1018.91 (MB)
+[06/09 18:52:49    183s] #
+[06/09 18:52:49    183s] #number of short segments in preferred routing layers
+[06/09 18:52:49    183s] #	
+[06/09 18:52:49    183s] #	
+[06/09 18:52:49    183s] #
+[06/09 18:52:49    183s] ### export route signature (24) =  994257714
+[06/09 18:52:49    183s] #
+[06/09 18:52:49    183s] #globalRoute statistics:
+[06/09 18:52:49    183s] #Cpu time = 00:00:05
+[06/09 18:52:49    183s] #Elapsed time = 00:00:05
+[06/09 18:52:49    183s] #Increased memory = 14.52 (MB)
+[06/09 18:52:49    183s] #Total memory = 987.11 (MB)
+[06/09 18:52:49    183s] #Peak memory = 1018.91 (MB)
+[06/09 18:52:49    183s] #Number of warnings = 46
+[06/09 18:52:49    183s] #Total number of warnings = 110
+[06/09 18:52:49    183s] #Number of fails = 0
+[06/09 18:52:49    183s] #Total number of fails = 0
+[06/09 18:52:49    183s] #Complete globalRoute on Thu Jun  9 18:52:49 2022
+[06/09 18:52:49    183s] #
+[06/09 18:52:49    183s] ### 
+[06/09 18:52:49    183s] ###   Scalability Statistics
+[06/09 18:52:49    183s] ### 
+[06/09 18:52:49    183s] ### ------------------------+----------------+----------------+----------------+
+[06/09 18:52:49    183s] ###   globalRoute           |        cpu time|    elapsed time|     scalability|
+[06/09 18:52:49    183s] ### ------------------------+----------------+----------------+----------------+
+[06/09 18:52:49    183s] ###   Data Preparation      |        00:00:00|        00:00:00|             1.0|
+[06/09 18:52:49    183s] ###   Global Routing        |        00:00:02|        00:00:02|             1.0|
+[06/09 18:52:49    183s] ###   Track Assignment      |        00:00:02|        00:00:02|             1.0|
+[06/09 18:52:49    183s] ###   Total                 |        00:00:05|        00:00:05|             1.0|
+[06/09 18:52:49    183s] ### ------------------------+----------------+----------------+----------------+
+[06/09 18:52:49    183s] ### 
+[06/09 18:52:49    183s] #% End globalRoute (date=06/09 18:52:49, total cpu=0:00:04.9, real=0:00:05.0, peak res=1018.9M, current mem=1018.9M)
+[06/09 18:53:00    184s] <CMD> pan -12.953 -3.962
+[06/09 18:53:07    184s] <CMD> routeDesign
+[06/09 18:53:07    184s] #% Begin routeDesign (date=06/09 18:53:07, mem=988.8M)
+[06/09 18:53:07    184s] #routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 988.83 (MB), peak = 1018.91 (MB)
+[06/09 18:53:07    184s] #**INFO: setDesignMode -flowEffort standard
+[06/09 18:53:07    184s] #**INFO: multi-cut via swapping will be performed after routing.
+[06/09 18:53:07    184s] #**INFO: All auto set options tuned by routeDesign will be restored to their original settings on command completion.
+[06/09 18:53:07    184s] #**INFO: auto set of routeReserveSpaceForMultiCut to true
+[06/09 18:53:07    184s] #**INFO: auto set of routeConcurrentMinimizeViaCountEffort to high
+[06/09 18:53:07    184s] #spOpts: N=250 
+[06/09 18:53:07    184s] Core basic site is standard
+[06/09 18:53:07    184s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[06/09 18:53:07    184s] Begin checking placement ... (start mem=1210.2M, init mem=1210.2M)
+[06/09 18:53:07    185s] *info: Placed = 20196          (Fixed = 272)
+[06/09 18:53:07    185s] *info: Unplaced = 0           
+[06/09 18:53:07    185s] Placement Density:100.00%(1793992/1793992)
+[06/09 18:53:07    185s] Placement Density (including fixed std cells):100.00%(1801491/1801491)
+[06/09 18:53:07    185s] Finished checkPlace (cpu: total=0:00:00.1, vio checks=0:00:00.1; mem=1210.2M)
+[06/09 18:53:07    185s] #**INFO: auto set of routeWithTimingDriven to true
+[06/09 18:53:07    185s] #**INFO: auto set of routeWithSiDriven to true
+[06/09 18:53:07    185s] **WARN: (IMPCK-8086):	The command changeUseClockNetStatus is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+[06/09 18:53:07    185s] 
+[06/09 18:53:07    185s] changeUseClockNetStatus Option :  -noFixedNetWires 
+[06/09 18:53:07    185s] *** Changed status on (67) nets in Clock.
+[06/09 18:53:07    185s] *** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=1210.2M) ***
+[06/09 18:53:07    185s] #Start route 67 clock nets...
+[06/09 18:53:07    185s] % Begin globalDetailRoute (date=06/09 18:53:07, mem=988.9M)
+[06/09 18:53:07    185s] 
+[06/09 18:53:07    185s] globalDetailRoute
+[06/09 18:53:07    185s] 
+[06/09 18:53:07    185s] #setNanoRouteMode -drouteEndIteration 5
+[06/09 18:53:07    185s] #setNanoRouteMode -routeConcurrentMinimizeViaCountEffort "high"
+[06/09 18:53:07    185s] #setNanoRouteMode -routeReserveSpaceForMultiCut true
+[06/09 18:53:07    185s] #setNanoRouteMode -routeWithEco true
+[06/09 18:53:07    185s] #setNanoRouteMode -routeWithSiDriven true
+[06/09 18:53:07    185s] #setNanoRouteMode -routeWithTimingDriven true
+[06/09 18:53:07    185s] #Start globalDetailRoute on Thu Jun  9 18:53:07 2022
+[06/09 18:53:07    185s] #
+[06/09 18:53:07    185s] Updating RC grid for preRoute extraction ...
+[06/09 18:53:07    185s] Initializing multi-corner capacitance tables ... 
+[06/09 18:53:07    185s] Initializing multi-corner resistance tables ...
+[06/09 18:53:07    185s] #WARNING (NRIG-34) Power/Ground pin vdd3r2! of instance io_inFIFO_inData_3 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:07    185s] #WARNING (NRIG-34) Power/Ground pin vdd3r1! of instance io_inFIFO_inData_3 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:07    185s] #WARNING (NRIG-34) Power/Ground pin vdd3o! of instance io_inFIFO_inData_3 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:07    185s] #WARNING (NRIG-34) Power/Ground pin gnd3r! of instance io_inFIFO_inData_3 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:07    185s] #WARNING (NRIG-34) Power/Ground pin gnd3o! of instance io_inFIFO_inData_3 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:07    185s] #WARNING (NRIG-34) Power/Ground pin vdd3r2! of instance io_inFIFO_inData_2 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:07    185s] #WARNING (NRIG-34) Power/Ground pin vdd3r1! of instance io_inFIFO_inData_2 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:07    185s] #WARNING (NRIG-34) Power/Ground pin vdd3o! of instance io_inFIFO_inData_2 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:07    185s] #WARNING (NRIG-34) Power/Ground pin gnd3r! of instance io_inFIFO_inData_2 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:07    185s] #WARNING (NRIG-34) Power/Ground pin gnd3o! of instance io_inFIFO_inData_2 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:07    185s] #WARNING (NRIG-34) Power/Ground pin vdd3r2! of instance io_inFIFO_inData_1 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:07    185s] #WARNING (NRIG-34) Power/Ground pin vdd3r1! of instance io_inFIFO_inData_1 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:07    185s] #WARNING (NRIG-34) Power/Ground pin vdd3o! of instance io_inFIFO_inData_1 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:07    185s] #WARNING (NRIG-34) Power/Ground pin gnd3r! of instance io_inFIFO_inData_1 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:07    185s] #WARNING (NRIG-34) Power/Ground pin gnd3o! of instance io_inFIFO_inData_1 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:07    185s] #WARNING (NRIG-34) Power/Ground pin vdd3r2! of instance io_inFIFO_inData_0 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:07    185s] #WARNING (NRIG-34) Power/Ground pin vdd3r1! of instance io_inFIFO_inData_0 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:07    185s] #WARNING (NRIG-34) Power/Ground pin vdd3o! of instance io_inFIFO_inData_0 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:07    185s] #WARNING (NRIG-34) Power/Ground pin gnd3r! of instance io_inFIFO_inData_0 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:07    185s] #WARNING (NRIG-34) Power/Ground pin gnd3o! of instance io_inFIFO_inData_0 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:07    185s] #WARNING (EMS-27) Message (NRIG-34) has exceeded the current message display limit of 20.
+[06/09 18:53:07    185s] #To increase the message display limit, refer to the product command reference manual.
+[06/09 18:53:07    185s] #WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_MUX_inSEL15[2] of net in_MUX_inSEL15[2] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+[06/09 18:53:07    185s] #WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_MUX_inSEL15[1] of net in_MUX_inSEL15[1] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+[06/09 18:53:07    185s] #WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_MUX_inSEL15[0] of net in_MUX_inSEL15[0] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+[06/09 18:53:07    185s] #WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_outFIFO_inReadEnable of net in_outFIFO_inReadEnable because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+[06/09 18:53:07    185s] ### Net info: total nets: 10475
+[06/09 18:53:07    185s] ### Net info: dirty nets: 18
+[06/09 18:53:07    185s] ### Net info: marked as disconnected nets: 0
+[06/09 18:53:08    185s] ### Net info: fully routed nets: 51
+[06/09 18:53:08    185s] ### Net info: trivial (single pin) nets: 0
+[06/09 18:53:08    185s] ### Net info: unrouted nets: 494
+[06/09 18:53:08    185s] ### Net info: re-extraction nets: 9930
+[06/09 18:53:08    185s] ### Net info: ignored nets: 0
+[06/09 18:53:08    185s] ### Net info: skip routing nets: 10408
+[06/09 18:53:08    185s] ### import route signature (25) = 1207653651
+[06/09 18:53:08    185s] #WARNING (NRDB-733) PIN inClock in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:08    185s] #WARNING (NRDB-733) PIN inReset in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:08    185s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX1 in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:08    185s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX17[0] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:08    185s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX17[1] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:08    185s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX17[2] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:08    185s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX17[3] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:08    185s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX18[0] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:08    185s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX18[1] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:08    185s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX18[2] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:08    185s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX18[3] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:08    185s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX2 in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:08    185s] #WARNING (NRDB-733) PIN in_DEMUX_inSEL17 in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:08    185s] #WARNING (NRDB-733) PIN in_DEMUX_inSEL1[0] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:08    185s] #WARNING (NRDB-733) PIN in_DEMUX_inSEL1[1] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:08    185s] #WARNING (NRDB-733) PIN in_DEMUX_inSEL1[2] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:08    185s] #WARNING (NRDB-733) PIN in_DEMUX_inSEL2[0] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:08    185s] #WARNING (NRDB-733) PIN in_DEMUX_inSEL2[1] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:08    185s] #WARNING (NRDB-733) PIN in_DEMUX_inSEL2[2] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:08    185s] #WARNING (NRDB-733) PIN in_MUX_inSEL11 in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:08    185s] #WARNING (EMS-27) Message (NRDB-733) has exceeded the current message display limit of 20.
+[06/09 18:53:08    185s] #To increase the message display limit, refer to the product command reference manual.
+[06/09 18:53:08    185s] #NanoRoute Version 17.11-s080_1 NR170721-2155/17_11-UB
+[06/09 18:53:08    185s] #RTESIG:78da8dd3c16ac3300c06e09df71422ed218326d3efc4b17dec608341e946e9762d1da469
+[06/09 18:53:08    185s] #       203490b8ef3fc3965b88ec93401f966cd9abf5f7eb8112981cc846b67c02ed0f306c1432
+[06/09 18:53:08    185s] #       05ad9f614e21f5f5923caed61f9f47b89234a5edcdd74d3d6ce83ed6038db5f7edad79fa
+[06/09 18:53:08    185s] #       23059878991868f2c3bda6f4a7efbb7962409cb3e6b028bd74fdd9cf3ba7a39c05e872ee
+[06/09 18:53:08    185s] #       c6a59ab62a228ca572f97436b49e290e5db1d895ad4847394bc8b5e81c8354c47e8e8d34
+[06/09 18:53:08    185s] #       0087086245529632a944120623115350726d9b6b42e9e887909867567e06602819215c61
+[06/09 18:53:08    185s] #       444114e1ad8b9b1561bec9dbfb6eb7dd1f41ff819a023d05e1674d392d95b52ea2ac13a7
+[06/09 18:53:08    185s] #       83d2728471b2716ac13cfc02af3b5b60
+[06/09 18:53:08    185s] #
+[06/09 18:53:08    185s] #RTESIG:78da8dd3c16ac3300c06e09df71422ed218326d3efc4b17dec608341e946e9762d1da469
+[06/09 18:53:08    185s] #       203490b8ef3fc3965b88ec93401f966cd9abf5f7eb8112981cc846b67c02ed0f306c1432
+[06/09 18:53:08    185s] #       05ad9f614e21f5f5923caed61f9f47b89234a5edcdd74d3d6ce83ed6038db5f7edad79fa
+[06/09 18:53:08    185s] #       23059878991868f2c3bda6f4a7efbb7962409cb3e6b028bd74fdd9cf3ba7a39c05e872ee
+[06/09 18:53:08    185s] #       c6a59ab62a228ca572f97436b49e290e5db1d895ad4847394bc8b5e81c8354c47e8e8d34
+[06/09 18:53:08    185s] #       0087086245529632a944120623115350726d9b6b42e9e887909867567e06602819215c61
+[06/09 18:53:08    185s] #       444114e1ad8b9b1561bec9dbfb6eb7dd1f41ff819a023d05e1674d392d95b52ea2ac13a7
+[06/09 18:53:08    185s] #       83d2728471b2716ac13cfc02af3b5b60
+[06/09 18:53:08    185s] #
+[06/09 18:53:08    185s] #Start routing data preparation on Thu Jun  9 18:53:08 2022
+[06/09 18:53:08    185s] #
+[06/09 18:53:08    185s] #Minimum voltage of a net in the design = 0.000.
+[06/09 18:53:08    185s] #Maximum voltage of a net in the design = 3.630.
+[06/09 18:53:08    185s] #Voltage range [0.000 - 0.000] has 3 nets.
+[06/09 18:53:08    185s] #Voltage range [0.000 - 3.630] has 10472 nets.
+[06/09 18:53:08    185s] # MET1         H   Track-Pitch = 1.300    Line-2-Via Pitch = 1.150
+[06/09 18:53:08    185s] # MET2         V   Track-Pitch = 1.400    Line-2-Via Pitch = 1.200
+[06/09 18:53:08    185s] # MET3         H   Track-Pitch = 1.300    Line-2-Via Pitch = 1.200
+[06/09 18:53:08    185s] # MET4         V   Track-Pitch = 1.400    Line-2-Via Pitch = 1.300
+[06/09 18:53:08    185s] #Regenerating Ggrids automatically.
+[06/09 18:53:08    185s] #Auto generating G-grids with size=15 tracks, using layer MET2's pitch = 1.400.
+[06/09 18:53:08    185s] #Using automatically generated G-grids.
+[06/09 18:53:08    185s] #Done routing data preparation.
+[06/09 18:53:08    185s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 999.37 (MB), peak = 1018.91 (MB)
+[06/09 18:53:08    185s] #Merging special wires...
+[06/09 18:53:08    185s] #
+[06/09 18:53:08    185s] #Connectivity extraction summary:
+[06/09 18:53:08    185s] #16 routed nets are extracted.
+[06/09 18:53:08    185s] #51 routed net(s) are imported.
+[06/09 18:53:08    185s] #10408 nets are fixed|skipped|trivial (not extracted).
+[06/09 18:53:08    185s] #Total number of nets = 10475.
+[06/09 18:53:08    185s] #
+[06/09 18:53:08    185s] #
+[06/09 18:53:08    185s] #Finished routing data preparation on Thu Jun  9 18:53:08 2022
+[06/09 18:53:08    185s] #
+[06/09 18:53:08    185s] #Cpu time = 00:00:00
+[06/09 18:53:08    185s] #Elapsed time = 00:00:00
+[06/09 18:53:08    185s] #Increased memory = 5.12 (MB)
+[06/09 18:53:08    185s] #Total memory = 999.71 (MB)
+[06/09 18:53:08    185s] #Peak memory = 1018.91 (MB)
+[06/09 18:53:08    185s] #
+[06/09 18:53:08    185s] #
+[06/09 18:53:08    185s] #Start global routing on Thu Jun  9 18:53:08 2022
+[06/09 18:53:08    185s] #
+[06/09 18:53:08    185s] #WARNING (NRGR-22) Design is already detail routed.
+[06/09 18:53:08    185s] ### route signature (28) =  259600176
+[06/09 18:53:08    185s] ### violation signature (21) = 1905142130
+[06/09 18:53:08    185s] ### route signature (31) = 1107959673
+[06/09 18:53:08    185s] ### violation signature (24) = 1905142130
+[06/09 18:53:08    185s] #Routing data preparation, pin analysis, global routing and track assignment statistics:
+[06/09 18:53:08    185s] #Cpu time = 00:00:00
+[06/09 18:53:08    185s] #Elapsed time = 00:00:00
+[06/09 18:53:08    185s] #Increased memory = 5.12 (MB)
+[06/09 18:53:08    185s] #Total memory = 999.71 (MB)
+[06/09 18:53:08    185s] #Peak memory = 1018.91 (MB)
+[06/09 18:53:08    185s] ### max drc and si pitch = 2100 (   2.100 um) MT-safe pitch = 1400 (   1.400 um) patch pitch = 6100 (   6.100 um)
+[06/09 18:53:08    185s] #
+[06/09 18:53:08    185s] #Start Detail Routing..
+[06/09 18:53:08    185s] #start initial detail routing ...
+[06/09 18:53:17    194s] # ECO: 22.5% of the total area was rechecked for DRC, and 0.0% required routing.
+[06/09 18:53:17    194s] #   number of violations = 0
+[06/09 18:53:17    194s] #11206 out of 20612 instances (54.4%) need to be verified(marked ipoed), dirty area=20.3%.
+[06/09 18:53:25    202s] #   number of violations = 0
+[06/09 18:53:25    202s] #cpu time = 00:00:17, elapsed time = 00:00:17, memory = 1038.92 (MB), peak = 1040.44 (MB)
+[06/09 18:53:25    202s] #start 1st optimization iteration ...
+[06/09 18:53:25    202s] #   number of violations = 0
+[06/09 18:53:25    202s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1038.92 (MB), peak = 1040.44 (MB)
+[06/09 18:53:25    202s] #Complete Detail Routing.
+[06/09 18:53:25    202s] #Total number of nets with non-default rule or having extra spacing = 67
+[06/09 18:53:25    202s] #Total wire length = 60986 um.
+[06/09 18:53:25    202s] #Total half perimeter of net bounding box = 29478 um.
+[06/09 18:53:25    202s] #Total wire length on LAYER MET1 = 29 um.
+[06/09 18:53:25    202s] #Total wire length on LAYER MET2 = 1973 um.
+[06/09 18:53:25    202s] #Total wire length on LAYER MET3 = 32816 um.
+[06/09 18:53:25    202s] #Total wire length on LAYER MET4 = 26167 um.
+[06/09 18:53:25    202s] #Total number of vias = 6484
+[06/09 18:53:25    202s] #Up-Via Summary (total 6484):
+[06/09 18:53:25    202s] #           
+[06/09 18:53:25    202s] #-----------------------
+[06/09 18:53:25    202s] # MET1             2204
+[06/09 18:53:25    202s] # MET2             2187
+[06/09 18:53:25    202s] # MET3             2093
+[06/09 18:53:25    202s] #-----------------------
+[06/09 18:53:25    202s] #                  6484 
+[06/09 18:53:25    202s] #
+[06/09 18:53:25    202s] #Total number of DRC violations = 0
+[06/09 18:53:25    202s] ### route signature (38) = 2003893453
+[06/09 18:53:25    202s] ### violation signature (31) = 1905142130
+[06/09 18:53:25    202s] #Cpu time = 00:00:17
+[06/09 18:53:25    202s] #Elapsed time = 00:00:17
+[06/09 18:53:25    202s] #Increased memory = 13.29 (MB)
+[06/09 18:53:25    202s] #Total memory = 1013.00 (MB)
+[06/09 18:53:25    202s] #Peak memory = 1040.44 (MB)
+[06/09 18:53:25    202s] #detailRoute Statistics:
+[06/09 18:53:25    202s] #Cpu time = 00:00:17
+[06/09 18:53:25    202s] #Elapsed time = 00:00:17
+[06/09 18:53:25    202s] #Increased memory = 13.29 (MB)
+[06/09 18:53:25    202s] #Total memory = 1013.00 (MB)
+[06/09 18:53:25    202s] #Peak memory = 1040.44 (MB)
+[06/09 18:53:25    202s] ### export route signature (39) = 2003893453
+[06/09 18:53:25    202s] #
+[06/09 18:53:25    202s] #globalDetailRoute statistics:
+[06/09 18:53:25    202s] #Cpu time = 00:00:17
+[06/09 18:53:25    202s] #Elapsed time = 00:00:17
+[06/09 18:53:25    202s] #Increased memory = 13.86 (MB)
+[06/09 18:53:25    202s] #Total memory = 1002.75 (MB)
+[06/09 18:53:25    202s] #Peak memory = 1040.44 (MB)
+[06/09 18:53:25    202s] #Number of warnings = 47
+[06/09 18:53:25    202s] #Total number of warnings = 157
+[06/09 18:53:25    202s] #Number of fails = 0
+[06/09 18:53:25    202s] #Total number of fails = 0
+[06/09 18:53:25    202s] #Complete globalDetailRoute on Thu Jun  9 18:53:25 2022
+[06/09 18:53:25    202s] #
+[06/09 18:53:25    202s] % End globalDetailRoute (date=06/09 18:53:25, total cpu=0:00:17.4, real=0:00:18.0, peak res=1040.4M, current mem=1002.8M)
+[06/09 18:53:25    202s] #**INFO: auto set of droutePostRouteSwapVia to multiCut
+[06/09 18:53:25    202s] % Begin globalDetailRoute (date=06/09 18:53:25, mem=1002.8M)
+[06/09 18:53:25    202s] 
+[06/09 18:53:25    202s] globalDetailRoute
+[06/09 18:53:25    202s] 
+[06/09 18:53:25    202s] #setNanoRouteMode -droutePostRouteSwapVia "multiCut"
+[06/09 18:53:25    202s] #setNanoRouteMode -routeConcurrentMinimizeViaCountEffort "high"
+[06/09 18:53:25    202s] #setNanoRouteMode -routeReserveSpaceForMultiCut true
+[06/09 18:53:25    202s] #setNanoRouteMode -routeWithSiDriven true
+[06/09 18:53:25    202s] #setNanoRouteMode -routeWithTimingDriven true
+[06/09 18:53:25    202s] #Start globalDetailRoute on Thu Jun  9 18:53:25 2022
+[06/09 18:53:25    202s] #
+[06/09 18:53:25    202s] #Generating timing data, please wait...
+[06/09 18:53:25    202s] #10035 total nets, 7843 already routed, 7843 will ignore in trialRoute
+[06/09 18:53:25    202s] #Reporting timing...
+[06/09 18:53:25    203s] **WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use setDelayCalMode -siAware false to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+[06/09 18:53:25    203s] End AAE Lib Interpolated Model. (MEM=1229.69 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[06/09 18:53:27    204s] Total number of fetched objects 11855
+[06/09 18:53:27    204s] AAE_INFO-618: Total number of nets in the design is 10475,  100.0 percent of the nets selected for SI analysis
+[06/09 18:53:27    205s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[06/09 18:53:27    205s] End delay calculation. (MEM=1280.46 CPU=0:00:01.7 REAL=0:00:01.0)
+[06/09 18:53:28    205s] **WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use setDelayCalMode -siAware false to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+[06/09 18:53:28    205s] End AAE Lib Interpolated Model. (MEM=1221.73 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[06/09 18:53:28    205s] Glitch Analysis: View setup_func_max -- Total Number of Nets Skipped = 0. 
+[06/09 18:53:28    205s] Glitch Analysis: View setup_func_max -- Total Number of Nets Analyzed = 11855. 
+[06/09 18:53:28    205s] Total number of fetched objects 11855
+[06/09 18:53:28    205s] AAE_INFO-618: Total number of nets in the design is 10475,  0.0 percent of the nets selected for SI analysis
+[06/09 18:53:28    205s] End delay calculation. (MEM=1278.97 CPU=0:00:00.1 REAL=0:00:00.0)
+[06/09 18:53:28    205s] #Normalized TNS: 1000.00 20.00 -93001.54 -4650.08 -80931.19 -4046.56
+[06/09 18:53:28    205s] #Stage 1: cpu time = 00:00:03, elapsed time = 00:00:03, memory = 1022.12 (MB), peak = 1045.58 (MB)
+[06/09 18:53:28    205s] #Library Standard Delay: 141.70ps
+[06/09 18:53:28    205s] #Slack threshold: 283.40ps
+[06/09 18:53:28    206s] #*** Analyzed 2963 timing critical paths
+[06/09 18:53:29    206s] #Stage 2: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1025.34 (MB), peak = 1045.58 (MB)
+[06/09 18:53:32    209s] #Stage 3: cpu time = 00:00:03, elapsed time = 00:00:03, memory = 1030.19 (MB), peak = 1045.58 (MB)
+[06/09 18:53:32    209s] **WARN: (TCLCMD-1403):	'The -tcl_list output format of report_timing will not be supported in future releases of the software.   Path collections generated by 'report_timing -collection'  can be used instead for programmatic access to timing report data. The  report_timing -tcl_list will continue to work in this release - but, you should update your scripts to use path collections so that they are compatible with future releases.'
+[06/09 18:53:32    209s] #Stage 4: cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1032.29 (MB), peak = 1045.58 (MB)
+[06/09 18:53:32    209s] **WARN: (IMPCTE-104):	The constraint mode of this inactive view 'setup_func_min' has been modified and may need to be reanalyzed to ensure proper timing results. To reanalyze timing for this view make the view active using 'set_analysis_view' and run timing analysis.
+[06/09 18:53:32    209s] **WARN: (IMPCTE-104):	The constraint mode of this inactive view 'setup_func_typ' has been modified and may need to be reanalyzed to ensure proper timing results. To reanalyze timing for this view make the view active using 'set_analysis_view' and run timing analysis.
+[06/09 18:53:32    209s] **WARN: (IMPCTE-104):	The constraint mode of this inactive view 'hold_func_max' has been modified and may need to be reanalyzed to ensure proper timing results. To reanalyze timing for this view make the view active using 'set_analysis_view' and run timing analysis.
+[06/09 18:53:32    209s] **WARN: (IMPCTE-104):	The constraint mode of this inactive view 'hold_func_typ' has been modified and may need to be reanalyzed to ensure proper timing results. To reanalyze timing for this view make the view active using 'set_analysis_view' and run timing analysis.
+[06/09 18:53:33    210s] **WARN: (IMPEXT-3493):	The design extraction status has been reset by set_analysis_view/update_rc_corner or setExtractRCMode  command. The parasitic data can be regenerated either by extracting the design using the extractRC command or by loading the SPEF or RCDB file(s). To prevent resetting of the extraction status, avoid changing extraction modes.
+[06/09 18:53:33    210s] #Generating timing data took: cpu time = 00:00:08, elapsed time = 00:00:08, memory = 979.03 (MB), peak = 1045.58 (MB)
+[06/09 18:53:33    210s] #Done generating timing data.
+[06/09 18:53:33    210s] #WARNING (NRIG-34) Power/Ground pin vdd3r2! of instance io_inFIFO_inData_3 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:33    210s] #WARNING (NRIG-34) Power/Ground pin vdd3r1! of instance io_inFIFO_inData_3 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:33    210s] #WARNING (NRIG-34) Power/Ground pin vdd3o! of instance io_inFIFO_inData_3 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:33    210s] #WARNING (NRIG-34) Power/Ground pin gnd3r! of instance io_inFIFO_inData_3 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:33    210s] #WARNING (NRIG-34) Power/Ground pin gnd3o! of instance io_inFIFO_inData_3 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:33    210s] #WARNING (NRIG-34) Power/Ground pin vdd3r2! of instance io_inFIFO_inData_2 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:33    210s] #WARNING (NRIG-34) Power/Ground pin vdd3r1! of instance io_inFIFO_inData_2 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:33    210s] #WARNING (NRIG-34) Power/Ground pin vdd3o! of instance io_inFIFO_inData_2 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:33    210s] #WARNING (NRIG-34) Power/Ground pin gnd3r! of instance io_inFIFO_inData_2 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:33    210s] #WARNING (NRIG-34) Power/Ground pin gnd3o! of instance io_inFIFO_inData_2 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:33    210s] #WARNING (NRIG-34) Power/Ground pin vdd3r2! of instance io_inFIFO_inData_1 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:33    210s] #WARNING (NRIG-34) Power/Ground pin vdd3r1! of instance io_inFIFO_inData_1 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:33    210s] #WARNING (NRIG-34) Power/Ground pin vdd3o! of instance io_inFIFO_inData_1 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:33    210s] #WARNING (NRIG-34) Power/Ground pin gnd3r! of instance io_inFIFO_inData_1 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:33    210s] #WARNING (NRIG-34) Power/Ground pin gnd3o! of instance io_inFIFO_inData_1 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:33    210s] #WARNING (NRIG-34) Power/Ground pin vdd3r2! of instance io_inFIFO_inData_0 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:33    210s] #WARNING (NRIG-34) Power/Ground pin vdd3r1! of instance io_inFIFO_inData_0 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:33    210s] #WARNING (NRIG-34) Power/Ground pin vdd3o! of instance io_inFIFO_inData_0 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:33    210s] #WARNING (NRIG-34) Power/Ground pin gnd3r! of instance io_inFIFO_inData_0 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:33    210s] #WARNING (NRIG-34) Power/Ground pin gnd3o! of instance io_inFIFO_inData_0 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+[06/09 18:53:33    210s] #WARNING (EMS-27) Message (NRIG-34) has exceeded the current message display limit of 20.
+[06/09 18:53:33    210s] #To increase the message display limit, refer to the product command reference manual.
+[06/09 18:53:33    210s] #WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_MUX_inSEL15[2] of net in_MUX_inSEL15[2] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+[06/09 18:53:33    210s] #WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_MUX_inSEL15[1] of net in_MUX_inSEL15[1] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+[06/09 18:53:33    210s] #WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_MUX_inSEL15[0] of net in_MUX_inSEL15[0] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+[06/09 18:53:33    210s] #WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_outFIFO_inReadEnable of net in_outFIFO_inReadEnable because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+[06/09 18:53:33    210s] ### Net info: total nets: 10475
+[06/09 18:53:33    210s] ### Net info: dirty nets: 0
+[06/09 18:53:33    210s] ### Net info: marked as disconnected nets: 0
+[06/09 18:53:33    210s] ### Net info: fully routed nets: 7843
+[06/09 18:53:33    210s] ### Net info: trivial (single pin) nets: 0
+[06/09 18:53:33    210s] ### Net info: unrouted nets: 2632
+[06/09 18:53:33    210s] ### Net info: re-extraction nets: 0
+[06/09 18:53:33    210s] ### Net info: ignored nets: 0
+[06/09 18:53:33    210s] ### Net info: skip routing nets: 0
+[06/09 18:53:33    210s] ### import route signature (40) =  726064175
+[06/09 18:53:33    210s] #WARNING (NRDB-733) PIN inClock in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:33    210s] #WARNING (NRDB-733) PIN inReset in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:33    210s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX1 in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:33    210s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX17[0] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:33    210s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX17[1] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:33    210s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX17[2] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:33    210s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX17[3] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:33    210s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX18[0] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:33    210s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX18[1] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:33    210s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX18[2] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:33    210s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX18[3] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:33    210s] #WARNING (NRDB-733) PIN in_DEMUX_inDEMUX2 in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:33    210s] #WARNING (NRDB-733) PIN in_DEMUX_inSEL17 in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:33    210s] #WARNING (NRDB-733) PIN in_DEMUX_inSEL1[0] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:33    210s] #WARNING (NRDB-733) PIN in_DEMUX_inSEL1[1] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:33    210s] #WARNING (NRDB-733) PIN in_DEMUX_inSEL1[2] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:33    210s] #WARNING (NRDB-733) PIN in_DEMUX_inSEL2[0] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:33    210s] #WARNING (NRDB-733) PIN in_DEMUX_inSEL2[1] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:33    210s] #WARNING (NRDB-733) PIN in_DEMUX_inSEL2[2] in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:33    210s] #WARNING (NRDB-733) PIN in_MUX_inSEL11 in CELL_VIEW top_io does not have physical port.
+[06/09 18:53:33    210s] #WARNING (EMS-27) Message (NRDB-733) has exceeded the current message display limit of 20.
+[06/09 18:53:33    210s] #To increase the message display limit, refer to the product command reference manual.
+[06/09 18:53:33    210s] #NanoRoute Version 17.11-s080_1 NR170721-2155/17_11-UB
+[06/09 18:53:33    210s] #RTESIG:78da8d944d6fdb300c8677deaf209c1e3260b149598aa4e3ba75c080a00d82b457215b94
+[06/09 18:53:33    210s] #       c4abbf6acb43f6efa7a2ed4e41299d28e8f14bf215e5d9d5c3cd0632d239d16244838ee0
+[06/09 18:53:33    210s] #       76431ab5a08520a50ad22e1edd5f671f675777ebad54045933d5a1fa3a850ce66318aaf6
+[06/09 18:53:33    210s] #       f819a6d10f30fa10e2eed30baa494118260ff39f5d575f468481ac084d5f546ddbfd9946
+[06/09 18:53:33    210s] #       177cd33b422cd1fdaa1a5fef09953bf727b1eb7b42e11eb777bfd763d1eeda6ee8a6e05d
+[06/09 18:53:33    210s] #       fcd87db34fe7bfa7220f5513b5dde0fb6e0894ef99fa3401e6a8302e981fea6e172e7316
+[06/09 18:53:33    210s] #       213b55c713236755929c41c3d96296251c76f5f83e6340c2bc6a833ffae132121b5c088c
+[06/09 18:53:33    210s] #       45215b9459824ae20c50ae58ce228148d0b3a839332c2520aca5564a1e59b28892409272
+[06/09 18:53:33    210s] #       cd3716af9013d365ca5c5943ac92b51c42149d4ec846657cb5dcec5119c720fbfe63b5fa
+[06/09 18:53:33    210s] #       72bb25780dc45ba0de02c2ff678a4b6b6c425acb5e224994497d3effc8525e0649c39b2b
+[06/09 18:53:33    210s] #       ad7887f9f00f2a9da241
+[06/09 18:53:33    210s] #
+[06/09 18:53:33    210s] #RTESIG:78da8d944d6fdb300c8677deaf209c1e3260b149598aa4e3ba75c080a00d82b457215b94
+[06/09 18:53:33    210s] #       c4abbf6acb43f6efa7a2ed4e41299d28e8f14bf215e5d9d5c3cd0632d239d16244838ee0
+[06/09 18:53:33    210s] #       76431ab5a08520a50ad22e1edd5f671f675777ebad54045933d5a1fa3a850ce66318aaf6
+[06/09 18:53:33    210s] #       f819a6d10f30fa10e2eed30baa494118260ff39f5d575f468481ac084d5f546ddbfd9946
+[06/09 18:53:33    210s] #       177cd33b422cd1fdaa1a5fef09953bf727b1eb7b42e11eb777bfd763d1eeda6ee8a6e05d
+[06/09 18:53:33    210s] #       fcd87db34fe7bfa7220f5513b5dde0fb6e0894ef99fa3401e6a8302e981fea6e172e7316
+[06/09 18:53:33    210s] #       213b55c713236755929c41c3d96296251c76f5f83e6340c2bc6a833ffae132121b5c088c
+[06/09 18:53:33    210s] #       45215b9459824ae20c50ae58ce228148d0b3a839332c2520aca5564a1e59b28892409272
+[06/09 18:53:33    210s] #       cd3716af9013d365ca5c5943ac92b51c42149d4ec846657cb5dcec5119c720fbfe63b5fa
+[06/09 18:53:33    210s] #       72bb25780dc45ba0de02c2ff678a4b6b6c425acb5e224994497d3effc8525e0649c39b2b
+[06/09 18:53:33    210s] #       ad7887f9f00f2a9da241
+[06/09 18:53:33    210s] #
+[06/09 18:53:33    210s] #Start routing data preparation on Thu Jun  9 18:53:33 2022
+[06/09 18:53:33    210s] #
+[06/09 18:53:33    210s] #Minimum voltage of a net in the design = 0.000.
+[06/09 18:53:33    210s] #Maximum voltage of a net in the design = 3.630.
+[06/09 18:53:33    210s] #Voltage range [0.000 - 0.000] has 3 nets.
+[06/09 18:53:33    210s] #Voltage range [0.000 - 3.630] has 10472 nets.
+[06/09 18:53:33    210s] # MET1         H   Track-Pitch = 1.300    Line-2-Via Pitch = 1.150
+[06/09 18:53:33    210s] # MET2         V   Track-Pitch = 1.400    Line-2-Via Pitch = 1.200
+[06/09 18:53:33    210s] # MET3         H   Track-Pitch = 1.300    Line-2-Via Pitch = 1.200
+[06/09 18:53:33    210s] # MET4         V   Track-Pitch = 1.400    Line-2-Via Pitch = 1.300
+[06/09 18:53:33    210s] #Using user defined Ggrids in DB.
+[06/09 18:53:33    210s] #Done routing data preparation.
+[06/09 18:53:33    210s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 993.00 (MB), peak = 1045.58 (MB)
+[06/09 18:53:33    210s] #
+[06/09 18:53:33    210s] #Summary of active signal nets routing constraints set by OPT:
+[06/09 18:53:33    210s] #	preferred routing layers      : 0
+[06/09 18:53:33    210s] #	preferred routing layer effort: 0
+[06/09 18:53:33    210s] #	preferred extra space         : 0
+[06/09 18:53:33    210s] #	preferred multi-cut via       : 0
+[06/09 18:53:33    210s] #	avoid detour                  : 0
+[06/09 18:53:33    210s] #	expansion ratio               : 0
+[06/09 18:53:33    210s] #	net priority                  : 0
+[06/09 18:53:33    210s] #	s2s control                   : 0
+[06/09 18:53:33    210s] #	avoid chaining                : 0
+[06/09 18:53:33    210s] #	inst-based stacking via       : 0
+[06/09 18:53:33    210s] #
+[06/09 18:53:33    210s] #Summary of active signal nets routing constraints set by USER:
+[06/09 18:53:33    210s] #	preferred routing layers      : 0
+[06/09 18:53:33    210s] #	preferred routing layer effort     : 0
+[06/09 18:53:33    210s] #	preferred extra space              : 0
+[06/09 18:53:33    210s] #	preferred multi-cut via            : 0
+[06/09 18:53:33    210s] #	avoid detour                       : 0
+[06/09 18:53:33    210s] #	net weight                         : 0
+[06/09 18:53:33    210s] #	avoid chaining                     : 0
+[06/09 18:53:33    210s] #	cell-based stacking via (required) : 0
+[06/09 18:53:33    210s] #	cell-based stacking via (optional) : 0
+[06/09 18:53:33    210s] #
+[06/09 18:53:33    210s] #Start timing driven prevention iteration
+[06/09 18:53:33    210s] #Setup timing driven global route constraints:
+[06/09 18:53:33    210s] #Honor OPT layer assignment for 0 nets.
+[06/09 18:53:33    210s] #Remove OPT layer assignment for 0 nets.
+[06/09 18:53:33    210s] #Honor USER layer assignment for 0 nets.
+[06/09 18:53:33    210s] #Remove USER layer assignment for 0 nets.
+[06/09 18:53:33    211s] #layer MET1: MET1_RC = 8.99519e-11
+[06/09 18:53:33    211s] #layer MET2: MET2_RC = 9.0981e-11
+[06/09 18:53:33    211s] #layer MET3: MET3_RC = 9.12468e-11
+[06/09 18:53:33    211s] #layer MET4: MET4_RC = 1.97986e-11
+[06/09 18:53:33    211s] #Metal stack 1: MET1 - MET2
+[06/09 18:53:33    211s] #Metal stack 2: MET3 - MET4
+[06/09 18:53:33    211s] #Prevention stack gain threshold: Min=0.2 ps, 1-stack=0.2 ps
+[06/09 18:53:33    211s] End AAE Lib Interpolated Model. (MEM=1193.84 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[06/09 18:53:33    211s] #Start building rc corner(s)...
+[06/09 18:53:33    211s] #Number of RC Corner = 2
+[06/09 18:53:33    211s] #Corner rc_best /softl1/AMS_410_ISR15/assura/c35b4/c35b4_thick/RCX-best/qrcTechFile -25.000000 (real) 
+[06/09 18:53:33    211s] #Corner rc_worst /softl1/AMS_410_ISR15/assura/c35b4/c35b4_thick/RCX-worst/qrcTechFile 125.000000 (real) 
+[06/09 18:53:34    211s] #Layer met4 does not exist in nanoroute.
+[06/09 18:53:34    211s] #poly2 -> MET1 (1)
+[06/09 18:53:34    211s] #met1 -> MET2 (2)
+[06/09 18:53:34    211s] #met2 -> MET3 (3)
+[06/09 18:53:34    211s] #met3 -> MET4 (4)
+[06/09 18:53:34    211s] #Layer met4 does not exist in nanoroute.
+[06/09 18:53:34    211s] #SADV_On
+[06/09 18:53:34    211s] # Corner(s) : 
+[06/09 18:53:34    211s] #rc_best [-25.00] 
+[06/09 18:53:34    211s] #rc_worst [125.00]
+[06/09 18:53:35    211s] # Corner id: 0
+[06/09 18:53:35    211s] # Layout Scale: 1.000000
+[06/09 18:53:35    211s] # Has Metal Fill model: yes
+[06/09 18:53:35    211s] # Temperature was set
+[06/09 18:53:35    211s] # Temperature : -25.000000
+[06/09 18:53:35    211s] # Ref. Temp   : 27.000000
+[06/09 18:53:35    211s] # Corner id: 1
+[06/09 18:53:35    211s] # Layout Scale: 1.000000
+[06/09 18:53:35    211s] # Has Metal Fill model: yes
+[06/09 18:53:35    211s] # Temperature was set
+[06/09 18:53:35    211s] # Temperature : 125.000000
+[06/09 18:53:35    211s] # Ref. Temp   : 27.000000
+[06/09 18:53:35    211s] #SADV_Off
+[06/09 18:53:35    211s] #
+[06/09 18:53:35    211s] #layer[1] tech width 500 != ict width 650.0
+[06/09 18:53:35    211s] #
+[06/09 18:53:35    211s] #layer[1] tech spc 450 != ict spc 650.0
+[06/09 18:53:35    211s] #
+[06/09 18:53:35    211s] #layer[2] tech width 600 != ict width 500.0
+[06/09 18:53:35    211s] #
+[06/09 18:53:35    211s] #layer[2] tech spc 500 != ict spc 450.0
+[06/09 18:53:35    211s] #
+[06/09 18:53:35    211s] #layer[4] tech spc 600 != ict spc 500.0
+[06/09 18:53:35    211s] #total pattern=35 [10, 180]
+[06/09 18:53:35    211s] #Reading previously stored rc_model file ( rc_model.bin ) ...
+[06/09 18:53:35    211s] #found CAPMODEL /softl1/AMS_410_ISR15/assura/c35b4/c35b4_thick/RCX-best/qrcTechFile
+[06/09 18:53:35    211s] #found CAPMODEL /softl1/AMS_410_ISR15/assura/c35b4/c35b4_thick/RCX-worst/qrcTechFile
+[06/09 18:53:35    211s] #found RESMODEL /softl1/AMS_410_ISR15/assura/c35b4/c35b4_thick/RCX-best/qrcTechFile -25.000000 
+[06/09 18:53:35    211s] #found RESMODEL /softl1/AMS_410_ISR15/assura/c35b4/c35b4_thick/RCX-worst/qrcTechFile 125.000000 
+[06/09 18:53:35    211s] #number model r/c [2,2] [10,180] read
+[06/09 18:53:35    211s] #Build RC corners: cpu time = 00:00:00, elapsed time = 00:00:01, memory = 1012.97 (MB), peak = 1045.58 (MB)
+[06/09 18:53:36    212s] #WARNING (NREX-80) Net in_MUX_inSEL15_P[0] does not have a driver pin. It may have incomplete route.
+[06/09 18:53:36    212s] #WARNING (NREX-80) Net in_MUX_inSEL15_P[1] does not have a driver pin. It may have incomplete route.
+[06/09 18:53:36    212s] Creating channel graph for ccopt_3_4...
+[06/09 18:53:36    212s] Creating channel graph for ccopt_3_4 done.
+[06/09 18:53:36    212s] Creating channel graph for ccopt_1_2...
+[06/09 18:53:36    212s] Creating channel graph for ccopt_1_2 done.
+[06/09 18:53:36    212s] #26 nets (8319.7 um) assigned to layer MET3
+[06/09 18:53:36    212s] #74 inserted nodes are removed
+[06/09 18:53:36    212s] ### route signature (45) = 1807995447
+[06/09 18:53:36    212s] ### violation signature (35) = 1905142130
+[06/09 18:53:36    212s] #Honor OPT extra spacing for 0 nets.
+[06/09 18:53:36    212s] #Remove OPT extra spacing for 0 nets.
+[06/09 18:53:36    212s] #Honor USER extra spacing for 0 nets.
+[06/09 18:53:36    212s] #Remove USER extra spacing for 0 nets.
+[06/09 18:53:36    212s] #53 critical nets are selected for extra spacing.
+[06/09 18:53:36    212s] #Honor OPT detour control for 0 nets.
+[06/09 18:53:36    212s] #Remove OPT detour control for 0 nets.
+[06/09 18:53:36    212s] #Honor USER detour control for 0 nets.
+[06/09 18:53:36    212s] #Remove USER detour control for 0 nets.
+[06/09 18:53:36    212s] #105 critical nets are selected for detour control.
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #--------------------------------------------------------
+[06/09 18:53:36    212s] # Summary of active signal nets routing constraints
+[06/09 18:53:36    212s] #  Avoid Detour             : 105
+[06/09 18:53:36    212s] #  Max Expansion Ratio      : 0
+[06/09 18:53:36    212s] #  Cell-based Stacking Via  : 0
+[06/09 18:53:36    212s] #  Inst-based Stacking Via  : 0
+[06/09 18:53:36    212s] #  Prefer Extra Space       : 53
+[06/09 18:53:36    212s] #  Prefer Multi-cut Via     : 0
+[06/09 18:53:36    212s] #  S2s Control              : 0
+[06/09 18:53:36    212s] #  Preferred Layer Effort   : 26
+[06/09 18:53:36    212s] #  Bottom Preferred Layer
+[06/09 18:53:36    212s] #  Layer MET3               : 26
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #--------------------------------------------------------
+[06/09 18:53:36    212s] #Done timing-driven prevention
+[06/09 18:53:36    212s] #cpu time = 00:00:02, elapsed time = 00:00:03, memory = 1019.01 (MB), peak = 1045.58 (MB)
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #Finished routing data preparation on Thu Jun  9 18:53:36 2022
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #Cpu time = 00:00:00
+[06/09 18:53:36    212s] #Elapsed time = 00:00:00
+[06/09 18:53:36    212s] #Increased memory = 0.00 (MB)
+[06/09 18:53:36    212s] #Total memory = 1019.01 (MB)
+[06/09 18:53:36    212s] #Peak memory = 1045.58 (MB)
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #Start global routing on Thu Jun  9 18:53:36 2022
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #Number of eco nets is 0
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #Start global routing data preparation on Thu Jun  9 18:53:36 2022
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #Start routing resource analysis on Thu Jun  9 18:53:36 2022
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #Routing resource analysis is done on Thu Jun  9 18:53:36 2022
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #  Resource Analysis:
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #               Routing  #Avail      #Track     #Total     %Gcell
+[06/09 18:53:36    212s] #  Layer      Direction   Track     Blocked      Gcell    Blocked
+[06/09 18:53:36    212s] #  --------------------------------------------------------------
+[06/09 18:53:36    212s] #  MET1           H         759         918       10816    91.22%
+[06/09 18:53:36    212s] #  MET2           V         695         869       10816    54.30%
+[06/09 18:53:36    212s] #  MET3           H         902         775       10816    52.68%
+[06/09 18:53:36    212s] #  MET4           V         749         815       10816    53.12%
+[06/09 18:53:36    212s] #  --------------------------------------------------------------
+[06/09 18:53:36    212s] #  Total                   3105      52.15%       43264    62.83%
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #  120 nets (1.15%) with 1 preferred extra spacing.
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #Global routing data preparation is done on Thu Jun  9 18:53:36 2022
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1019.02 (MB), peak = 1045.58 (MB)
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1019.02 (MB), peak = 1045.58 (MB)
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #Skip 1/2 round for no nets in the round...
+[06/09 18:53:36    212s] #Route nets in 2/2 round...
+[06/09 18:53:36    212s] #start global routing iteration 1...
+[06/09 18:53:36    212s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1025.58 (MB), peak = 1045.58 (MB)
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #start global routing iteration 2...
+[06/09 18:53:36    212s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1025.59 (MB), peak = 1045.58 (MB)
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #start global routing iteration 3...
+[06/09 18:53:36    212s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1025.59 (MB), peak = 1045.58 (MB)
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #start global routing iteration 4...
+[06/09 18:53:36    212s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1025.59 (MB), peak = 1045.58 (MB)
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #Total number of trivial nets (e.g. < 2 pins) = 494 (skipped).
+[06/09 18:53:36    212s] #Total number of routable nets = 9981.
+[06/09 18:53:36    212s] #Total number of nets in the design = 10475.
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #9914 routable nets have only global wires.
+[06/09 18:53:36    212s] #67 routable nets have only detail routed wires.
+[06/09 18:53:36    212s] #114 global routed or unrouted (routable) nets have been constrained (e.g. have preferred extra spacing, require shielding etc.)
+[06/09 18:53:36    212s] #67 detail routed (routable) nets have been constrained (e.g. have preferred extra spacing, require shielding etc.)
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #Routed nets constraints summary:
+[06/09 18:53:36    212s] #----------------------------------------------------------------------------
+[06/09 18:53:36    212s] #        Rules   Pref Extra Space   Pref Layer   Avoid Detour   Unconstrained  
+[06/09 18:53:36    212s] #----------------------------------------------------------------------------
+[06/09 18:53:36    212s] #      Default                 53           26             52            9800  
+[06/09 18:53:36    212s] #----------------------------------------------------------------------------
+[06/09 18:53:36    212s] #        Total                 53           26             52            9800  
+[06/09 18:53:36    212s] #----------------------------------------------------------------------------
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #Routing constraints summary of the whole design:
+[06/09 18:53:36    212s] #----------------------------------------------------------------------------
+[06/09 18:53:36    212s] #        Rules   Pref Extra Space   Pref Layer   Avoid Detour   Unconstrained  
+[06/09 18:53:36    212s] #----------------------------------------------------------------------------
+[06/09 18:53:36    212s] #      Default                120           26             52            9800  
+[06/09 18:53:36    212s] #----------------------------------------------------------------------------
+[06/09 18:53:36    212s] #        Total                120           26             52            9800  
+[06/09 18:53:36    212s] #----------------------------------------------------------------------------
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #  Congestion Analysis: (blocked Gcells are excluded)
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #                 OverCon       OverCon       OverCon       OverCon          
+[06/09 18:53:36    212s] #                  #Gcell        #Gcell        #Gcell        #Gcell    %Gcell
+[06/09 18:53:36    212s] #     Layer         (1-2)         (3-4)         (5-6)           (7)   OverCon
+[06/09 18:53:36    212s] #  --------------------------------------------------------------------------
+[06/09 18:53:36    212s] #  MET1          0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+[06/09 18:53:36    212s] #  MET2        136(2.74%)     46(0.93%)      5(0.10%)      1(0.02%)   (3.78%)
+[06/09 18:53:36    212s] #  MET3         12(0.23%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.23%)
+[06/09 18:53:36    212s] #  MET4          0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+[06/09 18:53:36    212s] #  --------------------------------------------------------------------------
+[06/09 18:53:36    212s] #     Total    148(0.89%)     46(0.28%)      5(0.03%)      1(0.01%)   (1.21%)
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] #  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 7
+[06/09 18:53:36    212s] #  Overflow after GR: 0.19% H + 1.86% V
+[06/09 18:53:36    212s] #
+[06/09 18:53:36    212s] [hotspot] +------------+---------------+---------------+
+[06/09 18:53:36    212s] [hotspot] |            |   max hotspot | total hotspot |
+[06/09 18:53:36    212s] [hotspot] +------------+---------------+---------------+
+[06/09 18:53:36    213s] [hotspot] | normalized |          0.00 |          0.00 |
+[06/09 18:53:36    213s] [hotspot] +------------+---------------+---------------+
+[06/09 18:53:36    213s] Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+[06/09 18:53:36    213s] [hotspot] max/total 0.00/0.00, big hotspot (>10) total 0.00
+[06/09 18:53:36    213s] #Complete Global Routing.
+[06/09 18:53:36    213s] #Total number of nets with non-default rule or having extra spacing = 120
+[06/09 18:53:36    213s] #Total wire length = 764577 um.
+[06/09 18:53:36    213s] #Total half perimeter of net bounding box = 599112 um.
+[06/09 18:53:36    213s] #Total wire length on LAYER MET1 = 39773 um.
+[06/09 18:53:36    213s] #Total wire length on LAYER MET2 = 256984 um.
+[06/09 18:53:36    213s] #Total wire length on LAYER MET3 = 344939 um.
+[06/09 18:53:36    213s] #Total wire length on LAYER MET4 = 122881 um.
+[06/09 18:53:36    213s] #Total number of vias = 53278
+[06/09 18:53:36    213s] #Up-Via Summary (total 53278):
+[06/09 18:53:36    213s] #           
+[06/09 18:53:36    213s] #-----------------------
+[06/09 18:53:36    213s] # MET1            30476
+[06/09 18:53:36    213s] # MET2            18421
+[06/09 18:53:36    213s] # MET3             4381
+[06/09 18:53:36    213s] #-----------------------
+[06/09 18:53:36    213s] #                 53278 
+[06/09 18:53:36    213s] #
+[06/09 18:53:36    213s] #Total number of involved regular nets 788
+[06/09 18:53:36    213s] #Maximum src to sink distance  3627.1
+[06/09 18:53:36    213s] #Average of max src_to_sink distance  269.0
+[06/09 18:53:36    213s] #Average of ave src_to_sink distance  180.4
+[06/09 18:53:36    213s] #Max overcon = 7 tracks.
+[06/09 18:53:36    213s] #Total overcon = 1.21%.
+[06/09 18:53:36    213s] #Worst layer Gcell overcon rate = 0.23%.
+[06/09 18:53:36    213s] #
+[06/09 18:53:36    213s] #Global routing statistics:
+[06/09 18:53:36    213s] #Cpu time = 00:00:01
+[06/09 18:53:36    213s] #Elapsed time = 00:00:01
+[06/09 18:53:36    213s] #Increased memory = 7.85 (MB)
+[06/09 18:53:36    213s] #Total memory = 1026.86 (MB)
+[06/09 18:53:36    213s] #Peak memory = 1045.58 (MB)
+[06/09 18:53:36    213s] #
+[06/09 18:53:36    213s] #Finished global routing on Thu Jun  9 18:53:36 2022
+[06/09 18:53:36    213s] #
+[06/09 18:53:36    213s] #
+[06/09 18:53:36    213s] ### route signature (49) = 1989195341
+[06/09 18:53:36    213s] ### violation signature (38) = 1905142130
+[06/09 18:53:36    213s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1019.93 (MB), peak = 1045.58 (MB)
+[06/09 18:53:36    213s] #Start Track Assignment.
+[06/09 18:53:37    214s] #Done with 913 horizontal wires in 1 hboxes and 985 vertical wires in 1 hboxes.
+[06/09 18:53:38    214s] #Done with 283 horizontal wires in 1 hboxes and 403 vertical wires in 1 hboxes.
+[06/09 18:53:38    215s] #Done with 1 horizontal wires in 1 hboxes and 1 vertical wires in 1 hboxes.
+[06/09 18:53:38    215s] #
+[06/09 18:53:38    215s] #Track assignment summary:
+[06/09 18:53:38    215s] # layer   (wire length)   (overlap)     (long ovlp)	(with obs/pg/clk)  
+[06/09 18:53:38    215s] #------------------------------------------------------------------------
+[06/09 18:53:38    215s] # MET1         183.50 	  0.00%  	  0.00% 	  0.00%
+[06/09 18:53:38    215s] # MET2      254738.01 	  0.04%  	  0.00% 	  0.00%
+[06/09 18:53:38    215s] # MET3      288510.61 	  0.13%  	  0.00% 	  0.01%
+[06/09 18:53:38    215s] # MET4       95261.40 	  0.01%  	  0.00% 	  0.01%
+[06/09 18:53:38    215s] #------------------------------------------------------------------------
+[06/09 18:53:38    215s] # All      638693.53  	  0.08% 	  0.00% 	  0.01%
+[06/09 18:53:38    215s] #Complete Track Assignment.
+[06/09 18:53:38    215s] #Total number of nets with non-default rule or having extra spacing = 120
+[06/09 18:53:38    215s] #Total wire length = 766907 um.
+[06/09 18:53:38    215s] #Total half perimeter of net bounding box = 599112 um.
+[06/09 18:53:38    215s] #Total wire length on LAYER MET1 = 40020 um.
+[06/09 18:53:38    215s] #Total wire length on LAYER MET2 = 258401 um.
+[06/09 18:53:38    215s] #Total wire length on LAYER MET3 = 345608 um.
+[06/09 18:53:38    215s] #Total wire length on LAYER MET4 = 122878 um.
+[06/09 18:53:38    215s] #Total number of vias = 53278
+[06/09 18:53:38    215s] #Up-Via Summary (total 53278):
+[06/09 18:53:38    215s] #           
+[06/09 18:53:38    215s] #-----------------------
+[06/09 18:53:38    215s] # MET1            30476
+[06/09 18:53:38    215s] # MET2            18421
+[06/09 18:53:38    215s] # MET3             4381
+[06/09 18:53:38    215s] #-----------------------
+[06/09 18:53:38    215s] #                 53278 
+[06/09 18:53:38    215s] #
+[06/09 18:53:38    215s] ### route signature (53) =   28042385
+[06/09 18:53:38    215s] ### violation signature (42) = 1905142130
+[06/09 18:53:38    215s] #cpu time = 00:00:02, elapsed time = 00:00:02, memory = 1033.93 (MB), peak = 1045.58 (MB)
+[06/09 18:53:38    215s] #
+[06/09 18:53:38    215s] #number of short segments in preferred routing layers
+[06/09 18:53:38    215s] #	MET3      MET4      
+[06/09 18:53:38    215s] #	95        12        
+[06/09 18:53:38    215s] #
+[06/09 18:53:38    215s] #Start post global route fixing for timing critical nets ...
+[06/09 18:53:38    215s] #
+[06/09 18:53:38    215s] #* Updating design timing data...
+[06/09 18:53:38    215s] #Extracting RC...
+[06/09 18:53:44    220s] Un-suppress "**WARN ..." messages.
+[06/09 18:53:44    220s] **WARN: (IMPTCM-77):	Option "-dbExpUseDbPropertyForNanoRef" for command getNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+[06/09 18:53:44    220s] #Reporting timing...
+[06/09 18:53:45    220s] End AAE Lib Interpolated Model. (MEM=1313.21 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[06/09 18:53:45    220s] Opening parasitic data file '/tmp/innovus_temp_10030_cimeld105_xph2app102_kTOjPs/top_io_10030_tEBV86.rcdb.d/top_io.rcdb.d' for reading.
+[06/09 18:53:45    220s] Reading RCDB with compressed RC data.
+[06/09 18:53:45    220s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 1315.2M)
+[06/09 18:53:45    220s] AAE_INFO: 1 threads acquired from CTE.
+[06/09 18:53:48    224s] Total number of fetched objects 11855
+[06/09 18:53:48    224s] AAE_INFO-618: Total number of nets in the design is 10475,  100.0 percent of the nets selected for SI analysis
+[06/09 18:53:48    224s] End Timing Check Calculation. (CPU Time=0:00:00.1, Real Time=0:00:00.0)
+[06/09 18:53:48    224s] End delay calculation. (MEM=1371.05 CPU=0:00:03.7 REAL=0:00:03.0)
+[06/09 18:53:49    224s] End AAE Lib Interpolated Model. (MEM=1379.09 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[06/09 18:53:49    225s] Glitch Analysis: View setup_func_max -- Total Number of Nets Skipped = 0. 
+[06/09 18:53:49    225s] Glitch Analysis: View setup_func_max -- Total Number of Nets Analyzed = 11855. 
+[06/09 18:53:49    225s] Total number of fetched objects 11855
+[06/09 18:53:49    225s] AAE_INFO-618: Total number of nets in the design is 10475,  0.2 percent of the nets selected for SI analysis
+[06/09 18:53:49    225s] End delay calculation. (MEM=1379.09 CPU=0:00:00.1 REAL=0:00:00.0)
+[06/09 18:53:49    225s] #Normalized TNS: 1000.00 20.00 -113461.16 -5673.06 -105737.86 -5286.89
+[06/09 18:53:49    225s] #Stage 1: cpu time = 00:00:05, elapsed time = 00:00:05, memory = 1110.35 (MB), peak = 1119.67 (MB)
+[06/09 18:53:49    225s] #Library Standard Delay: 141.70ps
+[06/09 18:53:49    225s] #Slack threshold: 0.00ps
+[06/09 18:53:50    225s] #*** Analyzed 2972 timing critical paths
+[06/09 18:53:50    225s] #Stage 2: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1110.64 (MB), peak = 1119.67 (MB)
+[06/09 18:53:50    226s] #Stage 3: cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1110.65 (MB), peak = 1119.67 (MB)
+[06/09 18:53:51    226s] **WARN: (TCLCMD-1403):	'The -tcl_list output format of report_timing will not be supported in future releases of the software.   Path collections generated by 'report_timing -collection'  can be used instead for programmatic access to timing report data. The  report_timing -tcl_list will continue to work in this release - but, you should update your scripts to use path collections so that they are compatible with future releases.'
+[06/09 18:53:51    227s] Worst slack reported in the design = -133.436111 (late)
+[06/09 18:53:52    227s] *** writeDesignTiming (0:00:00.7) ***
+[06/09 18:53:52    227s] #Stage 4: cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1112.81 (MB), peak = 1119.67 (MB)
+[06/09 18:53:52    227s] Un-suppress "**WARN ..." messages.
+[06/09 18:53:52    227s] **WARN: (IMPCTE-104):	The constraint mode of this inactive view 'setup_func_min' has been modified and may need to be reanalyzed to ensure proper timing results. To reanalyze timing for this view make the view active using 'set_analysis_view' and run timing analysis.
+[06/09 18:53:52    227s] **WARN: (IMPCTE-104):	The constraint mode of this inactive view 'setup_func_typ' has been modified and may need to be reanalyzed to ensure proper timing results. To reanalyze timing for this view make the view active using 'set_analysis_view' and run timing analysis.
+[06/09 18:53:52    227s] **WARN: (IMPCTE-104):	The constraint mode of this inactive view 'hold_func_max' has been modified and may need to be reanalyzed to ensure proper timing results. To reanalyze timing for this view make the view active using 'set_analysis_view' and run timing analysis.
+[06/09 18:53:52    227s] **WARN: (IMPCTE-104):	The constraint mode of this inactive view 'hold_func_typ' has been modified and may need to be reanalyzed to ensure proper timing results. To reanalyze timing for this view make the view active using 'set_analysis_view' and run timing analysis.
+[06/09 18:53:52    227s] Current (total cpu=0:03:48, real=0:20:58, peak res=1119.7M, current mem=1119.7M)
+[06/09 18:53:52    227s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1119.7M, current mem=1038.2M)
+[06/09 18:53:52    227s] Current (total cpu=0:03:48, real=0:20:58, peak res=1119.7M, current mem=1038.2M)
+[06/09 18:53:52    227s] Current (total cpu=0:03:48, real=0:20:58, peak res=1119.7M, current mem=1038.2M)
+[06/09 18:53:52    227s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1038.5M, current mem=1038.5M)
+[06/09 18:53:52    227s] Current (total cpu=0:03:48, real=0:20:58, peak res=1119.7M, current mem=1038.5M)
+[06/09 18:53:52    227s] #Number of victim nets: 0
+[06/09 18:53:52    227s] #Number of aggressor nets: 0
+[06/09 18:53:52    227s] #Number of weak nets: 1084
+[06/09 18:53:52    227s] #Number of critical nets: 1606
+[06/09 18:53:52    227s] #	level 1 [-133436.1, -704.3]: 1498 nets
+[06/09 18:53:52    227s] #	level 2 [-107618.9, -1000.0]: 54 nets
+[06/09 18:53:52    227s] #	level 3 [-133436.1, -1000.0]: 54 nets
+[06/09 18:53:52    227s] #Total number of nets: 9981
+[06/09 18:53:52    227s] -analysisType bcwc
+[06/09 18:53:52    227s] -cppr none
+[06/09 18:53:52    227s] -combine_mmmc early_late_corner
+[06/09 18:53:52    227s] #Total number of significant detoured timing critical nets is 0
+[06/09 18:53:52    227s] #Total number of selected detoured timing critical nets is 20
+[06/09 18:53:52    227s] #11 critical nets are selected for extra spacing.
+[06/09 18:53:52    228s] #Postfix stack gain threshold: Min=0.2 ps, 1-stack=283.4 ps
+[06/09 18:53:52    228s] AAE DB initialization (MEM=1259.63 CPU=0:00:00.0 REAL=0:00:00.0) 
+[06/09 18:53:52    228s] Start AAE Lib Loading. (MEM=1259.63)
+[06/09 18:53:52    228s] End AAE Lib Loading. (MEM=1450.38 CPU=0:00:00.0 Real=0:00:00.0)
+[06/09 18:53:52    228s] End AAE Lib Interpolated Model. (MEM=1450.38 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[06/09 18:53:52    228s] #Start building rc corner(s)...
+[06/09 18:53:52    228s] #Number of RC Corner = 2
+[06/09 18:53:52    228s] #Corner rc_best /softl1/AMS_410_ISR15/assura/c35b4/c35b4_thick/RCX-best/qrcTechFile -25.000000 (real) 
+[06/09 18:53:52    228s] #Corner rc_worst /softl1/AMS_410_ISR15/assura/c35b4/c35b4_thick/RCX-worst/qrcTechFile 125.000000 (real) 
+[06/09 18:53:53    228s] #Layer met4 does not exist in nanoroute.
+[06/09 18:53:53    228s] #poly2 -> MET1 (1)
+[06/09 18:53:53    228s] #met1 -> MET2 (2)
+[06/09 18:53:53    228s] #met2 -> MET3 (3)
+[06/09 18:53:53    228s] #met3 -> MET4 (4)
+[06/09 18:53:53    228s] #Layer met4 does not exist in nanoroute.
+[06/09 18:53:53    228s] #SADV_On
+[06/09 18:53:53    228s] # Corner(s) : 
+[06/09 18:53:53    228s] #rc_best [-25.00] 
+[06/09 18:53:53    228s] #rc_worst [125.00]
+[06/09 18:53:54    228s] # Corner id: 0
+[06/09 18:53:54    228s] # Layout Scale: 1.000000
+[06/09 18:53:54    228s] # Has Metal Fill model: yes
+[06/09 18:53:54    228s] # Temperature was set
+[06/09 18:53:54    228s] # Temperature : -25.000000
+[06/09 18:53:54    228s] # Ref. Temp   : 27.000000
+[06/09 18:53:54    228s] # Corner id: 1
+[06/09 18:53:54    228s] # Layout Scale: 1.000000
+[06/09 18:53:54    228s] # Has Metal Fill model: yes
+[06/09 18:53:54    228s] # Temperature was set
+[06/09 18:53:54    228s] # Temperature : 125.000000
+[06/09 18:53:54    228s] # Ref. Temp   : 27.000000
+[06/09 18:53:54    228s] #SADV_Off
+[06/09 18:53:54    228s] #
+[06/09 18:53:54    228s] #layer[1] tech width 500 != ict width 650.0
+[06/09 18:53:54    228s] #
+[06/09 18:53:54    228s] #layer[1] tech spc 450 != ict spc 650.0
+[06/09 18:53:54    228s] #
+[06/09 18:53:54    228s] #layer[2] tech width 600 != ict width 500.0
+[06/09 18:53:54    228s] #
+[06/09 18:53:54    228s] #layer[2] tech spc 500 != ict spc 450.0
+[06/09 18:53:54    228s] #
+[06/09 18:53:54    228s] #layer[4] tech spc 600 != ict spc 500.0
+[06/09 18:53:54    228s] #total pattern=35 [10, 180]
+[06/09 18:53:54    228s] #Reading previously stored rc_model file ( rc_model.bin ) ...
+[06/09 18:53:54    228s] #found CAPMODEL /softl1/AMS_410_ISR15/assura/c35b4/c35b4_thick/RCX-best/qrcTechFile
+[06/09 18:53:54    228s] #found CAPMODEL /softl1/AMS_410_ISR15/assura/c35b4/c35b4_thick/RCX-worst/qrcTechFile
+[06/09 18:53:54    228s] #found RESMODEL /softl1/AMS_410_ISR15/assura/c35b4/c35b4_thick/RCX-best/qrcTechFile -25.000000 
+[06/09 18:53:54    228s] #found RESMODEL /softl1/AMS_410_ISR15/assura/c35b4/c35b4_thick/RCX-worst/qrcTechFile 125.000000 
+[06/09 18:53:54    228s] #number model r/c [2,2] [10,180] read
+[06/09 18:53:54    228s] #0 rcmodel(s) requires rebuild
+[06/09 18:53:54    228s] #Build RC corners: cpu time = 00:00:00, elapsed time = 00:00:01, memory = 1045.43 (MB), peak = 1119.67 (MB)
+[06/09 18:53:54    229s] #WARNING (NREX-80) Net in_MUX_inSEL15_P[0] does not have a driver pin. It may have incomplete route.
+[06/09 18:53:54    229s] #WARNING (NREX-80) Net in_MUX_inSEL15_P[1] does not have a driver pin. It may have incomplete route.
+[06/09 18:53:55    229s] #0 nets (0 um) assigned to layer MET3
+[06/09 18:53:55    229s] #73 inserted nodes are removed
+[06/09 18:53:55    229s] ### route signature (62) =  303679706
+[06/09 18:53:55    229s] ### violation signature (50) = 1905142130
+[06/09 18:53:55    230s] #
+[06/09 18:53:55    230s] #  Congestion Analysis: (blocked Gcells are excluded)
+[06/09 18:53:55    230s] #
+[06/09 18:53:55    230s] #                 OverCon       OverCon       OverCon       OverCon          
+[06/09 18:53:55    230s] #                  #Gcell        #Gcell        #Gcell        #Gcell    %Gcell
+[06/09 18:53:55    230s] #     Layer         (1-2)         (3-4)         (5-6)           (7)   OverCon
+[06/09 18:53:55    230s] #  --------------------------------------------------------------------------
+[06/09 18:53:55    230s] #  MET1          0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+[06/09 18:53:55    230s] #  MET2        136(2.74%)     46(0.93%)      5(0.10%)      1(0.02%)   (3.78%)
+[06/09 18:53:55    230s] #  MET3         12(0.23%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.23%)
+[06/09 18:53:55    230s] #  MET4          0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+[06/09 18:53:55    230s] #  --------------------------------------------------------------------------
+[06/09 18:53:55    230s] #     Total    148(0.89%)     46(0.28%)      5(0.03%)      1(0.01%)   (1.21%)
+[06/09 18:53:55    230s] #
+[06/09 18:53:55    230s] #  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 7
+[06/09 18:53:55    230s] #  Overflow after GR: 0.19% H + 1.86% V
+[06/09 18:53:55    230s] #
+[06/09 18:53:55    230s] [hotspot] +------------+---------------+---------------+
+[06/09 18:53:55    230s] [hotspot] |            |   max hotspot | total hotspot |
+[06/09 18:53:55    230s] [hotspot] +------------+---------------+---------------+
+[06/09 18:53:55    230s] [hotspot] | normalized |          0.00 |          0.00 |
+[06/09 18:53:55    230s] [hotspot] +------------+---------------+---------------+
+[06/09 18:53:55    230s] Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+[06/09 18:53:55    230s] [hotspot] max/total 0.00/0.00, big hotspot (>10) total 0.00
+[06/09 18:53:55    230s] #Max overcon = 7 tracks.
+[06/09 18:53:55    230s] #Total overcon = 1.21%.
+[06/09 18:53:55    230s] #Worst layer Gcell overcon rate = 0.23%.
+[06/09 18:53:55    230s] #Complete Global Routing.
+[06/09 18:53:55    230s] #Total number of nets with non-default rule or having extra spacing = 131
+[06/09 18:53:55    230s] #Total wire length = 766310 um.
+[06/09 18:53:55    230s] #Total half perimeter of net bounding box = 599112 um.
+[06/09 18:53:55    230s] #Total wire length on LAYER MET1 = 39005 um.
+[06/09 18:53:55    230s] #Total wire length on LAYER MET2 = 258122 um.
+[06/09 18:53:55    230s] #Total wire length on LAYER MET3 = 346409 um.
+[06/09 18:53:55    230s] #Total wire length on LAYER MET4 = 122773 um.
+[06/09 18:53:55    230s] #Total number of vias = 53280
+[06/09 18:53:55    230s] #Up-Via Summary (total 53280):
+[06/09 18:53:55    230s] #           
+[06/09 18:53:55    230s] #-----------------------
+[06/09 18:53:55    230s] # MET1            30476
+[06/09 18:53:55    230s] # MET2            18423
+[06/09 18:53:55    230s] # MET3             4381
+[06/09 18:53:55    230s] #-----------------------
+[06/09 18:53:55    230s] #                 53280 
+[06/09 18:53:55    230s] #
+[06/09 18:53:55    230s] #Total number of involved regular nets 788
+[06/09 18:53:55    230s] #Maximum src to sink distance  3723.9
+[06/09 18:53:55    230s] #Average of max src_to_sink distance  271.4
+[06/09 18:53:55    230s] #Average of ave src_to_sink distance  181.6
+[06/09 18:53:55    230s] #Total number of involved priority nets 67
+[06/09 18:53:55    230s] #Maximum src to sink distance for priority net 1161.2
+[06/09 18:53:55    230s] #Average of max src_to_sink distance for priority net 360.1
+[06/09 18:53:55    230s] #Average of ave src_to_sink distance for priority net 200.7
+[06/09 18:53:55    230s] #cpu time = 00:00:02, elapsed time = 00:00:03, memory = 1054.52 (MB), peak = 1119.67 (MB)
+[06/09 18:53:55    230s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1042.78 (MB), peak = 1119.67 (MB)
+[06/09 18:53:55    230s] #* Importing design timing data...
+[06/09 18:53:55    230s] #Number of victim nets: 0
+[06/09 18:53:55    230s] #Number of aggressor nets: 0
+[06/09 18:53:55    230s] #Number of weak nets: 1084
+[06/09 18:53:55    230s] #Number of critical nets: 1606
+[06/09 18:53:55    230s] #	level 1 [-133436.1, -704.3]: 1498 nets
+[06/09 18:53:55    230s] #	level 2 [-107618.9, -1000.0]: 54 nets
+[06/09 18:53:55    230s] #	level 3 [-133436.1, -1000.0]: 54 nets
+[06/09 18:53:55    230s] #Total number of nets: 9981
+[06/09 18:53:55    230s] #
+[06/09 18:53:55    230s] #timing driven effort level: 3
+[06/09 18:53:55    230s] #Start Track Assignment With Timing Driven.
+[06/09 18:53:56    230s] #Done with 879 horizontal wires in 1 hboxes and 1071 vertical wires in 1 hboxes.
+[06/09 18:53:56    231s] #Done with 175 horizontal wires in 1 hboxes and 367 vertical wires in 1 hboxes.
+[06/09 18:53:56    231s] #Done with 1 horizontal wires in 1 hboxes and 1 vertical wires in 1 hboxes.
+[06/09 18:53:56    231s] #
+[06/09 18:53:56    231s] #Track assignment summary:
+[06/09 18:53:56    231s] # layer   (wire length)   (overlap)     (long ovlp)	(with obs/pg/clk)  
+[06/09 18:53:56    231s] #------------------------------------------------------------------------
+[06/09 18:53:56    231s] # MET1         183.50 	  0.00%  	  0.00% 	  0.00%
+[06/09 18:53:56    231s] # MET2      253889.11 	  0.09%  	  0.00% 	  0.01%
+[06/09 18:53:56    231s] # MET3      288447.81 	  0.16%  	  0.00% 	  0.02%
+[06/09 18:53:56    231s] # MET4       95339.80 	  0.05%  	  0.00% 	  0.04%
+[06/09 18:53:56    231s] #------------------------------------------------------------------------
+[06/09 18:53:56    231s] # All      637860.23  	  0.12% 	  0.00% 	  0.04%
+[06/09 18:53:56    231s] #Complete Track Assignment With Timing Driven.
+[06/09 18:53:56    231s] #Total number of nets with non-default rule or having extra spacing = 131
+[06/09 18:53:56    231s] #Total wire length = 766258 um.
+[06/09 18:53:56    231s] #Total half perimeter of net bounding box = 599112 um.
+[06/09 18:53:56    231s] #Total wire length on LAYER MET1 = 40566 um.
+[06/09 18:53:56    231s] #Total wire length on LAYER MET2 = 257737 um.
+[06/09 18:53:56    231s] #Total wire length on LAYER MET3 = 345012 um.
+[06/09 18:53:56    231s] #Total wire length on LAYER MET4 = 122942 um.
+[06/09 18:53:56    231s] #Total number of vias = 53280
+[06/09 18:53:56    231s] #Up-Via Summary (total 53280):
+[06/09 18:53:56    231s] #           
+[06/09 18:53:56    231s] #-----------------------
+[06/09 18:53:56    231s] # MET1            30476
+[06/09 18:53:56    231s] # MET2            18423
+[06/09 18:53:56    231s] # MET3             4381
+[06/09 18:53:56    231s] #-----------------------
+[06/09 18:53:56    231s] #                 53280 
+[06/09 18:53:56    231s] #
+[06/09 18:53:56    231s] ### route signature (73) =  730788937
+[06/09 18:53:56    231s] ### violation signature (60) = 1905142130
+[06/09 18:53:56    231s] #cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1057.69 (MB), peak = 1119.67 (MB)
+[06/09 18:53:56    231s] #
+[06/09 18:53:56    231s] #Routing data preparation, pin analysis, global routing and track assignment statistics:
+[06/09 18:53:56    231s] #Cpu time = 00:00:21
+[06/09 18:53:56    231s] #Elapsed time = 00:00:24
+[06/09 18:53:56    231s] #Increased memory = 54.55 (MB)
+[06/09 18:53:56    231s] #Total memory = 1042.79 (MB)
+[06/09 18:53:56    231s] #Peak memory = 1119.67 (MB)
+[06/09 18:53:56    231s] #Start reading timing information from file .timing_file_10030.tif.gz ...
+[06/09 18:53:56    231s] #Read in timing information for 44 ports, 9207 instances from timing file .timing_file_10030.tif.gz.
+[06/09 18:53:57    231s] ### max drc and si pitch = 2100 (   2.100 um) MT-safe pitch = 1400 (   1.400 um) patch pitch = 6100 (   6.100 um)
+[06/09 18:53:57    231s] #
+[06/09 18:53:57    231s] #Start Detail Routing..
+[06/09 18:53:57    231s] #start initial detail routing ...
+[06/09 18:55:00    294s] #   number of violations = 272
+[06/09 18:55:00    294s] #
+[06/09 18:55:00    294s] #    By Layer and Type :
+[06/09 18:55:00    294s] #	         MetSpc    Short   Totals
+[06/09 18:55:00    294s] #	MET1          2      117      119
+[06/09 18:55:00    294s] #	MET2         62       91      153
+[06/09 18:55:00    294s] #	Totals       64      208      272
+[06/09 18:55:00    294s] #cpu time = 00:01:03, elapsed time = 00:01:03, memory = 1079.66 (MB), peak = 1119.67 (MB)
+[06/09 18:55:00    294s] #start 1st optimization iteration ...
+[06/09 18:55:13    308s] #   number of violations = 58
+[06/09 18:55:13    308s] #
+[06/09 18:55:13    308s] #    By Layer and Type :
+[06/09 18:55:13    308s] #	         MetSpc    Short   Totals
+[06/09 18:55:13    308s] #	MET1         16        0       16
+[06/09 18:55:13    308s] #	MET2         25       16       41
+[06/09 18:55:13    308s] #	MET3          1        0        1
+[06/09 18:55:13    308s] #	Totals       42       16       58
+[06/09 18:55:13    308s] #cpu time = 00:00:14, elapsed time = 00:00:14, memory = 1068.38 (MB), peak = 1119.67 (MB)
+[06/09 18:55:13    308s] #start 2nd optimization iteration ...
+[06/09 18:55:17    312s] #   number of violations = 34
+[06/09 18:55:17    312s] #
+[06/09 18:55:17    312s] #    By Layer and Type :
+[06/09 18:55:17    312s] #	         MetSpc    Short   Totals
+[06/09 18:55:17    312s] #	MET1         16        0       16
+[06/09 18:55:17    312s] #	MET2          6       12       18
+[06/09 18:55:17    312s] #	Totals       22       12       34
+[06/09 18:55:17    312s] #cpu time = 00:00:04, elapsed time = 00:00:04, memory = 1068.38 (MB), peak = 1119.67 (MB)
+[06/09 18:55:17    312s] #start 3rd optimization iteration ...
+[06/09 18:55:19    314s] #   number of violations = 16
+[06/09 18:55:19    314s] #
+[06/09 18:55:19    314s] #    By Layer and Type :
+[06/09 18:55:19    314s] #	         MetSpc    Short   Totals
+[06/09 18:55:19    314s] #	MET1         11        0       11
+[06/09 18:55:19    314s] #	MET2          2        3        5
+[06/09 18:55:19    314s] #	Totals       13        3       16
+[06/09 18:55:19    314s] #cpu time = 00:00:02, elapsed time = 00:00:02, memory = 1068.38 (MB), peak = 1119.67 (MB)
+[06/09 18:55:19    314s] #start 4th optimization iteration ...
+[06/09 18:55:20    315s] #   number of violations = 13
+[06/09 18:55:20    315s] #
+[06/09 18:55:20    315s] #    By Layer and Type :
+[06/09 18:55:20    315s] #	         MetSpc   Totals
+[06/09 18:55:20    315s] #	MET1         12       12
+[06/09 18:55:20    315s] #	MET2          1        1
+[06/09 18:55:20    315s] #	Totals       13       13
+[06/09 18:55:20    315s] #cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1068.39 (MB), peak = 1119.67 (MB)
+[06/09 18:55:20    315s] #start 5th optimization iteration ...
+[06/09 18:55:21    316s] #   number of violations = 12
+[06/09 18:55:21    316s] #
+[06/09 18:55:21    316s] #    By Layer and Type :
+[06/09 18:55:21    316s] #	         MetSpc   Totals
+[06/09 18:55:21    316s] #	MET1         11       11
+[06/09 18:55:21    316s] #	MET2          1        1
+[06/09 18:55:21    316s] #	Totals       12       12
+[06/09 18:55:21    316s] #cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1068.39 (MB), peak = 1119.67 (MB)
+[06/09 18:55:21    316s] #start 6th optimization iteration ...
+[06/09 18:55:23    317s] #   number of violations = 11
+[06/09 18:55:23    317s] #
+[06/09 18:55:23    317s] #    By Layer and Type :
+[06/09 18:55:23    317s] #	         MetSpc   Totals
+[06/09 18:55:23    317s] #	MET1          9        9
+[06/09 18:55:23    317s] #	MET2          2        2
+[06/09 18:55:23    317s] #	Totals       11       11
+[06/09 18:55:23    317s] #cpu time = 00:00:02, elapsed time = 00:00:02, memory = 1070.09 (MB), peak = 1119.67 (MB)
+[06/09 18:55:23    317s] #start 7th optimization iteration ...
+[06/09 18:55:25    319s] #   number of violations = 9
+[06/09 18:55:25    319s] #
+[06/09 18:55:25    319s] #    By Layer and Type :
+[06/09 18:55:25    319s] #	         MetSpc   Totals
+[06/09 18:55:25    319s] #	MET1          7        7
+[06/09 18:55:25    319s] #	MET2          2        2
+[06/09 18:55:25    319s] #	Totals        9        9
+[06/09 18:55:25    319s] #cpu time = 00:00:02, elapsed time = 00:00:02, memory = 1070.09 (MB), peak = 1119.67 (MB)
+[06/09 18:55:25    319s] #start 8th optimization iteration ...
+[06/09 18:55:26    321s] #   number of violations = 8
+[06/09 18:55:26    321s] #
+[06/09 18:55:26    321s] #    By Layer and Type :
+[06/09 18:55:26    321s] #	         MetSpc   Totals
+[06/09 18:55:26    321s] #	MET1          7        7
+[06/09 18:55:26    321s] #	MET2          1        1
+[06/09 18:55:26    321s] #	Totals        8        8
+[06/09 18:55:26    321s] #cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1070.09 (MB), peak = 1119.67 (MB)
+[06/09 18:55:26    321s] #start 9th optimization iteration ...
+[06/09 18:55:27    322s] #   number of violations = 8
+[06/09 18:55:27    322s] #
+[06/09 18:55:27    322s] #    By Layer and Type :
+[06/09 18:55:27    322s] #	         MetSpc   Totals
+[06/09 18:55:27    322s] #	MET1          7        7
+[06/09 18:55:27    322s] #	MET2          1        1
+[06/09 18:55:27    322s] #	Totals        8        8
+[06/09 18:55:27    322s] #cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1070.09 (MB), peak = 1119.67 (MB)
+[06/09 18:55:27    322s] #start 10th optimization iteration ...
+[06/09 18:55:29    323s] #   number of violations = 8
+[06/09 18:55:29    323s] #
+[06/09 18:55:29    323s] #    By Layer and Type :
+[06/09 18:55:29    323s] #	         MetSpc   Totals
+[06/09 18:55:29    323s] #	MET1          7        7
+[06/09 18:55:29    323s] #	MET2          1        1
+[06/09 18:55:29    323s] #	Totals        8        8
+[06/09 18:55:29    323s] #cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1070.09 (MB), peak = 1119.67 (MB)
+[06/09 18:55:29    323s] #start 11th optimization iteration ...
+[06/09 18:55:32    326s] #   number of violations = 10
+[06/09 18:55:32    326s] #
+[06/09 18:55:32    326s] #    By Layer and Type :
+[06/09 18:55:32    326s] #	         MetSpc   Totals
+[06/09 18:55:32    326s] #	MET1          7        7
+[06/09 18:55:32    326s] #	MET2          3        3
+[06/09 18:55:32    326s] #	Totals       10       10
+[06/09 18:55:32    326s] #cpu time = 00:00:03, elapsed time = 00:00:03, memory = 1080.47 (MB), peak = 1119.67 (MB)
+[06/09 18:55:32    326s] #start 12th optimization iteration ...
+[06/09 18:55:35    329s] #   number of violations = 8
+[06/09 18:55:35    329s] #
+[06/09 18:55:35    329s] #    By Layer and Type :
+[06/09 18:55:35    329s] #	         MetSpc   Totals
+[06/09 18:55:35    329s] #	MET1          6        6
+[06/09 18:55:35    329s] #	MET2          2        2
+[06/09 18:55:35    329s] #	Totals        8        8
+[06/09 18:55:35    329s] #cpu time = 00:00:03, elapsed time = 00:00:03, memory = 1080.47 (MB), peak = 1119.67 (MB)
+[06/09 18:55:35    329s] #start 13th optimization iteration ...
+[06/09 18:55:37    331s] #   number of violations = 7
+[06/09 18:55:37    331s] #
+[06/09 18:55:37    331s] #    By Layer and Type :
+[06/09 18:55:37    331s] #	         MetSpc   Totals
+[06/09 18:55:37    331s] #	MET1          6        6
+[06/09 18:55:37    331s] #	MET2          1        1
+[06/09 18:55:37    331s] #	Totals        7        7
+[06/09 18:55:37    331s] #cpu time = 00:00:02, elapsed time = 00:00:02, memory = 1080.47 (MB), peak = 1119.67 (MB)
+[06/09 18:55:37    331s] #start 14th optimization iteration ...
+[06/09 18:55:39    333s] #   number of violations = 7
+[06/09 18:55:39    333s] #
+[06/09 18:55:39    333s] #    By Layer and Type :
+[06/09 18:55:39    333s] #	         MetSpc   Totals
+[06/09 18:55:39    333s] #	MET1          6        6
+[06/09 18:55:39    333s] #	MET2          1        1
+[06/09 18:55:39    333s] #	Totals        7        7
+[06/09 18:55:39    333s] #cpu time = 00:00:02, elapsed time = 00:00:02, memory = 1080.47 (MB), peak = 1119.67 (MB)
+[06/09 18:55:39    333s] #Complete Detail Routing.
+[06/09 18:55:39    333s] #Total number of nets with non-default rule or having extra spacing = 131
+[06/09 18:55:39    333s] #Total wire length = 740071 um.
+[06/09 18:55:39    333s] #Total half perimeter of net bounding box = 599112 um.
+[06/09 18:55:39    333s] #Total wire length on LAYER MET1 = 7887 um.
+[06/09 18:55:39    333s] #Total wire length on LAYER MET2 = 288184 um.
+[06/09 18:55:39    333s] #Total wire length on LAYER MET3 = 323163 um.
+[06/09 18:55:39    333s] #Total wire length on LAYER MET4 = 120836 um.
+[06/09 18:55:39    333s] #Total number of vias = 59993
+[06/09 18:55:39    333s] #Up-Via Summary (total 59993):
+[06/09 18:55:39    333s] #           
+[06/09 18:55:39    333s] #-----------------------
+[06/09 18:55:39    333s] # MET1            32211
+[06/09 18:55:39    333s] # MET2            22952
+[06/09 18:55:39    333s] # MET3             4830
+[06/09 18:55:39    333s] #-----------------------
+[06/09 18:55:39    333s] #                 59993 
+[06/09 18:55:39    333s] #
+[06/09 18:55:39    333s] #Total number of DRC violations = 7
+[06/09 18:55:39    333s] #Total number of violations on LAYER MET1 = 6
+[06/09 18:55:39    333s] #Total number of violations on LAYER MET2 = 1
+[06/09 18:55:39    333s] #Total number of violations on LAYER MET3 = 0
+[06/09 18:55:39    333s] #Total number of violations on LAYER MET4 = 0
+[06/09 18:55:39    333s] ### route signature (106) = 1666167085
+[06/09 18:55:39    333s] ### violation signature (93) =   99210406
+[06/09 18:55:39    333s] #Cpu time = 00:01:43
+[06/09 18:55:39    333s] #Elapsed time = 00:01:43
+[06/09 18:55:39    333s] #Increased memory = -0.18 (MB)
+[06/09 18:55:39    333s] #Total memory = 1042.61 (MB)
+[06/09 18:55:39    333s] #Peak memory = 1119.67 (MB)
+[06/09 18:55:39    333s] #
+[06/09 18:55:39    333s] #Start Post Routing Optimization.
+[06/09 18:55:39    334s] #start 1st post routing optimization iteration ...
+[06/09 18:55:40    334s] #    number of DRC violations = 6
+[06/09 18:55:40    334s] #
+[06/09 18:55:40    334s] #    By Layer and Type :
+[06/09 18:55:40    334s] #	         MetSpc   Totals
+[06/09 18:55:40    334s] #	MET1          5        5
+[06/09 18:55:40    334s] #	MET2          1        1
+[06/09 18:55:40    334s] #	Totals        6        6
+[06/09 18:55:40    334s] #cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1044.22 (MB), peak = 1119.67 (MB)
+[06/09 18:55:40    334s] #start 2nd post routing optimization iteration ...
+[06/09 18:56:01    355s] #    number of DRC violations = 6
+[06/09 18:56:01    355s] #
+[06/09 18:56:01    355s] #    By Layer and Type :
+[06/09 18:56:01    355s] #	         MetSpc   Totals
+[06/09 18:56:01    355s] #	MET1          5        5
+[06/09 18:56:01    355s] #	MET2          1        1
+[06/09 18:56:01    355s] #	Totals        6        6
+[06/09 18:56:01    355s] #cpu time = 00:00:21, elapsed time = 00:00:21, memory = 1047.74 (MB), peak = 1119.67 (MB)
+[06/09 18:56:01    355s] #start 3rd post routing optimization iteration ...
+[06/09 18:56:04    358s] #    number of DRC violations = 6
+[06/09 18:56:04    358s] #
+[06/09 18:56:04    358s] #    By Layer and Type :
+[06/09 18:56:04    358s] #	         MetSpc   Totals
+[06/09 18:56:04    358s] #	MET1          5        5
+[06/09 18:56:04    358s] #	MET2          1        1
+[06/09 18:56:04    358s] #	Totals        6        6
+[06/09 18:56:04    358s] #cpu time = 00:00:03, elapsed time = 00:00:03, memory = 1041.55 (MB), peak = 1119.67 (MB)
+[06/09 18:56:04    358s] #Complete Post Routing Optimization.
+[06/09 18:56:04    358s] #Cpu time = 00:00:25
+[06/09 18:56:04    358s] #Elapsed time = 00:00:25
+[06/09 18:56:04    358s] #Increased memory = -1.06 (MB)
+[06/09 18:56:04    358s] #Total memory = 1041.55 (MB)
+[06/09 18:56:04    358s] #Peak memory = 1119.67 (MB)
+[06/09 18:56:04    358s] #Total number of nets with non-default rule or having extra spacing = 131
+[06/09 18:56:04    358s] #Total wire length = 740075 um.
+[06/09 18:56:04    358s] #Total half perimeter of net bounding box = 599112 um.
+[06/09 18:56:04    358s] #Total wire length on LAYER MET1 = 7887 um.
+[06/09 18:56:04    358s] #Total wire length on LAYER MET2 = 288180 um.
+[06/09 18:56:04    358s] #Total wire length on LAYER MET3 = 323171 um.
+[06/09 18:56:04    358s] #Total wire length on LAYER MET4 = 120836 um.
+[06/09 18:56:04    358s] #Total number of vias = 59995
+[06/09 18:56:04    358s] #Up-Via Summary (total 59995):
+[06/09 18:56:04    358s] #           
+[06/09 18:56:04    358s] #-----------------------
+[06/09 18:56:04    358s] # MET1            32211
+[06/09 18:56:04    358s] # MET2            22954
+[06/09 18:56:04    358s] # MET3             4830
+[06/09 18:56:04    358s] #-----------------------
+[06/09 18:56:04    358s] #                 59995 
+[06/09 18:56:04    358s] #
+[06/09 18:56:04    358s] #Total number of DRC violations = 6
+[06/09 18:56:04    358s] #Total number of violations on LAYER MET1 = 5
+[06/09 18:56:04    358s] #Total number of violations on LAYER MET2 = 1
+[06/09 18:56:04    358s] #Total number of violations on LAYER MET3 = 0
+[06/09 18:56:04    358s] #Total number of violations on LAYER MET4 = 0
+[06/09 18:56:04    358s] #
+[06/09 18:56:04    358s] #start routing for process antenna violation fix ...
+[06/09 18:56:04    358s] ### max drc and si pitch = 2100 (   2.100 um) MT-safe pitch = 1400 (   1.400 um) patch pitch = 6100 (   6.100 um)
+[06/09 18:56:04    358s] #
+[06/09 18:56:04    358s] #    By Layer and Type :
+[06/09 18:56:04    358s] #	         MetSpc   Totals
+[06/09 18:56:04    358s] #	MET1          5        5
+[06/09 18:56:04    358s] #	MET2          1        1
+[06/09 18:56:04    358s] #	Totals        6        6
+[06/09 18:56:04    358s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1036.93 (MB), peak = 1119.67 (MB)
+[06/09 18:56:04    358s] #
+[06/09 18:56:04    358s] #Total number of nets with non-default rule or having extra spacing = 131
+[06/09 18:56:04    358s] #Total wire length = 740075 um.
+[06/09 18:56:04    358s] #Total half perimeter of net bounding box = 599112 um.
+[06/09 18:56:04    358s] #Total wire length on LAYER MET1 = 7887 um.
+[06/09 18:56:04    358s] #Total wire length on LAYER MET2 = 288180 um.
+[06/09 18:56:04    358s] #Total wire length on LAYER MET3 = 323171 um.
+[06/09 18:56:04    358s] #Total wire length on LAYER MET4 = 120836 um.
+[06/09 18:56:04    358s] #Total number of vias = 59995
+[06/09 18:56:04    358s] #Up-Via Summary (total 59995):
+[06/09 18:56:04    358s] #           
+[06/09 18:56:04    358s] #-----------------------
+[06/09 18:56:04    358s] # MET1            32211
+[06/09 18:56:04    358s] # MET2            22954
+[06/09 18:56:04    358s] # MET3             4830
+[06/09 18:56:04    358s] #-----------------------
+[06/09 18:56:04    358s] #                 59995 
+[06/09 18:56:04    358s] #
+[06/09 18:56:04    358s] #Total number of DRC violations = 6
+[06/09 18:56:04    358s] #Total number of net violated process antenna rule = 0
+[06/09 18:56:04    358s] #Total number of violations on LAYER MET1 = 5
+[06/09 18:56:04    358s] #Total number of violations on LAYER MET2 = 1
+[06/09 18:56:04    358s] #Total number of violations on LAYER MET3 = 0
+[06/09 18:56:04    358s] #Total number of violations on LAYER MET4 = 0
+[06/09 18:56:04    358s] #
+[06/09 18:56:04    358s] ### route signature (152) =  601271916
+[06/09 18:56:04    358s] ### violation signature (139) =  959367425
+[06/09 18:56:04    359s] #
+[06/09 18:56:04    359s] #Total number of nets with non-default rule or having extra spacing = 131
+[06/09 18:56:04    359s] #Total wire length = 740075 um.
+[06/09 18:56:04    359s] #Total half perimeter of net bounding box = 599112 um.
+[06/09 18:56:04    359s] #Total wire length on LAYER MET1 = 7887 um.
+[06/09 18:56:04    359s] #Total wire length on LAYER MET2 = 288180 um.
+[06/09 18:56:04    359s] #Total wire length on LAYER MET3 = 323171 um.
+[06/09 18:56:04    359s] #Total wire length on LAYER MET4 = 120836 um.
+[06/09 18:56:04    359s] #Total number of vias = 59995
+[06/09 18:56:04    359s] #Up-Via Summary (total 59995):
+[06/09 18:56:04    359s] #           
+[06/09 18:56:04    359s] #-----------------------
+[06/09 18:56:04    359s] # MET1            32211
+[06/09 18:56:04    359s] # MET2            22954
+[06/09 18:56:04    359s] # MET3             4830
+[06/09 18:56:04    359s] #-----------------------
+[06/09 18:56:04    359s] #                 59995 
+[06/09 18:56:04    359s] #
+[06/09 18:56:04    359s] #Total number of DRC violations = 6
+[06/09 18:56:04    359s] #Total number of net violated process antenna rule = 0
+[06/09 18:56:04    359s] #Total number of violations on LAYER MET1 = 5
+[06/09 18:56:04    359s] #Total number of violations on LAYER MET2 = 1
+[06/09 18:56:04    359s] #Total number of violations on LAYER MET3 = 0
+[06/09 18:56:04    359s] #Total number of violations on LAYER MET4 = 0
+[06/09 18:56:04    359s] #
+[06/09 18:56:04    359s] ### max drc and si pitch = 2100 (   2.100 um) MT-safe pitch = 1400 (   1.400 um) patch pitch = 6100 (   6.100 um)
+[06/09 18:56:04    359s] #
+[06/09 18:56:04    359s] #Start Post Route via swapping...
+[06/09 18:56:04    359s] #54.70% of area are rerouted by ECO routing.
+[06/09 18:56:12    367s] #   number of violations = 6
+[06/09 18:56:12    367s] #
+[06/09 18:56:12    367s] #    By Layer and Type :
+[06/09 18:56:12    367s] #	         MetSpc   Totals
+[06/09 18:56:12    367s] #	MET1          5        5
+[06/09 18:56:12    367s] #	MET2          1        1
+[06/09 18:56:12    367s] #	Totals        6        6
+[06/09 18:56:12    367s] #cpu time = 00:00:08, elapsed time = 00:00:08, memory = 1038.18 (MB), peak = 1119.67 (MB)
+[06/09 18:56:12    367s] #CELL_VIEW top_io,init has 6 DRC violations
+[06/09 18:56:12    367s] #Total number of DRC violations = 6
+[06/09 18:56:12    367s] #Total number of net violated process antenna rule = 0
+[06/09 18:56:12    367s] #Total number of violations on LAYER MET1 = 5
+[06/09 18:56:12    367s] #Total number of violations on LAYER MET2 = 1
+[06/09 18:56:12    367s] #Total number of violations on LAYER MET3 = 0
+[06/09 18:56:12    367s] #Total number of violations on LAYER MET4 = 0
+[06/09 18:56:12    367s] #No via is swapped.
+[06/09 18:56:12    367s] #Post Route via swapping is done.
+[06/09 18:56:12    367s] #Total number of nets with non-default rule or having extra spacing = 131
+[06/09 18:56:12    367s] #Total wire length = 740075 um.
+[06/09 18:56:12    367s] #Total half perimeter of net bounding box = 599112 um.
+[06/09 18:56:12    367s] #Total wire length on LAYER MET1 = 7887 um.
+[06/09 18:56:12    367s] #Total wire length on LAYER MET2 = 288180 um.
+[06/09 18:56:12    367s] #Total wire length on LAYER MET3 = 323171 um.
+[06/09 18:56:12    367s] #Total wire length on LAYER MET4 = 120836 um.
+[06/09 18:56:12    367s] #Total number of vias = 59995
+[06/09 18:56:12    367s] #Up-Via Summary (total 59995):
+[06/09 18:56:12    367s] #           
+[06/09 18:56:12    367s] #-----------------------
+[06/09 18:56:12    367s] # MET1            32211
+[06/09 18:56:12    367s] # MET2            22954
+[06/09 18:56:12    367s] # MET3             4830
+[06/09 18:56:12    367s] #-----------------------
+[06/09 18:56:12    367s] #                 59995 
+[06/09 18:56:12    367s] #
+[06/09 18:56:12    367s] ### route signature (157) = 1794025353
+[06/09 18:56:12    367s] ### violation signature (144) = 1104651940
+[06/09 18:56:12    367s] ### max drc and si pitch = 2100 (   2.100 um) MT-safe pitch = 1400 (   1.400 um) patch pitch = 6100 (   6.100 um)
+[06/09 18:56:12    367s] #
+[06/09 18:56:12    367s] #Start Post Route wire spreading..
+[06/09 18:56:12    367s] ### max drc and si pitch = 2100 (   2.100 um) MT-safe pitch = 1400 (   1.400 um) patch pitch = 6100 (   6.100 um)
+[06/09 18:56:12    367s] #
+[06/09 18:56:12    367s] #Start DRC checking..
+[06/09 18:56:21    376s] #   number of violations = 7
+[06/09 18:56:21    376s] #
+[06/09 18:56:21    376s] #    By Layer and Type :
+[06/09 18:56:21    376s] #	         MetSpc   Totals
+[06/09 18:56:21    376s] #	MET1          6        6
+[06/09 18:56:21    376s] #	MET2          1        1
+[06/09 18:56:21    376s] #	Totals        7        7
+[06/09 18:56:21    376s] #cpu time = 00:00:09, elapsed time = 00:00:09, memory = 1066.09 (MB), peak = 1119.67 (MB)
+[06/09 18:56:21    376s] #CELL_VIEW top_io,init has 7 DRC violations
+[06/09 18:56:21    376s] #Total number of DRC violations = 7
+[06/09 18:56:21    376s] #Total number of net violated process antenna rule = 0
+[06/09 18:56:21    376s] #Total number of violations on LAYER MET1 = 6
+[06/09 18:56:21    376s] #Total number of violations on LAYER MET2 = 1
+[06/09 18:56:21    376s] #Total number of violations on LAYER MET3 = 0
+[06/09 18:56:21    376s] #Total number of violations on LAYER MET4 = 0
+[06/09 18:56:21    376s] ### route signature (163) = 1572952500
+[06/09 18:56:21    376s] ### violation signature (150) = 1228223840
+[06/09 18:56:21    376s] #
+[06/09 18:56:21    376s] #Start data preparation for wire spreading...
+[06/09 18:56:21    376s] #
+[06/09 18:56:21    376s] #Data preparation is done on Thu Jun  9 18:56:21 2022
+[06/09 18:56:21    376s] #
+[06/09 18:56:21    376s] #
+[06/09 18:56:21    376s] #Start Post Route Wire Spread.
+[06/09 18:56:22    376s] #Done with 2906 horizontal wires in 2 hboxes and 2279 vertical wires in 2 hboxes.
+[06/09 18:56:22    376s] #Complete Post Route Wire Spread.
+[06/09 18:56:22    376s] #
+[06/09 18:56:22    376s] #Total number of nets with non-default rule or having extra spacing = 131
+[06/09 18:56:22    376s] #Total wire length = 751525 um.
+[06/09 18:56:22    376s] #Total half perimeter of net bounding box = 599112 um.
+[06/09 18:56:22    376s] #Total wire length on LAYER MET1 = 7892 um.
+[06/09 18:56:22    376s] #Total wire length on LAYER MET2 = 291427 um.
+[06/09 18:56:22    376s] #Total wire length on LAYER MET3 = 329725 um.
+[06/09 18:56:22    376s] #Total wire length on LAYER MET4 = 122481 um.
+[06/09 18:56:22    376s] #Total number of vias = 59995
+[06/09 18:56:22    376s] #Up-Via Summary (total 59995):
+[06/09 18:56:22    376s] #           
+[06/09 18:56:22    376s] #-----------------------
+[06/09 18:56:22    376s] # MET1            32211
+[06/09 18:56:22    376s] # MET2            22954
+[06/09 18:56:22    376s] # MET3             4830
+[06/09 18:56:22    376s] #-----------------------
+[06/09 18:56:22    376s] #                 59995 
+[06/09 18:56:22    376s] #
+[06/09 18:56:22    376s] ### route signature (166) = 1786561128
+[06/09 18:56:22    376s] ### violation signature (153) = 1228223840
+[06/09 18:56:22    376s] ### max drc and si pitch = 2100 (   2.100 um) MT-safe pitch = 1400 (   1.400 um) patch pitch = 6100 (   6.100 um)
+[06/09 18:56:22    376s] #
+[06/09 18:56:22    376s] #Start DRC checking..
+[06/09 18:56:31    385s] #   number of violations = 7
+[06/09 18:56:31    385s] #
+[06/09 18:56:31    385s] #    By Layer and Type :
+[06/09 18:56:31    385s] #	         MetSpc   Totals
+[06/09 18:56:31    385s] #	MET1          6        6
+[06/09 18:56:31    385s] #	MET2          1        1
+[06/09 18:56:31    385s] #	Totals        7        7
+[06/09 18:56:31    385s] #cpu time = 00:00:09, elapsed time = 00:00:09, memory = 1071.34 (MB), peak = 1119.67 (MB)
+[06/09 18:56:31    385s] #CELL_VIEW top_io,init has 7 DRC violations
+[06/09 18:56:31    385s] #Total number of DRC violations = 7
+[06/09 18:56:31    385s] #Total number of net violated process antenna rule = 0
+[06/09 18:56:31    385s] #Total number of violations on LAYER MET1 = 6
+[06/09 18:56:31    385s] #Total number of violations on LAYER MET2 = 1
+[06/09 18:56:31    385s] #Total number of violations on LAYER MET3 = 0
+[06/09 18:56:31    385s] #Total number of violations on LAYER MET4 = 0
+[06/09 18:56:31    385s] ### route signature (171) = 1953347632
+[06/09 18:56:31    385s] ### violation signature (158) = 1034365058
+[06/09 18:56:31    386s] #   number of violations = 7
+[06/09 18:56:31    386s] #
+[06/09 18:56:31    386s] #    By Layer and Type :
+[06/09 18:56:31    386s] #	         MetSpc   Totals
+[06/09 18:56:31    386s] #	MET1          6        6
+[06/09 18:56:31    386s] #	MET2          1        1
+[06/09 18:56:31    386s] #	Totals        7        7
+[06/09 18:56:31    386s] #cpu time = 00:00:10, elapsed time = 00:00:10, memory = 1041.07 (MB), peak = 1119.67 (MB)
+[06/09 18:56:31    386s] #CELL_VIEW top_io,init has 7 DRC violations
+[06/09 18:56:31    386s] #Total number of DRC violations = 7
+[06/09 18:56:31    386s] #Total number of net violated process antenna rule = 0
+[06/09 18:56:31    386s] #Total number of violations on LAYER MET1 = 6
+[06/09 18:56:31    386s] #Total number of violations on LAYER MET2 = 1
+[06/09 18:56:31    386s] #Total number of violations on LAYER MET3 = 0
+[06/09 18:56:31    386s] #Total number of violations on LAYER MET4 = 0
+[06/09 18:56:31    386s] #Post Route wire spread is done.
+[06/09 18:56:31    386s] #Total number of nets with non-default rule or having extra spacing = 131
+[06/09 18:56:31    386s] #Total wire length = 751525 um.
+[06/09 18:56:31    386s] #Total half perimeter of net bounding box = 599112 um.
+[06/09 18:56:31    386s] #Total wire length on LAYER MET1 = 7892 um.
+[06/09 18:56:31    386s] #Total wire length on LAYER MET2 = 291427 um.
+[06/09 18:56:31    386s] #Total wire length on LAYER MET3 = 329725 um.
+[06/09 18:56:31    386s] #Total wire length on LAYER MET4 = 122481 um.
+[06/09 18:56:31    386s] #Total number of vias = 59995
+[06/09 18:56:31    386s] #Up-Via Summary (total 59995):
+[06/09 18:56:31    386s] #           
+[06/09 18:56:31    386s] #-----------------------
+[06/09 18:56:31    386s] # MET1            32211
+[06/09 18:56:31    386s] # MET2            22954
+[06/09 18:56:31    386s] # MET3             4830
+[06/09 18:56:31    386s] #-----------------------
+[06/09 18:56:31    386s] #                 59995 
+[06/09 18:56:31    386s] #
+[06/09 18:56:31    386s] ### route signature (173) = 1953347632
+[06/09 18:56:31    386s] ### violation signature (160) = 1034365058
+[06/09 18:56:31    386s] #detailRoute Statistics:
+[06/09 18:56:31    386s] #Cpu time = 00:02:35
+[06/09 18:56:31    386s] #Elapsed time = 00:02:35
+[06/09 18:56:31    386s] #Increased memory = -2.68 (MB)
+[06/09 18:56:31    386s] #Total memory = 1040.11 (MB)
+[06/09 18:56:31    386s] #Peak memory = 1119.67 (MB)
+[06/09 18:56:31    386s] ### export route signature (174) = 1953347632
+[06/09 18:56:31    386s] ### export violation signature (161) = 1034365058
+[06/09 18:56:31    386s] #
+[06/09 18:56:31    386s] #globalDetailRoute statistics:
+[06/09 18:56:31    386s] #Cpu time = 00:03:04
+[06/09 18:56:31    386s] #Elapsed time = 00:03:07
+[06/09 18:56:31    386s] #Increased memory = 15.66 (MB)
+[06/09 18:56:31    386s] #Total memory = 1018.43 (MB)
+[06/09 18:56:31    386s] #Peak memory = 1119.67 (MB)
+[06/09 18:56:31    386s] #Number of warnings = 52
+[06/09 18:56:31    386s] #Total number of warnings = 210
+[06/09 18:56:31    386s] #Number of fails = 0
+[06/09 18:56:31    386s] #Total number of fails = 0
+[06/09 18:56:31    386s] #Complete globalDetailRoute on Thu Jun  9 18:56:31 2022
+[06/09 18:56:31    386s] #
+[06/09 18:56:31    386s] % End globalDetailRoute (date=06/09 18:56:31, total cpu=0:03:04, real=0:03:06, peak res=1119.7M, current mem=1018.4M)
+[06/09 18:56:31    386s] #routeDesign: cpu time = 00:03:21, elapsed time = 00:03:24, memory = 1018.43 (MB), peak = 1119.67 (MB)
+[06/09 18:56:31    386s] 
+[06/09 18:56:31    386s] *** Summary of all messages that are not suppressed in this session:
+[06/09 18:56:31    386s] Severity  ID               Count  Summary                                  
+[06/09 18:56:31    386s] WARNING   IMPEXT-3493          1  The design extraction status has been re...
+[06/09 18:56:31    386s] WARNING   IMPCK-8086           1  The command %s is obsolete and will be r...
+[06/09 18:56:31    386s] WARNING   IMPESI-2017          2  There is no coupling capacitance found i...
+[06/09 18:56:31    386s] WARNING   IMPCTE-104           8  The constraint mode of this inactive vie...
+[06/09 18:56:31    386s] WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+[06/09 18:56:31    386s] WARNING   TCLCMD-1403          2  '%s'                                     
+[06/09 18:56:31    386s] *** Message Summary: 15 warning(s), 0 error(s)
+[06/09 18:56:31    386s] 
+[06/09 18:56:31    386s] ### 
+[06/09 18:56:31    386s] ###   Scalability Statistics
+[06/09 18:56:31    386s] ### 
+[06/09 18:56:31    386s] ### --------------------------------+----------------+----------------+----------------+
+[06/09 18:56:31    386s] ###   routeDesign                   |        cpu time|    elapsed time|     scalability|
+[06/09 18:56:31    386s] ### --------------------------------+----------------+----------------+----------------+
+[06/09 18:56:31    386s] ###   Data Preparation              |        00:00:00|        00:00:00|             1.0|
+[06/09 18:56:31    386s] ###   Global Routing                |        00:00:01|        00:00:01|             1.0|
+[06/09 18:56:31    386s] ###   Track Assignment              |        00:00:02|        00:00:02|             1.0|
+[06/09 18:56:31    386s] ###   Detail Routing                |        00:01:59|        00:02:00|             1.0|
+[06/09 18:56:31    386s] ###   Post Route Via Swapping       |        00:00:08|        00:00:08|             1.0|
+[06/09 18:56:31    386s] ###   Antenna Fixing                |        00:00:00|        00:00:00|             1.0|
+[06/09 18:56:31    386s] ###   Total                         |        00:03:21|        00:03:24|             1.0|
+[06/09 18:56:31    386s] ### --------------------------------+----------------+----------------+----------------+
+[06/09 18:56:31    386s] ### 
+[06/09 18:56:31    386s] #% End routeDesign (date=06/09 18:56:31, total cpu=0:03:21, real=0:03:24, peak res=1119.7M, current mem=1018.4M)
+[06/09 18:56:57    388s] <CMD> pan -4.216 0.377
+[06/09 18:57:40    391s] 
+[06/09 18:57:40    391s] *** Memory Usage v#1 (Current mem = 1469.816M, initial mem = 184.402M) ***
+[06/09 18:57:40    391s] 
+[06/09 18:57:40    391s] *** Summary of all messages that are not suppressed in this session:
+[06/09 18:57:40    391s] Severity  ID               Count  Summary                                  
+[06/09 18:57:40    391s] WARNING   IMPLF-200          131  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[06/09 18:57:40    391s] WARNING   IMPLF-201          608  Pin '%s' in macro '%s' has no ANTENNADIF...
+[06/09 18:57:40    391s] WARNING   IMPLF-228            1   ANTENNAOUTPUTDIFFAREA is specified and ...
+[06/09 18:57:40    391s] WARNING   IMPLF-230            1   ANTENNAINOUTDIFFAREA is specified and w...
+[06/09 18:57:40    391s] WARNING   IMPFP-710            1  File version %s is too old.              
+[06/09 18:57:40    391s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[06/09 18:57:40    391s] WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+[06/09 18:57:40    391s] WARNING   IMPEXT-3493          1  The design extraction status has been re...
+[06/09 18:57:40    391s] WARNING   IMPCK-7003           1  Command "%s" is obsolete. Use "%s" as an...
+[06/09 18:57:40    391s] WARNING   IMPCK-8086           2  The command %s is obsolete and will be r...
+[06/09 18:57:40    391s] WARNING   IMPVL-324            1  Module %s in %s will overwrite the previ...
+[06/09 18:57:40    391s] WARNING   IMPVL-159         1401  Pin '%s' of cell '%s' is defined in LEF ...
+[06/09 18:57:40    391s] WARNING   IMPDC-1629           1  The default delay limit was set to %d. T...
+[06/09 18:57:40    391s] WARNING   IMPESI-2017          2  There is no coupling capacitance found i...
+[06/09 18:57:40    391s] WARNING   IMPSR-1255           1  Cannot find any non 'CLASS CORE' pad pin...
+[06/09 18:57:40    391s] WARNING   IMPSR-1254           2  Cannot find any block pin of net %s. Che...
+[06/09 18:57:40    391s] WARNING   IMPSP-9531           1  Turning off clkGateAware when timingDriv...
+[06/09 18:57:40    391s] WARNING   IMPSP-5168           1  Switch off cellFirst and preserveUserOrd...
+[06/09 18:57:40    391s] WARNING   IMPSP-9025           2  No scan chain specified/traced.          
+[06/09 18:57:40    391s] WARNING   IMPSP-5224           2  Option '%s' for command addEndCap is obs...
+[06/09 18:57:40    391s] WARNING   IMPOPT-7077          1  Some of the LEF equivalent cells have di...
+[06/09 18:57:40    391s] ERROR     IMPOPT-6080          1  AAE-SI Optimization can only be turned o...
+[06/09 18:57:40    391s] WARNING   IMPOPT-6118          1  The following cells have a dont_touch pr...
+[06/09 18:57:40    391s] WARNING   IMPCCOPT-1361        3  Routing configuration for %s nets in clo...
+[06/09 18:57:40    391s] WARNING   IMPCCOPT-1127        1  The skew group %s has been identified as...
+[06/09 18:57:40    391s] WARNING   IMPCCOPT-4322        1  No default Or cell family identified.    
+[06/09 18:57:40    391s] WARNING   IMPCCOPT-1007        9  Did not meet the max transition constrai...
+[06/09 18:57:40    391s] WARNING   IMPCTE-104           8  The constraint mode of this inactive vie...
+[06/09 18:57:40    391s] WARNING   IMPTCM-77            2  Option "%s" for command %s is obsolete a...
+[06/09 18:57:40    391s] WARNING   TCLCMD-513           2  The software could not find a matching o...
+[06/09 18:57:40    391s] ERROR     TCLCMD-917           4  Cannot find '%s' that match '%s'         
+[06/09 18:57:40    391s] WARNING   TCLCMD-1403          2  '%s'                                     
+[06/09 18:57:40    391s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[06/09 18:57:40    391s] ERROR     TECHLIB-1318        20  All the table values in the '%s' group a...
+[06/09 18:57:40    391s] *** Message Summary: 2215 warning(s), 25 error(s)
+[06/09 18:57:40    391s] 
+[06/09 18:57:40    391s] --- Ending "Innovus" (totcpu=0:06:32, real=0:24:46, mem=1469.8M) ---

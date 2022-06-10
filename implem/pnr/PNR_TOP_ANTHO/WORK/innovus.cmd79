@@ -80,3 +80,8 @@ addIoFiller -cell PERI_SPACER_5_P -prefix pfill
 addIoFiller -cell PERI_SPACER_2_P -prefix pfill
 addIoFiller -cell PERI_SPACER_1_P -prefix pfill
 addIoFiller -cell PERI_SPACER_01_P -prefix pfill
+route_opt_design
+globalRoute
+pan -12.953 -3.962
+routeDesign
+pan -4.216 0.377

@@ -6,19 +6,39 @@
 #Utilisation d'un noeud technologique supérieur ou égal à 130 nm
 setDesignMode -process 250
 
-setMetalFill -layer M1 -activeSpacing 0.8
-setMetalFill -layer M2 -activeSpacing 0.8
-setMetalFill -layer M3 -activeSpacing 0.8
-setMetalFill -layer M6 -activeSpacing 0.8
-
-
 #Placement des capa de découplage entre les rails d'alimentation vdd! gnd!
 addEndCap -preCap ENDCAPL -postCap ENDCAPR -prefix ENDCAP
 
 #Placement automatique des standard cells
-setPlaceMode -fp false
-placeDesign
+setRouteMode -earlyGlobalMaxRouteLayer 4
+setRouteMode -earlyGlobalMinRouteLayer 1
 
-#report_constraint -all_violator
+
+place_opt_design
+#setPlaceMode -fp false
+#placeDesign -noPrePlaceOpt
+
+
+
+setOptMode -fixCap true -fixTran  true -fixFanoutLoad false
+optDesign -preCTS
+
+source ../SCRIPTS/clock_tree_synthesis.tcl
+
+optDesign -postCTS
+
+#routeDesign -globalDetail
+
+#setAnalysisMode -analysisType onChipVariation -cppr both
+#setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+
+
+
+
+
+
+
+
+
 
 
