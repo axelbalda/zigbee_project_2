@@ -34,10 +34,8 @@ reg 			inDEMUX2		;
 reg 	[3:0]	inDEMUX17		;
 reg 	[3:0]	inDEMUX18		;
 reg		[2:0]	inSEL1			;
-/*
 reg		[2:0]	inSEL2			;
 reg 			inSEL3			;
-*/
 reg 	[1:0]	inSEL6			;
 reg 	[1:0]	inSEL9			;
 reg 			inSEL11			;
@@ -60,10 +58,8 @@ initial begin : init
 	inDEMUX17		=	4'b0	;
 	inDEMUX18		=	4'b0	;
 	inSEL1			=	3'b0	;
-	/*
 	inSEL2			=	3'b0	;
 	inSEL3			=	1'b0	;
-	*/
 	inSEL6			=	2'b0	;
 	inSEL9			=	2'b0	;
 	inSEL11			=	1'b0	;
@@ -101,24 +97,22 @@ initial begin : SELECT
 
 	for(int i = 0; i < 8; i++) begin  // SEL1
 		for(int j = 0; j < 8; j++) begin // SEL2
-			for(int k = 0; k < 2; k++) begin // SEL3
+			for(int k = 0; k < 4; k++) begin // SEL15
 				for(int l = 0; l < 4; l++) begin // SEL6
 					for(int m = 0; m < 4; m++) begin // SEL9
 						for(int n = 0; n < 2; n++) begin // SEL11
 							for(int o = 0; o < 2; o++) begin // SEL12
-								for(int p = 0; p < 4; p++) begin // SEL15
+								for(int p = 0; p < 2; p++) begin // SEL3
 									for(int q = 0; q < 2; q++) begin // SEL17
 										
 										inSEL1			=	i	;
-										/*
 										inSEL2			=	j	;
-										inSEL3			=	k	;
-										*/
+										inSEL3			=	p	;
 										inSEL6			=	l	;
 										inSEL9			=	m	;
 										inSEL11			=	n	;
 										inSEL12			=	o	;
-										inSEL15			=	p	;
+										inSEL15			=	k	;
 										inSEL17			=	q	;
 
 										for(int r = 0; r < 500; r++) begin
@@ -153,10 +147,8 @@ TOP u_top (
 	.in_DEMUX_inDEMUX18			(inDEMUX18		) ,   
 
 	.in_DEMUX_inSEL1			(inSEL1			) , 
-	/*
 	.in_DEMUX_inSEL2			(inSEL2			) , 
 	.in_MUX_inSEL3				(inSEL3			) , 
-	*/
 	.in_MUX_inSEL6				(inSEL6			) , 
 	.in_MUX_inSEL9				(inSEL9			) , 
 	.in_MUX_inSEL11				(inSEL11		) , 
