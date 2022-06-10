@@ -402,7 +402,7 @@ initial begin : DATA
 	inSEL1			=	3'b0	;
 	inSEL2			=	3'b111	;
 	inSEL3			=	1'b111	;
-	inSEL6			=	2'b11	;
+	inSEL6			=	2'b10	;
 	inSEL9			=	2'b10	;
 	inSEL11			=	1'b1	;
 	inSEL12			=	1'b1	;
