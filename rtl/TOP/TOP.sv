@@ -360,9 +360,9 @@ MUX411 u_mux16 (
 );
 //////////////////////////////////////////////////////////////////////////////////
 
-assign sig_MUX_inMUX3  = { sig_coder_outReady		, sig_DEMUX_outDEMUX1[2]														} ;
-assign sig_MUX_inMUX4  = { sig_inFIFO_outData		, sig_DEMUX_outDEMUX1[1]														} ;
-assign sig_MUX_inMUX5  = { sig_inFIFO_outEmpty		, sig_DEMUX_outDEMUX2[1]														} ;
+assign sig_MUX_inMUX3  = { sig_DEMUX_outDEMUX1[2]	, sig_coder_outReady															} ;
+assign sig_MUX_inMUX4  = { sig_DEMUX_outDEMUX1[1]	, sig_inFIFO_outData															} ;
+assign sig_MUX_inMUX5  = { sig_DEMUX_outDEMUX2[1]	, sig_inFIFO_outEmpty															} ;
 assign sig_MUX_inMUX6  = { sig_decod_outI			, sig_coder_outSinIMasked	, sig_DEMUX_outDEMUX17[1]	, 4'bz					} ;
 assign sig_MUX_inMUX7  = { sig_decod_outQ			, sig_coder_outSinQMasked	, sig_DEMUX_outDEMUX18[1]	, 4'bz					} ;
 assign sig_MUX_inMUX8  = { sig_decod_outEOC			, 2'bz						, sig_DEMUX_outDEMUX2[2]							} ;
