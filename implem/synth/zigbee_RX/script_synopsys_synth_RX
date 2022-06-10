@@ -20,9 +20,9 @@ set var_file_to_open4 "/tp/xph2app/xph2app103/zigbee_project_2/rtl/EI/DFF.sv"
 set var_file_to_open3 "/tp/xph2app/xph2app103/zigbee_project_2/rtl/EI/OS.sv"
 set var_file_to_open2 "/tp/xph2app/xph2app103/zigbee_project_2/rtl/EI/outFIFO.debug.sv"
 
-set var_file_to_open1 "/tp/xph2app/xph2app103/zigbee_project_2/rtl/wrapper/zigbee_RX.sv"
+set var_file_to_open1 "/tp/xph2app/xph2app103/zigbee_project_2/rtl/wrapper/decoder_cordic_cdr_ei.sv"
 
-*******************************
+
 
 analyze -library WORK -format sverilog $var_file_to_open18
 analyze -library WORK -format sverilog $var_file_to_open17
@@ -43,14 +43,14 @@ analyze -library WORK -format sverilog $var_file_to_open3
 analyze -library WORK -format sverilog $var_file_to_open2
 analyze -library WORK -format sverilog $var_file_to_open1
 
-*******************************
 
-elaborate zigbee_RX -architecture verilog -library WORK
+
+elaborate decoder_cordic_cdr_ei -architecture verilog -library WORK
 
 create_clock -name "i_clk" -period 20 -waveform { 0 10  }  { i_clk  }
 set_operating_conditions -library c35_CORELIB_TYP TYPICAL
 
-compile -exact_map -ungroup_all -auto_ungroup area
+###compile -exact_map -ungroup_all -auto_ungroup area
 
 set name_netlist "zigbee_RX_netlist.v"
 set name_sdc "zigbee_RX.sdc"
@@ -60,3 +60,5 @@ write_sdc $name_sdc
 
 uplevel #0 { report_area }
 uplevel #0 { report_clock -attribute }
+
+

@@ -1,9 +1,12 @@
-module decoder_cordic_cdr_ei #(
+module decoder_cordic_cdr_ei
+/* #(
  			       parameter DATA_SIZE_BIT  	=    2,
 			       parameter DATA_WIDTH     	=    2**DATA_SIZE_BIT,  
 			       parameter FIFO_SIZE_BIT  	=    7,
 			       parameter FIFO_WIDTH 		=   2**FIFO_SIZE_BIT
-			       )(input logic i_clk,
+			       )
+*/
+				(input logic i_clk,
 				 input logic 		   i_rst_n,
 				 input logic 		   i_adc_eoc,// pulse when sample is ready
 				 input logic [3:0] 	   i_I_if,
@@ -11,8 +14,8 @@ module decoder_cordic_cdr_ei #(
 				 input logic readEN,
 
 				 //out fifo
-				 output [FIFO_SIZE_BIT	:0] 	outWriteCount  ,   
-				 output [FIFO_SIZE_BIT-1 :0]   	outReadCount   ,
+				 output [7	:0] 	outWriteCount  ,   
+				 output [6 :0]   	outReadCount   ,
 				 output                  	outReadError   ,
 				 output                  	outWriteError  ,
 				 output                  	outFull        ,
@@ -20,7 +23,7 @@ module decoder_cordic_cdr_ei #(
 				 output                  	outAlmostEmpty ,
 				 output                  	outAlmostFull  ,
 				 output                  	outDone        ,  	
-				 output [DATA_WIDTH-1:0] 	outData	);
+				 output [3:0] 	outData	);
 
 
    
@@ -67,9 +70,12 @@ module decoder_cordic_cdr_ei #(
 	   cordic_ready,
 	   cdr_flag);
    
-   outFIFO #(
+   outFIFO 
+/*#(
 	     .FIFO_SIZE_BIT  (7		)
-	     ) u_fifo (
+	     ) 
+*/
+		u_fifo (
 		       .inClock	(i_clk		),   	// (50 MHz)
     		       .inReset	(i_rst_n		),    
     		       .inReadEnable	(readEN	        ), 	// Handcheck --> Antho & Bruno
