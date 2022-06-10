@@ -37,25 +37,29 @@ module system(i_enable_in, i_I, i_Q, o_enable_out, o_dir, reset, clock);
 
 
 
-   always_ff@(posedge clock) begin
+	always_ff@(posedge clock) begin
+		if(reset == 1'b0) begin
+				I <= 1'b0;
+				Q <= 1'b0;
+				o_dir <= 1'b0;
+		end
+		else begin
+			if(present_state == NEW_IQ_SAMPLE)begin
+				I <= i_I;
+				Q <= i_Q;
+			end 
 
-      if(present_state == NEW_IQ_SAMPLE)begin
-	 
-	 I <= i_I;
-	 Q <= i_Q;
+			if (present_state == IDLE)begin
+				I <= 1'b0;
+				Q <= 1'b0;
+				o_dir <= 1'b0;
+			end
 
-      end 
-      if (present_state == IDLE)begin
-	 I <= 1'b0;
-	 Q <= 1'b0;
-	o_dir <= 1'b0; 
-      end
-
-	if(present_state == UPDATE_DIRECTION) begin
-	 	o_dir <= dir;
+			if(present_state == UPDATE_DIRECTION) begin
+				o_dir <= dir;
+			end
+		end
 	end
-
-   end
 
 
 
