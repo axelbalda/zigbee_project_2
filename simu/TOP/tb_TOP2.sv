@@ -656,7 +656,7 @@ initial begin : DATA
 		#CLK_PERIOD ;	
 	end
 
-	inReadEnable	=	1'b10
+	inReadEnable	=	1'b0;
 	for(int i = 0; i < 20; i++) begin
 		#CLK_PERIOD ;	
 	end
@@ -666,7 +666,7 @@ initial begin : DATA
 		#CLK_PERIOD ;	
 	end
 
-	inReadEnable	=	1'b10
+	inReadEnable	=	1'b0;
 	for(int i = 0; i < 20; i++) begin
 		#CLK_PERIOD ;	
 	end
@@ -676,7 +676,7 @@ initial begin : DATA
 		#CLK_PERIOD ;	
 	end
 
-	inReadEnable	=	1'b10
+	inReadEnable	=	1'b0;
 	for(int i = 0; i < 20; i++) begin
 		#CLK_PERIOD ;	
 	end
@@ -686,7 +686,7 @@ initial begin : DATA
 		#CLK_PERIOD ;	
 	end
 
-	inReadEnable	=	1'b10
+	inReadEnable	=	1'b0;
 	for(int i = 0; i < 20; i++) begin
 		#CLK_PERIOD ;	
 	end
