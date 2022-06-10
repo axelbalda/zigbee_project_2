@@ -106,12 +106,14 @@ initial begin : DATA
 		#CLK_PERIOD ;	
 	end
 
+	/////////////////////////////
+	// TEST ALL
+	/////////////////////////////
 	for(int i = 0; i < 80; i++) begin
 		#CLK_PERIOD ;	
 	end
 
 	inDEMUX2		=	1'b0	;
-
 
 	for(int i = 0; i < 20; i++) begin
 		#CLK_PERIOD ;	
@@ -123,19 +125,173 @@ initial begin : DATA
 	inDEMUX2		=	1'b1	;
 	inDEMUX17		=	4'b1101	;
 	inDEMUX18		=	4'b1101	;	
-end
-//////////////////////////////////////////////////////////////////////////////////
 
-//////////////////////////////////////////////////////////////////////////////////
-//  SEL
-//////////////////////////////////////////////////////////////////////////////////
-initial begin : SELECT
-	for(int i = 0; i < 5; i++) begin
+	for(int i = 0; i < 100; i++) begin
 		#CLK_PERIOD ;	
 	end
 
+	/////////////////////////////
+	// inFIFO Stand Alone
+	/////////////////////////////
+	inSEL1			=	3'b010	;
+	inSEL2			=	3'b0	;
+	inSEL3			=	1'b1	;
+	inSEL6			=	2'b0	;
+	inSEL9			=	2'b0	;
+	inSEL11			=	1'b0	;
+	inSEL12			=	1'b0	;
+	inSEL15			=	2'b1	;
+	inSEL17			=	1'b0	;	
+
+	for(int i = 0; i < 5; i++) begin
+		inReset  =  1'b0 ;
+		inDEMUX2 =	1'b0 ;
+		#CLK_PERIOD ;	
+	end
+
+	inReset = 1'b1 ;
+	inData			=	4'b0001	;
+	inReadEnable	=	1'b0	;
+	inDEMUX1		=	1'b0	; // ReadEnable
+	inDEMUX2		=	1'b1	; // WriteEnable
+	inDEMUX17		=	4'b0	; 
+	inDEMUX18		=	4'b0	;
+
+	for(int i = 0; i < 5; i++) begin
+		inDEMUX2 =	1'b0 ;
+		#CLK_PERIOD ;	
+	end
+
+	inData			=	4'b0100	;
+	inReadEnable	=	1'b0	;
+	inDEMUX1		=	1'b0	; // ReadEnable
+	inDEMUX2		=	1'b1	; // WriteEnable
+	inDEMUX17		=	4'b0	; 
+	inDEMUX18		=	4'b0	;
+
+	for(int i = 0; i < 5; i++) begin
+		inDEMUX2 =	1'b0 ;
+		#CLK_PERIOD ;	
+	end
+
+	inData			=	4'b1001	;
+	inReadEnable	=	1'b0	;
+	inDEMUX1		=	1'b0	; // ReadEnable
+	inDEMUX2		=	1'b1	; // WriteEnable
+	inDEMUX17		=	4'b0	; 
+	inDEMUX18		=	4'b0	;
+
+	for(int i = 0; i < 5; i++) begin
+		inDEMUX2 =	1'b0 ;
+		#CLK_PERIOD ;	
+	end
+
+	inData			=	4'b000	;
+	inReadEnable	=	1'b0	;
+	inDEMUX1		=	1'b1	; // ReadEnable
+	inDEMUX2		=	1'b0	; // WriteEnable
+	inDEMUX17		=	4'b0	; 
+	inDEMUX18		=	4'b0	;
+
+	for(int i = 0; i < 5; i++) begin
+		inDEMUX1 =	1'b0 ;
+		#CLK_PERIOD ;	
+	end
+
+	inData			=	4'b000	;
+	inReadEnable	=	1'b0	;
+	inDEMUX1		=	1'b1	; // ReadEnable
+	inDEMUX2		=	1'b0	; // WriteEnable
+	inDEMUX17		=	4'b0	; 
+	inDEMUX18		=	4'b0	;
+
+	for(int i = 0; i < 5; i++) begin
+		inDEMUX1 =	1'b0 ;
+		#CLK_PERIOD ;	
+	end
+
+	inData			=	4'b000	;
+	inReadEnable	=	1'b0	;
+	inDEMUX1		=	1'b1	; // ReadEnable
+	inDEMUX2		=	1'b0	; // WriteEnable
+	inDEMUX17		=	4'b0	; 
+	inDEMUX18		=	4'b0	;
+
+	for(int i = 0; i < 5; i++) begin
+		inDEMUX1 =	1'b0 ;
+		#CLK_PERIOD ;	
+	end
+
+	inData			=	4'b000	;
+	inReadEnable	=	1'b0	;
+	inDEMUX1		=	1'b1	; // ReadEnable
+	inDEMUX2		=	1'b0	; // WriteEnable
+	inDEMUX17		=	4'b0	; 
+	inDEMUX18		=	4'b0	;
+
+	for(int i = 0; i < 5; i++) begin
+		inDEMUX1 =	1'b0 ;
+		#CLK_PERIOD ;	
+	end
+
+	inData			=	4'b000	;
+	inReadEnable	=	1'b0	;
+	inDEMUX1		=	1'b1	; // ReadEnable
+	inDEMUX2		=	1'b0	; // WriteEnable
+	inDEMUX17		=	4'b0	; 
+	inDEMUX18		=	4'b0	;
+
+	for(int i = 0; i < 5; i++) begin
+		inDEMUX1 =	1'b0 ;
+		#CLK_PERIOD ;	
+	end
+
+	inData			=	4'b000	;
+	inReadEnable	=	1'b0	;
+	inDEMUX1		=	1'b1	; // ReadEnable
+	inDEMUX2		=	1'b0	; // WriteEnable
+	inDEMUX17		=	4'b0	; 
+	inDEMUX18		=	4'b0	;
+
+	for(int i = 0; i < 5; i++) begin
+		inDEMUX1 =	1'b0 ;
+		#CLK_PERIOD ;	
+	end
+
+	inData			=	4'b000	;
+	inReadEnable	=	1'b0	;
+	inDEMUX1		=	1'b1	; // ReadEnable
+	inDEMUX2		=	1'b0	; // WriteEnable
+	inDEMUX17		=	4'b0	; 
+	inDEMUX18		=	4'b0	;
+
+	for(int i = 0; i < 5; i++) begin
+		inDEMUX1 =	1'b0 ;
+		#CLK_PERIOD ;	
+	end
+
+	inData			=	4'b000	;
+	inReadEnable	=	1'b0	;
+	inDEMUX1		=	1'b1	; // ReadEnable
+	inDEMUX2		=	1'b0	; // WriteEnable
+	inDEMUX17		=	4'b0	; 
+	inDEMUX18		=	4'b0	;
+
+	for(int i = 0; i < 5; i++) begin
+		inDEMUX1 =	1'b0 ;
+		#CLK_PERIOD ;	
+	end
+
+	inData			=	4'b000	;
+	inReadEnable	=	1'b0	;
+	inDEMUX1		=	1'b1	; // ReadEnable
+	inDEMUX2		=	1'b0	; // WriteEnable
+	inDEMUX17		=	4'b0	; 
+	inDEMUX18		=	4'b0	;
+
 end
 //////////////////////////////////////////////////////////////////////////////////
+
 
 //////////////////////////////////////////////////////////////////////////////////
 //  TOP
