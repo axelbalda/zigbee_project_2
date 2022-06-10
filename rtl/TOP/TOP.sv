@@ -80,23 +80,7 @@ wire 	[1:0]	sig_MUX_inMUX4				;
 wire 	[1:0]	sig_MUX_inMUX5				;  	
 wire 	[15:0]	sig_MUX_inMUX6				;  
 wire 	[15:0]	sig_MUX_inMUX7				;  	
-wire 	[1:0]	sig_MUX_inMUX8				;  	
-wire 	[15:0]	sig_MUX_inMUX9				;  	
-wire 	[15:0]	sig_MUX_inMUX10				; 	
-wire 	[1:0]	sig_MUX_inMUX11				; 	
-wire 	[1:0]	sig_MUX_inMUX12				;  
-wire 	[1:0]	sig_MUX_inMUX13				; 
-wire 	[1:0]	sig_MUX_inMUX14				; 	
-wire 	[7:0]	sig_MUX_inMUX15				;  	
-wire 	[7:0]	sig_MUX_inMUX16				;	 	
-
-
-wire	[1:0]	sig_MUX_inMUX3				;  	
-wire 	[1:0]	sig_MUX_inMUX4				;  
-wire 	[1:0]	sig_MUX_inMUX5				;  	
-wire 	[15:0]	sig_MUX_inMUX6				;  
-wire 	[15:0]	sig_MUX_inMUX7				;  	
-wire 	[2:0]	sig_MUX_inMUX8				;  	
+wire 	[3:0]	sig_MUX_inMUX8				;  	
 wire 	[15:0]	sig_MUX_inMUX9				;  	
 wire 	[15:0]	sig_MUX_inMUX10				; 	
 wire 	[1:0]	sig_MUX_inMUX11				; 	
