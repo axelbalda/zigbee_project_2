@@ -75,7 +75,6 @@ wire	[7:0]	sig_DEMUX_outDEMUX2			;
 wire 	[7:0]	sig_DEMUX_outDEMUX17		;
 wire	[7:0]	sig_DEMUX_outDEMUX18		;
 
-/*
 wire	[1:0]	sig_MUX_inMUX3				;  	
 wire 	[1:0]	sig_MUX_inMUX4				;  
 wire 	[1:0]	sig_MUX_inMUX5				;  	
@@ -90,7 +89,7 @@ wire 	[1:0]	sig_MUX_inMUX13				;
 wire 	[1:0]	sig_MUX_inMUX14				; 	
 wire 	[7:0]	sig_MUX_inMUX15				;  	
 wire 	[7:0]	sig_MUX_inMUX16				;	 	
-*/
+
 
 wire	[1:0]	sig_MUX_inMUX3				;  	
 wire 	[1:0]	sig_MUX_inMUX4				;  
@@ -160,7 +159,6 @@ msk_modulator u_coder (
 );
 //////////////////////////////////////////////////////////////////////////////////
 
-/*
 //////////////////////////////////////////////////////////////////////////////////
 //  DECODER instance
 //////////////////////////////////////////////////////////////////////////////////
@@ -228,7 +226,6 @@ outFIFO u_outFIFO (
     	.outData			(sig_outFIFO_outData		)	
 ) ;
 //////////////////////////////////////////////////////////////////////////////////	   
-*/
 
 //////////////////////////////////////////////////////////////////////////////////
 //  TEST instances
@@ -268,7 +265,6 @@ MUX211 u_mux5 (
 );
 
 
-/*
 MUX414 u_mux9 (
 	.inData			(sig_MUX_inMUX9			), 
 	.inSel			(in_MUX_inSEL9			),
@@ -344,7 +340,6 @@ MUX211 u_mux13 (
 	.inSel			(in_MUX_inSEL12			),
 	.outData		(sig_MUX_outMUX13		)
 );
-*/
 
 MUX411 u_mux15 (
 	.inData			(sig_MUX_inMUX15		), 
