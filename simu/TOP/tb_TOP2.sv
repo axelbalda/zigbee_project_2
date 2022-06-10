@@ -392,6 +392,83 @@ initial begin : DATA
 		#CLK_PERIOD ;	
 	end
 
+
+
+
+
+	/////////////////////////////
+	// DECODER Stand Alone
+	/////////////////////////////
+	inSEL1			=	3'b0	;
+	inSEL2			=	3'b0	;
+	inSEL3			=	1'b0	;
+	inSEL6			=	2'b0	;
+	inSEL9			=	2'b10	;
+	inSEL11			=	1'b0	;
+	inSEL12			=	1'b0	;
+	inSEL15			=	2'b1	;
+	inSEL17			=	1'b0	;	
+
+	for(int i = 0; i < 5; i++) begin
+		inDEMUX1		=	1'b0	; // inEOC
+		inDEMUX17		=	4'b0	; // I
+		inDEMUX18		=	4'b0	; // Q
+		inReset  =  1'b0 ;
+		#CLK_PERIOD ;	
+	end
+	inReset = 1'b1 ;
+
+	inDEMUX1		=	1'b1	; // inEOC
+	inDEMUX17		=	4'b1010	; // I
+	inDEMUX18		=	4'b0101	; // Q
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b0	; // inEOC
+	inDEMUX17		=	4'b1010	; // I
+	inDEMUX18		=	4'b0101	; // Q
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b1	; // inEOC
+	inDEMUX17		=	4'b1110	; // I
+	inDEMUX18		=	4'b1010	; // Q
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b0	; // inEOC
+	inDEMUX17		=	4'b1110	; // I
+	inDEMUX18		=	4'b1010	; // Q
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b1	; // inEOC
+	inDEMUX17		=	4'b0010	; // I
+	inDEMUX18		=	4'b1001	; // Q
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+
+
+	/////////////////////////////
+	// CORDIC Stand Alone
+	/////////////////////////////
+	inSEL1			=	3'b0	;
+	inSEL2			=	3'b010	;
+	inSEL3			=	1'b0	;
+	inSEL6			=	2'b11	;
+	inSEL9			=	2'b0	;
+	inSEL11			=	1'b0	;
+	inSEL12			=	1'b0	;
+	inSEL15			=	2'b10	;
+	inSEL17			=	1'b1	;	
+
+
 end
 //////////////////////////////////////////////////////////////////////////////////
 
