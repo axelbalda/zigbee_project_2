@@ -83,12 +83,14 @@ always #10 	inClock = ~inClock ;
 //  RESET
 //////////////////////////////////////////////////////////////////////////////////
 initial begin : RESET
-	#CLK_PERIOD ;	
+
 	for(int i = 0; i < 5; i++) begin
 		inReset = 1'b0 ;
 		#CLK_PERIOD ;	
 	end
+
 	inReset = 1'b1 ;
+	
 end
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -113,7 +115,7 @@ TOP u_top (
 	.in_outFIFO_inReadEnable	(inReadEnable	) , 
 
 	.in_DEMUX_inDEMUX1			(inDEMUX1		) ,
-	.in_DEMUX_inDEMUX2			(inDEMUX2		),
+	.in_DEMUX_inDEMUX2			(inDEMUX2		) ,
 	.in_DEMUX_inDEMUX17			(inDEMUX17		) ,   
 	.in_DEMUX_inDEMUX18			(inDEMUX18		) ,   
 
