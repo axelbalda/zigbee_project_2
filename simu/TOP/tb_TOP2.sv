@@ -460,20 +460,74 @@ initial begin : DATA
 		#CLK_PERIOD ;	
 	end
 
-/*
+
 	/////////////////////////////
 	// CORDIC Stand Alone
 	/////////////////////////////
-	inSEL1			=	3'b0	;
+	inSEL1			=	3'b111	;
 	inSEL2			=	3'b010	;
-	inSEL3			=	1'b0	;
+	inSEL3			=	1'b1	;
 	inSEL6			=	2'b11	;
 	inSEL9			=	2'b0	;
-	inSEL11			=	1'b0	;
-	inSEL12			=	1'b0	;
+	inSEL11			=	1'b1	;
+	inSEL12			=	1'b1	;
 	inSEL15			=	2'b10	;
 	inSEL17			=	1'b1	;	
-*/
+
+	for(int i = 0; i < 5; i++) begin
+		inDEMUX1		=	1'b0	; // xxx
+		inDEMUX2		=	1'b0	; // cordic_inEnable
+		inDEMUX17		=	4'b0	; // cordic_I
+		inDEMUX18		=	4'b0	; // cordic_Q
+		inReset  =  1'b0 ;
+		#CLK_PERIOD ;	
+	end
+	inReset = 1'b1 ;
+
+	inDEMUX2		=	1'b1	; // cordic_inEnable
+	inDEMUX17		=	4'b1101	; // cordic_I
+	inDEMUX18		=	4'b1100	; // cordic_Q
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX2		=	1'b0	; // cordic_inEnable
+	inDEMUX17		=	4'b1101	; // cordic_I
+	inDEMUX18		=	4'b1100	; // cordic_Q
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX2		=	1'b1	; // cordic_inEnable
+	inDEMUX17		=	4'b0011	; // cordic_I
+	inDEMUX18		=	4'b0110	; // cordic_Q
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX2		=	1'b0	; // cordic_inEnable
+	inDEMUX17		=	4'b0011	; // cordic_I
+	inDEMUX18		=	4'b0110	; // cordic_Q
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX2		=	1'b1	; // cordic_inEnable
+	inDEMUX17		=	4'b1011	; // cordic_I
+	inDEMUX18		=	4'b1011	; // cordic_Q
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX2		=	1'b0	; // cordic_inEnable
+	inDEMUX17		=	4'b1011	; // cordic_I
+	inDEMUX18		=	4'b1011	; // cordic_Q
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+
+	
 
 end
 //////////////////////////////////////////////////////////////////////////////////
