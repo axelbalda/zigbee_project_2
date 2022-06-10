@@ -363,17 +363,20 @@ MUX411 u_mux16 (
 assign sig_MUX_inMUX3  = { sig_DEMUX_outDEMUX1[2]	, sig_coder_outReady															} ;
 assign sig_MUX_inMUX4  = { sig_DEMUX_outDEMUX1[1]	, sig_inFIFO_outData															} ;
 assign sig_MUX_inMUX5  = { sig_DEMUX_outDEMUX2[1]	, sig_inFIFO_outEmpty															} ;
-assign sig_MUX_inMUX6  = { sig_decod_outI			, sig_coder_outSinIMasked	, sig_DEMUX_outDEMUX17[1]	, 4'bz					} ;
-assign sig_MUX_inMUX7  = { sig_decod_outQ			, sig_coder_outSinQMasked	, sig_DEMUX_outDEMUX18[1]	, 4'bz					} ;
-assign sig_MUX_inMUX8  = { sig_decod_outEOC			, 2'bz						, sig_DEMUX_outDEMUX2[2]							} ;
-assign sig_MUX_inMUX9  = { sig_coder_outSinI		, sig_coder_outSinIMasked	, sig_MUX_outMUX6			, sig_outFIFO_outData	} ;
-assign sig_MUX_inMUX10 = { sig_coder_outSinQ		, sig_coder_outSinQMasked	, sig_MUX_outMUX7			, 4'bz					} ;
-assign sig_MUX_inMUX11 = { sig_cordic_outEnable		, sig_DEMUX_outDEMUX1[3]														} ;
-assign sig_MUX_inMUX12 = { sig_cdr_outFlag			, sig_DEMUX_outDEMUX1[4]														} ; 
-assign sig_MUX_inMUX13 = { sig_cdr_outData			, sig_DEMUX_outDEMUX2[4]														} ; 
-assign sig_MUX_inMUX14 = { sig_cordic_outDirection	, sig_DEMUX_outDEMUX2[3]														} ; 
-assign sig_MUX_inMUX15 = { sig_inFIFO_outEmpty		, sig_decod_outEOC			, sig_cordic_outDirection	, sig_cdr_outData		} ;
-assign sig_MUX_inMUX16 = { sig_inFIFO_outData		, sig_coder_outReady		, sig_cordic_outEnable		, sig_cdr_outFlag		} ;
+assign sig_MUX_inMUX6  = { 4'bz						, sig_DEMUX_outDEMUX17[1]	, sig_coder_outSinIMasked	, sig_decod_outI		} ;
+assign sig_MUX_inMUX7  = { 4'bz						, sig_DEMUX_outDEMUX18[1]	, sig_coder_outSinQMasked	, sig_decod_outQ		} ;
+assign sig_MUX_inMUX8  = { sig_DEMUX_outDEMUX2[2]	, 1'bz						, 1'bz						, sig_decod_outEOC		} ;
+assign sig_MUX_inMUX9  = { sig_outFIFO_outData		, sig_MUX_outMUX6			, sig_coder_outSinIMasked	, sig_coder_outSinI		} ;
+assign sig_MUX_inMUX10 = { 4'bz						, sig_MUX_outMUX7			, sig_coder_outSinQMasked	, sig_coder_outSinQ		} ;
+assign sig_MUX_inMUX11 = { sig_DEMUX_outDEMUX1[3]	, sig_cordic_outEnable															} ;
+assign sig_MUX_inMUX12 = { sig_DEMUX_outDEMUX1[4]	, sig_cdr_outFlag																} ; 
+assign sig_MUX_inMUX13 = { sig_DEMUX_outDEMUX2[4]	, sig_cdr_outData			 													} ; 
+assign sig_MUX_inMUX14 = { sig_DEMUX_outDEMUX2[3]	, sig_cordic_outDirection														} ; 
+assign sig_MUX_inMUX15 = { sig_cdr_outData			, sig_cordic_outDirection	, sig_decod_outEOC			, sig_inFIFO_outEmpty	} ;
+assign sig_MUX_inMUX16 = { sig_cdr_outFlag			, sig_cordic_outEnable		, sig_coder_outReady		, sig_inFIFO_outData	} ;
+
+
+
 
 
 assign sig_inFIFO_inWriteEnable		= sig_DEMUX_outDEMUX2[0]	;
