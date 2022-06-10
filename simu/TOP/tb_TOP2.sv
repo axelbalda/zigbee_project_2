@@ -475,7 +475,7 @@ initial begin : DATA
 	inSEL15			=	2'b10	;
 	inSEL17			=	1'b1	;	
 
-	for(int i = 0; i < 5; i++) begin
+	for(int i = 0; i < 50; i++) begin
 		inDEMUX1		=	1'b0	; // xxx
 		inDEMUX2		=	1'b0	; // cordic_inEnable
 		inDEMUX17		=	4'b0	; // cordic_I
