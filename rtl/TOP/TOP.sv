@@ -11,10 +11,8 @@ module TOP(
 	input 	[3:0]	in_DEMUX_inDEMUX18		,
 	
 	input	[2:0]	in_DEMUX_inSEL1			,
-	/*
 	input	[2:0]	in_DEMUX_inSEL2			,
 	input 			in_MUX_inSEL3			,
-	*/
 	input 	[1:0]	in_MUX_inSEL6			,
 	input 	[1:0]	in_MUX_inSEL9			,
 	input 			in_MUX_inSEL11			,
@@ -94,9 +92,9 @@ wire 	[7:0]	sig_MUX_inMUX15				;
 wire 	[7:0]	sig_MUX_inMUX16				;	 	
 */
 
-wire	[0:7]	sig_MUX_inMUX3				;  	
-wire 	[0:7]	sig_MUX_inMUX4				;  
-wire 	[0:7]	sig_MUX_inMUX5				;  	
+wire	[0:1]	sig_MUX_inMUX3				;  	
+wire 	[0:1]	sig_MUX_inMUX4				;  
+wire 	[0:1]	sig_MUX_inMUX5				;  	
 wire 	[0:15]	sig_MUX_inMUX6				;  
 wire 	[0:15]	sig_MUX_inMUX7				;  	
 wire 	[0:3]	sig_MUX_inMUX8				;  	
@@ -241,7 +239,7 @@ DEMUX181 u_demux1 (
 	.outData		(sig_DEMUX_outDEMUX1		)
 );
 
-/*
+
 DEMUX181 u_demux2 (
 	.inData			(in_DEMUX_inDEMUX2		), 
 	.inSel			(in_DEMUX_inSEL2		),
@@ -268,34 +266,7 @@ MUX211 u_mux5 (
 	.inSel			(in_MUX_inSEL3			),
 	.outData		(sig_MUX_outMUX5		)
 );
-*/
 
-DEMUX181 u_demux2 (
-	.inData			(in_DEMUX_inDEMUX2		), 
-	.inSel			(in_DEMUX_inSEL1		),
-	.outData		(sig_DEMUX_outDEMUX2	)
-);
-
-
-MUX811 u_mux3 (
-	.inData			(sig_MUX_inMUX3			), 
-	.inSel			(in_MUX_inSEL1			),
-	.outData		(sig_MUX_outMUX3		)
-);
-
-
-MUX811 u_mux4 (
-	.inData			(sig_MUX_inMUX4			), 
-	.inSel			(in_MUX_inSEL1			),
-	.outData		(sig_MUX_outMUX4		)
-);
-
-
-MUX811 u_mux5 (
-	.inData			(sig_MUX_inMUX5			), 
-	.inSel			(in_MUX_inSEL1			),
-	.outData		(sig_MUX_outMUX5		)
-);
 
 
 MUX414 u_mux9 (

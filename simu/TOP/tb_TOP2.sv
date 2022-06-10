@@ -34,6 +34,8 @@ reg		 		inDEMUX1		;
 reg 			inDEMUX2		;
 reg 	[3:0]	inDEMUX17		;
 reg 	[3:0]	inDEMUX18		;
+
+
 reg		[2:0]	inSEL1			;
 /*
 reg		[2:0]	inSEL2			;
@@ -45,6 +47,8 @@ reg 			inSEL11			;
 reg 			inSEL12			;
 reg 	[2:0]	inSEL15			;
 reg 			inSEL17			;
+
+
 reg 	[3:0]	outMUX9			;
 reg 	[3:0]	outMUX10		;
 reg 			outMUX15		;
@@ -60,6 +64,8 @@ initial begin : init
 	inDEMUX2		=	1'b1	;
 	inDEMUX17		=	4'b1101	;
 	inDEMUX18		=	4'b1101	;
+
+
 	inSEL1			=	3'b0	;
 	/*
 	inSEL2			=	3'b0	;
