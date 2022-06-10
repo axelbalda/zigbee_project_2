@@ -146,6 +146,7 @@ initial begin : DATA
 	for(int i = 0; i < 5; i++) begin
 		inReset  =  1'b0 ;
 		inDEMUX2 =	1'b0 ;
+		inDEMUX2 =	1'b0 ; // WriteEnable
 		#CLK_PERIOD ;	
 	end
 
