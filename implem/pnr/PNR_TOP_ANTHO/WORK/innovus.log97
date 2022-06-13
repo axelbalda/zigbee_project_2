@@ -1682,3 +1682,13 @@ WARNING   IMPTCM-77           10  Option "%s" for command %s is obsolete a...
 <CMD> pan -608.166 2432.663
 <CMD> pan -173.708 -874.531
 <CMD> pan -222.528 -75.178
+
+Usage: source [-help] <file_name> [-quiet  | -verbose ] [-quiet  | -echo ]
+
+**ERROR: (IMPTCM-46):	Argument "file_name" is required for command "source", either this option is not specified or an option prior to it is not specified correctly.
+  
+
+*** Memory Usage v#1 (Current mem = 1292.781M, initial mem = 184.402M) ***
+*** Message Summary: 2202 warning(s), 26 error(s)
+
+--- Ending "Innovus" (totcpu=0:30:02, real=6:16:26, mem=1292.8M) ---
