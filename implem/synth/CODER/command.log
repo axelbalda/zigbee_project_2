@@ -1,7 +1,7 @@
 #@ # 
 #@ # Running dc_shell Version J-2014.09-SP2 for amd64 -- Nov 25, 2014
-#@ # Date:   Thu Jun  2 15:28:47 2022
-#@ # Run by: xph2app1@cimeld105
+#@ # Date:   Thu Jun  9 15:52:13 2022
+#@ # Run by: xph2app1@cimeld40.cime.inpg.fr
 #@ 
 
 source /softslin/synthesisvJ2014_09_sp2_64b/admin/setup/.synopsys_dc.setup
@@ -4002,37 +4002,6 @@ source script_synopsys_synth
 #@ elaborate msk_modulator -architecture verilog -library WORK
 #@ 
 #@ create_clock -name "clk" -period 20 -waveform { 0 10  }  { clk  }
-#@ set_operating_conditions -library c35_CORELIB_TYP TYP
-#@ 
-#@ compile -exact_map -ungroup_all -auto_ungroup area
-#@ 
-#@ #Loading db file '/softslin/synthesisvJ2014_09_sp2_64b/libraries/syn/generic.sdb'
-#@ 
-#@ 
-#@ 
-#@ 
-#@ 
-#@ set name_netlist "msk_modulator_netlist_fe3.v"
-#@ set name_sdc "msk_modulator_fe3.sdc"
-#@ 
-#@ write -hierarchy -format verilog -output /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/synth/CODER/$name_netlist
-#@ write_sdc $name_sdc
-#@ 
-#@ 
-#@ uplevel #0 { report_area }
-#@ uplevel #0 { report_clock -attribute }
-#@ # -- End source script_synopsys_synth
-
-source script_synopsys_synth
-#@ # -- Starting source script_synopsys_synth
-
-#@ 
-#@ set var_file_to_open "/tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/rtl/CODER/msk_modulator2.sv"
-#@ 
-#@ analyze -library WORK -format sverilog $var_file_to_open
-#@ elaborate msk_modulator -architecture verilog -library WORK
-#@ 
-#@ create_clock -name "clk" -period 20 -waveform { 0 10  }  { clk  }
 #@ set_operating_conditions -library c35_CORELIB_TYP TYPICAL
 #@ 
 #@ compile -exact_map -ungroup_all -auto_ungroup area
@@ -4054,5 +4023,3 @@ source script_synopsys_synth
 #@ uplevel #0 { report_clock -attribute }
 #@ # -- End source script_synopsys_synth
 
-uplevel #0 { report_timing -path full -delay max -nworst 1 -max_paths 1 -significant_digits 2 -sort_by group }
-exit

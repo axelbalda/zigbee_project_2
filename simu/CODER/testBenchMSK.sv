@@ -17,15 +17,16 @@ module msk_modulator_bench;
 			
 			// values for a and b
 			reset = 1'b1;
-			i_empty = 1;
+			i_empty = 1'bz;
 			#period;
 			reset = 1'b0 ;
 			#(period*25); // wait for period 
 			reset = 1'b1 ;
+			//i_empty = 0;
+			i_data = 1'bz;
+			#(period*250);
+			
 			i_empty = 0;
-			i_data = 0;
-			#(period*25);
-
 			i_data = 0;
 			#(period*25);
 
@@ -46,9 +47,11 @@ module msk_modulator_bench;
 
 			i_data = 1;
 			#(period*25);
+			reset = 1'b0 ;
 
 			i_data = 0;
 			#(period*25);
+			reset = 1'b1 ;
 			
 			i_data = 0;
 			#(period*25);
@@ -65,6 +68,7 @@ module msk_modulator_bench;
 			i_data = 1;
 			#(period*25);
 			
+			
 			i_data = 0;
 			#(period*25);
 
@@ -91,9 +95,33 @@ module msk_modulator_bench;
 
 			i_data = 0;
 			#(period*25);
-
+			//reset = 1'b0 ;
 			i_empty = 1;
-			#(period*425);
+
+			#(period*25);
+			//reset = 1'b1;
+			#(period*225);
+
+			i_data = 1;
+			#(period*25);
+			
+			
+			i_data = 0;
+			#(period*25);
+
+			i_data = 1;
+			#(period*25);
+
+			i_data = 0;
+			#(period*25);
+			
+			i_data = 0;
+			#(period*25);
+
+			i_data = 0;
+			#(period*25);
+			
+			#(period*225);
 			i_empty = 0;
 			i_data = 0;
 			#(period*25);

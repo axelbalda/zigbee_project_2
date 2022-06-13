@@ -57,3 +57,4 @@ DEFINE avTech /softslin/cdsassura4_13_102_615/tools/assura/etc/avtech/avTech
 DEFINE drc_test_lib /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project/implem/CDS/drc_test_lib
 DEFINE test_drc /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project/implem/CDS/test_drc
 DEFINE test_drc /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/CDS/test_drc
+DEFINE test_drc_top /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/CDS/test_drc_top

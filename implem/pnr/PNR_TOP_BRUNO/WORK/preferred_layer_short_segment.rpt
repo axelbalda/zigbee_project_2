@@ -1,0 +1,10 @@
+net_name	    number_of_short_segment
+
+t_op/u_decoder\/fir_filter\/n721 20
+t_op/u_outFIFO\/n547 15
+t_op/u_outFIFO\/n407 14
+t_op/u_outFIFO\/n480 13
+t_op/u_outFIFO\/n545 12
+t_op/u_outFIFO\/n478 12
+t_op/u_outFIFO\/n411 12
+t_op/u_outFIFO\/n320 11
