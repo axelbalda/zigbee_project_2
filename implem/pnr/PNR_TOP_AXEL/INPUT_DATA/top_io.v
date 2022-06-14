@@ -99,21 +99,21 @@ TOP t_op (
 	ITP io_DEMUX_inSEL2_1 	( .PAD(in_DEMUX_inSEL2[1]), .Y(in_DEMUX_inSEL2_P[1]) );		//
 	ITP io_DEMUX_inSEL2_0 	( .PAD(in_DEMUX_inSEL2[0]), .Y(in_DEMUX_inSEL2_P[0]) );		//
 
-	ITP io_MUX_inSEL6_1 		( .PAD(in_MUX_inSEL6[1]), .Y(in_MUX_inSEL6_P[1]) );	//
-	ITP io_MUX_inSEL6_0 		( .PAD(in_MUX_inSEL6[0]), .Y(in_MUX_inSEL6_P[0]) );	//
+	ITP io_MUX_inSEL6_1 	( .PAD(in_MUX_inSEL6[1]), .Y(in_MUX_inSEL6_P[1]) );	//
+	ITP io_MUX_inSEL6_0 	( .PAD(in_MUX_inSEL6[0]), .Y(in_MUX_inSEL6_P[0]) );	//
 
-	ITP io_MUX_inSEL9_1 		( .PAD(in_MUX_inSEL9[1]), .Y(in_MUX_inSEL9_P[1]) );	//
-	ITP io_MUX_inSEL9_0 		( .PAD(in_MUX_inSEL9[0]), .Y(in_MUX_inSEL9_P[0]) );	//
+	ITP io_MUX_inSEL9_1 	( .PAD(in_MUX_inSEL9[1]), .Y(in_MUX_inSEL9_P[1]) );	//
+	ITP io_MUX_inSEL9_0 	( .PAD(in_MUX_inSEL9[0]), .Y(in_MUX_inSEL9_P[0]) );	//
 
-	ITP io_DEMUX_inSEL15_2 	( .PAD(in_DEMUX_inSEL15[2]), .Y(in_DEMUX_inSEL15_P[2]) );	//
-	ITP io_DEMUX_inSEL15_1 	( .PAD(in_DEMUX_inSEL15[1]), .Y(in_DEMUX_inSEL15_P[1]) );	//
-	ITP io_DEMUX_inSEL15_0 	( .PAD(in_DEMUX_inSEL15[0]), .Y(in_DEMUX_inSEL15_P[0]) );	//
+	ITP io_MUX_inSEL15_2 	( .PAD(in_MUX_inSEL15[2]), .Y(in_MUX_inSEL15_P[2]) );	//
+	ITP io_MUX_inSEL15_1 	( .PAD(in_MUX_inSEL15[1]), .Y(in_MUX_inSEL15_P[1]) );	//
+	ITP io_MUX_inSEL15_0 	( .PAD(in_MUX_inSEL15[0]), .Y(in_MUX_inSEL15_P[0]) );	//
 
 	ITP io_inClock 			( .PAD(inClock), .Y(inClock_P) );					//ok
 
 	ITP io_inReset 			( .PAD(inReset), .Y(inReset_P) );					//ok
 		
-	ITP io_outFIFO_inReadEnable 	( .PAD(outFIFO_inReadEnable), .Y(outFIFO_inReadEnable_P) );		//
+	ITP io_outFIFO_inReadEnable 	( .PAD(in_outFIFO_inReadEnable), .Y(in_outFIFO_inReadEnable_P) );		//
 
 	ITP io_DEMUX_inDEMUX1 	( .PAD(in_DEMUX_inDEMUX1), .Y(in_DEMUX_inDEMUX1_P) );		//
 		

@@ -38,9 +38,9 @@ Pad:	io_MUX_inSEL9_1			S
 Pad:	GND2				S GND3ALLP
 Pad:	io_MUX_inSEL9_0			S
 Pad:	PWR2				S VDD3ALLP
-Pad:	io_DEMUX_inSEL15_2		S 
-Pad:	io_DEMUX_inSEL15_1		S
-Pad:	io_DEMUX_inSEL15_0		S
+Pad:	io_MUX_inSEL15_2		S 
+Pad:	io_MUX_inSEL15_1		S
+Pad:	io_MUX_inSEL15_0		S
 Pad:	io_DEMUX_inDEMUX1		S 
 Pad:	io_DEMUX_inDEMUX2		S 
 Pad:	io_MUX_inSEL11			S
