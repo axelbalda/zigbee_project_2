@@ -30,16 +30,16 @@ always_comb begin : MUX
 	case(inSel) 
 
 		2'b00   : begin
-			s_qout <= {3'bz, inData};
+			s_qout <= {3'b0, inData};
 		end		
 		2'b01   : begin
-			s_qout <= {2'bzz, inData, 1'bz};
+			s_qout <= {2'b0, inData, 1'b0};
 		end
 		2'b10   : begin
-			s_qout <= {1'bz, inData, 2'bz};
+			s_qout <= {1'b0, inData, 2'b0};
 		end
 		2'b11   : begin
-			s_qout <= {inData, 3'bz};
+			s_qout <= {inData, 3'b0};
 		end
 
 	endcase
