@@ -47,11 +47,8 @@ add wave -noupdate -color {Medium Violet Red} -format Analog-Step -height 84 -ma
 add wave -noupdate -color {Medium Violet Red} /tb_TOP2/u_top/u_decoder/o_postfilter_ready
 add wave -noupdate -divider CORDIC
 add wave -noupdate -color {Medium Slate Blue} /tb_TOP2/u_top/u_cordic/i_enable_in
-add wave -noupdate /tb_TOP2/u_top/in_DEMUX_inDEMUX17
-add wave -noupdate /tb_TOP2/u_top/in_DEMUX_inDEMUX18
-add wave -noupdate -color {Medium Slate Blue} -radix binary /tb_TOP2/u_top/u_cordic/i_I
-add wave -noupdate -color {Medium Slate Blue} -radix binary /tb_TOP2/u_top/u_cordic/i_Q
-add wave -noupdate /tb_TOP2/u_top/u_cordic/present_state
+add wave -noupdate -color {Medium Slate Blue} -radix hexadecimal /tb_TOP2/u_top/u_cordic/i_I
+add wave -noupdate -color {Medium Slate Blue} -radix hexadecimal /tb_TOP2/u_top/u_cordic/i_Q
 add wave -noupdate -color {Medium Slate Blue} /tb_TOP2/u_top/u_cordic/o_dir
 add wave -noupdate -color {Medium Slate Blue} /tb_TOP2/u_top/u_cordic/o_enable_out
 add wave -noupdate -divider CDR
@@ -102,7 +99,7 @@ add wave -noupdate /tb_TOP2/u_top/u_mux7/s_data1
 add wave -noupdate /tb_TOP2/u_top/u_mux7/s_data2
 add wave -noupdate /tb_TOP2/u_top/u_mux7/s_data3
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {17075646 ps} 0}
+WaveRestoreCursors {{Cursor 1} {20380000 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 192
 configure wave -valuecolwidth 100
@@ -118,4 +115,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {12173638 ps} {25675072 ps}
+WaveRestoreZoom {0 ps} {26250 ns}

@@ -1,6 +1,6 @@
-vdel -lib $HOME/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project_2/libs/LibTOP -all
+vdel -lib ~/zigbee_project_2/libs/LibTOP -all #$HOME/Documents/PROJET_ZIGBEE_2A_MT_2022
 vlib ../../libs/LibTOP
-vmap Lib_TOP $HOME/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project_2/libs/LibTOP
+vmap Lib_TOP ~/zigbee_project_2/libs/LibTOP #$HOME/Documents/PROJET_ZIGBEE_2A_MT_2022
 
 
 vlog +acc -work Lib_TOP ../../rtl/EI/DFF.sv
