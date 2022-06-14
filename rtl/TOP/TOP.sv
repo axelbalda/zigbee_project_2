@@ -17,7 +17,7 @@ module TOP(
 	input 	[1:0]	in_MUX_inSEL9			,
 	input 			in_MUX_inSEL11			,
 	input 			in_MUX_inSEL12			,
-	input 	[2:0]	in_MUX_inSEL15			, 
+	input 	[1:0]	in_MUX_inSEL15			, 
 	input 			in_DEMUX_inSEL17		, 
 
 	output 	[3:0]	out_MUX_outMUX9			,	
@@ -87,7 +87,7 @@ wire 	[1:0]	sig_MUX_inMUX11				;
 wire 	[1:0]	sig_MUX_inMUX12				;  
 wire 	[1:0]	sig_MUX_inMUX13				; 
 wire 	[1:0]	sig_MUX_inMUX14				; 	
-wire 	[1:0]	sig_MUX_inMUX15				;  	
+wire 	[3:0]	sig_MUX_inMUX15				;  	
 wire 	[7:0]	sig_MUX_inMUX16				;
 
 wire 			sig_MUX_outMUX3				;	
