@@ -39,31 +39,26 @@ add wave -noupdate /tb_TOP2/u_top/u_coder/o_sinQ
 add wave -noupdate /tb_TOP2/u_top/u_coder/o_sinI_four
 add wave -noupdate /tb_TOP2/u_top/u_coder/o_sinQ_four
 add wave -noupdate -divider DECODER
-add wave -noupdate /tb_TOP2/u_top/u_decoder/i_adc_eoc
-add wave -noupdate /tb_TOP2/u_top/u_decoder/i_I_if
-add wave -noupdate /tb_TOP2/u_top/u_decoder/i_Q_if
-add wave -noupdate /tb_TOP2/u_top/u_decoder/o_I_BB
-add wave -noupdate /tb_TOP2/u_top/u_decoder/o_Q_BB
-add wave -noupdate /tb_TOP2/u_top/u_decoder/o_postfilter_ready
 add wave -noupdate -divider CORDIC
-add wave -noupdate /tb_TOP2/u_top/u_cordic/i_enable_in
-add wave -noupdate /tb_TOP2/u_top/u_cordic/i_I
-add wave -noupdate /tb_TOP2/u_top/u_cordic/i_Q
-add wave -noupdate /tb_TOP2/u_top/u_cordic/o_dir
-add wave -noupdate /tb_TOP2/u_top/u_cordic/o_enable_out
 add wave -noupdate -divider CDR
-add wave -noupdate /tb_TOP2/u_top/u_cdr/i_dir
-add wave -noupdate /tb_TOP2/u_top/u_cdr/i_flag
-add wave -noupdate /tb_TOP2/u_top/u_cdr/o_data
-add wave -noupdate /tb_TOP2/u_top/u_cdr/o_flag
 add wave -noupdate -divider outFIFO
-add wave -noupdate /tb_TOP2/u_top/u_outFIFO/inData
-add wave -noupdate /tb_TOP2/u_top/u_outFIFO/inWriteEnable
-add wave -noupdate /tb_TOP2/u_top/u_outFIFO/FIFO
-add wave -noupdate /tb_TOP2/u_top/u_outFIFO/inReadEnable
-add wave -noupdate /tb_TOP2/u_top/u_outFIFO/outData
+add wave -noupdate -divider MUX3
+add wave -noupdate /tb_TOP2/u_top/u_mux3/s_qout
+add wave -noupdate /tb_TOP2/u_top/u_mux3/outData
+add wave -noupdate /tb_TOP2/u_top/u_mux3/inSel
+add wave -noupdate -radix binary /tb_TOP2/u_top/u_mux3/inData
+add wave -noupdate -divider MUX4
+add wave -noupdate /tb_TOP2/u_top/u_mux4/s_qout
+add wave -noupdate /tb_TOP2/u_top/u_mux4/outData
+add wave -noupdate /tb_TOP2/u_top/u_mux4/inSel
+add wave -noupdate -radix binary /tb_TOP2/u_top/u_mux4/inData
+add wave -noupdate -divider MUX5
+add wave -noupdate /tb_TOP2/u_top/u_mux5/s_qout
+add wave -noupdate /tb_TOP2/u_top/u_mux5/outData
+add wave -noupdate /tb_TOP2/u_top/u_mux5/inSel
+add wave -noupdate -radix binary /tb_TOP2/u_top/u_mux5/inData
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {2286931818 ps} 0}
+WaveRestoreCursors {{Cursor 1} {17 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 192
 configure wave -valuecolwidth 100
@@ -79,4 +74,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {105 ms}
+WaveRestoreZoom {0 ps} {105 ps}
