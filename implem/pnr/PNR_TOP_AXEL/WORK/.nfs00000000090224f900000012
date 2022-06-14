@@ -1889,3 +1889,132 @@ Reclaim Optimization WNS Slack -9.147  TNS Slack -1599.703 Density 85.62
 |    85.62%|        0|  -9.147|-1599.703|   0:00:00.0| 1203.5M|
 |    84.28%|      350|  -9.108|-1593.319|   0:00:02.0| 1205.8M|
 |    84.28%|        3|  -9.108|-1591.683|   0:00:00.0| 1205.8M|
+|    83.46%|      474|  -9.081|-1556.688|   0:00:02.0| 1224.9M|
+|    83.42%|       15|  -9.080|-1551.054|   0:00:01.0| 1224.9M|
+|    83.42%|        2|  -9.080|-1550.963|   0:00:00.0| 1224.9M|
+|    83.41%|        1|  -9.080|-1550.964|   0:00:00.0| 1224.9M|
+|    83.41%|        0|  -9.080|-1550.964|   0:00:00.0| 1224.9M|
+|    83.41%|        0|  -9.080|-1550.964|   0:00:00.0| 1224.9M|
++----------+---------+--------+---------+------------+--------+
+Reclaim Optimization End WNS Slack -9.080  TNS Slack -1550.964 Density 83.41
+**** Begin NDR-Layer Usage Statistics ****
+0 Ndr or Layer constraints added by optimization 
+**** End NDR-Layer Usage Statistics ****
+** Finished Core Area Reclaim Optimization (cpu = 0:00:04.8) (real = 0:00:05.0) **
+*** Starting refinePlace (0:08:31 mem=1224.9M) ***
+Total net bbox length = 1.783e+06 (1.137e+06 6.461e+05) (ext = 3.118e+04)
+Move report: Detail placement moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+	Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 1224.9MB
+Summary Report:
+Instances move: 0 (out of 11860 movable)
+Instances flipped: 0
+Mean displacement: 0.00 um
+Max displacement: 0.00 um 
+Total net bbox length = 1.783e+06 (1.137e+06 6.461e+05) (ext = 3.118e+04)
+Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 1224.9MB
+*** Finished refinePlace (0:08:31 mem=1224.9M) ***
+*** maximum move = 0.00 um ***
+*** Finished re-routing un-routed nets (1224.9M) ***
+
+*** Finish Physical Update (cpu=0:00:00.3 real=0:00:00.0 mem=1224.9M) ***
+*** Finished Area Reclaim Optimization (cpu=0:00:05, real=0:00:05, mem=1072.26M, totSessionCpu=0:08:31).
+[NR-eGR] honorMsvRouteConstraint: false
+[NR-eGR] honorClockSpecNDR      : 0
+[NR-eGR] minRouteLayer          : 1
+[NR-eGR] maxRouteLayer          : 4
+[NR-eGR] numTracksPerClockWire  : 0
+[NR-eGR] Layer1 has single uniform track structure
+[NR-eGR] Layer2 has single uniform track structure
+[NR-eGR] Layer3 has single uniform track structure
+[NR-eGR] Layer4 has single uniform track structure
+[NR-eGR] numRoutingBlks=0 numInstBlks=78533 numPGBlocks=3440 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eGR] numPreroutedNet = 0  numPreroutedWires = 0
+[NR-eGR] Read numTotalNets=12438  numIgnoredNets=0
+[NR-eGR] There are 2 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id 0. Nets 12394 
+[NR-eGR] id=0  ndrTrackId=0  ndrViaId=-1  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[NR-eGR] Pitch:  L1=1300  L2=1400  L3=1300  L4=1400
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 12394 net(s) in layer range [1, 4]
+[NR-eGR] earlyGlobalRoute overflow of layer group 1: 47.03% H + 2.50% V. EstWL: 1.988376e+06um
+[NR-eGR] 
+[NR-eGR] Congestion Analysis Layer By layer: (blocked Gcells are excluded) 
+[NR-eGR]                OverCon         OverCon         OverCon         OverCon            
+[NR-eGR]                 #Gcell          #Gcell          #Gcell          #Gcell     %Gcell
+[NR-eGR] Layer            (1-4)           (5-8)          (9-12)         (13-17)    OverCon 
+[NR-eGR] ---------------------------------------------------------------------------------
+[NR-eGR] Layer1       0( 0.00%)       0( 0.00%)       0( 0.00%)       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer2     492( 3.03%)      26( 0.16%)       0( 0.00%)       0( 0.00%)   ( 3.19%) 
+[NR-eGR] Layer3    1595( 9.28%)    1346( 7.83%)     613( 3.57%)     107( 0.62%)   (21.30%) 
+[NR-eGR] Layer4     271( 1.60%)       4( 0.02%)       0( 0.00%)       0( 0.00%)   ( 1.62%) 
+[NR-eGR] ---------------------------------------------------------------------------------
+[NR-eGR] Total     2358( 4.19%)    1376( 2.44%)     613( 1.09%)     107( 0.19%)   ( 7.91%) 
+[NR-eGR] 
+[NR-eGR] Overflow after earlyGlobalRoute (GR compatible) 20.18% H + 1.83% V
+[NR-eGR] Overflow after earlyGlobalRoute 44.80% H + 3.02% V
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Layer1(MET1)(H) length: 7.827511e+04um, number of vias: 39851
+[NR-eGR] Layer2(MET2)(V) length: 5.450244e+05um, number of vias: 32924
+[NR-eGR] Layer3(MET3)(H) length: 1.172821e+06um, number of vias: 4200
+[NR-eGR] Layer4(MET4)(V) length: 2.655900e+05um, number of vias: 0
+[NR-eGR] Total length: 2.061710e+06um, number of vias: 76975
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total clock nets wire length: 4.922418e+04um 
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] End Peak syMemory usage = 1049.2 MB
+[NR-eGR] Early Global Router Kernel+IO runtime : 0.46 seconds
+Extraction called for design 'top_io' of instances=12122 and nets=12878 using extraction engine 'preRoute' .
+PreRoute RC Extraction called for design top_io.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.1  Real Time: 0:00:00.0  MEM: 1047.199M)
+Compute RC Scale Done ...
+[hotspot] +------------+---------------+---------------+
+[hotspot] |            |   max hotspot | total hotspot |
+[hotspot] +------------+---------------+---------------+
+[hotspot] | normalized |        272.22 |        273.56 |
+[hotspot] +------------+---------------+---------------+
+Local HotSpot Analysis: normalized max congestion hotspot area = 272.22, normalized total congestion hotspot area = 273.56 (area is in unit of 4 std-cell row bins)
+[hotspot] top 1 congestion hotspot bounding boxes and scores of normalized hotspot
+[hotspot] +-----+-------------------------------------+---------------+
+[hotspot] | top |            hotspot bbox             | hotspot score |
+[hotspot] +-----+-------------------------------------+---------------+
+[hotspot] |  1  |   786.80   577.20  1826.80  1825.20 |      273.56   |
+[hotspot] +-----+-------------------------------------+---------------+
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: top_io
+# Design Mode: 250nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=1116.57)
+Total number of fetched objects 14270
+End delay calculation. (MEM=1103.77 CPU=0:00:01.6 REAL=0:00:02.0)
+End delay calculation (fullDC). (MEM=1103.77 CPU=0:00:01.7 REAL=0:00:02.0)
+Begin: GigaOpt postEco DRV Optimization
+Info: 44 io nets excluded
+Info: 2 clock nets excluded from IPO operation.
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+|        max-tran       |        max-cap        |  max-fanout |  max-length |       setup       |        |        |        |       |          |         |
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| nets | terms|  wViol  | nets | terms|  wViol  | nets | terms| nets | terms|   WNS   |   TNS   |  #Buf  |  #Inv  | #Resize|Density|   Real   |   Mem   |
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+|   434|  2124|   -19.81|    94|    94|    -0.30|     0|     0|     0|     0|   -17.47| -3487.93|       0|       0|       0|  83.41|          |         |
+|   194|   533|   -19.81|    46|    46|    -0.30|     0|     0|     0|     0|   -16.86| -2852.03|     115|     194|      88|  84.44|   0:01:28|  1233.5M|
