@@ -11,9 +11,31 @@ setEndCapMode -prefix ENDCAP -leftEdge ENDCAPL -rightEdge ENDCAPR
 addEndCap -prefix ENDCAP
 #addEndCap -preCap ENDCAPL -postCap ENDCAPR -prefix ENDCAP
 
+
+################# Blockages arround stripes
+createPlaceBlockage -type hard -box { { 522.2  421.2 534.8  1760.2 } }
+createPlaceBlockage -type hard -box { { 624.4  421.2 637    1760.2 } }
+createPlaceBlockage -type hard -box { { 728    421.2 740.6  1760.2 } }
+createPlaceBlockage -type hard -box { { 831.6  421.2 844.2  1760.2 } }
+createPlaceBlockage -type hard -box { { 933.8  421.2 946.4  1760.2 } }
+createPlaceBlockage -type hard -box { { 1037.4 421.2 1050   1760.2 } }
+createPlaceBlockage -type hard -box { { 1141   421.2 1153.6 1760.2 } }
+createPlaceBlockage -type hard -box { { 1243.2 421.2 1257   1760.2 } }
+createPlaceBlockage -type hard -box { { 1346.8 421.2 1359.4 1760.2 } }
+createPlaceBlockage -type hard -box { { 1450.4 421.2 1463   1760.2 } }
+createPlaceBlockage -type hard -box { { 1552.6 421.2 1566.6 1760.2 } }
+createPlaceBlockage -type hard -box { { 1656.2 421.2 1668.8 1760.2 } }
+
 #Placement automatique des standard cells
 setRouteMode -earlyGlobalMaxRouteLayer 4
 setRouteMode -earlyGlobalMinRouteLayer 1
+
+#Corrige les erreurs de spacing pour certaines cellules
+setPlaceMode -padForPinNearBorder true
+
+
+#Setting useful skew
+setOptMode -usefulSkew true
 
 #Création des group paths
 set_interactive_constraint_modes [all_constraint_modes -active]
@@ -44,7 +66,7 @@ group_path -name in2gated 	-from $input_ports 	-to $gated_all
 #Pas de rams dans notre circuit
 
 #Custom
-group_path -name my_path -from t_op/u_decoder/fir_filter/Q_data_add_3_buff_reg[14]/D -to t_op/u_decoder/fir_filter/Q_data_add_4_buff_reg[3]/Q
+group_path -name my_path -from {t_op/u_decoder/fir_filter/Q_data_add_3_buff_reg[14]/D t_op/u_cdr/div1/o_nb_P_reg[0]/QN t_op/u_cdr/div1/o_nb_P_reg[0]/QN  t_op/u_cdr/div1/o_nb_P_reg[0]/QN t_op/u_cdr/div1/o_nb_P_reg[0]/QN t_op/u_cdr/div1/o_nb_P_reg[3]/QN t_op/u_cdr/div1/o_nb_P_reg[0]/Q  t_op/u_cdr/div1/o_nb_P_reg[0]/QN t_op/u_cdr/div1/o_nb_P_reg[0]/QN t_op/u_cdr/div1/o_nb_P_reg[0]/Q t_op/u_cdr/div1/o_nb_P_reg[0]/QN  t_op/u_cdr/div1/o_nb_P_reg[3]/QN  t_op/u_cdr/div1/o_nb_P_reg[0]/QN  t_op/u_cdr/div1/o_nb_P_reg[0]/QN  t_op/u_cdr/div1/o_nb_P_reg[0]/QN t_op/u_cdr/div1/o_nb_P_reg[3]/QN t_op/u_cdr/div1/o_nb_P_reg[3]/QN  t_op/u_cdr/div1/o_nb_P_reg[3]/QN  t_op/u_cdr/div1/o_nb_P_reg[0]/QN t_op/u_cdr/div1/o_nb_P_reg[0]/QN  t_op/u_cdr/div1/o_nb_P_reg[0]/QN t_op/u_cdr/div1/o_nb_P_reg[3]/QN t_op/u_cdr/div1/o_nb_P_reg[3]/QN t_op/u_cdr/div1/o_nb_P_reg[1]/Q  t_op/u_cdr/div1/o_nb_P_reg[1]/Q  t_op/u_cdr/div1/o_nb_P_reg[1]/Q t_op/u_cdr/div1/o_nb_P_reg[1]/Q t_op/u_cdr/div1/o_nb_P_reg[1]/Q t_op/u_cdr/div1/o_nb_P_reg[1]/Q  t_op/u_cdr/div1/o_nb_P_reg[2]/QN  t_op/u_cdr/div1/o_nb_P_reg[0]/Q  t_op/u_cdr/div1/o_nb_P_reg[2]/QN } -to {t_op/u_decoder/fir_filter/Q_data_add_4_buff_reg[3]/Q t_op/u_cdr/phd1/cnt_phd/cnt_reg[1]/D  t_op/u_cdr/phd1/cnt_phd/cnt_reg[3]/D t_op/u_cdr/phd1/cnt_phd/cnt_reg[0]/D t_op/u_cdr/phd1/cnt_phd/cnt_reg[5]/D t_op/u_cdr/dec/cnt_r_reg[4]/D t_op/u_cdr/phd1/cnt_phd/o_en_m_reg/D  t_op/u_cdr/phd1/cnt_phd/cnt_reg[4]/D t_op/u_cdr/phd1/cnt_phd/cnt_reg[2]/D  t_op/u_cdr/dec/o_flag_reg/D  t_op/u_cdr/div1/cnt_div/cnt_reg[3]/D  t_op/u_cdr/dec/cnt_r_reg[3]/D t_op/u_cdr/div1/cnt_div/cnt_reg[5]/D t_op/u_cdr/div1/cnt_div/cnt_reg[0]/D t_op/u_cdr/div1/cnt_div/cnt_reg[2]/D  t_op/u_cdr/dec/cnt_r_reg[1]/D  t_op/u_cdr/dec/cnt_r_reg[0]/D  t_op/u_cdr/phd1/cnt_phd/o_en_reg/D t_op/u_cdr/div1/cnt_div/cnt_reg[4]/D t_op/u_cdr/div1/cnt_div/cnt_reg[1]/D  t_op/u_cdr/div1/cnt_div/cnt_reg[1]/D t_op/u_cdr/dec/cnt_r_reg[5]/D t_op/u_cdr/dec/cnt_r_reg[2]/D  t_op/u_cdr/dec/cnt_dec/cnt_clk_reg[2]/D t_op/u_cdr/dec/cnt_dec/cnt_clk_reg[0]/D t_op/u_cdr/dec/cnt_dec/cnt_clk_reg[3]/D  t_op/u_cdr/dec/cnt_dec/cnt_clk_reg[4]/D t_op/u_cdr/dec/cnt_dec/cnt_clk_reg[5]/D  t_op/u_cdr/dec/cnt_dec/cnt_clk_reg[1]/D t_op/u_cdr/div1/cnt_div/o_en_freq_synch_reg/D  t_op/u_cdr/phd1/cnt_phd/o_en_f_reg/D t_op/u_cdr/dec/cnt_dec/o_en_reg/D }
 
 
 #Options for path_groups
