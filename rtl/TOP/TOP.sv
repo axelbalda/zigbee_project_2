@@ -88,7 +88,7 @@ wire 	[1:0]	sig_MUX_inMUX12				;
 wire 	[1:0]	sig_MUX_inMUX13				; 
 wire 	[1:0]	sig_MUX_inMUX14				; 	
 wire 	[3:0]	sig_MUX_inMUX15				;  	
-wire 	[7:0]	sig_MUX_inMUX16				;
+wire 	[3:0]	sig_MUX_inMUX16				;
 
 wire 			sig_MUX_outMUX3				;	
 wire 			sig_MUX_outMUX4				;	
