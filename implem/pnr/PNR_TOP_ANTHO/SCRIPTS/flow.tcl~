@@ -8,6 +8,7 @@ source ../SCRIPTS/init.tcl
 init_design
 #Placement des pads + creation de la grille + connexion des pads d'alimentation a la grille
 source ../SCRIPTS/design_config.tcl
+#setAnalysisMode -analysisType onChipVariation
 
 #saveDesign dbs/floorplan_enc
 
@@ -24,15 +25,15 @@ source ../SCRIPTS/add_fillers.tcl
 #saveDesign dbs/addFiller_enc
 
 
-#routeDesign
+routeDesign
 
 
 
 
 
-#optDesign -postRoute
-setAnalysisMode -analysisType onChipVariation
-route_opt_design
+optDesign -postRoute
+
+#route_opt_design
 
 
 

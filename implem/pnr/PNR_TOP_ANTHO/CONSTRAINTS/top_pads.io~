@@ -4,13 +4,13 @@
 ######################################################
 
 
-Pad:	io_inClock			N
+Pad:	io_outFIFO_inReadEnable		N
 Pad:	io_inReset			N
 Pad:	PWR1				N VDD3ALLP
 Pad:	GND1				N GND3ALLP
-Pad:	io_outFIFO_inReadEnable		N
 Pad:	io_MUX_inSEL3			N
 Pad:	io_DEMUX_inSEL1_2		N
+Pad:	io_inClock			N
 Pad:	io_DEMUX_inSEL1_1		N
 Pad:	io_DEMUX_inSEL1_0		N
 Pad:	io_DEMUX_inSEL2_2		N

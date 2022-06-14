@@ -23,7 +23,7 @@
 
 set module_name top
 loadIoFile ../CONSTRAINTS/${module_name}_pads.io
-floorPlan -site standard -r 1 0.7 80 80 80 80 -coreMarginsBy io
+floorPlan -site standard -r 1 0.67 80 80 80 80 -coreMarginsBy io
 #////////////////////////////////////////////////////
 
 

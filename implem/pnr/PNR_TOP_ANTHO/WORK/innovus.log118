@@ -7788,3 +7788,2778 @@ Routing Overflow: 0.00% H and 0.00% V
 *** Finished optDesign ***
 <CMD> pan 404.325 525.622
 <CMD> pan 38.728 705.709
+<CMD> pan 194.509 255.206
+<CMD> pan -644.813 -229.913
+<CMD> pan -89.851 -412.258
+<CMD> pan -94.343 150.501
+<CMD> pan -152.434 96.151
+<CMD> pan 232.877 -511.318
+<CMD> pan 365.769 47.334
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt
+Parsing file top.mtarpt...
+<CMD> report_timing
+Path 1: VIOLATED Setup Check with Pin t_op/u_cdr/div1/cnt_div/cnt_reg[5]/C 
+Endpoint:   t_op/u_cdr/div1/cnt_div/cnt_reg[5]/D (^) checked with  leading edge 
+of 'inClock'
+Beginpoint: t_op/u_cdr/div1/o_nb_P_reg[3]/QN     (^) triggered by trailing edge 
+of 'inClock'
+Path Groups: {reg2reg}
+Analysis View: setup_func_max
+Other End Arrival Time          0.000
+- Setup                         0.023
++ Phase Shift                  20.000
+- Uncertainty                  10.000
+= Required Time                 9.977
+- Arrival Time                 15.497
+= Slack Time                   -5.519
+     Clock Fall Edge                 10.000
+     + Clock Network Latency (Ideal) 0.000
+     = Beginpoint Arrival Time       10.000
+     +----------------------------------------------------------------------------------------+ 
+     |              Instance              |     Arc     |  Cell  | Delay | Arrival | Required | 
+     |                                    |             |        |       |  Time   |   Time   | 
+     |------------------------------------+-------------+--------+-------+---------+----------| 
+     | t_op/u_cdr/div1/o_nb_P_reg[3]      | C ^         |        |       |  10.000 |    4.481 | 
+     | t_op/u_cdr/div1/o_nb_P_reg[3]      | C ^ -> QN ^ | DF3    | 1.898 |  11.898 |    6.378 | 
+     | t_op/FE_RC_6993_0                  | C ^ -> Q v  | NAND34 | 0.215 |  12.113 |    6.594 | 
+     | t_op/FE_OCPC3658_n1155             | A v -> Q ^  | INV6   | 0.315 |  12.428 |    6.909 | 
+     | t_op/U4900_dup1                    | A ^ -> Q v  | NAND28 | 0.207 |  12.635 |    7.116 | 
+     | t_op/U4901                         | B v -> Q ^  | OAI212 | 0.575 |  13.211 |    7.691 | 
+     | t_op/U16_dup                       | A ^ -> Q v  | NAND28 | 0.292 |  13.503 |    7.983 | 
+     | t_op/FE_RC_311_0                   | A v -> Q ^  | NAND22 | 0.317 |  13.820 |    8.300 | 
+     | t_op/FE_RC_5027_0                  | C ^ -> Q v  | OAI212 | 0.234 |  14.054 |    8.534 | 
+     | t_op/FE_RC_7045_0                  | A v -> Q ^  | NAND34 | 0.362 |  14.416 |    8.897 | 
+     | t_op/FE_RC_408_0                   | A ^ -> Q v  | NAND26 | 0.178 |  14.594 |    9.075 | 
+     | t_op/FE_RC_6508_0                  | A v -> Q ^  | NAND28 | 0.351 |  14.945 |    9.425 | 
+     | t_op/FE_RC_5047_0                  | A ^ -> Q v  | AOI222 | 0.379 |  15.323 |    9.804 | 
+     | t_op/U27                           | A v -> Q ^  | CLKIN4 | 0.173 |  15.496 |    9.977 | 
+     | t_op/u_cdr/div1/cnt_div/cnt_reg[5] | D ^         | DF3    | 0.000 |  15.497 |    9.977 | 
+     +----------------------------------------------------------------------------------------+ 
+
+**WARN: (IMPCK-8086):	The command setCTSMode is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+<CMD> pan -187.315 -369.567
+<CMD> get_visible_nets
+<CMD> fit
+<CMD> pan 98.333 528.188
+<CMD> get_power_analysis_mode -leakage_power_view -quiet
+<CMD> get_power_analysis_mode -analysis_view -quiet
+<CMD> get_power_analysis_mode -state_dependent_leakage -quiet
+<CMD> get_power_analysis_mode -dynamic_power_view -quiet
+<CMD> get_power_analysis_mode -analysis_view -quiet
+**WARN: (IMPSGN-1032):	Failed to create Instance t_op/FE_RC_5094_0.
+**WARN: (IMPSGN-1032):	Failed to create Instance Q.
+**WARN: (IMPSGN-1033):	This type of pin (HPIN) io_inClock is not yet supported by the schematic.
+**WARN: (IMPSGN-1033):	This type of pin (HPIN) io_inClock is not yet supported by the schematic.
+<CMD> pan 27.980 -56.941
+<CMD> pan -1.478 -1.314
+<CMD> pan -2.616 -0.386
+<CMD> getMultiCpuUsage -localCpu
+<CMD> get_verify_drc_mode -disable_rules -quiet
+<CMD> get_verify_drc_mode -quiet -area
+<CMD> get_verify_drc_mode -quiet -layer_range
+<CMD> get_verify_drc_mode -check_implant -quiet
+<CMD> get_verify_drc_mode -check_implant_across_rows -quiet
+<CMD> get_verify_drc_mode -check_ndr_spacing -quiet
+<CMD> get_verify_drc_mode -check_only -quiet
+<CMD> get_verify_drc_mode -check_same_via_cell -quiet
+<CMD> get_verify_drc_mode -exclude_pg_net -quiet
+<CMD> get_verify_drc_mode -ignore_trial_route -quiet
+<CMD> get_verify_drc_mode -max_wrong_way_halo -quiet
+<CMD> get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+<CMD> get_verify_drc_mode -limit -quiet
+<CMD> verify_drc -limit 100000000
+#-limit 100000000                        # int, default=100000000, user setting
+ *** Starting Verify DRC (MEM: 1536.6) ***
+
+  VERIFY DRC ...... Starting Verification
+  VERIFY DRC ...... Initializing
+  VERIFY DRC ...... Deleting Existing Violations
+  VERIFY DRC ...... Creating Sub-Areas
+  VERIFY DRC ...... Using new threading
+  VERIFY DRC ...... Sub-Area: {0.000 0.000 548.800 548.800} 1 of 16
+  VERIFY DRC ...... Sub-Area : 1 complete 724 Viols.
+  VERIFY DRC ...... Sub-Area: {548.800 0.000 1097.600 548.800} 2 of 16
+  VERIFY DRC ...... Sub-Area : 2 complete 3207 Viols.
+  VERIFY DRC ...... Sub-Area: {1097.600 0.000 1646.400 548.800} 3 of 16
+  VERIFY DRC ...... Sub-Area : 3 complete 3627 Viols.
+  VERIFY DRC ...... Sub-Area: {1646.400 0.000 2189.800 548.800} 4 of 16
+  VERIFY DRC ...... Sub-Area : 4 complete 423 Viols.
+  VERIFY DRC ...... Sub-Area: {0.000 548.800 548.800 1097.600} 5 of 16
+  VERIFY DRC ...... Sub-Area : 5 complete 3493 Viols.
+  VERIFY DRC ...... Sub-Area: {548.800 548.800 1097.600 1097.600} 6 of 16
+  VERIFY DRC ...... Sub-Area : 6 complete 15814 Viols.
+  VERIFY DRC ...... Sub-Area: {1097.600 548.800 1646.400 1097.600} 7 of 16
+  VERIFY DRC ...... Sub-Area : 7 complete 19140 Viols.
+  VERIFY DRC ...... Sub-Area: {1646.400 548.800 2189.800 1097.600} 8 of 16
+  VERIFY DRC ...... Sub-Area : 8 complete 3044 Viols.
+  VERIFY DRC ...... Sub-Area: {0.000 1097.600 548.800 1646.400} 9 of 16
+  VERIFY DRC ...... Sub-Area : 9 complete 5239 Viols.
+  VERIFY DRC ...... Sub-Area: {548.800 1097.600 1097.600 1646.400} 10 of 16
+  VERIFY DRC ...... Sub-Area : 10 complete 28524 Viols.
+  VERIFY DRC ...... Sub-Area: {1097.600 1097.600 1646.400 1646.400} 11 of 16
+  VERIFY DRC ...... Sub-Area : 11 complete 21008 Viols.
+  VERIFY DRC ...... Sub-Area: {1646.400 1097.600 2189.800 1646.400} 12 of 16
+  VERIFY DRC ...... Sub-Area : 12 complete 3687 Viols.
+  VERIFY DRC ...... Sub-Area: {0.000 1646.400 548.800 2181.200} 13 of 16
+  VERIFY DRC ...... Sub-Area : 13 complete 633 Viols.
+  VERIFY DRC ...... Sub-Area: {548.800 1646.400 1097.600 2181.200} 14 of 16
+  VERIFY DRC ...... Sub-Area : 14 complete 4335 Viols.
+  VERIFY DRC ...... Sub-Area: {1097.600 1646.400 1646.400 2181.200} 15 of 16
+  VERIFY DRC ...... Sub-Area : 15 complete 3676 Viols.
+  VERIFY DRC ...... Sub-Area: {1646.400 1646.400 2189.800 2181.200} 16 of 16
+  VERIFY DRC ...... Sub-Area : 16 complete 948 Viols.
+
+  Verification Complete : 117522 Viols.
+
+ *** End Verify DRC (CPU: 0:00:16.7  ELAPSED TIME: 16.00  MEM: 198.9M) ***
+
+<CMD> selectWire 422.8000 510.4000 1768.2000 514.0000 1 gnd!
+<CMD> deselectAll
+<CMD> selectWire 1477.4000 514.5000 1493.4000 515.1000 3 t_op/u_inFIFO/n622
+<CMD> pan 10.773 0.296
+<CMD> pan -2.272 -3.881
+<CMD> pan -5.961 -0.729
+<CMD> pan -0.614 -0.072
+<CMD> pan -0.295 0.029
+<CMD> pan -1.803 -0.314
+<CMD> uiSetTool ruler
+<CMD> pan -3.257 1.885
+<CMD> pan -8.042 -0.289
+<CMD> set_ccopt_property use_inverters auto
+<CMD> set_ccopt_mode -cts_opt_type full
+<CMD> create_ccopt_clock_tree_spec -file ccopt.spec
+Creating clock tree spec for modes (timing configs): setup_func_mode hold_func_mode
+extract_clock_generator_skew_groups=true: create_ccopt_clock_tree_spec will generate skew groups with a name prefix of "_clock_gen" to balance clock generator connected flops with the clock generator they drive.
+**WARN: (IMPCCOPT-4322):	No default Or cell family identified.
+Type 'man IMPCCOPT-4322' for more detail.
+Reset timing graph...
+Ignoring AAE DB Resetting ...
+Reset timing graph done.
+Ignoring AAE DB Resetting ...
+Analyzing clock structure...
+Analyzing clock structure done.
+Reset timing graph...
+Ignoring AAE DB Resetting ...
+Reset timing graph done.
+Wrote: ccopt.spec
+<CMD_INTERNAL> ccopt_check_and_flatten_ilms_no_restore
+<CMD> create_ccopt_clock_tree -name inClock -source io_inClock/Y -no_skew_group
+Extracting original clock gating for inClock...
+  clock_tree inClock contains 2073 sinks and 0 clock gates.
+  Extraction for inClock complete.
+Extracting original clock gating for inClock done.
+<CMD> set_ccopt_property clock_period -pin io_inClock/Y 20
+<CMD> create_ccopt_skew_group -name inClock/setup_func_mode -sources io_inClock/Y -auto_sinks
+<CMD> set_ccopt_property include_source_latency -skew_group inClock/setup_func_mode true
+<CMD> set_ccopt_property extracted_from_clock_name -skew_group inClock/setup_func_mode inClock
+<CMD> set_ccopt_property extracted_from_constraint_mode_name -skew_group inClock/setup_func_mode setup_func_mode
+<CMD> set_ccopt_property extracted_from_delay_corners -skew_group inClock/setup_func_mode corner_max
+<CMD> create_ccopt_skew_group -name inClock/hold_func_mode -sources io_inClock/Y -auto_sinks
+<CMD> set_ccopt_property include_source_latency -skew_group inClock/hold_func_mode true
+<CMD> set_ccopt_property extracted_from_clock_name -skew_group inClock/hold_func_mode inClock
+<CMD> set_ccopt_property extracted_from_constraint_mode_name -skew_group inClock/hold_func_mode hold_func_mode
+<CMD> set_ccopt_property extracted_from_delay_corners -skew_group inClock/hold_func_mode corner_min
+<CMD> check_ccopt_clock_tree_convergence
+Checking clock tree convergence...
+Checking clock tree convergence done.
+<CMD> get_ccopt_property auto_design_state_for_ilms
+<CMD> ccopt_design -cts
+#% Begin ccopt_design (date=06/14 09:27:41, mem=1432.7M)
+Runtime...
+(ccopt_design): CTS Engine: ccopt. Used Spec: pre-existing CCOPT spec.
+Preferred extra space for top nets is 0
+Preferred extra space for trunk nets is 1
+Preferred extra space for leaf nets is 1
+Placement constraints of type 'region' or 'fence' will not be downgraded to 'guide' because the property change_fences_to_guides has been set to false.
+Set place::cacheFPlanSiteMark to 1
+CCOpt::Phase::Initialization...
+Check Prerequisites...
+Leaving CCOpt scope - CheckPlace...
+Begin checking placement ... (start mem=1651.6M, init mem=1651.6M)
+*info: Placed = 13508          (Fixed = 206)
+*info: Unplaced = 0           
+Placement Density:80.65%(1446809/1793992)
+Placement Density (including fixed std cells):80.73%(1454307/1801491)
+Finished checkPlace (cpu: total=0:00:00.1, vio checks=0:00:00.0; mem=1651.6M)
+Leaving CCOpt scope - CheckPlace done. (took cpu=0:00:00.1 real=0:00:00.1)
+Innovus will update I/O latencies
+All good
+Check Prerequisites done. (took cpu=0:00:00.1 real=0:00:00.1)
+CCOpt::Phase::Initialization done. (took cpu=0:00:00.1 real=0:00:00.1)
+Executing ccopt post-processing.
+Synthesizing clock trees with CCOpt...
+CCOpt::Phase::PreparingToBalance...
+**WARN: (IMPCCOPT-1127):	The skew group default.inClock/setup_func_mode has been identified as a duplicate of: inClock/hold_func_mode
+The skew group inClock/setup_func_mode has been identified as a duplicate of: inClock/hold_func_mode, so it will not be cloned.
+Leaving CCOpt scope - optDesignGlobalRouteStep...
+[NR-eGR] Started earlyGlobalRoute kernel
+[NR-eGR] Initial Peak syMemory usage = 1651.6 MB
+[NR-eGR] honorMsvRouteConstraint: false
+[NR-eGR] honorClockSpecNDR      : 0
+[NR-eGR] minRouteLayer          : 1
+[NR-eGR] maxRouteLayer          : 4
+[NR-eGR] numTracksPerClockWire  : 0
+[NR-eGR] Layer1 has single uniform track structure
+[NR-eGR] Layer2 has single uniform track structure
+[NR-eGR] Layer3 has single uniform track structure
+[NR-eGR] Layer4 has single uniform track structure
+[NR-eGR] numRoutingBlks=0 numInstBlks=87024 numPGBlocks=3378 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eGR] numPreroutedNet = 0  numPreroutedWires = 0
+[NR-eGR] Read numTotalNets=13820  numIgnoredNets=0
+[NR-eGR] There are 2 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id 0. Nets 13777 
+[NR-eGR] id=0  ndrTrackId=0  ndrViaId=-1  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[NR-eGR] Pitch:  L1=1300  L2=1400  L3=1300  L4=1400
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 13777 net(s) in layer range [1, 4]
+[NR-eGR] earlyGlobalRoute overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 8.931000e+05um
+[NR-eGR] 
+[NR-eGR] Congestion Analysis Layer By layer: (blocked Gcells are excluded) 
+[NR-eGR]                OverCon         OverCon         OverCon            
+[NR-eGR]                 #Gcell          #Gcell          #Gcell     %Gcell
+[NR-eGR] Layer            (1-2)           (3-4)           (5-5)    OverCon 
+[NR-eGR] ------------------------------------------------------------------
+[NR-eGR] Layer1       0( 0.00%)       0( 0.00%)       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer2      75( 0.50%)       0( 0.00%)       0( 0.00%)   ( 0.50%) 
+[NR-eGR] Layer3      17( 0.10%)       0( 0.00%)       0( 0.00%)   ( 0.10%) 
+[NR-eGR] Layer4       0( 0.00%)       0( 0.00%)       0( 0.00%)   ( 0.00%) 
+[NR-eGR] ------------------------------------------------------------------
+[NR-eGR] Total       92( 0.17%)       0( 0.00%)       0( 0.00%)   ( 0.17%) 
+[NR-eGR] 
+[NR-eGR] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[NR-eGR] Overflow after earlyGlobalRoute 0.00% H + 0.00% V
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Layer1(MET1)(H) length: 9.078881e+04um, number of vias: 43016
+[NR-eGR] Layer2(MET2)(V) length: 4.101754e+05um, number of vias: 28364
+[NR-eGR] Layer3(MET3)(H) length: 3.835953e+05um, number of vias: 2001
+[NR-eGR] Layer4(MET4)(V) length: 6.053708e+04um, number of vias: 0
+[NR-eGR] Total length: 9.450966e+05um, number of vias: 73381
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total clock nets wire length: 4.777953e+04um 
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] End Peak syMemory usage = 1621.8 MB
+[NR-eGR] Early Global Router Kernel+IO runtime : 0.38 seconds
+Leaving CCOpt scope - optDesignGlobalRouteStep done. (took cpu=0:00:00.4 real=0:00:00.4)
+Legalization setup...
+Using cell based legalization.
+Legalization setup done. (took cpu=0:00:00.0 real=0:00:00.0)
+Validating CTS configuration...
+Non-default CCOpt properties:
+preferred_extra_space is set for at least one key
+route_type is set for at least one key
+useful_skew_ideal_mode_max_allowed_delay: 1 (default: auto)
+Route type trimming info:
+  No route type modifications were made.
+Clock tree balancer configuration for clock_tree inClock:
+Non-default CCOpt properties for clock tree inClock:
+  route_type (leaf): default_route_type_leaf (default: default)
+  route_type (trunk): default_route_type_nonleaf (default: default)
+  route_type (top): default_route_type_nonleaf (default: default)
+Library Trimming...
+[NR-eGR] honorMsvRouteConstraint: false
+[NR-eGR] honorClockSpecNDR      : 0
+[NR-eGR] minRouteLayer          : 2
+[NR-eGR] maxRouteLayer          : 127
+[NR-eGR] numTracksPerClockWire  : 0
+[NR-eGR] Layer1 has no routable track
+[NR-eGR] Layer2 has single uniform track structure
+[NR-eGR] Layer3 has single uniform track structure
+[NR-eGR] Layer4 has single uniform track structure
+[NR-eGR] numRoutingBlks=0 numInstBlks=510 numPGBlocks=1548 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eGR] Read numTotalNets=0  numIgnoredNets=0
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id 0. Nets 0 
+[NR-eGR] id=0  ndrTrackId=0  ndrViaId=-1  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[NR-eGR] Pitch:  L1=950  L2=1400  L3=1300  L4=1400
+[NR-eGR] ========================================
+[NR-eGR] 
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+  Library trimming inverters in power domain auto-default and half-corner corner_max:setup.late removed 1 of 5 cells
+  For power domain auto-default:
+    Buffers:     CLKBU8 
+    Inverters:   {CLKIN10 CLKIN8 CLKIN4 CLKIN2}
+    Clock gates: DLSG1 
+    Unblocked area available for placement of any clock cells in power_domain auto-default: 1999809.649um^2
+  Top Routing info:
+    Route-type name: default_route_type_nonleaf; Top/bottom preferred layer name: MET4/MET3; 
+    Unshielded; Mask Constraint: 0; Source: route_type.
+  Trunk Routing info:
+    Route-type name: default_route_type_nonleaf; Top/bottom preferred layer name: MET4/MET3; 
+    Unshielded; Preferred extra space: 1; Mask Constraint: 0; Source: route_type.
+  Leaf Routing info:
+    Route-type name: default_route_type_leaf; Top/bottom preferred layer name: MET4/MET3; 
+    Unshielded; Preferred extra space: 1; Mask Constraint: 0; Source: route_type.
+  For timing_corner corner_max:setup, late:
+    Slew time target (leaf):    1.360ns
+    Slew time target (trunk):   1.360ns
+    Slew time target (top):     1.360ns (Note: no nets are considered top nets in this clock tree)
+    Buffer unit delay for power domain auto-default:   0.523ns
+    Buffer max distance for power domain auto-default: 1067.512um
+  Fastest wire driving cells and distances for power domain auto-default:
+    Buffer    : {lib_cell:CLKBU8, fastest_considered_half_corner=corner_max:setup.late, optimalDrivingDistance=1067.512um, saturatedSlew=1.136ns, speed=1138.922um per ns, cellArea=85.245um^2 per 1000um}
+    Inverter  : {lib_cell:CLKIN10, fastest_considered_half_corner=corner_max:setup.late, optimalDrivingDistance=1188.138um, saturatedSlew=1.100ns, speed=1927.544um per ns, cellArea=76.590um^2 per 1000um}
+    Clock gate: {lib_cell:DLSG1, fastest_considered_half_corner=corner_max:setup.late, optimalDrivingDistance=81.458um, saturatedSlew=1.212ns, speed=97.426um per ns, cellArea=2681.136um^2 per 1000um}
+Library Trimming done.
+
+Logic Sizing Table:
+
+----------------------------------------------------------
+Cell    Instance count    Source    Eligible library cells
+----------------------------------------------------------
+  (empty table)
+----------------------------------------------------------
+
+
+Clock tree balancer configuration for skew_group inClock/hold_func_mode:
+  Sources:                     pin io_inClock/Y
+  Total number of sinks:       2073
+  Delay constrained sinks:     2073
+  Non-leaf sinks:              0
+  Ignore pins:                 0
+ Timing corner corner_max:setup.late:
+  Skew target:                 0.523ns
+**WARN: (IMPCCOPT-1361):	Routing configuration for top nets in clock tree inClock: preferred layers MET3-MET4 are outside NanoRoute configured layer range. This is likely to cause routing correlation issues.
+**WARN: (IMPCCOPT-1361):	Routing configuration for trunk nets in clock tree inClock: preferred layers MET3-MET4 are outside NanoRoute configured layer range. This is likely to cause routing correlation issues.
+**WARN: (IMPCCOPT-1361):	Routing configuration for leaf nets in clock tree inClock: preferred layers MET3-MET4 are outside NanoRoute configured layer range. This is likely to cause routing correlation issues.
+Primary reporting skew group is skew_group inClock/hold_func_mode with 2073 clock sinks.
+
+Via Selection for Estimated Routes (rule default):
+
+------------------------------------------------------------
+Layer    Via Cell    Res.     Cap.     RC       Top of Stack
+Range                (Ohm)    (fF)     (fs)     Only
+------------------------------------------------------------
+M1-M2    VIA1_PR     4.470    0.252    1.127    false
+M2-M3    VIA2_PR     4.470    0.171    0.764    false
+M3-M4    VIA3_PR     4.470    0.168    0.752    false
+------------------------------------------------------------
+
+No ideal or dont_touch nets found in the clock tree
+Validating CTS configuration done. (took cpu=0:00:00.5 real=0:00:00.5)
+Adding exclusion drivers (these will be instances of the smallest area library cells).
+No exclusion drivers are needed.
+Adding driver cell for primary IO roots...
+Maximizing clock DAG abstraction...
+Maximizing clock DAG abstraction done.
+CCOpt::Phase::PreparingToBalance done. (took cpu=0:00:01.0 real=0:00:01.0)
+Synthesizing clock trees...
+  Preparing To Balance...
+  Merging duplicate siblings in DAG...
+    Clock DAG stats before merging:
+      cell counts      : b=0, i=1, icg=0, nicg=0, l=0, total=1
+      cell areas       : b=0.000um^2, i=36.400um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=36.400um^2
+    Clock DAG library cell distribution before merging {count}:
+       Invs: CLKIN3: 1 
+    Resynthesising clock tree into netlist...
+      Reset timing graph...
+Ignoring AAE DB Resetting ...
+      Reset timing graph done.
+    Resynthesising clock tree into netlist done.
+    
+    Disconnecting clock tree from netlist...
+    Disconnecting clock tree from netlist done.
+  Merging duplicate siblings in DAG done.
+  Preparing To Balance done. (took cpu=0:00:00.1 real=0:00:00.1)
+  CCOpt::Phase::Construction...
+  Stage::Clustering...
+  Clustering...
+    Initialize for clustering...
+    Clock DAG stats before clustering:
+      cell counts      : b=0, i=1, icg=0, nicg=0, l=0, total=1
+      cell areas       : b=0.000um^2, i=91.000um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=91.000um^2
+    Clock DAG library cell distribution before clustering {count}:
+       Invs: CLKIN10: 1 
+    Computing max distances from locked parents...
+      Computing distance_from_locked_parent_restrictions for 0 nodes driven by 0 locked parents
+    Computing max distances from locked parents done.
+    Initialize for clustering done. (took cpu=0:00:00.0 real=0:00:00.0)
+    Bottom-up phase...
+    Clustering clock_tree inClock...
+    Clustering clock_tree inClock done.
+    Clock DAG stats after bottom-up phase:
+      cell counts      : b=65, i=1, icg=0, nicg=0, l=0, total=66
+      cell areas       : b=5915.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=5969.600um^2
+    Clock DAG library cell distribution after bottom-up phase {count}:
+       Bufs: CLKBU8: 65 
+       Invs: CLKIN4: 1 
+    Bottom-up phase done. (took cpu=0:00:05.0 real=0:00:05.0)
+    Legalizing clock trees...
+    Resynthesising clock tree into netlist...
+      Reset timing graph...
+Ignoring AAE DB Resetting ...
+      Reset timing graph done.
+    Resynthesising clock tree into netlist done.
+    Commiting net attributes....
+    Commiting net attributes. done.
+    Leaving CCOpt scope - ClockRefiner...
+    Performing a single pass refine place with FGC disabled for datapath.
+*** Starting refinePlace (1:47:23 mem=1679.3M) ***
+Total net bbox length = 7.660e+05 (3.825e+05 3.835e+05) (ext = 3.003e+04)
+Density distribution unevenness ratio = 3.492%
+Move report: Detail placement moves 972 insts, mean move: 13.92 um, max move: 91.40 um
+	Max move on inst (t_op/FE_RC_2626_0): (1131.20, 1448.20) --> (1209.60, 1461.20)
+	Runtime: CPU: 0:00:00.3 REAL: 0:00:01.0 MEM: 1679.3MB
+Summary Report:
+Instances move: 972 (out of 13367 movable)
+Instances flipped: 0
+Mean displacement: 13.92 um
+Max displacement: 91.40 um (Instance: t_op/FE_RC_2626_0) (1131.2, 1448.2) -> (1209.6, 1461.2)
+	Length: 2 sites, height: 1 rows, site name: standard, cell type: INV3
+Total net bbox length = 7.801e+05 (3.912e+05 3.888e+05) (ext = 3.004e+04)
+Runtime: CPU: 0:00:00.3 REAL: 0:00:01.0 MEM: 1679.3MB
+*** Finished refinePlace (1:47:23 mem=1679.3M) ***
+    Moved 111 and flipped 26 of 2139 clock instance(s) during refinement.
+    The largest move was 35.4 microns for t_op/u_inFIFO/FIFO_reg[84][3].
+    Leaving CCOpt scope - ClockRefiner done. (took cpu=0:00:00.4 real=0:00:00.4)
+    Disconnecting clock tree from netlist...
+    Disconnecting clock tree from netlist done.
+    
+    Clock tree legalization - Histogram:
+    ====================================
+    
+    --------------------------------
+    Movement (um)    Number of cells
+    --------------------------------
+    [4.2,4.9)               1
+    [4.9,5.6)               0
+    [5.6,6.3)               0
+    [6.3,7)                 0
+    [7,7.7)                 0
+    [7.7,8.4)               0
+    [8.4,9.1)               0
+    [9.1,9.8)               0
+    [9.8,10.5)              3
+    [10.5,11.2)             1
+    --------------------------------
+    
+    
+    Clock tree legalization - Top 10 Movements:
+    ===========================================
+    
+    ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Movement (um)    Desired                Achieved               Node
+                     location               location               
+    ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        11.2         (854.000,980.200)      (865.200,980.200)      ccl_a clock buffer, uid:A939a (a lib_cell CLKBU8) at (865.200,980.200), in power domain auto-default
+         9.8         (1107.400,759.200)     (1097.600,759.200)     ccl_a clock buffer, uid:A93bf (a lib_cell CLKBU8) at (1097.600,759.200), in power domain auto-default
+         9.8         (814.800,1461.200)     (824.600,1461.200)     ccl_a clock buffer, uid:A93ca (a lib_cell CLKBU8) at (824.600,1461.200), in power domain auto-default
+         9.8         (845.600,980.200)      (855.400,980.200)      ccl_a clock buffer, uid:A93c9 (a lib_cell CLKBU8) at (855.400,980.200), in power domain auto-default
+         4.2         (1010.800,1461.200)    (1015.000,1461.200)    ccl_a clock buffer, uid:A93c4 (a lib_cell CLKBU8) at (1015.000,1461.200), in power domain auto-default
+         0           (1319.750,741.400)     (1319.750,741.400)     ccl_a clock buffer, uid:A938c (a lib_cell CLKBU8) at (1317.400,733.200), in power domain auto-default
+         0           (1327.650,517.000)     (1327.650,517.000)     ccl_a clock buffer, uid:A936b (a lib_cell CLKBU8) at (1323.000,512.200), in power domain auto-default
+         0           (1109.750,767.400)     (1109.750,767.400)     ccl_a clock buffer, uid:A936d (a lib_cell CLKBU8) at (1107.400,759.200), in power domain auto-default
+         0           (1099.950,767.400)     (1099.950,767.400)     ccl_a clock buffer, uid:A93bf (a lib_cell CLKBU8) at (1097.600,759.200), in power domain auto-default
+         0           (860.050,985.000)      (860.050,985.000)      ccl_a clock buffer, uid:A93c9 (a lib_cell CLKBU8) at (855.400,980.200), in power domain auto-default
+    ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    
+    Legalizing clock trees done. (took cpu=0:00:00.6 real=0:00:00.6)
+    Clock DAG stats after 'Clustering':
+      cell counts      : b=65, i=1, icg=0, nicg=0, l=0, total=66
+      cell areas       : b=5915.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=5969.600um^2
+      cell capacitance : b=0.650pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.669pF
+      sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+      wire capacitance : top=0.000pF, trunk=2.326pF, leaf=13.184pF, total=15.509pF
+      wire lengths     : top=0.000um, trunk=9330.873um, leaf=47556.460um, total=56887.333um
+    Clock DAG net violations after 'Clustering':
+      Remaining Transition : {count=1, worst=[0.006ns]} avg=0.006ns sd=0.000ns sum=0.006ns
+    Clock DAG primary half-corner transition distribution after 'Clustering':
+      Trunk : target=1.360ns count=10 avg=0.991ns sd=0.172ns min=0.612ns max=1.230ns {1 <= 0.816ns, 6 <= 1.088ns, 3 <= 1.360ns}
+      Leaf  : target=1.360ns count=57 avg=1.242ns sd=0.087ns min=0.834ns max=1.366ns {1 <= 1.088ns, 55 <= 1.360ns} {1 <= 1.428ns}
+    Clock DAG library cell distribution after 'Clustering' {count}:
+       Bufs: CLKBU8: 65 
+       Invs: CLKIN4: 1 
+    Primary reporting skew group after 'Clustering':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.200, max=2.765, avg=2.576, sd=0.131], skew [0.565 vs 0.523*, 99.6% {2.302, 2.765}] (wid=0.099 ws=0.045) (gid=2.676 gs=0.533)
+    Skew group summary after 'Clustering':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.200, max=2.765, avg=2.576, sd=0.131], skew [0.565 vs 0.523*, 99.6% {2.302, 2.765}] (wid=0.099 ws=0.045) (gid=2.676 gs=0.533)
+    Clock network insertion delays are now [2.200ns, 2.765ns] average 2.576ns std.dev 0.131ns
+    Legalizer calls during this step: 1622 succeeded with DRC/Color checks: 1622 succeeded without DRC/Color checks: 0
+  Clustering done. (took cpu=0:00:05.7 real=0:00:05.7)
+  
+  Post-Clustering Statistics Report
+  =================================
+  
+  Fanout Statistics:
+  
+  -----------------------------------------------------------------------------------------------------
+  Net Type    Count    Mean      Min.      Max.      Std. Dev.    Fanout
+                       Fanout    Fanout    Fanout    Fanout       Distribution
+  -----------------------------------------------------------------------------------------------------
+  Trunk        11       6.091      1         10        3.145      {3 <= 3.600, 3 <= 7.200, 5 <= 10.800}
+  Leaf         57      36.368      8         47        5.473      {1 <= 23.400, 36 <= 39, 20 <= 54.600}
+  -----------------------------------------------------------------------------------------------------
+  
+  Clustering Failure Statistics:
+  
+  -------------------------------------------------------------------------
+  Net Type    Clusters    Clusters    Capacitance    Net Skew    Transition
+              Tried       Failed      Failures       Failures    Failures
+  -------------------------------------------------------------------------
+  Trunk          60          25            1            1            25
+  Leaf          673         354            0            0           354
+  -------------------------------------------------------------------------
+  
+  
+  Update congestion based capacitance...
+  Resynthesising clock tree into netlist...
+    Reset timing graph...
+Ignoring AAE DB Resetting ...
+    Reset timing graph done.
+  Resynthesising clock tree into netlist done.
+  Updating congestion map to accurately time the clock tree...
+    Routing unrouted datapath nets connected to clock instances...
+      Routed 0 unrouted datapath nets connected to clock instances
+    Routing unrouted datapath nets connected to clock instances done.
+    Leaving CCOpt scope - extractRC...
+    Updating RC parasitics by calling: "extractRC -noRouteCheck"...
+Extraction called for design 'top_io' of instances=13625 and nets=14333 using extraction engine 'preRoute' .
+PreRoute RC Extraction called for design top_io.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.1  Real Time: 0:00:00.0  MEM: 1619.578M)
+    Updating RC parasitics by calling: "extractRC -noRouteCheck" done.
+    Leaving CCOpt scope - extractRC done. (took cpu=0:00:00.1 real=0:00:00.1)
+  Updating congestion map to accurately time the clock tree done.
+  Disconnecting clock tree from netlist...
+  Disconnecting clock tree from netlist done.
+  Clock DAG stats After congestion update:
+    cell counts      : b=65, i=1, icg=0, nicg=0, l=0, total=66
+    cell areas       : b=5915.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=5969.600um^2
+    cell capacitance : b=0.650pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.669pF
+    sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+    wire capacitance : top=0.000pF, trunk=2.352pF, leaf=13.395pF, total=15.747pF
+    wire lengths     : top=0.000um, trunk=9330.873um, leaf=47556.460um, total=56887.333um
+  Clock DAG net violations After congestion update:
+    Remaining Transition : {count=4, worst=[0.032ns, 0.012ns, 0.010ns, 0.001ns]} avg=0.014ns sd=0.013ns sum=0.056ns
+  Clock DAG primary half-corner transition distribution After congestion update:
+    Trunk : target=1.360ns count=10 avg=0.998ns sd=0.174ns min=0.613ns max=1.241ns {1 <= 0.816ns, 6 <= 1.088ns, 3 <= 1.360ns}
+    Leaf  : target=1.360ns count=57 avg=1.253ns sd=0.088ns min=0.839ns max=1.392ns {1 <= 1.088ns, 52 <= 1.360ns} {4 <= 1.428ns}
+  Clock DAG library cell distribution After congestion update {count}:
+     Bufs: CLKBU8: 65 
+     Invs: CLKIN4: 1 
+  Primary reporting skew group After congestion update:
+    skew_group inClock/hold_func_mode: insertion delay [min=2.219, max=2.780, avg=2.593, sd=0.136], skew [0.561 vs 0.523*, 99.6% {2.319, 2.780}] (wid=0.101 ws=0.047) (gid=2.690 gs=0.529)
+  Skew group summary After congestion update:
+    skew_group inClock/hold_func_mode: insertion delay [min=2.219, max=2.780, avg=2.593, sd=0.136], skew [0.561 vs 0.523*, 99.6% {2.319, 2.780}] (wid=0.101 ws=0.047) (gid=2.690 gs=0.529)
+  Clock network insertion delays are now [2.219ns, 2.780ns] average 2.593ns std.dev 0.136ns
+  Update congestion based capacitance done. (took cpu=0:00:00.4 real=0:00:00.4)
+  Stage::Clustering done. (took cpu=0:00:06.1 real=0:00:06.1)
+  Stage::DRV Fixing...
+  Fixing clock tree slew time and max cap violations...
+    Fixing clock tree overload: ...20% ...40% ...60% ...80% ...100% 
+    Clock DAG stats after 'Fixing clock tree slew time and max cap violations':
+      cell counts      : b=69, i=1, icg=0, nicg=0, l=0, total=70
+      cell areas       : b=6279.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6333.600um^2
+      cell capacitance : b=0.690pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.709pF
+      sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+      wire capacitance : top=0.000pF, trunk=2.428pF, leaf=13.405pF, total=15.833pF
+      wire lengths     : top=0.000um, trunk=9644.272um, leaf=47638.759um, total=57283.031um
+    Clock DAG net violations after 'Fixing clock tree slew time and max cap violations': none
+    Clock DAG primary half-corner transition distribution after 'Fixing clock tree slew time and max cap violations':
+      Trunk : target=1.360ns count=12 avg=0.892ns sd=0.308ns min=0.317ns max=1.241ns {2 <= 0.544ns, 1 <= 0.816ns, 6 <= 1.088ns, 3 <= 1.360ns}
+      Leaf  : target=1.360ns count=59 avg=1.215ns sd=0.144ns min=0.748ns max=1.355ns {3 <= 0.816ns, 2 <= 1.088ns, 54 <= 1.360ns}
+    Clock DAG library cell distribution after 'Fixing clock tree slew time and max cap violations' {count}:
+       Bufs: CLKBU8: 69 
+       Invs: CLKIN4: 1 
+    Primary reporting skew group after 'Fixing clock tree slew time and max cap violations':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.219, max=2.869, avg=2.604, sd=0.142], skew [0.650 vs 0.523*, 98.6% {2.346, 2.869}] (wid=0.101 ws=0.047) (gid=2.780 gs=0.619)
+    Skew group summary after 'Fixing clock tree slew time and max cap violations':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.219, max=2.869, avg=2.604, sd=0.142], skew [0.650 vs 0.523*, 98.6% {2.346, 2.869}] (wid=0.101 ws=0.047) (gid=2.780 gs=0.619)
+    Clock network insertion delays are now [2.219ns, 2.869ns] average 2.604ns std.dev 0.142ns
+    Legalizer calls during this step: 162 succeeded with DRC/Color checks: 155 succeeded without DRC/Color checks: 7
+  Fixing clock tree slew time and max cap violations done. (took cpu=0:00:00.5 real=0:00:00.5)
+  Fixing clock tree slew time and max cap violations - detailed pass...
+    Fixing clock tree overload: ...20% ...40% ...60% ...80% ...100% 
+    Clock DAG stats after 'Fixing clock tree slew time and max cap violations - detailed pass':
+      cell counts      : b=69, i=1, icg=0, nicg=0, l=0, total=70
+      cell areas       : b=6279.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6333.600um^2
+      cell capacitance : b=0.690pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.709pF
+      sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+      wire capacitance : top=0.000pF, trunk=2.428pF, leaf=13.405pF, total=15.833pF
+      wire lengths     : top=0.000um, trunk=9644.272um, leaf=47638.759um, total=57283.031um
+    Clock DAG net violations after 'Fixing clock tree slew time and max cap violations - detailed pass': none
+    Clock DAG primary half-corner transition distribution after 'Fixing clock tree slew time and max cap violations - detailed pass':
+      Trunk : target=1.360ns count=12 avg=0.892ns sd=0.308ns min=0.317ns max=1.241ns {2 <= 0.544ns, 1 <= 0.816ns, 6 <= 1.088ns, 3 <= 1.360ns}
+      Leaf  : target=1.360ns count=59 avg=1.215ns sd=0.144ns min=0.748ns max=1.355ns {3 <= 0.816ns, 2 <= 1.088ns, 54 <= 1.360ns}
+    Clock DAG library cell distribution after 'Fixing clock tree slew time and max cap violations - detailed pass' {count}:
+       Bufs: CLKBU8: 69 
+       Invs: CLKIN4: 1 
+    Primary reporting skew group after 'Fixing clock tree slew time and max cap violations - detailed pass':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.219, max=2.869, avg=2.604, sd=0.142], skew [0.650 vs 0.523*, 98.6% {2.346, 2.869}] (wid=0.101 ws=0.047) (gid=2.780 gs=0.619)
+    Skew group summary after 'Fixing clock tree slew time and max cap violations - detailed pass':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.219, max=2.869, avg=2.604, sd=0.142], skew [0.650 vs 0.523*, 98.6% {2.346, 2.869}] (wid=0.101 ws=0.047) (gid=2.780 gs=0.619)
+    Clock network insertion delays are now [2.219ns, 2.869ns] average 2.604ns std.dev 0.142ns
+    Legalizer calls during this step: 0 succeeded with DRC/Color checks: 0 succeeded without DRC/Color checks: 0
+  Fixing clock tree slew time and max cap violations - detailed pass done. (took cpu=0:00:00.1 real=0:00:00.1)
+  Stage::DRV Fixing done. (took cpu=0:00:00.6 real=0:00:00.6)
+  Stage::Insertion Delay Reduction...
+  Removing unnecessary root buffering...
+    Clock DAG stats after 'Removing unnecessary root buffering':
+      cell counts      : b=69, i=1, icg=0, nicg=0, l=0, total=70
+      cell areas       : b=6279.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6333.600um^2
+      cell capacitance : b=0.690pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.709pF
+      sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+      wire capacitance : top=0.000pF, trunk=2.428pF, leaf=13.405pF, total=15.833pF
+      wire lengths     : top=0.000um, trunk=9644.272um, leaf=47638.759um, total=57283.031um
+    Clock DAG net violations after 'Removing unnecessary root buffering': none
+    Clock DAG primary half-corner transition distribution after 'Removing unnecessary root buffering':
+      Trunk : target=1.360ns count=12 avg=0.892ns sd=0.308ns min=0.317ns max=1.241ns {2 <= 0.544ns, 1 <= 0.816ns, 6 <= 1.088ns, 3 <= 1.360ns}
+      Leaf  : target=1.360ns count=59 avg=1.215ns sd=0.144ns min=0.748ns max=1.355ns {3 <= 0.816ns, 2 <= 1.088ns, 54 <= 1.360ns}
+    Clock DAG library cell distribution after 'Removing unnecessary root buffering' {count}:
+       Bufs: CLKBU8: 69 
+       Invs: CLKIN4: 1 
+    Primary reporting skew group after 'Removing unnecessary root buffering':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.219, max=2.869, avg=2.604, sd=0.142], skew [0.650 vs 0.523*, 98.6% {2.346, 2.869}] (wid=0.101 ws=0.047) (gid=2.780 gs=0.619)
+    Skew group summary after 'Removing unnecessary root buffering':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.219, max=2.869, avg=2.604, sd=0.142], skew [0.650 vs 0.523*, 98.6% {2.346, 2.869}] (wid=0.101 ws=0.047) (gid=2.780 gs=0.619)
+    Clock network insertion delays are now [2.219ns, 2.869ns] average 2.604ns std.dev 0.142ns
+    Legalizer calls during this step: 0 succeeded with DRC/Color checks: 0 succeeded without DRC/Color checks: 0
+  Removing unnecessary root buffering done. (took cpu=0:00:00.1 real=0:00:00.1)
+  Removing unconstrained drivers...
+    Clock DAG stats after 'Removing unconstrained drivers':
+      cell counts      : b=69, i=1, icg=0, nicg=0, l=0, total=70
+      cell areas       : b=6279.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6333.600um^2
+      cell capacitance : b=0.690pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.709pF
+      sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+      wire capacitance : top=0.000pF, trunk=2.428pF, leaf=13.405pF, total=15.833pF
+      wire lengths     : top=0.000um, trunk=9644.272um, leaf=47638.759um, total=57283.031um
+    Clock DAG net violations after 'Removing unconstrained drivers': none
+    Clock DAG primary half-corner transition distribution after 'Removing unconstrained drivers':
+      Trunk : target=1.360ns count=12 avg=0.892ns sd=0.308ns min=0.317ns max=1.241ns {2 <= 0.544ns, 1 <= 0.816ns, 6 <= 1.088ns, 3 <= 1.360ns}
+      Leaf  : target=1.360ns count=59 avg=1.215ns sd=0.144ns min=0.748ns max=1.355ns {3 <= 0.816ns, 2 <= 1.088ns, 54 <= 1.360ns}
+    Clock DAG library cell distribution after 'Removing unconstrained drivers' {count}:
+       Bufs: CLKBU8: 69 
+       Invs: CLKIN4: 1 
+    Primary reporting skew group after 'Removing unconstrained drivers':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.219, max=2.869, avg=2.604, sd=0.142], skew [0.650 vs 0.523*, 98.6% {2.346, 2.869}] (wid=0.101 ws=0.047) (gid=2.780 gs=0.619)
+    Skew group summary after 'Removing unconstrained drivers':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.219, max=2.869, avg=2.604, sd=0.142], skew [0.650 vs 0.523*, 98.6% {2.346, 2.869}] (wid=0.101 ws=0.047) (gid=2.780 gs=0.619)
+    Clock network insertion delays are now [2.219ns, 2.869ns] average 2.604ns std.dev 0.142ns
+    Legalizer calls during this step: 0 succeeded with DRC/Color checks: 0 succeeded without DRC/Color checks: 0
+  Removing unconstrained drivers done. (took cpu=0:00:00.1 real=0:00:00.1)
+  Reducing insertion delay 1...
+    Clock DAG stats after 'Reducing insertion delay 1':
+      cell counts      : b=69, i=1, icg=0, nicg=0, l=0, total=70
+      cell areas       : b=6279.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6333.600um^2
+      cell capacitance : b=0.690pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.709pF
+      sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+      wire capacitance : top=0.000pF, trunk=2.428pF, leaf=13.405pF, total=15.833pF
+      wire lengths     : top=0.000um, trunk=9644.272um, leaf=47638.759um, total=57283.031um
+    Clock DAG net violations after 'Reducing insertion delay 1': none
+    Clock DAG primary half-corner transition distribution after 'Reducing insertion delay 1':
+      Trunk : target=1.360ns count=12 avg=0.892ns sd=0.308ns min=0.317ns max=1.241ns {2 <= 0.544ns, 1 <= 0.816ns, 6 <= 1.088ns, 3 <= 1.360ns}
+      Leaf  : target=1.360ns count=59 avg=1.215ns sd=0.144ns min=0.748ns max=1.355ns {3 <= 0.816ns, 2 <= 1.088ns, 54 <= 1.360ns}
+    Clock DAG library cell distribution after 'Reducing insertion delay 1' {count}:
+       Bufs: CLKBU8: 69 
+       Invs: CLKIN4: 1 
+    Primary reporting skew group after 'Reducing insertion delay 1':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.219, max=2.869, avg=2.604, sd=0.142], skew [0.650 vs 0.523*, 98.6% {2.346, 2.869}] (wid=0.101 ws=0.047) (gid=2.780 gs=0.619)
+    Skew group summary after 'Reducing insertion delay 1':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.219, max=2.869, avg=2.604, sd=0.142], skew [0.650 vs 0.523*, 98.6% {2.346, 2.869}] (wid=0.101 ws=0.047) (gid=2.780 gs=0.619)
+    Clock network insertion delays are now [2.219ns, 2.869ns] average 2.604ns std.dev 0.142ns
+    Legalizer calls during this step: 1 succeeded with DRC/Color checks: 1 succeeded without DRC/Color checks: 0
+  Reducing insertion delay 1 done. (took cpu=0:00:00.1 real=0:00:00.1)
+  Removing longest path buffering...
+    Clock DAG stats after 'Removing longest path buffering':
+      cell counts      : b=68, i=1, icg=0, nicg=0, l=0, total=69
+      cell areas       : b=6188.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6242.600um^2
+      cell capacitance : b=0.680pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.699pF
+      sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+      wire capacitance : top=0.000pF, trunk=2.695pF, leaf=13.405pF, total=16.100pF
+      wire lengths     : top=0.000um, trunk=10551.471um, leaf=47638.759um, total=58190.230um
+    Clock DAG net violations after 'Removing longest path buffering': none
+    Clock DAG primary half-corner transition distribution after 'Removing longest path buffering':
+      Trunk : target=1.360ns count=11 avg=1.027ns sd=0.393ns min=0.320ns max=1.360ns {2 <= 0.544ns, 1 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+      Leaf  : target=1.360ns count=59 avg=1.218ns sd=0.144ns min=0.748ns max=1.355ns {3 <= 0.816ns, 2 <= 1.088ns, 54 <= 1.360ns}
+    Clock DAG library cell distribution after 'Removing longest path buffering' {count}:
+       Bufs: CLKBU8: 68 
+       Invs: CLKIN4: 1 
+    Primary reporting skew group after 'Removing longest path buffering':
+      skew_group inClock/hold_func_mode: insertion delay [min=1.611, max=2.762, avg=2.331, sd=0.276], skew [1.151 vs 0.523*, 63.3% {2.046, 2.569}] (wid=0.160 ws=0.077) (gid=2.667 gs=1.153)
+    Skew group summary after 'Removing longest path buffering':
+      skew_group inClock/hold_func_mode: insertion delay [min=1.611, max=2.762, avg=2.331, sd=0.276], skew [1.151 vs 0.523*, 63.3% {2.046, 2.569}] (wid=0.160 ws=0.077) (gid=2.667 gs=1.153)
+    Clock network insertion delays are now [1.611ns, 2.762ns] average 2.331ns std.dev 0.276ns
+    Legalizer calls during this step: 149 succeeded with DRC/Color checks: 149 succeeded without DRC/Color checks: 0
+  Removing longest path buffering done. (took cpu=0:00:02.0 real=0:00:02.0)
+  Reducing insertion delay 2...
+    Clock DAG stats after 'Reducing insertion delay 2':
+      cell counts      : b=68, i=1, icg=0, nicg=0, l=0, total=69
+      cell areas       : b=6188.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6242.600um^2
+      cell capacitance : b=0.680pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.699pF
+      sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+      wire capacitance : top=0.000pF, trunk=2.631pF, leaf=13.403pF, total=16.033pF
+      wire lengths     : top=0.000um, trunk=10455.270um, leaf=47630.859um, total=58086.129um
+    Clock DAG net violations after 'Reducing insertion delay 2': none
+    Clock DAG primary half-corner transition distribution after 'Reducing insertion delay 2':
+      Trunk : target=1.360ns count=11 avg=1.009ns sd=0.393ns min=0.320ns max=1.359ns {2 <= 0.544ns, 1 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+      Leaf  : target=1.360ns count=59 avg=1.218ns sd=0.143ns min=0.748ns max=1.349ns {3 <= 0.816ns, 2 <= 1.088ns, 54 <= 1.360ns}
+    Clock DAG library cell distribution after 'Reducing insertion delay 2' {count}:
+       Bufs: CLKBU8: 68 
+       Invs: CLKIN4: 1 
+    Primary reporting skew group after 'Reducing insertion delay 2':
+      skew_group inClock/hold_func_mode: insertion delay [min=1.602, max=2.657, avg=2.293, sd=0.240], skew [1.055 vs 0.523*, 74% {2.026, 2.550}] (wid=0.155 ws=0.081) (gid=2.575 gs=1.065)
+    Skew group summary after 'Reducing insertion delay 2':
+      skew_group inClock/hold_func_mode: insertion delay [min=1.602, max=2.657, avg=2.293, sd=0.240], skew [1.055 vs 0.523*, 74% {2.026, 2.550}] (wid=0.155 ws=0.081) (gid=2.575 gs=1.065)
+    Clock network insertion delays are now [1.602ns, 2.657ns] average 2.293ns std.dev 0.240ns
+    Legalizer calls during this step: 212 succeeded with DRC/Color checks: 212 succeeded without DRC/Color checks: 0
+  Reducing insertion delay 2 done. (took cpu=0:00:04.2 real=0:00:04.2)
+  Stage::Insertion Delay Reduction done. (took cpu=0:00:06.5 real=0:00:06.5)
+  CCOpt::Phase::Construction done. (took cpu=0:00:13.2 real=0:00:13.2)
+  CCOpt::Phase::Implementation...
+  Stage::Reducing Power...
+  Improving clock tree routing...
+    Iteration 1...
+    Iteration 1 done.
+    Clock DAG stats after 'Improving clock tree routing':
+      cell counts      : b=68, i=1, icg=0, nicg=0, l=0, total=69
+      cell areas       : b=6188.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6242.600um^2
+      cell capacitance : b=0.680pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.699pF
+      sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+      wire capacitance : top=0.000pF, trunk=2.627pF, leaf=13.403pF, total=16.029pF
+      wire lengths     : top=0.000um, trunk=10439.671um, leaf=47630.859um, total=58070.530um
+    Clock DAG net violations after 'Improving clock tree routing': none
+    Clock DAG primary half-corner transition distribution after 'Improving clock tree routing':
+      Trunk : target=1.360ns count=11 avg=1.008ns sd=0.393ns min=0.320ns max=1.359ns {2 <= 0.544ns, 1 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+      Leaf  : target=1.360ns count=59 avg=1.218ns sd=0.143ns min=0.748ns max=1.349ns {3 <= 0.816ns, 2 <= 1.088ns, 54 <= 1.360ns}
+    Clock DAG library cell distribution after 'Improving clock tree routing' {count}:
+       Bufs: CLKBU8: 68 
+       Invs: CLKIN4: 1 
+    Primary reporting skew group after 'Improving clock tree routing':
+      skew_group inClock/hold_func_mode: insertion delay [min=1.602, max=2.657, avg=2.293, sd=0.240], skew [1.055 vs 0.523*, 74% {2.026, 2.550}] (wid=0.154 ws=0.081) (gid=2.575 gs=1.065)
+    Skew group summary after 'Improving clock tree routing':
+      skew_group inClock/hold_func_mode: insertion delay [min=1.602, max=2.657, avg=2.293, sd=0.240], skew [1.055 vs 0.523*, 74% {2.026, 2.550}] (wid=0.154 ws=0.081) (gid=2.575 gs=1.065)
+    Clock network insertion delays are now [1.602ns, 2.657ns] average 2.293ns std.dev 0.240ns
+    Legalizer calls during this step: 41 succeeded with DRC/Color checks: 41 succeeded without DRC/Color checks: 0
+  Improving clock tree routing done. (took cpu=0:00:00.3 real=0:00:00.3)
+  Reducing clock tree power 1...
+    Resizing gates: ...20% ...40% ...60% ...80% ...100% 
+    Clock DAG stats after 'Reducing clock tree power 1':
+      cell counts      : b=68, i=1, icg=0, nicg=0, l=0, total=69
+      cell areas       : b=6188.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6242.600um^2
+      cell capacitance : b=0.680pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.699pF
+      sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+      wire capacitance : top=0.000pF, trunk=2.627pF, leaf=13.403pF, total=16.029pF
+      wire lengths     : top=0.000um, trunk=10439.671um, leaf=47630.859um, total=58070.530um
+    Clock DAG net violations after 'Reducing clock tree power 1': none
+    Clock DAG primary half-corner transition distribution after 'Reducing clock tree power 1':
+      Trunk : target=1.360ns count=11 avg=1.008ns sd=0.393ns min=0.320ns max=1.359ns {2 <= 0.544ns, 1 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+      Leaf  : target=1.360ns count=59 avg=1.218ns sd=0.143ns min=0.748ns max=1.349ns {3 <= 0.816ns, 2 <= 1.088ns, 54 <= 1.360ns}
+    Clock DAG library cell distribution after 'Reducing clock tree power 1' {count}:
+       Bufs: CLKBU8: 68 
+       Invs: CLKIN4: 1 
+    Primary reporting skew group after 'Reducing clock tree power 1':
+      skew_group inClock/hold_func_mode: insertion delay [min=1.602, max=2.657, avg=2.293, sd=0.240], skew [1.055 vs 0.523*, 74% {2.026, 2.550}] (wid=0.154 ws=0.081) (gid=2.575 gs=1.065)
+    Skew group summary after 'Reducing clock tree power 1':
+      skew_group inClock/hold_func_mode: insertion delay [min=1.602, max=2.657, avg=2.293, sd=0.240], skew [1.055 vs 0.523*, 74% {2.026, 2.550}] (wid=0.154 ws=0.081) (gid=2.575 gs=1.065)
+    Clock network insertion delays are now [1.602ns, 2.657ns] average 2.293ns std.dev 0.240ns
+    Legalizer calls during this step: 1 succeeded with DRC/Color checks: 1 succeeded without DRC/Color checks: 0
+  Reducing clock tree power 1 done. (took cpu=0:00:00.1 real=0:00:00.1)
+  Reducing clock tree power 2...
+    Clock DAG stats after 'Reducing clock tree power 2':
+      cell counts      : b=68, i=1, icg=0, nicg=0, l=0, total=69
+      cell areas       : b=6188.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6242.600um^2
+      cell capacitance : b=0.680pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.699pF
+      sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+      wire capacitance : top=0.000pF, trunk=2.625pF, leaf=13.493pF, total=16.118pF
+      wire lengths     : top=0.000um, trunk=10426.071um, leaf=48047.259um, total=58473.330um
+    Clock DAG net violations after 'Reducing clock tree power 2': none
+    Clock DAG primary half-corner transition distribution after 'Reducing clock tree power 2':
+      Trunk : target=1.360ns count=11 avg=1.007ns sd=0.393ns min=0.320ns max=1.359ns {2 <= 0.544ns, 1 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+      Leaf  : target=1.360ns count=59 avg=1.226ns sd=0.137ns min=0.748ns max=1.357ns {3 <= 0.816ns, 1 <= 1.088ns, 55 <= 1.360ns}
+    Clock DAG library cell distribution after 'Reducing clock tree power 2' {count}:
+       Bufs: CLKBU8: 68 
+       Invs: CLKIN4: 1 
+    Primary reporting skew group after 'Reducing clock tree power 2':
+      skew_group inClock/hold_func_mode: insertion delay [min=1.855, max=2.653, avg=2.291, sd=0.236], skew [0.797 vs 0.523*, 75.3% {2.047, 2.570}] (wid=0.151 ws=0.079) (gid=2.572 gs=0.849)
+    Skew group summary after 'Reducing clock tree power 2':
+      skew_group inClock/hold_func_mode: insertion delay [min=1.855, max=2.653, avg=2.291, sd=0.236], skew [0.797 vs 0.523*, 75.3% {2.047, 2.570}] (wid=0.151 ws=0.079) (gid=2.572 gs=0.849)
+    Clock network insertion delays are now [1.855ns, 2.653ns] average 2.291ns std.dev 0.236ns
+    Legalizer calls during this step: 101 succeeded with DRC/Color checks: 100 succeeded without DRC/Color checks: 1
+  Reducing clock tree power 2 done. (took cpu=0:00:01.3 real=0:00:01.3)
+  Stage::Reducing Power done. (took cpu=0:00:01.7 real=0:00:01.7)
+  Stage::Balancing...
+  Approximately balancing fragments step...
+    Resolve constraints - Approximately balancing fragments...
+    Resolving skew group constraints...
+      Solving LP: 1 skew groups; 2 fragments, 5 fraglets and 7 vertices; 45 variables and 136 constraints; tolerance 1
+    Resolving skew group constraints done.
+    Resolve constraints - Approximately balancing fragments done. (took cpu=0:00:00.2 real=0:00:00.2)
+    Estimate delay to be added in balancing - Approximately balancing fragments...
+    Running the trial balancer to estimate the amount of delay to be added in Balancing...
+      Estimated delay to be added in balancing: 0.529ns
+    Running the trial balancer to estimate the amount of delay to be added in Balancing done.
+    Estimate delay to be added in balancing - Approximately balancing fragments done. (took cpu=0:00:00.1 real=0:00:00.1)
+    Approximately balancing fragments...
+      Moving gates to improve sub-tree skew...
+        Tried: 71 Succeeded: 0
+        Clock DAG stats after 'Moving gates to improve sub-tree skew':
+          cell counts      : b=68, i=1, icg=0, nicg=0, l=0, total=69
+          cell areas       : b=6188.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6242.600um^2
+          cell capacitance : b=0.680pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.699pF
+          sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+          wire capacitance : top=0.000pF, trunk=2.625pF, leaf=13.493pF, total=16.118pF
+          wire lengths     : top=0.000um, trunk=10426.071um, leaf=48047.259um, total=58473.330um
+        Clock DAG net violations after 'Moving gates to improve sub-tree skew': none
+        Clock DAG primary half-corner transition distribution after 'Moving gates to improve sub-tree skew':
+          Trunk : target=1.360ns count=11 avg=1.007ns sd=0.393ns min=0.320ns max=1.359ns {2 <= 0.544ns, 1 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+          Leaf  : target=1.360ns count=59 avg=1.226ns sd=0.137ns min=0.748ns max=1.357ns {3 <= 0.816ns, 1 <= 1.088ns, 55 <= 1.360ns}
+        Clock DAG library cell distribution after 'Moving gates to improve sub-tree skew' {count}:
+           Bufs: CLKBU8: 68 
+           Invs: CLKIN4: 1 
+        Clock network insertion delays are now [1.855ns, 2.653ns] average 2.291ns std.dev 0.236ns
+        Legalizer calls during this step: 0 succeeded with DRC/Color checks: 0 succeeded without DRC/Color checks: 0
+      Moving gates to improve sub-tree skew done. (took cpu=0:00:00.0 real=0:00:00.0)
+      Approximately balancing fragments bottom up...
+        bottom up balancing: ...20% ...40% ...60% ...80% ...100% 
+        Clock DAG stats after 'Approximately balancing fragments bottom up':
+          cell counts      : b=68, i=1, icg=0, nicg=0, l=0, total=69
+          cell areas       : b=6188.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6242.600um^2
+          cell capacitance : b=0.680pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.699pF
+          sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+          wire capacitance : top=0.000pF, trunk=2.625pF, leaf=13.493pF, total=16.118pF
+          wire lengths     : top=0.000um, trunk=10426.071um, leaf=48047.259um, total=58473.330um
+        Clock DAG net violations after 'Approximately balancing fragments bottom up': none
+        Clock DAG primary half-corner transition distribution after 'Approximately balancing fragments bottom up':
+          Trunk : target=1.360ns count=11 avg=1.007ns sd=0.393ns min=0.320ns max=1.359ns {2 <= 0.544ns, 1 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+          Leaf  : target=1.360ns count=59 avg=1.226ns sd=0.137ns min=0.748ns max=1.357ns {3 <= 0.816ns, 1 <= 1.088ns, 55 <= 1.360ns}
+        Clock DAG library cell distribution after 'Approximately balancing fragments bottom up' {count}:
+           Bufs: CLKBU8: 68 
+           Invs: CLKIN4: 1 
+        Clock network insertion delays are now [1.855ns, 2.653ns] average 2.291ns std.dev 0.236ns
+        Legalizer calls during this step: 0 succeeded with DRC/Color checks: 0 succeeded without DRC/Color checks: 0
+      Approximately balancing fragments bottom up done. (took cpu=0:00:00.0 real=0:00:00.0)
+      Approximately balancing fragments, wire and cell delays...
+      Approximately balancing fragments, wire and cell delays, iteration 1...
+        Clock DAG stats after Approximately balancing fragments, wire and cell delays, iteration 1:
+          cell counts      : b=72, i=1, icg=0, nicg=0, l=0, total=73
+          cell areas       : b=6552.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6606.600um^2
+          cell capacitance : b=0.720pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.739pF
+          sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+          wire capacitance : top=0.000pF, trunk=2.719pF, leaf=13.493pF, total=16.212pF
+          wire lengths     : top=0.000um, trunk=10748.371um, leaf=48047.259um, total=58795.630um
+        Clock DAG net violations after Approximately balancing fragments, wire and cell delays, iteration 1: none
+        Clock DAG primary half-corner transition distribution after Approximately balancing fragments, wire and cell delays, iteration 1:
+          Trunk : target=1.360ns count=15 avg=0.810ns sd=0.462ns min=0.243ns max=1.326ns {3 <= 0.272ns, 3 <= 0.544ns, 1 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+          Leaf  : target=1.360ns count=59 avg=1.226ns sd=0.137ns min=0.748ns max=1.354ns {3 <= 0.816ns, 1 <= 1.088ns, 55 <= 1.360ns}
+        Clock DAG library cell distribution after Approximately balancing fragments, wire and cell delays, iteration 1 {count}:
+           Bufs: CLKBU8: 72 
+           Invs: CLKIN4: 1 
+      Approximately balancing fragments, wire and cell delays, iteration 1 done.
+      Approximately balancing fragments, wire and cell delays, iteration 2...
+        Clock DAG stats after Approximately balancing fragments, wire and cell delays, iteration 2:
+          cell counts      : b=72, i=1, icg=0, nicg=0, l=0, total=73
+          cell areas       : b=6552.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6606.600um^2
+          cell capacitance : b=0.720pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.739pF
+          sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+          wire capacitance : top=0.000pF, trunk=2.719pF, leaf=13.493pF, total=16.212pF
+          wire lengths     : top=0.000um, trunk=10748.371um, leaf=48047.259um, total=58795.630um
+        Clock DAG net violations after Approximately balancing fragments, wire and cell delays, iteration 2: none
+        Clock DAG primary half-corner transition distribution after Approximately balancing fragments, wire and cell delays, iteration 2:
+          Trunk : target=1.360ns count=15 avg=0.810ns sd=0.462ns min=0.243ns max=1.326ns {3 <= 0.272ns, 3 <= 0.544ns, 1 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+          Leaf  : target=1.360ns count=59 avg=1.226ns sd=0.137ns min=0.748ns max=1.354ns {3 <= 0.816ns, 1 <= 1.088ns, 55 <= 1.360ns}
+        Clock DAG library cell distribution after Approximately balancing fragments, wire and cell delays, iteration 2 {count}:
+           Bufs: CLKBU8: 72 
+           Invs: CLKIN4: 1 
+      Approximately balancing fragments, wire and cell delays, iteration 2 done.
+      Approximately balancing fragments, wire and cell delays done. (took cpu=0:00:01.0 real=0:00:01.0)
+    Approximately balancing fragments done.
+    Clock DAG stats after 'Approximately balancing fragments step':
+      cell counts      : b=72, i=1, icg=0, nicg=0, l=0, total=73
+      cell areas       : b=6552.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6606.600um^2
+      cell capacitance : b=0.720pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.739pF
+      sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+      wire capacitance : top=0.000pF, trunk=2.719pF, leaf=13.493pF, total=16.212pF
+      wire lengths     : top=0.000um, trunk=10748.371um, leaf=48047.259um, total=58795.630um
+    Clock DAG net violations after 'Approximately balancing fragments step': none
+    Clock DAG primary half-corner transition distribution after 'Approximately balancing fragments step':
+      Trunk : target=1.360ns count=15 avg=0.810ns sd=0.462ns min=0.243ns max=1.326ns {3 <= 0.272ns, 3 <= 0.544ns, 1 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+      Leaf  : target=1.360ns count=59 avg=1.226ns sd=0.137ns min=0.748ns max=1.354ns {3 <= 0.816ns, 1 <= 1.088ns, 55 <= 1.360ns}
+    Clock DAG library cell distribution after 'Approximately balancing fragments step' {count}:
+       Bufs: CLKBU8: 72 
+       Invs: CLKIN4: 1 
+    Clock network insertion delays are now [2.191ns, 2.655ns] average 2.512ns std.dev 0.077ns
+    Legalizer calls during this step: 74 succeeded with DRC/Color checks: 74 succeeded without DRC/Color checks: 0
+  Approximately balancing fragments step done. (took cpu=0:00:01.3 real=0:00:01.3)
+  Clock DAG stats after Approximately balancing fragments:
+    cell counts      : b=72, i=1, icg=0, nicg=0, l=0, total=73
+    cell areas       : b=6552.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6606.600um^2
+    cell capacitance : b=0.720pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.739pF
+    sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+    wire capacitance : top=0.000pF, trunk=2.719pF, leaf=13.493pF, total=16.212pF
+    wire lengths     : top=0.000um, trunk=10748.371um, leaf=48047.259um, total=58795.630um
+  Clock DAG net violations after Approximately balancing fragments: none
+  Clock DAG primary half-corner transition distribution after Approximately balancing fragments:
+    Trunk : target=1.360ns count=15 avg=0.810ns sd=0.462ns min=0.243ns max=1.326ns {3 <= 0.272ns, 3 <= 0.544ns, 1 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+    Leaf  : target=1.360ns count=59 avg=1.226ns sd=0.137ns min=0.748ns max=1.354ns {3 <= 0.816ns, 1 <= 1.088ns, 55 <= 1.360ns}
+  Clock DAG library cell distribution after Approximately balancing fragments {count}:
+     Bufs: CLKBU8: 72 
+     Invs: CLKIN4: 1 
+  Primary reporting skew group after Approximately balancing fragments:
+    skew_group inClock/hold_func_mode: insertion delay [min=2.191, max=2.655, avg=2.512, sd=0.077], skew [0.464 vs 0.523, 100% {2.191, 2.655}] (wid=0.156 ws=0.083) (gid=2.574 gs=0.518)
+  Skew group summary after Approximately balancing fragments:
+    skew_group inClock/hold_func_mode: insertion delay [min=2.191, max=2.655, avg=2.512, sd=0.077], skew [0.464 vs 0.523, 100% {2.191, 2.655}] (wid=0.156 ws=0.083) (gid=2.574 gs=0.518)
+  Clock network insertion delays are now [2.191ns, 2.655ns] average 2.512ns std.dev 0.077ns
+  Improving fragments clock skew...
+    Clock DAG stats after 'Improving fragments clock skew':
+      cell counts      : b=72, i=1, icg=0, nicg=0, l=0, total=73
+      cell areas       : b=6552.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6606.600um^2
+      cell capacitance : b=0.720pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.739pF
+      sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+      wire capacitance : top=0.000pF, trunk=2.719pF, leaf=13.493pF, total=16.212pF
+      wire lengths     : top=0.000um, trunk=10748.371um, leaf=48047.259um, total=58795.630um
+    Clock DAG net violations after 'Improving fragments clock skew': none
+    Clock DAG primary half-corner transition distribution after 'Improving fragments clock skew':
+      Trunk : target=1.360ns count=15 avg=0.810ns sd=0.462ns min=0.243ns max=1.326ns {3 <= 0.272ns, 3 <= 0.544ns, 1 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+      Leaf  : target=1.360ns count=59 avg=1.226ns sd=0.137ns min=0.748ns max=1.354ns {3 <= 0.816ns, 1 <= 1.088ns, 55 <= 1.360ns}
+    Clock DAG library cell distribution after 'Improving fragments clock skew' {count}:
+       Bufs: CLKBU8: 72 
+       Invs: CLKIN4: 1 
+    Primary reporting skew group after 'Improving fragments clock skew':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.191, max=2.655, avg=2.512, sd=0.077], skew [0.464 vs 0.523, 100% {2.191, 2.655}] (wid=0.156 ws=0.083) (gid=2.574 gs=0.518)
+    Skew group summary after 'Improving fragments clock skew':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.191, max=2.655, avg=2.512, sd=0.077], skew [0.464 vs 0.523, 100% {2.191, 2.655}] (wid=0.156 ws=0.083) (gid=2.574 gs=0.518)
+    Clock network insertion delays are now [2.191ns, 2.655ns] average 2.512ns std.dev 0.077ns
+    BalancingStep Improving fragments clock skew has increased max latencies (wire and cell) to be greater than the max desired latencies
+    {inClock/hold_func_mode,WC: 26551.2 -> 26552}Legalizer calls during this step: 0 succeeded with DRC/Color checks: 0 succeeded without DRC/Color checks: 0
+  Improving fragments clock skew done. (took cpu=0:00:00.1 real=0:00:00.1)
+  Approximately balancing step...
+    Resolve constraints - Approximately balancing...
+    Resolving skew group constraints...
+      Solving LP: 1 skew groups; 2 fragments, 5 fraglets and 7 vertices; 45 variables and 136 constraints; tolerance 1
+    Resolving skew group constraints done.
+    Resolve constraints - Approximately balancing done. (took cpu=0:00:00.1 real=0:00:00.1)
+    Approximately balancing...
+      Approximately balancing, wire and cell delays...
+      Approximately balancing, wire and cell delays, iteration 1...
+        Clock DAG stats after Approximately balancing, wire and cell delays, iteration 1:
+          cell counts      : b=72, i=1, icg=0, nicg=0, l=0, total=73
+          cell areas       : b=6552.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6606.600um^2
+          cell capacitance : b=0.720pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.739pF
+          sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+          wire capacitance : top=0.000pF, trunk=2.719pF, leaf=13.493pF, total=16.212pF
+          wire lengths     : top=0.000um, trunk=10748.371um, leaf=48047.259um, total=58795.630um
+        Clock DAG net violations after Approximately balancing, wire and cell delays, iteration 1: none
+        Clock DAG primary half-corner transition distribution after Approximately balancing, wire and cell delays, iteration 1:
+          Trunk : target=1.360ns count=15 avg=0.810ns sd=0.462ns min=0.243ns max=1.326ns {3 <= 0.272ns, 3 <= 0.544ns, 1 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+          Leaf  : target=1.360ns count=59 avg=1.226ns sd=0.137ns min=0.748ns max=1.354ns {3 <= 0.816ns, 1 <= 1.088ns, 55 <= 1.360ns}
+        Clock DAG library cell distribution after Approximately balancing, wire and cell delays, iteration 1 {count}:
+           Bufs: CLKBU8: 72 
+           Invs: CLKIN4: 1 
+      Approximately balancing, wire and cell delays, iteration 1 done.
+      Approximately balancing, wire and cell delays done. (took cpu=0:00:00.0 real=0:00:00.0)
+    Approximately balancing done.
+    Clock DAG stats after 'Approximately balancing step':
+      cell counts      : b=72, i=1, icg=0, nicg=0, l=0, total=73
+      cell areas       : b=6552.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6606.600um^2
+      cell capacitance : b=0.720pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.739pF
+      sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+      wire capacitance : top=0.000pF, trunk=2.719pF, leaf=13.493pF, total=16.212pF
+      wire lengths     : top=0.000um, trunk=10748.371um, leaf=48047.259um, total=58795.630um
+    Clock DAG net violations after 'Approximately balancing step': none
+    Clock DAG primary half-corner transition distribution after 'Approximately balancing step':
+      Trunk : target=1.360ns count=15 avg=0.810ns sd=0.462ns min=0.243ns max=1.326ns {3 <= 0.272ns, 3 <= 0.544ns, 1 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+      Leaf  : target=1.360ns count=59 avg=1.226ns sd=0.137ns min=0.748ns max=1.354ns {3 <= 0.816ns, 1 <= 1.088ns, 55 <= 1.360ns}
+    Clock DAG library cell distribution after 'Approximately balancing step' {count}:
+       Bufs: CLKBU8: 72 
+       Invs: CLKIN4: 1 
+    Primary reporting skew group after 'Approximately balancing step':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.191, max=2.655, avg=2.512, sd=0.077], skew [0.464 vs 0.523, 100% {2.191, 2.655}] (wid=0.156 ws=0.083) (gid=2.574 gs=0.518)
+    Skew group summary after 'Approximately balancing step':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.191, max=2.655, avg=2.512, sd=0.077], skew [0.464 vs 0.523, 100% {2.191, 2.655}] (wid=0.156 ws=0.083) (gid=2.574 gs=0.518)
+    Clock network insertion delays are now [2.191ns, 2.655ns] average 2.512ns std.dev 0.077ns
+    BalancingStep Approximately balancing step has increased max desired latencies (wire and cell)
+    {inClock/hold_func_mode,WC: 26551.2 -> 26580.2}Legalizer calls during this step: 0 succeeded with DRC/Color checks: 0 succeeded without DRC/Color checks: 0
+  Approximately balancing step done. (took cpu=0:00:00.2 real=0:00:00.2)
+  Fixing clock tree overload...
+    Fixing clock tree overload: ...20% ...40% ...60% ...80% ...100% 
+    Clock DAG stats after 'Fixing clock tree overload':
+      cell counts      : b=72, i=1, icg=0, nicg=0, l=0, total=73
+      cell areas       : b=6552.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6606.600um^2
+      cell capacitance : b=0.720pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.739pF
+      sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+      wire capacitance : top=0.000pF, trunk=2.719pF, leaf=13.493pF, total=16.212pF
+      wire lengths     : top=0.000um, trunk=10748.371um, leaf=48047.259um, total=58795.630um
+    Clock DAG net violations after 'Fixing clock tree overload': none
+    Clock DAG primary half-corner transition distribution after 'Fixing clock tree overload':
+      Trunk : target=1.360ns count=15 avg=0.810ns sd=0.462ns min=0.243ns max=1.326ns {3 <= 0.272ns, 3 <= 0.544ns, 1 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+      Leaf  : target=1.360ns count=59 avg=1.226ns sd=0.137ns min=0.748ns max=1.354ns {3 <= 0.816ns, 1 <= 1.088ns, 55 <= 1.360ns}
+    Clock DAG library cell distribution after 'Fixing clock tree overload' {count}:
+       Bufs: CLKBU8: 72 
+       Invs: CLKIN4: 1 
+    Primary reporting skew group after 'Fixing clock tree overload':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.191, max=2.655, avg=2.512, sd=0.077], skew [0.464 vs 0.523, 100% {2.191, 2.655}] (wid=0.156 ws=0.083) (gid=2.574 gs=0.518)
+    Skew group summary after 'Fixing clock tree overload':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.191, max=2.655, avg=2.512, sd=0.077], skew [0.464 vs 0.523, 100% {2.191, 2.655}] (wid=0.156 ws=0.083) (gid=2.574 gs=0.518)
+    Clock network insertion delays are now [2.191ns, 2.655ns] average 2.512ns std.dev 0.077ns
+    Legalizer calls during this step: 0 succeeded with DRC/Color checks: 0 succeeded without DRC/Color checks: 0
+  Fixing clock tree overload done. (took cpu=0:00:00.1 real=0:00:00.1)
+  Approximately balancing paths...
+    Added 0 buffers.
+    Clock DAG stats after 'Approximately balancing paths':
+      cell counts      : b=72, i=1, icg=0, nicg=0, l=0, total=73
+      cell areas       : b=6552.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6606.600um^2
+      cell capacitance : b=0.720pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.739pF
+      sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+      wire capacitance : top=0.000pF, trunk=2.719pF, leaf=13.493pF, total=16.212pF
+      wire lengths     : top=0.000um, trunk=10748.371um, leaf=48047.259um, total=58795.630um
+    Clock DAG net violations after 'Approximately balancing paths': none
+    Clock DAG primary half-corner transition distribution after 'Approximately balancing paths':
+      Trunk : target=1.360ns count=15 avg=0.810ns sd=0.462ns min=0.243ns max=1.326ns {3 <= 0.272ns, 3 <= 0.544ns, 1 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+      Leaf  : target=1.360ns count=59 avg=1.226ns sd=0.137ns min=0.748ns max=1.354ns {3 <= 0.816ns, 1 <= 1.088ns, 55 <= 1.360ns}
+    Clock DAG library cell distribution after 'Approximately balancing paths' {count}:
+       Bufs: CLKBU8: 72 
+       Invs: CLKIN4: 1 
+    Primary reporting skew group after 'Approximately balancing paths':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.191, max=2.655, avg=2.512, sd=0.077], skew [0.464 vs 0.523, 100% {2.191, 2.655}] (wid=0.156 ws=0.083) (gid=2.574 gs=0.518)
+    Skew group summary after 'Approximately balancing paths':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.191, max=2.655, avg=2.512, sd=0.077], skew [0.464 vs 0.523, 100% {2.191, 2.655}] (wid=0.156 ws=0.083) (gid=2.574 gs=0.518)
+    Clock network insertion delays are now [2.191ns, 2.655ns] average 2.512ns std.dev 0.077ns
+    Legalizer calls during this step: 0 succeeded with DRC/Color checks: 0 succeeded without DRC/Color checks: 0
+  Approximately balancing paths done. (took cpu=0:00:00.1 real=0:00:00.1)
+  Stage::Balancing done. (took cpu=0:00:01.7 real=0:00:01.7)
+  Stage::Polishing...
+  Resynthesising clock tree into netlist...
+    Reset timing graph...
+Ignoring AAE DB Resetting ...
+    Reset timing graph done.
+  Resynthesising clock tree into netlist done.
+  Updating congestion map to accurately time the clock tree...
+    Routing unrouted datapath nets connected to clock instances...
+      Routed 0 unrouted datapath nets connected to clock instances
+    Routing unrouted datapath nets connected to clock instances done.
+    Leaving CCOpt scope - extractRC...
+    Updating RC parasitics by calling: "extractRC -noRouteCheck"...
+Extraction called for design 'top_io' of instances=13632 and nets=14340 using extraction engine 'preRoute' .
+PreRoute RC Extraction called for design top_io.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.1  Real Time: 0:00:00.0  MEM: 1622.633M)
+    Updating RC parasitics by calling: "extractRC -noRouteCheck" done.
+    Leaving CCOpt scope - extractRC done. (took cpu=0:00:00.1 real=0:00:00.1)
+  Updating congestion map to accurately time the clock tree done.
+  Disconnecting clock tree from netlist...
+  Disconnecting clock tree from netlist done.
+  Clock DAG stats After congestion update:
+    cell counts      : b=72, i=1, icg=0, nicg=0, l=0, total=73
+    cell areas       : b=6552.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6606.600um^2
+    cell capacitance : b=0.720pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.739pF
+    sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+    wire capacitance : top=0.000pF, trunk=2.721pF, leaf=13.499pF, total=16.220pF
+    wire lengths     : top=0.000um, trunk=10748.371um, leaf=48047.259um, total=58795.630um
+  Clock DAG net violations After congestion update: none
+  Clock DAG primary half-corner transition distribution After congestion update:
+    Trunk : target=1.360ns count=15 avg=0.810ns sd=0.462ns min=0.243ns max=1.327ns {3 <= 0.272ns, 3 <= 0.544ns, 1 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+    Leaf  : target=1.360ns count=59 avg=1.226ns sd=0.137ns min=0.749ns max=1.354ns {3 <= 0.816ns, 1 <= 1.088ns, 55 <= 1.360ns}
+  Clock DAG library cell distribution After congestion update {count}:
+     Bufs: CLKBU8: 72 
+     Invs: CLKIN4: 1 
+  Primary reporting skew group After congestion update:
+    skew_group inClock/hold_func_mode: insertion delay [min=2.192, max=2.656, avg=2.513, sd=0.077], skew [0.465 vs 0.523, 100% {2.192, 2.656}] (wid=0.156 ws=0.083) (gid=2.575 gs=0.519)
+  Skew group summary After congestion update:
+    skew_group inClock/hold_func_mode: insertion delay [min=2.192, max=2.656, avg=2.513, sd=0.077], skew [0.465 vs 0.523, 100% {2.192, 2.656}] (wid=0.156 ws=0.083) (gid=2.575 gs=0.519)
+  Clock network insertion delays are now [2.192ns, 2.656ns] average 2.513ns std.dev 0.077ns
+  Merging balancing drivers for power...
+    Tried: 73 Succeeded: 1
+    Clock DAG stats after 'Merging balancing drivers for power':
+      cell counts      : b=70, i=1, icg=0, nicg=0, l=0, total=71
+      cell areas       : b=6370.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6424.600um^2
+      cell capacitance : b=0.700pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.719pF
+      sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+      wire capacitance : top=0.000pF, trunk=2.790pF, leaf=13.499pF, total=16.289pF
+      wire lengths     : top=0.000um, trunk=11073.771um, leaf=48047.259um, total=59121.030um
+    Clock DAG net violations after 'Merging balancing drivers for power': none
+    Clock DAG primary half-corner transition distribution after 'Merging balancing drivers for power':
+      Trunk : target=1.360ns count=13 avg=0.919ns sd=0.380ns min=0.319ns max=1.340ns {3 <= 0.544ns, 2 <= 0.816ns, 3 <= 1.088ns, 5 <= 1.360ns}
+      Leaf  : target=1.360ns count=59 avg=1.226ns sd=0.137ns min=0.749ns max=1.356ns {3 <= 0.816ns, 1 <= 1.088ns, 55 <= 1.360ns}
+    Clock DAG library cell distribution after 'Merging balancing drivers for power' {count}:
+       Bufs: CLKBU8: 70 
+       Invs: CLKIN4: 1 
+    Primary reporting skew group after 'Merging balancing drivers for power':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.408, max=2.930, avg=2.615, sd=0.141], skew [0.523 vs 0.523, 100% {2.408, 2.930}] (wid=0.127 ws=0.073) (gid=2.815 gs=0.498)
+    Skew group summary after 'Merging balancing drivers for power':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.408, max=2.930, avg=2.615, sd=0.141], skew [0.523 vs 0.523, 100% {2.408, 2.930}] (wid=0.127 ws=0.073) (gid=2.815 gs=0.498)
+    Clock network insertion delays are now [2.408ns, 2.930ns] average 2.615ns std.dev 0.141ns
+    BalancingStep Merging balancing drivers for power has increased max latencies (wire and cell) to be greater than the max desired latencies
+    {inClock/hold_func_mode,WC: 26580.2 -> 29303}Legalizer calls during this step: 1 succeeded with DRC/Color checks: 1 succeeded without DRC/Color checks: 0
+  Merging balancing drivers for power done. (took cpu=0:00:00.1 real=0:00:00.1)
+  Improving clock skew...
+    Clock DAG stats after 'Improving clock skew':
+      cell counts      : b=70, i=1, icg=0, nicg=0, l=0, total=71
+      cell areas       : b=6370.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6424.600um^2
+      cell capacitance : b=0.700pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.719pF
+      sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+      wire capacitance : top=0.000pF, trunk=2.790pF, leaf=13.499pF, total=16.289pF
+      wire lengths     : top=0.000um, trunk=11073.771um, leaf=48047.259um, total=59121.030um
+    Clock DAG net violations after 'Improving clock skew': none
+    Clock DAG primary half-corner transition distribution after 'Improving clock skew':
+      Trunk : target=1.360ns count=13 avg=0.919ns sd=0.380ns min=0.319ns max=1.340ns {3 <= 0.544ns, 2 <= 0.816ns, 3 <= 1.088ns, 5 <= 1.360ns}
+      Leaf  : target=1.360ns count=59 avg=1.226ns sd=0.137ns min=0.749ns max=1.356ns {3 <= 0.816ns, 1 <= 1.088ns, 55 <= 1.360ns}
+    Clock DAG library cell distribution after 'Improving clock skew' {count}:
+       Bufs: CLKBU8: 70 
+       Invs: CLKIN4: 1 
+    Primary reporting skew group after 'Improving clock skew':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.408, max=2.930, avg=2.615, sd=0.141], skew [0.523 vs 0.523, 100% {2.408, 2.930}] (wid=0.127 ws=0.073) (gid=2.815 gs=0.498)
+    Skew group summary after 'Improving clock skew':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.408, max=2.930, avg=2.615, sd=0.141], skew [0.523 vs 0.523, 100% {2.408, 2.930}] (wid=0.127 ws=0.073) (gid=2.815 gs=0.498)
+    Clock network insertion delays are now [2.408ns, 2.930ns] average 2.615ns std.dev 0.141ns
+    BalancingStep Improving clock skew has increased max latencies (wire and cell) to be greater than the max desired latencies
+    {inClock/hold_func_mode,WC: 26580.2 -> 29303}Legalizer calls during this step: 0 succeeded with DRC/Color checks: 0 succeeded without DRC/Color checks: 0
+  Improving clock skew done. (took cpu=0:00:00.1 real=0:00:00.1)
+  Reducing clock tree power 3...
+    Initial gate capacitance is (rise=9.011pF fall=9.011pF).
+    Resizing gates: ...20% ...40% ...60% ...80% ...100% 
+    Clock DAG stats after 'Reducing clock tree power 3':
+      cell counts      : b=70, i=1, icg=0, nicg=0, l=0, total=71
+      cell areas       : b=6370.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6424.600um^2
+      cell capacitance : b=0.700pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.719pF
+      sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+      wire capacitance : top=0.000pF, trunk=2.790pF, leaf=13.499pF, total=16.289pF
+      wire lengths     : top=0.000um, trunk=11073.771um, leaf=48047.259um, total=59121.030um
+    Clock DAG net violations after 'Reducing clock tree power 3': none
+    Clock DAG primary half-corner transition distribution after 'Reducing clock tree power 3':
+      Trunk : target=1.360ns count=13 avg=0.919ns sd=0.380ns min=0.319ns max=1.340ns {3 <= 0.544ns, 2 <= 0.816ns, 3 <= 1.088ns, 5 <= 1.360ns}
+      Leaf  : target=1.360ns count=59 avg=1.226ns sd=0.137ns min=0.749ns max=1.356ns {3 <= 0.816ns, 1 <= 1.088ns, 55 <= 1.360ns}
+    Clock DAG library cell distribution after 'Reducing clock tree power 3' {count}:
+       Bufs: CLKBU8: 70 
+       Invs: CLKIN4: 1 
+    Primary reporting skew group after 'Reducing clock tree power 3':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.408, max=2.930, avg=2.615, sd=0.141], skew [0.523 vs 0.523, 100% {2.408, 2.930}] (wid=0.127 ws=0.073) (gid=2.815 gs=0.498)
+    Skew group summary after 'Reducing clock tree power 3':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.408, max=2.930, avg=2.615, sd=0.141], skew [0.523 vs 0.523, 100% {2.408, 2.930}] (wid=0.127 ws=0.073) (gid=2.815 gs=0.498)
+    Clock network insertion delays are now [2.408ns, 2.930ns] average 2.615ns std.dev 0.141ns
+    BalancingStep Reducing clock tree power 3 has increased max latencies (wire and cell) to be greater than the max desired latencies
+    {inClock/hold_func_mode,WC: 26580.2 -> 29303}Legalizer calls during this step: 0 succeeded with DRC/Color checks: 0 succeeded without DRC/Color checks: 0
+  Reducing clock tree power 3 done. (took cpu=0:00:00.1 real=0:00:00.1)
+  Improving insertion delay...
+    Clock DAG stats after 'Improving insertion delay':
+      cell counts      : b=70, i=1, icg=0, nicg=0, l=0, total=71
+      cell areas       : b=6370.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6424.600um^2
+      cell capacitance : b=0.700pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.719pF
+      sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+      wire capacitance : top=0.000pF, trunk=2.790pF, leaf=13.499pF, total=16.289pF
+      wire lengths     : top=0.000um, trunk=11073.771um, leaf=48047.259um, total=59121.030um
+    Clock DAG net violations after 'Improving insertion delay': none
+    Clock DAG primary half-corner transition distribution after 'Improving insertion delay':
+      Trunk : target=1.360ns count=13 avg=0.919ns sd=0.380ns min=0.319ns max=1.340ns {3 <= 0.544ns, 2 <= 0.816ns, 3 <= 1.088ns, 5 <= 1.360ns}
+      Leaf  : target=1.360ns count=59 avg=1.226ns sd=0.137ns min=0.749ns max=1.356ns {3 <= 0.816ns, 1 <= 1.088ns, 55 <= 1.360ns}
+    Clock DAG library cell distribution after 'Improving insertion delay' {count}:
+       Bufs: CLKBU8: 70 
+       Invs: CLKIN4: 1 
+    Primary reporting skew group after 'Improving insertion delay':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.408, max=2.930, avg=2.615, sd=0.141], skew [0.523 vs 0.523, 100% {2.408, 2.930}] (wid=0.127 ws=0.073) (gid=2.815 gs=0.498)
+    Skew group summary after 'Improving insertion delay':
+      skew_group inClock/hold_func_mode: insertion delay [min=2.408, max=2.930, avg=2.615, sd=0.141], skew [0.523 vs 0.523, 100% {2.408, 2.930}] (wid=0.127 ws=0.073) (gid=2.815 gs=0.498)
+    Clock network insertion delays are now [2.408ns, 2.930ns] average 2.615ns std.dev 0.141ns
+    BalancingStep Improving insertion delay has increased max latencies (wire and cell) to be greater than the max desired latencies
+    {inClock/hold_func_mode,WC: 26580.2 -> 29303}Legalizer calls during this step: 0 succeeded with DRC/Color checks: 0 succeeded without DRC/Color checks: 0
+  Improving insertion delay done. (took cpu=0:00:00.1 real=0:00:00.1)
+  Total capacitance is (rise=25.300pF fall=25.300pF), of which (rise=16.289pF fall=16.289pF) is wire, and (rise=9.011pF fall=9.011pF) is gate.
+  Stage::Polishing done. (took cpu=0:00:00.7 real=0:00:00.7)
+  Stage::Updating netlist...
+  Reset timing graph...
+Ignoring AAE DB Resetting ...
+  Reset timing graph done.
+  Setting non-default rules before calling refine place.
+  Leaving CCOpt scope - ClockRefiner...
+  Performing Clock Only Refine Place.
+*** Starting refinePlace (1:47:35 mem=1679.9M) ***
+Total net bbox length = 7.824e+05 (3.923e+05 3.901e+05) (ext = 2.985e+04)
+Move report: Detail placement moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1679.9MB
+Summary Report:
+Instances move: 0 (out of 13372 movable)
+Instances flipped: 0
+Mean displacement: 0.00 um
+Max displacement: 0.00 um 
+Total net bbox length = 7.824e+05 (3.923e+05 3.901e+05) (ext = 2.985e+04)
+Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 1679.9MB
+*** Finished refinePlace (1:47:35 mem=1679.9M) ***
+  Moved 0 and flipped 0 of 2144 clock instance(s) during refinement.
+  The largest move was 0 microns for .
+  Leaving CCOpt scope - ClockRefiner done. (took cpu=0:00:00.2 real=0:00:00.2)
+  Stage::Updating netlist done. (took cpu=0:00:00.3 real=0:00:00.3)
+  CCOpt::Phase::Implementation done. (took cpu=0:00:04.5 real=0:00:04.5)
+  CCOpt::Phase::eGRPC...
+  Eagl Post Conditioning loop iteration 0...
+    Clock implementation routing...
+      Leaving CCOpt scope - Routing Tools...
+Net route status summary:
+  Clock:        72 (unrouted=72, trialRouted=0, noStatus=0, routed=0, fixed=0, [crossesIlmBoundary=0, tooFewTerms=0, (crossesIlmBounday AND tooFewTerms=0)])
+  Non-clock: 14465 (unrouted=690, trialRouted=13775, noStatus=0, routed=0, fixed=0, [crossesIlmBoundary=0, tooFewTerms=647, (crossesIlmBounday AND tooFewTerms=0)])
+      Routing using eGR only...
+        Early Global Route - eGR only step...
+(::ccopt::eagl_route_clock_nets): There are 72 for routing of which 72 have one or more a fixed wires.
+NR earlyGlobal start to route trunk nets
+[NR-eGR] honorMsvRouteConstraint: false
+[NR-eGR] honorClockSpecNDR      : 0
+[NR-eGR] minRouteLayer          : 1
+[NR-eGR] maxRouteLayer          : 4
+[NR-eGR] numTracksPerClockWire  : 0
+[NR-eGR] Layer1 has single uniform track structure
+[NR-eGR] Layer2 has single uniform track structure
+[NR-eGR] Layer3 has single uniform track structure
+[NR-eGR] Layer4 has single uniform track structure
+[NR-eGR] numRoutingBlks=0 numInstBlks=87374 numPGBlocks=3378 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eGR] numPreroutedNet = 0  numPreroutedWires = 0
+[NR-eGR] Read numTotalNets=13890  numIgnoredNets=13877
+[NR-eGR] There are 13 clock nets ( 13 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id 0. Nets 13 
+[NR-eGR] id=0  ndrTrackId=0  ndrViaId=-1  extraSpace=1  numShields=0  maxHorDemand=2  maxVerDemand=2
+[NR-eGR] Pitch:  L1=1900  L2=2200  L3=2200  L4=2400
+[NR-eGR] Rule id 1. Nets 0 
+[NR-eGR] id=1  ndrTrackId=0  ndrViaId=-1  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[NR-eGR] Pitch:  L1=1300  L2=1400  L3=1300  L4=1400
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] numSplitNets=0 (0.00%),  numDemotedLocalNets=0  numSubNets=0  numEscapedPins=0  numNonEscapedPins=0
+[NR-eGR] Layer group 1: route 13 net(s) in layer range [3, 4]
+[NR-eGR] earlyGlobalRoute overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 1.107600e+04um
+[NR-eGR] 
+[NR-eGR] Move 1 nets to layer range [2, 4]
+[NR-eGR] Layer group 2: route 1 net(s) in layer range [2, 4]
+[NR-eGR] earlyGlobalRoute overflow of layer group 2: 0.00% H + 0.00% V. EstWL: 2.548000e+03um
+[NR-eGR] 
+[NR-eGR] Congestion Analysis Layer By layer: (blocked Gcells are excluded) 
+[NR-eGR]                OverCon            
+[NR-eGR]                 #Gcell     %Gcell
+[NR-eGR] Layer              (1)    OverCon 
+[NR-eGR] ------------------------------------
+[NR-eGR] Layer1       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer2       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer3       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer4       0( 0.00%)   ( 0.00%) 
+[NR-eGR] ------------------------------------
+[NR-eGR] Total        0( 0.00%)   ( 0.00%) 
+[NR-eGR] 
+[NR-eGR] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[NR-eGR] Overflow after earlyGlobalRoute 0.00% H + 0.00% V
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Layer1(MET1)(H) length: 8.497511e+04um, number of vias: 40949
+[NR-eGR] Layer2(MET2)(V) length: 3.878476e+05um, number of vias: 26600
+[NR-eGR] Layer3(MET3)(H) length: 3.708184e+05um, number of vias: 2004
+[NR-eGR] Layer4(MET4)(V) length: 6.477014e+04um, number of vias: 0
+[NR-eGR] Total length: 9.084113e+05um, number of vias: 69553
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total clock nets wire length: 1.109423e+04um 
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Report for selected net(s) only.
+[NR-eGR] Layer1(MET1)(H) length: 2.100000e+01um, number of vias: 85
+[NR-eGR] Layer2(MET2)(V) length: 7.462750e+02um, number of vias: 83
+[NR-eGR] Layer3(MET3)(H) length: 5.689600e+03um, number of vias: 65
+[NR-eGR] Layer4(MET4)(V) length: 4.637350e+03um, number of vias: 0
+[NR-eGR] Total length: 1.109423e+04um, number of vias: 233
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total routed clock nets wire length: 1.109423e+04um, number of vias: 233
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] End Peak syMemory usage = 1619.6 MB
+[NR-eGR] Early Global Router Kernel+IO runtime : 0.20 seconds
+NR earlyGlobal start to route leaf nets
+[NR-eGR] Started earlyGlobalRoute kernel
+[NR-eGR] Initial Peak syMemory usage = 1619.6 MB
+[NR-eGR] honorMsvRouteConstraint: false
+[NR-eGR] honorClockSpecNDR      : 0
+[NR-eGR] minRouteLayer          : 1
+[NR-eGR] maxRouteLayer          : 4
+[NR-eGR] numTracksPerClockWire  : 0
+[NR-eGR] Layer1 has single uniform track structure
+[NR-eGR] Layer2 has single uniform track structure
+[NR-eGR] Layer3 has single uniform track structure
+[NR-eGR] Layer4 has single uniform track structure
+[NR-eGR] numRoutingBlks=0 numInstBlks=87374 numPGBlocks=3378 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eGR] numPreroutedNet = 13  numPreroutedWires = 322
+[NR-eGR] Read numTotalNets=13890  numIgnoredNets=13831
+[NR-eGR] There are 59 clock nets ( 59 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id 0. Nets 59 
+[NR-eGR] id=0  ndrTrackId=0  ndrViaId=-1  extraSpace=1  numShields=0  maxHorDemand=2  maxVerDemand=2
+[NR-eGR] Pitch:  L1=1900  L2=2200  L3=2200  L4=2400
+[NR-eGR] Rule id 1. Nets 0 
+[NR-eGR] id=1  ndrTrackId=0  ndrViaId=-1  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[NR-eGR] Pitch:  L1=1300  L2=1400  L3=1300  L4=1400
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] numSplitNets=0 (0.00%),  numDemotedLocalNets=0  numSubNets=0  numEscapedPins=0  numNonEscapedPins=0
+[NR-eGR] Layer group 1: route 59 net(s) in layer range [3, 4]
+[NR-eGR] earlyGlobalRoute overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 4.631900e+04um
+[NR-eGR] 
+[NR-eGR] Congestion Analysis Layer By layer: (blocked Gcells are excluded) 
+[NR-eGR]                OverCon            
+[NR-eGR]                 #Gcell     %Gcell
+[NR-eGR] Layer              (2)    OverCon 
+[NR-eGR] ------------------------------------
+[NR-eGR] Layer1       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer2       4( 0.03%)   ( 0.03%) 
+[NR-eGR] Layer3       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer4       0( 0.00%)   ( 0.00%) 
+[NR-eGR] ------------------------------------
+[NR-eGR] Total        4( 0.01%)   ( 0.01%) 
+[NR-eGR] 
+[NR-eGR] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[NR-eGR] Overflow after earlyGlobalRoute 0.00% H + 0.00% V
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Layer1(MET1)(H) length: 8.728741e+04um, number of vias: 42926
+[NR-eGR] Layer2(MET2)(V) length: 4.048256e+05um, number of vias: 28327
+[NR-eGR] Layer3(MET3)(H) length: 3.920751e+05um, number of vias: 2616
+[NR-eGR] Layer4(MET4)(V) length: 7.275734e+04um, number of vias: 0
+[NR-eGR] Total length: 9.569455e+05um, number of vias: 73869
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total clock nets wire length: 4.853420e+04um 
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Report for selected net(s) only.
+[NR-eGR] Layer1(MET1)(H) length: 2.312300e+03um, number of vias: 1977
+[NR-eGR] Layer2(MET2)(V) length: 1.697800e+04um, number of vias: 1727
+[NR-eGR] Layer3(MET3)(H) length: 2.125670e+04um, number of vias: 612
+[NR-eGR] Layer4(MET4)(V) length: 7.987201e+03um, number of vias: 0
+[NR-eGR] Total length: 4.853420e+04um, number of vias: 4316
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total routed clock nets wire length: 4.853420e+04um, number of vias: 4316
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] End Peak syMemory usage = 1619.6 MB
+[NR-eGR] Early Global Router Kernel+IO runtime : 0.23 seconds
+        Early Global Route - eGR only step done. (took cpu=0:00:00.7 real=0:00:00.7)
+Set FIXED routing status on 72 net(s)
+      Routing using eGR only done.
+Net route status summary:
+  Clock:        72 (unrouted=0, trialRouted=0, noStatus=0, routed=0, fixed=72, [crossesIlmBoundary=0, tooFewTerms=0, (crossesIlmBounday AND tooFewTerms=0)])
+  Non-clock: 14465 (unrouted=690, trialRouted=13775, noStatus=0, routed=0, fixed=0, [crossesIlmBoundary=0, tooFewTerms=647, (crossesIlmBounday AND tooFewTerms=0)])
+
+CCOPT: Done with clock implementation routing.
+
+      Leaving CCOpt scope - Routing Tools done. (took cpu=0:00:00.8 real=0:00:00.8)
+    Clock implementation routing done.
+    Leaving CCOpt scope - extractRC...
+    Updating RC parasitics by calling: "extractRC -noRouteCheck"...
+Extraction called for design 'top_io' of instances=13630 and nets=14537 using extraction engine 'preRoute' .
+PreRoute RC Extraction called for design top_io.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 1619.578M)
+    Updating RC parasitics by calling: "extractRC -noRouteCheck" done.
+    Leaving CCOpt scope - extractRC done. (took cpu=0:00:00.1 real=0:00:00.1)
+    Calling post conditioning for eGRPC...
+      eGRPC...
+        eGRPC active optimizations:
+         - Move Down
+         - Downsizing before DRV sizing
+         - DRV fixing with cell sizing
+         - Move to fanout
+         - Cloning
+        
+        Currently running CTS, using active skew data
+        Reset bufferability constraints...
+        Resetting previous bufferability status on all nets so that eGRPC will attempt to fix all clock tree violations.
+        Reset bufferability constraints done. (took cpu=0:00:00.1 real=0:00:00.1)
+        Clock DAG stats eGRPC initial state:
+          cell counts      : b=70, i=1, icg=0, nicg=0, l=0, total=71
+          cell areas       : b=6370.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6424.600um^2
+          cell capacitance : b=0.700pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.719pF
+          sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+          wire capacitance : top=0.000pF, trunk=2.755pF, leaf=11.847pF, total=14.602pF
+          wire lengths     : top=0.000um, trunk=11094.225um, leaf=48534.202um, total=59628.427um
+        Clock DAG net violations eGRPC initial state: none
+        Clock DAG primary half-corner transition distribution eGRPC initial state:
+          Trunk : target=1.360ns count=13 avg=0.911ns sd=0.377ns min=0.310ns max=1.339ns {3 <= 0.544ns, 2 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+          Leaf  : target=1.360ns count=59 avg=1.148ns sd=0.129ns min=0.684ns max=1.313ns {4 <= 0.816ns, 6 <= 1.088ns, 49 <= 1.360ns}
+        Clock DAG library cell distribution eGRPC initial state {count}:
+           Bufs: CLKBU8: 70 
+           Invs: CLKIN4: 1 
+        Primary reporting skew group eGRPC initial state:
+          skew_group inClock/hold_func_mode: insertion delay [min=2.364, max=2.906, avg=2.579, sd=0.142], skew [0.542 vs 0.523*, 97.8% {2.364, 2.887}] (wid=0.131 ws=0.078) (gid=2.786 gs=0.511)
+        Skew group summary eGRPC initial state:
+          skew_group inClock/hold_func_mode: insertion delay [min=2.364, max=2.906, avg=2.579, sd=0.142], skew [0.542 vs 0.523*, 97.8% {2.364, 2.887}] (wid=0.131 ws=0.078) (gid=2.786 gs=0.511)
+        Clock network insertion delays are now [2.364ns, 2.906ns] average 2.579ns std.dev 0.142ns
+        Moving buffers...
+        Violation analysis...
+        Analysising clock tree DRVs: Analysising clock tree DRVs: Done
+        Violation analysis done. (took cpu=0:00:00.0 real=0:00:00.0)
+        Clock DAG stats eGRPC after moving buffers:
+          cell counts      : b=70, i=1, icg=0, nicg=0, l=0, total=71
+          cell areas       : b=6370.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6424.600um^2
+          cell capacitance : b=0.700pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.719pF
+          sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+          wire capacitance : top=0.000pF, trunk=2.755pF, leaf=11.847pF, total=14.602pF
+          wire lengths     : top=0.000um, trunk=11094.225um, leaf=48534.202um, total=59628.427um
+        Clock DAG net violations eGRPC after moving buffers: none
+        Clock DAG primary half-corner transition distribution eGRPC after moving buffers:
+          Trunk : target=1.360ns count=13 avg=0.911ns sd=0.377ns min=0.310ns max=1.339ns {3 <= 0.544ns, 2 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+          Leaf  : target=1.360ns count=59 avg=1.148ns sd=0.129ns min=0.684ns max=1.313ns {4 <= 0.816ns, 6 <= 1.088ns, 49 <= 1.360ns}
+        Clock DAG library cell distribution eGRPC after moving buffers {count}:
+           Bufs: CLKBU8: 70 
+           Invs: CLKIN4: 1 
+        Primary reporting skew group eGRPC after moving buffers:
+          skew_group inClock/hold_func_mode: insertion delay [min=2.364, max=2.906, avg=2.579, sd=0.142], skew [0.542 vs 0.523*, 97.8% {2.364, 2.887}] (wid=0.131 ws=0.078) (gid=2.786 gs=0.511)
+        Skew group summary eGRPC after moving buffers:
+          skew_group inClock/hold_func_mode: insertion delay [min=2.364, max=2.906, avg=2.579, sd=0.142], skew [0.542 vs 0.523*, 97.8% {2.364, 2.887}] (wid=0.131 ws=0.078) (gid=2.786 gs=0.511)
+        Clock network insertion delays are now [2.364ns, 2.906ns] average 2.579ns std.dev 0.142ns
+        Moving buffers done. (took cpu=0:00:00.1 real=0:00:00.1)
+        Recomputing CTS skew targets...
+        Resolving skew group constraints...
+          Solving LP: 1 skew groups; 2 fragments, 7 fraglets and 9 vertices; 57 variables and 176 constraints; tolerance 1
+        Resolving skew group constraints done.
+        Recomputing CTS skew targets done. (took cpu=0:00:00.1 real=0:00:00.1)
+        Initial Pass of Downsizing Clock Tree Cells...
+        Artificially removing long paths...
+          Artificially shortened 373 long paths. The largest offset applied was 0.186ns
+          
+          Skew Group Offsets:
+          
+          ----------------------------------------------------------------------------------------------------
+          Skew Group                Num.     Num.       Offset        Max        Previous Max.    Current Max.
+                                    Sinks    Offsets    Percentile    Offset     Path Delay       Path Delay
+          ----------------------------------------------------------------------------------------------------
+          inClock/hold_func_mode    2073       373       17.993%      0.186ns       2.906ns         2.720ns
+          ----------------------------------------------------------------------------------------------------
+          
+          Offsets Histogram:
+          
+          -------------------------------
+          From (ns)    To (ns)      Count
+          -------------------------------
+            0.000        0.020       243
+            0.020        0.040        39
+            0.040        0.060         0
+            0.060        0.080         0
+            0.080        0.100         0
+            0.100        0.120         0
+            0.120        0.140         0
+            0.140        0.160        45
+            0.160        0.180         5
+            0.180      and above      41
+          -------------------------------
+          
+          Mean=0.050ns Median=0.014ns Std.Dev=0.069ns
+          
+          
+          Legalizer calls during this step: 0 succeeded with DRC/Color checks: 0 succeeded without DRC/Color checks: 0
+        Artificially removing long paths done. (took cpu=0:00:00.0 real=0:00:00.0)
+        Modifying slew-target multiplier from 1 to 0.9
+        Downsizing prefiltering...
+        Downsizing prefiltering done.
+        Downsizing: ...20% ...40% ...60% ...80% ...100% 
+        DoDownSizing Summary : numSized = 0, numUnchanged = 21, numSkippedDueToOther = 0, numSkippedDueToCloseToSlewTarget = 51, numSkippedDueToCloseToSkewTarget = 0
+        CCOpt-eGRPC Downsizing: considered: 21, tested: 0, violation detected: 0, violation ignored (due to small violation): 0, cannot run: 1, attempted: 20, unsuccessful: 0, sized: 0
+        Reverting slew-target multiplier from 0.9 to 1
+        Reverting Artificially removing long paths...
+          Legalizer calls during this step: 0 succeeded with DRC/Color checks: 0 succeeded without DRC/Color checks: 0
+        Reverting Artificially removing long paths done. (took cpu=0:00:00.0 real=0:00:00.0)
+        Clock DAG stats eGRPC after downsizing:
+          cell counts      : b=70, i=1, icg=0, nicg=0, l=0, total=71
+          cell areas       : b=6370.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6424.600um^2
+          cell capacitance : b=0.700pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.719pF
+          sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+          wire capacitance : top=0.000pF, trunk=2.755pF, leaf=11.847pF, total=14.602pF
+          wire lengths     : top=0.000um, trunk=11094.225um, leaf=48534.202um, total=59628.427um
+        Clock DAG net violations eGRPC after downsizing: none
+        Clock DAG primary half-corner transition distribution eGRPC after downsizing:
+          Trunk : target=1.360ns count=13 avg=0.911ns sd=0.377ns min=0.310ns max=1.339ns {3 <= 0.544ns, 2 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+          Leaf  : target=1.360ns count=59 avg=1.148ns sd=0.129ns min=0.684ns max=1.313ns {4 <= 0.816ns, 6 <= 1.088ns, 49 <= 1.360ns}
+        Clock DAG library cell distribution eGRPC after downsizing {count}:
+           Bufs: CLKBU8: 70 
+           Invs: CLKIN4: 1 
+        Primary reporting skew group eGRPC after downsizing:
+          skew_group inClock/hold_func_mode: insertion delay [min=2.364, max=2.906, avg=2.579, sd=0.142], skew [0.542 vs 0.523*, 97.8% {2.364, 2.887}] (wid=0.131 ws=0.078) (gid=2.786 gs=0.511)
+        Skew group summary eGRPC after downsizing:
+          skew_group inClock/hold_func_mode: insertion delay [min=2.364, max=2.906, avg=2.579, sd=0.142], skew [0.542 vs 0.523*, 97.8% {2.364, 2.887}] (wid=0.131 ws=0.078) (gid=2.786 gs=0.511)
+        Clock network insertion delays are now [2.364ns, 2.906ns] average 2.579ns std.dev 0.142ns
+        Initial Pass of Downsizing Clock Tree Cells done. (took cpu=0:00:00.2 real=0:00:00.2)
+        Fixing DRVs...
+        Fixing clock tree DRVs: ...20% ...40% ...60% ...80% ...100% 
+        CCOpt-eGRPC: considered: 72, tested: 72, violation detected: 0, violation ignored (due to small violation): 0, cannot run: 0, attempted: 0, unsuccessful: 0, sized: 0
+        
+        PRO Statistics: Fix DRVs (cell sizing):
+        =======================================
+        
+        Cell changes by Net Type:
+        
+        ---------------------------------------------------------------------------------------------------------
+        Net Type    Attempted    Upsized     Downsized    Swapped Same Size    Total Changed      Not Sized
+        ---------------------------------------------------------------------------------------------------------
+        top                0            0           0            0                    0                  0
+        trunk              0            0           0            0                    0                  0
+        leaf               0            0           0            0                    0                  0
+        ---------------------------------------------------------------------------------------------------------
+        Total       -            -           -            -                           0 (100%)           0 (100%)
+        ---------------------------------------------------------------------------------------------------------
+        
+        Upsized: 0, Downsized: 0, Sized but same area: 0, Unchanged: 0, Area change: 0.000um^2 (0.000%)
+        Max. move: 0.000um, Min. move: 0.000um, Avg. move: N/A
+        
+        Clock DAG stats eGRPC after DRV fixing:
+          cell counts      : b=70, i=1, icg=0, nicg=0, l=0, total=71
+          cell areas       : b=6370.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6424.600um^2
+          cell capacitance : b=0.700pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.719pF
+          sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+          wire capacitance : top=0.000pF, trunk=2.755pF, leaf=11.847pF, total=14.602pF
+          wire lengths     : top=0.000um, trunk=11094.225um, leaf=48534.202um, total=59628.427um
+        Clock DAG net violations eGRPC after DRV fixing: none
+        Clock DAG primary half-corner transition distribution eGRPC after DRV fixing:
+          Trunk : target=1.360ns count=13 avg=0.911ns sd=0.377ns min=0.310ns max=1.339ns {3 <= 0.544ns, 2 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+          Leaf  : target=1.360ns count=59 avg=1.148ns sd=0.129ns min=0.684ns max=1.313ns {4 <= 0.816ns, 6 <= 1.088ns, 49 <= 1.360ns}
+        Clock DAG library cell distribution eGRPC after DRV fixing {count}:
+           Bufs: CLKBU8: 70 
+           Invs: CLKIN4: 1 
+        Primary reporting skew group eGRPC after DRV fixing:
+          skew_group inClock/hold_func_mode: insertion delay [min=2.364, max=2.906, avg=2.579, sd=0.142], skew [0.542 vs 0.523*, 97.8% {2.364, 2.887}] (wid=0.131 ws=0.078) (gid=2.786 gs=0.511)
+        Skew group summary eGRPC after DRV fixing:
+          skew_group inClock/hold_func_mode: insertion delay [min=2.364, max=2.906, avg=2.579, sd=0.142], skew [0.542 vs 0.523*, 97.8% {2.364, 2.887}] (wid=0.131 ws=0.078) (gid=2.786 gs=0.511)
+        Clock network insertion delays are now [2.364ns, 2.906ns] average 2.579ns std.dev 0.142ns
+        Fixing DRVs done. (took cpu=0:00:00.1 real=0:00:00.1)
+        Reconnecting optimized routes...
+        Reset timing graph...
+Ignoring AAE DB Resetting ...
+        Reset timing graph done.
+        Reconnecting optimized routes done. (took cpu=0:00:00.0 real=0:00:00.0)
+        Violation analysis...
+        Analysising clock tree DRVs: Analysising clock tree DRVs: Done
+        Violation analysis done. (took cpu=0:00:00.1 real=0:00:00.1)
+        Reset timing graph...
+Ignoring AAE DB Resetting ...
+        Reset timing graph done.
+        Set dirty flag on 25 insts, 50 nets
+      eGRPC done.
+    Calling post conditioning for eGRPC done.
+  Eagl Post Conditioning loop iteration 0 done.
+  Refine place not called during Post Conditioning. Calling it now the Eagl->PC Loop is complete.
+  Leaving CCOpt scope - ClockRefiner...
+  Performing Single Pass Refine Place.
+*** Starting refinePlace (1:47:37 mem=1676.8M) ***
+Total net bbox length = 7.824e+05 (3.923e+05 3.901e+05) (ext = 2.985e+04)
+Density distribution unevenness ratio = 3.881%
+Move report: Detail placement moves 123 insts, mean move: 16.69 um, max move: 74.80 um
+	Max move on inst (t_op/U4215): (714.00, 1461.20) --> (723.80, 1526.20)
+	Runtime: CPU: 0:00:00.2 REAL: 0:00:00.0 MEM: 1676.8MB
+Summary Report:
+Instances move: 123 (out of 13372 movable)
+Instances flipped: 0
+Mean displacement: 16.69 um
+Max displacement: 74.80 um (Instance: t_op/U4215) (714, 1461.2) -> (723.8, 1526.2)
+	Length: 2 sites, height: 1 rows, site name: standard, cell type: INV3
+	Violation at original loc: Placement Blockage Violation
+Total net bbox length = 7.840e+05 (3.929e+05 3.911e+05) (ext = 2.985e+04)
+Runtime: CPU: 0:00:00.2 REAL: 0:00:00.0 MEM: 1676.8MB
+*** Finished refinePlace (1:47:37 mem=1676.8M) ***
+  Moved 0 and flipped 0 of 2144 clock instance(s) during refinement.
+  The largest move was 0 microns for .
+  Leaving CCOpt scope - ClockRefiner done. (took cpu=0:00:00.4 real=0:00:00.4)
+  CCOpt::Phase::eGRPC done. (took cpu=0:00:01.9 real=0:00:01.9)
+  CCOpt::Phase::Routing...
+  Update timing and DAG stats before routing clock trees...
+  Clock DAG stats before routing clock trees:
+    cell counts      : b=70, i=1, icg=0, nicg=0, l=0, total=71
+    cell areas       : b=6370.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6424.600um^2
+    cell capacitance : b=0.700pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.719pF
+    sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+    wire capacitance : top=0.000pF, trunk=2.755pF, leaf=11.847pF, total=14.602pF
+    wire lengths     : top=0.000um, trunk=11094.225um, leaf=48534.202um, total=59628.427um
+  Clock DAG net violations before routing clock trees: none
+  Clock DAG primary half-corner transition distribution before routing clock trees:
+    Trunk : target=1.360ns count=13 avg=0.911ns sd=0.377ns min=0.310ns max=1.339ns {3 <= 0.544ns, 2 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+    Leaf  : target=1.360ns count=59 avg=1.148ns sd=0.129ns min=0.684ns max=1.313ns {4 <= 0.816ns, 6 <= 1.088ns, 49 <= 1.360ns}
+  Clock DAG library cell distribution before routing clock trees {count}:
+     Bufs: CLKBU8: 70 
+     Invs: CLKIN4: 1 
+  Primary reporting skew group before routing clock trees:
+    skew_group inClock/hold_func_mode: insertion delay [min=2.364, max=2.906, avg=2.579, sd=0.142], skew [0.542 vs 0.523*, 97.8% {2.364, 2.887}] (wid=0.131 ws=0.078) (gid=2.786 gs=0.511)
+  Skew group summary before routing clock trees:
+    skew_group inClock/hold_func_mode: insertion delay [min=2.364, max=2.906, avg=2.579, sd=0.142], skew [0.542 vs 0.523*, 97.8% {2.364, 2.887}] (wid=0.131 ws=0.078) (gid=2.786 gs=0.511)
+  Clock network insertion delays are now [2.364ns, 2.906ns] average 2.579ns std.dev 0.142ns
+  Update timing and DAG stats before routing clock trees done. (took cpu=0:00:00.2 real=0:00:00.2)
+  Clock implementation routing...
+    Leaving CCOpt scope - Routing Tools...
+Net route status summary:
+  Clock:        72 (unrouted=0, trialRouted=0, noStatus=0, routed=0, fixed=72, [crossesIlmBoundary=0, tooFewTerms=0, (crossesIlmBounday AND tooFewTerms=0)])
+  Non-clock: 14465 (unrouted=690, trialRouted=13775, noStatus=0, routed=0, fixed=0, [crossesIlmBoundary=0, tooFewTerms=647, (crossesIlmBounday AND tooFewTerms=0)])
+    Routing using eGR in eGR->NR Step...
+      Early Global Route - eGR->NR step...
+(::ccopt::eagl_route_clock_nets): There are 72 for routing of which 72 have one or more a fixed wires.
+NR earlyGlobal start to route trunk nets
+[NR-eGR] honorMsvRouteConstraint: false
+[NR-eGR] honorClockSpecNDR      : 0
+[NR-eGR] minRouteLayer          : 1
+[NR-eGR] maxRouteLayer          : 4
+[NR-eGR] numTracksPerClockWire  : 0
+[NR-eGR] Layer1 has single uniform track structure
+[NR-eGR] Layer2 has single uniform track structure
+[NR-eGR] Layer3 has single uniform track structure
+[NR-eGR] Layer4 has single uniform track structure
+[NR-eGR] numRoutingBlks=0 numInstBlks=87374 numPGBlocks=3378 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eGR] numPreroutedNet = 0  numPreroutedWires = 0
+[NR-eGR] Read numTotalNets=13890  numIgnoredNets=13877
+[NR-eGR] There are 13 clock nets ( 13 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id 0. Nets 13 
+[NR-eGR] id=0  ndrTrackId=0  ndrViaId=-1  extraSpace=1  numShields=0  maxHorDemand=2  maxVerDemand=2
+[NR-eGR] Pitch:  L1=1900  L2=2200  L3=2200  L4=2400
+[NR-eGR] Rule id 1. Nets 0 
+[NR-eGR] id=1  ndrTrackId=0  ndrViaId=-1  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[NR-eGR] Pitch:  L1=1300  L2=1400  L3=1300  L4=1400
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] numSplitNets=0 (0.00%),  numDemotedLocalNets=0  numSubNets=0  numEscapedPins=0  numNonEscapedPins=0
+[NR-eGR] Layer group 1: route 13 net(s) in layer range [3, 4]
+[NR-eGR] earlyGlobalRoute overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 1.107600e+04um
+[NR-eGR] 
+[NR-eGR] Move 1 nets to layer range [2, 4]
+[NR-eGR] Layer group 2: route 1 net(s) in layer range [2, 4]
+[NR-eGR] earlyGlobalRoute overflow of layer group 2: 0.00% H + 0.00% V. EstWL: 2.548000e+03um
+[NR-eGR] 
+[NR-eGR] Congestion Analysis Layer By layer: (blocked Gcells are excluded) 
+[NR-eGR]                OverCon            
+[NR-eGR]                 #Gcell     %Gcell
+[NR-eGR] Layer              (1)    OverCon 
+[NR-eGR] ------------------------------------
+[NR-eGR] Layer1       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer2       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer3       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer4       0( 0.00%)   ( 0.00%) 
+[NR-eGR] ------------------------------------
+[NR-eGR] Total        0( 0.00%)   ( 0.00%) 
+[NR-eGR] 
+[NR-eGR] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[NR-eGR] Overflow after earlyGlobalRoute 0.00% H + 0.00% V
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Layer1(MET1)(H) length: 8.497511e+04um, number of vias: 40949
+[NR-eGR] Layer2(MET2)(V) length: 3.878476e+05um, number of vias: 26600
+[NR-eGR] Layer3(MET3)(H) length: 3.708184e+05um, number of vias: 2004
+[NR-eGR] Layer4(MET4)(V) length: 6.477014e+04um, number of vias: 0
+[NR-eGR] Total length: 9.084113e+05um, number of vias: 69553
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total clock nets wire length: 1.109423e+04um 
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Report for selected net(s) only.
+[NR-eGR] Layer1(MET1)(H) length: 2.100000e+01um, number of vias: 85
+[NR-eGR] Layer2(MET2)(V) length: 7.462750e+02um, number of vias: 83
+[NR-eGR] Layer3(MET3)(H) length: 5.689600e+03um, number of vias: 65
+[NR-eGR] Layer4(MET4)(V) length: 4.637350e+03um, number of vias: 0
+[NR-eGR] Total length: 1.109423e+04um, number of vias: 233
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total routed clock nets wire length: 1.109423e+04um, number of vias: 233
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] End Peak syMemory usage = 1619.6 MB
+[NR-eGR] Early Global Router Kernel+IO runtime : 0.21 seconds
+NR earlyGlobal start to route leaf nets
+[NR-eGR] Started earlyGlobalRoute kernel
+[NR-eGR] Initial Peak syMemory usage = 1619.6 MB
+[NR-eGR] honorMsvRouteConstraint: false
+[NR-eGR] honorClockSpecNDR      : 0
+[NR-eGR] minRouteLayer          : 1
+[NR-eGR] maxRouteLayer          : 4
+[NR-eGR] numTracksPerClockWire  : 0
+[NR-eGR] Layer1 has single uniform track structure
+[NR-eGR] Layer2 has single uniform track structure
+[NR-eGR] Layer3 has single uniform track structure
+[NR-eGR] Layer4 has single uniform track structure
+[NR-eGR] numRoutingBlks=0 numInstBlks=87374 numPGBlocks=3378 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eGR] numPreroutedNet = 13  numPreroutedWires = 322
+[NR-eGR] Read numTotalNets=13890  numIgnoredNets=13831
+[NR-eGR] There are 59 clock nets ( 59 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id 0. Nets 59 
+[NR-eGR] id=0  ndrTrackId=0  ndrViaId=-1  extraSpace=1  numShields=0  maxHorDemand=2  maxVerDemand=2
+[NR-eGR] Pitch:  L1=1900  L2=2200  L3=2200  L4=2400
+[NR-eGR] Rule id 1. Nets 0 
+[NR-eGR] id=1  ndrTrackId=0  ndrViaId=-1  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[NR-eGR] Pitch:  L1=1300  L2=1400  L3=1300  L4=1400
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] numSplitNets=0 (0.00%),  numDemotedLocalNets=0  numSubNets=0  numEscapedPins=0  numNonEscapedPins=0
+[NR-eGR] Layer group 1: route 59 net(s) in layer range [3, 4]
+[NR-eGR] earlyGlobalRoute overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 4.631900e+04um
+[NR-eGR] 
+[NR-eGR] Congestion Analysis Layer By layer: (blocked Gcells are excluded) 
+[NR-eGR]                OverCon            
+[NR-eGR]                 #Gcell     %Gcell
+[NR-eGR] Layer              (2)    OverCon 
+[NR-eGR] ------------------------------------
+[NR-eGR] Layer1       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer2       4( 0.03%)   ( 0.03%) 
+[NR-eGR] Layer3       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer4       0( 0.00%)   ( 0.00%) 
+[NR-eGR] ------------------------------------
+[NR-eGR] Total        4( 0.01%)   ( 0.01%) 
+[NR-eGR] 
+[NR-eGR] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[NR-eGR] Overflow after earlyGlobalRoute 0.00% H + 0.00% V
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Layer1(MET1)(H) length: 8.728741e+04um, number of vias: 42926
+[NR-eGR] Layer2(MET2)(V) length: 4.048256e+05um, number of vias: 28327
+[NR-eGR] Layer3(MET3)(H) length: 3.920751e+05um, number of vias: 2616
+[NR-eGR] Layer4(MET4)(V) length: 7.275734e+04um, number of vias: 0
+[NR-eGR] Total length: 9.569455e+05um, number of vias: 73869
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total clock nets wire length: 4.853420e+04um 
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Report for selected net(s) only.
+[NR-eGR] Layer1(MET1)(H) length: 2.312300e+03um, number of vias: 1977
+[NR-eGR] Layer2(MET2)(V) length: 1.697800e+04um, number of vias: 1727
+[NR-eGR] Layer3(MET3)(H) length: 2.125670e+04um, number of vias: 612
+[NR-eGR] Layer4(MET4)(V) length: 7.987201e+03um, number of vias: 0
+[NR-eGR] Total length: 4.853420e+04um, number of vias: 4316
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total routed clock nets wire length: 4.853420e+04um, number of vias: 4316
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] End Peak syMemory usage = 1619.6 MB
+[NR-eGR] Early Global Router Kernel+IO runtime : 0.25 seconds
+Generated NR early global route guides for clocks to: /tmp/innovus_temp_31934_cimeld105_xph2app102_nxy21g/.rgfKmhJRa
+      Early Global Route - eGR->NR step done. (took cpu=0:00:00.7 real=0:00:00.7)
+    Routing using eGR in eGR->NR Step done.
+    Routing using NR in eGR->NR Step...
+
+CCOPT: Preparing to route 72 clock nets with NanoRoute.
+  All net are default rule.
+  Removed pre-existing routes for 72 nets.
+  Preferred NanoRoute mode settings: Current
+#WARNING (NRIF-47) This option supports a feature that is under development and experimental, use at your own risk.
+#WARNING (NRIF-47) This option supports a feature that is under development and experimental, use at your own risk.
+      Clock detailed routing...
+        NanoRoute...
+% Begin globalDetailRoute (date=06/14 09:28:03, mem=1286.5M)
+
+globalDetailRoute
+
+#setNanoRouteMode -drouteAutoStop false
+#setNanoRouteMode -drouteEndIteration 20
+#setNanoRouteMode -routeAllowPinAsFeedthrough "false"
+#setNanoRouteMode -routeSelectedNetOnly true
+#setNanoRouteMode -routeStrictlyHonorNonDefaultRule "false"
+#setNanoRouteMode -routeWithEco true
+#setNanoRouteMode -routeWithSiDriven false
+#setNanoRouteMode -routeWithTimingDriven false
+#Start globalDetailRoute on Tue Jun 14 09:28:03 2022
+#
+#WARNING (NRIG-34) Power/Ground pin vdd3r2! of instance io_inFIFO_inData_3 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin vdd3r1! of instance io_inFIFO_inData_3 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin vdd3o! of instance io_inFIFO_inData_3 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin gnd3r! of instance io_inFIFO_inData_3 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin gnd3o! of instance io_inFIFO_inData_3 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin vdd3r2! of instance io_inFIFO_inData_2 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin vdd3r1! of instance io_inFIFO_inData_2 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin vdd3o! of instance io_inFIFO_inData_2 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin gnd3r! of instance io_inFIFO_inData_2 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin gnd3o! of instance io_inFIFO_inData_2 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin vdd3r2! of instance io_inFIFO_inData_1 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin vdd3r1! of instance io_inFIFO_inData_1 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin vdd3o! of instance io_inFIFO_inData_1 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin gnd3r! of instance io_inFIFO_inData_1 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin gnd3o! of instance io_inFIFO_inData_1 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin vdd3r2! of instance io_inFIFO_inData_0 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin vdd3r1! of instance io_inFIFO_inData_0 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin vdd3o! of instance io_inFIFO_inData_0 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin gnd3r! of instance io_inFIFO_inData_0 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin gnd3o! of instance io_inFIFO_inData_0 is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (EMS-27) Message (NRIG-34) has exceeded the current message display limit of 20.
+#To increase the message display limit, refer to the product command reference manual.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_outFIFO_inReadEnable of net in_outFIFO_inReadEnable because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRDB-733) PIN inClock in CELL_VIEW top_io does not have physical port.
+#WARNING (NRDB-733) PIN inReset in CELL_VIEW top_io does not have physical port.
+#WARNING (NRDB-733) PIN in_DEMUX_inDEMUX1 in CELL_VIEW top_io does not have physical port.
+#WARNING (NRDB-733) PIN in_DEMUX_inDEMUX17[0] in CELL_VIEW top_io does not have physical port.
+#WARNING (NRDB-733) PIN in_DEMUX_inDEMUX17[1] in CELL_VIEW top_io does not have physical port.
+#WARNING (NRDB-733) PIN in_DEMUX_inDEMUX17[2] in CELL_VIEW top_io does not have physical port.
+#WARNING (NRDB-733) PIN in_DEMUX_inDEMUX17[3] in CELL_VIEW top_io does not have physical port.
+#WARNING (NRDB-733) PIN in_DEMUX_inDEMUX18[0] in CELL_VIEW top_io does not have physical port.
+#WARNING (NRDB-733) PIN in_DEMUX_inDEMUX18[1] in CELL_VIEW top_io does not have physical port.
+#WARNING (NRDB-733) PIN in_DEMUX_inDEMUX18[2] in CELL_VIEW top_io does not have physical port.
+#WARNING (NRDB-733) PIN in_DEMUX_inDEMUX18[3] in CELL_VIEW top_io does not have physical port.
+#WARNING (NRDB-733) PIN in_DEMUX_inDEMUX2 in CELL_VIEW top_io does not have physical port.
+#WARNING (NRDB-733) PIN in_DEMUX_inSEL17 in CELL_VIEW top_io does not have physical port.
+#WARNING (NRDB-733) PIN in_DEMUX_inSEL1[0] in CELL_VIEW top_io does not have physical port.
+#WARNING (NRDB-733) PIN in_DEMUX_inSEL1[1] in CELL_VIEW top_io does not have physical port.
+#WARNING (NRDB-733) PIN in_DEMUX_inSEL1[2] in CELL_VIEW top_io does not have physical port.
+#WARNING (NRDB-733) PIN in_DEMUX_inSEL2[0] in CELL_VIEW top_io does not have physical port.
+#WARNING (NRDB-733) PIN in_DEMUX_inSEL2[1] in CELL_VIEW top_io does not have physical port.
+#WARNING (NRDB-733) PIN in_DEMUX_inSEL2[2] in CELL_VIEW top_io does not have physical port.
+#WARNING (NRDB-733) PIN in_MUX_inSEL11 in CELL_VIEW top_io does not have physical port.
+#WARNING (EMS-27) Message (NRDB-733) has exceeded the current message display limit of 20.
+#To increase the message display limit, refer to the product command reference manual.
+#NanoRoute Version 17.11-s080_1 NR170721-2155/17_11-UB
+#Start routing data preparation on Tue Jun 14 09:28:03 2022
+#
+#WARNING (NRDB-2077) The below via enclosure for LAYER MET1 is not specified for width 0.500.
+#WARNING (NRDB-2078) The above via enclosure for LAYER MET2 is not specified for width 0.600.
+#WARNING (NRDB-2077) The below via enclosure for LAYER MET1 is not specified for width 0.500.
+#WARNING (NRDB-2078) The above via enclosure for LAYER MET2 is not specified for width 0.600.
+#WARNING (NRDB-2077) The below via enclosure for LAYER MET2 is not specified for width 0.600.
+#WARNING (NRDB-2078) The above via enclosure for LAYER MET3 is not specified for width 0.600.
+#WARNING (NRDB-2077) The below via enclosure for LAYER MET2 is not specified for width 0.600.
+#WARNING (NRDB-2078) The above via enclosure for LAYER MET3 is not specified for width 0.600.
+#WARNING (NRDB-2077) The below via enclosure for LAYER MET3 is not specified for width 0.600.
+#WARNING (NRDB-2078) The above via enclosure for LAYER MET4 is not specified for width 0.600.
+#WARNING (NRDB-2077) The below via enclosure for LAYER MET3 is not specified for width 0.600.
+#WARNING (NRDB-2078) The above via enclosure for LAYER MET4 is not specified for width 0.600.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 3.630.
+#Voltage range [0.000 - 0.000] has 3 nets.
+#Voltage range [0.000 - 3.630] has 14534 nets.
+# MET1         H   Track-Pitch = 1.300    Line-2-Via Pitch = 1.150
+# MET2         V   Track-Pitch = 1.400    Line-2-Via Pitch = 1.200
+# MET3         H   Track-Pitch = 1.300    Line-2-Via Pitch = 1.200
+# MET4         V   Track-Pitch = 1.400    Line-2-Via Pitch = 1.300
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer MET2's pitch = 1.400.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:02, elapsed time = 00:00:02, memory = 1293.29 (MB), peak = 1449.11 (MB)
+#Merging special wires...
+#reading routing guides ......
+#
+#Finished routing data preparation on Tue Jun 14 09:28:05 2022
+#
+#Cpu time = 00:00:02
+#Elapsed time = 00:00:02
+#Increased memory = 5.77 (MB)
+#Total memory = 1293.39 (MB)
+#Peak memory = 1449.11 (MB)
+#
+#
+#Start global routing on Tue Jun 14 09:28:05 2022
+#
+#Number of eco nets is 0
+#
+#Start global routing data preparation on Tue Jun 14 09:28:05 2022
+#
+#Start routing resource analysis on Tue Jun 14 09:28:05 2022
+#
+#Routing resource analysis is done on Tue Jun 14 09:28:06 2022
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  MET1           H         822         855       10816    82.27%
+#  MET2           V         755         809       10816    45.86%
+#  MET3           H         956         721       10816    44.08%
+#  MET4           V         811         753       10816    44.76%
+#  --------------------------------------------------------------
+#  Total                   3345      48.45%       43264    54.24%
+#
+#  72 nets (0.50%) with 1 preferred extra spacing.
+#
+#
+#
+#Global routing data preparation is done on Tue Jun 14 09:28:06 2022
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1293.81 (MB), peak = 1449.11 (MB)
+#
+#Routing guide is on.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1293.89 (MB), peak = 1449.11 (MB)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1300.87 (MB), peak = 1449.11 (MB)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1300.95 (MB), peak = 1449.11 (MB)
+#
+#start global routing iteration 3...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1300.95 (MB), peak = 1449.11 (MB)
+#
+#
+#Total number of trivial nets (e.g. < 2 pins) = 690 (skipped).
+#Total number of selected nets for routing = 72.
+#Total number of unselected nets (but routable) for routing = 13775 (skipped).
+#Total number of nets in the design = 14537.
+#
+#13775 skipped nets do not have any wires.
+#72 routable nets have only global wires.
+#72 global routed or unrouted (routable) nets have been constrained (e.g. have preferred extra spacing, require shielding etc.)
+#
+#Routed net constraints summary:
+#------------------------------------------------
+#        Rules   Pref Extra Space   Unconstrained  
+#------------------------------------------------
+#      Default                 72               0  
+#------------------------------------------------
+#        Total                 72               0  
+#------------------------------------------------
+#
+#Routing constraints summary of the whole design:
+#------------------------------------------------
+#        Rules   Pref Extra Space   Unconstrained  
+#------------------------------------------------
+#      Default                 72           13775  
+#------------------------------------------------
+#        Total                 72           13775  
+#------------------------------------------------
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon          
+#                  #Gcell    %Gcell
+#     Layer           (1)   OverCon
+#  --------------------------------
+#  MET1          1(0.04%)   (0.04%)
+#  MET2          0(0.00%)   (0.00%)
+#  MET3          0(0.00%)   (0.00%)
+#  MET4          0(0.00%)   (0.00%)
+#  --------------------------------
+#     Total      1(0.00%)   (0.00%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 1
+#  Overflow after GR: 0.01% H + 0.00% V
+#
+#Complete Global Routing.
+#Total number of nets with non-default rule or having extra spacing = 72
+#Total wire length = 56721 um.
+#Total half perimeter of net bounding box = 30719 um.
+#Total wire length on LAYER MET1 = 945 um.
+#Total wire length on LAYER MET2 = 16695 um.
+#Total wire length on LAYER MET3 = 26523 um.
+#Total wire length on LAYER MET4 = 12558 um.
+#Total number of vias = 4106
+#Up-Via Summary (total 4106):
+#           
+#-----------------------
+# MET1             2194
+# MET2             1386
+# MET3              526
+#-----------------------
+#                  4106 
+#
+#Total number of involved priority nets 72
+#Maximum src to sink distance for priority net 1517.8
+#Average of max src_to_sink distance for priority net 356.6
+#Average of ave src_to_sink distance for priority net 210.9
+#Max overcon = 1 tracks.
+#Total overcon = 0.00%.
+#Worst layer Gcell overcon rate = 0.00%.
+#
+#Global routing statistics:
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 8.04 (MB)
+#Total memory = 1301.44 (MB)
+#Peak memory = 1449.11 (MB)
+#
+#Finished global routing on Tue Jun 14 09:28:06 2022
+#
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1294.52 (MB), peak = 1449.11 (MB)
+#Start Track Assignment.
+#Done with 999 horizontal wires in 1 hboxes and 1181 vertical wires in 1 hboxes.
+#Done with 15 horizontal wires in 1 hboxes and 9 vertical wires in 1 hboxes.
+#Complete Track Assignment.
+#Total number of nets with non-default rule or having extra spacing = 72
+#Total wire length = 62548 um.
+#Total half perimeter of net bounding box = 30719 um.
+#Total wire length on LAYER MET1 = 6031 um.
+#Total wire length on LAYER MET2 = 16455 um.
+#Total wire length on LAYER MET3 = 26999 um.
+#Total wire length on LAYER MET4 = 13064 um.
+#Total number of vias = 4106
+#Up-Via Summary (total 4106):
+#           
+#-----------------------
+# MET1             2194
+# MET2             1386
+# MET3              526
+#-----------------------
+#                  4106 
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1295.91 (MB), peak = 1449.11 (MB)
+#
+#Routing data preparation, pin analysis, global routing and track assignment statistics:
+#Cpu time = 00:00:03
+#Elapsed time = 00:00:03
+#Increased memory = 8.33 (MB)
+#Total memory = 1295.92 (MB)
+#Peak memory = 1449.11 (MB)
+#
+#Start Detail Routing..
+#start initial detail routing ...
+# ECO: 3.1% of the total area was rechecked for DRC, and 42.9% required routing.
+#   number of violations = 0
+#cpu time = 00:00:32, elapsed time = 00:00:32, memory = 1341.07 (MB), peak = 1449.11 (MB)
+#start 1st optimization iteration ...
+#   number of violations = 0
+#    number of process antenna violations = 3
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1341.14 (MB), peak = 1449.11 (MB)
+#start 2nd optimization iteration ...
+#   number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1341.14 (MB), peak = 1449.11 (MB)
+#Complete Detail Routing.
+#Total number of nets with non-default rule or having extra spacing = 72
+#Total wire length = 61239 um.
+#Total half perimeter of net bounding box = 30719 um.
+#Total wire length on LAYER MET1 = 20 um.
+#Total wire length on LAYER MET2 = 2420 um.
+#Total wire length on LAYER MET3 = 32664 um.
+#Total wire length on LAYER MET4 = 26136 um.
+#Total number of vias = 6543
+#Up-Via Summary (total 6543):
+#           
+#-----------------------
+# MET1             2214
+# MET2             2207
+# MET3             2122
+#-----------------------
+#                  6543 
+#
+#Total number of DRC violations = 0
+#Cpu time = 00:00:32
+#Elapsed time = 00:00:32
+#Increased memory = 8.98 (MB)
+#Total memory = 1304.91 (MB)
+#Peak memory = 1449.11 (MB)
+#detailRoute Statistics:
+#Cpu time = 00:00:32
+#Elapsed time = 00:00:32
+#Increased memory = 9.00 (MB)
+#Total memory = 1304.91 (MB)
+#Peak memory = 1449.11 (MB)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:35
+#Elapsed time = 00:00:35
+#Increased memory = 22.43 (MB)
+#Total memory = 1308.95 (MB)
+#Peak memory = 1449.11 (MB)
+#Number of warnings = 55
+#Total number of warnings = 59
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Tue Jun 14 09:28:38 2022
+#
+% End globalDetailRoute (date=06/14 09:28:38, total cpu=0:00:35.4, real=0:00:35.0, peak res=1340.9M, current mem=1309.0M)
+        NanoRoute done. (took cpu=0:00:35.4 real=0:00:35.4)
+      Clock detailed routing done.
+Checking guided vs. routed lengths for 72 nets...
+
+      
+      Guided max path lengths
+      =======================
+      
+      ----------------------------------------
+      From (um)    To (um)     Number of paths
+      ----------------------------------------
+         0.000      200.000           8
+       200.000      400.000          54
+       400.000      600.000           2
+       600.000      800.000           3
+       800.000     1000.000           4
+      1000.000     1200.000           0
+      1200.000     1400.000           0
+      1400.000     1600.000           1
+      ----------------------------------------
+      
+      Deviation of routing from guided max path lengths
+      =================================================
+      
+      -------------------------------------
+      From (%)    To (%)    Number of paths
+      -------------------------------------
+      below        0.000          32
+        0.000     10.000          30
+       10.000     20.000           5
+       20.000     30.000           3
+       30.000     40.000           1
+       40.000     50.000           0
+       50.000     60.000           1
+      -------------------------------------
+      
+
+    Top 10 notable deviations of routed length from guided length
+    =============================================================
+
+    Net t_op/CTS_274 (33 terminals)
+    Guided length:  max path =   313.400um, total =   748.798um
+    Routed length:  max path =   351.300um, total =   880.900um
+    Deviation:      max path =    12.093%,  total =    17.642%
+
+    Net t_op/CTS_262 (40 terminals)
+    Guided length:  max path =   288.800um, total =   956.497um
+    Routed length:  max path =   309.900um, total =  1083.100um
+    Deviation:      max path =     7.306%,  total =    13.236%
+
+    Net t_op/CTS_226 (44 terminals)
+    Guided length:  max path =   295.100um, total =   828.300um
+    Routed length:  max path =   287.100um, total =   914.000um
+    Deviation:      max path =    -2.711%,  total =    10.346%
+
+    Net t_op/CTS_213 (37 terminals)
+    Guided length:  max path =   333.200um, total =   870.700um
+    Routed length:  max path =   330.600um, total =   952.100um
+    Deviation:      max path =    -0.780%,  total =     9.349%
+
+    Net t_op/CTS_238 (32 terminals)
+    Guided length:  max path =   283.800um, total =   862.000um
+    Routed length:  max path =   295.200um, total =   934.250um
+    Deviation:      max path =     4.017%,  total =     8.382%
+
+    Net t_op/CTS_270 (36 terminals)
+    Guided length:  max path =   352.000um, total =   789.800um
+    Routed length:  max path =   347.900um, total =   849.200um
+    Deviation:      max path =    -1.165%,  total =     7.521%
+
+    Net t_op/CTS_210 (34 terminals)
+    Guided length:  max path =   303.600um, total =   927.499um
+    Routed length:  max path =   326.300um, total =   946.150um
+    Deviation:      max path =     7.477%,  total =     2.011%
+
+    Net t_op/CTS_252 (41 terminals)
+    Guided length:  max path =   336.300um, total =   757.700um
+    Routed length:  max path =   333.700um, total =   812.800um
+    Deviation:      max path =    -0.773%,  total =     7.272%
+
+    Net t_op/CTS_271 (40 terminals)
+    Guided length:  max path =   336.400um, total =   870.000um
+    Routed length:  max path =   333.800um, total =   933.000um
+    Deviation:      max path =    -0.773%,  total =     7.241%
+
+    Net t_op/CTS_209 (38 terminals)
+    Guided length:  max path =   328.600um, total =   942.600um
+    Routed length:  max path =   326.000um, total =  1006.000um
+    Deviation:      max path =    -0.791%,  total =     6.726%
+
+Set FIXED routing status on 72 net(s)
+Set FIXED placed status on 71 instance(s)
+    Routing using NR in eGR->NR Step done.
+Net route status summary:
+  Clock:        72 (unrouted=0, trialRouted=0, noStatus=0, routed=0, fixed=72, [crossesIlmBoundary=0, tooFewTerms=0, (crossesIlmBounday AND tooFewTerms=0)])
+  Non-clock: 14465 (unrouted=14465, trialRouted=0, noStatus=0, routed=0, fixed=0, [crossesIlmBoundary=0, tooFewTerms=647, (crossesIlmBounday AND tooFewTerms=0)])
+
+CCOPT: Done with clock implementation routing.
+
+
+CCOpt: Starting congestion repair using flow wrapper.
+    Congestion Repair...
+Trial Route Overflow 0(H) 0(V)
+*** ThreeLayerMode is automatically turned on for small designs with less than 4 layers.
+ThreeLayerMode is on. Timing-driven placement option disabled.
+Starting congestion repair ...
+*** ThreeLayerMode is automatically turned on for small designs with less than 4 layers.
+ThreeLayerMode is on. Timing-driven placement option disabled.
+[NR-eGR] honorMsvRouteConstraint: false
+[NR-eGR] honorClockSpecNDR      : 0
+[NR-eGR] minRouteLayer          : 1
+[NR-eGR] maxRouteLayer          : 4
+[NR-eGR] numTracksPerClockWire  : 0
+[NR-eGR] Layer1 has single uniform track structure
+[NR-eGR] Layer2 has single uniform track structure
+[NR-eGR] Layer3 has single uniform track structure
+[NR-eGR] Layer4 has single uniform track structure
+[NR-eGR] numRoutingBlks=0 numInstBlks=87374 numPGBlocks=3378 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eGR] numPreroutedNet = 72  numPreroutedWires = 8607
+[NR-eGR] Read numTotalNets=13890  numIgnoredNets=72
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id 0. Nets 0 
+[NR-eGR] id=0  ndrTrackId=0  ndrViaId=-1  extraSpace=1  numShields=0  maxHorDemand=2  maxVerDemand=2
+[NR-eGR] Pitch:  L1=1900  L2=2200  L3=2200  L4=2400
+[NR-eGR] Rule id 1. Nets 13775 
+[NR-eGR] id=1  ndrTrackId=0  ndrViaId=-1  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[NR-eGR] Pitch:  L1=1300  L2=1400  L3=1300  L4=1400
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 13775 net(s) in layer range [1, 4]
+[NR-eGR] earlyGlobalRoute overflow of layer group 1: 0.43% H + 0.00% V. EstWL: 8.660600e+05um
+[NR-eGR] 
+[NR-eGR] Congestion Analysis Layer By layer: (blocked Gcells are excluded) 
+[NR-eGR]                OverCon         OverCon         OverCon            
+[NR-eGR]                 #Gcell          #Gcell          #Gcell     %Gcell
+[NR-eGR] Layer            (1-2)           (3-4)           (5-5)    OverCon 
+[NR-eGR] ------------------------------------------------------------------
+[NR-eGR] Layer1       0( 0.00%)       0( 0.00%)       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer2      74( 0.49%)       1( 0.01%)       0( 0.00%)   ( 0.50%) 
+[NR-eGR] Layer3      46( 0.28%)       0( 0.00%)       0( 0.00%)   ( 0.28%) 
+[NR-eGR] Layer4       0( 0.00%)       0( 0.00%)       0( 0.00%)   ( 0.00%) 
+[NR-eGR] ------------------------------------------------------------------
+[NR-eGR] Total      120( 0.23%)       1( 0.00%)       0( 0.00%)   ( 0.23%) 
+[NR-eGR] 
+[NR-eGR] Overflow after earlyGlobalRoute (GR compatible) 0.06% H + 0.00% V
+[NR-eGR] Overflow after earlyGlobalRoute 0.07% H + 0.00% V
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+Skipped repairing congestion.
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Layer1(MET1)(H) length: 8.201371e+04um, number of vias: 43093
+[NR-eGR] Layer2(MET2)(V) length: 3.923602e+05um, number of vias: 29499
+[NR-eGR] Layer3(MET3)(H) length: 4.094818e+05um, number of vias: 4214
+[NR-eGR] Layer4(MET4)(V) length: 9.259299e+04um, number of vias: 0
+[NR-eGR] Total length: 9.764487e+05um, number of vias: 76806
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total clock nets wire length: 0.000000e+00um 
+[NR-eGR] --------------------------------------------------------------------------
+End of congRepair (cpu=0:00:00.4, real=0:00:01.0)
+    Congestion Repair done. (took cpu=0:00:00.4 real=0:00:00.4)
+
+CCOpt: Done with congestion repair using flow wrapper.
+
+Net route status summary:
+  Clock:        72 (unrouted=0, trialRouted=0, noStatus=0, routed=0, fixed=72, [crossesIlmBoundary=0, tooFewTerms=0, (crossesIlmBounday AND tooFewTerms=0)])
+  Non-clock: 14465 (unrouted=690, trialRouted=13775, noStatus=0, routed=0, fixed=0, [crossesIlmBoundary=0, tooFewTerms=647, (crossesIlmBounday AND tooFewTerms=0)])
+    Leaving CCOpt scope - Routing Tools done. (took cpu=0:00:36.7 real=0:00:36.7)
+  Clock implementation routing done.
+  Leaving CCOpt scope - extractRC...
+  Updating RC parasitics by calling: "extractRC -noRouteCheck"...
+Extraction called for design 'top_io' of instances=13630 and nets=14537 using extraction engine 'preRoute' .
+PreRoute RC Extraction called for design top_io.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.1  Real Time: 0:00:00.0  MEM: 1653.145M)
+  Updating RC parasitics by calling: "extractRC -noRouteCheck" done.
+  Leaving CCOpt scope - extractRC done. (took cpu=0:00:00.1 real=0:00:00.1)
+  Clock DAG stats after routing clock trees:
+    cell counts      : b=70, i=1, icg=0, nicg=0, l=0, total=71
+    cell areas       : b=6370.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6424.600um^2
+    cell capacitance : b=0.700pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.719pF
+    sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+    wire capacitance : top=0.000pF, trunk=2.860pF, leaf=13.874pF, total=16.735pF
+    wire lengths     : top=0.000um, trunk=11209.875um, leaf=50029.100um, total=61238.975um
+  Clock DAG net violations after routing clock trees:
+    Remaining Transition : {count=6, worst=[0.052ns, 0.048ns, 0.047ns, 0.041ns, 0.025ns, 0.017ns]} avg=0.038ns sd=0.014ns sum=0.229ns
+  Clock DAG primary half-corner transition distribution after routing clock trees:
+    Trunk : target=1.360ns count=13 avg=0.935ns sd=0.387ns min=0.324ns max=1.358ns {3 <= 0.544ns, 2 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+    Leaf  : target=1.360ns count=59 avg=1.244ns sd=0.144ns min=0.737ns max=1.412ns {4 <= 0.816ns, 49 <= 1.360ns} {6 <= 1.428ns}
+  Clock DAG library cell distribution after routing clock trees {count}:
+     Bufs: CLKBU8: 70 
+     Invs: CLKIN4: 1 
+  Primary reporting skew group after routing clock trees:
+    skew_group inClock/hold_func_mode: insertion delay [min=2.428, max=2.974, avg=2.654, sd=0.145], skew [0.546 vs 0.523*, 96.7% {2.428, 2.951}] (wid=0.141 ws=0.076) (gid=2.844 gs=0.511)
+  Skew group summary after routing clock trees:
+    skew_group inClock/hold_func_mode: insertion delay [min=2.428, max=2.974, avg=2.654, sd=0.145], skew [0.546 vs 0.523*, 96.7% {2.428, 2.951}] (wid=0.141 ws=0.076) (gid=2.844 gs=0.511)
+  Clock network insertion delays are now [2.428ns, 2.974ns] average 2.654ns std.dev 0.145ns
+  CCOpt::Phase::Routing done. (took cpu=0:00:37.1 real=0:00:37.1)
+  CCOpt::Phase::PostConditioning...
+  Switching to inst based legalization.
+  PostConditioning...
+    PostConditioning active optimizations:
+     - DRV fixing with cell sizing and buffering
+     - Skew fixing with cell sizing
+    
+    Currently running CTS, using active skew data
+    Reset bufferability constraints...
+    Resetting previous bufferability status on all nets so that PostConditioning will attempt to fix all clock tree violations.
+    Reset bufferability constraints done. (took cpu=0:00:00.0 real=0:00:00.0)
+    Upsizing to fix DRVs...
+    Fixing clock tree DRVs with upsizing: ...20% ...40% ...60% ...80% ...100% 
+    CCOpt-PostConditioning: considered: 72, tested: 72, violation detected: 6, violation ignored (due to small violation): 0, cannot run: 0, attempted: 6, unsuccessful: 0, sized: 0
+    
+    PRO Statistics: Fix DRVs (initial upsizing):
+    ============================================
+    
+    Cell changes by Net Type:
+    
+    -------------------------------------------------------------------------------------------------------------------
+    Net Type    Attempted            Upsized     Downsized    Swapped Same Size    Total Changed      Not Sized
+    -------------------------------------------------------------------------------------------------------------------
+    top                0                    0           0            0                    0                  0 (0.0%)
+    trunk              0                    0           0            0                    0                  0 (0.0%)
+    leaf               6 (100.0%)           0           0            0                    0                  6 (100.0%)
+    -------------------------------------------------------------------------------------------------------------------
+    Total              6 (100%)      -           -            -                           0 (100%)           6 (100%)
+    -------------------------------------------------------------------------------------------------------------------
+    
+    Upsized: 0, Downsized: 0, Sized but same area: 0, Unchanged: 6, Area change: 0.000um^2 (0.000%)
+    Max. move: 0.000um, Min. move: 0.000um, Avg. move: 0.000um
+    
+    Clock DAG stats PostConditioning after Upsizing to fix DRVs:
+      cell counts      : b=70, i=1, icg=0, nicg=0, l=0, total=71
+      cell areas       : b=6370.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6424.600um^2
+      cell capacitance : b=0.700pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.719pF
+      sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+      wire capacitance : top=0.000pF, trunk=2.860pF, leaf=13.874pF, total=16.735pF
+      wire lengths     : top=0.000um, trunk=11209.875um, leaf=50029.100um, total=61238.975um
+    Clock DAG net violations PostConditioning after Upsizing to fix DRVs:
+      Remaining Transition : {count=6, worst=[0.052ns, 0.048ns, 0.047ns, 0.041ns, 0.025ns, 0.017ns]} avg=0.038ns sd=0.014ns sum=0.229ns
+    Clock DAG primary half-corner transition distribution PostConditioning after Upsizing to fix DRVs:
+      Trunk : target=1.360ns count=13 avg=0.935ns sd=0.387ns min=0.324ns max=1.358ns {3 <= 0.544ns, 2 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+      Leaf  : target=1.360ns count=59 avg=1.244ns sd=0.144ns min=0.737ns max=1.412ns {4 <= 0.816ns, 49 <= 1.360ns} {6 <= 1.428ns}
+    Clock DAG library cell distribution PostConditioning after Upsizing to fix DRVs {count}:
+       Bufs: CLKBU8: 70 
+       Invs: CLKIN4: 1 
+    Primary reporting skew group PostConditioning after Upsizing to fix DRVs:
+      skew_group inClock/hold_func_mode: insertion delay [min=2.428, max=2.974, avg=2.654, sd=0.145], skew [0.546 vs 0.523*, 96.7% {2.428, 2.951}] (wid=0.141 ws=0.076) (gid=2.844 gs=0.511)
+    Skew group summary PostConditioning after Upsizing to fix DRVs:
+      skew_group inClock/hold_func_mode: insertion delay [min=2.428, max=2.974, avg=2.654, sd=0.145], skew [0.546 vs 0.523*, 96.7% {2.428, 2.951}] (wid=0.141 ws=0.076) (gid=2.844 gs=0.511)
+    Clock network insertion delays are now [2.428ns, 2.974ns] average 2.654ns std.dev 0.145ns
+    Upsizing to fix DRVs done. (took cpu=0:00:00.2 real=0:00:00.2)
+    Recomputing CTS skew targets...
+    Resolving skew group constraints...
+      Solving LP: 1 skew groups; 2 fragments, 7 fraglets and 9 vertices; 55 variables and 168 constraints; tolerance 1
+    Resolving skew group constraints done.
+    Recomputing CTS skew targets done. (took cpu=0:00:00.1 real=0:00:00.1)
+    Fixing DRVs...
+    Fixing clock tree DRVs: ...20% ...40% ...60% ...80% ...100% 
+    CCOpt-PostConditioning: considered: 72, tested: 72, violation detected: 6, violation ignored (due to small violation): 0, cannot run: 0, attempted: 6, unsuccessful: 0, sized: 0
+    
+    PRO Statistics: Fix DRVs (cell sizing):
+    =======================================
+    
+    Cell changes by Net Type:
+    
+    -------------------------------------------------------------------------------------------------------------------
+    Net Type    Attempted            Upsized     Downsized    Swapped Same Size    Total Changed      Not Sized
+    -------------------------------------------------------------------------------------------------------------------
+    top                0                    0           0            0                    0                  0 (0.0%)
+    trunk              0                    0           0            0                    0                  0 (0.0%)
+    leaf               6 (100.0%)           0           0            0                    0                  6 (100.0%)
+    -------------------------------------------------------------------------------------------------------------------
+    Total              6 (100%)      -           -            -                           0 (100%)           6 (100%)
+    -------------------------------------------------------------------------------------------------------------------
+    
+    Upsized: 0, Downsized: 0, Sized but same area: 0, Unchanged: 6, Area change: 0.000um^2 (0.000%)
+    Max. move: 0.000um, Min. move: 0.000um, Avg. move: 0.000um
+    
+    Clock DAG stats PostConditioning after DRV fixing:
+      cell counts      : b=70, i=1, icg=0, nicg=0, l=0, total=71
+      cell areas       : b=6370.000um^2, i=54.600um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6424.600um^2
+      cell capacitance : b=0.700pF, i=0.019pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.719pF
+      sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+      wire capacitance : top=0.000pF, trunk=2.860pF, leaf=13.874pF, total=16.735pF
+      wire lengths     : top=0.000um, trunk=11209.875um, leaf=50029.100um, total=61238.975um
+    Clock DAG net violations PostConditioning after DRV fixing:
+      Remaining Transition : {count=6, worst=[0.052ns, 0.048ns, 0.047ns, 0.041ns, 0.025ns, 0.017ns]} avg=0.038ns sd=0.014ns sum=0.229ns
+    Clock DAG primary half-corner transition distribution PostConditioning after DRV fixing:
+      Trunk : target=1.360ns count=13 avg=0.935ns sd=0.387ns min=0.324ns max=1.358ns {3 <= 0.544ns, 2 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+      Leaf  : target=1.360ns count=59 avg=1.244ns sd=0.144ns min=0.737ns max=1.412ns {4 <= 0.816ns, 49 <= 1.360ns} {6 <= 1.428ns}
+    Clock DAG library cell distribution PostConditioning after DRV fixing {count}:
+       Bufs: CLKBU8: 70 
+       Invs: CLKIN4: 1 
+    Primary reporting skew group PostConditioning after DRV fixing:
+      skew_group inClock/hold_func_mode: insertion delay [min=2.428, max=2.974, avg=2.654, sd=0.145], skew [0.546 vs 0.523*, 96.7% {2.428, 2.951}] (wid=0.141 ws=0.076) (gid=2.844 gs=0.511)
+    Skew group summary PostConditioning after DRV fixing:
+      skew_group inClock/hold_func_mode: insertion delay [min=2.428, max=2.974, avg=2.654, sd=0.145], skew [0.546 vs 0.523*, 96.7% {2.428, 2.951}] (wid=0.141 ws=0.076) (gid=2.844 gs=0.511)
+    Clock network insertion delays are now [2.428ns, 2.974ns] average 2.654ns std.dev 0.145ns
+    Fixing DRVs done. (took cpu=0:00:00.1 real=0:00:00.1)
+    Buffering to fix DRVs...
+    Rebuffering to fix clock tree DRVs: ...20% ...40% ...60% ...80% ...100% 
+    Inserted 3 buffers and inverters.
+    CCOpt-PostConditioning: nets considered: 72, nets tested: 72, nets violation detected: 6, nets violation ignored (due to small violation): 0, nets cannot run: 0, nets attempted: 6, nets unsuccessful: 4, buffered: 2
+    Clock DAG stats PostConditioning after re-buffering DRV fixing:
+      cell counts      : b=73, i=1, icg=0, nicg=0, l=0, total=74
+      cell areas       : b=6643.000um^2, i=36.400um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6679.400um^2
+      cell capacitance : b=0.730pF, i=0.010pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.740pF
+      sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+      wire capacitance : top=0.000pF, trunk=2.889pF, leaf=13.865pF, total=16.754pF
+      wire lengths     : top=0.000um, trunk=11271.775um, leaf=49967.200um, total=61238.975um
+    Clock DAG net violations PostConditioning after re-buffering DRV fixing:
+      Remaining Transition : {count=4, worst=[0.048ns, 0.041ns, 0.025ns, 0.017ns]} avg=0.033ns sd=0.014ns sum=0.130ns
+    Clock DAG primary half-corner transition distribution PostConditioning after re-buffering DRV fixing:
+      Trunk : target=1.360ns count=15 avg=0.863ns sd=0.402ns min=0.316ns max=1.358ns {5 <= 0.544ns, 2 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+      Leaf  : target=1.360ns count=60 avg=1.215ns sd=0.176ns min=0.632ns max=1.408ns {6 <= 0.816ns, 1 <= 1.088ns, 49 <= 1.360ns} {4 <= 1.428ns}
+    Clock DAG library cell distribution PostConditioning after re-buffering DRV fixing {count}:
+       Bufs: CLKBU8: 73 
+       Invs: CLKIN2: 1 
+    Primary reporting skew group PostConditioning after re-buffering DRV fixing:
+      skew_group inClock/hold_func_mode: insertion delay [min=2.428, max=3.002, avg=2.656, sd=0.149], skew [0.574 vs 0.523*, 95.6% {2.428, 2.951}] (wid=0.141 ws=0.076) (gid=2.871 gs=0.538)
+    Skew group summary PostConditioning after re-buffering DRV fixing:
+      skew_group inClock/hold_func_mode: insertion delay [min=2.428, max=3.002, avg=2.656, sd=0.149], skew [0.574 vs 0.523*, 95.6% {2.428, 2.951}] (wid=0.141 ws=0.076) (gid=2.871 gs=0.538)
+    Clock network insertion delays are now [2.428ns, 3.002ns] average 2.656ns std.dev 0.149ns
+    Buffering to fix DRVs done. (took cpu=0:00:00.2 real=0:00:00.2)
+    Fixing Skew by cell sizing...
+    Resized 0 clock insts to decrease delay.
+    Resized 0 clock insts to increase delay.
+    
+    PRO Statistics: Fix Skew (cell sizing):
+    =======================================
+    
+    Cell changes by Net Type:
+    
+    -----------------------------------------------------------------------------------------------------------------
+    Net Type    Attempted           Upsized     Downsized    Swapped Same Size    Total Changed      Not Sized
+    -----------------------------------------------------------------------------------------------------------------
+    top                0                   0           0            0                    0                  0 (0.0%)
+    trunk              5 (71.4%)           0           0            0                    0                  5 (71.4%)
+    leaf               2 (28.6%)           0           0            0                    0                  2 (28.6%)
+    -----------------------------------------------------------------------------------------------------------------
+    Total              7 (100%)     -           -            -                           0 (100%)           7 (100%)
+    -----------------------------------------------------------------------------------------------------------------
+    
+    Upsized: 0, Downsized: 0, Sized but same area: 0, Unchanged: 7, Area change: 0.000um^2 (0.000%)
+    Max. move: 0.000um, Min. move: 0.000um, Avg. move: 0.000um
+    
+    Clock DAG stats PostConditioning after skew fixing by cell sizing:
+      cell counts      : b=73, i=1, icg=0, nicg=0, l=0, total=74
+      cell areas       : b=6643.000um^2, i=36.400um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6679.400um^2
+      cell capacitance : b=0.730pF, i=0.010pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.740pF
+      sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+      wire capacitance : top=0.000pF, trunk=2.889pF, leaf=13.865pF, total=16.754pF
+      wire lengths     : top=0.000um, trunk=11271.775um, leaf=49967.200um, total=61238.975um
+    Clock DAG net violations PostConditioning after skew fixing by cell sizing:
+      Remaining Transition : {count=4, worst=[0.048ns, 0.041ns, 0.025ns, 0.017ns]} avg=0.033ns sd=0.014ns sum=0.130ns
+    Clock DAG primary half-corner transition distribution PostConditioning after skew fixing by cell sizing:
+      Trunk : target=1.360ns count=15 avg=0.863ns sd=0.402ns min=0.316ns max=1.358ns {5 <= 0.544ns, 2 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+      Leaf  : target=1.360ns count=60 avg=1.215ns sd=0.176ns min=0.632ns max=1.408ns {6 <= 0.816ns, 1 <= 1.088ns, 49 <= 1.360ns} {4 <= 1.428ns}
+    Clock DAG library cell distribution PostConditioning after skew fixing by cell sizing {count}:
+       Bufs: CLKBU8: 73 
+       Invs: CLKIN2: 1 
+    Primary reporting skew group PostConditioning after skew fixing by cell sizing:
+      skew_group inClock/hold_func_mode: insertion delay [min=2.428, max=3.002, avg=2.656, sd=0.149], skew [0.574 vs 0.523*, 95.6% {2.428, 2.951}] (wid=0.141 ws=0.076) (gid=2.871 gs=0.538)
+    Skew group summary PostConditioning after skew fixing by cell sizing:
+      skew_group inClock/hold_func_mode: insertion delay [min=2.428, max=3.002, avg=2.656, sd=0.149], skew [0.574 vs 0.523*, 95.6% {2.428, 2.951}] (wid=0.141 ws=0.076) (gid=2.871 gs=0.538)
+    Clock network insertion delays are now [2.428ns, 3.002ns] average 2.656ns std.dev 0.149ns
+    Fixing Skew by cell sizing done. (took cpu=0:00:00.1 real=0:00:00.1)
+    Reconnecting optimized routes...
+    Reset timing graph...
+Ignoring AAE DB Resetting ...
+    Reset timing graph done.
+    Reconnecting optimized routes done. (took cpu=0:00:00.0 real=0:00:00.0)
+    Leaving CCOpt scope - ClockRefiner...
+    Performing Single Pass Refine Place.
+*** Starting refinePlace (1:48:15 mem=1713.4M) ***
+Total net bbox length = 7.842e+05 (3.930e+05 3.912e+05) (ext = 2.985e+04)
+Density distribution unevenness ratio = 3.879%
+Move report: Detail placement moves 70 insts, mean move: 12.49 um, max move: 56.40 um
+	Max move on inst (t_op/FE_RC_5281_0): (704.20, 668.20) --> (747.60, 681.20)
+	Runtime: CPU: 0:00:00.2 REAL: 0:00:00.0 MEM: 1713.4MB
+Summary Report:
+Instances move: 70 (out of 13375 movable)
+Instances flipped: 0
+Mean displacement: 12.49 um
+Max displacement: 56.40 um (Instance: t_op/FE_RC_5281_0) (704.2, 668.2) -> (747.6, 681.2)
+	Length: 2 sites, height: 1 rows, site name: standard, cell type: INV3
+Total net bbox length = 7.851e+05 (3.937e+05 3.914e+05) (ext = 2.985e+04)
+Runtime: CPU: 0:00:00.2 REAL: 0:00:00.0 MEM: 1713.4MB
+*** Finished refinePlace (1:48:15 mem=1713.4M) ***
+    Moved 0 and flipped 0 of 2147 clock instance(s) during refinement.
+    The largest move was 0 microns for .
+    Leaving CCOpt scope - ClockRefiner done. (took cpu=0:00:00.3 real=0:00:00.3)
+    Set dirty flag on 88 insts, 36 nets
+    Leaving CCOpt scope - extractRC...
+    Updating RC parasitics by calling: "extractRC -noRouteCheck"...
+Extraction called for design 'top_io' of instances=13633 and nets=14540 using extraction engine 'preRoute' .
+PreRoute RC Extraction called for design top_io.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.1  Real Time: 0:00:00.0  MEM: 1653.145M)
+    Updating RC parasitics by calling: "extractRC -noRouteCheck" done.
+    Leaving CCOpt scope - extractRC done. (took cpu=0:00:00.1 real=0:00:00.1)
+  PostConditioning done.
+Net route status summary:
+  Clock:        75 (unrouted=0, trialRouted=0, noStatus=0, routed=0, fixed=75, [crossesIlmBoundary=0, tooFewTerms=0, (crossesIlmBounday AND tooFewTerms=0)])
+  Non-clock: 14465 (unrouted=690, trialRouted=13775, noStatus=0, routed=0, fixed=0, [crossesIlmBoundary=0, tooFewTerms=647, (crossesIlmBounday AND tooFewTerms=0)])
+  CCOpt::Phase::PostConditioning done. (took cpu=0:00:01.1 real=0:00:01.1)
+  Post-balance tidy up or trial balance steps...
+  
+  Clock DAG stats at end of CTS:
+  ==============================
+  
+  --------------------------------------------------------------
+  Cell type                     Count    Area        Capacitance
+  --------------------------------------------------------------
+  Buffers                        73      6643.000       0.730
+  Inverters                       1        36.400       0.010
+  Integrated Clock Gates          0         0.000       0.000
+  Non-Integrated Clock Gates      0         0.000       0.000
+  Clock Logic                     0         0.000       0.000
+  All                            74      6679.400       0.740
+  --------------------------------------------------------------
+  
+  
+  Clock DAG wire lengths at end of CTS:
+  =====================================
+  
+  --------------------
+  Type     Wire Length
+  --------------------
+  Top           0.000
+  Trunk     11306.900
+  Leaf      49992.950
+  Total     61299.850
+  --------------------
+  
+  
+  Clock DAG capacitances at end of CTS:
+  =====================================
+  
+  ----------------------------------
+  Type     Gate     Wire      Total
+  ----------------------------------
+  Top      0.000     0.000     0.000
+  Trunk    0.740     2.891     3.631
+  Leaf     8.292    13.866    22.158
+  Total    9.032    16.757    25.789
+  ----------------------------------
+  
+  
+  Clock DAG sink capacitances at end of CTS:
+  ==========================================
+  
+  --------------------------------------------------------
+  Count    Total    Average    Std. Dev.    Min      Max
+  --------------------------------------------------------
+  2073     8.292     0.004       0.000      0.004    0.004
+  --------------------------------------------------------
+  
+  
+  Clock DAG net violations at end of CTS:
+  =======================================
+  
+  -------------------------------------------------------------------------------------------------------
+  Type                    Units    Count    Average    Std. Dev.    Sum      Top 10 violations
+  -------------------------------------------------------------------------------------------------------
+  Remaining Transition    ns         4       0.033       0.014      0.130    [0.048, 0.041, 0.025, 0.017]
+  -------------------------------------------------------------------------------------------------------
+  
+  
+  Clock DAG primary half-corner transition distribution at end of CTS:
+  ====================================================================
+  
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+  Net Type    Target    Count    Average    Std. Dev.    Min      Max      Distribution                                                Over Target
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+  Trunk       1.360      15       0.864       0.402      0.320    1.358    {5 <= 0.544ns, 2 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}          -
+  Leaf        1.360      60       1.215       0.176      0.634    1.408    {6 <= 0.816ns, 1 <= 1.088ns, 49 <= 1.360ns}                 {4 <= 1.428ns}
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+  
+  
+  Clock DAG library cell distribution at end of CTS:
+  ==================================================
+  
+  -----------------------------------------
+  Name      Type        Inst     Inst Area 
+                        Count    (um^2)
+  -----------------------------------------
+  CLKBU8    buffer       73       6643.000
+  CLKIN2    inverter      1         36.400
+  -----------------------------------------
+  
+  
+  Primary reporting skew group summary at end of CTS:
+  ===================================================
+  
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Half-corner              Skew Group                Min ID    Max ID    Skew     Skew target    Wire skew    Worst sink skew    Average ID    Std.Dev    Skew window occupancy
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  corner_max:setup.late    inClock/hold_func_mode    2.428     3.005     0.577    0.523*           0.076           0.021           2.656        0.149     95.6% {2.428, 2.951}
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+  
+  Skew group summary at end of CTS:
+  =================================
+  
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Half-corner              Skew Group                Min ID    Max ID    Skew     Skew target    Wire skew    Worst sink skew    Average ID    Std.Dev    Skew window occupancy
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  corner_max:setup.late    inClock/hold_func_mode    2.428     3.005     0.577    0.523*           0.076           0.021           2.656        0.149     95.6% {2.428, 2.951}
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+  
+  Min/max skew group path pins for unmet skew targets:
+  ====================================================
+  
+  ---------------------------------------------------------------------------------------------------------------------------
+  Half-corner              Skew Group                Min/Max    Delay    Pin
+  ---------------------------------------------------------------------------------------------------------------------------
+  corner_max:setup.late    inClock/hold_func_mode    Min        2.428    t_op/u_decoder/iq_demod/o_Q_prefilter_reg[4]/C
+  corner_max:setup.late    inClock/hold_func_mode    Max        3.005    t_op/u_decoder/fir_filter/I_data_add_5_buff_reg[4]/C
+  ---------------------------------------------------------------------------------------------------------------------------
+  
+  Clock network insertion delays are now [2.428ns, 3.005ns] average 2.656ns std.dev 0.149ns
+  
+  Found a total of 172 clock tree pins with a slew violation.
+  
+  Slew violation summary across all clock trees - Top 10 violating pins:
+  ======================================================================
+  
+  Target and measured clock slews (in ns):
+  
+  -----------------------------------------------------------------------------------------------------------------
+  Half corner            Violation  Slew    Slew      Dont   Ideal  Target         Pin
+                         amount     target  achieved  touch  net?   source         
+                                                      net?                         
+  -----------------------------------------------------------------------------------------------------------------
+  corner_max:setup.late    0.048    1.360    1.408    N      N      auto computed  t_op/u_outFIFO/FIFO_reg[64][1]/C
+  corner_max:setup.late    0.048    1.360    1.408    N      N      auto computed  t_op/u_outFIFO/FIFO_reg[65][1]/C
+  corner_max:setup.late    0.048    1.360    1.408    N      N      auto computed  t_op/u_outFIFO/FIFO_reg[68][0]/C
+  corner_max:setup.late    0.048    1.360    1.408    N      N      auto computed  t_op/u_outFIFO/FIFO_reg[69][0]/C
+  corner_max:setup.late    0.048    1.360    1.408    N      N      auto computed  t_op/u_outFIFO/FIFO_reg[69][1]/C
+  corner_max:setup.late    0.048    1.360    1.408    N      N      auto computed  t_op/u_outFIFO/FIFO_reg[71][1]/C
+  corner_max:setup.late    0.048    1.360    1.408    N      N      auto computed  t_op/u_outFIFO/FIFO_reg[72][1]/C
+  corner_max:setup.late    0.048    1.360    1.408    N      N      auto computed  t_op/u_outFIFO/FIFO_reg[73][1]/C
+  corner_max:setup.late    0.048    1.360    1.408    N      N      auto computed  t_op/u_outFIFO/FIFO_reg[75][0]/C
+  corner_max:setup.late    0.048    1.360    1.408    N      N      auto computed  t_op/u_outFIFO/FIFO_reg[75][1]/C
+  -----------------------------------------------------------------------------------------------------------------
+  
+  Target sources:
+  auto extracted - target was extracted from SDC.
+  auto computed - target was computed when balancing trees.
+  explicit - target is explicitly set via target_max_trans property.
+  pin explicit - target is explicitly set for this pin via pin_target_max_trans property.
+  liberty explicit - target is explicitly set via max_transition from liberty library.
+  
+  Found 0 pins on nets marked dont_touch that have slew violations.
+  Found 0 pins on nets marked dont_touch that do not have slew violations.
+  Found 0 pins on nets marked ideal_network that have slew violations.
+  Found 0 pins on nets marked ideal_network that do not have slew violations.
+  
+  
+  Post-balance tidy up or trial balance steps done. (took cpu=0:00:00.2 real=0:00:00.2)
+Synthesizing clock trees done.
+Tidy Up And Update Timing...
+Connecting clock gate test enables...
+Connecting clock gate test enables done.
+Innovus updating I/O latencies
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: top_io
+# Design Mode: 250nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=1741.91)
+Total number of fetched objects 15726
+Total number of fetched objects 15726
+End delay calculation. (MEM=1780.88 CPU=0:00:00.2 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=1780.88 CPU=0:00:00.5 REAL=0:00:01.0)
+	Clock: inClock, View: setup_func_max, Ideal Latency: 0, Propagated Latency: 2.6556
+	 Executing: set_clock_latency -source -early -max -rise -2.6556 [get_pins io_inClock/Y]
+	Clock: inClock, View: setup_func_max, Ideal Latency: 0, Propagated Latency: 2.6556
+	 Executing: set_clock_latency -source -late -max -rise -2.6556 [get_pins io_inClock/Y]
+	Clock: inClock, View: setup_func_max, Ideal Latency: 0, Propagated Latency: 2.68887
+	 Executing: set_clock_latency -source -early -max -fall -2.68887 [get_pins io_inClock/Y]
+	Clock: inClock, View: setup_func_max, Ideal Latency: 0, Propagated Latency: 2.68887
+	 Executing: set_clock_latency -source -late -max -fall -2.68887 [get_pins io_inClock/Y]
+	Clock: inClock, View: hold_func_min, Ideal Latency: 0, Propagated Latency: 0.640163
+	 Executing: set_clock_latency -source -early -min -rise -0.640163 [get_pins io_inClock/Y]
+	Clock: inClock, View: hold_func_min, Ideal Latency: 0, Propagated Latency: 0.640163
+	 Executing: set_clock_latency -source -late -min -rise -0.640163 [get_pins io_inClock/Y]
+	Clock: inClock, View: hold_func_min, Ideal Latency: 0, Propagated Latency: 0.663274
+	 Executing: set_clock_latency -source -early -min -fall -0.663274 [get_pins io_inClock/Y]
+	Clock: inClock, View: hold_func_min, Ideal Latency: 0, Propagated Latency: 0.663274
+	 Executing: set_clock_latency -source -late -min -fall -0.663274 [get_pins io_inClock/Y]
+Setting all clocks to propagated mode.
+Clock DAG stats after update timingGraph:
+  cell counts      : b=73, i=1, icg=0, nicg=0, l=0, total=74
+  cell areas       : b=6643.000um^2, i=36.400um^2, icg=0.000um^2, nicg=0.000um^2, l=0.000um^2, total=6679.400um^2
+  cell capacitance : b=0.730pF, i=0.010pF, icg=0.000pF, nicg=0.000pF, l=0.000pF, total=0.740pF
+  sink capacitance : count=2073, total=8.292pF, avg=0.004pF, sd=0.000pF, min=0.004pF, max=0.004pF
+  wire capacitance : top=0.000pF, trunk=2.891pF, leaf=13.866pF, total=16.757pF
+  wire lengths     : top=0.000um, trunk=11306.900um, leaf=49992.950um, total=61299.850um
+Clock DAG net violations after update timingGraph:
+  Remaining Transition : {count=4, worst=[0.048ns, 0.041ns, 0.025ns, 0.017ns]} avg=0.033ns sd=0.014ns sum=0.130ns
+Clock DAG primary half-corner transition distribution after update timingGraph:
+  Trunk : target=1.360ns count=15 avg=0.864ns sd=0.402ns min=0.320ns max=1.358ns {5 <= 0.544ns, 2 <= 0.816ns, 2 <= 1.088ns, 6 <= 1.360ns}
+  Leaf  : target=1.360ns count=60 avg=1.215ns sd=0.176ns min=0.634ns max=1.408ns {6 <= 0.816ns, 1 <= 1.088ns, 49 <= 1.360ns} {4 <= 1.428ns}
+Clock DAG library cell distribution after update timingGraph {count}:
+   Bufs: CLKBU8: 73 
+   Invs: CLKIN2: 1 
+Primary reporting skew group after update timingGraph:
+  skew_group inClock/hold_func_mode: insertion delay [min=2.428, max=3.005, avg=2.656, sd=0.149], skew [0.577 vs 0.523*, 95.6% {2.428, 2.951}] (wid=0.141 ws=0.076) (gid=2.874 gs=0.541)
+Skew group summary after update timingGraph:
+  skew_group inClock/hold_func_mode: insertion delay [min=2.428, max=3.005, avg=2.656, sd=0.149], skew [0.577 vs 0.523*, 95.6% {2.428, 2.951}] (wid=0.141 ws=0.076) (gid=2.874 gs=0.541)
+Clock network insertion delays are now [2.428ns, 3.005ns] average 2.656ns std.dev 0.149ns
+Logging CTS constraint violations...
+  Clock tree inClock has 4 slew violations.
+**WARN: (IMPCCOPT-1007):	Did not meet the max transition constraint. Found 42 slew violations below cell t_op/CTS_ccl_a_BUF_inClock_G0_L3_24 (a lib_cell CLKBU8) at (709.800,1409.200), in power domain auto-default with half corner corner_max:setup.late. The worst violation was at the pin t_op/u_outFIFO/FIFO_reg[75][1]/C with a slew time target of 1.360ns. Achieved a slew time of 1.408ns.
+
+Type 'man IMPCCOPT-1007' for more detail.
+**WARN: (IMPCCOPT-1007):	Did not meet the max transition constraint. Found 42 slew violations below cell t_op/CTS_ccl_a_BUF_inClock_G0_L3_29 (a lib_cell CLKBU8) at (1125.600,1461.200), in power domain auto-default with half corner corner_max:setup.late. The worst violation was at the pin t_op/CTS_ccl_a_BUF_inClock_G0_L3_29/Q with a slew time target of 1.360ns. Achieved a slew time of 1.401ns.
+
+Type 'man IMPCCOPT-1007' for more detail.
+**WARN: (IMPCCOPT-1007):	Did not meet the max transition constraint. Found 44 slew violations below cell t_op/CTS_ccl_a_BUF_inClock_G0_L3_35 (a lib_cell CLKBU8) at (1107.400,759.200), in power domain auto-default with half corner corner_max:setup.late. The worst violation was at the pin t_op/u_cordic/my_rotation/present_angle_reg[1][1]/C with a slew time target of 1.360ns. Achieved a slew time of 1.385ns.
+
+Type 'man IMPCCOPT-1007' for more detail.
+**WARN: (IMPCCOPT-1007):	Did not meet the max transition constraint. Found 44 slew violations below cell t_op/CTS_ccl_a_BUF_inClock_G0_L3_17 (a lib_cell CLKBU8) at (687.400,1617.200), in power domain auto-default with half corner corner_max:setup.late. The worst violation was at the pin t_op/u_outFIFO/FIFO_reg[32][3]/C with a slew time target of 1.360ns. Achieved a slew time of 1.376ns.
+
+Type 'man IMPCCOPT-1007' for more detail.
+**WARN: (IMPCCOPT-1023):	Did not meet the skew target of 0.523ns for skew group inClock/hold_func_mode in half corner corner_max:setup.late. Achieved skew of 0.577ns.
+Type 'man IMPCCOPT-1023' for more detail.
+Logging CTS constraint violations done.
+Tidy Up And Update Timing done. (took cpu=0:00:01.6 real=0:00:01.6)
+Copying last skew targets (including wire skew targets) from inClock/hold_func_mode to inClock/setup_func_mode (the duplicate skew group).
+Copying last insertion target (including wire insertion delay target) from inClock/hold_func_mode to inClock/setup_func_mode (the duplicate skew group).
+Runtime done. (took cpu=0:01:01 real=0:01:01)
+Runtime Summary
+===============
+Clock Runtime:  (32%) Core CTS          19.81 (Init 0.65, Construction 12.70, Implementation 4.25, eGRPC 0.83, PostConditioning 0.71, Other 0.67)
+Clock Runtime:  (65%) CTS services      39.98 (RefinePlace 1.27, EarlyGlobalClock 1.34, NanoRoute 35.44, ExtractRC 0.30, TimingAnalysis 1.63)
+Clock Runtime:   (1%) Other CTS          0.92 (Init 0.48, CongRepair 0.44)
+Clock Runtime: (100%) Total             60.70
+
+Synthesizing clock trees with CCOpt done.
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+Set place::cacheFPlanSiteMark to 0
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+WARNING   IMPCCOPT-1361        3  Routing configuration for %s nets in clo...
+WARNING   IMPCCOPT-1127        1  The skew group %s has been identified as...
+WARNING   IMPCCOPT-1007        4  Did not meet the max transition constrai...
+WARNING   IMPCCOPT-1023        1  Did not meet the skew target of %s       
+WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+*** Message Summary: 11 warning(s), 0 error(s)
+
+#% End ccopt_design (date=06/14 09:28:42, total cpu=0:01:01, real=0:01:01, peak res=1449.1M, current mem=1341.3M)
+<CMD> pan -489.716 -27.676
+<CMD> pan 54.239 470.499
+<CMD> pan 36.594 187.546
+<CMD> pan 23.414 111.158
+<CMD> uiSetTool select
+<CMD> pan 15.251 231.574
+<CMD> pan -44.186 -1084.038
+<CMD> fit
+<CMD> pan -783.530 375.526
+<CMD> pan -44.878 99.728
+<CMD> pan -44.901 164.635
+
+*** Memory Usage v#1 (Current mem = 1625.129M, initial mem = 184.402M) ***
+*** Message Summary: 2458 warning(s), 22 error(s)
+
+--- Ending "Innovus" (totcpu=1:50:39, real=15:56:45, mem=1625.1M) ---

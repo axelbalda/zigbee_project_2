@@ -113,7 +113,7 @@ TOP t_op (
 
 	ITP io_inReset 			( .PAD(inReset), .Y(inReset_P) );					//ok
 		
-	ITP io_outFIFO_inReadEnable 	( .PAD(outFIFO_inReadEnable), .Y(outFIFO_inReadEnable_P) );		//
+	ITP io_outFIFO_inReadEnable 	( .PAD(in_outFIFO_inReadEnable), .Y(in_outFIFO_inReadEnable_P) );		//
 
 	ITP io_DEMUX_inDEMUX1 	( .PAD(in_DEMUX_inDEMUX1), .Y(in_DEMUX_inDEMUX1_P) );		//
 		
