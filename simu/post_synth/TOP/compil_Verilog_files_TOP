@@ -1,0 +1,12 @@
+vdel -lib ~/zigbee_project_2/libs/LibTOP -all #$HOME/Documents/PROJET_ZIGBEE_2A_MT_2022
+vlib ../../libs/LibTOP
+vmap Lib_TOP ~/zigbee_project_2/libs/LibTOP #$HOME/Documents/PROJET_ZIGBEE_2A_MT_2022
+
+
+
+vlog +acc -work Lib_TOP ./TOP_netlist.v
+
+
+
+vlog +acc -work Lib_TOP ./tb_TOP2.sv 
+
