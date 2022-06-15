@@ -1,0 +1,368 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+Options:	
+Date:		Wed Jun 15 03:19:42 2022
+Host:		cimeld105 (x86_64 w/Linux 2.6.32-754.35.1.el6.x86_64) (8cores*8cpus*Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz 12288KB)
+OS:		Red Hat Enterprise Linux Server release 6.10 (Santiago)
+
+License:
+		invs	Innovus Implementation System	17.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getDrawView
+<CMD> loadWorkspace -name Physical
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+rc_typ rc_best rc_worst
+**WARN: (IMPLF-228):	 ANTENNAOUTPUTDIFFAREA is specified and will be
+applied to any OUTPUT PIN or INOUT PIN without ANTENNADIFFAREA. This often
+causes a mismatch between process antenna violations found in Innovus
+(during routing or verification) and violations found by external physical
+verification tools. This global defaulting mechanism is obsolete in LEF
+5.5. The recommended solution is to remove ANTENNAOUTPUTDIFFAREA and add
+ANTENNADIFFAREA to all OUTPUT or INOUT PINS in the MACROS in order to
+avoid a mismatch in violations.
+**WARN: (IMPLF-230):	 ANTENNAINOUTDIFFAREA is specified and will be
+applied to any INOUT PIN without ANTENNADIFFAREA. This often causes a
+mismatch between process antenna violations found in Innovus (during
+routing or verification) and violations found by external physical
+verification tools. This global defaulting mechanism is obsolete in
+LEF 5.5. The recommended solution is to remove ANTENNAINOUTDIFFAREA
+and add ANTENNADIFFAREA to all INOUT PINS in the MACROS in order to
+avoid a mismatch in violations.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC16P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC16P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC16P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC16SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC16SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC16SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC16SP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC16SP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC16SP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC1P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC1P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC1P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC24P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC24P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC24P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC24SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC24SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC24SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC24SP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC24SP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC24SP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC4P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC4P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC4P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC4SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC4SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC4SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC8P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC8P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC8P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC8SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC8SP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD16P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD16SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD16SP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD1P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD24P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD24SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD24SP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD4P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Loading view definition file from /calcul/zigbee_project_2/implem/pnr/PNR_TOP_ANTHO_TYP/WORK/dbs/prects_enc.dat/viewDefinition.tcl
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADD21' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADD21' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADD22' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADD22' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADD31' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADD31' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADD32' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADD32' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI210' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI211' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI2110' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI2111' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI2112' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI212' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI220' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI221' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI222' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI310' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI311' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI312' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib, Line 7710)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib, Line 7722)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib, Line 7853)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib, Line 7865)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib, Line 7996)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib, Line 8008)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib, Line 8139)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib, Line 8151)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib, Line 8282)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib, Line 8294)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib, Line 8425)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib, Line 8437)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib, Line 8568)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib, Line 8580)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib, Line 8705)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib, Line 8717)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib, Line 8842)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib, Line 8854)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib, Line 8979)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_TYP.lib, Line 8991)
+*** End library_loading (cpu=0.02min, real=0.03min, mem=20.0M, fe_cpu=0.24min, fe_real=0.67min, fe_mem=547.0M) ***
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'FILLANT25' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'FILLANT25' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'FILLANT10' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'FILLANT10' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'FILLANT5' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'FILLANT5' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'FILLANT2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'FILLANT2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'FILLANT1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'FILLANT1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'LOGIC1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'LOGIC1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'LOGIC0' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'LOGIC0' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'TIEHIGH' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'TIEHIGH' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'TIELOW' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'TIELOW' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'TIE1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'TIE1' is defined in LEF but not in the timing library.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+*** Netlist is unique.
+**WARN: (IMPFP-3961):	The techSite 'corner_P' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'ioSite_P' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'blockSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'portCellSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPCK-7003):	Command "addCTSCellList" is obsolete. Use "specifyClockTree -update {AutoCTSRootPin clkname Buffer bufferlist ...}" as an alternative. The obsolete command still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove "addCTSCellList" from your script.
+Set CTS cells: CLKIN0 CLKIN1 CLKIN2 CLKIN3 CLKIN4 CLKIN6 CLKIN8 CLKIN10 CLKIN12 CLKIN15 CLKBU2 CLKBU4 CLKBU6 CLKBU8 CLKBU12 CLKBU15
+Loading preference file /calcul/zigbee_project_2/implem/pnr/PNR_TOP_ANTHO_TYP/WORK/dbs/prects_enc.dat/gui.pref.tcl ...
+**WARN: (IMPOPT-3602):	The specified path group name reset2cdr is not defined.
+**WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+**WARN: (IMPOPT-3602):	The specified path group name reg2out is not defined.
+**WARN: (IMPOPT-3602):	The specified path group name in2reg is not defined.
+**WARN: (IMPOPT-3602):	The specified path group name in2out is not defined.
+**WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+top_io
+top_io
+**WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+'set_default_switching_activity' finished successfully.
+Loading path group file /calcul/zigbee_project_2/implem/pnr/PNR_TOP_ANTHO_TYP/WORK/dbs/prects_enc.dat/mmmc/pathgroup.sdc ...
+<CMD> setDrawView place
+**WARN: (IMPCK-8086):	The command setCTSMode is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+<CMD> set_ccopt_property use_inverters auto
+<CMD> set_ccopt_mode -cts_opt_type full
+<CMD> setOptMode -usefulSkewCCOpt standard
+<CMD> create_ccopt_clock_tree_spec -file ccopt.spec
+Creating clock tree spec for modes (timing configs): setup_func_mode hold_func_mode
+extract_clock_generator_skew_groups=true: create_ccopt_clock_tree_spec will generate skew groups with a name prefix of "_clock_gen" to balance clock generator connected flops with the clock generator they drive.
+**WARN: (IMPCCOPT-4322):	No default Or cell family identified.
+Type 'man IMPCCOPT-4322' for more detail.
+Reset timing graph...
+Ignoring AAE DB Resetting ...
+Reset timing graph done.
+Ignoring AAE DB Resetting ...
+Analyzing clock structure...
+Analyzing clock structure done.
+Reset timing graph...
+Ignoring AAE DB Resetting ...
+Reset timing graph done.
+Wrote: ccopt.spec
+<CMD_INTERNAL> ccopt_check_and_flatten_ilms_no_restore
+<CMD> set_ccopt_property insertion_delay -pin t_op/u_cdr/div1/cnt_div/o_en_freq_synch_reg/C 0.084
+<CMD> set_ccopt_property insertion_delay -pin {t_op/u_cdr/cnt_d_reg[0]/C} 0.300
+<CMD> set_ccopt_property insertion_delay -pin {t_op/u_cdr/cnt_d_reg[1]/C} 0.300
+<CMD> set_ccopt_property insertion_delay -pin {t_op/u_cdr/div1/o_nb_P_reg[0]/C} 0.425
+<CMD> set_ccopt_property insertion_delay -pin {t_op/u_cdr/div1/o_nb_P_reg[1]/C} 0.480
+<CMD> set_ccopt_property insertion_delay -pin {t_op/u_cdr/div1/o_nb_P_reg[2]/C} 0.460
+<CMD> set_ccopt_property insertion_delay -pin {t_op/u_cdr/div1/o_nb_P_reg[3]/C} 0.402
+<CMD> set_ccopt_property insertion_delay -pin {t_op/u_cdr/div1/o_nb_P_reg[4]/C} 0.300
+<CMD> set_ccopt_property insertion_delay -pin {t_op/u_cdr/div1/o_nb_P_reg[5]/C} 0.388
+<CMD> create_ccopt_clock_tree -name inClock -source io_inClock/Y -no_skew_group
+Extracting original clock gating for inClock...
+  clock_tree inClock contains 2081 sinks and 0 clock gates.
+  Extraction for inClock complete.
+Extracting original clock gating for inClock done.
+<CMD> set_ccopt_property clock_period -pin io_inClock/Y 20
+<CMD> create_ccopt_skew_group -name inClock/setup_func_mode -sources io_inClock/Y -auto_sinks
+<CMD> set_ccopt_property include_source_latency -skew_group inClock/setup_func_mode true
+<CMD> set_ccopt_property extracted_from_clock_name -skew_group inClock/setup_func_mode inClock
+<CMD> set_ccopt_property extracted_from_constraint_mode_name -skew_group inClock/setup_func_mode setup_func_mode
+<CMD> set_ccopt_property extracted_from_delay_corners -skew_group inClock/setup_func_mode corner_typ
+<CMD> create_ccopt_skew_group -name inClock/hold_func_mode -sources io_inClock/Y -auto_sinks
+<CMD> set_ccopt_property include_source_latency -skew_group inClock/hold_func_mode true
+<CMD> set_ccopt_property extracted_from_clock_name -skew_group inClock/hold_func_mode inClock
+<CMD> set_ccopt_property extracted_from_constraint_mode_name -skew_group inClock/hold_func_mode hold_func_mode
+<CMD> set_ccopt_property extracted_from_delay_corners -skew_group inClock/hold_func_mode corner_min
+<CMD> check_ccopt_clock_tree_convergence
+Checking clock tree convergence...
+Checking clock tree convergence done.
+<CMD> get_ccopt_property auto_design_state_for_ilms
+<CMD> ccopt_design -cts
+#% Begin ccopt_design (date=06/15 03:20:53, mem=818.6M)
+Runtime...
+(ccopt_design): CTS Engine: ccopt. Used Spec: pre-existing CCOPT spec.
+Preferred extra space for top nets is 0
+Preferred extra space for trunk nets is 1
+Preferred extra space for leaf nets is 1
+Placement constraints of type 'region' or 'fence' will not be downgraded to 'guide' because the property change_fences_to_guides has been set to false.
+Set place::cacheFPlanSiteMark to 1
+CCOpt::Phase::Initialization...
+Check Prerequisites...
+Leaving CCOpt scope - CheckPlace...
+Estimated cell power/ground rail width = 1.625 um
+Begin checking placement ... (start mem=970.9M, init mem=970.9M)
+*info: Placed = 9716           (Fixed = 206)
+*info: Unplaced = 0           
+Placement Density:79.71%(1264136/1585912)
+Placement Density (including fixed std cells):79.81%(1271634/1593410)
+Finished checkPlace (cpu: total=0:00:00.2, vio checks=0:00:00.0; mem=970.9M)
+Leaving CCOpt scope - CheckPlace done. (took cpu=0:00:00.2 real=0:00:00.2)
+Innovus will update I/O latencies
+All good
+Check Prerequisites done. (took cpu=0:00:00.2 real=0:00:00.2)
+CCOpt::Phase::Initialization done. (took cpu=0:00:00.2 real=0:00:00.2)
+Executing ccopt post-processing.
+Synthesizing clock trees with CCOpt...
+CCOpt::Phase::PreparingToBalance...
+**WARN: (IMPCCOPT-1127):	The skew group default.inClock/setup_func_mode has been identified as a duplicate of: inClock/hold_func_mode
+The skew group inClock/setup_func_mode has been identified as a duplicate of: inClock/hold_func_mode, so it will not be cloned.
+Leaving CCOpt scope - optDesignGlobalRouteStep...
+[NR-eGR] honorMsvRouteConstraint: false
+[NR-eGR] honorClockSpecNDR      : 0
+[NR-eGR] minRouteLayer          : 1
+[NR-eGR] maxRouteLayer          : 4
+[NR-eGR] numTracksPerClockWire  : 0
+[NR-eGR] Layer1 has single uniform track structure
+[NR-eGR] Layer2 has single uniform track structure
+[NR-eGR] Layer3 has single uniform track structure
+[NR-eGR] Layer4 has single uniform track structure
+[NR-eGR] numRoutingBlks=0 numInstBlks=65033 numPGBlocks=3380 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eGR] numPreroutedNet = 0  numPreroutedWires = 0
+[NR-eGR] Read numTotalNets=10489  numIgnoredNets=0
+[NR-eGR] There are 2 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id 0. Nets 10446 
+[NR-eGR] id=0  ndrTrackId=0  ndrViaId=-1  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[NR-eGR] Pitch:  L1=1300  L2=1400  L3=1300  L4=1400
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 10446 net(s) in layer range [1, 4]
+[NR-eGR] earlyGlobalRoute overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 6.930950e+05um
+[NR-eGR] 
+[NR-eGR] Congestion Analysis Layer By layer: (blocked Gcells are excluded) 
+[NR-eGR]                OverCon         OverCon            
+[NR-eGR]                 #Gcell          #Gcell     %Gcell
+[NR-eGR] Layer              (1)             (4)    OverCon 
+[NR-eGR] ---------------------------------------------------
+[NR-eGR] Layer1       1( 0.02%)       0( 0.00%)   ( 0.02%) 
+[NR-eGR] Layer2      11( 0.07%)       0( 0.00%)   ( 0.07%) 
+[NR-eGR] Layer3       0( 0.00%)       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer4       0( 0.00%)       0( 0.00%)   ( 0.00%) 
+[NR-eGR] ---------------------------------------------------
+[NR-eGR] Total       12( 0.02%)       0( 0.00%)   ( 0.02%) 
+[NR-eGR] 
+[NR-eGR] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[NR-eGR] Overflow after earlyGlobalRoute 0.00% H + 0.00% V
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Layer1(MET1)(H) length: 6.862582e+04um, number of vias: 33112
+[NR-eGR] Layer2(MET2)(V) length: 3.480763e+05um, number of vias: 20622
+[NR-eGR] Layer3(MET3)(H) length: 2.760570e+05um, number of vias: 862
+[NR-eGR] Layer4(MET4)(V) length: 3.325140e+04um, number of vias: 0
+[NR-eGR] Total length: 7.260105e+05um, number of vias: 54596
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total clock nets wire length: 4.887212e+04um 
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] End Peak syMemory usage = 971.0 MB
+[NR-eGR] Early Global Router Kernel+IO runtime : 0.28 seconds
+Leaving CCOpt scope - optDesignGlobalRouteStep done. (took cpu=0:00:00.3 real=0:00:00.3)
+Legalization setup...
+Using cell based legalization.
+Legalization setup done. (took cpu=0:00:00.0 real=0:00:00.0)
+Validating CTS configuration...
+Non-default CCOpt properties:
+preferred_extra_space is set for at least one key
+route_type is set for at least one key
+useful_skew_ideal_mode_max_allowed_delay: 1 (default: auto)
+Route type trimming info:
+  No route type modifications were made.
+Clock tree balancer configuration for clock_tree inClock:
+Non-default CCOpt properties for clock tree inClock:
+  route_type (leaf): default_route_type_leaf (default: default)
+  route_type (trunk): default_route_type_nonleaf (default: default)
+  route_type (top): default_route_type_nonleaf (default: default)
+Library Trimming...
+**WARN: (IMPCCOPT-1183):	The library has no usable balanced buffers for power domain auto-default, while balancing clock_tree inClock. If this is not intended behavior, you can specify a list of lib_cells to use with the buffer_cells property.
+**WARN: (IMPCCOPT-1184):	The library has no usable balanced inverters for power domain auto-default, while balancing clock_tree inClock. If this is not intended behavior, you can specify a list of lib_cells to use with the inverter_cells property.
+**ERROR: (IMPCCOPT-1135):	CTS found neither inverters nor buffers while balancing clock_tree inClock. CTS cannot continue.
+Library Trimming done.
+**WARN: (IMPCCOPT-1361):	Routing configuration for top nets in clock tree inClock: preferred layers MET3-MET4 are outside NanoRoute configured layer range. This is likely to cause routing correlation issues.
+**WARN: (IMPCCOPT-1361):	Routing configuration for trunk nets in clock tree inClock: preferred layers MET3-MET4 are outside NanoRoute configured layer range. This is likely to cause routing correlation issues.
+**WARN: (IMPCCOPT-1361):	Routing configuration for leaf nets in clock tree inClock: preferred layers MET3-MET4 are outside NanoRoute configured layer range. This is likely to cause routing correlation issues.
+Primary reporting skew group is skew_group inClock/hold_func_mode with 2081 clock sinks.
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+
+Via Selection for Estimated Routes (rule default):
+
+------------------------------------------------------------
+Layer    Via Cell    Res.     Cap.     RC       Top of Stack
+Range                (Ohm)    (fF)     (fs)     Only
+------------------------------------------------------------
+M1-M2    VIA1_PR     1.188    0.128    0.152    false
+M2-M3    VIA2_PR     1.188    0.105    0.124    false
+M3-M4    VIA3_PR     1.188    0.118    0.140    false
+------------------------------------------------------------
+
+No ideal or dont_touch nets found in the clock tree
+Validating CTS configuration done. (took cpu=0:00:00.1 real=0:00:00.1)
+Copying last skew targets (including wire skew targets) from inClock/hold_func_mode to inClock/setup_func_mode (the duplicate skew group).
+Copying last insertion target (including wire insertion delay target) from inClock/hold_func_mode to inClock/setup_func_mode (the duplicate skew group).
+CCOpt::Phase::PreparingToBalance done. (took cpu=0:00:00.4 real=0:00:00.4)
+Runtime done. (took cpu=0:00:00.6 real=0:00:00.6)
+Runtime Summary
+===============
+Clock Runtime:  (17%) Core CTS           0.10 (Init 0.10)
+Clock Runtime:   (0%) CTS services       0.00 ()
+Clock Runtime:  (82%) Other CTS          0.46 (Init 0.46)
+Clock Runtime: (100%) Total              0.55
+
+**ERROR: (IMPCCOPT-2196):	Cannot run ccopt_design because the command prerequisites were not met. Review the previous error messages for more details about the failure.
+Set place::cacheFPlanSiteMark to 0
+3
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPCCOPT-1361        3  Routing configuration for %s nets in clo...
+WARNING   IMPCCOPT-1127        1  The skew group %s has been identified as...
+ERROR     IMPCCOPT-1135        1  CTS found neither inverters nor buffers ...
+ERROR     IMPCCOPT-2196        1  Cannot run ccopt_design because the comm...
+WARNING   IMPCCOPT-1183        1  The library has no usable balanced %ss f...
+WARNING   IMPCCOPT-1184        1  The library has no usable balanced %ss f...
+WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+*** Message Summary: 7 warning(s), 2 error(s)
+
+#% End ccopt_design (date=06/15 03:20:53, total cpu=0:00:00.6, real=0:00:00.0, peak res=854.3M, current mem=854.3M)
+

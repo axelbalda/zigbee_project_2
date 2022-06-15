@@ -69,7 +69,7 @@ create_constraint_mode -name hold_func_mode\
 create_analysis_view -name hold_func_typ -constraint_mode hold_func_mode -delay_corner corner_typ
 create_analysis_view -name hold_func_min -constraint_mode hold_func_mode -delay_corner corner_min -latency_file ${::IMEX::dataVar}/mmmc/views/hold_func_min/latency.sdc
 create_analysis_view -name hold_func_max -constraint_mode hold_func_mode -delay_corner corner_max
-create_analysis_view -name setup_func_typ -constraint_mode setup_func_mode -delay_corner corner_typ
+create_analysis_view -name setup_func_typ -constraint_mode setup_func_mode -delay_corner corner_typ -latency_file ${::IMEX::dataVar}/mmmc/views/setup_func_typ/latency.sdc
 create_analysis_view -name setup_func_min -constraint_mode setup_func_mode -delay_corner corner_min
-create_analysis_view -name setup_func_max -constraint_mode setup_func_mode -delay_corner corner_max -latency_file ${::IMEX::dataVar}/mmmc/views/setup_func_max/latency.sdc
-set_analysis_view -setup [list setup_func_max] -hold [list hold_func_min]
+create_analysis_view -name setup_func_max -constraint_mode setup_func_mode -delay_corner corner_max
+set_analysis_view -setup [list setup_func_typ] -hold [list hold_func_min]

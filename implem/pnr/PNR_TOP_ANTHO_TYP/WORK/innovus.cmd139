@@ -1,7 +1,7 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Wed Jun 15 01:44:25 2022                
+#  Created on Wed Jun 15 02:50:07 2022                
 #                                                     
 #######################################################
 
@@ -87,46 +87,3 @@ setPathGroupOptions reg2gated -effortLevel high -slackAdjustment 0
 setPathGroupOptions in2gated -effortLevel high -slackAdjustment 0
 setPathGroupOptions my_path -effortLevel high -slackAdjustment 0
 place_opt_design
-setOptMode -fixCap true -fixTran true -fixFanoutLoad false
-optDesign -preCTS
-report_timing
-fit
-get_time_unit
-report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all > top.mtarpt
-load_timing_debug_report -name default_report top.mtarpt
-pan -88.592 -79.733
-pan -23.222 552.704
-pan 155.168 -751.593
-pan -174.497 291.946
-pan -4.572 -134.417
-pan 79.733 -7.594
-pan 148.076 -6.328
-pan 67.077 0.000
-pan 278.433 -11.390
-pan 299.948 -7.594
-pan -11.390 261.980
-pan -50.624 263.246
-pan -34.171 201.231
-pan -25.312 307.542
-pan -41.765 187.310
-pan -192.372 15.187
-pan -116.436 0.000
-pan -370.822 -1.266
-pan -139.217 -20.250
-pan -55.686 -167.060
-pan -2.531 -60.749
-pan -27.844 -74.671
-pan -37.968 -137.950
-pan -44.296 -196.169
-pan -17.719 -98.718
-pan 12.656 -125.295
-pan 10.125 -89.858
-pan 35.437 -125.294
-pan 299.948 -21.515
-pan 250.590 132.888
-pan 63.037 824.331
-get_power_analysis_mode -leakage_power_view -quiet
-get_power_analysis_mode -analysis_view -quiet
-get_power_analysis_mode -state_dependent_leakage -quiet
-get_power_analysis_mode -dynamic_power_view -quiet
-get_power_analysis_mode -analysis_view -quiet

@@ -6288,3 +6288,208 @@ Routing Overflow: 0.00% H and 0.00% V
 [06/15 01:51:48    393s] Info: pop threads available for lower-level modules during optimization.
 [06/15 01:51:48    393s]  *** Writing scheduling file: 'scheduling_file.cts.6546' ***
 [06/15 01:51:53    394s] <CMD> report_timing
+[06/15 02:05:58    456s] <CMD> fit
+[06/15 02:08:14    466s] <CMD> get_time_unit
+[06/15 02:08:14    466s] <CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all > top.mtarpt
+[06/15 02:08:14    466s] <CMD> load_timing_debug_report -name default_report top.mtarpt
+[06/15 02:08:14    466s] Parsing file top.mtarpt...
+[06/15 02:11:05    480s] <CMD> pan -88.592 -79.733
+[06/15 02:11:06    481s] <CMD> pan -23.222 552.704
+[06/15 02:11:08    481s] <CMD> pan 155.168 -751.593
+[06/15 02:11:15    482s] <CMD> pan -174.497 291.946
+[06/15 02:11:18    482s] <CMD> pan -4.572 -134.417
+[06/15 02:11:21    483s] <CMD> pan 79.733 -7.594
+[06/15 02:11:22    483s] <CMD> pan 148.076 -6.328
+[06/15 02:11:23    483s] <CMD> pan 67.077 0.000
+[06/15 02:11:24    483s] <CMD> pan 278.433 -11.390
+[06/15 02:11:24    484s] <CMD> pan 299.948 -7.594
+[06/15 02:11:25    484s] <CMD> pan -11.390 261.980
+[06/15 02:11:26    484s] <CMD> pan -50.624 263.246
+[06/15 02:11:26    484s] <CMD> pan -34.171 201.231
+[06/15 02:11:27    484s] <CMD> pan -25.312 307.542
+[06/15 02:11:27    485s] <CMD> pan -41.765 187.310
+[06/15 02:11:28    485s] <CMD> pan -192.372 15.187
+[06/15 02:11:29    485s] <CMD> pan -116.436 0.000
+[06/15 02:11:30    485s] <CMD> pan -370.822 -1.266
+[06/15 02:11:32    486s] <CMD> pan -139.217 -20.250
+[06/15 02:11:33    486s] <CMD> pan -55.686 -167.060
+[06/15 02:11:34    486s] <CMD> pan -2.531 -60.749
+[06/15 02:11:35    486s] <CMD> pan -27.844 -74.671
+[06/15 02:11:35    487s] <CMD> pan -37.968 -137.950
+[06/15 02:11:36    487s] <CMD> pan -44.296 -196.169
+[06/15 02:11:37    487s] <CMD> pan -17.719 -98.718
+[06/15 02:11:38    487s] <CMD> pan 12.656 -125.295
+[06/15 02:11:38    487s] <CMD> pan 10.125 -89.858
+[06/15 02:11:39    488s] <CMD> pan 35.437 -125.294
+[06/15 02:11:40    488s] <CMD> pan 299.948 -21.515
+[06/15 02:11:40    488s] <CMD> pan 250.590 132.888
+[06/15 02:11:42    488s] <CMD> pan 63.037 824.331
+[06/15 02:14:55    503s] Creating Cell Server ...(0, 0, 0, 0)
+[06/15 02:14:55    503s] <CMD> get_power_analysis_mode -leakage_power_view -quiet
+[06/15 02:14:55    503s] <CMD> get_power_analysis_mode -analysis_view -quiet
+[06/15 02:14:55    503s] <CMD> get_power_analysis_mode -state_dependent_leakage -quiet
+[06/15 02:14:55    503s] <CMD> get_power_analysis_mode -dynamic_power_view -quiet
+[06/15 02:14:55    503s] <CMD> get_power_analysis_mode -analysis_view -quiet
+[06/15 02:14:55    503s] Summary for sequential cells identification: 
+[06/15 02:14:55    503s]   Identified SBFF number: 32
+[06/15 02:14:55    503s]   Identified MBFF number: 0
+[06/15 02:14:55    503s]   Identified SB Latch number: 0
+[06/15 02:14:55    503s]   Identified MB Latch number: 0
+[06/15 02:14:55    503s]   Not identified SBFF number: 34
+[06/15 02:14:55    503s]   Not identified MBFF number: 0
+[06/15 02:14:55    503s]   Not identified SB Latch number: 0
+[06/15 02:14:55    503s]   Not identified MB Latch number: 0
+[06/15 02:14:55    503s]   Number of sequential cells which are not FFs: 23
+[06/15 02:14:55    503s] Creating Cell Server, finished. 
+[06/15 02:14:55    503s] 
+[06/15 02:14:55    503s] Deleting Cell Server ...
+[06/15 02:14:55    503s] Creating Cell Server ...(0, 0, 0, 0)
+[06/15 02:14:55    503s] Summary for sequential cells identification: 
+[06/15 02:14:55    503s]   Identified SBFF number: 32
+[06/15 02:14:55    503s]   Identified MBFF number: 0
+[06/15 02:14:55    503s]   Identified SB Latch number: 0
+[06/15 02:14:55    503s]   Identified MB Latch number: 0
+[06/15 02:14:55    503s]   Not identified SBFF number: 34
+[06/15 02:14:55    503s]   Not identified MBFF number: 0
+[06/15 02:14:55    503s]   Not identified SB Latch number: 0
+[06/15 02:14:55    503s]   Not identified MB Latch number: 0
+[06/15 02:14:55    503s]   Number of sequential cells which are not FFs: 23
+[06/15 02:14:55    503s] Creating Cell Server, finished. 
+[06/15 02:14:55    503s] 
+[06/15 02:14:55    503s] Deleting Cell Server ...
+[06/15 02:14:55    503s] Creating Cell Server ...(0, 0, 0, 0)
+[06/15 02:14:55    503s] Summary for sequential cells identification: 
+[06/15 02:14:55    503s]   Identified SBFF number: 32
+[06/15 02:14:55    503s]   Identified MBFF number: 0
+[06/15 02:14:55    503s]   Identified SB Latch number: 0
+[06/15 02:14:55    503s]   Identified MB Latch number: 0
+[06/15 02:14:55    503s]   Not identified SBFF number: 34
+[06/15 02:14:55    503s]   Not identified MBFF number: 0
+[06/15 02:14:55    503s]   Not identified SB Latch number: 0
+[06/15 02:14:55    503s]   Not identified MB Latch number: 0
+[06/15 02:14:55    503s]   Number of sequential cells which are not FFs: 23
+[06/15 02:14:55    503s] Creating Cell Server, finished. 
+[06/15 02:14:55    503s] 
+[06/15 02:14:55    503s] Deleting Cell Server ...
+[06/15 02:14:55    503s] Creating Cell Server ...(0, 0, 0, 0)
+[06/15 02:14:55    503s] Summary for sequential cells identification: 
+[06/15 02:14:55    503s]   Identified SBFF number: 32
+[06/15 02:14:55    503s]   Identified MBFF number: 0
+[06/15 02:14:55    503s]   Identified SB Latch number: 0
+[06/15 02:14:55    503s]   Identified MB Latch number: 0
+[06/15 02:14:55    503s]   Not identified SBFF number: 34
+[06/15 02:14:55    503s]   Not identified MBFF number: 0
+[06/15 02:14:55    503s]   Not identified SB Latch number: 0
+[06/15 02:14:55    503s]   Not identified MB Latch number: 0
+[06/15 02:14:55    503s]   Number of sequential cells which are not FFs: 23
+[06/15 02:14:55    503s] Creating Cell Server, finished. 
+[06/15 02:14:55    503s] 
+[06/15 02:14:55    503s] Deleting Cell Server ...
+[06/15 02:14:55    503s] **WARN: (IMPSGN-1032):	Failed to create Instance t_op/FE_RC_227_0.
+[06/15 02:14:55    503s] **WARN: (IMPSGN-1032):	Failed to create Instance Q.
+[06/15 02:14:55    503s] Creating Cell Server ...(0, 0, 0, 0)
+[06/15 02:14:55    503s] Summary for sequential cells identification: 
+[06/15 02:14:55    503s]   Identified SBFF number: 32
+[06/15 02:14:55    503s]   Identified MBFF number: 0
+[06/15 02:14:55    503s]   Identified SB Latch number: 0
+[06/15 02:14:55    503s]   Identified MB Latch number: 0
+[06/15 02:14:55    503s]   Not identified SBFF number: 34
+[06/15 02:14:55    503s]   Not identified MBFF number: 0
+[06/15 02:14:55    503s]   Not identified SB Latch number: 0
+[06/15 02:14:55    503s]   Not identified MB Latch number: 0
+[06/15 02:14:55    503s]   Number of sequential cells which are not FFs: 23
+[06/15 02:14:55    503s] Creating Cell Server, finished. 
+[06/15 02:14:55    503s] 
+[06/15 02:14:55    503s] Deleting Cell Server ...
+[06/15 02:14:55    503s] Creating Cell Server ...(0, 0, 0, 0)
+[06/15 02:14:55    503s] Summary for sequential cells identification: 
+[06/15 02:14:55    503s]   Identified SBFF number: 32
+[06/15 02:14:55    503s]   Identified MBFF number: 0
+[06/15 02:14:55    503s]   Identified SB Latch number: 0
+[06/15 02:14:55    503s]   Identified MB Latch number: 0
+[06/15 02:14:55    503s]   Not identified SBFF number: 34
+[06/15 02:14:55    503s]   Not identified MBFF number: 0
+[06/15 02:14:55    503s]   Not identified SB Latch number: 0
+[06/15 02:14:55    503s]   Not identified MB Latch number: 0
+[06/15 02:14:55    503s]   Number of sequential cells which are not FFs: 23
+[06/15 02:14:55    503s] Creating Cell Server, finished. 
+[06/15 02:14:55    503s] 
+[06/15 02:14:55    503s] Deleting Cell Server ...
+[06/15 02:14:55    503s] Creating Cell Server ...(0, 0, 0, 0)
+[06/15 02:14:55    503s] Summary for sequential cells identification: 
+[06/15 02:14:55    503s]   Identified SBFF number: 32
+[06/15 02:14:55    503s]   Identified MBFF number: 0
+[06/15 02:14:55    503s]   Identified SB Latch number: 0
+[06/15 02:14:55    503s]   Identified MB Latch number: 0
+[06/15 02:14:55    503s]   Not identified SBFF number: 34
+[06/15 02:14:55    503s]   Not identified MBFF number: 0
+[06/15 02:14:55    503s]   Not identified SB Latch number: 0
+[06/15 02:14:55    503s]   Not identified MB Latch number: 0
+[06/15 02:14:55    503s]   Number of sequential cells which are not FFs: 23
+[06/15 02:14:55    503s] Creating Cell Server, finished. 
+[06/15 02:14:55    503s] 
+[06/15 02:14:55    503s] Deleting Cell Server ...
+[06/15 02:14:55    503s] Creating Cell Server ...(0, 0, 0, 0)
+[06/15 02:14:55    503s] Summary for sequential cells identification: 
+[06/15 02:14:55    503s]   Identified SBFF number: 32
+[06/15 02:14:55    503s]   Identified MBFF number: 0
+[06/15 02:14:55    503s]   Identified SB Latch number: 0
+[06/15 02:14:55    503s]   Identified MB Latch number: 0
+[06/15 02:14:55    503s]   Not identified SBFF number: 34
+[06/15 02:14:55    503s]   Not identified MBFF number: 0
+[06/15 02:14:55    503s]   Not identified SB Latch number: 0
+[06/15 02:14:55    503s]   Not identified MB Latch number: 0
+[06/15 02:14:55    503s]   Number of sequential cells which are not FFs: 23
+[06/15 02:14:55    503s] Creating Cell Server, finished. 
+[06/15 02:14:55    503s] 
+[06/15 02:14:55    503s] Deleting Cell Server ...
+[06/15 02:14:55    503s] **WARN: (IMPSGN-1032):	Failed to create Instance t_op/FE_RC_339_0.
+[06/15 02:14:55    503s] **WARN: (IMPSGN-1032):	Failed to create Instance Q.
+[06/15 02:14:55    503s] Creating Cell Server ...(0, 0, 0, 0)
+[06/15 02:14:55    503s] Summary for sequential cells identification: 
+[06/15 02:14:55    503s]   Identified SBFF number: 32
+[06/15 02:14:55    503s]   Identified MBFF number: 0
+[06/15 02:14:55    503s]   Identified SB Latch number: 0
+[06/15 02:14:55    503s]   Identified MB Latch number: 0
+[06/15 02:14:55    503s]   Not identified SBFF number: 34
+[06/15 02:14:55    503s]   Not identified MBFF number: 0
+[06/15 02:14:55    503s]   Not identified SB Latch number: 0
+[06/15 02:14:55    503s]   Not identified MB Latch number: 0
+[06/15 02:14:55    503s]   Number of sequential cells which are not FFs: 23
+[06/15 02:14:55    503s] Creating Cell Server, finished. 
+[06/15 02:14:55    503s] 
+[06/15 02:14:55    503s] Deleting Cell Server ...
+[06/15 02:14:55    503s] **WARN: (IMPSGN-1033):	This type of pin (HPIN) io_inClock is not yet supported by the schematic.
+[06/15 02:14:55    503s] **WARN: (IMPSGN-1033):	This type of pin (HPIN) io_inClock is not yet supported by the schematic.
+[06/15 02:16:29    511s] 
+[06/15 02:16:29    511s] *** Memory Usage v#1 (Current mem = 1210.484M, initial mem = 184.402M) ***
+[06/15 02:16:29    511s] 
+[06/15 02:16:29    511s] *** Summary of all messages that are not suppressed in this session:
+[06/15 02:16:29    511s] Severity  ID               Count  Summary                                  
+[06/15 02:16:29    511s] WARNING   IMPLF-200          131  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[06/15 02:16:29    511s] WARNING   IMPLF-201          608  Pin '%s' in macro '%s' has no ANTENNADIF...
+[06/15 02:16:29    511s] WARNING   IMPLF-228            1   ANTENNAOUTPUTDIFFAREA is specified and ...
+[06/15 02:16:29    511s] WARNING   IMPLF-230            1   ANTENNAINOUTDIFFAREA is specified and w...
+[06/15 02:16:29    511s] WARNING   IMPFP-710            1  File version %s is too old.              
+[06/15 02:16:29    511s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[06/15 02:16:29    511s] WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+[06/15 02:16:29    511s] WARNING   IMPCK-7003           1  Command "%s" is obsolete. Use "%s" as an...
+[06/15 02:16:29    511s] WARNING   IMPSGN-1033          2  This type of pin (HPIN) %s is not yet su...
+[06/15 02:16:29    511s] WARNING   IMPSGN-1032          4  Failed to create Instance %s.            
+[06/15 02:16:29    511s] WARNING   IMPVL-324            1  Module %s in %s will overwrite the previ...
+[06/15 02:16:29    511s] WARNING   IMPVL-209            1  In Verilog file '%s', check line %d near...
+[06/15 02:16:29    511s] WARNING   IMPVL-159         1401  Pin '%s' of cell '%s' is defined in LEF ...
+[06/15 02:16:29    511s] WARNING   IMPVL-361            1  Number of nets (%d) more than bus (%s) p...
+[06/15 02:16:29    511s] WARNING   IMPSR-1255           1  Cannot find any non 'CLASS CORE' pad pin...
+[06/15 02:16:29    511s] WARNING   IMPSR-1254           2  Cannot find any block pin of net %s. Che...
+[06/15 02:16:29    511s] WARNING   IMPSP-9531           1  Turning off clkGateAware when timingDriv...
+[06/15 02:16:29    511s] WARNING   IMPSP-9025           3  No scan chain specified/traced.          
+[06/15 02:16:29    511s] WARNING   IMPOPT-3602          3  The specified path group name %s is not ...
+[06/15 02:16:29    511s] WARNING   IMPOPT-3195          2  Analysis mode has changed.               
+[06/15 02:16:29    511s] WARNING   IMPOPT-6118          2  The following cells have a dont_touch pr...
+[06/15 02:16:29    511s] WARNING   IMPTCM-77           19  Option "%s" for command %s is obsolete a...
+[06/15 02:16:29    511s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[06/15 02:16:29    511s] ERROR     TECHLIB-1318        20  All the table values in the '%s' group a...
+[06/15 02:16:29    511s] *** Message Summary: 2211 warning(s), 20 error(s)
+[06/15 02:16:29    511s] 
+[06/15 02:16:29    511s] --- Ending "Innovus" (totcpu=0:08:31, real=0:32:15, mem=1210.5M) ---

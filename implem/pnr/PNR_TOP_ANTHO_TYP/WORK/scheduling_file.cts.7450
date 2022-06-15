@@ -1,0 +1,15 @@
+MacroModel pin t_op/u_cdr/div1/o_nb_P_reg[2]/C  300.00ps 300.00ps 300.00ps 300.00ps 0pf setup_func_typ
+MacroModel pin t_op/u_cdr/div1/o_nb_P_reg[1]/C  300.00ps 300.00ps 300.00ps 300.00ps 0pf setup_func_typ
+MacroModel pin t_op/u_cdr/div1/o_nb_P_reg[3]/C  300.00ps 300.00ps 300.00ps 300.00ps 0pf setup_func_typ
+MacroModel pin t_op/u_cdr/div1/o_nb_P_reg[0]/C  300.00ps 300.00ps 300.00ps 300.00ps 0pf setup_func_typ
+MacroModel pin t_op/u_cdr/div1/o_nb_P_reg[4]/C  257.50ps 257.50ps 257.50ps 257.50ps 0pf setup_func_typ
+MacroModel pin t_op/u_cdr/div1/o_nb_P_reg[5]/C  294.80ps 294.80ps 294.80ps 294.80ps 0pf setup_func_typ
+MacroModel pin t_op/u_cdr/div1/o_nb_P_reg[4]/C  300.00ps 300.00ps 300.00ps 300.00ps 0pf setup_func_typ
+MacroModel pin t_op/u_cdr/div1/o_nb_P_reg[2]/C  160.30ps 160.30ps 160.30ps 160.30ps 0pf setup_func_typ
+MacroModel pin t_op/u_cdr/div1/o_nb_P_reg[3]/C  101.60ps 101.60ps 101.60ps 101.60ps 0pf setup_func_typ
+MacroModel pin t_op/u_cdr/div1/o_nb_P_reg[1]/C  180.10ps 180.10ps 180.10ps 180.10ps 0pf setup_func_typ
+MacroModel pin t_op/u_cdr/div1/o_nb_P_reg[0]/C  125.30ps 125.30ps 125.30ps 125.30ps 0pf setup_func_typ
+MacroModel pin t_op/u_cdr/cnt_d_reg[1]/C  300.00ps 300.00ps 300.00ps 300.00ps 0pf setup_func_typ
+MacroModel pin t_op/u_cdr/div1/cnt_div/o_en_freq_synch_reg/C  84.10ps 84.10ps 84.10ps 84.10ps 0pf setup_func_typ
+MacroModel pin t_op/u_cdr/div1/o_nb_P_reg[5]/C  93.10ps 93.10ps 93.10ps 93.10ps 0pf setup_func_typ
+MacroModel pin t_op/u_cdr/cnt_d_reg[0]/C  300.00ps 300.00ps 300.00ps 300.00ps 0pf setup_func_typ
