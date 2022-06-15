@@ -70,20 +70,20 @@ wire	[7:0]	sig_DEMUX_outDEMUX2			;
 wire 	[7:0]	sig_DEMUX_outDEMUX17		;
 wire	[7:0]	sig_DEMUX_outDEMUX18		;
 
-wire	[1:0]	sig_MUX_inMUX3				;  	
-wire 	[1:0]	sig_MUX_inMUX4				;  
-wire 	[1:0]	sig_MUX_inMUX5				;  	
-wire 	[15:0]	sig_MUX_inMUX6				;  
-wire 	[15:0]	sig_MUX_inMUX7				;  	
-wire 	[3:0]	sig_MUX_inMUX8				;  	
-wire 	[15:0]	sig_MUX_inMUX9				;  	
-wire 	[15:0]	sig_MUX_inMUX10				; 	
-wire 	[1:0]	sig_MUX_inMUX11				; 	
-wire 	[1:0]	sig_MUX_inMUX12				;  
-wire 	[1:0]	sig_MUX_inMUX13				; 
-wire 	[1:0]	sig_MUX_inMUX14				; 	
-wire 	[3:0]	sig_MUX_inMUX15				;  	
-wire 	[3:0]	sig_MUX_inMUX16				;
+wire	[7:0]	sig_MUX_inMUX3				;  	
+wire 	[7:0]	sig_MUX_inMUX4				;  
+wire 	[7:0]	sig_MUX_inMUX5				;  	
+wire 	[31:0]	sig_MUX_inMUX6				;  
+wire 	[31:0]	sig_MUX_inMUX7				;  	
+wire 	[7:0]	sig_MUX_inMUX8				;  	
+wire 	[31:0]	sig_MUX_inMUX9				;  	
+wire 	[31:0]	sig_MUX_inMUX10				; 	
+wire 	[7:0]	sig_MUX_inMUX11				; 	
+wire 	[7:0]	sig_MUX_inMUX12				;  
+wire 	[7:0]	sig_MUX_inMUX13				; 
+wire 	[7:0]	sig_MUX_inMUX14				; 	
+wire 	[7:0]	sig_MUX_inMUX15				;  	
+wire 	[7:0]	sig_MUX_inMUX16				;
 
 wire 			sig_MUX_outMUX3				;	
 wire 			sig_MUX_outMUX4				;	
@@ -334,18 +334,23 @@ MUX811 u_mux16 (
 );
 //////////////////////////////////////////////////////////////////////////////////
 
-assign sig_MUX_inMUX3  = { sig_DEMUX_outDEMUX1[2]	, sig_coder_outReady															} ;
-assign sig_MUX_inMUX4  = { sig_DEMUX_outDEMUX1[1]	, sig_inFIFO_outData															} ;
-assign sig_MUX_inMUX5  = { sig_DEMUX_outDEMUX2[1]	, sig_inFIFO_outEmpty															} ;
-assign sig_MUX_inMUX6  = { 4'b0						, sig_DEMUX_outDEMUX17[7:4]	, sig_coder_outSinIMasked	, sig_decod_outI		} ;
-assign sig_MUX_inMUX7  = { 4'b0						, sig_DEMUX_outDEMUX18[7:4]	, sig_coder_outSinQMasked	, sig_decod_outQ		} ;
-assign sig_MUX_inMUX8  = { 1'b0						, sig_DEMUX_outDEMUX2[2]	, sig_DEMUX_outDEMUX2[2]	, sig_decod_outEOC		} ;
-assign sig_MUX_inMUX9  = { sig_outFIFO_outData		, sig_decod_outI			, sig_coder_outSinIMasked	, sig_coder_outSinI		} ;
-assign sig_MUX_inMUX10 = { 4'b0						, sig_decod_outQ			, sig_coder_outSinQMasked	, sig_coder_outSinQ		} ;
-assign sig_MUX_inMUX11 = { sig_DEMUX_outDEMUX1[3]	, sig_cordic_outEnable															} ;
-assign sig_MUX_inMUX12 = { sig_DEMUX_outDEMUX1[4]	, sig_cdr_outFlag																} ; 
-assign sig_MUX_inMUX13 = { sig_DEMUX_outDEMUX2[4]	, sig_cdr_outData			 													} ; 
-assign sig_MUX_inMUX14 = { sig_DEMUX_outDEMUX2[3]	, sig_cordic_outDirection														} ; 
+assign sig_MUX_inMUX3  = { 6'b0						, sig_DEMUX_outDEMUX1[1]	, sig_coder_outReady									} ;
+assign sig_MUX_inMUX4  = { 5'b0 					, sig_DEMUX_outDEMUX1[2]	, 1'b0						, sig_inFIFO_outData		} ;
+assign sig_MUX_inMUX5  = { 5'b0						, sig_DEMUX_outDEMUX2[2]	, 1'b0						, sig_inFIFO_outEmpty		} ;
+
+assign sig_MUX_inMUX6  = { 4'b0						, sig_coder_outSinIMasked	, 8'b0						, sig_DEMUX_outDEMUX17[15:12]	, 8'b0			, sig_decod_outI		} ;
+assign sig_MUX_inMUX7  = { 4'b0						, sig_coder_outSinQMasked	, 8'b0						, sig_DEMUX_outDEMUX18[15:12]	, 8'b0			, sig_decod_outQ		} ;		
+assign sig_MUX_inMUX8  = { 1'b0						, sig_DEMUX_outDEMUX2[3]	, 2'b0						, sig_DEMUX_outDEMUX2[3]		, 8'b0			, sig_decod_outEOC		} ;		
+
+assign sig_MUX_inMUX9  = { sig_outFIFO_outData		, sig_decod_outI			, sig_coder_outSinIMasked	, sig_coder_outSinI			} ;
+assign sig_MUX_inMUX10 = { 4'b0						, sig_decod_outQ			, sig_coder_outSinQMasked	, sig_coder_outSinQ			} ;
+
+assign sig_MUX_inMUX11 = { 3'b0						, sig_DEMUX_outDEMUX1[4]	, 3'b0						, sig_cordic_outEnable		} ;
+assign sig_MUX_inMUX14 = { 3'b0						, sig_DEMUX_outDEMUX2[4]	, 3'b0						, sig_cordic_outDirection	} ; 
+
+assign sig_MUX_inMUX12 = { 2'b0						, sig_DEMUX_outDEMUX1[5]	, 4'b0						, sig_cdr_outFlag			} ; 
+assign sig_MUX_inMUX13 = { 2'b0						, sig_DEMUX_outDEMUX2[5]	, 4'b0						, sig_cdr_outData			} ; 
+
 assign sig_MUX_inMUX15 = { sig_cdr_outData			, sig_cordic_outDirection	, sig_decod_outEOC			, sig_inFIFO_outEmpty	} ;
 assign sig_MUX_inMUX16 = { sig_cdr_outFlag			, sig_cordic_outEnable		, sig_coder_outReady		, sig_inFIFO_outData	} ;
 
