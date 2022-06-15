@@ -88,7 +88,7 @@ DEMUX181 demux3(
 /////////////////////////////////////////////////////
 //  DEMUX 4
 /////////////////////////////////////////////////////
-DEMUX181 demux3(
+DEMUX181 demux4(
             .inData  (inData[3]) ,
             .inSel   (inSel)     ,
             .outData (s_data4) 
@@ -98,7 +98,7 @@ DEMUX181 demux3(
 /////////////////////////////////////////////////////
 //  DEMUX 5
 /////////////////////////////////////////////////////
-DEMUX181 demux3(
+DEMUX181 demux5(
             .inData  (inData[2]) ,
             .inSel   (inSel)     ,
             .outData (s_data5) 
@@ -108,7 +108,7 @@ DEMUX181 demux3(
 /////////////////////////////////////////////////////
 //  DEMUX 6
 /////////////////////////////////////////////////////
-DEMUX181 demux3(
+DEMUX181 demux6(
             .inData  (inData[1]) ,
             .inSel   (inSel)     ,
             .outData (s_data6) 
@@ -118,7 +118,7 @@ DEMUX181 demux3(
 /////////////////////////////////////////////////////
 //  DEMUX 7
 /////////////////////////////////////////////////////
-DEMUX181 demux3(
+DEMUX181 demux7(
             .inData  (inData[0]) ,
             .inSel   (inSel)     ,
             .outData (s_data7) 
