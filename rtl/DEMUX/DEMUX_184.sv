@@ -22,14 +22,11 @@ module DEMUX184 (
     output  [31 : 0]    outData       
 ) ;
  
-reg [3 : 0] s_data0;
-reg [3 : 0] s_data1;
-reg [3 : 0] s_data2;
-reg [3 : 0] s_data3;
-reg [3 : 0] s_data4;
-reg [3 : 0] s_data5;
-reg [3 : 0] s_data6;
-reg [3 : 0] s_data7;
+reg [7 : 0] s_data0;
+reg [7 : 0] s_data1;
+reg [7 : 0] s_data2;
+reg [7 : 0] s_data3;
+
 
 reg [3 : 0] s_signal0 ;
 reg [3 : 0] s_signal1 ;
