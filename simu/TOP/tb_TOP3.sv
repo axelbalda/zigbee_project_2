@@ -376,7 +376,7 @@ initial begin : DATA
 	/////////////////////////////
 	// DECODER Stand Alone
 	/////////////////////////////
-	inSEL1			=	3'b0	;
+	inSEL1			=	3'b110	;
 	inSEL9			=	2'b10	;
 	inSEL15			=	2'b01	;
 
@@ -650,15 +650,9 @@ initial begin : DATA
 	// CODER --> CORDIC
 	/////////////////////////////
 
-	inSEL1			=	3'b0	;
-	inSEL2			=	3'b0	;
-	inSEL3			=	1'b0	;
-	inSEL6			=	2'b01	;
+	inSEL1			=	3'b111	;
 	inSEL9			=	2'b0	;
-	inSEL11			=	1'b0	;
-	inSEL12			=	1'b0	;
 	inSEL15			=	2'b0	;
-	inSEL17			=	1'b0	;
 
 	for(int i = 0; i < 20; i++) begin
 		#CLK_PERIOD ;	
