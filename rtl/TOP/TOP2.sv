@@ -218,28 +218,28 @@ DEMUX181 u_demux1 (
 
 DEMUX181 u_demux2 (
 	.inData			(in_DEMUX_inDEMUX2		), 
-	.inSel			(in_DEMUX_inSEL2		),
+	.inSel			(in_DEMUX_inSEL1		),
 	.outData		(sig_DEMUX_outDEMUX2	)
 );
 
 
 MUX811 u_mux3 (
 	.inData			(sig_MUX_inMUX3			), 
-	.inSel			(in_MUX_inSEL3			),
+	.inSel			(in_MUX_inSEL1			),
 	.outData		(sig_MUX_outMUX3		)
 );
 
 
 MUX811 u_mux4 (
 	.inData			(sig_MUX_inMUX4			), 
-	.inSel			(in_MUX_inSEL3			),
+	.inSel			(in_MUX_inSEL1			),
 	.outData		(sig_MUX_outMUX4		)
 );
 
 
 MUX811 u_mux5 (
 	.inData			(sig_MUX_inMUX5			), 
-	.inSel			(in_MUX_inSEL3			),
+	.inSel			(in_MUX_inSEL1			),
 	.outData		(sig_MUX_outMUX5		)
 );
 
@@ -260,63 +260,63 @@ MUX814 u_mux10 (
 
 DEMUX184 u_demux17 (
 	.inData			(in_DEMUX_inDEMUX17		), 
-	.inSel			(in_DEMUX_inSEL17		),
+	.inSel			(in_MUX_inSEL1			),
 	.outData		(sig_DEMUX_outDEMUX17	)
 );
 
 
 DEMUX184 u_demux18 (
 	.inData			(in_DEMUX_inDEMUX18		), 
-	.inSel			(in_DEMUX_inSEL17		),
+	.inSel			(in_MUX_inSEL1			),
 	.outData		(sig_DEMUX_outDEMUX18	)
 );
 
 
 MUX814 u_mux6 (
 	.inData			(sig_MUX_inMUX6			), 
-	.inSel			(in_MUX_inSEL6			),
+	.inSel			(in_MUX_inSEL1			),
 	.outData		(sig_MUX_outMUX6		)
 );
 
 
 MUX814 u_mux7 (
 	.inData			(sig_MUX_inMUX7			), 
-	.inSel			(in_MUX_inSEL6			),
+	.inSel			(in_MUX_inSEL1			),
 	.outData		(sig_MUX_outMUX7		)
 );
 
 
 MUX811 u_mux8 (
 	.inData			(sig_MUX_inMUX8			), 
-	.inSel			(in_MUX_inSEL6			),
+	.inSel			(in_MUX_inSEL1			),
 	.outData		(sig_MUX_outMUX8		)
 );
 
 
 MUX811 u_mux11 (
 	.inData			(sig_MUX_inMUX11		), 
-	.inSel			(in_MUX_inSEL11			),
+	.inSel			(in_MUX_inSEL1			),
 	.outData		(sig_MUX_outMUX11		)
 );
 
 
 MUX811 u_mux14 (
 	.inData			(sig_MUX_inMUX14		), 
-	.inSel			(in_MUX_inSEL11			),
+	.inSel			(in_MUX_inSEL1			),
 	.outData		(sig_MUX_outMUX14		)
 );
 
 
 MUX811 u_mux12 (
 	.inData			(sig_MUX_inMUX12		), 
-	.inSel			(in_MUX_inSEL12			),
+	.inSel			(in_MUX_inSEL1			),
 	.outData		(sig_MUX_outMUX12		)
 );
 
 
 MUX811 u_mux13 (
 	.inData			(sig_MUX_inMUX13		), 
-	.inSel			(in_MUX_inSEL12			),
+	.inSel			(in_MUX_inSEL1			),
 	.outData		(sig_MUX_outMUX13		)
 );
 
