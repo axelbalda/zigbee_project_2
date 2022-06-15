@@ -17,21 +17,22 @@ saveDesign dbs/pnr_after_design_config
 source ../SCRIPTS/placement.tcl
 saveDesign dbs/pnr_after_placement
 
-#saveDesign dbs/prects_enc
 #Création du clock_tree
 source ../SCRIPTS/clock_tree_synthesis.tcl
 saveDesign dbs/pnr_after_CTS
 
 #Ajout des fillers in core and pads
 source ../SCRIPTS/add_fillers.tcl
-saveDesign dbs/pnr_after_filler
+saveDesign dbs/pnr_after_fillers
 
 #Useful skew
 setOptMode -usefulSkewPostRoute true
 
 routeDesign
 
-saveDesign dbs/pnr_after_routeDesign
+saveDesign dbs/pnr_after_route
+
+
 
 optDesign -postRoute
 

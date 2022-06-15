@@ -54,3 +54,4 @@ INCLUDE  $IUSDIR/tools/inca/files/cds.lib
 DEFINE SFCLIB_C35B4C0 $AMS_DIR/cds/HK_C35/SFCLIB_C35B4C0
 #Removed by ddDeleteObj: DEFINE test_drc /tp/xph2app/xph2app101/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project_2/implem/pnr/CDS_axel/test_drc
 DEFINE avTech /softslin/cdsassura4_13_102_615/tools/assura/etc/avtech/avTech
+DEFINE test_drc_2 /calcul/2AMT/zigbee_project_2/implem/pnr/CDS_axel/test_drc_2
