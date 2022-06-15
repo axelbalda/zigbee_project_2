@@ -56,7 +56,7 @@ MUX411 mux1(
 //  MUX 2
 /////////////////////////////////////////////////////
 MUX411 mux2(
-            .inData  ( {inData[26], inData[18], inData[10], inData[2]}    ) ,
+            .inData  ( {inData[26], inData[18], inData[10], inData[2]}  ) ,
             .inSel   ( inSel                                            ) ,
             .outData ( s_data2                                          ) 
             ) ;
@@ -66,51 +66,52 @@ MUX411 mux2(
 //  MUX 3
 /////////////////////////////////////////////////////
 MUX411 mux3(
-            .inData  ( {inData[27], inData[19], inData[11], inData[3]}    ) ,
+            .inData  ( {inData[27], inData[19], inData[11], inData[3]}  ) ,
             .inSel   ( inSel                                            ) ,
             .outData ( s_data3                                          ) 
             ) ;
 /////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////
-//  MUX 3
+//  MUX 4
 /////////////////////////////////////////////////////
 MUX411 mux3(
-            .inData  ( {inData[28], inData[20], inData[12], inData[4]}    ) ,
+            .inData  ( {inData[28], inData[20], inData[12], inData[4]}  ) ,
             .inSel   ( inSel                                            ) ,
-            .outData ( s_data3                                          ) 
+            .outData ( s_data4                                          ) 
             ) ;
 /////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////
-//  MUX 3
+//  MUX 5
 /////////////////////////////////////////////////////
 MUX411 mux3(
-            .inData  ( {inData[29], inData[21], inData[13], inData[5]}    ) ,
+            .inData  ( {inData[29], inData[21], inData[13], inData[5]}  ) ,
             .inSel   ( inSel                                            ) ,
-            .outData ( s_data3                                          ) 
+            .outData ( s_data5                                          ) 
             ) ;
 /////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////
-//  MUX 3
+//  MUX 6
 /////////////////////////////////////////////////////
 MUX411 mux3(
-            .inData  ( {inData[30], inData[22], inData[14], inData[6]}    ) ,
+            .inData  ( {inData[30], inData[22], inData[14], inData[6]}  ) ,
             .inSel   ( inSel                                            ) ,
-            .outData ( s_data3                                          ) 
+            .outData ( s_data6                                          ) 
             ) ;
 /////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////
-//  MUX 3
+//  MUX 7
 /////////////////////////////////////////////////////
 MUX411 mux3(
-            .inData  ( {inData[31], inData[23], inData[15], inData[7]}    ) ,
+            .inData  ( {inData[31], inData[23], inData[15], inData[7]}  ) ,
             .inSel   ( inSel                                            ) ,
-            .outData ( s_data3                                          ) 
+            .outData ( s_data7                                          ) 
             ) ;
 /////////////////////////////////////////////////////
+
 assign outData = {s_data3, s_data2, s_data1, s_data0} ;
 
 endmodule
