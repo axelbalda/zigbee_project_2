@@ -1,5 +1,5 @@
 
-module TOP(
+module TOP2(
 	input			inClock					,
     input			inReset					,
     	
