@@ -677,7 +677,6 @@ initial begin : DATA
 		#CLK_PERIOD ;	
 	end
 
-	inSEL2			=	3'b010	;
 	inData			=	4'b0	;
 	inReadEnable	=	1'b0	;
 	inDEMUX1		=	1'b0	;
