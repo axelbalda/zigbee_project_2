@@ -244,14 +244,14 @@ MUX811 u_mux5 (
 );
 
 
-MUX814 u_mux9 (
+MUX414 u_mux9 (
 	.inData			(sig_MUX_inMUX9			), 
 	.inSel			(in_MUX_inSEL9			),
 	.outData		(out_MUX_outMUX9		)
 );
 
 
-MUX814 u_mux10 (
+MUX414 u_mux10 (
 	.inData			(sig_MUX_inMUX10		), 
 	.inSel			(in_MUX_inSEL9			),
 	.outData		(out_MUX_outMUX10		)
@@ -320,14 +320,14 @@ MUX811 u_mux13 (
 	.outData		(sig_MUX_outMUX13		)
 );
 
-MUX811 u_mux15 (
+MUX411 u_mux15 (
 	.inData			(sig_MUX_inMUX15		), 
 	.inSel			(in_MUX_inSEL15			),
 	.outData		(out_MUX_outMUX15		)
 );
 
 
-MUX811 u_mux16 (
+MUX411 u_mux16 (
 	.inData			(sig_MUX_inMUX16		), 
 	.inSel			(in_MUX_inSEL15			),
 	.outData		(out_MUX_outMUX16		)
