@@ -1,0 +1,413 @@
+[06/07 19:48:37      0s] 
+[06/07 19:48:37      0s] Cadence Innovus(TM) Implementation System.
+[06/07 19:48:37      0s] Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+[06/07 19:48:37      0s] 
+[06/07 19:48:37      0s] Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+[06/07 19:48:37      0s] Options:	
+[06/07 19:48:37      0s] Date:		Tue Jun  7 19:48:37 2022
+[06/07 19:48:37      0s] Host:		cimeld39.cime.inpg.fr (x86_64 w/Linux 2.6.32-754.35.1.el6.x86_64) (8cores*16cpus*Intel(R) Core(TM) i7-10700 CPU @ 2.90GHz 16384KB)
+[06/07 19:48:37      0s] OS:		Red Hat Enterprise Linux Server release 6.10 (Santiago)
+[06/07 19:48:37      0s] 
+[06/07 19:48:37      0s] License:
+[06/07 19:48:37      0s] 		invs	Innovus Implementation System	17.1	checkout succeeded
+[06/07 19:48:37      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[06/07 19:48:49      9s] @(#)CDS: Innovus v17.11-s080_1 (64bit) 08/04/2017 11:13 (Linux 2.6.18-194.el5)
+[06/07 19:48:49      9s] @(#)CDS: NanoRoute 17.11-s080_1 NR170721-2155/17_11-UB (database version 2.30, 390.7.1) {superthreading v1.44}
+[06/07 19:48:49      9s] @(#)CDS: AAE 17.11-s034 (64bit) 08/04/2017 (Linux 2.6.18-194.el5)
+[06/07 19:48:49      9s] @(#)CDS: CTE 17.11-s053_1 () Aug  1 2017 23:31:41 ( )
+[06/07 19:48:49      9s] @(#)CDS: SYNTECH 17.11-s012_1 () Jul 21 2017 02:29:12 ( )
+[06/07 19:48:49      9s] @(#)CDS: CPE v17.11-s095
+[06/07 19:48:49      9s] @(#)CDS: IQRC/TQRC 16.1.1-s215 (64bit) Thu Jul  6 20:18:10 PDT 2017 (Linux 2.6.18-194.el5)
+[06/07 19:48:49      9s] @(#)CDS: OA 22.50-p063 Fri Feb  3 19:45:13 2017
+[06/07 19:48:49      9s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[06/07 19:48:49      9s] @(#)CDS: RCDB 11.10
+[06/07 19:48:49      9s] --- Running on cimeld39.cime.inpg.fr (x86_64 w/Linux 2.6.32-754.35.1.el6.x86_64) (8cores*16cpus*Intel(R) Core(TM) i7-10700 CPU @ 2.90GHz 16384KB) ---
+[06/07 19:48:49      9s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_7434_cimeld39.cime.inpg.fr_xph2app101_jgD9pZ.
+
+[06/07 19:48:49      9s] Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+[06/07 19:48:50     10s] 
+[06/07 19:48:50     10s] **INFO:  MMMC transition support version v31-84 
+[06/07 19:48:50     10s] 
+[06/07 19:48:50     10s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[06/07 19:48:50     10s] <CMD> suppressMessage ENCEXT-2799
+[06/07 19:48:50     10s] <CMD> getDrawView
+[06/07 19:48:50     10s] <CMD> loadWorkspace -name Physical
+[06/07 19:48:50     10s] <CMD> win
+[06/07 19:48:58     11s] <CMD_INTERNAL> print {---# TCL Script amsSetup.tcl loaded}
+[06/07 19:48:58     11s] ---# TCL Script amsSetup.tcl loaded
+[06/07 19:48:58     11s] <CMD> set init_layout_view {}
+[06/07 19:48:58     11s] <CMD> set init_verilog {../INPUT_DATA/top_netlist.v ../INPUT_DATA/top_io.v}
+[06/07 19:48:58     11s] <CMD> set init_mmmc_file ../SCRIPTS/view_definition.tcl
+[06/07 19:48:58     11s] <CMD> set init_lef_file {/softslin/AMS_410_ISR15/cds/HK_C35/LEF/c35b4/c35b4.lef /softslin/AMS_410_ISR15/cds/HK_C35/LEF/c35b4/CORELIB.lef /softslin/AMS_410_ISR15/cds/HK_C35/LEF/c35b4/IOLIB_4M.lef}
+[06/07 19:48:58     11s] <CMD> set init_top_cell top
+[06/07 19:48:58     11s] <CMD> set init_gnd_net {gnd! gnd3r! gnd3o!}
+[06/07 19:48:58     11s] <CMD> set init_pwr_net {vdd! vdd3r1! vdd3r2! vdd3o!}
+[06/07 19:48:58     11s] <CMD> set cts_cell_list {CLKIN0 CLKIN1 CLKIN2 CLKIN3 CLKIN4 CLKIN6 CLKIN8 CLKIN10 CLKIN12 CLKIN15 CLKBU2 CLKBU4 CLKBU6 CLKBU8 CLKBU12 CLKBU15}
+[06/07 19:48:58     11s] <CMD> init_design
+[06/07 19:48:59     11s] #% Begin Load MMMC data ... (date=06/07 19:48:59, mem=446.7M)
+[06/07 19:48:59     11s] #% End Load MMMC data ... (date=06/07 19:48:59, total cpu=0:00:00.0, real=0:00:00.0, peak res=446.8M, current mem=446.8M)
+[06/07 19:48:59     11s] 
+[06/07 19:48:59     11s] Loading LEF file /softslin/AMS_410_ISR15/cds/HK_C35/LEF/c35b4/c35b4.lef ...
+[06/07 19:48:59     11s] **WARN: (IMPLF-228):	 ANTENNAOUTPUTDIFFAREA is specified and will be
+[06/07 19:48:59     11s] applied to any OUTPUT PIN or INOUT PIN without ANTENNADIFFAREA. This often
+[06/07 19:48:59     11s] causes a mismatch between process antenna violations found in Innovus
+[06/07 19:48:59     11s] (during routing or verification) and violations found by external physical
+[06/07 19:48:59     11s] verification tools. This global defaulting mechanism is obsolete in LEF
+[06/07 19:48:59     11s] 5.5. The recommended solution is to remove ANTENNAOUTPUTDIFFAREA and add
+[06/07 19:48:59     11s] ANTENNADIFFAREA to all OUTPUT or INOUT PINS in the MACROS in order to
+[06/07 19:48:59     11s] avoid a mismatch in violations.
+[06/07 19:48:59     11s] **WARN: (IMPLF-230):	 ANTENNAINOUTDIFFAREA is specified and will be
+[06/07 19:48:59     11s] applied to any INOUT PIN without ANTENNADIFFAREA. This often causes a
+[06/07 19:48:59     11s] mismatch between process antenna violations found in Innovus (during
+[06/07 19:48:59     11s] routing or verification) and violations found by external physical
+[06/07 19:48:59     11s] verification tools. This global defaulting mechanism is obsolete in
+[06/07 19:48:59     11s] LEF 5.5. The recommended solution is to remove ANTENNAINOUTDIFFAREA
+[06/07 19:48:59     11s] and add ANTENNADIFFAREA to all INOUT PINS in the MACROS in order to
+[06/07 19:48:59     11s] avoid a mismatch in violations.
+[06/07 19:48:59     11s] 
+[06/07 19:48:59     11s] Loading LEF file /softslin/AMS_410_ISR15/cds/HK_C35/LEF/c35b4/CORELIB.lef ...
+[06/07 19:48:59     11s] Set DBUPerIGU to M2 pitch 1400.
+[06/07 19:48:59     11s] 
+[06/07 19:48:59     11s] Loading LEF file /softslin/AMS_410_ISR15/cds/HK_C35/LEF/c35b4/IOLIB_4M.lef ...
+[06/07 19:48:59     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC16P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-201' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC16P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-200' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC16P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-201' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC16SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-201' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC16SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-200' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC16SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-201' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC16SP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-201' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC16SP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-200' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC16SP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-201' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC1P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-201' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC1P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-200' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC1P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-201' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC24P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-201' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC24P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-200' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC24P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-201' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC24SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-201' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC24SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-200' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC24SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-201' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC24SP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-201' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC24SP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-200' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC24SP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-201' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC4P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-201' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC4P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-200' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC4P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-201' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC4SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-201' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC4SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-200' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC4SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-201' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC8P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-201' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC8P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-200' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC8P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-201' for more detail.
+[06/07 19:48:59     11s] **WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+[06/07 19:48:59     11s] To increase the message display limit, refer to the product command reference manual.
+[06/07 19:48:59     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC8SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-200' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC8SP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-200' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD16P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-200' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD16SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-200' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD16SP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-200' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD1P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-200' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD24P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-200' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD24SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-200' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD24SP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-200' for more detail.
+[06/07 19:48:59     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD4P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/07 19:48:59     11s] Type 'man IMPLF-200' for more detail.
+[06/07 19:48:59     11s] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[06/07 19:48:59     11s] To increase the message display limit, refer to the product command reference manual.
+[06/07 19:48:59     11s] 
+[06/07 19:48:59     11s] viaInitial starts at Tue Jun  7 19:48:59 2022
+viaInitial ends at Tue Jun  7 19:48:59 2022
+Loading view definition file from ../SCRIPTS/view_definition.tcl
+[06/07 19:48:59     11s] Reading slow_libs timing library '/softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib' ...
+[06/07 19:48:59     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADD21' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 19:48:59     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADD21' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 19:48:59     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADD22' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 19:48:59     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADD22' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 19:48:59     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADD31' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 19:48:59     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADD31' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 19:48:59     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADD32' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 19:48:59     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADD32' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 19:48:59     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI210' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 19:48:59     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI211' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 19:48:59     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI2110' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 19:48:59     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI2111' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 19:48:59     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI2112' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 19:48:59     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI212' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 19:48:59     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI220' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 19:48:59     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI221' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 19:48:59     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI222' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 19:48:59     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI310' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 19:48:59     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI311' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 19:48:59     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI312' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/07 19:48:59     11s] Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[06/07 19:48:59     11s] **ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 7673)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 7685)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 7816)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 7828)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 7959)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 7971)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8102)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8114)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8245)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8257)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8388)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8400)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8531)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8543)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8668)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8680)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8805)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8817)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8942)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8954)
+Message <TECHLIB-1318> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[06/07 19:48:59     11s] Read 248 cells in library 'c35_CORELIB_WC' 
+[06/07 19:48:59     11s] Reading slow_libs timing library '/softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_IOLIB_WC.lib' ...
+[06/07 19:48:59     11s] Read 181 cells in library 'c35_IOLIB_WC' 
+[06/07 19:48:59     11s] Reading fast_libs timing library '/softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_BC.lib' ...
+[06/07 19:49:00     12s] Read 248 cells in library 'c35_CORELIB_BC' 
+[06/07 19:49:00     12s] Reading fast_libs timing library '/softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_IOLIB_BC.lib' ...
+[06/07 19:49:00     12s] Read 181 cells in library 'c35_IOLIB_BC' 
+[06/07 19:49:00     12s] *** End library_loading (cpu=0.02min, real=0.02min, mem=28.5M, fe_cpu=0.21min, fe_real=0.38min, fe_mem=534.0M) ***
+[06/07 19:49:00     12s] **ERROR: (IMPSYT-16038):	The specified file '../INPUT_DATA/top_netlist.v' could not be found. Check your file system, correct the file name.
+[06/07 19:49:00     12s] **ERROR: (IMPIMEX-7008):	No netlist files are found.
+[06/07 19:49:00     12s] 
+[06/07 19:51:03     23s] <CMD_INTERNAL> print {---# TCL Script amsSetup.tcl loaded}
+[06/07 19:51:03     23s] ---# TCL Script amsSetup.tcl loaded
+[06/07 19:51:03     23s] <CMD> set init_layout_view {}
+[06/07 19:51:03     23s] <CMD> set init_verilog {../INPUT_DATA/TOP_netlist.v ../INPUT_DATA/top_io.v}
+[06/07 19:51:03     23s] <CMD> set init_mmmc_file ../SCRIPTS/view_definition.tcl
+[06/07 19:51:03     23s] <CMD> set init_lef_file {/softslin/AMS_410_ISR15/cds/HK_C35/LEF/c35b4/c35b4.lef /softslin/AMS_410_ISR15/cds/HK_C35/LEF/c35b4/CORELIB.lef /softslin/AMS_410_ISR15/cds/HK_C35/LEF/c35b4/IOLIB_4M.lef}
+[06/07 19:51:03     23s] <CMD> set init_top_cell top
+[06/07 19:51:03     23s] <CMD> set init_gnd_net {gnd! gnd3r! gnd3o!}
+[06/07 19:51:03     23s] <CMD> set init_pwr_net {vdd! vdd3r1! vdd3r2! vdd3o!}
+[06/07 19:51:03     23s] <CMD> set cts_cell_list {CLKIN0 CLKIN1 CLKIN2 CLKIN3 CLKIN4 CLKIN6 CLKIN8 CLKIN10 CLKIN12 CLKIN15 CLKBU2 CLKBU4 CLKBU6 CLKBU8 CLKBU12 CLKBU15}
+[06/07 19:51:03     23s] <CMD> init_design
+[06/07 19:51:03     23s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[06/07 19:51:03     23s] #% Begin Load MMMC data ... (date=06/07 19:51:03, mem=469.7M)
+[06/07 19:51:03     23s] Extraction setup Delayed 
+[06/07 19:51:03     23s] Extraction setup Delayed 
+[06/07 19:51:03     23s] Extraction setup Delayed 
+[06/07 19:51:03     23s] Extraction setup Delayed 
+[06/07 19:51:03     23s] Extraction setup Delayed 
+[06/07 19:51:03     23s] Extraction setup Delayed 
+[06/07 19:51:03     23s] The existing analysis_view 'hold_func_max' has been replaced with new attributes.
+[06/07 19:51:03     23s] The existing analysis_view 'hold_func_min' has been replaced with new attributes.
+[06/07 19:51:03     23s] The existing analysis_view 'hold_func_typ' has been replaced with new attributes.
+[06/07 19:51:03     23s] The existing analysis_view 'setup_func_max' has been replaced with new attributes.
+[06/07 19:51:03     23s] The existing analysis_view 'setup_func_min' has been replaced with new attributes.
+[06/07 19:51:03     23s] The existing analysis_view 'setup_func_typ' has been replaced with new attributes.
+[06/07 19:51:03     23s] INFO: New setup and hold views overwrite old settings during design initialization
+[06/07 19:51:03     23s] #% End Load MMMC data ... (date=06/07 19:51:03, total cpu=0:00:00.0, real=0:00:00.0, peak res=473.1M, current mem=473.1M)
+[06/07 19:51:03     23s] 
+[06/07 19:51:03     23s] Loading LEF file /softslin/AMS_410_ISR15/cds/HK_C35/LEF/c35b4/c35b4.lef ...
+[06/07 19:51:03     23s] **WARN: (IMPLF-228):	 ANTENNAOUTPUTDIFFAREA is specified and will be
+[06/07 19:51:03     23s] applied to any OUTPUT PIN or INOUT PIN without ANTENNADIFFAREA. This often
+[06/07 19:51:03     23s] causes a mismatch between process antenna violations found in Innovus
+[06/07 19:51:03     23s] (during routing or verification) and violations found by external physical
+[06/07 19:51:03     23s] verification tools. This global defaulting mechanism is obsolete in LEF
+[06/07 19:51:03     23s] 5.5. The recommended solution is to remove ANTENNAOUTPUTDIFFAREA and add
+[06/07 19:51:03     23s] ANTENNADIFFAREA to all OUTPUT or INOUT PINS in the MACROS in order to
+[06/07 19:51:03     23s] avoid a mismatch in violations.
+[06/07 19:51:03     23s] **WARN: (IMPLF-230):	 ANTENNAINOUTDIFFAREA is specified and will be
+[06/07 19:51:03     23s] applied to any INOUT PIN without ANTENNADIFFAREA. This often causes a
+[06/07 19:51:03     23s] mismatch between process antenna violations found in Innovus (during
+[06/07 19:51:03     23s] routing or verification) and violations found by external physical
+[06/07 19:51:03     23s] verification tools. This global defaulting mechanism is obsolete in
+[06/07 19:51:03     23s] LEF 5.5. The recommended solution is to remove ANTENNAINOUTDIFFAREA
+[06/07 19:51:03     23s] and add ANTENNADIFFAREA to all INOUT PINS in the MACROS in order to
+[06/07 19:51:03     23s] avoid a mismatch in violations.
+[06/07 19:51:03     23s] **WARN: (IMPLF-119):	LAYER 'POLY1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-119' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-119):	LAYER 'POLY2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-119' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-119):	LAYER 'MET1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-119' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-119):	LAYER 'VIA1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-119' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-119):	LAYER 'MET2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-119' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-119):	LAYER 'VIA2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-119' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-119):	LAYER 'MET3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-119' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-119):	LAYER 'VIA3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-119' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-119):	LAYER 'MET4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-119' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-119):	LAYER 'OVERLAP' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-119' for more detail.
+[06/07 19:51:03     23s] **ERROR: (IMPLF-223):	The LEF via 'VIA1_PR' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+[06/07 19:51:03     23s] **ERROR: (IMPLF-223):	The LEF via 'VIA2_PR' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+[06/07 19:51:03     23s] **ERROR: (IMPLF-223):	The LEF via 'VIA3_PR' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-151):	The viaRule 'VIA1W2W_G' has been defined, the content will be skipped.
+[06/07 19:51:03     23s] **WARN: (IMPLF-151):	The viaRule 'VIA1W2_G' has been defined, the content will be skipped.
+[06/07 19:51:03     23s] **WARN: (IMPLF-151):	The viaRule 'VIA12W_G' has been defined, the content will be skipped.
+[06/07 19:51:03     23s] **WARN: (IMPLF-151):	The viaRule 'VIA2W3W_G' has been defined, the content will be skipped.
+[06/07 19:51:03     23s] **WARN: (IMPLF-151):	The viaRule 'VIA23W_G' has been defined, the content will be skipped.
+[06/07 19:51:03     23s] **WARN: (IMPLF-151):	The viaRule 'VIA2W3_G' has been defined, the content will be skipped.
+[06/07 19:51:03     23s] **WARN: (IMPLF-151):	The viaRule 'VIA3W4W_G' has been defined, the content will be skipped.
+[06/07 19:51:03     23s] **WARN: (IMPLF-151):	The viaRule 'VIA34W_G' has been defined, the content will be skipped.
+[06/07 19:51:03     23s] **WARN: (IMPLF-151):	The viaRule 'VIA3W4_G' has been defined, the content will be skipped.
+[06/07 19:51:03     23s] **WARN: (IMPLF-151):	The viaRule 'VIA12_G' has been defined, the content will be skipped.
+[06/07 19:51:03     23s] **WARN: (IMPLF-151):	The viaRule 'VIA23_G' has been defined, the content will be skipped.
+[06/07 19:51:03     23s] **WARN: (IMPLF-151):	The viaRule 'VIA34_G' has been defined, the content will be skipped.
+[06/07 19:51:03     23s] 
+[06/07 19:51:03     23s] Loading LEF file /softslin/AMS_410_ISR15/cds/HK_C35/LEF/c35b4/CORELIB.lef ...
+[06/07 19:51:03     23s] **WARN: (IMPLF-58):	MACRO 'AOI210' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-58' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-58):	MACRO 'AOI211' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-58' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-58):	MACRO 'AOI212' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-58' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-58):	MACRO 'AOI220' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-58' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-58):	MACRO 'AOI221' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-58' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-58):	MACRO 'AOI222' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-58' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-58):	MACRO 'AOI310' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-58' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-58):	MACRO 'AOI311' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-58' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-58):	MACRO 'AOI312' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-58' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-58):	MACRO 'AOI2110' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-58' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-58):	MACRO 'AOI2111' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-58' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-58):	MACRO 'AOI2112' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-58' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-58):	MACRO 'OAI210' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-58' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-58):	MACRO 'OAI211' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-58' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-58):	MACRO 'OAI212' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-58' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-58):	MACRO 'OAI220' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-58' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-58):	MACRO 'OAI221' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-58' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-58):	MACRO 'OAI222' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-58' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-58):	MACRO 'OAI310' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-58' for more detail.
+[06/07 19:51:03     23s] **WARN: (IMPLF-58):	MACRO 'OAI311' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-58' for more detail.
+[06/07 19:51:03     23s] **WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+[06/07 19:51:03     23s] To increase the message display limit, refer to the product command reference manual.
+[06/07 19:51:03     23s] 
+[06/07 19:51:03     23s] Loading LEF file /softslin/AMS_410_ISR15/cds/HK_C35/LEF/c35b4/IOLIB_4M.lef ...
+[06/07 19:51:03     23s] **WARN: (IMPLF-61):	457 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data have been ignored.
+[06/07 19:51:03     23s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/07 19:51:03     23s] Type 'man IMPLF-61' for more detail.
+[06/07 19:51:03     23s] Loading view definition file from ../SCRIPTS/view_definition.tcl
+[06/07 19:51:03     23s] *** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=0.39min, fe_real=2.43min, fe_mem=536.5M) ***
+[06/07 19:51:03     23s] #% Begin Load netlist data ... (date=06/07 19:51:03, mem=469.8M)
+[06/07 19:51:03     23s] *** Begin netlist parsing (mem=536.5M) ***
+[06/07 19:51:03     23s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'FILLANT25' is defined in LEF but not in the timing library.
+[06/07 19:51:03     23s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'FILLANT25' is defined in LEF but not in the timing library.
+[06/07 19:51:03     23s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'FILLANT10' is defined in LEF but not in the timing library.
+[06/07 19:51:03     23s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'FILLANT10' is defined in LEF but not in the timing library.
+[06/07 19:51:03     23s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'FILLANT5' is defined in LEF but not in the timing library.
+[06/07 19:51:03     23s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'FILLANT5' is defined in LEF but not in the timing library.
+[06/07 19:51:03     23s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'FILLANT2' is defined in LEF but not in the timing library.
+[06/07 19:51:03     23s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'FILLANT2' is defined in LEF but not in the timing library.
+[06/07 19:51:03     23s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'FILLANT1' is defined in LEF but not in the timing library.
+[06/07 19:51:03     23s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'FILLANT1' is defined in LEF but not in the timing library.
+[06/07 19:51:03     23s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'LOGIC1' is defined in LEF but not in the timing library.
+[06/07 19:51:03     23s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'LOGIC1' is defined in LEF but not in the timing library.
+[06/07 19:51:03     23s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'LOGIC0' is defined in LEF but not in the timing library.
+[06/07 19:51:03     23s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'LOGIC0' is defined in LEF but not in the timing library.
+[06/07 19:51:03     23s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'TIEHIGH' is defined in LEF but not in the timing library.
+[06/07 19:51:03     23s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'TIEHIGH' is defined in LEF but not in the timing library.
+[06/07 19:51:03     23s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'TIELOW' is defined in LEF but not in the timing library.
+[06/07 19:51:03     23s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'TIELOW' is defined in LEF but not in the timing library.
+[06/07 19:51:03     23s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'TIE1' is defined in LEF but not in the timing library.
+[06/07 19:51:03     23s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'TIE1' is defined in LEF but not in the timing library.
+[06/07 19:51:03     23s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[06/07 19:51:03     23s] To increase the message display limit, refer to the product command reference manual.
+[06/07 19:51:03     23s] Pin 'A' of cell 'VDD3RP' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[06/07 19:51:03     23s] Pin 'A' of cell 'VDD3OP' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[06/07 19:51:03     23s] Pin 'A' of cell 'VDD3IP' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[06/07 19:51:03     23s] Pin 'A' of cell 'VDD3ALLP' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[06/07 19:51:03     23s] Pin 'A' of cell 'GND3RP' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[06/07 19:51:03     23s] Pin 'A' of cell 'GND3OP' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[06/07 19:51:03     23s] Pin 'A' of cell 'GND3IP' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[06/07 19:51:03     23s] Pin 'A' of cell 'GND3ALLP' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[06/07 19:51:03     23s] Created 429 new cells from 4 timing libraries.
+[06/07 19:51:03     23s] Reading netlist ...
+[06/07 19:51:03     23s] Backslashed names will retain backslash and a trailing blank character.
+[06/07 19:51:03     23s] **FATAL ERROR: [/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/vl/vlVerilogMTLex.l:236:vlVerilogMT_yylex]: Include file '../INPUT_DATA/msk_modulator_netlist_fe2.v' not foundExiting due to previous fatal error.
