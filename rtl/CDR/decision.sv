@@ -7,12 +7,13 @@ module decision(
 	input reg [1:0]	i_cnt_d,
 	output logic	o_data,
 	input logic 	i_flag,
-	output logic 	 o_flag
+	output logic 	o_flag
         );
 
 reg [5:0] cnt_r;
 
 //wire declaration
+wire 	w_en_d, w_en_m, w_en_f, w_en, w_en_freq_synch; 
 wire 	w_en_dec, w_s_r;	//counter out wire
 wire 	w_m_r; 			//mux out wire
 
@@ -44,7 +45,7 @@ always_ff@(posedge i_clk) begin
 end
 
 //counter instanciation
-counter_decision cnt_dec (i_clk, i_rst, i_nb_P, i_cnt_d, w_en_dec);
+counter cnt_dec (i_clk, i_rst, i_nb_P, i_cnt_d, w_en_d, w_en_m, w_en_f, w_en, w_en_freq_synch, w_en_dec);
 
 
 always_ff @(posedge i_clk) // sur les fronts montants de i_clk
