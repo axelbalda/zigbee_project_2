@@ -11,20 +11,24 @@ setEndCapMode -prefix ENDCAP -leftEdge ENDCAPL -rightEdge ENDCAPR
 addEndCap -prefix ENDCAP
 #addEndCap -preCap ENDCAPL -postCap ENDCAPR -prefix ENDCAP
 
+setMetalFill -gapSpacing 0.45 	-layer MET1
+setMetalFill -gapSpacing 0.5 	-layer MET2
+setMetalFill -gapSpacing 0.6	-layer MET3
+setMetalFill -gapSpacing 0.6	-layer MET4
 
 ################# Blockages arround stripes
-createPlaceBlockage -type hard -box { { 522.2  421.2 534.8  1760.2 } }
-createPlaceBlockage -type hard -box { { 624.4  421.2 637    1760.2 } }
-createPlaceBlockage -type hard -box { { 728    421.2 740.6  1760.2 } }
-createPlaceBlockage -type hard -box { { 831.6  421.2 844.2  1760.2 } }
-createPlaceBlockage -type hard -box { { 933.8  421.2 946.4  1760.2 } }
-createPlaceBlockage -type hard -box { { 1037.4 421.2 1050   1760.2 } }
-createPlaceBlockage -type hard -box { { 1141   421.2 1153.6 1760.2 } }
-createPlaceBlockage -type hard -box { { 1243.2 421.2 1257   1760.2 } }
-createPlaceBlockage -type hard -box { { 1346.8 421.2 1359.4 1760.2 } }
-createPlaceBlockage -type hard -box { { 1450.4 421.2 1463   1760.2 } }
-createPlaceBlockage -type hard -box { { 1552.6 421.2 1566.6 1760.2 } }
-createPlaceBlockage -type hard -box { { 1656.2 421.2 1668.8 1760.2 } }
+createPlaceBlockage -type hard -box { { 499.8   420.4 511.5   1980.4 } } 
+createPlaceBlockage -type hard -box { { 636.75  420.4 648.45  1980.4 } } 
+createPlaceBlockage -type hard -box { { 773.7   420.4 785.4   1980.4 } } 
+createPlaceBlockage -type hard -box { { 910.65  420.4 922.35  1980.4 } } 
+createPlaceBlockage -type hard -box { { 1047.6  420.4 1059.4  1980.4 } } 
+createPlaceBlockage -type hard -box { { 1184.55 420.4 1196.25 1980.4 } } 
+createPlaceBlockage -type hard -box { { 1321.5  420.4 1333.2  1980.4 } } 
+createPlaceBlockage -type hard -box { { 1458.45 420.4 1470.15 1980.4 } } 
+createPlaceBlockage -type hard -box { { 1595.4  420.4 1607.1  1980.4 } } 
+createPlaceBlockage -type hard -box { { 1732.35 420.4 1744.05 1980.4 } } 
+createPlaceBlockage -type hard -box { { 1869.3  420.4 1881    1980.4 } } 
+
 
 #Placement automatique des standard cells
 setRouteMode -earlyGlobalMaxRouteLayer 4
@@ -56,7 +60,7 @@ set regs [remove_from_collection $tmp1 $rams]
 
 #Registers
 group_path -name reg2reg 	-from $regs 		-to $regs
-group_path -name in2reg 	-from  $input_ports 	-to $regs
+group_path -name in2reg 	-from $input_ports 	-to $regs
 group_path -name reg2out 	-from $regs 		-to $output_ports
 group_path -name in2out 	-from $input_ports 	-to $output_ports
 group_path -name reg2gated 	-from $regs 		-to $gated_all
@@ -66,7 +70,11 @@ group_path -name in2gated 	-from $input_ports 	-to $gated_all
 #Pas de rams dans notre circuit
 
 #Custom
-group_path -name my_path -from {t_op/u_decoder/fir_filter/Q_data_add_3_buff_reg[14]/D t_op/u_cdr/div1/o_nb_P_reg[0]/QN t_op/u_cdr/div1/o_nb_P_reg[0]/QN  t_op/u_cdr/div1/o_nb_P_reg[0]/QN t_op/u_cdr/div1/o_nb_P_reg[0]/QN t_op/u_cdr/div1/o_nb_P_reg[3]/QN t_op/u_cdr/div1/o_nb_P_reg[0]/Q  t_op/u_cdr/div1/o_nb_P_reg[0]/QN t_op/u_cdr/div1/o_nb_P_reg[0]/QN t_op/u_cdr/div1/o_nb_P_reg[0]/Q t_op/u_cdr/div1/o_nb_P_reg[0]/QN  t_op/u_cdr/div1/o_nb_P_reg[3]/QN  t_op/u_cdr/div1/o_nb_P_reg[0]/QN  t_op/u_cdr/div1/o_nb_P_reg[0]/QN  t_op/u_cdr/div1/o_nb_P_reg[0]/QN t_op/u_cdr/div1/o_nb_P_reg[3]/QN t_op/u_cdr/div1/o_nb_P_reg[3]/QN  t_op/u_cdr/div1/o_nb_P_reg[3]/QN  t_op/u_cdr/div1/o_nb_P_reg[0]/QN t_op/u_cdr/div1/o_nb_P_reg[0]/QN  t_op/u_cdr/div1/o_nb_P_reg[0]/QN t_op/u_cdr/div1/o_nb_P_reg[3]/QN t_op/u_cdr/div1/o_nb_P_reg[3]/QN t_op/u_cdr/div1/o_nb_P_reg[1]/Q  t_op/u_cdr/div1/o_nb_P_reg[1]/Q  t_op/u_cdr/div1/o_nb_P_reg[1]/Q t_op/u_cdr/div1/o_nb_P_reg[1]/Q t_op/u_cdr/div1/o_nb_P_reg[1]/Q t_op/u_cdr/div1/o_nb_P_reg[1]/Q  t_op/u_cdr/div1/o_nb_P_reg[2]/QN  t_op/u_cdr/div1/o_nb_P_reg[0]/Q  t_op/u_cdr/div1/o_nb_P_reg[2]/QN } -to {t_op/u_decoder/fir_filter/Q_data_add_4_buff_reg[3]/Q t_op/u_cdr/phd1/cnt_phd/cnt_reg[1]/D  t_op/u_cdr/phd1/cnt_phd/cnt_reg[3]/D t_op/u_cdr/phd1/cnt_phd/cnt_reg[0]/D t_op/u_cdr/phd1/cnt_phd/cnt_reg[5]/D t_op/u_cdr/dec/cnt_r_reg[4]/D t_op/u_cdr/phd1/cnt_phd/o_en_m_reg/D  t_op/u_cdr/phd1/cnt_phd/cnt_reg[4]/D t_op/u_cdr/phd1/cnt_phd/cnt_reg[2]/D  t_op/u_cdr/dec/o_flag_reg/D  t_op/u_cdr/div1/cnt_div/cnt_reg[3]/D  t_op/u_cdr/dec/cnt_r_reg[3]/D t_op/u_cdr/div1/cnt_div/cnt_reg[5]/D t_op/u_cdr/div1/cnt_div/cnt_reg[0]/D t_op/u_cdr/div1/cnt_div/cnt_reg[2]/D  t_op/u_cdr/dec/cnt_r_reg[1]/D  t_op/u_cdr/dec/cnt_r_reg[0]/D  t_op/u_cdr/phd1/cnt_phd/o_en_reg/D t_op/u_cdr/div1/cnt_div/cnt_reg[4]/D t_op/u_cdr/div1/cnt_div/cnt_reg[1]/D  t_op/u_cdr/div1/cnt_div/cnt_reg[1]/D t_op/u_cdr/dec/cnt_r_reg[5]/D t_op/u_cdr/dec/cnt_r_reg[2]/D  t_op/u_cdr/dec/cnt_dec/cnt_clk_reg[2]/D t_op/u_cdr/dec/cnt_dec/cnt_clk_reg[0]/D t_op/u_cdr/dec/cnt_dec/cnt_clk_reg[3]/D  t_op/u_cdr/dec/cnt_dec/cnt_clk_reg[4]/D t_op/u_cdr/dec/cnt_dec/cnt_clk_reg[5]/D  t_op/u_cdr/dec/cnt_dec/cnt_clk_reg[1]/D t_op/u_cdr/div1/cnt_div/o_en_freq_synch_reg/D  t_op/u_cdr/phd1/cnt_phd/o_en_f_reg/D t_op/u_cdr/dec/cnt_dec/o_en_reg/D }
+group_path -name reset2cdr -from inReset -to t_op/u_cdr/div1/o_nb_P_reg[3]/D
+group_path -name reset2cdr -from t_op/u_cdr/div1/o_nb_P_reg[4]/QN -to  t_op/u_cdr/phd1/cnt_phd/cnt_reg[4]/D
+
+
+#group_path -name my_path -from {t_op/u_decoder/fir_filter/Q_data_add_3_buff_reg[14]/D t_op/u_cdr/div1/o_nb_P_reg[0]/QN t_op/u_cdr/div1/o_nb_P_reg[0]/QN  t_op/u_cdr/div1/o_nb_P_reg[0]/QN t_op/u_cdr/div1/o_nb_P_reg[0]/QN t_op/u_cdr/div1/o_nb_P_reg[3]/QN t_op/u_cdr/div1/o_nb_P_reg[0]/Q  t_op/u_cdr/div1/o_nb_P_reg[0]/QN t_op/u_cdr/div1/o_nb_P_reg[0]/QN t_op/u_cdr/div1/o_nb_P_reg[0]/Q t_op/u_cdr/div1/o_nb_P_reg[0]/QN  t_op/u_cdr/div1/o_nb_P_reg[3]/QN  t_op/u_cdr/div1/o_nb_P_reg[0]/QN  t_op/u_cdr/div1/o_nb_P_reg[0]/QN  t_op/u_cdr/div1/o_nb_P_reg[0]/QN t_op/u_cdr/div1/o_nb_P_reg[3]/QN t_op/u_cdr/div1/o_nb_P_reg[3]/QN  t_op/u_cdr/div1/o_nb_P_reg[3]/QN  t_op/u_cdr/div1/o_nb_P_reg[0]/QN t_op/u_cdr/div1/o_nb_P_reg[0]/QN  t_op/u_cdr/div1/o_nb_P_reg[0]/QN t_op/u_cdr/div1/o_nb_P_reg[3]/QN t_op/u_cdr/div1/o_nb_P_reg[3]/QN t_op/u_cdr/div1/o_nb_P_reg[1]/Q  t_op/u_cdr/div1/o_nb_P_reg[1]/Q  t_op/u_cdr/div1/o_nb_P_reg[1]/Q t_op/u_cdr/div1/o_nb_P_reg[1]/Q t_op/u_cdr/div1/o_nb_P_reg[1]/Q t_op/u_cdr/div1/o_nb_P_reg[1]/Q  t_op/u_cdr/div1/o_nb_P_reg[2]/QN  t_op/u_cdr/div1/o_nb_P_reg[0]/Q  t_op/u_cdr/div1/o_nb_P_reg[2]/QN } -to {t_op/u_decoder/fir_filter/Q_data_add_4_buff_reg[3]/Q t_op/u_cdr/phd1/cnt_phd/cnt_reg[1]/D  t_op/u_cdr/phd1/cnt_phd/cnt_reg[3]/D t_op/u_cdr/phd1/cnt_phd/cnt_reg[0]/D t_op/u_cdr/phd1/cnt_phd/cnt_reg[5]/D t_op/u_cdr/dec/cnt_r_reg[4]/D t_op/u_cdr/phd1/cnt_phd/o_en_m_reg/D  t_op/u_cdr/phd1/cnt_phd/cnt_reg[4]/D t_op/u_cdr/phd1/cnt_phd/cnt_reg[2]/D  t_op/u_cdr/dec/o_flag_reg/D  t_op/u_cdr/div1/cnt_div/cnt_reg[3]/D  t_op/u_cdr/dec/cnt_r_reg[3]/D t_op/u_cdr/div1/cnt_div/cnt_reg[5]/D t_op/u_cdr/div1/cnt_div/cnt_reg[0]/D t_op/u_cdr/div1/cnt_div/cnt_reg[2]/D  t_op/u_cdr/dec/cnt_r_reg[1]/D  t_op/u_cdr/dec/cnt_r_reg[0]/D  t_op/u_cdr/phd1/cnt_phd/o_en_reg/D t_op/u_cdr/div1/cnt_div/cnt_reg[4]/D t_op/u_cdr/div1/cnt_div/cnt_reg[1]/D  t_op/u_cdr/div1/cnt_div/cnt_reg[1]/D t_op/u_cdr/dec/cnt_r_reg[5]/D t_op/u_cdr/dec/cnt_r_reg[2]/D  t_op/u_cdr/dec/cnt_dec/cnt_clk_reg[2]/D t_op/u_cdr/dec/cnt_dec/cnt_clk_reg[0]/D t_op/u_cdr/dec/cnt_dec/cnt_clk_reg[3]/D  t_op/u_cdr/dec/cnt_dec/cnt_clk_reg[4]/D t_op/u_cdr/dec/cnt_dec/cnt_clk_reg[5]/D  t_op/u_cdr/dec/cnt_dec/cnt_clk_reg[1]/D t_op/u_cdr/div1/cnt_div/o_en_freq_synch_reg/D  t_op/u_cdr/phd1/cnt_phd/o_en_f_reg/D t_op/u_cdr/dec/cnt_dec/o_en_reg/D }
 
 
 #Options for path_groups
