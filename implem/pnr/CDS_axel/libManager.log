@@ -1,15 +1,65 @@
 \o Program:		@(#)$CDS: libManager version 6.1.6 - CAT33 11/05/2015 10:33 (sjfql586) $
 \o Sub version:		sub-version  s019 
-\o Arguments:		-mpssession virtuoso15462 -mpshost cimeld39.cime.inpg.fr 
-\o Working Directory:	cimeld39.cime.inpg.fr:/tp/xph2app/xph2app101/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project_2/implem/pnr/CDS_axel
+\o Arguments:		-mpssession virtuoso22812 -mpshost cimeld45.cime.inpg.fr 
+\o Working Directory:	cimeld45.cime.inpg.fr:/calcul/2AMT/zigbee_project_2/implem/pnr/CDS_axel
 \o 64-bit offsets
 \o Qt version: 		4.7.2
-\o Log file is "/tp/xph2app/xph2app101/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project_2/implem/pnr/CDS_axel/libManager.log".
+\o Log file is "/calcul/2AMT/zigbee_project_2/implem/pnr/CDS_axel/libManager.log".
 \o Opening libManager window.
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrResizeWindow(cdsLibManager list(0 25 1024 665))
-\o changeWorkingDir("/tp/xph2app/xph2app101/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project_2/implem/pnr/CDS_axel") unnecessary.
+\o changeWorkingDir("/calcul/2AMT/zigbee_project_2/implem/pnr/CDS_axel") unnecessary.
 \o ddSetForcedLib("") unnecessary.
 \o MPS service: map window
 \o Library Manager customization server connected.
 \a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "SPIRALSD_4M"
+\a cdsLibManager->libListBox->value = "test_drc"
+\a cdsLibManager->libLineEdit->value = "test_drc"
+\a cdsLibManager->cellListBox->value = "top_io"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellLineEdit->value = "top_io"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a lmgrLogShowPopup("mainListPopup0" 20 287 2 "test_drc")
+\a cdsLibManager->editDeleteButton->value = t
+\a deleteForm->deleteBothRadioButton->value = t
+\a deleteForm->deleteFilterEdit->value = "*"
+\a deleteForm->notDeleteFilterEdit->value = "*"
+\a nrSetWindowVisibility(deleteForm "show")
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libListBox->value = "test_drc"
+\a nrSetCurrentWindow(deleteForm)
+\a cdsLibManager->libLineEdit->value = "test_drc"
+\a nrResizeWindow(deleteForm list(199 145 627 425))
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(87 186 851 378))
+\a mcMBXDLG->pushButton1->value = t
+\o Deleting 1 library.
+\o Deleting library "test_drc".
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(deleteForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\o Batching session updates...
+\o Deleted library 'test_drc'.
+\o Delete of library "test_drc" succeeded.
+\o Deletion of library done.
+\a nrResizeWindow(workingDialogForm list(374 255 281 131))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""

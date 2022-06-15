@@ -80,5 +80,5 @@ create_analysis_view -name setup_func_typ \
 
 
 
-set_analysis_view -setup [list setup_func_max] -hold [list hold_func_min]
+set_analysis_view -setup [list setup_func_typ] -hold [list hold_func_min]
 

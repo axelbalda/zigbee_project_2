@@ -14,16 +14,14 @@
 #set min_MET1_to_KEPOUT_or_SFCDEF 0.45
 
 
-
-
-
 #////////////////////////////////////////////////////
 #Creation et placement des PADs
 #////////////////////////////////////////////////////
 
 set module_name top
 loadIoFile ../CONSTRAINTS/${module_name}_pads.io
-floorPlan -site standard -r 1 0.67 80 80 80 80 -coreMarginsBy io
+#floorPlan -site standard -r 1 0.7 80 80 80 80
+floorPlan -site standard -d {2400.8 2400.8 80 80 80 80} -noSnapToGrid -coreMarginsBy io
 #////////////////////////////////////////////////////
 
 
@@ -46,7 +44,7 @@ set box_core  [get_db current_design .core_bbox]
 set x1 [lindex $box_core 0 0]
 set x2 [lindex $box_core 0 2]
 set size_of_partition [expr $x2 - $x1]
-set x [expr $size_of_partition / 100]
+set x [expr $size_of_partition / 125]
 set nb_of_sets [expr int($x) - 1]
 
 #Valeurs spécifique à la techno (NE PAS CHANGER !!!)
@@ -54,7 +52,8 @@ set stripe_spacing 0.5
 set stripe_width 5
 set stripe_direction vertical
 set stripe_layer MET2
-set stripe_start_offset 100
+##set stripe_start_offset 80
+set stripe_start_offset 80
 set stripe_stop_offset 100
 
 #Set les modes pour les stripes
@@ -76,6 +75,7 @@ globalNetConnect vdd! -type pgpin -pin vdd! -inst * -module {}
 globalNetConnect gnd! -type pgpin -pin gnd! -inst * -module {}
 globalNetConnect vdd! -type pgpin -pin A -inst PWR1 -module {}
 globalNetConnect vdd! -type pgpin -pin A -inst PWR2 -module {}
+globalNetConnect vdd! -type pgpin -pin A -inst PWR3 -module {}
 globalNetConnect gnd! -type pgpin -pin A -inst GND1 -module {}
 globalNetConnect gnd! -type pgpin -pin A -inst GND2 -module {}
 
