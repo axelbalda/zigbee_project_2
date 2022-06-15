@@ -18,7 +18,7 @@
 
 module DEMUX184 (   
     input   [3 : 0]     inData  ,
-    input   [1 : 0]     inSel   ,      
+    input   [2 : 0]     inSel   ,      
     output  [31 : 0]    outData       
 ) ;
  

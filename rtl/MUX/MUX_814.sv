@@ -18,7 +18,7 @@
 
 module MUX814 (    
     input	[31 : 0]	inData  ,
-    input	[1 : 0]	    inSel   ,      
+    input	[2 : 0]	    inSel   ,      
     output	[3 : 0]		outData  
 ) ;
  

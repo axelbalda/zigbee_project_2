@@ -67,8 +67,8 @@ wire 	[3:0]	sig_outFIFO_outData			;
 //////////////////////////////////////////////////////////////////////////////////
 wire	[7:0]	sig_DEMUX_outDEMUX1			;
 wire	[7:0]	sig_DEMUX_outDEMUX2			;
-wire 	[7:0]	sig_DEMUX_outDEMUX17		;
-wire	[7:0]	sig_DEMUX_outDEMUX18		;
+wire 	[31:0]	sig_DEMUX_outDEMUX17		;
+wire	[31:0]	sig_DEMUX_outDEMUX18		;
 
 wire	[7:0]	sig_MUX_inMUX3				;  	
 wire 	[7:0]	sig_MUX_inMUX4				;  
