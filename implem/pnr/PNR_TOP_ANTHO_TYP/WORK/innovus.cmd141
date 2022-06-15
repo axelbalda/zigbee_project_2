@@ -56,3 +56,25 @@ set_ccopt_property extracted_from_delay_corners -skew_group inClock/hold_func_mo
 check_ccopt_clock_tree_convergence
 get_ccopt_property auto_design_state_for_ilms
 ccopt_design -cts
+fit
+getMultiCpuUsage -localCpu
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_implant -quiet
+get_verify_drc_mode -check_implant_across_rows -quiet
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -disable_rules {} -check_implant true -check_implant_across_rows false -check_ndr_spacing false -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -report top_io.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false
+verify_drc -limit 100000
+violationBrowserClose
