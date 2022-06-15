@@ -16,21 +16,29 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-module DEMUX144 (   
+module DEMUX184 (   
     input   [3 : 0]     inData  ,
     input   [1 : 0]     inSel   ,      
-    output  [15 : 0]    outData       
+    output  [31 : 0]    outData       
 ) ;
  
 reg [3 : 0] s_data0;
 reg [3 : 0] s_data1;
 reg [3 : 0] s_data2;
 reg [3 : 0] s_data3;
+reg [3 : 0] s_data4;
+reg [3 : 0] s_data5;
+reg [3 : 0] s_data6;
+reg [3 : 0] s_data7;
 
 reg [3 : 0] s_signal0 ;
 reg [3 : 0] s_signal1 ;
 reg [3 : 0] s_signal2 ;
 reg [3 : 0] s_signal3 ;
+reg [3 : 0] s_signal4 ;
+reg [3 : 0] s_signal5 ;
+reg [3 : 0] s_signal6 ;
+reg [3 : 0] s_signal7 ;
 
 
 
@@ -40,8 +48,8 @@ reg [3 : 0] s_signal3 ;
 /////////////////////////////////////////////////////
 //  DEMUX 0
 /////////////////////////////////////////////////////
-DEMUX141 demux0(
-            .inData  (inData[3]) ,
+DEMUX181 demux0(
+            .inData  (inData[7]) ,
             .inSel   (inSel)     ,
             .outData (s_data0) 
             ) ;
@@ -50,8 +58,8 @@ DEMUX141 demux0(
 /////////////////////////////////////////////////////
 //  DEMUX 1
 /////////////////////////////////////////////////////
-DEMUX141 demux1(
-            .inData  (inData[2]) ,
+DEMUX181 demux1(
+            .inData  (inData[6]) ,
             .inSel   (inSel)     ,
             .outData (s_data1) 
             ) ;
@@ -60,8 +68,8 @@ DEMUX141 demux1(
 /////////////////////////////////////////////////////
 //  DEMUX 2
 /////////////////////////////////////////////////////
-DEMUX141 demux2(
-            .inData  (inData[1]) ,
+DEMUX181 demux2(
+            .inData  (inData[5]) ,
             .inSel   (inSel)     ,
             .outData (s_data2) 
             ) ;
@@ -70,21 +78,67 @@ DEMUX141 demux2(
 /////////////////////////////////////////////////////
 //  DEMUX 3
 /////////////////////////////////////////////////////
-DEMUX141 demux3(
-            .inData  (inData[0]) ,
+DEMUX181 demux3(
+            .inData  (inData[4]) ,
             .inSel   (inSel)     ,
             .outData (s_data3) 
             ) ;
 /////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////
+//  DEMUX 4
+/////////////////////////////////////////////////////
+DEMUX181 demux3(
+            .inData  (inData[3]) ,
+            .inSel   (inSel)     ,
+            .outData (s_data4) 
+            ) ;
+/////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////
+//  DEMUX 5
+/////////////////////////////////////////////////////
+DEMUX181 demux3(
+            .inData  (inData[2]) ,
+            .inSel   (inSel)     ,
+            .outData (s_data5) 
+            ) ;
+/////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////
+//  DEMUX 6
+/////////////////////////////////////////////////////
+DEMUX181 demux3(
+            .inData  (inData[1]) ,
+            .inSel   (inSel)     ,
+            .outData (s_data6) 
+            ) ;
+/////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////
+//  DEMUX 7
+/////////////////////////////////////////////////////
+DEMUX181 demux3(
+            .inData  (inData[0]) ,
+            .inSel   (inSel)     ,
+            .outData (s_data7) 
+            ) ;
+/////////////////////////////////////////////////////
+
+
 
 always_comb begin
 	s_signal0 <= {s_data0[0],s_data1[0],s_data2[0],s_data3[0]} ;
 	s_signal1 <= {s_data0[1],s_data1[1],s_data2[1],s_data3[1]} ;
 	s_signal2 <= {s_data0[2],s_data1[2],s_data2[2],s_data3[2]} ;
 	s_signal3 <= {s_data0[3],s_data1[3],s_data2[3],s_data3[3]} ;
+    s_signal4 <= {s_data0[4],s_data1[4],s_data2[4],s_data3[4]} ;
+	s_signal5 <= {s_data0[5],s_data1[5],s_data2[5],s_data3[5]} ;
+	s_signal6 <= {s_data0[6],s_data1[6],s_data2[6],s_data3[6]} ;
+	s_signal7 <= {s_data0[7],s_data1[7],s_data2[7],s_data3[7]} ;
 end
 
-assign outData = {s_signal0, s_signal1, s_signal2, s_signal3} ;
+assign outData = {s_signal0, s_signal1, s_signal2, s_signal3, s_signal4, s_signal5, s_signal6, s_signal7} ;
 
 endmodule
 
