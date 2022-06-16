@@ -170,7 +170,7 @@ initial begin : DATA
 	inDEMUX1		=	1'b0	;
 	inDEMUX2		=	1'b0	;
 	
-	for(int i = 0; i < 20; i++) begin
+	for(int i = 0; i < 25; i++) begin
 		#CLK_PERIOD ;	
 	end
 
