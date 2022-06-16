@@ -1,24 +1,31 @@
 
 module TOP2(
-	input			inClock					,
-    input			inReset					,
+	input			inClock						,
+    input			inReset						,
     	
-    input	[3:0]	in_inFIFO_inData		, 
-    input			in_outFIFO_inReadEnable	, 
+    input	[3:0]	in_inFIFO_inData			, 
+    input			in_outFIFO_inReadEnable		, 
     	
-	input			in_DEMUX_inDEMUX1		,
-	input			in_DEMUX_inDEMUX2		,
-	input 	[3:0]	in_DEMUX_inDEMUX17		,
-	input 	[3:0]	in_DEMUX_inDEMUX18		,
+	input			in_DEMUX_inDEMUX1			,
+	input			in_DEMUX_inDEMUX2			,
+	input 	[3:0]	in_DEMUX_inDEMUX17			,
+	input 	[3:0]	in_DEMUX_inDEMUX18			,
 	
-	input	[2:0]	in_DEMUX_inSEL1			,
-	input 	[1:0]	in_MUX_inSEL9			,
-	input 	[1:0]	in_MUX_inSEL15			, 
+	input	[2:0]	in_DEMUX_inSEL1				,
+	input 	[1:0]	in_MUX_inSEL9				,
+	input 	[1:0]	in_MUX_inSEL15				, 
 
-	output 	[3:0]	out_MUX_outMUX9			,	
-	output	[3:0]	out_MUX_outMUX10		,	
-	output			out_MUX_outMUX15		,	
-	output			out_MUX_outMUX16	
+	output 	[3:0]	out_MUX_outMUX9				,	
+	output	[3:0]	out_MUX_outMUX10			,	
+	output			out_MUX_outMUX15			,	
+	output			out_MUX_outMUX16			,
+
+	output 			out_inFIFO_outWriteError	,
+	output 			out_inFIFO_outReadError		,
+	output 			out_inFIFO_outDone			,
+	output 			out_outFIFO_outWriteError	,
+	output 			out_outFIFO_outReadError	,
+	output 			out_outFIFO_outDone	
 );
 
 
@@ -110,13 +117,13 @@ inFIFO u_inFIFO (
 
 	.outWriteCount		(							),   
 	.outReadCount		(							),
-	.outReadError		(							),
-	.outWriteError		(							),
+	.outReadError		(out_inFIFO_outReadError	),
+	.outWriteError		(out_inFIFO_outWriteError	),
 	.outFull			(							),
 	.outEmpty			(sig_inFIFO_outEmpty		),
 	.outAlmostEmpty		(							),
 	.outAlmostFull 		(							),
-	.outDone       		(							),
+	.outDone       		(out_inFIFO_outDone			),
 	.outData       		(sig_inFIFO_outData			)
 ) ;
 //////////////////////////////////////////////////////////////////////////////////
@@ -195,13 +202,13 @@ outFIFO u_outFIFO (
     
     	.outWriteCount		(							),   
     	.outReadCount		(							),
-    	.outReadError		(							),
-    	.outWriteError		(							),
+    	.outReadError		(out_inFIFO_outReadError	),
+    	.outWriteError		(out_inFIFO_outWriteError	),
     	.outFull			(							),
     	.outEmpty			(							),
     	.outAlmostEmpty		(							),
     	.outAlmostFull		(							),
-    	.outDone			(							),	  	
+    	.outDone			(out_inFIFO_outDone			),	  	
     	.outData			(sig_outFIFO_outData		)	
 ) ;
 //////////////////////////////////////////////////////////////////////////////////	   
