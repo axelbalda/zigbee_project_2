@@ -564,13 +564,13 @@ initial begin : DATA
 	/////////////////////////////
 	// DECODER Stand Alone
 	/////////////////////////////
-	inSEL1			=	3'b110	;
+	inSEL1			=	3'b111	;
 	inSEL9			=	2'b10	;
 	inSEL15			=	2'b01	;
 
 	for(int i = 0; i < 5; i++) begin
 		inDEMUX1		=	1'b0	; // inEOC
-		inDEMUX2		=	1'b0	; // inWriteEnable (inFIFO)
+		inDEMUX2		=	1'b0	; // 
 		inDEMUX17		=	4'b0	; // I
 		inDEMUX18		=	4'b0	; // Q
 		inReset  =  1'b0 ;
