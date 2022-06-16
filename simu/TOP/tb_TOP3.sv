@@ -857,7 +857,7 @@ initial begin : DATA
 	// CODER --> CORDIC
 	/////////////////////////////
 
-	inSEL1			=	3'b111	;
+	inSEL1			=	3'b110	;
 	inSEL9			=	2'b1	;
 	inSEL15			=	2'b0	;
 
