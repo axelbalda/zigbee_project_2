@@ -340,7 +340,7 @@ assign sig_MUX_inMUX5  = { 5'b11111					, sig_DEMUX_outDEMUX2[2]	, 1'b1						, s
 
 assign sig_MUX_inMUX6  = { 4'b0						, sig_coder_outSinIMasked	, 8'b0						, sig_DEMUX_outDEMUX17[15:12]	, 8'b0			, sig_decod_outI		} ;
 assign sig_MUX_inMUX7  = { 4'b0						, sig_coder_outSinQMasked	, 8'b0						, sig_DEMUX_outDEMUX18[15:12]	, 8'b0			, sig_decod_outQ		} ;		
-assign sig_MUX_inMUX8  = { 1'b0						, sig_DEMUX_outDEMUX2[3]	, 2'b0						, sig_DEMUX_outDEMUX2[3]		, 8'b0			, sig_decod_outEOC		} ;		
+assign sig_MUX_inMUX8  = { 1'b0						, sig_DEMUX_outDEMUX2[3]	, 2'b0						, sig_DEMUX_outDEMUX2[3]		, 2'b0			, sig_decod_outEOC		} ;		
 
 assign sig_MUX_inMUX9  = { sig_outFIFO_outData		, sig_decod_outI			, sig_coder_outSinIMasked	, sig_coder_outSinI			} ;
 assign sig_MUX_inMUX10 = { 4'b0						, sig_decod_outQ			, sig_coder_outSinQMasked	, sig_coder_outSinQ			} ;
