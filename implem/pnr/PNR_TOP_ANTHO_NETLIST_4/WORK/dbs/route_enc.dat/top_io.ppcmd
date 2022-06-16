@@ -13,7 +13,7 @@
 # END_PPCMD 1 
 
 # PPCMD 2 
-# addStripe -nets {gnd! vdd!} -layer MET2 -direction vertical -width 5 -spacing 0.5 -number_of_sets 12 -start_from left -start_offset 100 -stop_offset 100 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit MET4 -padcore_ring_bottom_layer_limit MET1 -block_ring_top_layer_limit MET4 -block_ring_bottom_layer_limit MET1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape } -stacked_via_bottom_layer MET1 -stacked_via_top_layer MET4 -via_using_exact_crossover_size false
+# addStripe -nets {gnd! vdd!} -layer MET2 -direction vertical -width 5 -spacing 0.5 -number_of_sets 11 -start_from left -start_offset 80 -stop_offset 100 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit MET4 -padcore_ring_bottom_layer_limit MET1 -block_ring_top_layer_limit MET4 -block_ring_bottom_layer_limit MET1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape } -stacked_via_bottom_layer MET1 -stacked_via_top_layer MET4 -via_using_exact_crossover_size false
 # 4 
 # 2 
 # 1 
@@ -21,12 +21,12 @@
 # 0 
 # 2 
 # BOX_LIST 
-# 356600 355800 1813800 1805500 0 
-# 386600 385800 1783800 1775500 0 
+# 355400 355400 2025200 2025400 0 
+# 385400 385400 1995200 1995400 0 
 # END_BOX_LIST 
 # NET_INFO_LIST 
-# vdd! 5000 2 0 528300 1670700 103150 0 0 
-# gnd! 5000 2 0 522800 1670700 103150 0 0 
+# vdd! 5000 2 0 505900 1882900 136950 0 0 
+# gnd! 5000 2 0 500400 1882900 136950 0 0 
 # END_NET_INFO_LIST 
 # END_PPCMD 2 
 
@@ -57,19 +57,19 @@
 # NET_INFO_LIST 
 # vdd! 20000 1 1 0 0 0 0 0 
 # RING_PT_INFO_LIST 
-# 1095200 365800 1095200 1815500 
+# 1200300 365400 1200300 2035400 
 # END_RING_PT_INFO_LIST 
 # vdd! 20000 2 1 0 0 0 0 0 
 # RING_PT_INFO_LIST 
-# 366600 1090650 1823800 1090650 
+# 365400 1200400 2035200 1200400 
 # END_RING_PT_INFO_LIST 
 # gnd! 20000 1 1 0 0 0 0 0 
 # RING_PT_INFO_LIST 
-# 1095200 395800 1095200 1785500 
+# 1200300 395400 1200300 2005400 
 # END_RING_PT_INFO_LIST 
 # gnd! 20000 2 1 0 0 0 0 0 
 # RING_PT_INFO_LIST 
-# 396600 1090650 1793800 1090650 
+# 395400 1200400 2005200 1200400 
 # END_RING_PT_INFO_LIST 
 # END_NET_INFO_LIST 
 # END_PPCMD 4 

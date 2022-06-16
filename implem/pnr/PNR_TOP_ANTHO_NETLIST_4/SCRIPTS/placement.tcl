@@ -41,6 +41,8 @@ setPlaceMode -padForPinNearBorder true
 #Setting useful skew
 setOptMode -usefulSkew true
 
+setAnalysisMode -analysisType onChipVariation
+
 #Création des group paths
 set_interactive_constraint_modes [all_constraint_modes -active]
 reset_path_group -all
@@ -93,6 +95,7 @@ place_opt_design
 
 
 
+setOptMode -fixDRC true
 setOptMode -fixCap true -fixTran  true -fixFanoutLoad false
 optDesign -preCTS	
 

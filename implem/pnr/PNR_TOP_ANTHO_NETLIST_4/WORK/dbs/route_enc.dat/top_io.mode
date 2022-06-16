@@ -10,7 +10,6 @@ catch { setAnalysisMode -clockPropagation sdcControl }
 catch { setAnalysisMode -usefulSkew true }
 catch { setOptMode -activeHoldViews { hold_func_min } }
 catch { setOptMode -activeSetupViews { setup_func_max } }
-catch { setOptMode -autoHoldViews { hold_func_min } }
 catch { setOptMode -autoSetupViews { setup_func_max} }
 catch { setOptMode -autoTDGRSetupViews { setup_func_max} }
 catch { setOptMode -deleteInst true }
@@ -20,12 +19,21 @@ catch { setOptMode -fixCap true }
 catch { setOptMode -fixDrc true }
 catch { setOptMode -fixFanoutLoad false }
 catch { setOptMode -fixTran true }
-catch { setOptMode -holdTargetSlack 0 }
 catch { setOptMode -optimizeFF true }
 catch { setOptMode -preserveAllSequential false }
 catch { setOptMode -setupTargetSlack 0 }
-setPathGroupOptions reg2reg -effortLevel high -weight 2
-setExtractRCMode  -virtual_wire_incremental false -effortLevel low -engine postRoute -total_c_th 5 -relative_c_th 0.03 -coupling_c_th 3 -minNetTermNrToBeInMem 50
+catch { setOptMode -usefulSkew true }
+catch { setOptMode -usefulSkewCCOpt extreme }
+catch { setOptMode -usefulSkewPostRoute true }
+setPathGroupOptions reset2cdr -effortLevel low
+setPathGroupOptions reg2reg -effortLevel high
+setPathGroupOptions reg2out -effortLevel high
+setPathGroupOptions path_CTS_FILTER_2 -effortLevel low
+setPathGroupOptions path_CTS_FILTER -effortLevel low
+setPathGroupOptions path_CTS_CORDIC -effortLevel low
+setPathGroupOptions in2reg -effortLevel high
+setPathGroupOptions in2out -effortLevel high
+setExtractRCMode  -engine postRoute -total_c_th 5 -relative_c_th 0.03 -coupling_c_th 3 -minNetTermNrToBeInMem 50
 catch { setCTSMode -engine ccopt }
 catch { set_ccopt_mode -cts_opt_type full }
 catch { set_ccopt_mode -is_mode_set_route_top_mask false }
@@ -33,15 +41,16 @@ catch { set_ccopt_mode -is_mode_set_route_top_preferred_extra_space false }
 catch {setNanoRouteMode -quiet -drouteAntennaFactor 1.000000}
 catch {setNanoRouteMode -quiet -droutePostRouteSpreadWire "auto"}
 catch {setNanoRouteMode -quiet -drouteStartIteration 0}
-catch {setNanoRouteMode -quiet -drouteUseLefPinTaperRule true}
 catch {setNanoRouteMode -quiet -extractRcModelFile "${::IMEX::libVar}/misc/rc_model.bin"}
 catch {setNanoRouteMode -quiet -extractThirdPartyCompatible false}
-catch {setNanoRouteMode -quiet -grouteExpCurrentTimingReport "/tmp/innovus_temp_23791_cimeld105_xph2app102_PWVpCV/nanoroute_tmp_N7UT2U/.timing_report1.d"}
+catch {setNanoRouteMode -quiet -grouteExpCurrentTimingReport "/tmp/innovus_temp_13023_cimeld105_xph2app102_tgKIAm/nanoroute_tmp_sbzRvY/.timing_report1.d"}
 catch {setNanoRouteMode -quiet -grouteExpTdStdDelay 141.700000}
+catch {setNanoRouteMode -quiet -routeExpPreserveConstraints true}
 catch {setNanoRouteMode -quiet -routeReInsertFillerCellList "FILLANT1 FILLANT2 FILLANT5 FILLANT10 FILLANT25"}
 catch {setNanoRouteMode -quiet -routeReInsertFillerCellListFromFile false}
 catch {setNanoRouteMode -quiet -routeWithSiPostRouteFix false}
 
+catch { setPlaceMode -padForPinNearBorder true }
 catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepFlatten true }
 catch { set_ccopt_mode -cts_opt_type full }
 catch { set_ccopt_mode -is_mode_set_route_top_mask false }
@@ -89,5 +98,8 @@ catch { setAddStripeMode -trim_antenna_back_to_shape none }
 catch { setAddStripeMode -via_using_exact_crossover_size false }
 catch { setRouteMode -earlyGlobalMaxRouteLayer 4 }
 catch { setRouteMode -earlyGlobalMinRouteLayer 1 }
+catch { setEndCapMode -leftEdge ENDCAPL }
+catch { setEndCapMode -prefix ENDCAP }
+catch { setEndCapMode -rightEdge ENDCAPR }
 catch { setFillerMode -core {FILLANT1 FILLANT2 FILLANT5 FILLANT10 FILLANT25} }
 catch { setFillerMode -preserveUserOrder true }

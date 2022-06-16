@@ -21,10 +21,18 @@
 #Creation et placement des PADs
 #////////////////////////////////////////////////////
 
+
+
 set module_name top
 loadIoFile ../CONSTRAINTS/${module_name}_pads.io
 #floorPlan -site standard -r 1 0.7 80 80 80 80
 floorPlan -site standard -d {2400.8 2400.8 80 80 80 80} -noSnapToGrid -coreMarginsBy io
+
+#deleteTrack
+
+#add_tracks -offsets {M4 horiz 420.4 M4 vert 420.4 M3 horiz 420.4 M3 vert 420.4 M2 horiz 420.4 M2 vert 420.4 M1 horiz 0 M1 vert 0.7} -pitches {M4 horiz 1.6 M4 vert 1.6 M3 horiz 1.6 M3 vert 1.6 M2 horiz 1.6 M2 vert 1.6 M1 horiz 1.3 M1 vert 1.4}
+add_tracks -offsets {M4 horiz 420.4 M4 vert 420.4 M3 horiz 420.4 M3 vert 420.4 M2 horiz 420.4 M2 vert 420.4} -pitches {M4 horiz 1.6 M4 vert 1.6 M3 horiz 1.6 M3 vert 1.6 M2 horiz 1.6 M2 vert 1.6}
+
 #////////////////////////////////////////////////////
 
 

@@ -106,3 +106,37 @@ pan -43.896 -174.351
 pan -14.220 -61.827
 deselectAll
 selectInst {t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]}
+pan -37.371 899.573
+pan -395.732 -452.863
+pan -741.140 -103.634
+panCenter 2073.469 1447.969
+pan 1253.031 -81.651
+pan 84.792 -43.966
+pan 236.586 -1.007
+deselectAll
+selectInst {t_op/u_cordic/mycordic/present_ANGLE_table_reg[5][15]}
+deselectAll
+selectInst {t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]}
+pan -43.196 164.425
+pan -7.715 293.150
+deselectAll
+selectObstruct 773.2000 420.4000 785.8000 1980.4000 defScreenName
+deselectAll
+selectInst {t_op/u_cordic/my_rotation/present_angle_reg[1][0]}
+deselectAll
+selectInst t_op/U785
+deselectAll
+selectInst t_op/u_outFIFO/U474
+pan 123.452 -5.213
+deselectAll
+selectInst t_op/U2972
+deselectAll
+selectInst t_op/U2984
+pan 102.747 -37.972
+deselectAll
+selectInst t_op/U2998
+deselectAll
+selectInst t_op/U2788
+pan 0.490 1.594
+pan -810.642 -161.220
+pan -499.555 -199.822

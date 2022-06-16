@@ -2821,3 +2821,42 @@ Parsing file top.mtarpt...
 <CMD> pan -14.220 -61.827
 <CMD> deselectAll
 <CMD> selectInst {t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]}
+<CMD> pan -37.371 899.573
+<CMD> pan -395.732 -452.863
+<CMD> pan -741.140 -103.634
+<CMD> panCenter 2073.469 1447.969
+<CMD> pan 1253.031 -81.651
+<CMD> pan 84.792 -43.966
+<CMD> pan 236.586 -1.007
+<CMD> deselectAll
+<CMD> selectInst {t_op/u_cordic/mycordic/present_ANGLE_table_reg[5][15]}
+<CMD> deselectAll
+<CMD> selectInst {t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]}
+<CMD> pan -43.196 164.425
+<CMD> pan -7.715 293.150
+<CMD> deselectAll
+<CMD> selectObstruct 773.2000 420.4000 785.8000 1980.4000 defScreenName
+<CMD> deselectAll
+<CMD> selectInst {t_op/u_cordic/my_rotation/present_angle_reg[1][0]}
+<CMD> deselectAll
+<CMD> selectInst t_op/U785
+<CMD> deselectAll
+<CMD> selectInst t_op/u_outFIFO/U474
+<CMD> pan 123.452 -5.213
+<CMD> deselectAll
+<CMD> selectInst t_op/U2972
+<CMD> deselectAll
+<CMD> selectInst t_op/U2984
+<CMD> pan 102.747 -37.972
+<CMD> deselectAll
+<CMD> selectInst t_op/U2998
+<CMD> deselectAll
+<CMD> selectInst t_op/U2788
+<CMD> pan 0.490 1.594
+<CMD> pan -810.642 -161.220
+<CMD> pan -499.555 -199.822
+
+*** Memory Usage v#1 (Current mem = 1152.547M, initial mem = 184.402M) ***
+*** Message Summary: 2199 warning(s), 20 error(s)
+
+--- Ending "Innovus" (totcpu=0:05:07, real=0:55:02, mem=1152.5M) ---

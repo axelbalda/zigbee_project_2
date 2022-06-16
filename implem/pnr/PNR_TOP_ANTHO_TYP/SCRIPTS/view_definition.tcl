@@ -54,7 +54,7 @@ create_delay_corner -name corner_max -library_set slow_libs -rc_corner rc_worst
 create_constraint_mode -name setup_func_mode \
    -sdc_files [list ../INPUT_DATA/clock_def.sdc \
                     ../INPUT_DATA/clock_uncertainty_prects.sdc \
-                    ../INPUT_DATA/constraints_def_worst.sdc]
+                    ../INPUT_DATA/constraints_def_typ.sdc]
 create_constraint_mode -name hold_func_mode \
    -sdc_files [list ../INPUT_DATA/clock_def.sdc \
                     ../INPUT_DATA/clock_uncertainty_prects.sdc \

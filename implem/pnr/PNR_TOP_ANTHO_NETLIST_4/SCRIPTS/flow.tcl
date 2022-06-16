@@ -41,7 +41,7 @@ optDesign -postRoute
 
 pinAnalysis
 #pinAlignment
-fixVia -short
+#fixVia -short
 
 saveDesign dbs/route_enc
 

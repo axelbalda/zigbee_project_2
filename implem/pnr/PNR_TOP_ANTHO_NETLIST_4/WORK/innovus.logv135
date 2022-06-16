@@ -4873,3 +4873,394 @@
 [06/15 17:22:31    261s] <CMD> deselectAll
 [06/15 17:22:31    261s] <CMD> selectInst {t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]}
 [06/15 17:22:31    261s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:52    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:53    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:53    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:53    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:53    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:53    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:53    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:53    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:53    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:53    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:53    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:53    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:53    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:53    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:53    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:53    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:53    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:53    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:53    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:53    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:53    272s] <CMD> pan -37.371 899.573
+[06/15 17:24:53    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:54    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:54    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:54    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:54    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:54    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:54    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:54    272s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:54    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:54    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:54    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:54    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:54    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:54    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:54    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:54    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:54    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:54    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:54    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:54    273s] <CMD> pan -395.732 -452.863
+[06/15 17:24:54    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:55    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:55    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:55    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:55    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:55    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:55    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:55    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:55    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:55    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:55    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:55    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:55    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:55    273s] <CMD> pan -741.140 -103.634
+[06/15 17:24:55    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:56    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:57    273s] <CMD> panCenter 2073.469 1447.969
+[06/15 17:24:57    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:57    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:58    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:58    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:58    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:58    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:58    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:58    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:58    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:58    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:58    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:58    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:58    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:58    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:58    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:58    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:58    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:58    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:58    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:58    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:58    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:24:58    273s] <CMD> pan 1253.031 -81.651
+[06/15 17:24:58    273s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:02    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:05    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:05    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:05    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:05    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:05    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:05    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:05    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:05    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:05    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:05    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:06    274s] <CMD> pan 84.792 -43.966
+[06/15 17:25:06    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:07    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:07    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:08    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:08    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:08    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:08    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:08    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:08    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:08    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:08    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:08    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:08    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:08    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:08    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:08    274s] <CMD> pan 236.586 -1.007
+[06/15 17:25:08    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[4][0]
+[06/15 17:25:09    274s] <CMD> deselectAll
+[06/15 17:25:09    274s] <CMD> selectInst {t_op/u_cordic/mycordic/present_ANGLE_table_reg[5][15]}
+[06/15 17:25:09    274s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[5][15]
+[06/15 17:25:10    275s] <CMD> deselectAll
+[06/15 17:25:10    275s] <CMD> selectInst {t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]}
+[06/15 17:25:10    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:11    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:12    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:12    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:12    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:12    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:12    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:12    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:12    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:12    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:12    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:12    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:12    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:12    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:12    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:12    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:12    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:12    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:12    275s] <CMD> pan -43.196 164.425
+[06/15 17:25:12    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:13    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:15    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:15    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:15    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:15    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:15    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:15    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:15    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:15    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:15    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:15    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:15    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:15    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:15    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:15    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:15    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:15    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:15    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:15    275s] <CMD> pan -7.715 293.150
+[06/15 17:25:15    275s] Set RLRP Inst: t_op/u_cordic/mycordic/present_ANGLE_table_reg[6][15]
+[06/15 17:25:16    275s] <CMD> deselectAll
+[06/15 17:25:16    275s] <CMD> selectObstruct 773.2000 420.4000 785.8000 1980.4000 defScreenName
+[06/15 17:25:17    275s] <CMD> deselectAll
+[06/15 17:25:17    275s] <CMD> selectInst {t_op/u_cordic/my_rotation/present_angle_reg[1][0]}
+[06/15 17:25:17    275s] Set RLRP Inst: t_op/u_cordic/my_rotation/present_angle_reg[1][0]
+[06/15 17:25:19    276s] Set RLRP Inst: t_op/u_cordic/my_rotation/present_angle_reg[1][0]
+[06/15 17:25:19    276s] Set RLRP Inst: t_op/u_cordic/my_rotation/present_angle_reg[1][0]
+[06/15 17:25:19    276s] Set RLRP Inst: t_op/u_cordic/my_rotation/present_angle_reg[1][0]
+[06/15 17:25:20    276s] <CMD> deselectAll
+[06/15 17:25:20    276s] <CMD> selectInst t_op/U785
+[06/15 17:25:20    276s] Set RLRP Inst: t_op/U785
+[06/15 17:25:21    276s] Set RLRP Inst: t_op/U785
+[06/15 17:25:22    276s] Set RLRP Inst: t_op/U785
+[06/15 17:25:22    276s] Set RLRP Inst: t_op/U785
+[06/15 17:25:28    277s] Set RLRP Inst: t_op/U785
+[06/15 17:25:29    277s] Set RLRP Inst: t_op/U785
+[06/15 17:25:29    277s] Set RLRP Inst: t_op/U785
+[06/15 17:25:29    277s] Set RLRP Inst: t_op/U785
+[06/15 17:25:30    277s] <CMD> deselectAll
+[06/15 17:25:30    277s] <CMD> selectInst t_op/u_outFIFO/U474
+[06/15 17:25:30    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:31    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:32    277s] <CMD> pan 123.452 -5.213
+[06/15 17:25:32    277s] Set RLRP Inst: t_op/u_outFIFO/U474
+[06/15 17:25:33    277s] <CMD> deselectAll
+[06/15 17:25:33    277s] <CMD> selectInst t_op/U2972
+[06/15 17:25:33    277s] Set RLRP Inst: t_op/U2972
+[06/15 17:25:34    277s] Set RLRP Inst: t_op/U2972
+[06/15 17:25:34    277s] Set RLRP Inst: t_op/U2972
+[06/15 17:25:35    278s] Set RLRP Inst: t_op/U2972
+[06/15 17:25:36    278s] Set RLRP Inst: t_op/U2972
+[06/15 17:25:36    278s] Set RLRP Inst: t_op/U2972
+[06/15 17:25:36    278s] Set RLRP Inst: t_op/U2972
+[06/15 17:25:37    278s] <CMD> deselectAll
+[06/15 17:25:37    278s] <CMD> selectInst t_op/U2984
+[06/15 17:25:37    278s] Set RLRP Inst: t_op/U2984
+[06/15 17:25:37    278s] Set RLRP Inst: t_op/U2984
+[06/15 17:25:38    278s] Set RLRP Inst: t_op/U2984
+[06/15 17:25:38    278s] Set RLRP Inst: t_op/U2984
+[06/15 17:25:38    278s] Set RLRP Inst: t_op/U2984
+[06/15 17:25:38    278s] Set RLRP Inst: t_op/U2984
+[06/15 17:25:38    278s] Set RLRP Inst: t_op/U2984
+[06/15 17:25:38    278s] Set RLRP Inst: t_op/U2984
+[06/15 17:25:38    278s] Set RLRP Inst: t_op/U2984
+[06/15 17:25:38    278s] Set RLRP Inst: t_op/U2984
+[06/15 17:25:38    278s] Set RLRP Inst: t_op/U2984
+[06/15 17:25:38    278s] Set RLRP Inst: t_op/U2984
+[06/15 17:25:38    278s] Set RLRP Inst: t_op/U2984
+[06/15 17:25:38    278s] Set RLRP Inst: t_op/U2984
+[06/15 17:25:38    278s] Set RLRP Inst: t_op/U2984
+[06/15 17:25:38    278s] Set RLRP Inst: t_op/U2984
+[06/15 17:25:38    278s] Set RLRP Inst: t_op/U2984
+[06/15 17:25:38    278s] Set RLRP Inst: t_op/U2984
+[06/15 17:25:38    278s] Set RLRP Inst: t_op/U2984
+[06/15 17:25:38    278s] Set RLRP Inst: t_op/U2984
+[06/15 17:25:38    278s] Set RLRP Inst: t_op/U2984
+[06/15 17:25:38    278s] <CMD> pan 102.747 -37.972
+[06/15 17:25:38    278s] Set RLRP Inst: t_op/U2984
+[06/15 17:25:40    278s] <CMD> deselectAll
+[06/15 17:25:40    278s] <CMD> selectInst t_op/U2998
+[06/15 17:25:40    278s] Set RLRP Inst: t_op/U2998
+[06/15 17:25:42    278s] <CMD> deselectAll
+[06/15 17:25:42    278s] <CMD> selectInst t_op/U2788
+[06/15 17:25:42    278s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:43    278s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:43    278s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:44    278s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:44    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:44    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:45    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:45    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:45    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:45    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:45    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:45    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:45    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:45    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:45    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:45    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:45    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:45    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:45    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:45    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:45    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:45    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:45    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:45    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:45    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:45    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:45    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:45    279s] <CMD> pan 0.490 1.594
+[06/15 17:25:45    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:46    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:46    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:47    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:47    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:48    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:48    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:25:49    279s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] <CMD> pan -810.642 -161.220
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:23    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:24    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:24    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:24    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:24    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:24    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:24    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:24    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:24    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:24    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:24    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:24    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:24    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:24    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:24    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:24    286s] <CMD> pan -499.555 -199.822
+[06/15 17:27:24    286s] Set RLRP Inst: t_op/U2788
+[06/15 17:27:24    287s] Set RLRP Inst: t_op/U2788
+[06/15 17:29:20    295s] Creating Cell Server ...(0, 0, 0, 0)
+[06/15 17:29:20    295s] Summary for sequential cells identification: 
+[06/15 17:29:20    295s]   Identified SBFF number: 32
+[06/15 17:29:20    295s]   Identified MBFF number: 0
+[06/15 17:29:20    295s]   Identified SB Latch number: 0
+[06/15 17:29:20    295s]   Identified MB Latch number: 0
+[06/15 17:29:20    295s]   Not identified SBFF number: 34
+[06/15 17:29:20    295s]   Not identified MBFF number: 0
+[06/15 17:29:20    295s]   Not identified SB Latch number: 0
+[06/15 17:29:20    295s]   Not identified MB Latch number: 0
+[06/15 17:29:20    295s]   Number of sequential cells which are not FFs: 23
+[06/15 17:29:20    295s] Creating Cell Server, finished. 
+[06/15 17:29:20    295s] 
+[06/15 17:29:20    295s] Deleting Cell Server ...
+[06/15 17:29:20    295s] Creating Cell Server ...(0, 0, 0, 0)
+[06/15 17:29:20    295s] Summary for sequential cells identification: 
+[06/15 17:29:20    295s]   Identified SBFF number: 32
+[06/15 17:29:20    295s]   Identified MBFF number: 0
+[06/15 17:29:20    295s]   Identified SB Latch number: 0
+[06/15 17:29:20    295s]   Identified MB Latch number: 0
+[06/15 17:29:20    295s]   Not identified SBFF number: 34
+[06/15 17:29:20    295s]   Not identified MBFF number: 0
+[06/15 17:29:20    295s]   Not identified SB Latch number: 0
+[06/15 17:29:20    295s]   Not identified MB Latch number: 0
+[06/15 17:29:20    295s]   Number of sequential cells which are not FFs: 23
+[06/15 17:29:20    295s] Creating Cell Server, finished. 
+[06/15 17:29:20    295s] 
+[06/15 17:29:20    295s] Deleting Cell Server ...
+[06/15 17:31:40    307s] 
+[06/15 17:31:40    307s] *** Memory Usage v#1 (Current mem = 1152.547M, initial mem = 184.402M) ***
+[06/15 17:31:40    307s] 
+[06/15 17:31:40    307s] *** Summary of all messages that are not suppressed in this session:
+[06/15 17:31:40    307s] Severity  ID               Count  Summary                                  
+[06/15 17:31:40    307s] WARNING   IMPLF-200          131  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[06/15 17:31:40    307s] WARNING   IMPLF-201          608  Pin '%s' in macro '%s' has no ANTENNADIF...
+[06/15 17:31:40    307s] WARNING   IMPLF-228            1   ANTENNAOUTPUTDIFFAREA is specified and ...
+[06/15 17:31:40    307s] WARNING   IMPLF-230            1   ANTENNAINOUTDIFFAREA is specified and w...
+[06/15 17:31:40    307s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[06/15 17:31:40    307s] WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+[06/15 17:31:40    307s] WARNING   IMPCK-7003           1  Command "%s" is obsolete. Use "%s" as an...
+[06/15 17:31:40    307s] WARNING   IMPCK-8086           1  The command %s is obsolete and will be r...
+[06/15 17:31:40    307s] WARNING   IMPSGN-1033          2  This type of pin (HPIN) %s is not yet su...
+[06/15 17:31:40    307s] WARNING   IMPSGN-1032          4  Failed to create Instance %s.            
+[06/15 17:31:40    307s] WARNING   IMPVL-159         1401  Pin '%s' of cell '%s' is defined in LEF ...
+[06/15 17:31:40    307s] WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+[06/15 17:31:40    307s] WARNING   IMPOPT-3602          5  The specified path group name %s is not ...
+[06/15 17:31:40    307s] WARNING   IMPCCOPT-1361        3  Routing configuration for %s nets in clo...
+[06/15 17:31:40    307s] WARNING   IMPCCOPT-1127        1  The skew group %s has been identified as...
+[06/15 17:31:40    307s] WARNING   IMPCCOPT-4322        1  No default Or cell family identified.    
+[06/15 17:31:40    307s] WARNING   IMPCCOPT-1007       10  Did not meet the max transition constrai...
+[06/15 17:31:40    307s] WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+[06/15 17:31:40    307s] WARNING   GLOBAL-100           2  Global '%s' has become obsolete. It will...
+[06/15 17:31:40    307s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[06/15 17:31:40    307s] ERROR     TECHLIB-1318        20  All the table values in the '%s' group a...
+[06/15 17:31:40    307s] *** Message Summary: 2199 warning(s), 20 error(s)
+[06/15 17:31:40    307s] 
+[06/15 17:31:40    307s] --- Ending "Innovus" (totcpu=0:05:07, real=0:55:02, mem=1152.5M) ---
