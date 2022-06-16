@@ -358,7 +358,7 @@ assign sig_MUX_inMUX16 = { sig_cdr_outFlag			, sig_cordic_outEnable		, sig_coder
 
 
 
-assign sig_inFIFO_inWriteEnable		= sig_DEMUX_outDEMUX2[0]	| sig_DEMUX_outDEMUX2[6];
+assign sig_inFIFO_inWriteEnable		= sig_DEMUX_outDEMUX2[0]	| sig_DEMUX_outDEMUX2[1]	| sig_DEMUX_outDEMUX2[6];
 assign sig_inFIFO_inReadEnable		= sig_MUX_outMUX3			;
 assign sig_coder_inData				= sig_MUX_outMUX4			;
 assign sig_coder_inEmpty			= sig_MUX_outMUX5			;
