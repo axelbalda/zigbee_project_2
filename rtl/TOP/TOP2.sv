@@ -202,13 +202,13 @@ outFIFO u_outFIFO (
     
     	.outWriteCount		(							),   
     	.outReadCount		(							),
-    	.outReadError		(out_inFIFO_outReadError	),
-    	.outWriteError		(out_inFIFO_outWriteError	),
+    	.outReadError		(out_outFIFO_outReadError	),
+    	.outWriteError		(out_outFIFO_outWriteError	),
     	.outFull			(							),
     	.outEmpty			(							),
     	.outAlmostEmpty		(							),
     	.outAlmostFull		(							),
-    	.outDone			(out_inFIFO_outDone			),	  	
+    	.outDone			(out_outFIFO_outDone		),	  	
     	.outData			(sig_outFIFO_outData		)	
 ) ;
 //////////////////////////////////////////////////////////////////////////////////	   
