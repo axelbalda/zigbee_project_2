@@ -96,7 +96,11 @@ module system(i_enable_in, i_I, i_Q, o_enable_out, o_dir, reset, clock);
 
 			ACTIVATE_ENABLE_OUT: begin
 				//o_enable_out = 1'b1;
-				next_state = NEW_IQ_SAMPLE;
+				if(i_enable_in == 1'b1) begin
+					next_state = NEW_IQ_SAMPLE;
+				end else begin
+					next_state = WAIT_ENABLE_IN;
+				end
 			end
 			
 			default : begin 
