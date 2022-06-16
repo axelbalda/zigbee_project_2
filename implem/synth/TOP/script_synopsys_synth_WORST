@@ -1,4 +1,4 @@
-set var_path "/tp/xph2app/xph2app101/Documents/PROJET_ZIGBEE_2A_MT_2022/zigbee_project_2/rtl"
+set var_path "~/zigbee_project_2/rtl/"
 
 ###########################################################
 ##  TOP
@@ -89,8 +89,8 @@ compile -exact_map -ungroup_all -auto_ungroup area
 
 
 
-set name_netlist "TOP_netlist.v"
-set name_sdc "TOP_1.sdc"
+set name_netlist "TOP_netlist6.v"
+set name_sdc "TOP_6.sdc"
 
 write -hierarchy -format verilog -output $var_path/../simu/post_synth/TOP/$name_netlist
 write_sdc $var_path/../simu/post_synth/TOP/$name_sdc
