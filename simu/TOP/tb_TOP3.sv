@@ -119,6 +119,79 @@ initial begin : DATA
 	inDEMUX1		=	1'b0	;
 	inDEMUX2		=	1'b0	;
 
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inData			=	4'b1100	;
+	inReadEnable	=	1'b0	;
+	inDEMUX1		=	1'b1	;
+	inDEMUX2		=	1'b1	;
+	inDEMUX17		=	4'b1101	;
+	inDEMUX18		=	4'b1101	;	
+
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+	inDEMUX1		=	1'b0	;
+	inDEMUX2		=	1'b0	;
+	
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inData			=	4'b0011	;
+	inReadEnable	=	1'b0	;
+	inDEMUX1		=	1'b1	;
+	inDEMUX2		=	1'b1	;
+	inDEMUX17		=	4'b1101	;
+	inDEMUX18		=	4'b1101	;	
+
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+	inDEMUX1		=	1'b0	;
+	inDEMUX2		=	1'b0	;
+	
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inData			=	4'b1010	;
+	inReadEnable	=	1'b0	;
+	inDEMUX1		=	1'b1	;
+	inDEMUX2		=	1'b1	;
+	inDEMUX17		=	4'b1101	;
+	inDEMUX18		=	4'b1101	;	
+
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+	inDEMUX1		=	1'b0	;
+	inDEMUX2		=	1'b0	;
+	
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inData			=	4'b1111	;
+	inReadEnable	=	1'b0	;
+	inDEMUX1		=	1'b1	;
+	inDEMUX2		=	1'b1	;
+	inDEMUX17		=	4'b1101	;
+	inDEMUX18		=	4'b1101	;	
+
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+	inDEMUX1		=	1'b0	;
+	inDEMUX2		=	1'b0	;
+	
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+
 
 
 	/////////////////////////////
