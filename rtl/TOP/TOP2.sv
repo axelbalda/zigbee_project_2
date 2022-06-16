@@ -341,7 +341,7 @@ MUX411 u_mux16 (
 );
 //////////////////////////////////////////////////////////////////////////////////
 
-assign sig_MUX_inMUX3  = { 6'b0, sig_DEMUX_outDEMUX1[1], sig_coder_outReady } ;
+assign sig_MUX_inMUX3  = { 1'b0, sig_coder_outReady, 4'b0, sig_DEMUX_outDEMUX1[1], sig_coder_outReady } ;
 
 assign sig_MUX_inMUX4  = { 1'b0, sig_inFIFO_outData, 3'b0, sig_DEMUX_outDEMUX1[2], 1'b0, sig_inFIFO_outData } ;
 
@@ -351,7 +351,7 @@ assign sig_MUX_inMUX6  = { 4'b0, sig_coder_outSinIMasked, 8'b0, sig_DEMUX_outDEM
 
 assign sig_MUX_inMUX7  = { 4'b0, sig_coder_outSinQMasked, 8'b0, sig_DEMUX_outDEMUX18[15:12], 8'b0, sig_decod_outQ } ;	
 
-assign sig_MUX_inMUX8  = { 1'b0, sig_DEMUX_outDEMUX2[3], 2'b0, sig_DEMUX_outDEMUX2[3], 2'b0, sig_decod_outEOC } ;		
+assign sig_MUX_inMUX8  = { sig_DEMUX_outDEMUX1[6], sig_DEMUX_outDEMUX2[3], 2'b0, sig_DEMUX_outDEMUX2[3], 2'b0, sig_decod_outEOC } ;		
 
 assign sig_MUX_inMUX9  = { sig_outFIFO_outData, sig_decod_outI, sig_coder_outSinIMasked, sig_coder_outSinI } ;
 
