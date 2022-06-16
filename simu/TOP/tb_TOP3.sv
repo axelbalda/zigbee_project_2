@@ -715,7 +715,7 @@ initial begin : DATA
 
 	inDEMUX1		=	1'b1	; // CDR_inEnable
 	inDEMUX2		=	1'b0	; // CDR_inDIR
-	for(int i = 0; i < 1; i++) begin
+	for(int i = 0; i < 10; i++) begin
 		#CLK_PERIOD ;	
 	end
 
@@ -727,7 +727,7 @@ initial begin : DATA
 
 	inDEMUX1		=	1'b1	; // CDR_inEnable
 	inDEMUX2		=	1'b1	; // CDR_inDIR
-	for(int i = 0; i < 1; i++) begin
+	for(int i = 0; i < 10; i++) begin
 		#CLK_PERIOD ;	
 	end	
 
@@ -875,21 +875,88 @@ initial begin : DATA
 
 	inData			=	4'b0110	;
 	inReadEnable	=	1'b0	;
-	inDEMUX1		=	1'b0	;
+	inDEMUX1		=	1'b1	;
 	inDEMUX2		=	1'b1	;
-	inDEMUX17		=	4'b0	;
-	inDEMUX18		=	4'b0	;	
+	inDEMUX17		=	4'b1101	;
+	inDEMUX18		=	4'b1101	;	
 
-	for(int i = 0; i < 100; i++) begin
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+	inDEMUX1		=	1'b0	;
+	inDEMUX2		=	1'b0	;
+
+	for(int i = 0; i < 20; i++) begin
 		#CLK_PERIOD ;	
 	end
 
-	inData			=	4'b0	;
+	inData			=	4'b1100	;
 	inReadEnable	=	1'b0	;
-	inDEMUX1		=	1'b0	;
+	inDEMUX1		=	1'b1	;
 	inDEMUX2		=	1'b1	;
-	inDEMUX17		=	4'b0	;
-	inDEMUX18		=	4'b0	;	
+	inDEMUX17		=	4'b1101	;
+	inDEMUX18		=	4'b1101	;	
+
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+	inDEMUX1		=	1'b0	;
+	inDEMUX2		=	1'b0	;
+	
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inData			=	4'b0011	;
+	inReadEnable	=	1'b0	;
+	inDEMUX1		=	1'b1	;
+	inDEMUX2		=	1'b1	;
+	inDEMUX17		=	4'b1101	;
+	inDEMUX18		=	4'b1101	;	
+
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+	inDEMUX1		=	1'b0	;
+	inDEMUX2		=	1'b0	;
+	
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inData			=	4'b1010	;
+	inReadEnable	=	1'b0	;
+	inDEMUX1		=	1'b1	;
+	inDEMUX2		=	1'b1	;
+	inDEMUX17		=	4'b1101	;
+	inDEMUX18		=	4'b1101	;	
+
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+	inDEMUX1		=	1'b0	;
+	inDEMUX2		=	1'b0	;
+	
+	for(int i = 0; i < 25; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inData			=	4'b1111	;
+	inReadEnable	=	1'b0	;
+	inDEMUX1		=	1'b1	;
+	inDEMUX2		=	1'b1	;
+	inDEMUX17		=	4'b1101	;
+	inDEMUX18		=	4'b1101	;	
+
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+	inDEMUX1		=	1'b0	;
+	inDEMUX2		=	1'b0	;
+	
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end	
 
 	
 end
