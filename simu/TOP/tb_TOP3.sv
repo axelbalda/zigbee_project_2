@@ -634,7 +634,7 @@ initial begin : DATA
 	inSEL9			=	2'b0	;
 	inSEL15			=	2'b10	;
 
-	for(int i = 0; i < 50; i++) begin
+	for(int i = 0; i < 20; i++) begin
 		inDEMUX1		=	1'b0	; // xxx
 		inDEMUX2		=	1'b0	; // cordic_inEnable
 		inDEMUX17		=	4'b0	; // cordic_I
@@ -654,7 +654,7 @@ initial begin : DATA
 	inDEMUX2		=	1'b1	; // cordic_inEnable
 	inDEMUX17		=	4'b1101	; // cordic_I
 	inDEMUX18		=	4'b1100	; // cordic_Q
-	for(int i = 0; i < 1; i++) begin
+	for(int i = 0; i < 10; i++) begin
 		#CLK_PERIOD ;	
 	end
 
@@ -668,7 +668,7 @@ initial begin : DATA
 	inDEMUX2		=	1'b1	; // cordic_inEnable
 	inDEMUX17		=	4'b0011	; // cordic_I
 	inDEMUX18		=	4'b0110	; // cordic_Q
-	for(int i = 0; i < 1; i++) begin
+	for(int i = 0; i < 10; i++) begin
 		#CLK_PERIOD ;	
 	end
 
@@ -682,7 +682,7 @@ initial begin : DATA
 	inDEMUX2		=	1'b1	; // cordic_inEnable
 	inDEMUX17		=	4'b1011	; // cordic_I
 	inDEMUX18		=	4'b1011	; // cordic_Q
-	for(int i = 0; i < 1; i++) begin
+	for(int i = 0; i < 10; i++) begin
 		#CLK_PERIOD ;	
 	end
 
