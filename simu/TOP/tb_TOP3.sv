@@ -113,7 +113,7 @@ initial begin : DATA
 	inDEMUX17		=	4'b1101	;
 	inDEMUX18		=	4'b1101	;	
 
-	for(int i = 0; i < 2; i++) begin
+	for(int i = 0; i < 20; i++) begin
 		#CLK_PERIOD ;	
 	end
 	inDEMUX1		=	1'b0	;
@@ -144,7 +144,7 @@ initial begin : DATA
 		#CLK_PERIOD ;	
 	end
 	inDEMUX2		=	1'b1	; // WriteEnable
-	for(int i = 0; i < 4; i++) begin
+	for(int i = 0; i < 20; i++) begin
 		#CLK_PERIOD ;	
 	end
 
@@ -159,7 +159,7 @@ initial begin : DATA
 	inDEMUX2		=	1'b1	; // WriteEnable
 	inDEMUX17		=	4'b0	; 
 	inDEMUX18		=	4'b0	;
-	for(int i = 0; i < 4; i++) begin
+	for(int i = 0; i < 20; i++) begin
 		#CLK_PERIOD ;	
 	end
 
@@ -174,7 +174,7 @@ initial begin : DATA
 	inDEMUX2		=	1'b1	; // WriteEnable
 	inDEMUX17		=	4'b0	; 
 	inDEMUX18		=	4'b0	;
-	for(int i = 0; i < 4; i++) begin
+	for(int i = 0; i < 20; i++) begin
 		#CLK_PERIOD ;	
 	end
 
@@ -189,7 +189,7 @@ initial begin : DATA
 	inDEMUX2		=	1'b0	; // WriteEnable
 	inDEMUX17		=	4'b0	; 
 	inDEMUX18		=	4'b0	;
-	for(int i = 0; i < 4; i++) begin
+	for(int i = 0; i < 20; i++) begin
 		#CLK_PERIOD ;	
 	end
 
@@ -204,7 +204,7 @@ initial begin : DATA
 	inDEMUX2		=	1'b0	; // WriteEnable
 	inDEMUX17		=	4'b0	; 
 	inDEMUX18		=	4'b0	;
-	for(int i = 0; i < 4; i++) begin
+	for(int i = 0; i < 20; i++) begin
 		#CLK_PERIOD ;	
 	end
 
@@ -219,7 +219,7 @@ initial begin : DATA
 	inDEMUX2		=	1'b0	; // WriteEnable
 	inDEMUX17		=	4'b0	; 
 	inDEMUX18		=	4'b0	;
-	for(int i = 0; i < 4; i++) begin
+	for(int i = 0; i < 20; i++) begin
 		#CLK_PERIOD ;	
 	end
 
@@ -234,7 +234,7 @@ initial begin : DATA
 	inDEMUX2		=	1'b0	; // WriteEnable
 	inDEMUX17		=	4'b0	; 
 	inDEMUX18		=	4'b0	;
-	for(int i = 0; i < 4; i++) begin
+	for(int i = 0; i < 20; i++) begin
 		#CLK_PERIOD ;	
 	end
 
@@ -249,7 +249,7 @@ initial begin : DATA
 	inDEMUX2		=	1'b0	; // WriteEnable
 	inDEMUX17		=	4'b0	; 
 	inDEMUX18		=	4'b0	;
-	for(int i = 0; i < 4; i++) begin
+	for(int i = 0; i < 20; i++) begin
 		#CLK_PERIOD ;	
 	end
 
@@ -264,7 +264,7 @@ initial begin : DATA
 	inDEMUX2		=	1'b0	; // WriteEnable
 	inDEMUX17		=	4'b0	; 
 	inDEMUX18		=	4'b0	;
-	for(int i = 0; i < 4; i++) begin
+	for(int i = 0; i < 20; i++) begin
 		#CLK_PERIOD ;	
 	end
 
@@ -279,7 +279,7 @@ initial begin : DATA
 	inDEMUX2		=	1'b0	; // WriteEnable
 	inDEMUX17		=	4'b0	; 
 	inDEMUX18		=	4'b0	;
-	for(int i = 0; i < 1; i++) begin
+	for(int i = 0; i < 10; i++) begin
 		#CLK_PERIOD ;	
 	end
 
@@ -294,7 +294,7 @@ initial begin : DATA
 	inDEMUX2		=	1'b0	; // WriteEnable
 	inDEMUX17		=	4'b0	; 
 	inDEMUX18		=	4'b0	;
-	for(int i = 0; i < 4; i++) begin
+	for(int i = 0; i < 20; i++) begin
 		#CLK_PERIOD ;	
 	end
 
@@ -309,7 +309,7 @@ initial begin : DATA
 	inDEMUX2		=	1'b0	; // WriteEnable
 	inDEMUX17		=	4'b0	; 
 	inDEMUX18		=	4'b0	;
-	for(int i = 0; i < 4; i++) begin
+	for(int i = 0; i < 20; i++) begin
 		#CLK_PERIOD ;	
 	end
 	
@@ -356,12 +356,136 @@ initial begin : DATA
 	end
 
 	inDEMUX1		=	1'b0	; // inData
-	inDEMUX2		=	1'b1	; // inEmpty
+	inDEMUX2		=	1'b0	; // inEmpty
 	for(int i = 0; i < 20; i++) begin
 		#CLK_PERIOD ;	
 	end
 
+	inDEMUX1		=	1'b1	; // inData
+	inDEMUX2		=	1'b0	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
 
+	inDEMUX1		=	1'b1	; // inData
+	inDEMUX2		=	1'b0	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b0	; // inData
+	inDEMUX2		=	1'b0	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b0	; // inData
+	inDEMUX2		=	1'b0	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b1	; // inData
+	inDEMUX2		=	1'b0	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b1	; // inData
+	inDEMUX2		=	1'b0	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b0	; // inData
+	inDEMUX2		=	1'b0	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b0	; // inData
+	inDEMUX2		=	1'b1	; // inEmpty
+	for(int i = 0; i < 50; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b0	; // inData
+	inDEMUX2		=	1'b0	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b1	; // inData
+	inDEMUX2		=	1'b0	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b1	; // inData
+	inDEMUX2		=	1'b0	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b0	; // inData
+	inDEMUX2		=	1'b0	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b0	; // inData
+	inDEMUX2		=	1'b0	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b1	; // inData
+	inDEMUX2		=	1'b0	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b1	; // inData
+	inDEMUX2		=	1'b0	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b0	; // inData
+	inDEMUX2		=	1'b0	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b0	; // inData
+	inDEMUX2		=	1'b0	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b1	; // inData
+	inDEMUX2		=	1'b0	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b1	; // inData
+	inDEMUX2		=	1'b0	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b0	; // inData
+	inDEMUX2		=	1'b0	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inDEMUX1		=	1'b0	; // inData
+	inDEMUX2		=	1'b1	; // inEmpty
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
 
 
 	/////////////////////////////
@@ -381,6 +505,12 @@ initial begin : DATA
 	end
 	inReset = 1'b1 ;
 
+	inDEMUX1		=	1'b0	; // inEOC
+	inDEMUX17		=	4'b1010	; // I
+	inDEMUX18		=	4'b0101	; // Q
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
 	inDEMUX1		=	1'b1	; // inEOC
 	inDEMUX17		=	4'b1010	; // I
 	inDEMUX18		=	4'b0101	; // Q
@@ -440,6 +570,13 @@ initial begin : DATA
 		#CLK_PERIOD ;	
 	end
 	inReset = 1'b1 ;
+
+	inDEMUX2		=	1'b0	; // cordic_inEnable
+	inDEMUX17		=	4'b1101	; // cordic_I
+	inDEMUX18		=	4'b1100	; // cordic_Q
+	for(int i = 0; i < 1; i++) begin
+		#CLK_PERIOD ;	
+	end
 
 	inDEMUX2		=	1'b1	; // cordic_inEnable
 	inDEMUX17		=	4'b1101	; // cordic_I
@@ -538,14 +675,20 @@ initial begin : DATA
 	inSEL15			=	2'b11	;
 
 	for(int i = 0; i < 50; i++) begin
-		inDEMUX1		=	1'b0	; // xxx
-		inDEMUX2		=	1'b0	; // cordic_inEnable
-		inDEMUX17		=	4'b0	; // cordic_I
-		inDEMUX18		=	4'b0	; // cordic_Q
+		inDEMUX1		=	1'b0	; 
+		inDEMUX2		=	1'b0	; 
+		inDEMUX17		=	4'b0	; 
+		inDEMUX18		=	4'b0	; 
 		inReset  =  1'b0 ;
 		#CLK_PERIOD ;	
 	end
 	inReset = 1'b1 ;
+
+	inDEMUX1		=	1'b0	; // WriteEnable
+	inDEMUX2		=	1'b1	; // inData
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+	end
 
 	inDEMUX1		=	1'b1	; // WriteEnable
 	inDEMUX2		=	1'b1	; // inData
