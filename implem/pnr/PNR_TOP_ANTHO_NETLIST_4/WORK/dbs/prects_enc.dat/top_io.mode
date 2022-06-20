@@ -1,5 +1,5 @@
 catch { setDesignMode -process 250 }
-catch { setAnalysisMode -analysisType bcwc }
+catch { setAnalysisMode -analysisType onChipVariation }
 catch { setAnalysisMode -checkType setup }
 catch { setAnalysisMode -clkSrcPath true }
 catch { setAnalysisMode -clockPropagation forcedIdeal }
@@ -16,9 +16,16 @@ catch { setOptMode -fixFanoutLoad false }
 catch { setOptMode -fixTran true }
 catch { setOptMode -optimizeFF true }
 catch { setOptMode -setupTargetSlack 0 }
+catch { setOptMode -usefulSkew true }
+setPathGroupOptions reset2cdr -effortLevel low
+setPathGroupOptions reg2reg -effortLevel high
+setPathGroupOptions reg2out -effortLevel high
+setPathGroupOptions in2reg -effortLevel high
+setPathGroupOptions in2out -effortLevel high
 setExtractRCMode  -engine preRoute -total_c_th 5 -relative_c_th 0.03 -coupling_c_th 3
 catch {setNanoRouteMode -quiet -grouteExpTdStdDelay 141.700000}
 
+catch { setPlaceMode -padForPinNearBorder true }
 catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepFlatten true }
 catch { setSrouteMode -viaConnectToShape noshape }
 catch { setDelayCalMode -enable_high_fanout true }
@@ -59,3 +66,6 @@ catch { setAddStripeMode -trim_antenna_back_to_shape none }
 catch { setAddStripeMode -via_using_exact_crossover_size false }
 catch { setRouteMode -earlyGlobalMaxRouteLayer 4 }
 catch { setRouteMode -earlyGlobalMinRouteLayer 1 }
+catch { setEndCapMode -leftEdge ENDCAPL }
+catch { setEndCapMode -prefix ENDCAP }
+catch { setEndCapMode -rightEdge ENDCAPR }

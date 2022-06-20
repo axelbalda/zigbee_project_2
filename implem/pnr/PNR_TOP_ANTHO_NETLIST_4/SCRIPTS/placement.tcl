@@ -11,10 +11,7 @@ setEndCapMode -prefix ENDCAP -leftEdge ENDCAPL -rightEdge ENDCAPR
 addEndCap -prefix ENDCAP
 #addEndCap -preCap ENDCAPL -postCap ENDCAPR -prefix ENDCAP
 
-setMetalFill -gapSpacing 0.45 	-layer MET1
-setMetalFill -gapSpacing 0.5 	-layer MET2
-setMetalFill -gapSpacing 0.6	-layer MET3
-setMetalFill -gapSpacing 0.6	-layer MET4
+setViaGenMode -optimize_cross_via true -optimize_via_on_routing_track true
 
 ################# Blockages arround stripes
 createPlaceBlockage -type hard -box { { 499.8   420.4 511.5   1980.4 } } 
@@ -41,7 +38,6 @@ setPlaceMode -padForPinNearBorder true
 #Setting useful skew
 setOptMode -usefulSkew true
 
-setAnalysisMode -analysisType onChipVariation
 
 #Création des group paths
 set_interactive_constraint_modes [all_constraint_modes -active]

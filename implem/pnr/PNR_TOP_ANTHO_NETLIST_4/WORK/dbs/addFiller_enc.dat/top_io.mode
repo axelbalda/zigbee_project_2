@@ -1,5 +1,5 @@
 catch { setDesignMode -process 250 }
-catch { setAnalysisMode -analysisType bcwc }
+catch { setAnalysisMode -analysisType onChipVariation }
 catch { setAnalysisMode -checkType setup }
 catch { setAnalysisMode -clkSrcPath true }
 catch { setAnalysisMode -clockPropagation sdcControl }
@@ -17,6 +17,16 @@ catch { setOptMode -fixTran true }
 catch { setOptMode -optimizeFF true }
 catch { setOptMode -preserveAllSequential false }
 catch { setOptMode -setupTargetSlack 0 }
+catch { setOptMode -usefulSkew true }
+catch { setOptMode -usefulSkewCCOpt extreme }
+setPathGroupOptions reset2cdr -effortLevel low
+setPathGroupOptions reg2reg -effortLevel high
+setPathGroupOptions reg2out -effortLevel high
+setPathGroupOptions path_CTS_FILTER_2 -effortLevel low
+setPathGroupOptions path_CTS_FILTER -effortLevel low
+setPathGroupOptions path_CTS_CORDIC -effortLevel low
+setPathGroupOptions in2reg -effortLevel high
+setPathGroupOptions in2out -effortLevel high
 setExtractRCMode  -engine preRoute -total_c_th 5 -relative_c_th 0.03 -coupling_c_th 3
 catch { setCTSMode -engine ccopt }
 catch { set_ccopt_mode -cts_opt_type full }
@@ -24,11 +34,11 @@ catch { set_ccopt_mode -is_mode_set_route_top_mask false }
 catch { set_ccopt_mode -is_mode_set_route_top_preferred_extra_space false }
 catch {setNanoRouteMode -quiet -grouteExpTdStdDelay 141.700000}
 
+catch { setPlaceMode -padForPinNearBorder true }
 catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepFlatten true }
 catch { set_ccopt_mode -cts_opt_type full }
 catch { set_ccopt_mode -is_mode_set_route_top_mask false }
 catch { set_ccopt_mode -is_mode_set_route_top_preferred_extra_space false }
-catch { setUsefulSkewMode -ecoRoute false }
 catch { setSrouteMode -viaConnectToShape noshape }
 catch { setDelayCalMode -enable_high_fanout true }
 catch { setDelayCalMode -eng_copyNetPropToNewNet true }
@@ -68,6 +78,8 @@ catch { setAddStripeMode -trim_antenna_back_to_shape none }
 catch { setAddStripeMode -via_using_exact_crossover_size false }
 catch { setRouteMode -earlyGlobalMaxRouteLayer 4 }
 catch { setRouteMode -earlyGlobalMinRouteLayer 1 }
+catch { setEndCapMode -leftEdge ENDCAPL }
+catch { setEndCapMode -prefix ENDCAP }
+catch { setEndCapMode -rightEdge ENDCAPR }
 catch { setFillerMode -core {FILLANT1 FILLANT2 FILLANT5 FILLANT10 FILLANT25} }
-catch { setFillerMode -keepFixed true }
 catch { setFillerMode -preserveUserOrder true }

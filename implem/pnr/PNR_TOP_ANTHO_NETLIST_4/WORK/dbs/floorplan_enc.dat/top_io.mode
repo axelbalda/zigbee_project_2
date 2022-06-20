@@ -1,4 +1,4 @@
-catch { setAnalysisMode -analysisType bcwc }
+catch { setAnalysisMode -analysisType onChipVariation }
 setExtractRCMode  -engine preRoute
 catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepFlatten true }
 catch { setSrouteMode -viaConnectToShape noshape }

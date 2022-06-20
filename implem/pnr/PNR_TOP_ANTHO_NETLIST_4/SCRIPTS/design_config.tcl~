@@ -28,10 +28,37 @@ loadIoFile ../CONSTRAINTS/${module_name}_pads.io
 #floorPlan -site standard -r 1 0.7 80 80 80 80
 floorPlan -site standard -d {2400.8 2400.8 80 80 80 80} -noSnapToGrid -coreMarginsBy io
 
+
 #deleteTrack
 
 #add_tracks -offsets {M4 horiz 420.4 M4 vert 420.4 M3 horiz 420.4 M3 vert 420.4 M2 horiz 420.4 M2 vert 420.4 M1 horiz 0 M1 vert 0.7} -pitches {M4 horiz 1.6 M4 vert 1.6 M3 horiz 1.6 M3 vert 1.6 M2 horiz 1.6 M2 vert 1.6 M1 horiz 1.3 M1 vert 1.4}
-add_tracks -offsets {M4 horiz 420.4 M4 vert 420.4 M3 horiz 420.4 M3 vert 420.4 M2 horiz 420.4 M2 vert 420.4} -pitches {M4 horiz 1.6 M4 vert 1.6 M3 horiz 1.6 M3 vert 1.6 M2 horiz 1.6 M2 vert 1.6}
+#add_tracks -offsets {M4 horiz 420.4 M4 vert 420.4 M3 horiz 420.4 M3 vert 420.4 M2 horiz 420.4 M2 vert 420.4 M1 horiz 420.4 M1 vert 420.4} -pitches {M4 horiz 1.6 M4 vert 1.6 M3 horiz 1.6 M3 vert 1.6 M2 horiz 1.6 M2 vert 1.6 M1 horiz 1.1 M1 vert 1.8}
+#add_tracks -offsets {M4 horiz 420.4 M4 vert 420.4 M3 horiz 420.4 M3 vert 420.4 M2 horiz 420.4 M2 vert 420.4 M1 horiz 420.4 M1 vert 420.4} -pitches {M4 horiz 1.6 M4 vert 1.6 M3 horiz 1.6 M3 vert 1.6 M2 horiz 1.6 M2 vert 1.6 M1 horiz 1.1 M1 vert 1.8}
+
+#add_tracks -offsets {M4 horiz 420.4 M4 vert 420.4 M3 horiz 420.4 M3 vert 420.4 M2 horiz 420.4 M2 vert 420.4 M1 horiz 420.4 M1 vert 420.4} -pitches {M4 horiz 2.8 M4 vert 2.6 M3 horiz 2.8 M3 vert 2.6 M2 horiz 2.8 M2 vert 2.6}
+
+#add_tracks -offsets {M4 horiz 0 M4 vert 0 M3 horiz 0 M3 vert 0 M2 horiz 0 M2 vert 0 M1 horiz 0 M1 vert 0} -pitches {M4 horiz 2.8 M4 vert 2.6 M3 horiz 2.8 M3 vert 2.6 M2 horiz 2.8 M2 vert 2.6 M1 horiz 1.3 M1 vert 1.4}
+
+
+setEdit -layer_horizontal {MET1}
+setEdit -layer_horizontal {MET3}
+setEdit -layer_vertical  {MET2} 
+setEdit -layer_vertical  {MET4}
+
+setEdit -spacing 0.45 -layer MET1
+setEdit -spacing 0.5 -layer MET2
+setEdit -spacing 0.6 -layer MET3
+setEdit -spacing 0.6 -layer MET4
+
+setViaEdit -x_size 0.6 -y_size 0.6 -viacell *VIA1*
+setViaEdit -x_size 0.6 -y_size 0.6 -viacell *VIA2*
+setViaEdit -x_size 0.65 -y_size 0.65 -viacell *VIA3*
+
+
+setMetalFill -gapSpacing 0.45 	-layer MET1
+setMetalFill -gapSpacing 0.5 	-layer MET2
+setMetalFill -gapSpacing 0.6	-layer MET3
+setMetalFill -gapSpacing 0.6	-layer MET4
 
 #////////////////////////////////////////////////////
 
@@ -83,6 +110,58 @@ addStripe -nets {gnd! vdd!} -layer $stripe_layer -direction $stripe_direction -w
 clearGlobalNets
 globalNetConnect vdd! -type pgpin -pin vdd! -inst * -module {}
 globalNetConnect gnd! -type pgpin -pin gnd! -inst * -module {}
+
+globalNetConnect vdd3r1! -type pgpin -pin vdd3r1! -inst io_* -module {}
+globalNetConnect vdd3r2! -type pgpin -pin vdd3r2! -inst io_* -module {}
+globalNetConnect vdd3o! -type pgpin -pin vdd3o! -inst io_* -module {}
+globalNetConnect gnd3r! -type pgpin -pin gnd3r! -inst io_* -module {}
+globalNetConnect gnd3o! -type pgpin -pin gnd3o! -inst io_* -module {}
+
+globalNetConnect vdd3r1! -type pgpin -pin vdd3r1! -inst CORNER* -module {}
+globalNetConnect vdd3r2! -type pgpin -pin vdd3r2! -inst CORNER* -module {}
+globalNetConnect vdd3o! -type pgpin -pin vdd3o! -inst CORNER* -module {}
+globalNetConnect gnd3r! -type pgpin -pin gnd3r! -inst CORNER* -module {}
+globalNetConnect gnd3o! -type pgpin -pin gnd3o! -inst CORNER* -module {}
+
+globalNetConnect vdd3r1! -type pgpin -pin vdd3r1! -inst pfill* -module {}
+globalNetConnect vdd3r2! -type pgpin -pin vdd3r2! -inst pfill* -module {}
+globalNetConnect vdd3o! -type pgpin -pin vdd3o! -inst pfill* -module {}
+globalNetConnect gnd3r! -type pgpin -pin gnd3r! -inst pfill* -module {}
+globalNetConnect gnd3o! -type pgpin -pin gnd3o! -inst pfill* -module {}
+
+globalNetConnect vdd3r1! -type pgpin -pin vdd3r1! -inst PWR1 -module {}
+globalNetConnect vdd3r2! -type pgpin -pin vdd3r2! -inst PWR1 -module {}
+globalNetConnect vdd3o! -type pgpin -pin vdd3o! -inst PWR1 -module {}
+globalNetConnect gnd3r! -type pgpin -pin gnd3r! -inst PWR1 -module {}
+globalNetConnect gnd3o! -type pgpin -pin gnd3o! -inst PWR1 -module {}
+
+
+globalNetConnect gnd3r! -type pgpin -pin gnd3r! -inst GND1 -module {}
+globalNetConnect gnd3o! -type pgpin -pin gnd3o! -inst GND1 -module {}
+globalNetConnect vdd3r1! -type pgpin -pin vdd3r1! -inst GND1 -module {}
+globalNetConnect vdd3r2! -type pgpin -pin vdd3r2! -inst GND1 -module {}
+globalNetConnect vdd3o! -type pgpin -pin vdd3o! -inst GND1 -module {}
+
+globalNetConnect vdd3r1! -type pgpin -pin vdd3r1! -inst PWR2 -module {}
+globalNetConnect vdd3r2! -type pgpin -pin vdd3r2! -inst PWR2 -module {}
+globalNetConnect vdd3o! -type pgpin -pin vdd3o! -inst PWR2 -module {}
+globalNetConnect gnd3r! -type pgpin -pin gnd3r! -inst PWR2 -module {}
+globalNetConnect gnd3o! -type pgpin -pin gnd3o! -inst PWR2 -module {}
+
+
+globalNetConnect gnd3r! -type pgpin -pin gnd3r! -inst GND2 -module {}
+globalNetConnect gnd3o! -type pgpin -pin gnd3o! -inst GND2 -module {}
+globalNetConnect vdd3r1! -type pgpin -pin vdd3r1! -inst GND2 -module {}
+globalNetConnect vdd3r2! -type pgpin -pin vdd3r2! -inst GND2 -module {}
+globalNetConnect vdd3o! -type pgpin -pin vdd3o! -inst GND2 -module {}
+
+globalNetConnect gnd3r! -type pgpin -pin gnd3r! -inst PWR3 -module {}
+globalNetConnect gnd3o! -type pgpin -pin gnd3o! -inst PWR3 -module {}
+globalNetConnect vdd3r1! -type pgpin -pin vdd3r1! -inst PWR3 -module {}
+globalNetConnect vdd3r2! -type pgpin -pin vdd3r2! -inst PWR3 -module {}
+globalNetConnect vdd3o! -type pgpin -pin vdd3o! -inst PWR3 -module {}
+
+
 globalNetConnect vdd! -type pgpin -pin A -inst PWR1 -module {}
 globalNetConnect vdd! -type pgpin -pin A -inst PWR2 -module {}
 globalNetConnect vdd! -type pgpin -pin A -inst PWR3 -module {}
@@ -100,7 +179,7 @@ globalNetConnect gnd! -type pgpin -pin A -inst GND2 -module {}
 #Pour faire les stripe d'alimentation à l'horizontal
 setSrouteMode -viaConnectToShape { noshape }
 
-sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { MET1(1) MET4(4) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { MET1(1) MET4(4) } -nets { gnd! vdd! } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { MET1(1) MET4(4) }
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { MET1 MET4 } -blockPinTarget {nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { MET1 MET4 } -nets { gnd! vdd! } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { MET1 MET4 }
 
 editPowerVia -add_vias 1
 
