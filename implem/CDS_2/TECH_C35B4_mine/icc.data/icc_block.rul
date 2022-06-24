@@ -1,0 +1,144 @@
+; DFII-IC Craftsman Translation Rules
+; Title: icc_block.rul
+; Technology File: TECH_C35B4
+; Creation Date: 22-03-2002 by ghe
+
+iccRevision = "11.0"
+iccTechnologyFile = "TECH_C35B4"
+
+iccLayers =
+    list(
+	list( '("MET4" "drawing") "metal" "vertical" 0.6 0.6 nil t)
+	list( '("VIA3" "drawing") "cut" "off" 0.5 0.45 nil t)
+	list( '("MET3" "drawing") "metal" "horizontal" 0.6 0.5 nil t)
+	list( '("VIA2" "drawing") "cut" "off" 0.5 0.45 nil t)
+	list( '("MET2" "drawing") "metal" "vertical" 0.6 0.5 nil t)
+	list( '("VIA1" "drawing") "cut" "off" 0.5 0.45 nil t)
+	list( '("MET1" "drawing") "metal" "horizontal" 0.5 0.45 nil t)
+    )
+
+iccVias =
+    list(
+	list( '("TECH_C35B4" "VIA3_C" "symbolic") t)
+	list( '("TECH_C35B4" "VIA2_C" "symbolic") t)
+	list( '("TECH_C35B4" "VIA1_C" "symbolic") t)
+    )
+
+iccEquivalentLayers =
+    list(
+	list(
+	    '("MET4" "drawing")
+	    '("MET4" "boundary")
+	    '("MET4" "pin")
+	    '("PIN"  "metal4")
+	)
+	list(
+	    '("VIA3" "drawing")
+	    '("VIA3" "pin")
+	)
+	list(
+	    '("MET3" "drawing")
+	    '("MET3" "boundary")
+	    '("MET3" "pin")
+	    '("PIN"  "metal3")
+	)
+	list(
+	    '("VIA2" "drawing")
+	    '("VIA2" "pin")
+	)
+	list(
+	    '("MET2" "drawing")
+	    '("MET2" "boundary")
+	    '("MET2" "pin")
+	    '("PIN"  "metal2")
+	)
+	list(
+	    '("VIA1" "drawing")
+	    '("VIA1" "pin")
+	)
+	list(
+	    '("MET1" "drawing")
+	    '("MET1" "boundary")
+	    '("MET1" "pin")
+	    '("PIN"  "metal1")
+	)
+    )
+
+iccBoundaryLayers =
+    list(
+	list( '("MET4" "drawing") '("prBoundary" "drawing") 0.0)
+	list( '("VIA3" "drawing") '("prBoundary" "drawing") 0.0)
+	list( '("MET3" "drawing") '("prBoundary" "drawing") 0.0)
+	list( '("VIA2" "drawing") '("prBoundary" "drawing") 0.0)
+	list( '("MET2" "drawing") '("prBoundary" "drawing") 0.0)
+	list( '("VIA1" "drawing") '("prBoundary" "drawing") 0.0)
+	list( '("MET1" "drawing") '("prBoundary" "drawing") 0.0)
+    )
+
+iccScopes = list(
+)
+
+iccKeepouts = list(
+    list( nil list(
+	list(
+	    "=>" list('("MET4" "drawing"))
+	    '("MET4" "drawing") "routing" t
+	)
+	list(
+	    "=>" list('("VIA3" "drawing"))
+	    '("VIA3" "drawing") "routing" t
+	)
+	list(
+	    "=>" list('("MET3" "drawing"))
+	    '("MET3" "drawing") "routing" t
+	)
+	list(
+	    "=>" list('("VIA2" "drawing"))
+	    '("VIA2" "drawing") "routing" t
+	)
+	list(
+	    "=>" list('("MET2" "drawing"))
+	    '("MET2" "drawing") "routing" t
+	)
+	list(
+	    "=>" list('("VIA1" "drawing"))
+	    '("VIA1" "drawing") "routing" t
+	)
+	list(
+	    "=>" list('("MET1" "drawing"))
+	    '("MET1" "drawing") "routing" t
+	)
+	list(
+	    "=>" list('("prBoundary" "boundary"))
+	    '("MET4" "drawing") "routing" t
+	)
+	list(
+	    "=>" list('("prBoundary" "boundary"))
+	    '("VIA3" "drawing") "routing" t
+	)
+	list(
+	    "=>" list('("prBoundary" "boundary"))
+	    '("MET3" "drawing") "routing" t
+	)
+	list(
+	    "=>" list('("prBoundary" "boundary"))
+	    '("VIA2" "drawing") "routing" t
+	)
+	list(
+	    "=>" list('("prBoundary" "boundary"))
+	    '("MET2" "drawing") "routing" t
+	)
+	list(
+	    "=>" list('("prBoundary" "boundary"))
+	    '("VIA1" "drawing") "routing" t
+	)
+	list(
+	    "=>" list('("prBoundary" "boundary"))
+	    '("MET1" "drawing") "routing" t
+	)
+    )   32)
+)
+
+iccConductors = list(
+)
+

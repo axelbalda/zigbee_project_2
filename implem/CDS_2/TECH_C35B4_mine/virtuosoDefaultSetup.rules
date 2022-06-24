@@ -1,0 +1,15 @@
+keepouts =
+MET4 => MET4
+VIA3 => VIA3
+MET3 => MET3
+VIA2 => VIA2
+MET2 => MET2
+VIA1 => VIA1
+MET1 => MET1
+prBoundary => MET4
+prBoundary => VIA3
+prBoundary => MET3
+prBoundary => VIA2
+prBoundary => MET2
+prBoundary => VIA1
+prBoundary => MET1

@@ -1,0 +1,17 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.7 - CAT35 09/07/2016 20:55 (sjfnl139) $
+\o Sub version:		sub-version  s025 
+\o Arguments:		-display :0 -mpssession virtuoso27704 -mpshost cimeld10 -namespace CDBA -cdslib /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/CDS_2/cds.lib 
+\o Working Directory:	cimeld10:/tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/CDS_2
+\o 64-bit offsets
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		4.8.5
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 0 0)
+\o Active cell: 0 0 "analogLib"
+\a nrResizeWindow(cdsLibEditor list(28 58 500 400))
+\a nrResizeWindow(cdsLibEditor list(28 58 1309 483))
+\a nrListItemAction(cdsLibEditor->mainTable 44 1)
+\o Active cell: 44 1 "/tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/CDS_2/TECH_C35B4_mine"
+\a cdsLibEditor->fileExitButton->value = t
+\a nrSetWindowVisibility(cdsLibEditor "hide")
+\a exit(0)

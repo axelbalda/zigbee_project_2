@@ -1,0 +1,151 @@
+######################################################
+# strmInOut.layertable
+######################################################
+# Generated from TECH_C35B4 techfile 
+######################################################
+# Owner: austriamicrosystems
+# HIT-Kit: Internal
+######################################################
+# Changes:
+#
+######################################################
+#
+#            DF Layer             |    GDSII  Layer
+# Name                  Purpose   |   Number  DataType
+#-----------------------------------------------------
+#
+marker         		error          	0	0
+ZERO           		TSV            	2	10
+TRENCH         		drawing        	3	0
+NTUB           		drawing        	5	0
+FIMP           		drawing        	8	0
+FIMP           		pfi            	8	1
+DIFF           		drawing        	10	0
+PFIMP          		drawing        	12	0
+PFIMP          		HV             	12	1
+HVDEF          		drawing        	13	0
+MIDOX          		drawing        	14	0
+POLY1          		drawing        	20	0
+NLDD           		drawing        	21	0
+PLDD           		drawing        	22	0
+NPLUS          		drawing        	23	0
+PPLUS          		drawing        	24	0
+PPLUS          		dpl            	24	1
+PPLUS          		VTA            	24	2
+HRES           		drawing        	29	0
+POLY2          		drawing        	30	0
+SALEX          		drawing        	32	0
+CONT           		drawing        	34	0
+CONT           		TWC            	34	60
+MET1           		drawing        	35	0
+MET1           		hol            	35	1
+MET1           		TWC            	35	60
+VIA1           		drawing        	36	0
+MET2           		drawing        	37	0
+MET2           		hol            	37	1
+VIA2           		drawing        	38	0
+MET3           		drawing        	39	0
+MET3           		hol            	39	1
+PAD            		drawing        	40	0
+PAD            		TSV            	40	10
+PAD            		PILLAR         	40	20
+PAD            		BARC           	40	40
+PAD            		EBARC          	40	41
+PAD            		TWC            	40	60
+VIA3           		drawing        	41	0
+VIA3           		TWC            	41	60
+MET4           		drawing        	42	0
+MET4           		hol            	42	1
+MET4           		TSV            	42	10
+MET4           		TWC            	42	60
+VIAT           		drawing        	43	0
+VIAT           		TSV            	43	10
+LVTA           		drawing        	46	0
+LVPTUB         		drawing        	47	0
+NLDD50         		drawing        	53	0
+METCAP         		drawing        	55	0
+PCOAT          		drawing        	59	0
+PCOAT          		black          	59	9
+PCOAT          		clear          	59	10
+PCOAT          		red            	59	11
+PCOAT          		green          	59	12
+PCOAT          		blue           	59	13
+PCOAT          		PCM            	59	20
+text           		drawing        	61	0
+PIN            		poly1          	61	1
+PIN            		metal1         	61	2
+PIN            		metal2         	61	3
+PIN            		metal3         	61	4
+PIN            		metal4         	61	5
+PIN            		pad            	61	10
+PIN            		UBM            	61	12
+PIN            		NTUB           	61	15
+PIN            		NDIFF          	61	18
+PIN            		PDIFF          	61	19
+NET            		poly1          	61	21
+NET            		metal1         	61	22
+NET            		metal2         	61	23
+NET            		metal3         	61	24
+NET            		metal4         	61	25
+NET            		pad            	61	30
+NET            		RDLVIA1        	61	40
+NET            		RDL            	61	41
+NET            		RDLVIA2        	61	42
+NET            		UBM            	61	43
+PIN            		pin            	61	50
+CELBOX         		drawing        	62	1
+SFCDEF         		drawing        	62	2
+SUBDEF         		drawing        	62	3
+HOTTUB         		drawing        	62	4
+NOFILL         		drawing        	62	5
+IPDEF          		drawing        	62	6
+IPDEF          		keepout        	62	7
+ZENER          		drawing        	62	10
+DIODE          		drawing        	62	11
+TUBDEF         		drawing        	62	12
+RESDEF         		drawing        	62	13
+RESTRM         		drawing        	62	14
+METRES         		drawing        	62	15
+METRES         		metal1         	62	16
+METRES         		metal2         	62	17
+METRES         		metal3         	62	18
+METRES         		metal4         	62	19
+CAPDEF         		drawing        	62	20
+INDDEF         		drawing        	62	22
+HALDEF         		drawing        	62	24
+RFDEF          		drawing        	62	26
+PROBE          		drawing        	62	27
+LVTDEF         		drawing        	62	28
+FIDEF          		drawing        	62	29
+DIFCUT         		drawing        	62	30
+PO1CUT         		drawing        	62	31
+PO2CUT         		drawing        	62	32
+TUBCUT         		drawing        	62	34
+DEVDEF         		drawing        	62	38
+DEVDEF         		pfuse          	62	39
+DEVDEF         		opto           	62	40
+DEVDEF         		pin            	62	41
+DEVDEF         		diode          	62	42
+CHIPEDGE       		drawing        	62	50
+METRES         		via1           	62	56
+METRES         		via2           	62	57
+METRES         		via3           	62	58
+marker         		error          	63	0
+FILTER         		black          	65	9
+FILTER         		clear          	65	10
+FILTER         		PASLIT         	65	25
+FILTER         		SHAPAS         	65	26
+FILTER         		RIP            	65	30
+FILTER         		UVIRBL         	65	35
+FILTER         		VISBL          	65	36
+FILTER         		UVVISBL        	65	37
+FILTER         		VISIRBL        	65	38
+FILTER         		green1         	65	40
+FILTER         		green2         	65	41
+FILTER         		blue1          	65	45
+FILTER         		blue2          	65	46
+FILTER         		red1           	65	50
+FILTER         		red2           	65	51
+FILTER         		ULENS          	65	60
+FILTER         		UVF            	65	62
+TRECUT         		drawing        	74	0
