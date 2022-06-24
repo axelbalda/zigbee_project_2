@@ -1,0 +1,1 @@
+0 ../../../rtl/CODER/msk_modulator2.sv

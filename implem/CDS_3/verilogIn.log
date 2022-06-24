@@ -1,0 +1,80 @@
+@(#)$CDS: ihdl version 6.1.7-64b 09/27/2016 19:43 (sjfhw305) $  Fri Jun 24 22:49:49 2022
+
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module OAI222. Therefore using library
+CORELIB, cell OAI222, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module OAI212. Therefore using library
+CORELIB, cell OAI212, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module ADD22. Therefore using library
+CORELIB, cell ADD22, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module ADD32. Therefore using library
+CORELIB, cell ADD32, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module DF3. Therefore using library
+CORELIB, cell DF3, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module JK3. Therefore using library
+CORELIB, cell JK3, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module DFE1. Therefore using library
+CORELIB, cell DFE1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module NOR21. Therefore using library
+CORELIB, cell NOR21, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module NAND22. Therefore using library
+CORELIB, cell NAND22, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module IMUX21. Therefore using library
+CORELIB, cell IMUX21, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module MUX22. Therefore using library
+CORELIB, cell MUX22, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module IMUX40. Therefore using library
+CORELIB, cell IMUX40, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module XOR31. Therefore using library
+CORELIB, cell XOR31, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module LOGIC1. Therefore using library
+CORELIB, cell LOGIC1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module LOGIC0. Therefore using library
+CORELIB, cell LOGIC0, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module INV3. Therefore using library
+CORELIB, cell INV3, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module XOR21. Therefore using library
+CORELIB, cell XOR21, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module NOR31. Therefore using library
+CORELIB, cell NOR31, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module AOI211. Therefore using library
+CORELIB, cell AOI211, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module BUF2. Therefore using library
+CORELIB, cell BUF2, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module XNR21. Therefore using library
+CORELIB, cell XNR21, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module XNR31. Therefore using library
+CORELIB, cell XNR31, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module AOI221. Therefore using library
+CORELIB, cell AOI221, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module NOR40. Therefore using library
+CORELIB, cell NOR40, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module NAND31. Therefore using library
+CORELIB, cell NAND31, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module BUF6. Therefore using library
+CORELIB, cell BUF6, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module AOI311. Therefore using library
+CORELIB, cell AOI311, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module MAJ31. Therefore using library
+CORELIB, cell MAJ31, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module OAI311. Therefore using library
+CORELIB, cell OAI311, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module AOI2111. Therefore using library
+CORELIB, cell AOI2111, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module OAI2111. Therefore using library
+CORELIB, cell OAI2111, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module NAND41. Therefore using library
+CORELIB, cell NAND41, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module INV6. Therefore using library
+CORELIB, cell INV6, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module CLKIN3. Therefore using library
+CORELIB, cell CLKIN3, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module OAI2112. Therefore using library
+CORELIB, cell OAI2112, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module IMAJ31. Therefore using library
+CORELIB, cell IMAJ31, and view symbol as the symbol.
+INFO (VERILOGIN-575): Symbol 'TOP' was not imported because it already exists in library 'test_drc_final'.
+To overwrite the symbol, select an appropriate option from the Overwrite Symbol
+Views drop-down list and try again.
+INFO (VERILOGIN-376): Schematic for TOP exists in the library test_drc_final. Not imported since the overwrite
+option is set to off.
+INFO (VERILOGIN-206): End of Logfile.

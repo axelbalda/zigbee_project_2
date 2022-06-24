@@ -1,0 +1,20 @@
+ncvlog: *W,DLNOHV: Unable to find an 'hdl.var' file to load in.
+TOOL:	ncvlog(64)	15.20-s035: Started on Jun 24, 2022 at 22:49:50 CEST
+ncvlog
+    -use5x
+    -work __nclib
+    -view module
+    -logfile ncvlog.log
+    -cdslib /tmp/ihdl_cdslibb8409_28409
+    -messages
+    -nostdout
+    -nocopyright
+    -ESCAPEDNAME
+    /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/pnr/PNR_TOP_FINAL/INPUT_DATA/TOP_netlist.v
+
+file: /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/pnr/PNR_TOP_FINAL/INPUT_DATA/TOP_netlist.v
+	module __nclib.TOP:module
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+TOOL:	ncvlog(64)	15.20-s035: Exiting on Jun 24, 2022 at 22:49:50 CEST  (total: 00:00:00)

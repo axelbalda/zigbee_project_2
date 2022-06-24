@@ -1,0 +1,305 @@
+SpyGlass run started at 01:52:03 PM on Jun 16 2022 
+
+SpyGlass Predictive Analyzer(R) - Version 5.6.0
+Last compiled on Dec 15 2015
+
+All Rights Reserved. Use, disclosure or duplication
+without prior written permission of Synopsys Inc. is prohibited.
+Technical support: email spyglass_support@synopsys.com.
+
+
+Running SpyGlass 64-bit Executable: /softl3/spyglass5_6_0/SpyGlass-5.6.0/SPYGLASS_HOME/obj/check.Linux4
+
+RULE-CHECKING IN MIXED MODE
+Loading Policy: spyglass (Version: 5.6.0) from path: /softl3/spyglass5_6_0/SpyGlass-5.6.0/SPYGLASS_HOME/policies/spyglass
+Loading Shared library libspyglassrules-Linux4.spyso from /softl3/spyglass5_6_0/SpyGlass-5.6.0/SPYGLASS_HOME/lib/libspyglassrules-Linux4.spyso 
+Loading Shared library libsdcInitRules-Linux4.spyso from /softl3/spyglass5_6_0/SpyGlass-5.6.0/SPYGLASS_HOME/lib/libsdcInitRules-Linux4.spyso 
+Loading Shared library librmerules-Linux4.spyso from /softl3/spyglass5_6_0/SpyGlass-5.6.0/SPYGLASS_HOME/lib/librmerules-Linux4.spyso 
+##build_id : 5.6.0
+##system   : Linux cimeld33.cime.inpg.fr 2.6.32-754.35.1.el6.x86_64 #1 SMP Wed Sep 16 06:48:01 EDT 2020 x86_64
+##cwd      : /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/synth/CODER
+##lang     : Verilog+VHDL
+##args     : -mSpyGlass::Compatibility::v2_7_3 \
+             -mSpyGlass::Compatibility::v2_7_3 \
+             -mSpyGlass::Compatibility::v2_7_3 \
+             -I '/softslin/spyglass5_6_0/SpyGlass-5.6.0/SPYGLASS_PHYSICAL_HOME/common/sgphysical/policies/physical' \
+             -nl \
+             -wdir './spyglass-1/Design_Read' \
+             -lib WORK ./spyglass-1/WORK \
+             -mixed \
+             -batch \
+             -policy='none' \
+             --goal_info 'Design_Read@' \
+             -projectwdir './spyglass-1' \
+             -templatedir '/softl3/spyglass5_6_0/SpyGlass-5.6.0/SPYGLASS_HOME/auxi/policy_data/spyglass/design_read' \
+             --template_info 'Design_Read' \
+             -64bit  \
+             ../../../rtl/CODER/msk_modulator2.sv
+
+##verbosity level   : 2
+##exact cmdline arg : -batch -project spyglass-1.prj -designread  -64bit
+##spyglass_run.csh begins :
+;	cd /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/synth/CODER
+;	setenv ATRENTA_LICENSE_FILE 1721@cimekey1
+;	setenv SPYGLASS_LD_PRELOAD /softl3/spyglass5_6_0/SpyGlass-5.6.0/SPYGLASS_HOME/lib/libsgjemalloc-Linux4.so
+;	setenv SPYGLASS_DW_PATH /softl3/spyglass5_6_0/SpyGlass-5.6.0/SPYGLASS_HOME/dw_support
+;	/softl3/spyglass5_6_0/SpyGlass-5.6.0/SPYGLASS_HOME/bin/spyglass  -batch -project spyglass-1.prj -designread  -64bit
+##spyglass_run.csh ends
+##files    : ../../../rtl/CODER/msk_modulator2.sv 
+
+
+INFO [6]    Work Directory `./spyglass-1/WORK' does not exist.
+
+INFO [75]    Creating the Work Directory `./spyglass-1/WORK/64' for 64bit  precompiled dump.
+Checking Rule ZeroSizeFile (Rule 1 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule PrecompileLibCheck01 (Rule 2 of total 98) .... done (Time = 0.00s, Memory = -1.2K)
+Checking Rule PrecompileLibCheck02 (Rule 3 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule PrecompileLibCheck03 (Rule 4 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule PrecompileLibCheck04 (Rule 5 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_assume_path01 (Rule 6 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_sdcschema02 (Rule 7 of total 98) .... done (Time = 0.00s, Memory = 33.3K)
+Checking Rule SGDC_clock05 (Rule 8 of total 98) .... done (Time = 0.00s, Memory = -2.2K)
+Checking Rule SGDC_clock09 (Rule 9 of total 98) .... done (Time = 0.00s, Memory = 3.6K)
+Checking Rule SGDC_force_ta05 (Rule 10 of total 98) .... done (Time = 0.00s, Memory = -1.0K)
+Checking Rule SGDC_require_path03 (Rule 11 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_require_value03 (Rule 12 of total 98) .... done (Time = 0.00s, Memory = 32.0K)
+Checking Rule SGDC_voltagedomain05 (Rule 13 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_voltagedomain06 (Rule 14 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_voltagedomain07 (Rule 15 of total 98) .... done (Time = 0.00s, Memory = 17.0K)
+Checking Rule SGDC_powerdomainoutputs02 (Rule 16 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_supply01 (Rule 17 of total 98) .... done (Time = 0.00s, Memory = -8.0K)
+Checking Rule SGDC_waive01 (Rule 18 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive02 (Rule 19 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive03 (Rule 20 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive04 (Rule 21 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive05 (Rule 22 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive06 (Rule 23 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive07 (Rule 24 of total 98) .... done (Time = 0.00s, Memory = -0.4K)
+Checking Rule SGDC_waive08 (Rule 25 of total 98) .... done (Time = 0.00s, Memory = -0.2K)
+Checking Rule SGDC_waive09 (Rule 26 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive10 (Rule 27 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive11 (Rule 28 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive12 (Rule 29 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive13 (Rule 30 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive21 (Rule 31 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive22 (Rule 32 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive30 (Rule 33 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive32 (Rule 34 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive33 (Rule 35 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive36 (Rule 36 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive38 (Rule 37 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_fifo01 (Rule 38 of total 98) .... done (Time = 0.00s, Memory = 1.6K)
+Checking Rule SGDC_libgroup01 (Rule 39 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_libgroup02 (Rule 40 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_libgroup04 (Rule 41 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_power_data01 (Rule 42 of total 98) .... done (Time = 0.00s, Memory = 15.0K)
+Checking Rule SGDC_ungroup01 (Rule 43 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_abstract_port06 (Rule 44 of total 98) .... done (Time = 0.00s, Memory = 16.6K)
+Checking Rule SGDC_abstract_port14 (Rule 45 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_abstract_port15 (Rule 46 of total 98) .... done (Time = 0.00s, Memory = 32.8K)
+Checking Rule SGDC_abstract_port18 (Rule 47 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule sdc_init_rule (Rule 48 of total 98) .... done (Time = 0.00s, Memory = 80.6K)
+Checking Rule CMD_ignorelibs01 (Rule 49 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule ReportRuleNotRun (Rule 50 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule ReportStopSummary (Rule 51 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule ReportIgnoreSummary (Rule 52 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+##SGDEBUG [BENCHMARK_ABSOLUTE]: Analysis started: 0 sec, 445417 KB, 1929700 KB
+##SGDEBUG [BENCHMARK_INCR]: Analysis started: 0 sec, 445417 KB, 1929700 KB
+ Analyzing source file "../../../rtl/CODER/msk_modulator2.sv" ....
+ STX_VE_269          -            -            Syntax                        
+ STX_VE_269          -            -            Syntax                        
+ STX_VE_481          -            -            Syntax                        
+ STX_VE_481          -            -            Syntax                        
+ STX_VE_481          -            -            Syntax                        
+ STX_VE_481          -            -            Syntax                        
+ STX_VE_479          -            -            Syntax                        
+ STX_VE_479          -            -            Syntax                        
+ STX_VE_479          -            -            Syntax                        
+ STX_VE_479          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+ STX_VE_606          -            -            Syntax                        
+##SGDEBUG [BENCHMARK_ABSOLUTE]: Analysis finished: 0 sec, 513323 KB, 1997540 KB
+##SGDEBUG [BENCHMARK_INCR]: Analysis finished: 0 sec, 67906 KB, 67840 KB
+***Syntax Errors detected - RULE CHECKING ABORTED***
+Checking Rule ReportCheckDataSummary (Rule 53 of total 98) .... done (Time = 0.00s, Memory = 0.0K)
+
+SpyGlass Rule Checking ABORTED.
+
+Generating data for Console...
+
+Generating moresimple report from './spyglass-1/Design_Read/spyglass.vdb' to './spyglass-1/Design_Read/spyglass_reports/moresimple.rpt' ....
+
+Generating runsummary report from './spyglass-1/Design_Read/spyglass.vdb' ....
+
+Generating no_msg_reporting_rules report from './spyglass-1/Design_Read/spyglass.vdb' to './spyglass-1/Design_Read/spyglass_reports/no_msg_reporting_rules.rpt' ....
+
+Policy specific data (reports) are present in the directory './spyglass-1/Design_Read/spyglass_reports'.
+
+SpyGlass critical reports for the current run are present in directory './spyglass-1/consolidated_reports/Design_Read/'.
+##SGDEBUG [PEAK_MEMORY]: 1997540 KB for entire run at 'Analysis finished' stage
+##SGDEBUG [VMPEAK_MEMORY]: 2001632 KB for entire run
+##SGDEBUG [BENCHMARK_ABSOLUTE]: Rule checking aborted: 0 sec, 514407 KB, 1990652 KB
+##SGDEBUG [BENCHMARK_INCR]: Rule checking aborted: 0 sec, 1084 KB, -6888 KB
+
+
+=====================================================================================
+							Rule Parameter Table
+=====================================================================================
+
+	PARAMETER-NAME                                     VALUE
+-------------------------------------------------------------------------------------
+	-allow_clock_on_output_port                        no
+	-check_clock_group_violations                      no
+	-debug_proc                                        no
+	-force_genclk_for_txv                              no
+	-library_gen_clock_naming                          no
+	-netlist_clock_polarity                            yes
+	-preserve_path                                     no
+	-pt                                                no
+	-show_all_sdc_violations                           no
+	-show_sdc_progress                                 no
+	-suppress_sdc_violation_in_abstract                no
+	-truncate_through                                  yes
+	-write_sdc                                         no
+=====================================================================================
+
+
+
+=====================================================================================
+                               Rule Status Table
+
+ RULE-NAME                      POLICY-NAME     ENABLED VIOL-CNT RULE-TYPE   ERROR-MSG         
+=====================================================================================
+ STX_VE_606           (Verilog) SpyGlass        Yes           54 SETUP          -               
+ STX_VE_481           (Verilog) SpyGlass        Yes            4 SETUP          -               
+ STX_VE_479           (Verilog) SpyGlass        Yes            4 SETUP          -               
+ STX_VE_269           (Verilog) SpyGlass        Yes            2 SETUP          -               
+-------------------------------------------------------------------------------------
+Note: VSDU type of rules (as seen in the above table) are not run on
+      unsynthesized modules reported by 'ErrorAnalyzeBBox/InfoAnalyzeBBox' messages
+      (Please see messages starting with keyword 'UnsynthesizedDU')
+
+##status : SpyGlass Rule Checking Aborted.
+
+---------------------------------------------------------------------------------------------
+Results Summary:
+---------------------------------------------------------------------------------------------
+   Goal Run           :      Design_Read
+** Design Read        :     64 fatals,     0 error,        0 warning,      0 information message 
+   -------------------------------------------------------------------------------------
+** Total              :     64 fatals,     0 error,        0 warning,      0 information message 
+
+  Total Number of Generated Messages     :        64 (64 fatals, 0 error, 0 warning, 0 Info)
+  Number of Reported Messages            :        64 (64 fatals, 0 error, 0 warning, 0 Info)
+
+  NOTE: It is recommended to first fix/reconcile fatals/errors reported on
+        lines starting with ** as subsequent issues might be related to it.
+        Please re-run SpyGlass once ** prefixed lines are fatal/error clean.
+
+---------------------------------------------------------------------------------------------
+
+First 10 FATAL message(s) generated in current run are -
+
+Rule         Severity   File                                   Line   Message
+-------------------------------------------------------------------------
+STX_VE_269   Syntax     ../../../rtl/CODER/msk_modulator2.sv   1      Incompatible declaration, ( i_empty ) defined as input at line no < 1 >
+STX_VE_269   Syntax     ../../../rtl/CODER/msk_modulator2.sv   1      Incompatible declaration, ( i_data ) defined as input at line no < 1 >
+STX_VE_481   Syntax     ../../../rtl/CODER/msk_modulator2.sv   29     Syntax error near ( reg )
+STX_VE_481   Syntax     ../../../rtl/CODER/msk_modulator2.sv   30     Syntax error near ( reg )
+STX_VE_481   Syntax     ../../../rtl/CODER/msk_modulator2.sv   31     Syntax error near ( , )
+STX_VE_481   Syntax     ../../../rtl/CODER/msk_modulator2.sv   32     Syntax error near ( , )
+STX_VE_479   Syntax     ../../../rtl/CODER/msk_modulator2.sv   37     Syntax error near ( [ ). Please use 'set_option enableSV yes' to support SystemVerilog construct ( Multiple packed dimensions )
+STX_VE_479   Syntax     ../../../rtl/CODER/msk_modulator2.sv   51     Syntax error near ( [ ). Please use 'set_option enableSV yes' to support SystemVerilog construct ( Multiple packed dimensions )
+STX_VE_479   Syntax     ../../../rtl/CODER/msk_modulator2.sv   67     Syntax error near ( [ ). Please use 'set_option enableSV yes' to support SystemVerilog construct ( Multiple packed dimensions )
+STX_VE_479   Syntax     ../../../rtl/CODER/msk_modulator2.sv   73     Syntax error near ( [ ). Please use 'set_option enableSV yes' to support SystemVerilog construct ( Multiple packed dimensions )
+
+Please refer ./spyglass-1/Design_Read/spyglass_reports directory for SpyGlass reports, or use SpyGlass GUI to see all FATAL messages.
+
+FATAL : Rule-checking aborted - design syntax error
+
+---------------------------------------------------------------------------------------------------
+Results Summary:
+---------------------------------------------------------------------------------------------------
+   Goal Run           :      Design_Read
+   Top Module         :      
+---------------------------------------------------------------------------------------------------
+   Reports Directory: 
+   /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/synth/CODER/spyglass-1/consolidated_reports/Design_Read/ 
+
+   SpyGlass LogFile: 
+    /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/synth/CODER/spyglass-1/Design_Read/spyglass.log 
+
+   Standard Reports: 
+     moresimple.rpt          no_msg_reporting_rules.rpt       
+
+   HTML report:
+    /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/synth/CODER/spyglass-1/html_reports/goals_summary.html
+  
+
+   Technology Reports:  
+     <Not Available>
+   
+   
+---------------------------------------------------------------------------------------------------
+   Goal Violation Summary:
+       Waived   Messages:                      0 Errors,      0 Warnings,      0 Infos
+       Reported Messages:        64 Fatals,    0 Errors,      0 Warnings,      0 Infos
+---------------------------------------------------------------------------------------------------
+   
+---------------------------------------------------------------------------------------------------
+ 
+SpyGlass Exit Code 6 (Rule-checking terminated due to FATAL errors - design syntax error)
+SpyGlass total run-time is 0:0:1 (1 secs)
+SpyGlass run completed at 01:55:09 PM on Jun 16 2022

@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version J-2014.09-SP2 for amd64 -- Nov 25, 2014
-#@ # Date:   Fri Jun 24 18:17:17 2022
+#@ # Date:   Fri Jun 24 18:47:42 2022
 #@ # Run by: xph2app1@cimeld10
 #@ 
 
@@ -3891,8 +3891,8 @@ source script_synopsys_synth_WORST
 #@ set name_netlist "TOP_netlist7.v"
 #@ set name_sdc "TOP_7.sdc"
 #@ 
-#@ write -hierarchy -format verilog -output $var_path/../simu/post_synth/TOP/$name_netlist
-#@ write_sdc $var_path/../simu/post_synth/TOP/$name_sdc
+#@ write -hierarchy -format verilog -output $var_path/../simu/post_synth/$name_netlist
+#@ write_sdc $var_path/../simu/post_synth/$name_sdc
 #@ 
 #@ 
 #@ uplevel #0 { report_area }

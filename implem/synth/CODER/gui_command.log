@@ -1,0 +1,11 @@
+read_file -type verilog ../../../rtl/CODER/msk_modulator2.sv
+
+
+
+current_goal Design_Read -alltop
+
+
+link_design -force
+
+gui_exit
+gui_exit

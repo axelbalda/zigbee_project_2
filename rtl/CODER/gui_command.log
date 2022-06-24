@@ -1,0 +1,12 @@
+read_file -type verilog msk_modulator2.sv
+set_option enableSV yes
+
+
+
+current_goal Design_Read -alltop
+
+
+link_design -force
+
+gui_exit
+gui_exit

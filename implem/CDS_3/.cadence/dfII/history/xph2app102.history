@@ -1,0 +1,1 @@
+("TOP:/\tTOP test_drc_final schematic" (("open" (nil hierarchy "/{test_drc_final TOP schematic }:a"))) nil)("top_io:/\ttop_io test_drc_final layout" (("open" (nil hierarchy "/{test_drc_final top_io layout }:a"))) (((1888.649 428.453) (1889.627 429.168)) "a" "Layout" 9))
