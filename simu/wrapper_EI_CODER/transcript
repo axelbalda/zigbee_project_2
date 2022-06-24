@@ -14,7 +14,7 @@
 # //
 vsim Lib_Wrp_EI_COD.tb_wrapper_EI_CODER
 # vsim Lib_Wrp_EI_COD.tb_wrapper_EI_CODER 
-# Start time: 16:43:20 on Jun 02,2022
+# Start time: 17:53:10 on Jun 16,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Note: (vopt-143) Recognized 1 FSM in module "inFIFO(fast)".
 # ** Note: (vopt-143) Recognized 2 FSMs in module "msk_modulator(fast)".
@@ -35,5 +35,6 @@ vsim Lib_Wrp_EI_COD.tb_wrapper_EI_CODER
 do /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/simu/wrapper_EI_CODER/wave.do
 run
 run
-# End time: 16:43:40 on Jun 02,2022, Elapsed time: 0:00:20
+run
+# End time: 18:11:26 on Jun 16,2022, Elapsed time: 0:18:16
 # Errors: 0, Warnings: 5

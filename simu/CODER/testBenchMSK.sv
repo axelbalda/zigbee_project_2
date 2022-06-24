@@ -14,6 +14,51 @@ module msk_modulator_bench;
     
 	initial // initial block executes only once
 		begin
+			// values for a and b
+			reset = 1'b1;
+			i_empty = 1;
+			#period;
+			reset = 1'b0 ;
+			#(period*25); // wait for period 
+			reset = 1'b1 ;
+			i_empty = 0;
+			i_data = 0;
+			#(period*25);
+
+			i_data = 0;
+			#(period*25);
+
+			i_data = 1;
+			#(period*25);
+
+			i_data = 1;
+			#(period*25);
+
+			i_data = 0;
+			#(period*25);
+		
+			i_data = 1;
+			#(period*25);
+
+			i_data = 1;
+			#(period*25);
+
+			i_data = 1;
+			#(period*25);
+
+			i_data = 0;
+			#(period*25);
+			
+			i_data = 0;
+			#(period*25);
+
+			i_data = 0;
+			#(period*25);
+			
+			i_data = 0;
+			#(period*25);
+
+			// ________________________
 			
 			// values for a and b
 			reset = 1'b1;
