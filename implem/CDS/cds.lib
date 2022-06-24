@@ -58,3 +58,6 @@ DEFINE drc_test_lib /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project/i
 DEFINE test_drc /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project/implem/CDS/test_drc
 DEFINE test_drc /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/CDS/test_drc
 DEFINE test_drc_top /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/CDS/test_drc_top
+DEFINE test_drc_2 /calcul/zigbee_project_2/implem/CDS/test_drc_2
+DEFINE test_drc_3 /calcul/zigbee_project_2/implem/CDS/test_drc_3
+DEFINE test_drc_4 /calcul/zigbee_project_2/implem/CDS/test_drc_4

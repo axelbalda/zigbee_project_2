@@ -1,0 +1,776 @@
+[06/10 03:48:00      0s] 
+[06/10 03:48:00      0s] Cadence Innovus(TM) Implementation System.
+[06/10 03:48:00      0s] Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+[06/10 03:48:00      0s] 
+[06/10 03:48:00      0s] Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+[06/10 03:48:00      0s] Options:	
+[06/10 03:48:00      0s] Date:		Fri Jun 10 03:48:00 2022
+[06/10 03:48:00      0s] Host:		cimeld105 (x86_64 w/Linux 2.6.32-754.35.1.el6.x86_64) (8cores*8cpus*Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz 12288KB)
+[06/10 03:48:00      0s] OS:		Red Hat Enterprise Linux Server release 6.10 (Santiago)
+[06/10 03:48:00      0s] 
+[06/10 03:48:00      0s] License:
+[06/10 03:48:00      0s] 		invs	Innovus Implementation System	17.1	checkout succeeded
+[06/10 03:48:00      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[06/10 03:48:10      9s] @(#)CDS: Innovus v17.11-s080_1 (64bit) 08/04/2017 11:13 (Linux 2.6.18-194.el5)
+[06/10 03:48:10      9s] @(#)CDS: NanoRoute 17.11-s080_1 NR170721-2155/17_11-UB (database version 2.30, 390.7.1) {superthreading v1.44}
+[06/10 03:48:10      9s] @(#)CDS: AAE 17.11-s034 (64bit) 08/04/2017 (Linux 2.6.18-194.el5)
+[06/10 03:48:10      9s] @(#)CDS: CTE 17.11-s053_1 () Aug  1 2017 23:31:41 ( )
+[06/10 03:48:10      9s] @(#)CDS: SYNTECH 17.11-s012_1 () Jul 21 2017 02:29:12 ( )
+[06/10 03:48:10      9s] @(#)CDS: CPE v17.11-s095
+[06/10 03:48:10      9s] @(#)CDS: IQRC/TQRC 16.1.1-s215 (64bit) Thu Jul  6 20:18:10 PDT 2017 (Linux 2.6.18-194.el5)
+[06/10 03:48:10      9s] @(#)CDS: OA 22.50-p063 Fri Feb  3 19:45:13 2017
+[06/10 03:48:10      9s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[06/10 03:48:10      9s] @(#)CDS: RCDB 11.10
+[06/10 03:48:10      9s] --- Running on cimeld105 (x86_64 w/Linux 2.6.32-754.35.1.el6.x86_64) (8cores*8cpus*Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz 12288KB) ---
+[06/10 03:48:10      9s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_29081_cimeld105_xph2app102_pzG9EQ.
+
+[06/10 03:48:10      9s] Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+[06/10 03:48:11     10s] 
+[06/10 03:48:11     10s] **INFO:  MMMC transition support version v31-84 
+[06/10 03:48:11     10s] 
+[06/10 03:48:11     10s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[06/10 03:48:11     10s] <CMD> suppressMessage ENCEXT-2799
+[06/10 03:48:11     10s] <CMD> getDrawView
+[06/10 03:48:11     10s] <CMD> loadWorkspace -name Physical
+[06/10 03:48:11     10s] <CMD> win
+[06/10 03:48:24     11s] <CMD> encMessage warning 0
+[06/10 03:48:24     11s] Suppress "**WARN ..." messages.
+[06/10 03:48:24     11s] <CMD> encMessage debug 0
+[06/10 03:48:24     11s] <CMD> encMessage info 0
+[06/10 03:48:24     11s] **WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+[06/10 03:48:24     11s] **WARN: (IMPLF-228):	 ANTENNAOUTPUTDIFFAREA is specified and will be
+[06/10 03:48:24     11s] applied to any OUTPUT PIN or INOUT PIN without ANTENNADIFFAREA. This often
+[06/10 03:48:24     11s] causes a mismatch between process antenna violations found in Innovus
+[06/10 03:48:24     11s] (during routing or verification) and violations found by external physical
+[06/10 03:48:24     11s] verification tools. This global defaulting mechanism is obsolete in LEF
+[06/10 03:48:24     11s] 5.5. The recommended solution is to remove ANTENNAOUTPUTDIFFAREA and add
+[06/10 03:48:24     11s] ANTENNADIFFAREA to all OUTPUT or INOUT PINS in the MACROS in order to
+[06/10 03:48:24     11s] avoid a mismatch in violations.
+[06/10 03:48:24     11s] **WARN: (IMPLF-230):	 ANTENNAINOUTDIFFAREA is specified and will be
+[06/10 03:48:24     11s] applied to any INOUT PIN without ANTENNADIFFAREA. This often causes a
+[06/10 03:48:24     11s] mismatch between process antenna violations found in Innovus (during
+[06/10 03:48:24     11s] routing or verification) and violations found by external physical
+[06/10 03:48:24     11s] verification tools. This global defaulting mechanism is obsolete in
+[06/10 03:48:24     11s] LEF 5.5. The recommended solution is to remove ANTENNAINOUTDIFFAREA
+[06/10 03:48:24     11s] and add ANTENNADIFFAREA to all INOUT PINS in the MACROS in order to
+[06/10 03:48:24     11s] avoid a mismatch in violations.
+[06/10 03:48:24     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC16P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC16P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC16P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC16SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC16SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC16SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC16SP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC16SP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC16SP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC1P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC1P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC1P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC24P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC24P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC24P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC24SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC24SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC24SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC24SP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC24SP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC24SP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC4P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC4P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC4P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC4SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC4SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC4SMP' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'BBC8P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC8P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'BBC8P' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+[06/10 03:48:24     11s] To increase the message display limit, refer to the product command reference manual.
+[06/10 03:48:24     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC8SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBC8SP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD16P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD16SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD16SP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD1P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD24P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD24SMP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD24SP' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'BBCD4P' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/10 03:48:24     11s] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[06/10 03:48:24     11s] To increase the message display limit, refer to the product command reference manual.
+[06/10 03:48:24     11s] Loading view definition file from /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/pnr/PNR_TOP_ANTHO/WORK/dbs/route_enc.dat/viewDefinition.tcl
+[06/10 03:48:24     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADD21' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/10 03:48:24     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADD21' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/10 03:48:24     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADD22' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/10 03:48:24     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADD22' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/10 03:48:24     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADD31' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/10 03:48:24     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADD31' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/10 03:48:24     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADD32' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/10 03:48:24     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADD32' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/10 03:48:24     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI210' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/10 03:48:24     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI211' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/10 03:48:24     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI2110' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/10 03:48:24     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI2111' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/10 03:48:24     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI2112' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/10 03:48:24     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI212' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/10 03:48:24     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI220' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/10 03:48:24     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI221' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/10 03:48:24     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI222' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/10 03:48:24     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI310' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/10 03:48:24     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI311' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/10 03:48:24     11s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI312' is not defined in the library. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib)
+[06/10 03:48:24     11s] **ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 7673)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 7685)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 7816)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 7828)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 7959)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 7971)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8102)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8114)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8245)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8257)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8388)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8400)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8531)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8543)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8668)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8680)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8805)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8817)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8942)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /softl1/AMS_410_ISR15/liberty/c35_3.3V/c35_CORELIB_WC.lib, Line 8954)
+*** End library_loading (cpu=0.02min, real=0.03min, mem=21.0M, fe_cpu=0.22min, fe_real=0.43min, fe_mem=551.0M) ***
+[06/10 03:48:26     12s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'FILLANT25' is defined in LEF but not in the timing library.
+[06/10 03:48:26     12s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'FILLANT25' is defined in LEF but not in the timing library.
+[06/10 03:48:26     12s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'FILLANT10' is defined in LEF but not in the timing library.
+[06/10 03:48:26     12s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'FILLANT10' is defined in LEF but not in the timing library.
+[06/10 03:48:26     12s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'FILLANT5' is defined in LEF but not in the timing library.
+[06/10 03:48:26     12s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'FILLANT5' is defined in LEF but not in the timing library.
+[06/10 03:48:26     12s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'FILLANT2' is defined in LEF but not in the timing library.
+[06/10 03:48:26     12s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'FILLANT2' is defined in LEF but not in the timing library.
+[06/10 03:48:26     12s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'FILLANT1' is defined in LEF but not in the timing library.
+[06/10 03:48:26     12s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'FILLANT1' is defined in LEF but not in the timing library.
+[06/10 03:48:26     12s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'LOGIC1' is defined in LEF but not in the timing library.
+[06/10 03:48:26     12s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'LOGIC1' is defined in LEF but not in the timing library.
+[06/10 03:48:26     12s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'LOGIC0' is defined in LEF but not in the timing library.
+[06/10 03:48:26     12s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'LOGIC0' is defined in LEF but not in the timing library.
+[06/10 03:48:26     12s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'TIEHIGH' is defined in LEF but not in the timing library.
+[06/10 03:48:26     12s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'TIEHIGH' is defined in LEF but not in the timing library.
+[06/10 03:48:26     12s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'TIELOW' is defined in LEF but not in the timing library.
+[06/10 03:48:26     12s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'TIELOW' is defined in LEF but not in the timing library.
+[06/10 03:48:26     12s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'TIE1' is defined in LEF but not in the timing library.
+[06/10 03:48:26     12s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'TIE1' is defined in LEF but not in the timing library.
+[06/10 03:48:26     12s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[06/10 03:48:26     12s] To increase the message display limit, refer to the product command reference manual.
+[06/10 03:48:26     13s] *** Netlist is unique.
+[06/10 03:48:26     13s] **WARN: (IMPFP-3961):	The techSite 'corner_P' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/10 03:48:26     13s] **WARN: (IMPFP-3961):	The techSite 'ioSite_P' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/10 03:48:26     13s] **WARN: (IMPFP-3961):	The techSite 'blockSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/10 03:48:26     13s] **WARN: (IMPFP-3961):	The techSite 'portCellSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/10 03:48:26     13s] **WARN: (IMPCK-7003):	Command "addCTSCellList" is obsolete. Use "specifyClockTree -update {AutoCTSRootPin clkname Buffer bufferlist ...}" as an alternative. The obsolete command still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove "addCTSCellList" from your script.
+[06/10 03:48:26     13s] Set CTS cells: CLKIN0 CLKIN1 CLKIN2 CLKIN3 CLKIN4 CLKIN6 CLKIN8 CLKIN10 CLKIN12 CLKIN15 CLKBU2 CLKBU4 CLKBU6 CLKBU8 CLKBU12 CLKBU15
+[06/10 03:48:26     13s] Loading preference file /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/pnr/PNR_TOP_ANTHO/WORK/dbs/route_enc.dat/gui.pref.tcl ...
+[06/10 03:48:26     13s] **WARN: (IMPCK-8086):	The command setCTSMode is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+[06/10 03:48:26     13s] **WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+[06/10 03:48:27     13s] **WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+[06/10 03:48:27     14s] **WARN: (IMPCCOPT-4322):	No default Or cell family identified.
+[06/10 03:48:31     14s] <CMD> setDrawView place
+[06/10 03:48:47     15s] <CMD> optDesign -postRoute
+[06/10 03:48:47     15s] **INFO: setDesignMode -flowEffort standard -> setting 'setOptMode -allEndPoints true' for the duration of this command.
+[06/10 03:48:47     15s] Disable merging buffers from different footprints for postRoute code for non-MSV designs
+[06/10 03:48:47     15s] #spOpts: N=250 
+[06/10 03:48:47     16s] Core basic site is standard
+[06/10 03:48:47     16s] Estimated cell power/ground rail width = 1.625 um
+[06/10 03:48:47     16s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[06/10 03:48:47     16s] Creating Cell Server ...(0, 0, 0, 0)
+[06/10 03:48:47     16s] Summary for sequential cells identification: 
+[06/10 03:48:47     16s]   Identified SBFF number: 32
+[06/10 03:48:47     16s]   Identified MBFF number: 0
+[06/10 03:48:47     16s]   Identified SB Latch number: 0
+[06/10 03:48:47     16s]   Identified MB Latch number: 0
+[06/10 03:48:47     16s]   Not identified SBFF number: 34
+[06/10 03:48:47     16s]   Not identified MBFF number: 0
+[06/10 03:48:47     16s]   Not identified SB Latch number: 0
+[06/10 03:48:47     16s]   Not identified MB Latch number: 0
+[06/10 03:48:47     16s]   Number of sequential cells which are not FFs: 23
+[06/10 03:48:47     16s] Creating Cell Server, finished. 
+[06/10 03:48:47     16s] 
+[06/10 03:48:47     16s] #spOpts: N=250 mergeVia=F 
+[06/10 03:48:47     16s] Switching SI Aware to true by default in postroute mode   
+[06/10 03:48:47     16s] GigaOpt running with 1 threads.
+[06/10 03:48:47     16s] Info: 1 threads available for lower-level modules during optimization.
+[06/10 03:48:47     16s] #spOpts: N=250 mergeVia=F 
+[06/10 03:48:47     16s] 
+[06/10 03:48:47     16s] Creating Lib Analyzer ...
+[06/10 03:48:47     16s] 
+[06/10 03:48:47     16s]  View setup_func_max  Weighted 0 StdDelay unweighted 141.70, weightedFactor 1.000 
+[06/10 03:48:47     16s]   
+[06/10 03:48:47     16s]  View hold_func_min  Weighted 0 StdDelay unweighted 26.70, weightedFactor 1.000 
+[06/10 03:48:47     16s]   **WARN: (IMPOPT-7077):	Some of the LEF equivalent cells have different ANTENNAGATEAREA/ANTENNADIFFAREA/PINS etc... attributes. They will not be swapped for fixed instances and for lefsafe operations like optLeakagePower in postroute mode. To find out what cells are LEF equivalent use the findLefEquivalentCells command.
+[06/10 03:48:47     16s] Type 'man IMPOPT-7077' for more detail.
+[06/10 03:48:47     16s] Total number of usable buffers from Lib Analyzer: 12 ( CLKBU2 BUF2 CLKBU6 CLKBU4 BUF6 BUF4 CLKBU8 BUF8 CLKBU12 BUF12 CLKBU15 BUF15)
+[06/10 03:48:47     16s] Total number of usable inverters from Lib Analyzer: 20 ( INV3 INV2 INV1 INV0 CLKIN3 CLKIN2 CLKIN1 CLKIN0 INV6 INV4 CLKIN6 CLKIN4 INV8 CLKIN8 INV12 INV10 CLKIN12 CLKIN10 INV15 CLKIN15)
+[06/10 03:48:47     16s] Total number of usable delay cells from Lib Analyzer: 0 ()
+[06/10 03:48:47     16s] 
+[06/10 03:48:50     18s] Creating Lib Analyzer, finished. 
+[06/10 03:48:50     18s] Effort level <high> specified for reg2reg path_group
+[06/10 03:48:50     19s] **WARN: (IMPOPT-6118):	The following cells have a dont_touch property but without being dont_use.
+[06/10 03:48:50     19s] To avoid such a configuration impacting timing closure, since otherwise such cells could be inserted but never optimized or removed, optDesign is treating the following cells as dont_use.
+[06/10 03:48:50     19s] 			Cell BBC16P is dont_touch but not dont_use
+[06/10 03:48:50     19s] 			Cell BBC16P is dont_touch but not dont_use
+[06/10 03:48:50     19s] 			Cell BBC16SMP is dont_touch but not dont_use
+[06/10 03:48:50     19s] 			Cell BBC16SMP is dont_touch but not dont_use
+[06/10 03:48:50     19s] 			Cell BBC16SP is dont_touch but not dont_use
+[06/10 03:48:50     19s] 			Cell BBC16SP is dont_touch but not dont_use
+[06/10 03:48:50     19s] 			Cell BBC1P is dont_touch but not dont_use
+[06/10 03:48:50     19s] 			Cell BBC1P is dont_touch but not dont_use
+[06/10 03:48:50     19s] 			Cell BBC24P is dont_touch but not dont_use
+[06/10 03:48:50     19s] 			Cell BBC24P is dont_touch but not dont_use
+[06/10 03:48:50     19s] 			Cell BBC24SMP is dont_touch but not dont_use
+[06/10 03:48:50     19s] 			Cell BBC24SMP is dont_touch but not dont_use
+[06/10 03:48:50     19s] 			Cell BBC24SP is dont_touch but not dont_use
+[06/10 03:48:50     19s] 			Cell BBC24SP is dont_touch but not dont_use
+[06/10 03:48:50     19s] 			Cell BBC4P is dont_touch but not dont_use
+[06/10 03:48:50     19s] 			Cell BBC4P is dont_touch but not dont_use
+[06/10 03:48:50     19s] 			Cell BBC4SMP is dont_touch but not dont_use
+[06/10 03:48:50     19s] 			Cell BBC4SMP is dont_touch but not dont_use
+[06/10 03:48:50     19s] 			Cell BBC8P is dont_touch but not dont_use
+[06/10 03:48:50     19s] 			Cell BBC8P is dont_touch but not dont_use
+[06/10 03:48:50     19s] 	...
+[06/10 03:48:50     19s] 	Reporting only the 20 first cells found...
+[06/10 03:48:50     19s] 
+[06/10 03:48:50     19s] **optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 841.5M, totSessionCpu=0:00:19 **
+[06/10 03:48:50     19s] #Created 458 library cell signatures
+[06/10 03:48:50     19s] #Created 10625 NETS and 0 SPECIALNETS signatures
+[06/10 03:48:50     19s] #Created 20198 instance signatures
+[06/10 03:48:50     19s] #Build design signature : cpu time = 00:00:00, elapsed time = 00:00:00, memory = 842.25 (MB), peak = 844.14 (MB)
+[06/10 03:48:50     19s] #Save design signature : cpu time = 00:00:00, elapsed time = 00:00:00, memory = 842.27 (MB), peak = 844.14 (MB)
+[06/10 03:48:50     19s] #spOpts: N=250 
+[06/10 03:48:50     19s] Begin checking placement ... (start mem=1010.1M, init mem=1012.1M)
+[06/10 03:48:50     19s] *info: Placed = 19782          (Fixed = 276)
+[06/10 03:48:50     19s] *info: Unplaced = 0           
+[06/10 03:48:50     19s] Placement Density:100.00%(1793992/1793992)
+[06/10 03:48:50     19s] Placement Density (including fixed std cells):100.00%(1801491/1801491)
+[06/10 03:48:50     19s] Finished checkPlace (cpu: total=0:00:00.1, vio checks=0:00:00.1; mem=1016.1M)
+[06/10 03:48:50     19s] 
+[06/10 03:48:50     19s] **ERROR: (IMPOPT-6080):	AAE-SI Optimization can only be turned on when the timing analysis mode is set to OCV.
+[06/10 03:48:50     19s] 
+[06/10 03:48:50     19s] 
+[06/10 03:48:50     19s] 	OPT_RUNTIME:          optDesign (count =  2): (cpu=0:00:02.9 real=0:00:02.8)
+[06/10 03:48:50     19s] Info: pop threads available for lower-level modules during optimization.
+[06/10 03:48:50     19s] Deleting Lib Analyzer.
+[06/10 03:48:50     19s] Info: Destroy the CCOpt slew target map.
+[06/10 03:48:50     19s] 0
+[06/10 03:48:50     19s] <CMD> route_opt_design
+[06/10 03:48:50     19s] GigaOpt running with 1 threads.
+[06/10 03:48:50     19s] Info: 1 threads available for lower-level modules during optimization.
+[06/10 03:48:50     19s] *** route_opt_design [begin] : cpu/real = 0:00:00.0/0:00:00.0 (0.0), totSession cpu/real = 0:00:19.3/0:00:50.0 (0.4), mem = 1016.1M
+[06/10 03:48:50     19s] **INFO: setDesignMode -flowEffort standard -> setting 'setOptMode -allEndPoints true' for the duration of this command.
+[06/10 03:48:50     19s] Disable merging buffers from different footprints for postRoute code for non-MSV designs
+[06/10 03:48:50     19s] **INFO: Enabling RouteOpt flow.
+[06/10 03:48:50     19s] #spOpts: N=250 
+[06/10 03:48:50     19s] Core basic site is standard
+[06/10 03:48:50     19s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[06/10 03:48:50     19s] #spOpts: N=250 mergeVia=F 
+[06/10 03:48:50     19s] #spOpts: N=250 mergeVia=F 
+[06/10 03:48:50     19s] 
+[06/10 03:48:50     19s] Creating Lib Analyzer ...
+[06/10 03:48:50     19s] Total number of usable buffers from Lib Analyzer: 12 ( CLKBU2 BUF2 CLKBU6 CLKBU4 BUF6 BUF4 CLKBU8 BUF8 CLKBU12 BUF12 CLKBU15 BUF15)
+[06/10 03:48:50     19s] Total number of usable inverters from Lib Analyzer: 20 ( INV3 INV2 INV1 INV0 CLKIN3 CLKIN2 CLKIN1 CLKIN0 INV6 INV4 CLKIN6 CLKIN4 INV8 CLKIN8 INV12 INV10 CLKIN12 CLKIN10 INV15 CLKIN15)
+[06/10 03:48:50     19s] Total number of usable delay cells from Lib Analyzer: 0 ()
+[06/10 03:48:50     19s] 
+[06/10 03:48:53     21s] Creating Lib Analyzer, finished. 
+[06/10 03:48:53     22s] Effort level <high> specified for reg2reg path_group
+[06/10 03:48:53     22s] **WARN: (IMPOPT-6118):	The following cells have a dont_touch property but without being dont_use.
+[06/10 03:48:53     22s] To avoid such a configuration impacting timing closure, since otherwise such cells could be inserted but never optimized or removed, optDesign is treating the following cells as dont_use.
+[06/10 03:48:53     22s] 			Cell BBC16P is dont_touch but not dont_use
+[06/10 03:48:53     22s] 			Cell BBC16P is dont_touch but not dont_use
+[06/10 03:48:53     22s] 			Cell BBC16SMP is dont_touch but not dont_use
+[06/10 03:48:53     22s] 			Cell BBC16SMP is dont_touch but not dont_use
+[06/10 03:48:53     22s] 			Cell BBC16SP is dont_touch but not dont_use
+[06/10 03:48:53     22s] 			Cell BBC16SP is dont_touch but not dont_use
+[06/10 03:48:53     22s] 			Cell BBC1P is dont_touch but not dont_use
+[06/10 03:48:53     22s] 			Cell BBC1P is dont_touch but not dont_use
+[06/10 03:48:53     22s] 			Cell BBC24P is dont_touch but not dont_use
+[06/10 03:48:53     22s] 			Cell BBC24P is dont_touch but not dont_use
+[06/10 03:48:53     22s] 			Cell BBC24SMP is dont_touch but not dont_use
+[06/10 03:48:53     22s] 			Cell BBC24SMP is dont_touch but not dont_use
+[06/10 03:48:53     22s] 			Cell BBC24SP is dont_touch but not dont_use
+[06/10 03:48:53     22s] 			Cell BBC24SP is dont_touch but not dont_use
+[06/10 03:48:53     22s] 			Cell BBC4P is dont_touch but not dont_use
+[06/10 03:48:53     22s] 			Cell BBC4P is dont_touch but not dont_use
+[06/10 03:48:53     22s] 			Cell BBC4SMP is dont_touch but not dont_use
+[06/10 03:48:53     22s] 			Cell BBC4SMP is dont_touch but not dont_use
+[06/10 03:48:53     22s] 			Cell BBC8P is dont_touch but not dont_use
+[06/10 03:48:53     22s] 			Cell BBC8P is dont_touch but not dont_use
+[06/10 03:48:53     22s] 	...
+[06/10 03:48:53     22s] 	Reporting only the 20 first cells found...
+[06/10 03:48:53     22s] 
+[06/10 03:48:53     22s] **optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 847.8M, totSessionCpu=0:00:22 **
+[06/10 03:48:53     22s] 
+[06/10 03:48:53     22s] **ERROR: (IMPOPT-6080):	AAE-SI Optimization can only be turned on when the timing analysis mode is set to OCV.
+[06/10 03:48:53     22s] 
+[06/10 03:48:53     22s] 
+[06/10 03:48:53     22s] 	OPT_RUNTIME:          optDesign (count =  2): (cpu=0:00:02.7 real=0:00:02.7)
+[06/10 03:48:53     22s] Info: pop threads available for lower-level modules during optimization.
+[06/10 03:48:53     22s] Deleting Lib Analyzer.
+[06/10 03:48:53     22s] Info: Destroy the CCOpt slew target map.
+[06/10 03:48:53     22s] *** route_opt_design [finish] : cpu/real = 0:00:02.8/0:00:03.0 (0.9), totSession cpu/real = 0:00:22.1/0:00:53.0 (0.4), mem = 1016.1M
+[06/10 03:48:53     22s] 0
+[06/10 03:49:06     23s] <CMD> fixVia
+[06/10 03:49:06     23s] 
+[06/10 03:49:06     23s] Usage: fixVia [-help] [-area {x1 y1 x2 y2}] {-short | -minCut | -minStep }
+[06/10 03:49:06     23s] 
+[06/10 03:49:06     23s] **ERROR: (IMPTCM-32):	Wrong number of arguments specified for command "fixVia".
+
+[06/10 03:49:16     23s] <CMD> fixVia -short
+[06/10 03:49:16     24s] #WARNING (NRFL-384) Found degenerate rectangle on layer MET1 at location 16.175000 4.175000, ignoring this object.
+[06/10 03:49:16     24s] #WARNING (NRFL-384) Found degenerate rectangle on layer MET1 at location 16.175000 4.175000, ignoring this object.
+[06/10 03:49:17     24s] 
+Start fixing short vias at Fri Jun 10 03:49:17 2022
+End fixing short vias at Fri Jun 10 03:49:17 2022
+<CMD> pan -397.616 -276.392
+[06/10 03:49:22     25s] <CMD> pan -32.746 -3.214
+[06/10 03:49:24     25s] <CMD> pan -20.449 5.432
+[06/10 03:49:24     26s] <CMD> pan -21.647 -4.393
+[06/10 03:49:26     26s] <CMD> pan -21.349 1.460
+[06/10 03:49:27     26s] <CMD> pan -19.015 0.334
+[06/10 03:49:28     26s] <CMD> pan -11.634 -3.378
+[06/10 03:49:30     27s] <CMD> pan -0.909 0.093
+[06/10 03:49:30     27s] <CMD> pan -3.209 1.484
+[06/10 03:49:32     27s] <CMD> pan -0.632 5.031
+[06/10 03:49:32     27s] <CMD> pan -3.545 -0.496
+[06/10 03:49:36     28s] <CMD> pan -2.599 -0.744
+[06/10 03:49:38     28s] <CMD> pan -14.431 -0.736
+[06/10 03:49:40     28s] <CMD> pan -6.560 -1.588
+[06/10 03:49:41     28s] <CMD> pan -2.742 -8.507
+[06/10 03:50:36     33s] <CMD> pinAnalysis
+[06/10 03:50:36     33s] 
+[06/10 03:50:36     33s] Pin-deviation from Routing Cross-points:
+[06/10 03:50:36     33s] ---------------------------------------
+[06/10 03:50:36     33s] Routing data before Pin Assignment:
+[06/10 03:50:36     33s] ----------------------------------
+[06/10 03:50:36     33s] 
+[06/10 03:50:36     33s] Net-length and Via-count Report:
+[06/10 03:50:36     33s] -------------------------------
+[06/10 03:50:36     33s] Total length: 7.579e+05um, number of vias: 61226
+[06/10 03:50:36     33s] 
+[06/10 03:50:36     33s] M1(H) length: 6.947e+03um, number of vias: 32465
+[06/10 03:50:36     33s] M2(V) length: 2.961e+05um, number of vias: 23975
+[06/10 03:50:36     33s] M3(H) length: 3.377e+05um, number of vias: 4786
+[06/10 03:50:36     33s] M4(V) length: 1.171e+05um
+[06/10 03:50:36     33s] 
+[06/10 03:50:36     33s] Congestion Report: 
+[06/10 03:50:36     33s] -----------------
+[06/10 03:50:36     33s] Gcells have been grouped into super gcells for coarser sampling.
+[06/10 03:50:36     33s] There are 6972 that measure horizontal congestion.
+[06/10 03:50:36     33s] There are 6972 that measure vertical congestion.
+[06/10 03:50:36     33s] 
+[06/10 03:50:36     33s] Overflow numH           numV
+[06/10 03:50:36     33s] -------------------------------------
+[06/10 03:50:36     33s] -------------------------------------
+[06/10 03:50:36     33s] Overall Congestion Index: H 0 (0.000%), V 0 (0.000%)
+[06/10 03:50:36     33s] 
+[06/10 03:50:36     33s] ========================================================================================
+[06/10 03:50:36     33s] **WARN: (IMPTR-9999):	The trialRoute command is obsolete and should not be used anymore.  It still works in this release but will be removed in a future release.  You should change to use earlyGlobalRoute to avoid this warning and to be compatible with future releases.
+[06/10 03:50:36     33s] Initialize trialRoute multiThread mode= 16383 (=0x3fff) and nrThread= 0.
+[06/10 03:50:36     33s] enableMT= 3
+[06/10 03:50:36     33s] useHNameCompare= 3 (lazy mode)
+[06/10 03:50:36     33s] doMTMainInit= 1
+[06/10 03:50:36     33s] doMTFlushLazyWireDelete= 1
+[06/10 03:50:36     33s] useFastLRoute= 0
+[06/10 03:50:36     33s] useFastCRoute= 1
+[06/10 03:50:36     33s] doMTNetInitAdjWires= 1
+[06/10 03:50:36     33s] wireMPoolNoThreadCheck= 1
+[06/10 03:50:36     33s] allMPoolNoThreadCheck= 1
+[06/10 03:50:36     33s] doNotUseMPoolInCRoute= 1
+[06/10 03:50:36     33s] doMTSprFixZeroViaCodes= 1
+[06/10 03:50:36     33s] doMTDtrRoute1CleanupA= 1
+[06/10 03:50:36     33s] doMTDtrRoute1CleanupB= 1
+[06/10 03:50:36     33s] doMTWireLenCalc= 0
+[06/10 03:50:36     33s] doSkipQALenRecalc= 1
+[06/10 03:50:36     33s] doMTMainCleanup= 1
+[06/10 03:50:36     33s] doMTMoveCellTermsToMSLayer= 1
+[06/10 03:50:36     33s] doMTConvertWiresToNewViaCode= 1
+[06/10 03:50:36     33s] doMTRemoveAntenna= 1
+[06/10 03:50:36     33s] doMTCheckConnectivity= 1
+[06/10 03:50:36     33s] enableRuntimeLog= 0
+[06/10 03:50:36     33s] Set wireMPool w/ noThreadCheck
+[06/10 03:50:36     33s] *** Starting trialRoute (mem=1023.1M) ***
+[06/10 03:50:36     33s] 
+[06/10 03:50:36     33s] Using hname+ instead name for net compare
+[06/10 03:50:36     33s] There are 0 guide points passed to trialRoute for fixed pins.
+[06/10 03:50:36     33s] There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+[06/10 03:50:36     33s] triMarkNetsWithAllFixedWires runtime= 0:00:00.0
+[06/10 03:50:36     33s] Phase 0 (cpu= 0:00:00.0 real= 0:00:00.0 mem= 1025.1M)
+[06/10 03:50:36     33s] Options:  -handlePreroute -keepMarkedOptRoutes -noPinGuide -honorPin
+[06/10 03:50:36     33s] 
+[06/10 03:50:36     33s] Nr of prerouted/Fixed nets = 40
+[06/10 03:50:36     33s] There are 71 nets with 1 extra space.
+[06/10 03:50:36     33s] Starting trMTUpdateAllNetBoxWithoutSpr in ST mode ...
+[06/10 03:50:36     33s] routingBox: (700 1300) (2188900 2180100)
+[06/10 03:50:36     33s] coreBox:    (422800 421200) (1768200 1760200)
+[06/10 03:50:36     33s] Number of multi-gpin terms=1147, multi-gpins=2294, moved blk term=16/16
+[06/10 03:50:36     33s] Setting of trcDoMultiPinNet= 0
+[06/10 03:50:37     33s] 
+[06/10 03:50:37     33s] Phase 1a route (cpu=0:00:00.1 real=0:00:00.1 mem=1028.1M):
+[06/10 03:50:37     33s] Est net length = 6.931e+05um = 3.296e+05H + 3.634e+05V
+[06/10 03:50:37     33s] Usage: (27.5%H 27.0%V) = (4.451e+05um 7.716e+05um) = (63336 59317)
+[06/10 03:50:37     33s] Obstruct: 22860 = 11440 (34.0%H) + 11420 (33.9%V)
+[06/10 03:50:37     33s] Overflow: 11 = 11 (0.05% H) + 0 (0.00% V)
+[06/10 03:50:37     33s] 
+[06/10 03:50:37     33s] Phase 1b route (cpu=0:00:00.0 real=0:00:00.0 mem=1031.1M):
+[06/10 03:50:37     33s] Usage: (27.4%H 27.0%V) = (4.437e+05um 7.716e+05um) = (63130 59317)
+[06/10 03:50:37     33s] Overflow: 7 = 7 (0.03% H) + 0 (0.00% V)
+[06/10 03:50:37     33s] 
+[06/10 03:50:37     33s] Phase 1c route (cpu=0:00:00.0 real=0:00:00.0 mem=1031.1M):
+[06/10 03:50:37     33s] Usage: (27.3%H 27.0%V) = (4.426e+05um 7.708e+05um) = (62977 59259)
+[06/10 03:50:37     33s] Overflow: 6 = 6 (0.03% H) + 0 (0.00% V)
+[06/10 03:50:37     33s] 
+[06/10 03:50:37     33s] Phase 1d route (cpu=0:00:00.0 real=0:00:00.0 mem=1031.1M):
+[06/10 03:50:37     33s] Usage: (27.3%H 27.0%V) = (4.426e+05um 7.708e+05um) = (62977 59259)
+[06/10 03:50:37     33s] Overflow: 6 = 6 (0.03% H) + 0 (0.00% V)
+[06/10 03:50:37     33s] 
+[06/10 03:50:37     33s] Phase 1a-1d Overflow: 0.03% H + 0.00% V (0:00:00.2 1031.1M)
+
+[06/10 03:50:37     33s] 
+[06/10 03:50:37     33s] Phase 1e route (cpu=0:00:00.0 real=0:00:00.0 mem=1031.1M):
+[06/10 03:50:37     33s] Usage: (27.3%H 27.0%V) = (4.426e+05um 7.709e+05um) = (62977 59262)
+[06/10 03:50:37     33s] Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+[06/10 03:50:37     33s] 
+[06/10 03:50:37     33s] Phase 1f route (cpu=0:00:00.0 real=0:00:00.0 mem=1031.1M):
+[06/10 03:50:37     33s] Usage: (27.3%H 27.0%V) = (4.426e+05um 7.709e+05um) = (62977 59262)
+[06/10 03:50:37     33s] Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+[06/10 03:50:37     33s] 
+[06/10 03:50:37     33s] Congestion distribution:
+[06/10 03:50:37     33s] 
+[06/10 03:50:37     33s] Remain	cntH		cntV
+[06/10 03:50:37     33s] --------------------------------------
+[06/10 03:50:37     33s] --------------------------------------
+[06/10 03:50:37     33s]   0:	6	 0.03%	4	 0.02%
+[06/10 03:50:37     33s]   1:	37	 0.17%	50	 0.23%
+[06/10 03:50:37     33s]   2:	124	 0.56%	163	 0.73%
+[06/10 03:50:37     33s]   3:	424	 1.91%	621	 2.79%
+[06/10 03:50:37     33s]   4:	1469	 6.62%	2030	 9.14%
+[06/10 03:50:37     33s]   5:	20140	90.72%	19352	87.09%
+[06/10 03:50:37     33s] 
+[06/10 03:50:37     33s] 
+[06/10 03:50:37     33s] Phase 1e-1f Overflow: 0.00% H + 0.00% V (0:00:00.0 1031.1M)
+
+[06/10 03:50:37     33s] Global route (cpu=0.2s real=0.2s 1031.1M)
+[06/10 03:50:37     33s] ### Creating LA Mngr. totSessionCpu=0:00:33.6 mem=1031.1M
+[06/10 03:50:37     33s] Initializing multi-corner capacitance tables ... 
+[06/10 03:50:37     33s] Initializing multi-corner resistance tables ...
+[06/10 03:50:37     33s] ### Creating LA Mngr, finished. totSessionCpu=0:00:33.6 mem=1038.6M
+[06/10 03:50:37     33s] 
+[06/10 03:50:37     33s] 
+[06/10 03:50:37     33s] *** After '-updateRemainTrks' operation: 
+[06/10 03:50:37     33s] 
+[06/10 03:50:37     33s] Usage: (28.6%H 28.6%V) = (4.632e+05um 8.167e+05um) = (65913 62785)
+[06/10 03:50:37     33s] Overflow: 22 = 1 (0.00% H) + 21 (0.09% V)
+[06/10 03:50:37     33s] 
+[06/10 03:50:37     33s] Phase 1l Overflow: 0.00% H + 0.09% V (0:00:00.2 1047.6M)
+
+[06/10 03:50:37     33s] 
+[06/10 03:50:37     33s] Congestion distribution:
+[06/10 03:50:37     33s] 
+[06/10 03:50:37     33s] Remain	cntH		cntV
+[06/10 03:50:37     33s] --------------------------------------
+[06/10 03:50:37     33s]  -2:	0	 0.00%	4	 0.02%
+[06/10 03:50:37     33s]  -1:	1	 0.00%	15	 0.07%
+[06/10 03:50:37     33s] --------------------------------------
+[06/10 03:50:37     33s]   0:	12	 0.05%	25	 0.11%
+[06/10 03:50:37     33s]   1:	58	 0.26%	169	 0.76%
+[06/10 03:50:37     33s]   2:	202	 0.91%	402	 1.81%
+[06/10 03:50:37     33s]   3:	564	 2.54%	960	 4.32%
+[06/10 03:50:37     33s]   4:	1588	 7.15%	2118	 9.53%
+[06/10 03:50:37     33s]   5:	19775	89.08%	18527	83.38%
+[06/10 03:50:37     33s] 
+[06/10 03:50:37     33s] Starting trMTInitAdjWires in ST mode ...
+[06/10 03:50:37     33s] 
+[06/10 03:50:37     33s] *** Completed Phase 1 route (cpu=0:00:00.5 real=0:00:00.5 1047.6M) ***
+[06/10 03:50:37     33s] 
+[06/10 03:50:37     33s] Using trMTFlushLazyWireDel= 1
+[06/10 03:50:37     33s] Not using mpools for CRoute
+[06/10 03:50:37     33s] Starting trMTDtrRoute1CleanupA in ST mode ...
+[06/10 03:50:37     33s] Phase 2a (cpu=0:00:00.1 real=0:00:00.1 mem=1047.6M)
+[06/10 03:50:37     33s] Not using mpools for CRoute
+[06/10 03:50:37     34s] Phase 2b (cpu=0:00:00.1 real=0:00:00.1 mem=1047.6M)
+[06/10 03:50:37     34s] Starting trMTDtrRoute1CleanupB in ST mode ...
+[06/10 03:50:37     34s] Cleanup real= 0:00:00.0
+[06/10 03:50:37     34s] Phase 2 total (cpu=0:00:00.3 real=0:00:00.3 mem=1047.6M)
+[06/10 03:50:37     34s] 
+[06/10 03:50:37     34s] Total length: 7.185e+05um, number of vias: 66085
+[06/10 03:50:37     34s] M1(H) length: 0.000e+00um, number of vias: 32901
+[06/10 03:50:37     34s] M2(V) length: 2.765e+05um, number of vias: 27790
+[06/10 03:50:37     34s] M3(H) length: 3.251e+05um, number of vias: 5394
+[06/10 03:50:37     34s] M4(V) length: 1.170e+05um
+[06/10 03:50:37     34s] *** Completed Phase 2 route (cpu=0:00:00.3 real=0:00:00.3 1047.6M) ***
+[06/10 03:50:37     34s] 
+[06/10 03:50:37     34s] Starting trMTMoveCellTermsToMSLayer in ST mode ...
+[06/10 03:50:37     34s] Starting trMTConvertWiresToNewViaCode in ST mode ...
+[06/10 03:50:37     34s] *** Finished all Phases (cpu=0:00:00.8 mem=1047.6M) ***
+[06/10 03:50:37     34s] trMTFlushLazyWireDel was already disabled
+[06/10 03:50:37     34s] Starting trMTSprFixZeroViaCodes in ST mode ...
+[06/10 03:50:37     34s] trMTSprFixZeroViaCodes runtime= 0:00:00.0
+[06/10 03:50:37     34s] Starting trMTRemoveAntenna in ST mode ...
+[06/10 03:50:37     34s] Peak Memory Usage was 1047.6M 
+[06/10 03:50:37     34s] TrialRoute+GlbRouteEst total runtime= 0:00:00.8
+[06/10 03:50:37     34s] *** Finished trialRoute (cpu=0:00:00.8 mem=1047.6M) ***
+[06/10 03:50:37     34s] 
+[06/10 03:50:37     34s] Set wireMPool w/ threadCheck
+[06/10 03:50:37     34s] Routing data after Pin Assignment
+[06/10 03:50:37     34s] ----------------------------------
+[06/10 03:50:37     34s] 
+[06/10 03:50:37     34s] Net-length and Via-count Report:
+[06/10 03:50:37     34s] -------------------------------
+[06/10 03:50:37     34s] Total length: 7.185e+05um, number of vias: 66085
+[06/10 03:50:37     34s] 
+[06/10 03:50:37     34s] M1(H) length: 0.000e+00um, number of vias: 32901
+[06/10 03:50:37     34s] M2(V) length: 2.765e+05um, number of vias: 27790
+[06/10 03:50:37     34s] M3(H) length: 3.251e+05um, number of vias: 5394
+[06/10 03:50:37     34s] M4(V) length: 1.170e+05um
+[06/10 03:50:37     34s] 
+[06/10 03:50:37     34s] Congestion Report: 
+[06/10 03:50:37     34s] -----------------
+[06/10 03:50:37     34s] Gcells have been grouped into super gcells for coarser sampling.
+[06/10 03:50:37     34s] There are 4140 that measure horizontal congestion.
+[06/10 03:50:37     34s] There are 4147 that measure vertical congestion.
+[06/10 03:50:37     34s] 
+[06/10 03:50:37     34s] Overflow numH           numV
+[06/10 03:50:37     34s] -------------------------------------
+[06/10 03:50:37     34s] -------------------------------------
+[06/10 03:50:37     34s] Overall Congestion Index: H 0 (0.000%), V 0 (0.000%)
+[06/10 03:50:37     34s] 
+[06/10 03:50:37     34s] ========================================================================================
+[06/10 03:50:37     34s] 
+[06/10 03:50:37     34s] Analyzing Pin Assignment.....
+[06/10 03:50:37     34s] 
+[06/10 03:50:37     34s] ========================================================================================
+[06/10 03:50:37     34s] Pin QoR Report:
+[06/10 03:50:37     34s] --------------
+[06/10 03:50:37     34s] 
+[06/10 03:50:37     34s] 
+[06/10 03:50:37     34s] 
+[06/10 03:50:37     34s] There are 0 total 2-pin nets in the design.
+[06/10 03:50:37     34s] 
+[06/10 03:50:37     34s] 
+[06/10 03:50:37     34s] ========================================================================================
+[06/10 03:50:37     34s] 
+[06/10 03:50:37     34s] ---------------------------------------------------------------------------------
+[06/10 03:50:37     34s] | QoR Metric | Before Pin-Assignment | After Pin-Assignment  |      Change      |
+[06/10 03:50:37     34s] ---------------------------------------------------------------------------------
+[06/10 03:50:37     34s] | Horizontal |        0.000%         |        0.000%         |         NA       |
+[06/10 03:50:37     34s] | Congestion |                       |                       |                  |
+[06/10 03:50:37     34s] ---------------------------------------------------------------------------------
+[06/10 03:50:37     34s] |  Vertical  |        0.000%         |        0.000%         |         NA       |
+[06/10 03:50:37     34s] | Congestion |                       |                       |                  |
+[06/10 03:50:37     34s] ---------------------------------------------------------------------------------
+[06/10 03:50:37     34s] |    Total   |   7.579e+05um         |   7.185e+05um         |      -5.193%     |
+[06/10 03:50:37     34s] | Net-Length |                       |                       |                  |
+[06/10 03:50:37     34s] ---------------------------------------------------------------------------------
+[06/10 03:50:37     34s] |    Total   |         61226         |         66085         |       7.936%     |
+[06/10 03:50:37     34s] | Via-Count  |                       |                       |                  |
+[06/10 03:50:37     34s] ---------------------------------------------------------------------------------
+[06/10 03:50:37     34s] 
+[06/10 03:50:37     34s] Completed pinAnalysis (CPU=0:00:00.8 MEM=26.5)
+[06/10 03:50:37     34s] 
+[06/10 03:50:37     34s] ========================================================================================
+[06/10 03:50:37     34s] <CMD> pinAlignment
+[06/10 03:50:37     34s] #% Begin pinAlignment (date=06/10 03:50:37, mem=873.3M)
+[06/10 03:50:37     34s] Moving pin [in_inFIFO_inData[3]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (2189.800  413.400 M4).
+[06/10 03:50:37     34s] Moving pin [in_inFIFO_inData[2]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (2189.800  536.900 M4).
+[06/10 03:50:37     34s] Moving pin [in_inFIFO_inData[1]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (2189.800  660.400 M4).
+[06/10 03:50:37     34s] Moving pin [in_inFIFO_inData[0]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (2189.800  782.600 M4).
+[06/10 03:50:37     34s] Moving pin [in_DEMUX_inDEMUX17[3]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (2189.800  906.100 M4).
+[06/10 03:50:37     34s] Moving pin [in_DEMUX_inDEMUX17[2]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (2189.800 1029.600 M4).
+[06/10 03:50:37     34s] Moving pin [in_DEMUX_inDEMUX17[1]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (2189.800 1151.800 M4).
+[06/10 03:50:37     34s] Moving pin [in_DEMUX_inDEMUX17[0]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (2189.800 1275.300 M4).
+[06/10 03:50:37     34s] Moving pin [in_DEMUX_inDEMUX18[3]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (2189.800 1398.800 M4).
+[06/10 03:50:37     34s] Moving pin [in_DEMUX_inDEMUX18[2]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (2189.800 1521.000 M4).
+[06/10 03:50:37     34s] Moving pin [in_DEMUX_inDEMUX18[1]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (2189.800 1644.500 M4).
+[06/10 03:50:37     34s] Moving pin [in_DEMUX_inDEMUX18[0]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (2189.800 1768.000 M4).
+[06/10 03:50:37     34s] Moving pin [in_DEMUX_inSEL1[2]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (1157.100 2181.200 M4).
+[06/10 03:50:37     34s] Moving pin [in_DEMUX_inSEL1[1]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (1280.300 2181.200 M4).
+[06/10 03:50:37     34s] Moving pin [in_DEMUX_inSEL1[0]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (1404.900 2181.200 M4).
+[06/10 03:50:37     34s] Moving pin [in_DEMUX_inSEL2[2]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (1528.100 2181.200 M4).
+[06/10 03:50:37     34s] Moving pin [in_DEMUX_inSEL2[1]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (1651.300 2181.200 M4).
+[06/10 03:50:37     34s] Moving pin [in_DEMUX_inSEL2[0]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (1775.900 2181.200 M4).
+[06/10 03:50:37     34s] Moving pin [in_MUX_inSEL6[1]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location ( 413.700    0.000 M4).
+[06/10 03:50:37     34s] Moving pin [in_MUX_inSEL6[0]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location ( 538.300    0.000 M4).
+[06/10 03:50:37     34s] Moving pin [in_MUX_inSEL9[1]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location ( 661.500    0.000 M4).
+[06/10 03:50:37     34s] Moving pin [in_MUX_inSEL9[0]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location ( 909.300    0.000 M4).
+[06/10 03:50:37     34s] Moving pin [inClock] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location ( 413.700 2181.200 M4).
+[06/10 03:50:37     34s] Moving pin [inReset] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location ( 538.300 2181.200 M4).
+[06/10 03:50:37     34s] Moving pin [in_DEMUX_inDEMUX1] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (1528.100    0.000 M4).
+[06/10 03:50:37     34s] Moving pin [in_DEMUX_inDEMUX2] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (1651.300    0.000 M4).
+[06/10 03:50:37     34s] Moving pin [in_MUX_inSEL3] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (1032.500 2181.200 M4).
+[06/10 03:50:37     34s] Moving pin [in_MUX_inSEL11] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (1775.900    0.000 M4).
+[06/10 03:50:37     34s] Moving pin [in_MUX_inSEL12] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (   0.000  413.400 M4).
+[06/10 03:50:37     34s] Moving pin [in_DEMUX_inSEL17] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (   0.000  536.900 M4).
+[06/10 03:50:37     34s] Moving pin [out_MUX_outMUX9[3]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (   0.000 1151.800 M4).
+[06/10 03:50:37     34s] Moving pin [out_MUX_outMUX9[2]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (   0.000 1275.300 M4).
+[06/10 03:50:37     34s] Moving pin [out_MUX_outMUX9[1]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (   0.000 1398.800 M4).
+[06/10 03:50:37     34s] Moving pin [out_MUX_outMUX9[0]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (   0.000 1521.000 M4).
+[06/10 03:50:37     34s] Moving pin [out_MUX_outMUX10[3]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (   0.000  660.400 M4).
+[06/10 03:50:37     34s] Moving pin [out_MUX_outMUX10[2]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (   0.000  782.600 M4).
+[06/10 03:50:37     34s] Moving pin [out_MUX_outMUX10[1]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (   0.000  906.100 M4).
+[06/10 03:50:37     34s] Moving pin [out_MUX_outMUX10[0]] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (   0.000 1029.600 M4).
+[06/10 03:50:37     34s] Moving pin [out_MUX_outMUX15] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (   0.000 1644.500 M4).
+[06/10 03:50:37     34s] Moving pin [out_MUX_outMUX16] of partition [top_io] connected to pad [PAD] of top cell [top_io] to ALIGNED location (   0.000 1768.000 M4).
+[06/10 03:50:37     34s] Aligned 40 pin(s) of the partition [top_io] successfully.
+[06/10 03:50:37     34s] #% End pinAlignment (date=06/10 03:50:37, total cpu=0:00:00.0, real=0:00:00.0, peak res=873.5M, current mem=873.5M)
+[06/10 03:50:55     35s] <CMD> fixVia -short
+[06/10 03:50:55     35s] 
+Start fixing short vias at Fri Jun 10 03:50:55 2022
+End fixing short vias at Fri Jun 10 03:50:55 2022
+<CMD> verify_drc -limit 100000
+[06/10 03:51:10     36s] #-limit 100000                           # int, default=100000, user setting
+[06/10 03:51:10     36s]  *** Starting Verify DRC (MEM: 1044.6) ***
+[06/10 03:51:10     36s] 
+[06/10 03:51:10     36s]   VERIFY DRC ...... Starting Verification
+[06/10 03:51:10     36s]   VERIFY DRC ...... Initializing
+[06/10 03:51:11     36s]   VERIFY DRC ...... Deleting Existing Violations
+[06/10 03:51:11     36s]   VERIFY DRC ...... Creating Sub-Areas
+[06/10 03:51:11     36s]   VERIFY DRC ...... Using new threading
+[06/10 03:51:11     36s]   VERIFY DRC ...... Sub-Area: {0.000 0.000 548.800 548.800} 1 of 16
+[06/10 03:51:11     36s]   VERIFY DRC ...... Sub-Area : 1 complete 87 Viols.
+[06/10 03:51:11     36s]   VERIFY DRC ...... Sub-Area: {548.800 0.000 1097.600 548.800} 2 of 16
+[06/10 03:51:11     37s]   VERIFY DRC ...... Sub-Area : 2 complete 375 Viols.
+[06/10 03:51:11     37s]   VERIFY DRC ...... Sub-Area: {1097.600 0.000 1646.400 548.800} 3 of 16
+[06/10 03:51:11     37s]   VERIFY DRC ...... Sub-Area : 3 complete 306 Viols.
+[06/10 03:51:11     37s]   VERIFY DRC ...... Sub-Area: {1646.400 0.000 2189.800 548.800} 4 of 16
+[06/10 03:51:11     37s]   VERIFY DRC ...... Sub-Area : 4 complete 66 Viols.
+[06/10 03:51:11     37s]   VERIFY DRC ...... Sub-Area: {0.000 548.800 548.800 1097.600} 5 of 16
+[06/10 03:51:12     37s]   VERIFY DRC ...... Sub-Area : 5 complete 647 Viols.
+[06/10 03:51:12     37s]   VERIFY DRC ...... Sub-Area: {548.800 548.800 1097.600 1097.600} 6 of 16
+[06/10 03:51:13     39s]   VERIFY DRC ...... Sub-Area : 6 complete 2658 Viols.
+[06/10 03:51:13     39s]   VERIFY DRC ...... Sub-Area: {1097.600 548.800 1646.400 1097.600} 7 of 16
+[06/10 03:51:15     41s]   VERIFY DRC ...... Sub-Area : 7 complete 2177 Viols.
+[06/10 03:51:15     41s]   VERIFY DRC ...... Sub-Area: {1646.400 548.800 2189.800 1097.600} 8 of 16
+[06/10 03:51:16     41s]   VERIFY DRC ...... Sub-Area : 8 complete 392 Viols.
+[06/10 03:51:16     41s]   VERIFY DRC ...... Sub-Area: {0.000 1097.600 548.800 1646.400} 9 of 16
+[06/10 03:51:16     42s]   VERIFY DRC ...... Sub-Area : 9 complete 514 Viols.
+[06/10 03:51:16     42s]   VERIFY DRC ...... Sub-Area: {548.800 1097.600 1097.600 1646.400} 10 of 16
+[06/10 03:51:17     43s]   VERIFY DRC ...... Sub-Area : 10 complete 2391 Viols.
+[06/10 03:51:17     43s]   VERIFY DRC ...... Sub-Area: {1097.600 1097.600 1646.400 1646.400} 11 of 16
+[06/10 03:51:19     44s]   VERIFY DRC ...... Sub-Area : 11 complete 2572 Viols.
+[06/10 03:51:19     44s]   VERIFY DRC ...... Sub-Area: {1646.400 1097.600 2189.800 1646.400} 12 of 16
+[06/10 03:51:19     45s]   VERIFY DRC ...... Sub-Area : 12 complete 520 Viols.
+[06/10 03:51:19     45s]   VERIFY DRC ...... Sub-Area: {0.000 1646.400 548.800 2181.200} 13 of 16
+[06/10 03:51:19     45s]   VERIFY DRC ...... Sub-Area : 13 complete 90 Viols.
+[06/10 03:51:19     45s]   VERIFY DRC ...... Sub-Area: {548.800 1646.400 1097.600 2181.200} 14 of 16
+[06/10 03:51:19     45s]   VERIFY DRC ...... Sub-Area : 14 complete 463 Viols.
+[06/10 03:51:19     45s]   VERIFY DRC ...... Sub-Area: {1097.600 1646.400 1646.400 2181.200} 15 of 16
+[06/10 03:51:19     45s]   VERIFY DRC ...... Sub-Area : 15 complete 377 Viols.
+[06/10 03:51:19     45s]   VERIFY DRC ...... Sub-Area: {1646.400 1646.400 2189.800 2181.200} 16 of 16
+[06/10 03:51:20     45s]   VERIFY DRC ...... Sub-Area : 16 complete 57 Viols.
+[06/10 03:51:20     45s] 
+[06/10 03:51:20     45s]   Verification Complete : 13692 Viols.
+[06/10 03:51:20     45s] 
+[06/10 03:51:20     45s]  *** End Verify DRC (CPU: 0:00:09.1  ELAPSED TIME: 9.00  MEM: 135.5M) ***
+[06/10 03:51:20     45s] 
+[06/10 03:51:23     46s] <CMD> selectWire 422.8000 627.4000 1768.2000 631.0000 1 vdd!
+[06/10 03:51:24     46s] <CMD> deselectAll
+[06/10 03:51:24     46s] <CMD> selectInst t_op/u_inFIFO/U652
+[06/10 03:51:24     46s] Set RLRP Inst: t_op/u_inFIFO/U652
+[06/10 03:51:26     46s] Set RLRP Inst: t_op/u_inFIFO/U652
+[06/10 03:51:27     46s] Set RLRP Inst: t_op/u_inFIFO/U652
+[06/10 03:51:27     46s] Set RLRP Inst: t_op/u_inFIFO/U652
+[06/10 03:51:27     46s] Set RLRP Inst: t_op/u_inFIFO/U652
+[06/10 03:51:27     46s] Set RLRP Inst: t_op/u_inFIFO/U652
+[06/10 03:51:27     46s] Set RLRP Inst: t_op/u_inFIFO/U652
+[06/10 03:51:27     46s] Set RLRP Inst: t_op/u_inFIFO/U652
+[06/10 03:51:27     46s] Set RLRP Inst: t_op/u_inFIFO/U652
+[06/10 03:51:27     46s] Set RLRP Inst: t_op/u_inFIFO/U652
+[06/10 03:51:27     46s] Set RLRP Inst: t_op/u_inFIFO/U652
+[06/10 03:51:27     46s] Set RLRP Inst: t_op/u_inFIFO/U652
+[06/10 03:51:27     46s] Set RLRP Inst: t_op/u_inFIFO/U652
+[06/10 03:51:27     46s] Set RLRP Inst: t_op/u_inFIFO/U652
+[06/10 03:51:27     46s] Set RLRP Inst: t_op/u_inFIFO/U652
+[06/10 03:51:27     46s] Set RLRP Inst: t_op/u_inFIFO/U652
+[06/10 03:51:27     46s] Set RLRP Inst: t_op/u_inFIFO/U652
+[06/10 03:51:27     46s] Set RLRP Inst: t_op/u_inFIFO/U652
+[06/10 03:51:28     46s] <CMD> pan -1.170 -0.055
+[06/10 03:51:28     46s] Set RLRP Inst: t_op/u_inFIFO/U652
+[06/10 03:51:30     46s] <CMD> deselectAll
+[06/10 03:51:30     46s] <CMD> selectVia 1530.4500 636.5500 1531.3500 637.4500 2 t_op/u_inFIFO/n660
+[06/10 03:51:34     47s] <CMD> uiSetTool ruler
+[06/10 03:51:48     48s] <CMD> pan -0.880 0.992
+[06/10 03:51:54     49s] <CMD> pan -9.622 -0.959
+[06/10 03:52:04     50s] <CMD> pan -1.827 0.897
+[06/10 03:52:06     51s] <CMD> pan -7.284 0.426
+[06/10 03:52:07     51s] <CMD> pan -4.619 0.473
+[06/10 03:52:12     52s] <CMD> pan -0.847 0.462
+[06/10 03:53:43     59s] <CMD> editPin -assign *
+[06/10 03:53:43     59s] 
+[06/10 03:53:43     59s] Usage: editPin [-help] [-end {x y}] [-fixedPin] [-global_location] [-include_rectilinear_edge] [-masterCloneAware] [-offsetEnd <float>] [-offsetStart <float>] -pin {pinName | pinNameList} [-pinDepth <float>]
+[06/10 03:53:43     59s]                [-pinWidth <float>] [-skipWrappingPins] [-snap {TRACK USERGRID MGRID}] [-spreadDirection {clockwise counterclockwise both}] [-start { x y}] [-use <string>] [ { -layer {layerId | layerIdList} | {[-layerH <layerId>] [-layerV <layerId>]} } [-layer_priority ] [-assign {x y} | -spreadType {START CENTER SIDE EDGE RANGE} | -pattern {fill_track fill_layer fill_optimised fill_diagonal fill_sinusoidal fill_checkerboard}]] [ -side <string> | -edge <integer> ] [ -cell <string> | {-hinst <hinstName> [-refMaster ]} ] [ -fixOverlap  [ -honorConstraint  ]] [ -pattern {fill_track fill_layer fill_optimised fill_diagonal fill_sinusoidal fill_checkerboard} [ -reverse_alternate  ]] [ -spacing <string> [ -unit {MICRON TRACK} ]]
+[06/10 03:53:43     59s] 
+[06/10 03:53:43     59s] **ERROR: (IMPTCM-35):	Option -assign requires two floating numbers.
+**ERROR: (IMPPTN-1599):	Invalid syntax of editPin command, errorCode [-2]
+
+[06/10 03:54:49     64s] <CMD> report_ccopt_cell_halo_violations
+[06/10 03:54:49     64s] 
+[06/10 03:54:49     64s] Clock Cell Halo Rule Check in Summary
+[06/10 03:54:49     64s] =====================================
+[06/10 03:54:49     64s] 
+[06/10 03:54:49     64s] -------------------------------------------------------
+[06/10 03:54:49     64s] Clock      Instances with cell_halo    Failed instances
+[06/10 03:54:49     64s] -------------------------------------------------------
+[06/10 03:54:49     64s] inClock               0                       0
+[06/10 03:54:49     64s] -------------------------------------------------------
+[06/10 03:54:49     64s] 
+[06/10 03:54:49     64s] Total number of violating instances: 0
+[06/10 03:54:49     64s] 
+[06/10 03:54:49     64s] Clock Cell Halo Rule Violations
+[06/10 03:54:49     64s] ===============================
+[06/10 03:54:49     64s] 
+[06/10 03:54:49     64s] ---------------------------------------------------------------------------------------------------------------
+[06/10 03:54:49     64s] No.    Cell    Instance    In clock    Cell Halo (x, y)    Violating instance    From clock    Intrusion (x, y)
+[06/10 03:54:49     64s] ---------------------------------------------------------------------------------------------------------------
+[06/10 03:54:49     64s]   (empty table)
+[06/10 03:54:49     64s] ---------------------------------------------------------------------------------------------------------------
+[06/10 03:54:49     64s] 
+[06/10 03:54:49     64s] 
+[06/10 03:55:17     67s] <CMD> pan -0.617 7.529
+[06/10 03:55:18     67s] <CMD> pan -0.681 -2.317
+[06/10 03:55:21     67s] <CMD> pan -3.488 2.525
+[06/10 03:55:35     69s] <CMD> pan -11.007 0.000
+[06/10 03:55:37     69s] <CMD> pan 3.525 -4.315
+[06/10 03:55:41     70s] <CMD> pan -1.726 -17.110
+[06/10 03:55:41     70s] <CMD> pan 0.887 -7.939
+[06/10 03:55:44     70s] <CMD> pan 4.520 -5.115
+[06/10 03:55:46     71s] <CMD> pan -13.566 -17.167
+[06/10 03:55:47     71s] <CMD> pan -2.615 -10.014
+[06/10 03:56:35     75s] <CMD> fixAllIos
+[06/10 03:56:42     76s] <CMD> pan -1.268 56.137
+[06/10 03:56:44     76s] <CMD> pan 3.280 2.318
+[06/10 03:59:03     87s] 
+[06/10 03:59:03     87s] *** Memory Usage v#1 (Current mem = 1167.551M, initial mem = 184.402M) ***
+[06/10 03:59:03     87s] 
+[06/10 03:59:03     87s] *** Summary of all messages that are not suppressed in this session:
+[06/10 03:59:03     87s] Severity  ID               Count  Summary                                  
+[06/10 03:59:03     87s] WARNING   IMPLF-200          131  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[06/10 03:59:03     87s] WARNING   IMPLF-201          608  Pin '%s' in macro '%s' has no ANTENNADIF...
+[06/10 03:59:03     87s] WARNING   IMPLF-228            1   ANTENNAOUTPUTDIFFAREA is specified and ...
+[06/10 03:59:03     87s] WARNING   IMPLF-230            1   ANTENNAINOUTDIFFAREA is specified and w...
+[06/10 03:59:03     87s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[06/10 03:59:03     87s] ERROR     IMPPTN-1599          1  Invalid syntax of %s command, errorCode ...
+[06/10 03:59:03     87s] WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+[06/10 03:59:03     87s] WARNING   IMPCK-7003           1  Command "%s" is obsolete. Use "%s" as an...
+[06/10 03:59:03     87s] WARNING   IMPCK-8086           1  The command %s is obsolete and will be r...
+[06/10 03:59:03     87s] WARNING   IMPVL-159         1401  Pin '%s' of cell '%s' is defined in LEF ...
+[06/10 03:59:03     87s] WARNING   IMPOPT-7077          1  Some of the LEF equivalent cells have di...
+[06/10 03:59:03     87s] ERROR     IMPOPT-6080          2  AAE-SI Optimization can only be turned o...
+[06/10 03:59:03     87s] WARNING   IMPOPT-6118          2  The following cells have a dont_touch pr...
+[06/10 03:59:03     87s] WARNING   IMPCCOPT-4322        1  No default Or cell family identified.    
+[06/10 03:59:03     87s] WARNING   IMPTR-9999           1  The trialRoute command is obsolete and s...
+[06/10 03:59:03     87s] ERROR     IMPTCM-32            1  Wrong number of arguments specified for ...
+[06/10 03:59:03     87s] ERROR     IMPTCM-35            1  Option %s requires two floating numbers....
+[06/10 03:59:03     87s] WARNING   GLOBAL-100           2  Global '%s' has become obsolete. It will...
+[06/10 03:59:03     87s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[06/10 03:59:03     87s] ERROR     TECHLIB-1318        20  All the table values in the '%s' group a...
+[06/10 03:59:03     87s] *** Message Summary: 2176 warning(s), 25 error(s)
+[06/10 03:59:03     87s] 
+[06/10 03:59:03     87s] --- Ending "Innovus" (totcpu=0:01:28, real=0:11:03, mem=1167.6M) ---

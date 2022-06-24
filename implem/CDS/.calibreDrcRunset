@@ -2,7 +2,7 @@
 *drcRunDir: /tp/xph2app/xph2app102/projet_Numerique/git/zigbee_project_2/implem/CDS
 *drcLayoutPaths: top_io.calibre.db
 *drcLayoutPrimary: top_io
-*drcLayoutLibrary: test_drc_top
+*drcLayoutLibrary: test_drc_4
 *drcLayoutView: layout
 *drcLayoutGetFromViewer: 1
 *drcResultsFile: top_io.drc.results
@@ -17,6 +17,6 @@
 *cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
 *cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
 *cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
-*cmnFDILayoutLibrary: test_drc_top
+*cmnFDILayoutLibrary: test_drc_4
 *cmnFDILayoutView: layout
 *cmnFDIDEFLayoutPath: top_io.def

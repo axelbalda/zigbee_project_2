@@ -1,0 +1,6 @@
+set_clock_latency -0.3  [get_pins {{t_op/u_cdr/div1/o_nb_P_reg[1]/C}}]
+set_clock_latency -0.269  [get_pins {{t_op/u_cdr/div1/o_nb_P_reg[5]/C}}]
+set_clock_latency -0.3  [get_pins {{t_op/u_cdr/div1/o_nb_P_reg[2]/C}}]
+set_clock_latency -0.3  [get_pins {{t_op/u_cdr/div1/o_nb_P_reg[3]/C}}]
+set_clock_latency -0.3  [get_pins {{t_op/u_cdr/div1/o_nb_P_reg[0]/C}}]
+set_clock_latency -0.3  [get_pins {{t_op/u_cdr/div1/o_nb_P_reg[4]/C}}]

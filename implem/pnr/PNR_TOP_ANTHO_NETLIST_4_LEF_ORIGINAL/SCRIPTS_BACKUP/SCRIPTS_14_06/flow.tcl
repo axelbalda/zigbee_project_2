@@ -24,6 +24,8 @@ source ../SCRIPTS/clock_tree_synthesis.tcl
 source ../SCRIPTS/add_fillers.tcl
 #saveDesign dbs/addFiller_enc
 
+#Useful skew
+setOptMode -usefulSkewPostRoute true
 
 routeDesign
 

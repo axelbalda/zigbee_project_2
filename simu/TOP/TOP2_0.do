@@ -47,11 +47,8 @@ add wave -noupdate -color {Medium Violet Red} -format Analog-Step -height 84 -ma
 add wave -noupdate -color {Medium Violet Red} /tb_TOP2/u_top/u_decoder/o_postfilter_ready
 add wave -noupdate -divider CORDIC
 add wave -noupdate -color {Medium Slate Blue} /tb_TOP2/u_top/u_cordic/i_enable_in
-add wave -noupdate /tb_TOP2/u_top/in_DEMUX_inDEMUX17
-add wave -noupdate /tb_TOP2/u_top/in_DEMUX_inDEMUX18
-add wave -noupdate -color {Medium Slate Blue} -radix binary /tb_TOP2/u_top/u_cordic/i_I
-add wave -noupdate -color {Medium Slate Blue} -radix binary /tb_TOP2/u_top/u_cordic/i_Q
-add wave -noupdate /tb_TOP2/u_top/u_cordic/present_state
+add wave -noupdate -color {Medium Slate Blue} -radix hexadecimal /tb_TOP2/u_top/u_cordic/i_I
+add wave -noupdate -color {Medium Slate Blue} -radix hexadecimal /tb_TOP2/u_top/u_cordic/i_Q
 add wave -noupdate -color {Medium Slate Blue} /tb_TOP2/u_top/u_cordic/o_dir
 add wave -noupdate -color {Medium Slate Blue} /tb_TOP2/u_top/u_cordic/o_enable_out
 add wave -noupdate -divider CDR
@@ -65,22 +62,44 @@ add wave -noupdate -color Turquoise /tb_TOP2/u_top/u_outFIFO/inWriteEnable
 add wave -noupdate -color Turquoise /tb_TOP2/u_top/u_outFIFO/FIFO
 add wave -noupdate -color Turquoise /tb_TOP2/u_top/u_outFIFO/inReadEnable
 add wave -noupdate -color Turquoise /tb_TOP2/u_top/u_outFIFO/outData
-add wave -noupdate -divider DEBUG
+add wave -noupdate -divider DEMUX17
+add wave -noupdate /tb_TOP2/u_top/u_demux17/inData
+add wave -noupdate /tb_TOP2/u_top/u_demux17/inSel
+add wave -noupdate /tb_TOP2/u_top/u_demux17/outData
+add wave -noupdate -radix binary /tb_TOP2/u_top/u_demux17/s_data0
+add wave -noupdate -radix binary /tb_TOP2/u_top/u_demux17/s_data1
+add wave -noupdate -radix binary /tb_TOP2/u_top/u_demux17/s_data2
+add wave -noupdate -radix binary /tb_TOP2/u_top/u_demux17/s_data3
+add wave -noupdate /tb_TOP2/u_top/u_demux17/s_signal0
+add wave -noupdate /tb_TOP2/u_top/u_demux17/s_signal1
+add wave -noupdate -divider DEMUX18
 add wave -noupdate /tb_TOP2/u_top/u_demux18/inData
 add wave -noupdate /tb_TOP2/u_top/u_demux18/inSel
 add wave -noupdate /tb_TOP2/u_top/u_demux18/outData
-add wave -noupdate -radix binary /tb_TOP2/u_top/u_mux6/inData
+add wave -noupdate /tb_TOP2/u_top/u_demux18/s_data0
+add wave -noupdate /tb_TOP2/u_top/u_demux18/s_data1
+add wave -noupdate /tb_TOP2/u_top/u_demux18/s_data2
+add wave -noupdate /tb_TOP2/u_top/u_demux18/s_data3
+add wave -noupdate /tb_TOP2/u_top/u_demux18/s_signal0
+add wave -noupdate /tb_TOP2/u_top/u_demux18/s_signal1
+add wave -noupdate -divider MUX6
+add wave -noupdate /tb_TOP2/u_top/u_mux6/inData
 add wave -noupdate /tb_TOP2/u_top/u_mux6/inSel
-add wave -noupdate -radix binary /tb_TOP2/u_top/u_mux6/outData
-add wave -noupdate -divider {New Divider}
-add wave -noupdate /tb_TOP2/u_top/u_demux17/outData
-add wave -noupdate /tb_TOP2/u_top/u_demux17/inSel
-add wave -noupdate /tb_TOP2/u_top/u_demux17/inData
-add wave -noupdate /tb_TOP2/u_top/u_mux7/outData
-add wave -noupdate /tb_TOP2/u_top/u_mux7/inSel
+add wave -noupdate /tb_TOP2/u_top/u_mux6/outData
+add wave -noupdate /tb_TOP2/u_top/u_mux6/s_data0
+add wave -noupdate /tb_TOP2/u_top/u_mux6/s_data1
+add wave -noupdate /tb_TOP2/u_top/u_mux6/s_data2
+add wave -noupdate /tb_TOP2/u_top/u_mux6/s_data3
+add wave -noupdate -divider MUX7
 add wave -noupdate /tb_TOP2/u_top/u_mux7/inData
+add wave -noupdate /tb_TOP2/u_top/u_mux7/inSel
+add wave -noupdate -radix binary /tb_TOP2/u_top/u_mux7/outData
+add wave -noupdate /tb_TOP2/u_top/u_mux7/s_data0
+add wave -noupdate /tb_TOP2/u_top/u_mux7/s_data1
+add wave -noupdate /tb_TOP2/u_top/u_mux7/s_data2
+add wave -noupdate /tb_TOP2/u_top/u_mux7/s_data3
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {7709369 ps} 0}
+WaveRestoreCursors {{Cursor 1} {20380000 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 192
 configure wave -valuecolwidth 100
@@ -96,4 +115,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {31500 ns}
+WaveRestoreZoom {0 ps} {26250 ns}

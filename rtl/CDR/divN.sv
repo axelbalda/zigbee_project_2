@@ -7,12 +7,12 @@ module div (
 	input logic [1:0]	i_cnt_d
 	);
 
-wire w_en_d, w_en_m, w_en_f, w_en, w_en_freq_synch; 
+wire w_en_d, w_en_m, w_en_f, w_en, w_en_freq_synch, w_en_dec; 
 
 
-counter cnt_div (i_clk, i_rst, o_nb_P, i_cnt_d, w_en_d, w_en_m, w_en_f, w_en, w_en_freq_synch); //the only value used from counter in this block is w_en_freq_synch
+counter cnt_div (i_clk, i_rst, o_nb_P, i_cnt_d, w_en_d, w_en_m, w_en_f, w_en, w_en_freq_synch, w_en_dec); //the only value used from counter in this block is w_en_freq_synch
 
-always_ff@(negedge i_clk)
+always_ff@(posedge i_clk)
 begin
 	if (i_rst == 1'b0) begin
 		o_nb_P <= 6'b011001; //6'b011001 = 25

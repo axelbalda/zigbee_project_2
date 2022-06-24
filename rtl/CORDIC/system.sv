@@ -15,7 +15,7 @@ module system(i_enable_in, i_I, i_Q, o_enable_out, o_dir, reset, clock);
 	reg signed [3:0] Q;
 	logic dir;
 
-	typedef enum bit[2:0]{ IDLE, WAIT_ENABLE_IN, NEW_IQ_SAMPLE, TEMPO, UPDATE_DIRECTION, ACTIVATE_ENABLE_OUT} STATE; 
+	typedef enum bit[2:0]{ IDLE, WAIT_ENABLE_IN, NEW_IQ_SAMPLE, TEMPO1, TEMPO2, UPDATE_DIRECTION, ACTIVATE_ENABLE_OUT} STATE; 
 	STATE present_state, next_state;
 
 	//////////////////////////////////////////////////// The system is composed of cordic block & rotation block
@@ -80,10 +80,13 @@ module system(i_enable_in, i_I, i_Q, o_enable_out, o_dir, reset, clock);
 			end
 		  
 			NEW_IQ_SAMPLE: begin
-				next_state = TEMPO;
+				next_state = TEMPO1;
 			end
 
-			TEMPO: begin
+			TEMPO1: begin
+				next_state = TEMPO2;
+			end
+			TEMPO2: begin
 				next_state = UPDATE_DIRECTION;
 			end
 
@@ -93,7 +96,11 @@ module system(i_enable_in, i_I, i_Q, o_enable_out, o_dir, reset, clock);
 
 			ACTIVATE_ENABLE_OUT: begin
 				//o_enable_out = 1'b1;
-				next_state = WAIT_ENABLE_IN;
+				if(i_enable_in == 1'b1) begin
+					next_state = NEW_IQ_SAMPLE;
+				end else begin
+					next_state = WAIT_ENABLE_IN;
+				end
 			end
 			
 			default : begin 

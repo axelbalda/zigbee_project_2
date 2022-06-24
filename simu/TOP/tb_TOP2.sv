@@ -43,7 +43,7 @@ reg 	[1:0]	inSEL6			;
 reg 	[1:0]	inSEL9			;
 reg 			inSEL11			;
 reg 			inSEL12			;
-reg 	[2:0]	inSEL15			;
+reg 	[1:0]	inSEL15			;
 reg 			inSEL17			;
 
 
@@ -687,13 +687,64 @@ initial begin : DATA
 	end
 
 	inReadEnable	=	1'b0;
-	for(int i = 0; i < 20; i++) begin
+	for(int i = 0; i < 200; i++) begin
 		#CLK_PERIOD ;	
 	end
+
+
+
+	/////////////////////////////
+	// CODER --> CORDIC
+	/////////////////////////////
+
+	inSEL1			=	3'b0	;
+	inSEL2			=	3'b0	;
+	inSEL3			=	1'b0	;
+	inSEL6			=	2'b01	;
+	inSEL9			=	2'b0	;
+	inSEL11			=	1'b0	;
+	inSEL12			=	1'b0	;
+	inSEL15			=	2'b0	;
+	inSEL17			=	1'b0	;
+
+	for(int i = 0; i < 20; i++) begin
+		#CLK_PERIOD ;	
+		inData			=	4'b0	;
+		inReadEnable	=	1'b0	;
+		inDEMUX1		=	1'b0	;
+		inDEMUX2		=	1'b0	;
+		inDEMUX17		=	4'b0	;
+		inDEMUX18		=	4'b0	;
+		inReset  =  1'b0 ;
+	end
+	inReset  =  1'b1 ;
+
+	inData			=	4'b0110	;
+	inReadEnable	=	1'b0	;
+	inDEMUX1		=	1'b0	;
+	inDEMUX2		=	1'b1	;
+	inDEMUX17		=	4'b0	;
+	inDEMUX18		=	4'b0	;	
+
+	for(int i = 0; i < 100; i++) begin
+		#CLK_PERIOD ;	
+	end
+
+	inSEL2			=	3'b010	;
+	inData			=	4'b0	;
+	inReadEnable	=	1'b0	;
+	inDEMUX1		=	1'b0	;
+	inDEMUX2		=	1'b1	;
+	inDEMUX17		=	4'b0	;
+	inDEMUX18		=	4'b0	;	
 
 	
 end
 //////////////////////////////////////////////////////////////////////////////////
+
+
+
+
 
 
 //////////////////////////////////////////////////////////////////////////////////
